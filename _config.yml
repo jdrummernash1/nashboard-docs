@@ -1,0 +1,4 @@
+title: Nashboard
+description: A custom, single-file Home Assistant dashboard for wall tablets, phones and TVs.
+theme: jekyll-theme-cayman
+markdown: kramdown
