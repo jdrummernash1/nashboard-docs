@@ -10,6 +10,20 @@ Pages appear in the side menu (or the bottom bar and "More" sheet on phones). Ea
 which pages they see; see [Settings](settings.md). Pages only appear once their data exists, for example Cameras
 needs at least one camera.
 
+They're listed here in the same order as the menu, so you can scroll through the whole app or jump to one:
+
+[Home](#home) · [Rooms](#rooms) · [Cameras](#cameras) · [Calendar](#calendar) · [Now Playing](#now-playing) · [Shopping](#shopping) · [Packages](#packages) · [Recipes](#recipes) · [Weather](#weather) · [Air & Allergy](#air--allergy) · [Sports](#sports) · [Commute](#commute) · [Planes](#planes) · [Map](#map) · [Space](#space) · [Multi-view](#multi-view) · [Display](#display) · [Finance](#finance) · [Room dashboards](#room-dashboards) · [Backlog](#backlog) · [Network & Storage](#network--storage) · [Family Board](#family-board) · [Guest](#guest) · [Maintenance](#maintenance) · [Pets](#pets) · [System](#system) · [Labs](#labs)
+
+*Screenshots use a made-up demo house; no real data.*
+
+## Home
+
+![Home page](images/home-dark.jpg)
+
+The page most screens sit on: an illustrated house banner with live status, and cards that appear when they matter
+(a plane overhead, rain coming, a game on, a package arriving) and leave when they don't. Every card and pop-up is
+described on the [Home page](home.md) guide.
+
 ## Rooms
 
 ![Rooms page](images/rooms.jpg)
@@ -28,26 +42,36 @@ dashboard's own sign-in, never stale camera links.
 
 ## Calendar
 
+![Calendar page](images/calendar.jpg)
+
 Day, week and month views across all your calendars, in the colours you pick (shared by everyone). Add and edit
 events, toggle calendars on and off, and see the meal plan alongside.
 
 ## Now Playing
+
+![Now Playing page](images/music.jpg)
 
 What every speaker is playing, with artwork, play/pause, seek, volume and per-speaker faders inside speaker groups.
 Browse and search Music Assistant to start something new.
 
 ## Shopping
 
+![Shopping page](images/shopping.jpg)
+
 The Home Assistant shopping list (and Mealie's, if connected). Add several items at once, tick items into the
 cart, clear the cart, and "Buy again" from recent items. Changes show on every screen instantly.
 
 ## Packages
+
+![Packages page](images/packages.jpg)
 
 Add a tracking number from any carrier. Shipments are also found in email (USPS, store order emails) and through
 17TRACK. Each package shows its stage and latest event. A separate section handles recurring **autoship** orders
 with their next ship date.
 
 ## Recipes
+
+![Recipes page](images/recipes.jpg)
 
 The family recipe book from Mealie: search, photos, ingredients scaled to servings, a step-by-step cooking view,
 importing recipes from a link, and the week's meal plan.
@@ -73,10 +97,14 @@ the phone is.
 
 ## Sports
 
+![Sports page](images/sports.jpg)
+
 Your teams' schedules and scores from ESPN (via the TeamTracker integration), with live game cards, TV network
 links and recaps.
 
 ## Commute
+
+![Commute page](images/commute.jpg)
 
 Each trip (for example drop-off then work, or school runs) with live drive time per leg from Waze, delay versus
 usual, "leave by" times, a route map and recent days' history. Trips, stops and times are set up in the page's
@@ -97,6 +125,8 @@ military aircraft ringed, and emergencies (squawk 7700) highlighted worldwide.
 
 ## Map
 
+![Map page](images/map.jpg)
+
 People and tracked devices on a map with their recent path for the day.
 
 ## Space
@@ -109,15 +139,21 @@ compass.
 
 ## Multi-view
 
+![Multi-view page](images/multi.jpg)
+
 Show up to four pages at once on a large screen, each in its own tile.
 
 ## Display
+
+![Display page](images/display.jpg)
 
 A full-screen mode for TVs and wall displays: clock, weather, cameras, and automatic cards (up next, commute,
 games, overhead aircraft, Space Station, packages, now playing, breaking news). It can rotate between views or
 stay on one. Casting to a TV opens the same Display.
 
 ## Finance
+
+![Finance page](images/finance.jpg)
 
 A watchlist from a published spreadsheet: prices, day and week moves, charts, and a Bitcoin long-term "power
 law" chart.
@@ -134,6 +170,13 @@ scenes, cameras and sensors. Rooms can have a custom design:
   (on/off orb, brightness, eight colours, with a note that red and amber are gentlest for sleep), the sound
   machine (play/stop, volume, favourites, and every built-in sound grouped into sleep, bedtime and wake-up),
   the bedtime routine, and the nursery speaker.
+
+## Backlog
+
+![Backlog page](images/backlog.jpg)
+
+Opened from System or the More menu (not in the side menu): jot down ideas and browse the project backlog. See
+[Settings](settings.md#backlog-and-ideas).
 
 ## Network & Storage
 
@@ -177,20 +220,19 @@ overdue, and a "Maintenance due" pop-up on Home.
 
 ## Pets
 
+![Pets page](images/pets.jpg)
+
 Pet devices such as a self-cleaning litter box: status, drawer level, litter level, faults and history.
 
 ## System
 
+![System page](images/system.jpg)
+
 Home Assistant health at a glance: updates, backups, recent errors, devices that need attention, low batteries,
 and settings such as Menu pages, alerts and appearance.
 
-## Backlog
-
-![Backlog page](images/backlog.jpg)
-
-Opened from System or the More menu (not in the side menu): jot down ideas and browse the project backlog. See
-[Settings](settings.md#backlog-and-ideas).
-
 ## Labs
+
+![3D printer (Labs)](images/printer.jpg)
 
 Experiments that aren't finished yet, such as a 3D printer monitor.

@@ -23,7 +23,7 @@ trash night) and leave on their own when it no longer does.
 ## Contents
 
 - [Home page](home.md): the banner, every Home card, and the pop-up cards
-- [All pages](pages.md): what each page shows and does
+- [All pages](pages.md): every page in menu order, with a screenshot of each
 - [Settings and personalisation](settings.md): menu pages, per-user settings, display size, alerts
 - [Data sources](integrations.md): which Home Assistant integrations and free services feed each page
 - [How it works and installing](setup.md): the files, the card, deploying, backups
@@ -46,7 +46,7 @@ trash night) and leave on their own when it no longer does.
 
 | Page | In one line |
 |---|---|
-| [Home](home.md) | Banner, status, and the cards that matter right now |
+| [Home](pages.md#home) | Banner, status, and the cards that matter right now |
 | [Rooms](pages.md#rooms) | Every room's lights and devices, with room dashboards |
 | [Cameras](pages.md#cameras) | Camera wall with layouts and live view |
 | [Calendar](pages.md#calendar) | Day, week and month views; add and edit events |
