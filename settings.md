@@ -11,7 +11,8 @@ title: Settings and personalisation
 - **Menu pages**: choose which pages appear in your side menu (System → Menu pages, or More → Customize menu).
   Home always stays. Hidden pages still open from links, Multi-view and Display.
 - **Alerts and sounds**: overhead plane alerts, Space Station alerts, emergency (7700) alerts, connection-lost
-  alerts, the doorbell/person chime and the garage chime.
+  alerts, the doorbell/person chime and the garage chime. With **phone alerts** on, Home Assistant also notifies phones
+  (screen off too) about low planes overhead, a Space Station pass 10 minutes before, and 7700 emergencies within 200 nm.
 - **Expanded cards**: whether collapsible cards (gas prices, AI usage) start open.
 
 These are stored in Home Assistant's own per-user storage, so they move with your login.
@@ -34,9 +35,9 @@ Only Home Assistant admins can change the shared Guest information and pickup sc
 - The phone compass on or off
 - Cards swiped away for the day
 
-## Backlog and ideas
+## Design Studio (backlog and ideas)
 
-System → **Backlog & ideas** (also in the More menu) opens the project backlog inside the dashboard. Anyone can
+System → **Design Studio** (also in the More menu) opens the project backlog inside the dashboard. Anyone can
 **jot down an idea** there, by typing or with the microphone button; ideas go into a shared Home Assistant to-do list and are filed into the backlog at the
 next working session, after which they tick off automatically. The backlog itself is searchable, with sections that
 open and close and a "Show done" switch.

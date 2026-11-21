@@ -50,6 +50,10 @@ Swipe a card sideways to hide it for the rest of the day.
 
 ## Pop-up cards
 
+The banner also has the **tidbit chip** (tap it for the next fun fact, including the app's estimated market value), the
+**pet characters** (they react when someone is at the door) and **holiday decorations**. See [Every feature](features.md)
+for the complete list.
+
 Pop-up cards appear at the top when something needs attention. Each stays **at least 3 minutes** so the screen
 doesn't flicker; if the situation clears sooner the card says so ("Closed now", "Lights are off now") and then
 leaves. Several have a one-tap action button.
@@ -60,11 +64,31 @@ leaves. Several have a one-tap action button.
 | Litter-Robot | Waste drawer nearly full, litter low, or a fault | |
 | Rain coming | Rain or snow likely in the next few hours | |
 | Freeze tonight | The overnight low will be at or below freezing | |
-| Dinner tonight | Tonight's dinner from the meal plan | |
+| Dinner tonight | Tonight's dinner from the meal plan, with when to start cooking | |
 | Autoship soon | A recurring order ships within two days | |
 | Maintenance due | A house job is due or overdue | Done |
 | Trash night | The evening before (and morning of) trash or recycling pickup | |
 | Lights still on | Late at night with two or more lights on | All off |
+| Dog timeout | The dog timeout timer is running (counts down) | Done |
+| Dog feeder | The feeder runs in the next 10 minutes | |
+| Chores today | Family Board chores due today or overdue | Done |
+| Markets | Weekdays around the market open and close, or after a big move | |
+| Rocket launch | From 30 minutes before liftoff to 10 minutes after | |
+| UV high | Around midday when the UV index is 6 or more | |
+| Severe weather | A National Weather Service warning is active where you are | |
+| Leave soon | A calendar event with a location starts within the hour | Navigate |
+| Nursery asleep | The nursery sound machine is playing at night (chimes go quiet) | |
+| New on Wi-Fi | A device this screen hasn't seen before joins the network | Known |
+| House health | No recent backup, or a storage volume needs attention (admins) | |
+| Pollen | Pollen is medium-high or higher (and the air quality card isn't showing) | |
+| Internet outage | A service the house depends on (remote access, Cloudflare, GitHub, Discord) reports a problem | |
+| Medicine | A medicine was given and the next dose isn't OK yet ("next dose OK at …") | |
+| Fever | A temperature of 100.4°F or higher was logged in the last 12 hours, with when Tylenol or ibuprofen is next OK | |
+| Pantry: use soon | Pantry food expires in the next 3 days or just expired | Used up |
+| Birthday coming up | A birthday on the calendar is within two weeks | Add gift to list |
+| Intercom | Someone recorded a message for every screen in the last 10 minutes | Play |
+| On the way home | Someone's commute home has started (arrival time, slower than usual) | |
+| Claude | Claude Code usage near the limit, or a free usage reset waiting | |
 
 Add `?popdemo=1` to the dashboard address to preview every pop-up card with sample text.
 

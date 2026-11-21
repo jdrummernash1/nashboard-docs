@@ -12,7 +12,7 @@ needs at least one camera.
 
 They're listed here in the same order as the menu, so you can scroll through the whole app or jump to one:
 
-[Home](#home) · [Rooms](#rooms) · [Cameras](#cameras) · [Calendar](#calendar) · [Now Playing](#now-playing) · [Shopping](#shopping) · [Packages](#packages) · [Recipes](#recipes) · [Weather](#weather) · [Air & Allergy](#air--allergy) · [Sports](#sports) · [Commute](#commute) · [Planes](#planes) · [Map](#map) · [Space](#space) · [Multi-view](#multi-view) · [Display](#display) · [Finance](#finance) · [Room dashboards](#room-dashboards) · [Backlog](#backlog) · [Network & Storage](#network--storage) · [Family Board](#family-board) · [Guest](#guest) · [Maintenance](#maintenance) · [Pets](#pets) · [System](#system) · [Labs](#labs)
+[Home](#home) · [Rooms](#rooms) · [Cameras](#cameras) · [Calendar](#calendar) · [Now Playing](#now-playing) · [Shopping](#shopping) · [Packages](#packages) · [Recipes](#recipes) · [Weather](#weather) · [Air & Allergy](#air--allergy) · [Sports](#sports) · [Commute](#commute) · [Planes](#planes) · [Map](#map) · [Space](#space) · [Multi-view](#multi-view) · [Display](#display) · [Finance](#finance) · [Room dashboards](#room-dashboards) · [Design Studio](#design-studio) · [Network & Storage](#network--storage) · [Family Board](#family-board) · [Guest](#guest) · [Maintenance](#maintenance) · [Pets](#pets) · [System](#system) · [Labs](#labs)
 
 *Screenshots use a made-up demo house; no real data.*
 
@@ -73,8 +73,17 @@ with their next ship date.
 
 ![Recipes page](images/recipes.jpg)
 
-The family recipe book from Mealie: search, photos, ingredients scaled to servings, a step-by-step cooking view,
-importing recipes from a link, and the week's meal plan.
+The family recipe book from Mealie: search, photos, ingredients scaled to servings, importing recipes from a link, and
+the week's meal plan. **Cook mode** shows one step at a time with the amounts inline ("whisk the **2 cups** flour") and a
+row of that step's ingredients with a little picture for each. Sending a recipe to the shopping list first asks **"Use
+what's in the pantry?"** and leaves the ticked items off the list.
+
+## Pantry
+
+What's on hand and when it expires, in a shared Home Assistant to-do list. Scan a barcode with the phone camera (Chrome
+on Android) or type it; the name comes from Open Food Facts. Add the expiration date and amount. **Use soon** lists
+anything expiring within 3 days; **Used up** removes it, and the cart button also adds it to the shopping list. Home and
+the Kitchen room show a card for food to use soon.
 
 ## Weather
 
@@ -171,12 +180,12 @@ scenes, cameras and sensors. Rooms can have a custom design:
   machine (play/stop, volume, favourites, and every built-in sound grouped into sleep, bedtime and wake-up),
   the bedtime routine, and the nursery speaker.
 
-## Backlog
+## Design Studio
 
-![Backlog page](images/backlog.jpg)
+![Design Studio page](images/backlog.jpg)
 
 Opened from System or the More menu (not in the side menu): jot down ideas and browse the project backlog. See
-[Settings](settings.md#backlog-and-ideas).
+[Settings](settings.md#design-studio-backlog-and-ideas).
 
 ## Network & Storage
 
@@ -197,8 +206,11 @@ Opened from System or the More menu (not in the side menu): jot down ideas and b
 ![Family Board](images/snip-family.jpg)
 
 Made for a kitchen screen with bigger text: the time and weather, **who's home**, today's events and tonight's
-dinner, **trash and recycling** days (with "take the bins out tonight"), the live **shopping list** and a shared
-**chores** list anyone can tick off.
+dinner, **trash and recycling** days (with "take the bins out tonight"), the live **shopping list**, a shared
+**chores** list anyone can tick off, **birthdays** coming up, the **intercom** (record a message that plays on every
+screen) and the **Medicine & fever** card: one-tap buttons for each medicine with its own rules (once a day, every few
+hours, alternating Tylenol and ibuprofen), a temperature log, symptom buttons, a 7-day history with a fever chart and a
+copy-for-the-doctor summary, FDA drug-label facts with citations, and a heads-up when two medicines are the same kind.
 
 ## Guest
 
@@ -222,7 +234,8 @@ overdue, and a "Maintenance due" pop-up on Home.
 
 ![Pets page](images/pets.jpg)
 
-Pet devices such as a self-cleaning litter box: status, drawer level, litter level, faults and history.
+**Pet characters** (cat or dog, coat and pattern) that live on the Home banner, the dog timeout and feeder times, and
+pet devices such as a self-cleaning litter box: status, drawer level, litter level, faults and history.
 
 ## System
 
@@ -235,4 +248,5 @@ and settings such as Menu pages, alerts and appearance.
 
 ![3D printer (Labs)](images/printer.jpg)
 
-Experiments that aren't finished yet, such as a 3D printer monitor.
+Experiments: a **Browser** for quick look-ups (voice address bar, bookmarks; in Full window it works like a real
+browser with back, forward and reload) and a 3D printer monitor.
