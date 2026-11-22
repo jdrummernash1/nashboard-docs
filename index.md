@@ -6,6 +6,14 @@ title: Nashboard
 
 # Nashboard
 
+<!-- stats:start -->
+| Lines of custom code | Market value | Pages | Builds shipped | Open backlog items | Open bugs | Shipped this week |
+|---|---|---|---|---|---|---|
+| **15,244** | **$95k–$191k (about 1,270 developer hours)** | **35** | **197** | **60** | **1** | **207** |
+
+*Updated Nov 21 2026. See the [Change log](changelog.md).*
+<!-- stats:end -->
+
 **Version 2.0** (November 2026): medicine & fever tracking, the pantry, pet characters, holiday themes, birthdays,
 the intercom, a welcome tour, background phone alerts and much more. See [Every feature](features.md).
 
@@ -28,6 +36,7 @@ trash night) and leave on their own when it no longer does.
 - [Living with Nashboard](living-with-nashboard.md): the everyday habits that get the most out of it, for everyone in
   the family (no smart-home experience needed)
 - [Every feature](features.md): the complete list, including every automatic Home card
+- [Change log](changelog.md): everything shipped, newest first
 - [Home page](home.md): the banner, every Home card, and the pop-up cards
 - [All pages](pages.md): every page in menu order, with a screenshot of each
 - [Settings and personalisation](settings.md): menu pages, per-user settings, display size, alerts
