@@ -230,13 +230,17 @@ opened it gets an **UPDATED** dot.
 - **Labs**: a **Browser** (just the bar: back and reload, bookmarks, address with voice; tools behind a ⋯ menu; reopens
   your last page on each device; in Full window it works like a real browser) and a 3D printer page.
 
-### Kitchen display preset
+### Kitchen tablet
 
-A calm, always-on layout for a landscape wall display in the kitchen. Turn it on per device with **Cast → This device →
-Kitchen display** (or open the dashboard with `?display=kitchen`; `?display=off` turns it off). It shows the clock and
-weather, today's calendar and dinner, who's home, chores, trash night, the Home cards while they matter, and the Kitchen
-(or Living Room) controls. Tap anywhere that isn't a control to use the full dashboard for 2 minutes (each touch restarts
-the 2 minutes), then it comes back. At night (9 PM to 6:30 AM) it's very dim, with no animations or chimes.
+A wall display in the kitchen runs the normal **Home** page. Turn it on per device with **Cast → This device → Kitchen
+tablet** (or open the dashboard with `?display=kitchen`; `?display=off` turns it off). After 2 minutes without a touch it
+goes back to Home and closes anything left open, and it keeps the screen awake. At night (9 PM to 6:30 AM) it dims to a
+very low level after a minute without a touch (a tap wakes it), with no animations or chimes.
+
+The kitchen at-a-glance cards live on the **Kitchen room page**: Today (calendar and dinner), Who's home, Trash &
+recycling and Chores (copies of the Family Board cards), next to the room's own Maintenance, Pantry, Dinner tonight and
+device cards, plus the Living Room's controls when there's a living room. Hide them with the room's automatic cards in
+Room settings.
 
 ---
 

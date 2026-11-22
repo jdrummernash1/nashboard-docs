@@ -48,7 +48,7 @@ trash night) and leave on their own when it no longer does.
 - **Stable layout**: once a page settles, cards never jump sideways; new cards drop into the emptiest spot.
 - **More than 30 pages**, from Rooms, Cameras and Calendar to Planes, Space, Air & Allergy, Network & Storage, a Family
   Board, a Guest page, Storage, Hobbies, Workout, an Activity timeline and per-room dashboards such as a calm Nursery
-  screen, plus a Kitchen display preset for a wall screen.
+  screen, plus a Kitchen tablet mode for a wall screen.
 - **Background automations** that reach every phone with the screen off: medicine OK again, the dog timeout, birthdays,
   the week ahead, the goodnight check, gas price drops, a package left outside, planes and the Space Station. See
   [Automations](automations.md).
@@ -82,7 +82,7 @@ trash night) and leave on their own when it no longer does.
 | [Space](pages.md#space) | Space Station passes, launches, satellites, sky dial |
 | [Multi-view](pages.md#multi-view) | Several pages on one big screen |
 | [Display](pages.md#display) | Full-screen TV mode, a different setup per TV |
-| [Kitchen display](pages.md#kitchen-display-preset) | A calm, always-on layout for a kitchen wall screen |
+| [Kitchen tablet](pages.md#kitchen-tablet) | Home on a kitchen wall screen, back to Home when idle, dim at night |
 | [Finance](pages.md#finance) | Watchlist and charts |
 | [Room dashboards](pages.md#room-dashboards) | A page per room; the Nursery has its own design |
 | [Network & Storage](pages.md#network--storage) | Internet, router, NAS, devices online |

@@ -18,6 +18,15 @@ What each kind of device needs for Nashboard to work fully. The same checklist i
 - Set night dimming in Cast settings.
 - Tap the screen once after it loads. Some TVs block chimes and the intercom until the first touch or button press.
 
+## Kitchen tablet (wall display)
+
+- Install the Home Assistant app, or a kiosk browser (best for a wall screen: kiosk lock, screen on, starts by itself).
+- Turn on **Kitchen tablet** mode: open the dashboard on the display and add `?display=kitchen` to the address once (it
+  remembers), or open **Cast → This device → Kitchen tablet**. It shows Home and returns to Home after 2 minutes without a touch.
+- Keep it plugged in, turn off the screen timeout, and allow the app to keep the screen on.
+- Set a comfortable day brightness. From 9 PM to 6:30 AM it dims itself after a minute without a touch; a tap wakes it.
+- Open **Rooms → Kitchen** to check the at-a-glance cards (Today, Who's home, Trash, Chores, the Living Room controls).
+
 ## Phones (Android and iPhone)
 
 - Install the Home Assistant companion app, sign in, and set Nashboard as the app's default dashboard.

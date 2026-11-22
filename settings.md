@@ -45,7 +45,7 @@ Only Home Assistant admins can change the shared Guest information and pickup sc
 - Planes map style, radius, flight paths and centring
 - The phone compass on or off
 - Cards swiped away for the day
-- The Kitchen display preset (on or off) and the last page the Browser showed
+- Kitchen tablet mode (on or off) and the last page the Browser showed
 
 ## Design Studio (backlog and ideas)
 

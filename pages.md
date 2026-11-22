@@ -12,7 +12,7 @@ example Cameras needs at least one camera.
 
 They're listed here in roughly the same order as the menu, so you can scroll through the whole app or jump to one:
 
-[Home](#home) · [Rooms](#rooms) · [Cameras](#cameras) · [Calendar](#calendar) · [Activity](#activity) · [Now Playing](#now-playing) · [Shopping](#shopping) · [Packages](#packages) · [Recipes](#recipes) · [Pantry & Fridge](#pantry--fridge) · [Storage](#storage) · [Weather](#weather) · [Air & Allergy](#air--allergy) · [Sports](#sports) · [Commute](#commute) · [Planes](#planes) · [Map](#map) · [Space](#space) · [Multi-view](#multi-view) · [Display](#display) · [Kitchen display](#kitchen-display-preset) · [Finance](#finance) · [Room dashboards](#room-dashboards) · [Design Studio](#design-studio) · [Network & Storage](#network--storage) · [Family Board](#family-board) · [Guest](#guest) · [Maintenance](#maintenance) · [Pets](#pets) · [Hobbies](#hobbies) · [Workout](#workout) · [Automations](#automations) · [System](#system) · [About](#about) · [Labs](#labs)
+[Home](#home) · [Rooms](#rooms) · [Cameras](#cameras) · [Calendar](#calendar) · [Activity](#activity) · [Now Playing](#now-playing) · [Shopping](#shopping) · [Packages](#packages) · [Recipes](#recipes) · [Pantry & Fridge](#pantry--fridge) · [Storage](#storage) · [Weather](#weather) · [Air & Allergy](#air--allergy) · [Sports](#sports) · [Commute](#commute) · [Planes](#planes) · [Map](#map) · [Space](#space) · [Multi-view](#multi-view) · [Display](#display) · [Kitchen tablet](#kitchen-tablet) · [Finance](#finance) · [Room dashboards](#room-dashboards) · [Design Studio](#design-studio) · [Network & Storage](#network--storage) · [Family Board](#family-board) · [Guest](#guest) · [Maintenance](#maintenance) · [Pets](#pets) · [Hobbies](#hobbies) · [Workout](#workout) · [Automations](#automations) · [System](#system) · [About](#about) · [Labs](#labs)
 
 Also: [Things every page has](#things-every-page-has) (the card ⋯ menu, tap-to-collapse, Right now, theme colours,
 left- or right-handed phones).
@@ -236,16 +236,16 @@ stay on one. Casting to a TV opens the same Display, and **each TV can have its 
 per screen, which screens, night dimming). Home's cards show as a strip on the radar and camera screens; a pet peeks in
 from a corner now and then.
 
-## Kitchen display preset
+## Kitchen tablet
 
-A calm, always-on layout for a landscape wall display in the kitchen, turned on per device: **Cast → This device →
-Kitchen display** (or add `?display=kitchen` to the address; `?display=off` turns it off).
+For a wall display in the kitchen, turned on per device: **Cast → This device → Kitchen tablet** (or add
+`?display=kitchen` to the address; `?display=off` turns it off).
 
-- Clock and weather, today's calendar and dinner, who's home, chores, trash night, the Home cards while they matter, and
-  the Kitchen (or Living Room) light and device controls.
-- Tap anywhere that isn't a control to use the full dashboard; after 2 minutes without a touch it returns to the kitchen
-  view.
-- 9 PM to 6:30 AM it goes very dim, with no animations or chimes.
+- The display shows the normal Home page. After 2 minutes without a touch it goes back to Home and closes anything left
+  open, and it keeps the screen awake.
+- 9 PM to 6:30 AM it dims after a minute without a touch (a tap wakes it), with no animations or chimes.
+- The kitchen at-a-glance cards are on the Kitchen room page: Today, Who's home, Trash & recycling and Chores from the
+  Family Board, plus the Living Room controls. Room settings can hide them.
 
 ## Finance
 
