@@ -105,7 +105,7 @@ If you have a login but only visit sometimes:
 
 ## For the person who runs the house
 
-- Real-device checks, app setup steps (phone sensors, notifications, Pixel Watch tiles, Android Auto favorites) and
+- Real-device checks, app setup steps (phone sensors, notifications, Wear OS watch tiles, Android Auto favorites) and
   anything that needs a decision are kept in the backlog's to-do list in the Design Studio.
 - Ideas jotted with the bug button are filed into the backlog automatically.
 - The full feature list is on [Every feature](features.md).

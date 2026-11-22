@@ -6,8 +6,23 @@ title: Change log
 
 Everything shipped, newest first. Each build is a small batch of improvements. See [Every feature](features.md) for the full list.
 
+## Nov 22 2026
+
+- Checked-out items on top of the Backlog card; name-clash fixes (Google Tasks, work status, Workout); namecheck tool (BUILD .210).
+- Pet drawings: second colour and calico (BUILD .209).
+- Crypto 24/7 on Finance, About credit line (BUILD .208).
+- Document import, featured posts, start page and kid lock, favorites posters and play on TV, intercom transcripts, pet photo matching, invite with HTML email, hobbies import and suggestions, finance shares, legends check, live work status, type scale, docs tour (BUILD .207).
+- Jot import: featured post card filed.
+- Kids page, pantry use-by suggestions, Garage tool storage, map zoom check, Storage here count fix (BUILD .206).
+- Swipe between pages on phones, Planes map zoom fixes (tile seams, blank past zoom 16), trail entries in the map legend (BUILD .205).
+
 ## Nov 21 2026
 
+- Each TV gets its own TV-dashboard view (survives reloads), legend on the Map path (BUILD .204).
+- New build chime, wishlist links show at once with a Pending tag, legends on the Planes map and Bitcoin chart (BUILD .203).
+- Central data store phase 1 (merge, shrink guard, history + Undo, nightly export), System → Saved data card, ISS legend on Space and Home, banner bubble lag and Thanksgiving pennants fixed (BUILD .202).
+- Jot import: house decorations bug, ISS legend, legends rule, new-build chime, pending wishlist links, purchased-hardware ideas, Kids page, TV volume leveler filed (ideas f8db73da, 65b3caf4, 6136bbc8, fc97ca0c, 379e45b8, d75af3e8, 91845632); wishlist link saved.
+- Pets on the GUI instead of the house picture (BUILD .201).
 - Data retention: datacheck tool, person data synced per user, settings-sync migration, load-first guard; manual link opens the docs home (BUILD .200).
 - Jot import: kitchen counter Nest Hub filed.
 - Ignored-suggestions archive, medicine running low, leaving-the-house check, kitchen timers, out-the-door checklist (BUILD .199).

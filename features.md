@@ -28,6 +28,20 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 
 ---
 
+## Latest additions (builds .207–.210)
+
+- **Document import:** snap or paste a flyer, schedule, menu, receipt, label or link. Home Assistant's AI reads it and the app shows a preview of what it will create (calendar events, pantry or shopping items, packages, medicines, warranties, Storage items, featured posts). Nothing is added until you confirm. A daily kids' schedule becomes a Kid monitor card, and menu days marked as not kid-friendly get a "Pack a lunch" reminder. Needs an AI integration in Home Assistant.
+- **Featured posts:** add a post (link, text, picture) to the Family Board; Home shows it until the date you pick, then it moves to an archive.
+- **Start page and kid lock:** each screen can open on its own page and go back to it when idle. A kid's tablet can be locked to the Kids page, with a PIN to leave (stored only as a salted hash).
+- **Family favorites:** posters, Play on the TV (opens the right streaming app), and a From your favorites row on Now Playing; titles blocked for kids never show on kid screens.
+- **Intercom transcripts:** messages are written out (Home Assistant speech-to-text, or the browser) on the cards and in phone notifications.
+- **Pet photos:** match a photo to set a pet's coat colour and pattern, now including a second colour and calico; keep a small picture on the card.
+- **Invite someone:** admins can create an account and person after a preview, then copy a designed welcome email (or a plain one) to send themselves.
+- **Hobbies:** import a band set list (pasted text or a playlist link) and get quiet Home suggestions from your hobbies (dry spell for the garden, a good running window, practice coming up).
+- **Finance:** optional Shares and Cost basis columns give real position values, today's change in dollars and gain/loss; crypto keeps updating around the clock.
+- **Design Studio:** a live "Checked out now" strip on the Backlog card shows what is being worked on, with finished items below.
+- **Quality checks:** map zoom, legend, name-clash, data and performance checks run with the builds.
+
 ## Home: automatic cards
 
 Each one shows itself only while it matters, then hides again. A card stays **at least three minutes** so the screen
@@ -115,17 +129,17 @@ the feeder, internet services and more. Every new feature adds a fact when it ha
 - **An illustrated version of the house** that changes with the time of day and the weather; windows light up when
   that room's lights are on; the porch light and lamp post follow the front-yard lights.
 - **Banner windows map** (System page): choose which Home Assistant room or light each window, the porch light and the
-  lamp in the house picture stand for, with a Highlight button to see which is which. The lights, pets and decorations
+  lamp in the house picture stand for, with a Highlight button to see which is which. The lights and decorations
   follow it.
 - **The mailbox door** swings open with envelopes when mail is expected today (USPS Informed Delivery emails).
 - **Weather** sits in the banner on wide screens, and as a compact card on phones (current conditions, the next few
   hours, rain, wind, sunrise) that opens to the full forecast with a tap and opens by itself when rain is likely.
 - **Info chips** for lights on, the garage, indoor temperature and humidity, mail and packages, low batteries, open
   doors and windows, updates and pet problems. Tap one to act on it.
-- **Pet characters**: your pets as little flat-style characters. The dog sits by the door and the cat naps on the
-  porch (up on the rooftops on wide screens). Tails wag, cats breathe. When someone is at the front door, the dog jumps
-  up and wags hard. Late at night the cat curls up in the front window. **Tap a pet** to see its name in a little speech
-  bubble with a heart, and it hops. Holiday outfits: a Santa hat, witch hat, heart collar or party hat.
+- **Pets live on the app, not in the house picture**: the pet characters sit on card headers instead (the dog on the
+  Dog timeout card, a cat on the medicine and litter cards), walk along card edges, nap, peek and chase each other
+  across the cards. Tails wag, cats breathe. **Tap a pet** to see its name in a little speech bubble with a heart, and
+  it hops. Holiday outfits: a Santa hat, witch hat, heart collar or party hat. See [Pets](#pets).
 - **Holiday themes**: New Year (fireworks), Valentine's Day, St. Patrick's Day, Easter, Mother's and Father's Day, the
   first day of school, Memorial Day and the Fourth of July, Halloween, Thanksgiving, Hanukkah (a menorah), December and
   Christmas, snow days, game days and family birthdays (balloons and a banner) each tint the banner, **decorate the
@@ -175,12 +189,23 @@ opened it gets an **UPDATED** dot.
   soon" lists anything expiring within 3 days; **Used up** removes it and the cart button also adds it to the shopping
   list. **Storage places** you add and remove (Medicine included), each with a container type and able to sit inside
   another place (Where shows the nesting); On hand is grouped by place. Medicines in the Medicine place warn before they
-  expire. Reading the date from a photo and separate sell-by and use-by dates **(planned)**.
+  expire. **Suggested use-by dates**: an item with no date gets a suggestion from standard food storage times (USDA
+  FoodKeeper, about 200 foods, for pantry, fridge or freezer), marked as suggested, with one-tap **Accept**. Reading the
+  date from a photo and separate sell-by and use-by dates **(planned)**.
 - **Storage** ("where's it stored"): a house inventory. Places nest (Garage › Red toolbox › Drawer 3); items have a
   count, note and photo, and appliances a serial number, purchase date, warranty end and manual link. One search box
   finds anything ("where are the christmas lights") with its full path. **Printable QR labels** for every place
   (scanning one opens that place), **low counts** with Add to shopping list, and **Running low** and **Warranty ending**
   cards.
+- **Garage** (tool storage): toolboxes and tool chests with their drawers and the tools in each, one search box ("10 mm
+  socket"), a small photo per drawer and printable QR labels. It is built on the Storage page's places and items, so the
+  Storage search finds tools too, and the Garage room page shows a **Tool storage** card. Recognising tools from a
+  drawer photo **(planned)**.
+- **Kids**: one big-button page for a kid's tablet, made only from things that already exist: the time and a bedtime
+  countdown, **Coat check** from the weather, a **star chart** (each Family Board chore done earns a star), the **Out
+  the door** checklist, shows and channels from Family favorites (anything blocked for kids never shows), the pets, a
+  plane overhead and the Space Station, and big music buttons. No settings and no editing. A PIN to leave and a story
+  button **(planned)**.
 - **Recipes**: the family recipe book from Mealie. Paste a link to save any recipe. **Cook mode** shows one step at a
   time in big text that shrinks to fit, with the **amounts inline** ("whisk the **2 cups** flour") and a row of the
   step's ingredients with a little picture for each. Sending a recipe to the shopping list first asks **"Use what's in
@@ -201,14 +226,16 @@ opened it gets an **UPDATED** dot.
   Pick up dinner?, gas price drops and car cards.
 - **Planes**: a live map of aircraft around you (or around home), flight details and photos (a labelled stock photo of
   the type when the aircraft itself has none), the **highest and fastest planes in the world**, emergencies (7700)
-  worldwide, arrivals boards with airport tabs, map buttons that scroll, and an INFO button that hides the legend.
-- **Map**: everyone's location with a path of where they've been today, commute places and a You marker.
+  worldwide, arrivals boards with airport tabs, map buttons that scroll, and a legend for every colour and line
+  (altitude colours, military aircraft, trails) that the INFO button hides.
+- **Map**: everyone's location with a path of where they've been today (with a legend), commute places and a You marker.
 - **Space**: the Space Station's passes for the next 3 days (visible ones highlighted), the sky right now with the
-  brightest satellites, a sky dial that turns with the phone, and upcoming rocket launches.
+  brightest satellites, a sky dial that turns with the phone (with a legend, also on the Home card), and upcoming rocket
+  launches.
 - **Multi-view**: up to four pages on one big screen.
 - **Display**: a full-screen rotating dashboard for TVs and wall screens (see Casting).
 - **Finance**: a watchlist from a Google Sheet with day moves and sparklines, market indexes, and a **Bitcoin
-  long-term power law** chart that zooms (preset windows or drag across it) and remembers the zoom.
+  long-term power law** chart (with a legend) that zooms (preset windows or drag across it) and remembers the zoom.
 - **Network & Storage**: devices on the Wi-Fi (busiest first, weak signal in red), new-device alerts with a **Follow up
   later** list, internet speed history, router and NAS health, guest Wi-Fi, and an **Internet services** card.
 - **Family Board**: made for the kitchen with bigger text: the clock and weather, who's home, trash and recycling days,
@@ -233,7 +260,8 @@ opened it gets an **UPDATED** dot.
   now, plus **Make your own** templates (see [Automations](automations.md)).
 - **System**: Home Assistant health, updates, backups, low batteries, **Home settings** (the household basics in one
   place, each linking to where it's edited), **Hidden cards** (Show again), **Banner windows**, the **Device setup**
-  checklist, the **User manual** link (kept for every user, remembered on each screen), and Display size on phones.
+  checklist, the **User manual** link (kept for every user, remembered on each screen), **Saved data** (every saved app
+  setting with its size, entries, last save, who saved it and the version, plus Undo), and Display size on phones.
 - **About**: version and build, what's new, every feature, data-source credits, the user manual and **Run the tour
   again**. It is always the last page in the menu, and an **i** button in the top bar opens it from anywhere. When the
   top-bar buttons don't fit on a phone, they scroll with a soft fade at the end.
@@ -295,8 +323,9 @@ Made as a **trailing record of what was given**, with quick buttons.
 
 ## Pets
 
-- **Pet characters** (cat or dog, coat colour and pattern) on the Home banner, the Dog timeout and feeder cards, and
-  in a corner of Display mode (one at a time, swapping every few minutes). Names come from the Pets page and are used
+- **Pet characters** (cat or dog, coat colour and pattern; more than one of each) that live on the cards rather than in
+  the house picture: on card headers (the dog on Dog timeout and feeder, a cat on the medicine and litter cards), on the
+  Kids page, and in a corner of Display mode (one at a time, swapping every few minutes). Names come from the Pets page and are used
   on the feeder, litter box and timeout cards.
 - **Pets that play around the app**: now and then the dog trots along a card, the cat naps on one, they chase each
   other, and they react to taps. Mostly on the Pets page (every 25 to 60 seconds there, mostly chases), only rarely
@@ -363,7 +392,8 @@ Made as a **trailing record of what was given**, with quick buttons.
   a confirm step). Nothing physical happens on one tap; it always asks through a notification first.
 - **Casting and Display**: cast to any TV or Nest display (a short rising chime confirms it loaded). Choose **rotating**
   or **one screen**, how long each screen shows, which screens rotate (Home, Radar, Cameras) and **night dimming**, and
-  give **each TV its own setup**. Home's automatic cards show as a strip on the radar and camera screens, and a new one
+  give **each TV its own setup**. Casting creates (or refreshes) a view for that TV in Home Assistant's TV dashboard, so
+  the TV knows which one it is even after a reload. Home's automatic cards show as a strip on the radar and camera screens, and a new one
   jumps the rotation back to Home. When the radar can't load on a TV, the National Weather Service loop is shown.
 - **Device setup checklist** (System page and [docs](device-setup.md)): TVs and displays, phones, car and watch, with
   ticks kept per device.
@@ -406,8 +436,19 @@ Made as a **trailing record of what was given**, with quick buttons.
   nothing jumps sideways.
 - **One font** throughout on one size scale; light and dark themes (dark-enough colours in light mode); adjustable
   display size.
+- **Swipe between pages** on phones: a clear sideways swipe on empty page or a card body moves to the next or previous
+  page in menu order, with a short slide and a page-name hint. Card swipes, chip and tab rows, maps, the radar, charts
+  and sliders keep their own gestures. Switch in Alerts & notifications.
+- **Legends everywhere**: any card, map or chart whose colours, line styles or symbols carry meaning has a legend for
+  every one of them (the Space sky dial, the Planes map, the Map path, the Bitcoin chart; the radar has its colour bar).
 - **Self-updating**: every screen reloads itself when a new version is deployed, but waits while someone is typing.
-  Lists never go blank on a failed refresh, and shared settings can't be wiped by an update.
+  The first time a screen loads a new build it plays a short, soft **chime** with the "updated" message (once per build
+  per screen, never in quiet hours or on Calm/Off, with a switch in Settings), so you hear that the wall screens updated.
+- **One safe data store**: every saved setting goes through one layer that reads the latest copy and merges it, so two
+  screens saving at once never wipe each other out. A save that would suddenly shrink a list asks first (or is refused),
+  the last 20 versions are kept with Undo on System → Saved data, and a dated copy is exported every night and kept 30
+  days. Lists never go blank on a failed refresh, and shared settings can't be wiped by an update. See
+  [How it all connects](how-it-connects.md).
 - **Build number and lines of code** in the title bar; "Family OS" subtitle.
 - **Home intercom** (see Family tools).
 
@@ -444,7 +485,7 @@ Free services: Open-Meteo (weather and air quality), the National Weather Servic
 ADS-B feeds (planes and 7700s), OpenSky (highest and fastest plane), Planespotters and Wikipedia (aircraft photos),
 CelesTrak (satellites), Launch Library 2 (rocket launches), ESPN and MLB's stats feed (scores and box scores), Google News
 (breaking news), Yahoo Finance and blockchain.com (markets and Bitcoin), statuspage feeds (internet services), Open Food
-Facts (barcodes), openFDA and DailyMed (drug labels), NHTSA (VINs and recalls), OpenStreetMap and Leaflet (maps),
+Facts (barcodes), USDA FoodKeeper storage times (built in, for suggested use-by dates), openFDA and DailyMed (drug labels), NHTSA (VINs and recalls), OpenStreetMap and Leaflet (maps),
 zippopotam.us (zip codes).
 
 Details for each, with setup and limits: [Data sources](integrations.md).
@@ -458,4 +499,5 @@ detection (people, packages, the mail truck, garage state); doorbell two-way tal
 portfolio numbers; nursery temperature and camera; new design concepts; live heart rate and treadmill data on the Workout
 page; energy and bills; laundry; pool; a smoker; a printer; a UPS battery backup; Kroger shopping sync; Google Find My
 Device; YouTube Music; more pet reactions and pet characters from a photo; medicine dose by weight and a sick-day card;
-a custom Android Auto app; more car items; and the docs telling the story of how everything connects.
+a custom Android Auto app; more car items; a PIN to leave the Kids page and a story button; recognising tools from a
+drawer photo; a central data store phase 2 (a database add-on).

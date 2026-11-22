@@ -5,7 +5,7 @@ title: Nashboard
 
 <!-- stats:start -->
 <style>.nbs{position:relative;border-radius:18px;overflow:hidden;margin:1.2rem 0 1.6rem;padding:calc(min(100%,1600px) * .2) 18px 18px;padding-top:20%;background:#0b0e14 url(images/hero-night.jpg) center top/100% auto no-repeat;box-shadow:0 10px 30px rgba(0,0,0,.25)}.nbs::before{content:"";position:absolute;inset:0;background:none}.nbs-g{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.nbs-t{padding:14px 16px;border-radius:14px;background:rgba(20,22,28,.42);border:1px solid rgba(255,255,255,.22);-webkit-backdrop-filter:blur(14px) saturate(140%);backdrop-filter:blur(14px) saturate(140%);color:#fff}.nbs-t b{display:block;font-size:1.5rem;line-height:1.2;font-weight:700;color:#fff}.nbs-t span{font-size:.82rem;color:rgba(255,255,255,.85)}@media (max-width:640px){.nbs{padding-top:132px!important;background-size:auto 140px!important;background-position:left top!important;padding-left:12px;padding-right:12px}.nbs-g{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.nbs-t{padding:10px 12px}.nbs-t b{font-size:1.2rem}}.nbs-u{position:relative;margin:12px 2px 0;font-size:.82rem;color:rgba(255,255,255,.9)}.nbs-u a{color:#ffd28a}</style>
-<div class="nbs" role="img" aria-label="Nashboard: the illustrated house at night, with project stats"><div class="nbs-g"><div class="nbs-t"><b>15,629</b><span>Lines of custom code</span></div><div class="nbs-t"><b>$98k–$195k</b><span>Market value · about 1,302 developer hours</span></div><div class="nbs-t"><b>35</b><span>Pages</span></div><div class="nbs-t"><b>200</b><span>Builds shipped</span></div><div class="nbs-t"><b>69</b><span>Open backlog items</span></div><div class="nbs-t"><b>3</b><span>Open bugs</span></div><div class="nbs-t"><b>213</b><span>Shipped this week</span></div></div><p class="nbs-u">Updated Nov 21 2026 · <a href="changelog.html">Change log</a></p></div>
+<div class="nbs" role="img" aria-label="Nashboard: the illustrated house at night, with project stats"><div class="nbs-g"><div class="nbs-t"><b>17,863</b><span>Lines of custom code</span></div><div class="nbs-t"><b>$112k–$223k</b><span>Market value · about 1,489 developer hours</span></div><div class="nbs-t"><b>37</b><span>Pages</span></div><div class="nbs-t"><b>210</b><span>Builds shipped</span></div><div class="nbs-t"><b>55</b><span>Open backlog items</span></div><div class="nbs-t"><b>2</b><span>Open bugs</span></div><div class="nbs-t"><b>226</b><span>Shipped this week</span></div></div><p class="nbs-u">Updated Nov 22 2026 · <a href="changelog.html">Change log</a></p></div>
 <!-- stats:end -->
 
 **Version 2.0** (November 2026): medicine & fever tracking, the pantry, pet characters, holiday themes, birthdays,
@@ -27,8 +27,11 @@ trash night) and leave on their own when it no longer does.
 
 ## Contents
 
+- [Guided tour](tour.md): a step-by-step visual walkthrough of every page, one screenshot each
 - [Living with Nashboard](living-with-nashboard.md): the everyday habits that get the most out of it, for everyone in
   the family (no smart-home experience needed)
+- [How it all connects](how-it-connects.md): the story from devices and data sources through Home Assistant to the
+  cards, phone alerts and screens, with worked examples
 - [Every feature](features.md): the complete list, including every automatic Home card
 - [Change log](changelog.md): everything shipped, newest first
 - [Home page](home.md): the banner, every Home card, and the pop-up cards
@@ -76,6 +79,8 @@ trash night) and leave on their own when it no longer does.
 | [Recipes](pages.md#recipes) | Recipe book and meal plan from Mealie |
 | [Pantry & Fridge](pages.md#pantry--fridge) | What's on hand and what expires soon |
 | [Storage](pages.md#storage) | Where things are kept, with QR labels and warranties |
+| [Garage](pages.md#garage) | Tool storage: toolboxes, drawers and every tool, searchable |
+| [Kids](pages.md#kids) | Big-button page for a kid's tablet: bedtime, star chart, coat check, shows |
 | [Weather](pages.md#weather) | Forecast, radar, sun and moon |
 | [Air & Allergy](pages.md#air--allergy) | Air quality, UV, pollen, "open the windows?" |
 | [Sports](pages.md#sports) | Your teams' games and live scores |

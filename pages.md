@@ -12,7 +12,7 @@ example Cameras needs at least one camera.
 
 They're listed here in roughly the same order as the menu, so you can scroll through the whole app or jump to one:
 
-[Home](#home) · [Rooms](#rooms) · [Cameras](#cameras) · [Calendar](#calendar) · [Activity](#activity) · [Now Playing](#now-playing) · [Shopping](#shopping) · [Packages](#packages) · [Recipes](#recipes) · [Pantry & Fridge](#pantry--fridge) · [Storage](#storage) · [Weather](#weather) · [Air & Allergy](#air--allergy) · [Sports](#sports) · [Commute](#commute) · [Planes](#planes) · [Map](#map) · [Space](#space) · [Multi-view](#multi-view) · [Display](#display) · [Kitchen tablet](#kitchen-tablet) · [Finance](#finance) · [Room dashboards](#room-dashboards) · [Design Studio](#design-studio) · [Network & Storage](#network--storage) · [Family Board](#family-board) · [Guest](#guest) · [Maintenance](#maintenance) · [Pets](#pets) · [Hobbies](#hobbies) · [Workout](#workout) · [Automations](#automations) · [System](#system) · [About](#about) · [Labs](#labs)
+[Home](#home) · [Rooms](#rooms) · [Cameras](#cameras) · [Calendar](#calendar) · [Activity](#activity) · [Now Playing](#now-playing) · [Shopping](#shopping) · [Packages](#packages) · [Recipes](#recipes) · [Pantry & Fridge](#pantry--fridge) · [Storage](#storage) · [Garage](#garage) · [Kids](#kids) · [Weather](#weather) · [Air & Allergy](#air--allergy) · [Sports](#sports) · [Commute](#commute) · [Planes](#planes) · [Map](#map) · [Space](#space) · [Multi-view](#multi-view) · [Display](#display) · [Kitchen tablet](#kitchen-tablet) · [Finance](#finance) · [Room dashboards](#room-dashboards) · [Design Studio](#design-studio) · [Network & Storage](#network--storage) · [Family Board](#family-board) · [Guest](#guest) · [Maintenance](#maintenance) · [Pets](#pets) · [Hobbies](#hobbies) · [Workout](#workout) · [Automations](#automations) · [System](#system) · [About](#about) · [Labs](#labs)
 
 Also: [Things every page has](#things-every-page-has) (the card ⋯ menu, tap-to-collapse, Right now, theme colours,
 left- or right-handed phones).
@@ -37,6 +37,12 @@ left- or right-handed phones).
 - **Left- or right-handed** (Display size → Hand, per person): on phones the navigation, room card buttons, page header
   buttons, add and mic buttons, Home card buttons and sheet buttons move to your thumb's side.
 - **Voice** on every quick-add list, and no character limits on text boxes.
+- **Swipe between pages** on phones: a clear sideways swipe on empty page or a card body goes to the next or previous
+  page in menu order, with a page-name hint (maps, charts, chip rows and card swipes keep their own gestures). Turn it
+  off in Alerts & notifications.
+- **Legends**: any map, chart or dial whose colours, lines or symbols mean something has a legend for each one.
+- **A soft chime** the first time a screen loads a new build (once per build, never in quiet hours or on Calm/Off; a
+  switch in Settings).
 
 ## Home
 
@@ -132,6 +138,8 @@ button also adds it to the shopping list. Home and the Kitchen room show a card 
   grouped by place.
 - **Medicine expiring**: medicines in the Medicine place show a card (Family Board, Pantry, Home copy) when they expire
   within a month, and the Medicine & fever card warns before you log a dose of an expired one.
+- **Suggested use-by dates**: items with no date get a suggestion from standard food storage times (USDA FoodKeeper,
+  about 200 foods, by pantry, fridge or freezer), marked as suggested, with one-tap **Accept**.
 
 ## Storage
 
@@ -145,6 +153,28 @@ button also adds it to the shopping list. Home and the Kitchen room show a card 
   dashboard.
 - **Low counts**: set a low number on an item; when it's at or below, **Running low** shows (with Add to shopping list).
 - **Warranty ending**: a card when an appliance's warranty ends within 30 days, with its serial, place and manual.
+
+## Garage
+
+Tool storage, built on the Storage page's places and items (so the Storage search finds tools too).
+
+- **Toolboxes and tool chests**, each with its **drawers**, and the **tools** in each drawer.
+- **One search box** for tools ("10 mm socket", "torque wrench") that shows the toolbox and drawer.
+- A small **photo per drawer**, and printable **QR labels** like the Storage page's.
+- A **Tool storage** card on the Garage room page.
+- Recognising tools from a drawer photo **(planned)**.
+
+## Kids
+
+One big-button page for a kid's tablet, made only from things that already exist, with no settings and no editing:
+
+- **Hello**: the time and a countdown to bedtime.
+- **Coat check**: what to wear, from the weather.
+- **Star chart**: each Family Board chore done earns a star.
+- **Out the door**: the shared morning checklist.
+- **Shows & channels** from Family favorites (anything on the "blocked for kids" list never shows).
+- **Pets**, a **plane overhead** and the **Space Station** flyover, and big **music** buttons.
+- A PIN to leave the page and a story button **(planned)**.
 
 ## Weather
 
@@ -236,7 +266,8 @@ A full-screen mode for TVs and wall displays: clock, weather, cameras, and autom
 games, overhead aircraft, Space Station, packages, now playing, breaking news). Google Tasks due today or overdue
 show as a **Tasks** card. It can rotate between views or
 stay on one. Casting to a TV opens the same Display, and **each TV can have its own setup** (rotating or still, seconds
-per screen, which screens, night dimming). Home's cards show as a strip on the radar and camera screens; a pet peeks in
+per screen, which screens, night dimming). Casting creates or refreshes a view for that TV in Home Assistant's TV
+dashboard, so the TV still knows which one it is after a reload. Home's cards show as a strip on the radar and camera screens; a pet peeks in
 from a corner now and then.
 
 ## Kitchen tablet
@@ -366,7 +397,9 @@ overdue, and a "Maintenance due" pop-up on Home. Car due dates show here too.
 
 ![Pets page](images/pets.jpg)
 
-**Pet characters** (cat or dog, coat and pattern, and a name) that live on the Home banner, the dog timeout (30 min,
+**Pet characters** (cat or dog, coat and pattern, and a name) that live on the cards rather than in the house picture:
+they sit on card headers (the dog on Dog timeout, a cat on the medicine and litter cards), walk card edges, nap, peek
+and chase. Also here: the dog timeout (30 min,
 1 h, 2 h) and feeder times, and pet devices such as a self-cleaning litter box: status, drawer level, litter level,
 faults and history.
 
@@ -412,6 +445,9 @@ and settings such as Menu pages, alerts and appearance.
   it).
 - **Low batteries** with each device's room, **Hidden cards** with Show again, the **Device setup** checklist (ticks per
   device), the **User manual** link (kept for every user), and Display size on phones.
+- **Saved data**: every saved app setting with its size, entries, last save, who saved it and its version, with
+  **Undo** (the last 20 versions are kept, and a dated copy is exported every night). See
+  [How it all connects](how-it-connects.md).
 
 ## About
 
