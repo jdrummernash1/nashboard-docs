@@ -35,18 +35,18 @@ connection status.
 |---|---|
 | **Weather** | Always, unless the banner overlay is showing it; phones also get a card for the phone's own location |
 | **Calendar / Up next** | Upcoming events, sized to fit names |
-| **Rooms** | Every room with quick controls; tap a room name for its room dashboard, or "Rooms" for the Rooms page |
+| **Rooms** | The six most-used rooms first (Show more for the rest) with quick controls; tap a room name for its room dashboard |
 | **Cameras** | Camera snapshots |
 | **Overhead** | A plane within 5 nm: photo, airline, route, altitude, speed and live distance. Stays at least 3 minutes and follows the plane as it leaves |
 | **Space Station** | From 10 minutes before the ISS rises until it sets: a live sky dial with the pass track and where to look |
 | **Games** | Your teams' games from a day before to a few hours after; live games show a pulsing dot and scores flash when they change |
-| **Commute** | Each family trip's live drive time, delay and when to leave |
+| **Up next tasks** | Google Tasks due today are added to the Up next card |
 | **Gas prices** | Cheapest nearby premium and diesel; collapsible |
 | **Claude usage** | AI plan usage for the house's Claude account; collapsible |
 | **Air quality** | Whenever outdoor air quality is Moderate or worse (AQI 51+): the same card as the Air page, with the next 12 hours and today's pollen when available. Stays at least 3 minutes |
 | **Breaking news** | Recent big headlines, local first |
 
-Swipe a card sideways to hide it for the rest of the day.
+Commute trips live on the Commute page; Home shows Leave soon and On the way home only when they matter. Every card has a ⋯ menu in its header (Full window, Collapse, Hide for today, Hide this card), and tapping a card's top bar collapses or expands it.
 
 ## Pop-up cards
 
@@ -76,7 +76,7 @@ leaves. Several have a one-tap action button.
 | Rocket launch | From 30 minutes before liftoff to 10 minutes after | |
 | UV high | Around midday when the UV index is 6 or more | |
 | Severe weather | A National Weather Service warning is active where you are | |
-| Leave soon | A calendar event with a location starts within the hour | Navigate |
+| Leave soon | A calendar event with a location starts within the hour, or a commute trip says it's time to go | Navigate |
 | Nursery asleep | The nursery sound machine is playing at night (chimes go quiet) | |
 | New on Wi-Fi | A device this screen hasn't seen before joins the network | Known |
 | House health | No recent backup, or a storage volume needs attention (admins) | |
@@ -89,8 +89,29 @@ leaves. Several have a one-tap action button.
 | Intercom | Someone recorded a message for every screen in the last 10 minutes | Play |
 | On the way home | Someone's commute home has started (arrival time, slower than usual) | |
 | Claude | Claude Code usage near the limit, or a free usage reset waiting | |
+| What's new | After an update, listing every change since this screen last looked | Got it |
+| Good morning | 6 to 9 AM: weather, the first event, when to leave and the drive time, trash pickup, once-a-day medicines not given yet, the next birthday | |
+| Goodnight check | 9 PM to 1 AM when lights are on, a door is unlocked, the garage is open or a TV is on | All off, Lock, Close (confirmed), Turn off |
+| Doorbell | Someone rings or a person is at the front door (a live snapshot) | Ignore |
+| Pet's medicine | A pet's medicine is due | Log now |
+| Overdue tasks | A Google Task is overdue | |
+| Pick up dinner? | Someone heads home between 4 and 8 PM | Call a carry-out place, Copy the order |
+| Gas price drop | The cheapest nearby station for your fuel is at or below your price | |
+| Car due soon | A car's registration, inspection or oil change is due within 30 days | |
+| New car recall | The weekly recall check finds a new one | |
+| Low batteries | Any device's battery is low (with its room) | |
+| Medicine expiring | A medicine in the Pantry's Medicine place expires within a month | |
+| Running low | A stored item is at or below its low count | Add to shopping list |
+| Warranty ending | An appliance warranty ends within 30 days | |
+| Holiday tradition | The week of a holiday you've saved a tradition for | Directions |
+| The week ahead | Sunday 5 to 9 PM: events, trash days, birthdays, maintenance, weather trend | |
+| Something to do today | Weekend mornings 8 to 10 AM: a kids' idea that fits the weather | |
+| Movie night | Friday 5 to 9 PM: a pick from Family favorites | |
+| For sale | Something has been listed for sale for a month | Sold |
+| Hobbies | One of your hobbies has something coming up | |
+| Package left outside | A delivery sits out with nobody home, or after dark | |
 
-Add `?popdemo=1` to the dashboard address to preview every pop-up card with sample text.
+Every one of these also lives on its own page's **Right now** card (see [Every feature](features.md#home-automatic-cards) for which page owns which). Add `?popdemo=1` to the dashboard address to preview every pop-up card with sample text.
 
 ## Layout behaviour
 

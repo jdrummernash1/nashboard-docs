@@ -13,6 +13,11 @@ title: Settings and personalisation
 - **Alerts and sounds**: overhead plane alerts, Space Station alerts, emergency (7700) alerts, connection-lost
   alerts, the doorbell/person chime and the garage chime. With **phone alerts** on, Home Assistant also notifies phones
   (screen off too) about low planes overhead, a Space Station pass 10 minutes before, and 7700 emergencies within 200 nm.
+- **Menu order**: My order, or Most used (visit counts follow you; Home and the tab bar stay put).
+- **Hidden cards**: cards you hid with the ⋯ menu's Hide this card (bring them back from Customize menu → Hidden cards).
+- **Theme colour**: one of seven accents (Display size).
+- **Hand**: left- or right-handed phone layout (Display size → Hand).
+- **Hobbies** you picked on the Hobbies page.
 - **Expanded cards**: whether collapsible cards (gas prices, AI usage) start open.
 
 These are stored in Home Assistant's own per-user storage, so they move with your login.
@@ -23,7 +28,13 @@ These are stored in Home Assistant's own per-user storage, so they move with you
 - Guest page information
 - Family Board trash and recycling schedule
 - Maintenance jobs and Chores (Home Assistant to-do lists)
-- Room pictures (when shared pictures are set up)
+- Room pictures (when shared pictures are set up), room icons and Room settings (layout, hidden sections, added cards)
+- Cards an admin turned off for everyone
+- The Storage inventory, Pantry places, cars, birthdays added by hand, holiday traditions, carry-out orders, family
+  favorites, for-sale items, kids' ages, hobby cards and the workout log
+- Cast setups per TV and the banner windows map
+- The background phone-alert switches kept in Home Assistant (plane and space alerts, gas price alert with its fuel and
+  price): one setting for the whole house. See [Automations](automations.md).
 
 Only Home Assistant admins can change the shared Guest information and pickup schedule.
 
@@ -34,6 +45,7 @@ Only Home Assistant admins can change the shared Guest information and pickup sc
 - Planes map style, radius, flight paths and centring
 - The phone compass on or off
 - Cards swiped away for the day
+- The Kitchen display preset (on or off) and the last page the Browser showed
 
 ## Design Studio (backlog and ideas)
 

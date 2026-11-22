@@ -8,13 +8,18 @@ title: How it works and installing
 
 ## The pieces
 
-- **`www/dashboard.html`**: the whole dashboard in one file (HTML, CSS and JavaScript, no build step). It lives in
-  Home Assistant's `www` folder and is served at `/local/dashboard.html`.
+- **`www/dashboard.html`**: the whole dashboard in one file (HTML, CSS and JavaScript). It lives in Home Assistant's
+  `www` folder and is served at `/local/dashboard.html`. In the repo the code is kept in numbered pieces
+  (`src/dashboard/`) that a small build script joins back into the one file before each deploy.
 - **`www/dash-embed.js`**: a small Lovelace card that shows the dashboard full-size inside a Home Assistant
   dashboard and hands it the signed-in user's access token. When the dashboard is opened from the Google Cast app
   (where Home Assistant forbids framing), the card loads the page inline instead.
 - **`configuration.yaml`** additions: REST sensors (worldwide emergencies, highest plane), template sensors
-  (airport movements, mail), SNMP sensors and utility meters for the router, and the router device tracker.
+  (airport movements, mail), SNMP sensors and utility meters for the router, the router device tracker, and the
+  helpers (switches, numbers, text boxes, a timer and a date) that let the dashboard hand work to background
+  automations.
+- **`automations.yaml`** and **`scripts.yaml`**: the phone alerts, reminders and confirm-first car actions described on
+  [Automations](automations.md).
 
 ## Installing
 
