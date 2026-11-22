@@ -8,6 +8,11 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 
 ## Nov 22 2026
 
+- Flight board styles moved to their own slice, no visual change (BUILD .219).
+- Settings page, Your house editor, work-started alerts (BUILD .218).
+- Claude cost totals and Ask Claude on the Home Claude card (BUILD .217).
+- Collapsed cards remembered per person, collapse on pet and Pi cards, Updated dots on page icons (BUILD .216).
+- Kids bedtime story, gift masking in the email panel, styles split (BUILD .215).
 - Shared storage places, band members, Garage load fix; docs: how it's built and dark mode (BUILD .214).
 - Looks (Paper, Glass, Bold), pantry dates and missing ingredients, packages from email with hidden gifts, Storage NFC tags (BUILD .213).
 - Band name on Hobbies, theme button says what Auto follows (BUILD .212).
