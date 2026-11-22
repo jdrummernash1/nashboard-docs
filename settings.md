@@ -17,6 +17,7 @@ title: Settings and personalisation
 - **Hidden cards**: cards you hid with the ⋯ menu's Hide this card (bring them back from Customize menu → Hidden cards).
 - **Theme colour**: one of seven accents (Display size).
 - **Hand**: left- or right-handed phone layout (Display size → Hand).
+- **User manual link**: kept for every user, remembered on each screen.
 - **Hobbies** you picked on the Hobbies page.
 - **Expanded cards**: whether collapsible cards (gas prices, AI usage) start open.
 
@@ -33,6 +34,7 @@ These are stored in Home Assistant's own per-user storage, so they move with you
 - The Storage inventory, Pantry places, cars, birthdays added by hand, holiday traditions, carry-out orders, family
   favorites, for-sale items, kids' ages, hobby cards and the workout log
 - Cast setups per TV and the banner windows map
+- The Out the door checklist and its ticks, and the three kitchen timers and their names
 - The background phone-alert switches kept in Home Assistant (plane and space alerts, gas price alert with its fuel and
   price): one setting for the whole house. See [Automations](automations.md).
 
@@ -52,7 +54,8 @@ Only Home Assistant admins can change the shared Guest information and pickup sc
 System → **Design Studio** (also in the More menu) opens the project backlog inside the dashboard. Anyone can
 **jot down an idea** there, by typing or with the microphone button; ideas go into a shared Home Assistant to-do list and are filed into the backlog at the
 next working session, after which they tick off automatically. The backlog itself is searchable, with sections that
-open and close and a "Show done" switch.
+open and close and a "Show done" switch that opens the Done list and scrolls to it. Ignored Claude suggestions are archived in a collapsed
+list with Bring back.
 
 ## Phone compass
 

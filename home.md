@@ -23,6 +23,8 @@ Home is the page most screens sit on. It has a banner at the top and a grid of c
   screens get a regular weather card instead.
 - **Status chips**: lights on, garage, indoor temperature and humidity, mail and packages, low batteries,
   open doors and windows, updates available, pet problems. Tap a chip to act on it or open its details.
+- **Tap the banner** for a bubble that explains what drives it: the sky (holiday, weather effect, sunrise and sunset) and
+  the house (lights on, packages delivered today, holiday decorations), with links.
 - **Tidbit chip**: one fun fact per page load, rotating through topics (lines of code in the dashboard, planes
   overhead, Space Station passes, packages this year, devices reporting, daylight and more).
 
@@ -109,6 +111,10 @@ leaves. Several have a one-tap action button.
 | Movie night | Friday 5 to 9 PM: a pick from Family favorites | |
 | For sale | Something has been listed for sale for a month | Sold |
 | Hobbies | One of your hobbies has something coming up | |
+| Medicine running low | A medicine expires within two weeks, or its quantity is 1 or low | Add to list |
+| Leaving the house | Everyone has left (for 45 minutes after) and lights are on, a lock is unlocked, the garage is open or a door or window is open | All off (locks and garage take two taps) |
+| Kitchen timer | A kitchen timer is running (counts down) | |
+| Out the door | Weekday mornings 6:00 to 9:30, until everything is ticked or everyone has left | Tick items |
 | Package left outside | A delivery sits out with nobody home, or after dark | |
 
 Every one of these also lives on its own page's **Right now** card (see [Every feature](features.md#home-automatic-cards) for which page owns which). Add `?popdemo=1` to the dashboard address to preview every pop-up card with sample text.

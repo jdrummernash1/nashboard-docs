@@ -11,7 +11,8 @@ What each kind of device needs for Nashboard to work fully. The same checklist i
 
 ## TV and wall displays
 
-- Cast the TV view with the **Cast** button in the header. The TV loads Display mode by itself.
+- Cast the TV view with the **Cast** button in the header. The TV loads Display mode by itself. Google Tasks due today or
+  overdue show there as a Tasks card.
 - In the Cast menu choose **Rotate** or **One screen**, the seconds per screen, and which screens rotate (Cast settings).
 - Keep the screen awake: turn off the display's screen timeout or screensaver, and keep the casting device powered.
 - Check auto refresh: the data should update on its own. After a dashboard update, reload the display once.
@@ -25,7 +26,8 @@ What each kind of device needs for Nashboard to work fully. The same checklist i
   remembers), or open **Cast → This device → Kitchen tablet**. It shows Home and returns to Home after 2 minutes without a touch.
 - Keep it plugged in, turn off the screen timeout, and allow the app to keep the screen on.
 - Set a comfortable day brightness. From 9 PM to 6:30 AM it dims itself after a minute without a touch; a tap wakes it.
-- Open **Rooms → Kitchen** to check the at-a-glance cards (Today, Who's home, Trash, Chores, the Living Room controls).
+- Open **Rooms → Kitchen** to check the at-a-glance cards (Today, Who's home, Trash, Chores, the Living Room controls), the
+  **Timers** (a chime plays when one finishes, so keep the volume up; it stays quiet at night) and **Out the door**.
 
 ## Phones (Android and iPhone)
 
@@ -37,6 +39,7 @@ What each kind of device needs for Nashboard to work fully. The same checklist i
   on Android.
 - Allow every notification channel. On Android: Apps → Home Assistant → Notifications, then allow **Medicine,
   Intercom, Gas prices, Home, Family, Commute, Pets, Garage, Planes** and **Claude**. On iPhone one switch covers them all.
+- Allow the **Home** channel so the leaving-home alert arrives (lights on, a lock unlocked or the garage open, two minutes after the last person leaves).
 - Optional: let time-sensitive alerts through Do Not Disturb or a Focus so medicine, garage and commute alerts arrive at night.
 - In Nashboard, Settings → Alerts: switch on phone alerts for planes, Space Station passes and emergencies.
 - Optional extras: Quick Settings tiles and a home-screen widget for the common actions.

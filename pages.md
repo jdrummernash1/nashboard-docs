@@ -53,7 +53,9 @@ described on the [Home page](home.md) guide and in the [Every feature](features.
 Every Home Assistant area as a card (including new rooms that have no devices yet): lights, switches, fans, media,
 climate and sensors, with chips to filter the list. Tap a room's name to open its [room dashboard](#room-dashboards).
 Rooms can have a picture as their background and their own icon. Rooms with a routine (such as a bedtime routine) show
-a button for it. **Right now** shows low batteries (with each device's room), lights left on late and the garage.
+a button for it. **Right now** shows low batteries (with each device's room), lights left on late, the garage and the **Leaving the
+house** check: when everyone has left (for 45 minutes after), a card lists lights left on, unlocked locks, an open
+garage and open doors or windows, with **All off** (locks and the garage take two taps).
 
 ## Cameras
 
@@ -231,7 +233,8 @@ Show up to four pages at once on a large screen, each in its own tile.
 ![Display page](images/display.jpg)
 
 A full-screen mode for TVs and wall displays: clock, weather, cameras, and automatic cards (up next, commute,
-games, overhead aircraft, Space Station, packages, now playing, breaking news). It can rotate between views or
+games, overhead aircraft, Space Station, packages, now playing, breaking news). Google Tasks due today or overdue
+show as a **Tasks** card. It can rotate between views or
 stay on one. Casting to a TV opens the same Display, and **each TV can have its own setup** (rotating or still, seconds
 per screen, which screens, night dimming). Home's cards show as a strip on the radar and camera screens; a pet peeks in
 from a corner now and then.
@@ -246,6 +249,11 @@ For a wall display in the kitchen, turned on per device: **Cast → This device 
 - 9 PM to 6:30 AM it dims after a minute without a touch (a tap wakes it), with no animations or chimes.
 - The kitchen at-a-glance cards are on the Kitchen room page: Today, Who's home, Trash & recycling and Chores from the
   Family Board, plus the Living Room controls. Room settings can hide them.
+- The Kitchen room page also has **Timers** (three named timers; 5, 10, 15, 30 and 60 minute buttons, a name and minutes
+  form, pause, resume and cancel; a countdown card on Home while one runs, and a chime and message on open screens when
+  one finishes, quiet at night on the kitchen tablet) and **Out the door**, an editable checklist (Backpack, Snacks, Water
+  bottle, Lunch, Meds) shared between screens and reset each morning, with a copy on Home on weekday mornings until
+  everything is ticked or everyone has left.
 
 ## Finance
 
@@ -279,7 +287,8 @@ lights, media, climate, doors, switches and scenes, cameras and sensors. Rooms c
 - **Room icon**: a searchable grid of icons in the room's options, shared for everyone.
 
 Every room page also shows the cards that relate to it: the **Doorbell**, its maintenance jobs, low batteries, pet
-device problems, tonight's dinner and expiring food (Kitchen), packages (front of the house), cars (Garage).
+device problems, tonight's dinner and expiring food (Kitchen), packages (front of the house), cars (Garage), and
+**Storage here**: the containers from the Storage page whose place name contains the room's name.
 
 ## Design Studio
 
@@ -289,8 +298,9 @@ Opened from System or the More menu (not in the side menu). Its cards are wide (
 
 - **Jot it down**: type or say an idea, attach a photo or screenshot, swipe left to remove one; it keeps a draft while
   you type and stays put after you submit. **Import now** asks for new ideas to be filed at the next check-in. Claude's
-  **suggestions** appear here marked and dated, with Accept and Ignore.
-- **Backlog**: the whole plan, searchable, every section collapsed until you search, with an open count.
+  **suggestions** appear here marked and dated, with Accept and Ignore. Ignored ones are archived in a collapsed **Ignored suggestions** list with **Bring back**.
+- **Backlog**: the whole plan, searchable, every section collapsed until you search, with an open count. **Show done**
+  opens the Done list and scrolls to it.
 - **Every feature**: the running feature list, searchable.
 - **Change log**: a heading per day and an expandable box per build.
 - **Shipped per day**: a chart of the last 14 days with a 7-day average.
@@ -362,6 +372,7 @@ faults and history.
 
 - **Pet medicine**: how often it's given, when it was last given, **Log now**, and logging by tapping an NFC tag on the
   bottle. A Home copy shows when a dose is due; a phone reminder if it's two hours late.
+- The cat medicine card shows the medicine bottle from Pantry & Fridge with its expiration date.
 - **Pet notes** (shared with the Guest page) show and edit here.
 - This is the pets' favourite page: they play here often (chases, naps on cards), and only rarely elsewhere.
 
@@ -400,12 +411,13 @@ and settings such as Menu pages, alerts and appearance.
 - **Banner windows**: say which window, porch light or lamp in the house picture is which room or light (Highlight shows
   it).
 - **Low batteries** with each device's room, **Hidden cards** with Show again, the **Device setup** checklist (ticks per
-  device), the **User manual** link, and Display size on phones.
+  device), the **User manual** link (kept for every user), and Display size on phones.
 
 ## About
 
 Version and build, **What's new**, the full feature list, data-source credits, the user manual, and **Run the tour
-again**.
+again**. It is always the last page, and an **i** button in the top bar opens it. Top-bar buttons that don't fit on a
+phone scroll with a soft fade.
 
 ## Labs
 

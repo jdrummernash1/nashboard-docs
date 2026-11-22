@@ -8,6 +8,10 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 
 ## Nov 21 2026
 
+- Jot import: kitchen counter Nest Hub filed.
+- Ignored-suggestions archive, medicine running low, leaving-the-house check, kitchen timers, out-the-door checklist (BUILD .199).
+- Bigger batches: 5-10 items per build.
+- Tap the banner to see why (BUILD .198).
 - Storage here on room pages, NEW-tag release switch, docs stats header and change log (BUILD .197).
 - Tasks on the TV view, cat medicine bottle expiry, pet walking bug closed (BUILD .196).
 - Show done fix, About last + i button + scrolling top bar, user manual link for everyone (BUILD .195).

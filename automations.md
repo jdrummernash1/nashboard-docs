@@ -207,6 +207,19 @@ screens agree.
 - **Relates to:** the Goodnight check Home card (9 PM to 1 AM, with All off, Lock and Close, each confirmed) and the one
   **Goodnight** button that fixes everything at once (tap twice; locks and the garage included).
 
+### Leaving the house (phone alert)
+- **Triggers:** two minutes after the last person leaves home, only if lights are on, a lock is unlocked or the garage is
+  open.
+- **Does:** one notification to every phone listing what's left. Nothing physical happens on its own: locks and the
+  garage are only changed from the Leaving the house card, with two taps.
+- **Relates to:** the Leaving the house card on Rooms (Right now) and Home.
+
+### Kitchen timers (helpers)
+- **Triggers:** a kitchen timer finishes.
+- **Does:** three Home Assistant timer helpers, each with a name, power the Timers card on the Kitchen room page; open
+  screens play a chime and show a message when one ends (the kitchen tablet stays quiet at night).
+- **Relates to:** the Timers card and the countdown card on Home.
+
 ---
 
 ## Dashboard housekeeping
@@ -238,6 +251,7 @@ Created by Nashboard's Home Assistant configuration. You normally never touch th
 | Medicine next OK | Text | Medicine & fever card | Medicine OK to give again |
 | Next Space Station pass | Text | The dashboard (Space) | Space Station pass |
 | Packages left outside | Text | The dashboard (Packages) | Package left outside |
+| Kitchen timers (three) and their names | Timer / Text | Kitchen room page | Kitchen timers |
 | Pet medicine every (hours) / last given | Number / date | Pets page, NFC tag | Pet medicine tag and missed reminder |
 
 ## Turning things off

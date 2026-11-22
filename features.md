@@ -39,6 +39,9 @@ just for you, or (admins) turned off for everyone. The "Lives on" column is the 
 | **What's new** | After an update, until you've seen it | Read every change since this screen last looked; Got it | Home |
 | **Good morning** | 6 to 9 AM | Weather and today's high/low/rain, the first event, when to leave for today's trip and the drive time, trash pickup, once-a-day medicines not given yet, the next birthday | Family Board |
 | **Goodnight check** | 9 PM to 1 AM, when something is left | Lights on (All off), unlocked doors (Lock, confirm), garage open (Close, confirm), TVs on (Turn off) | Family Board |
+| **Leaving the house** | Everyone has left (for 45 minutes after) and something is left on or open | Lights on (All off), unlocked locks (Lock), open garage (Close), open doors and windows; locks and the garage take two taps | Rooms |
+| **Kitchen timer** | A kitchen timer is running | Countdown with the timer's name; pause or cancel | Kitchen room |
+| **Out the door** | Weekday mornings 6:00 to 9:30, until everything is ticked or everyone has left | Tick off Backpack, Snacks, Water bottle, Lunch, Meds | Kitchen room |
 | **Doorbell** | Someone rings or a person is seen at the front door (2 minutes after the last one) | Front-door snapshot; Ignore | Family Board, every room |
 | **Garage open** | A garage door has been open more than 10 minutes | Close (tap twice to confirm) | Rooms |
 | **Litter-Robot** | The litter box needs emptying, litter is low, or it has a fault (uses the pet's name) | Jump to Pets | Pets |
@@ -67,6 +70,7 @@ just for you, or (admins) turned off for everyone. The "Lives on" column is the 
 | **Fever** | A temperature of 100.4°F or more was logged in the last 12 hours | When Tylenol or ibuprofen is next OK; Log temp | Family Board |
 | **Medicine** | A medicine was given and the next dose isn't OK yet (per child) | "Next dose OK at …" | Family Board |
 | **Medicine expiring** | A medicine in the Medicine place expires within a month | See which | Family Board, Pantry & Fridge |
+| **Medicine running low** | A medicine expires within two weeks, or its quantity is 1 or low | See which; Add to list | Family Board, Pantry & Fridge |
 | **Pantry: use soon** | Pantry, fridge or freezer food expires in the next 3 days or just expired | Used up | Pantry & Fridge |
 | **Running low** | A stored item is at or below its low count | Add to shopping list | Storage |
 | **Warranty ending** | An appliance warranty ends within 30 days | Serial, place and manual link | Storage |
@@ -92,6 +96,8 @@ just for you, or (admins) turned off for everyone. The "Lives on" column is the 
 | **Breaking news** | Big top stories from the last couple of hours, plus local news | Read the story | Home |
 | **Live game** | One of your teams is playing (a day before to a few hours after) | Live score (flashes on a change) and where to watch | Sports |
 | **Claude** | Claude Code usage near the limit, or a free reset waiting | Plan limits, credits, what Claude is doing, next run (Autopilot for admins) | Home |
+
+On the Display / TV view, Google Tasks due today or overdue show as a **Tasks** card.
 
 Home also always shows **Weather** (or the banner overlay), **Up next** (calendar events and tasks due today), **Rooms**
 (the six most-used rooms first, with Show more), **Cameras**, **Now playing**, **Gas prices** and the **Claude** card.
@@ -125,6 +131,9 @@ the feeder, internet services and more. Every new feature adds a fact when it ha
   Christmas, snow days, game days and family birthdays (balloons and a banner) each tint the banner, **decorate the
   house itself** and add a light animation (falling leaves, snow, hearts, confetti, fireworks) on the day and the days
   before. On, Calm (no animation) or Off per screen.
+- **Tap the house banner** to see why it looks the way it does: a bubble explains what drives the sky (holiday, weather
+  effect, sunrise and sunset) and what drives the house (lights on, packages delivered today, holiday decorations), with
+  links to the pages behind each.
 - **House picture import** to make the banner look like your own house **(planned)**.
 
 ---
@@ -141,7 +150,8 @@ opened it gets an **UPDATED** dot.
 - **Room dashboards**: every area gets its own page automatically (even one added a minute ago). Each shows the cards
   that belong to it: its maintenance jobs, low batteries, pet device problems, the doorbell, tonight's dinner and
   expiring pantry food (Kitchen), packages out for delivery (front of the house), the Medicine & fever card (Nursery),
-  cars (Garage). **Room settings** on every room page: a layout by room type (kitchen, bedroom, garage, living room,
+  cars (Garage), and **Storage here**: the containers from the Storage page whose place name contains the room's name.
+  **Room settings** on every room page: a layout by room type (kitchen, bedroom, garage, living room,
   office, outdoors, other; guessed from the name), show or hide each section, and **Add a card to this room** (any Home
   card, or weather, calendar, packages, medicine, pantry). **Room icon picker**: a searchable grid of icons, saved for
   everyone.
@@ -223,9 +233,10 @@ opened it gets an **UPDATED** dot.
   now, plus **Make your own** templates (see [Automations](automations.md)).
 - **System**: Home Assistant health, updates, backups, low batteries, **Home settings** (the household basics in one
   place, each linking to where it's edited), **Hidden cards** (Show again), **Banner windows**, the **Device setup**
-  checklist, the **User manual** link, and Display size on phones.
+  checklist, the **User manual** link (kept for every user, remembered on each screen), and Display size on phones.
 - **About**: version and build, what's new, every feature, data-source credits, the user manual and **Run the tour
-  again**.
+  again**. It is always the last page in the menu, and an **i** button in the top bar opens it from anywhere. When the
+  top-bar buttons don't fit on a phone, they scroll with a soft fade at the end.
 - **Design Studio**: see [below](#design-studio).
 - **Labs**: a **Browser** (just the bar: back and reload, bookmarks, address with voice; tools behind a ⋯ menu; reopens
   your last page on each device; in Full window it works like a real browser) and a 3D printer page.
@@ -241,6 +252,15 @@ The kitchen at-a-glance cards live on the **Kitchen room page**: Today (calendar
 recycling and Chores (copies of the Family Board cards), next to the room's own Maintenance, Pantry, Dinner tonight and
 device cards, plus the Living Room's controls when there's a living room. Hide them with the room's automatic cards in
 Room settings.
+
+Two more cards live on the Kitchen room page:
+
+- **Timers**: three named kitchen timers. Buttons for 5, 10, 15, 30 and 60 minutes, a form for a name and minutes, and
+  pause, resume and cancel. While one runs, Home shows a countdown card. When one finishes, open screens play a chime
+  and show a message; the kitchen tablet stays quiet at night.
+- **Out the door**: a checklist (Backpack, Snacks, Water bottle, Lunch, Meds; editable) shared between screens, with the
+  ticks reset every morning. On weekday mornings from 6:00 to 9:30 a copy shows on Home until everything is ticked or
+  everyone has left.
 
 ---
 
@@ -285,6 +305,8 @@ Made as a **trailing record of what was given**, with quick buttons.
 - **Dog feeder** times with a Home card 10 minutes before and a phone reminder 5 minutes before.
 - **Pet medicine by NFC tag**: tap the tag on the bottle with your phone to log a dose (too-soon taps only warn), a
   missed-dose phone reminder, a Pets page card with Log now and a Home copy when due.
+- **Cat medicine bottle**: the Pets page's cat medicine card shows the medicine bottle from Pantry & Fridge with its
+  expiration date.
 - **Litter box** status, drawer and litter level, faults and history.
 - **Pet notes** from the Guest page show (and edit) here.
 - More pet reactions and pet characters from a photo **(planned)**.
@@ -354,6 +376,8 @@ Made as a **trailing record of what was given**, with quick buttons.
   security and garage, pets, other), with on/off and Run now for admins, when it last ran and its description.
 - **Make your own** (admins): five fill-in templates (lights on at a time, lights off at a time, door/garage/lock opens →
   phone alert, someone arrives home → lights on, lights on at sunset) saved as real Home Assistant automations.
+- **Leaving-home phone alert**: two minutes after the last person leaves, every phone is told if lights are on, a lock is
+  unlocked or the garage is open. Nothing physical happens on its own.
 - **The shipped automations**, what triggers each and how to turn it off: [Automations](automations.md).
 
 ---
@@ -395,8 +419,10 @@ Opened from System or the More menu.
 
 - **Jot it down**: type or say an idea, attach a photo or screenshot, swipe left to remove one. New ideas are filed into
   the backlog automatically (**Import now** asks for it at the next check-in). Claude's own **suggestions** show here,
-  marked and dated, with **Accept** and **Ignore**.
-- **Backlog**: the full plan, searchable, sections collapsed until you search, with "Show done".
+  marked and dated, with **Accept** and **Ignore**. Ignored suggestions are archived in a collapsed **Ignored
+  suggestions** list, each with **Bring back**.
+- **Backlog**: the full plan, searchable, sections collapsed until you search. **Show done** opens the Done list and
+  scrolls straight to it.
 - **Every feature**: the running feature list, searchable.
 - **Change log**: one heading per day and one expandable box per build.
 - **Shipped per day** chart (last 14 days with a 7-day average).

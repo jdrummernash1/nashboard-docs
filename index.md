@@ -9,7 +9,7 @@ title: Nashboard
 <!-- stats:start -->
 | Lines of custom code | Market value | Pages | Builds shipped | Open backlog items | Open bugs | Shipped this week |
 |---|---|---|---|---|---|---|
-| **15,244** | **$95k–$191k (about 1,270 developer hours)** | **35** | **197** | **60** | **1** | **207** |
+| **15,417** | **$96k–$193k (about 1,285 developer hours)** | **35** | **199** | **67** | **1** | **212** |
 
 *Updated Nov 21 2026. See the [Change log](changelog.md).*
 <!-- stats:end -->
