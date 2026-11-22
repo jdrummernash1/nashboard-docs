@@ -8,6 +8,10 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 
 ## Nov 22 2026
 
+- Shared storage places, band members, Garage load fix; docs: how it's built and dark mode (BUILD .214).
+- Looks (Paper, Glass, Bold), pantry dates and missing ingredients, packages from email with hidden gifts, Storage NFC tags (BUILD .213).
+- Band name on Hobbies, theme button says what Auto follows (BUILD .212).
+- Design looks (Classic, Paper, Glass, Bold), NFC tags on storage boxes and garage drawers, packages added from email with gifts hidden, pantry sell-by/use-by and missing ingredients for dinner; Jot import: 4 ideas filed (ideas 3db30522, aa288a74, daa533c8, 2e6c437a) (BUILD .211).
 - Checked-out items on top of the Backlog card; name-clash fixes (Google Tasks, work status, Workout); namecheck tool (BUILD .210).
 - Pet drawings: second colour and calico (BUILD .209).
 - Crypto 24/7 on Finance, About credit line (BUILD .208).

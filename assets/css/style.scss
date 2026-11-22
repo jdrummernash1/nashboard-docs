@@ -6,3 +6,39 @@
 /* One banner only: the illustrated logo banner on the home page is the header, so the theme header is hidden. */
 .page-header{display:none}
 .main-content{padding-top:1.5rem}
+
+/* Light mode: say so, so form controls and scrollbars match. */
+:root{color-scheme:light dark}
+
+/* Dark mode: follows the device setting. Images, artwork and the stats banner (.nbs, styled on its own) are left alone.
+   Contrast on the page background #0f1218: text 13:1, muted 8:1, links 8:1, headings 9:1. */
+@media (prefers-color-scheme: dark){
+  html,body{background:#0f1218;color:#d6dbe1}
+  .main-content{color:#d6dbe1}
+  .main-content h1,.main-content h2,.main-content h3,.main-content h4,.main-content h5,.main-content h6{color:#5fd4a8}
+  a{color:#8cc2ff}
+  a:hover{color:#b5d8ff}
+  .main-content strong,.main-content b{color:#eef1f4}
+  .main-content code{background:#1b212b;color:#e6ebf0;border-color:#2a313c}
+  .main-content pre{background:#1b212b;border-color:#2a313c;color:#e6ebf0}
+  .main-content pre code{background:transparent;color:inherit}
+  .highlight{background:#1b212b !important}
+  .highlight *{background:transparent !important}
+  .main-content table th,.main-content table td{border-color:#2f3743}
+  .main-content table th{background:#171c24;color:#eef1f4}
+  .main-content table tr:nth-child(even) td{background:#141921}
+  .main-content blockquote{color:#aeb8c2;border-left-color:#3a4552}
+  .main-content hr{background:#2a313c;border-color:#2a313c}
+  .main-content dl dt{color:#d6dbe1}
+  .site-footer{border-top-color:#2a313c;color:#9aa5b0}
+  .site-footer a{color:#8cc2ff}
+
+  /* Guided tour (tour.md inline styles hardcode light colours; "html body" outranks its in-page <style>) */
+  html body .tour-strip a{background:#1f2631;color:#d6e4f5}
+  html body .tour-strip a:hover{background:#f4a63a;color:#1d1406}
+  html body .tour-step{border-top-color:#2a313c}
+  html body .tour-count{color:#a3adb8}
+  html body .tour-step img{box-shadow:0 4px 18px rgba(0,0,0,.55)}
+  html body .tour-nav a{background:#2b4a75;color:#fff}
+  html body .tour-nav a.nx{background:#f4a63a;color:#1d1406}
+}
