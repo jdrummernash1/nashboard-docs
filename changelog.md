@@ -8,6 +8,7 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 
 ## Nov 21 2026
 
+- Data retention: datacheck tool, person data synced per user, settings-sync migration, load-first guard; manual link opens the docs home (BUILD .200).
 - Jot import: kitchen counter Nest Hub filed.
 - Ignored-suggestions archive, medicine running low, leaving-the-house check, kitchen timers, out-the-door checklist (BUILD .199).
 - Bigger batches: 5-10 items per build.
