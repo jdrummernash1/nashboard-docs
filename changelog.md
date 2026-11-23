@@ -89,6 +89,8 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 - Rule: tap targets 48 px; autopilot panel switches enlarged. Stuck check tool (tools/stuck-check.js).
 - BUILD .237: Ask Claude card under the banner (admin card anchors only while working); holiday and weather effects pass behind the house (housecheck); holiday leaves/clovers/hearts placement fixed; docs screenshots hide the admin card.
 - Docs release .235 published: every page refreshed, text diagrams rebuilt as SVG, holiday looks grid, new screenshots (no admin card).
+- BUILD .238: top bar buttons scroll again instead of squeezing (invisible tap areas); 6 Jot ideas filed.
+- BUILD .239: How this works text on 93 more cards; Edit setup on Holiday traditions; Backlog card hides checked-in ideas; YouTube now playing fix; card jump re-check passes; What's new block on the docs home.
 
 ## Nov 22 2026
 
