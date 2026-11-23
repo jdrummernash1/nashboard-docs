@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1140 850" width="1140" height="850" role="img" aria-labelledby="ttl desc" font-family="Segoe UI, system-ui, sans-serif">
+<title id="ttl">The AI architecture</title>
+<desc id="desc">Two uses of AI. In the app, Home Assistant Assist and AI Task use Ollama for private jobs and Gemini for non-private ones. On the build side, the owner uses the autopilot panel to wake the main Claude chat, which uses helper agents and the ai-worker routing step; every result is reviewed, checked and deployed.</desc>
+<style>
+  .bg{fill:#f6f7fb;stroke:#e4e7ee}
+  .card{fill:#ffffff;stroke:#dfe3ec;stroke-width:1.2}
+  .t{font:700 14px "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;fill:#1b2130}
+  .s{font:500 12px "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;fill:#566074}
+  .gl{font:700 11.5px "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;fill:#6b7385;letter-spacing:.08em;text-transform:uppercase}
+  .ttl{font:800 17px "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;fill:#1b2130}
+  .lb{font:600 11.5px "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;fill:#3a4357}
+  .lbbg{fill:#ffffff;stroke:#dfe3ec;stroke-width:1}
+  .grp{fill:rgba(120,130,150,.07);stroke:#c4cad8;stroke-width:1.4;stroke-dasharray:none}
+  .grpd{fill:rgba(120,130,150,.05);stroke:#b7bfd0;stroke-width:1.3;stroke-dasharray:3 5}
+  .ic{fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .ic .f{fill:currentColor}
+  .e{fill:none;stroke:#59627a;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .et{fill:none;stroke:#e08a00;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}
+  .ed{fill:none;stroke:#59627a;stroke-width:2;stroke-dasharray:2 6;stroke-linecap:round;stroke-linejoin:round}
+  .ar{fill:#59627a}.art{fill:#e08a00}
+  .shadow{filter:url(#sh)}
+  .num{stroke:none;fill:currentColor;font:800 14px "Segoe UI",system-ui,sans-serif}
+  /* node colour kinds: tint / ring / icon chip */
+  .k-acc .tint{fill:#fff3dc;stroke:#f2c06a}.k-acc .chip{fill:#ffb547}.k-acc .icn{stroke:#4a2f00;color:#4a2f00}
+  .k-info .tint{fill:#e6f1ff;stroke:#a9cdf6}.k-info .chip{fill:#4f9df0}.k-info .icn{stroke:#fff;color:#fff}
+  .k-ok .tint{fill:#e2f8ee;stroke:#97dcbc}.k-ok .chip{fill:#27b57a}.k-ok .icn{stroke:#fff;color:#fff}
+  .k-vio .tint{fill:#efe9ff;stroke:#cabaf6}.k-vio .chip{fill:#8b6ff0}.k-vio .icn{stroke:#fff;color:#fff}
+  .k-warn .tint{fill:#ffe9e5;stroke:#f5b5ab}.k-warn .chip{fill:#ef5e4d}.k-warn .icn{stroke:#fff;color:#fff}
+  .k-neu .tint{fill:#f1f3f8;stroke:#d2d7e3}.k-neu .chip{fill:#6c768d}.k-neu .icn{stroke:#fff;color:#fff}
+  @media (prefers-color-scheme: dark){
+    .bg{fill:#141922;stroke:#262d3a}
+    .card{fill:#1b212c;stroke:#2d3646}
+    .t,.ttl{fill:#eef1f6}
+    .s{fill:#a3adc0}
+    .gl{fill:#8f9ab0}
+    .lb{fill:#d3d9e6}
+    .lbbg{fill:#1b212c;stroke:#2d3646}
+    .grp{fill:rgba(160,175,205,.06);stroke:#3a4458}
+    .grpd{fill:rgba(160,175,205,.04);stroke:#444f66}
+    .e,.ed{stroke:#9aa5bd}.ar{fill:#9aa5bd}
+    .et{stroke:#ffb547}.art{fill:#ffb547}
+    .k-acc .tint{fill:#33290f;stroke:#7a5a1c}.k-acc .chip{fill:#ffb547}.k-acc .icn{stroke:#3a2500;color:#3a2500}
+    .k-info .tint{fill:#13263d;stroke:#2f5c93}.k-info .chip{fill:#5aa9ff}.k-info .icn{stroke:#06182c;color:#06182c}
+    .k-ok .tint{fill:#11291f;stroke:#25704f}.k-ok .chip{fill:#3ddc97}.k-ok .icn{stroke:#04210f;color:#04210f}
+    .k-vio .tint{fill:#241d3d;stroke:#5a4a9c}.k-vio .chip{fill:#a78bfa}.k-vio .icn{stroke:#160c3a;color:#160c3a}
+    .k-warn .tint{fill:#3a1a17;stroke:#8a3f36}.k-warn .chip{fill:#ff6b5b}.k-warn .icn{stroke:#3a0a05;color:#3a0a05}
+    .k-neu .tint{fill:#232a37;stroke:#3b4558}.k-neu .chip{fill:#8b93a3}.k-neu .icn{stroke:#10141b;color:#10141b}
+  }
+</style>
+<defs>
+  <filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#1b2130" flood-opacity=".16"/></filter>
+  <marker id="ms" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path class="ar" d="M0 1l9 4-9 4z"/></marker>
+  <marker id="mt" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto-start-reverse"><path class="art" d="M0 0l10 5-10 5z"/></marker>
+</defs>
+<rect class="bg" x="1" y="1" width="1138" height="848" rx="26"/>
+<rect class="grp" x="24" y="20" width="1092" height="205" rx="22"/>
+<text class="gl" x="42" y="42">In the app</text>
+<rect class="grp" x="24" y="250" width="1092" height="540" rx="22"/>
+<text class="gl" x="42" y="272">Building the app</text>
+<path class="e" d="M310 100L370 100L370 89L430 89" marker-end="url(#ms)"/>
+<rect class="lbbg" x="325" y="68" width="90" height="20" rx="10"/><text class="lb" x="370" y="82" text-anchor="middle">private jobs</text>
+<path class="e" d="M310 126L370 126L370 173L430 173" marker-end="url(#ms)"/>
+<rect class="lbbg" x="314" y="140" width="112" height="20" rx="10"/><text class="lb" x="370" y="154" text-anchor="middle">non-private jobs</text>
+<path class="e" d="M690 89L750 89L750 112L810 112" marker-end="url(#ms)"/>
+<path class="e" d="M690 173L750 173L750 136L810 136" marker-end="url(#ms)"/>
+<path class="e" d="M200 329L250 329" marker-end="url(#ms)"/>
+<path class="e" d="M420 329L540 329" marker-end="url(#ms)"/>
+<rect class="lbbg" x="430" y="319" width="100" height="20" rx="10"/><text class="lb" x="480" y="333" text-anchor="middle">Send to Claude</text>
+<path class="e" d="M790 329L860 329" marker-end="url(#ms)"/>
+<path class="e" d="M665 366L665 420" marker-end="url(#ms)"/>
+<path class="e" d="M565 504L565 522L165 522L165 545" marker-end="url(#ms)"/>
+<rect class="lbbg" x="290" y="512" width="150" height="20" rx="10"/><text class="lb" x="365" y="526" text-anchor="middle">personal data, default</text>
+<path class="ed" d="M590 504L590 534L390 534L390 545" marker-end="url(#ms)"/>
+<path class="ed" d="M615 504L615 545" marker-end="url(#ms)"/>
+<path class="ed" d="M740 504L740 545" marker-end="url(#ms)"/>
+<rect class="lbbg" x="671" y="515" width="138" height="20" rx="10"/><text class="lb" x="740" y="529" text-anchor="middle">cloud-ok only, in order</text>
+<path class="ed" d="M880 580L900 580L900 635L300 635L300 580L280 580" marker-end="url(#ms)"/>
+<rect class="lbbg" x="520" y="625" width="80" height="20" rx="10"/><text class="lb" x="560" y="639" text-anchor="middle">last resort</text>
+<path class="ed" d="M790 466L930 466" marker-end="url(#ms)"/>
+<path class="ed" d="M1010 366L1010 420" marker-end="url(#ms)"/>
+<rect class="lbbg" x="974" y="383" width="72" height="20" rx="10"/><text class="lb" x="1010" y="397" text-anchor="middle">log entry</text>
+<path class="e" d="M1090 468L1106 468L1106 270L335 270L335 292" marker-end="url(#ms)"/>
+<rect class="lbbg" x="687" y="260" width="106" height="20" rx="10"/><text class="lb" x="740" y="274" text-anchor="middle">feeds the panel</text>
+<path class="e" d="M200 615L200 700" marker-end="url(#ms)"/>
+<path class="e" d="M390 615L390 664L310 664L310 700" marker-end="url(#ms)"/>
+<path class="e" d="M615 615L615 664L310 664" marker-end="url(#ms)"/>
+<path class="e" d="M700 615L700 664L310 664" marker-end="url(#ms)"/>
+<path class="e" d="M905 366L905 664L310 664" marker-end="url(#ms)"/>
+<path class="e" d="M350 737L410 737" marker-end="url(#ms)"/>
+<path class="e" d="M600 737L660 737" marker-end="url(#ms)"/>
+<path class="e" d="M785 774L785 806L10 806L10 110L50 110" marker-end="url(#ms)"/>
+<rect class="lbbg" x="334" y="796" width="132" height="20" rx="10"/><text class="lb" x="400" y="810" text-anchor="middle">new features go live</text>
+<text class="gl" x="28" y="834">Legend</text><path class="e" d="M106 830h34" marker-end="url(#ms)"/><text class="lb" x="150" y="834">job or result moving along</text><path class="ed" d="M337.20000000000005 830h34" marker-end="url(#ms)"/><text class="lb" x="381.20000000000005" y="834">optional cloud route, or a log entry</text><g class="k-vio"><rect class="tint" x="630.4000000000001" y="822" width="22" height="16" rx="5" stroke-width="1.4"/></g><text class="lb" x="660.4000000000001" y="834">Claude and local AI</text><g class="k-info"><rect class="tint" x="804.2" y="822" width="22" height="16" rx="5" stroke-width="1.4"/></g><text class="lb" x="834.2" y="834">cloud</text>
+<g class="k-acc"><rect class="tint shadow" x="50" y="68" width="260" height="84" rx="16" stroke-width="1.4"/><circle class="chip" cx="79" cy="110" r="15"/><g class="ic icn" transform="translate(69.5 100.5) scale(.79)"><g><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3.5 3.5 0 0 0 3 5.5A3 3 0 0 0 12 19V5a3 3 0 0 0-3-1z"/><path d="M15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3.5 3.5 0 0 1-3 5.5A3 3 0 0 1 12 19"/></g></g><text class="t" x="102" y="107">HA Assist and AI Task</text><text class="s" x="102" y="126">Home Assistant AI features</text></g>
+<g class="k-vio"><rect class="tint shadow" x="430" y="56" width="260" height="66" rx="16" stroke-width="1.4"/><circle class="chip" cx="459" cy="89" r="15"/><g class="ic icn" transform="translate(449.5 79.5) scale(.79)"><g><rect x="4" y="4" width="16" height="6" rx="2"/><rect x="4" y="14" width="16" height="6" rx="2"/><path d="M8 7h.01M8 17h.01"/></g></g><text class="t" x="482" y="86">Ollama on the AI PC</text><text class="s" x="482" y="105">local, private</text></g>
+<g class="k-info"><rect class="tint shadow" x="430" y="140" width="260" height="66" rx="16" stroke-width="1.4"/><circle class="chip" cx="459" cy="173" r="15"/><g class="ic icn" transform="translate(449.5 163.5) scale(.79)"><g><path d="M7 18a4 4 0 0 1-.6-7.96A5.5 5.5 0 0 1 17 8.5 4.5 4.5 0 0 1 17.5 18z"/></g></g><text class="t" x="482" y="170">Google Gemini</text><text class="s" x="482" y="189">cloud, non-private only</text></g>
+<g class="k-ok"><rect class="tint shadow" x="810" y="80" width="280" height="86" rx="16" stroke-width="1.4"/><circle class="chip" cx="839" cy="123" r="15"/><g class="ic icn" transform="translate(829.5 113.5) scale(.79)"><g><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></g></g><text class="t" x="862" y="112">Features</text><text class="s" x="862" y="131">Document import, photo dates,</text><text class="s" x="862" y="147">bedtime story</text></g>
+<g class="k-acc"><rect class="tint shadow" x="50" y="292" width="150" height="74" rx="37" stroke-width="1.4"/><circle class="chip" cx="79" cy="329" r="15"/><g class="ic icn" transform="translate(69.5 319.5) scale(.79)"><g><circle cx="12" cy="8" r="4"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0"/></g></g><text class="t" x="102" y="334">Owner</text></g>
+<g class="k-acc"><rect class="tint shadow" x="250" y="292" width="170" height="74" rx="16" stroke-width="1.4"/><circle class="chip" cx="279" cy="329" r="15"/><g class="ic icn" transform="translate(269.5 319.5) scale(.79)"><g><path d="M5 6h14M5 12h14M5 18h14"/><circle cx="9" cy="6" r="2" class="f"/><circle cx="15" cy="12" r="2" class="f"/><circle cx="8" cy="18" r="2" class="f"/></g></g><text class="t" x="302" y="334">Autopilot panel</text></g>
+<g class="k-vio"><rect class="tint shadow" x="540" y="292" width="250" height="74" rx="16" stroke-width="1.4"/><circle class="chip" cx="569" cy="329" r="15"/><g class="ic icn" transform="translate(559.5 319.5) scale(.79)"><g><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3.5 3.5 0 0 0 3 5.5A3 3 0 0 0 12 19V5a3 3 0 0 0-3-1z"/><path d="M15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3.5 3.5 0 0 1-3 5.5A3 3 0 0 1 12 19"/></g></g><text class="t" x="592" y="326">Claude main chat</text><text class="s" x="592" y="345">coordinator and reviewer</text></g>
+<g class="k-vio"><rect class="tint shadow" x="860" y="292" width="230" height="74" rx="16" stroke-width="1.4"/><circle class="chip" cx="889" cy="329" r="15"/><g class="ic icn" transform="translate(879.5 319.5) scale(.79)"><g><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></g></g><text class="t" x="912" y="334">Claude helper agents</text></g>
+<g class="k-vio"><g class="shadow"><path class="tint" stroke-width="1.4" stroke-linejoin="round" d="M562 420H768L790 462L768 504H562L540 462z"/></g><circle class="chip" cx="581" cy="462" r="15"/><g class="ic icn" transform="translate(571.5 452.5) scale(.79)"><g><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.5 6H15a3 3 0 0 1 0 6H9a3 3 0 0 0 0 6h6.5"/></g></g><text class="t" x="604" y="459">ai-worker.js routing</text><text class="s" x="604" y="478">decides where a job runs</text></g>
+<g class="k-vio"><rect class="tint shadow" x="50" y="545" width="230" height="70" rx="16" stroke-width="1.4"/><circle class="chip" cx="79" cy="580" r="15"/><g class="ic icn" transform="translate(69.5 570.5) scale(.79)"><g><rect x="4" y="4" width="16" height="6" rx="2"/><rect x="4" y="14" width="16" height="6" rx="2"/><path d="M8 7h.01M8 17h.01"/></g></g><text class="t" x="102" y="577">Ollama local models</text><text class="s" x="102" y="596">personal data, default</text></g>
+<g class="k-info"><rect class="tint shadow" x="320" y="545" width="140" height="70" rx="16" stroke-width="1.4"/><text class="t" x="336" y="577">Groq</text><text class="s" x="336" y="596">1st</text></g>
+<g class="k-info"><rect class="tint shadow" x="490" y="545" width="150" height="70" rx="16" stroke-width="1.4"/><text class="t" x="506" y="577">Gemini</text><text class="s" x="506" y="596">2nd</text></g>
+<g class="k-info"><rect class="tint shadow" x="670" y="545" width="210" height="70" rx="16" stroke-width="1.4"/><text class="t" x="686" y="577">OpenRouter free models</text><text class="s" x="686" y="596">3rd</text></g>
+<g class="k-ok"><g class="shadow"><path class="tint" d="M930 429v78a80 9 0 0 0 160 0V429a80 9 0 0 0 -160 0z" stroke-width="1.4"/></g><ellipse class="tint" cx="1010" cy="429" rx="80" ry="9" stroke-width="1.4" style="fill-opacity:.7"/><circle class="chip" cx="959" cy="473" r="15"/><g class="ic icn" transform="translate(949.5 463.5) scale(.79)"><g><path d="M5 4h14v16H5z"/><path d="M8.5 9h7M8.5 12.5h7M8.5 16h4"/></g></g><text class="t" x="982" y="470">Usage log</text><text class="s" x="982" y="489">totals</text></g>
+<g class="k-ok"><rect class="tint shadow" x="50" y="700" width="300" height="74" rx="16" stroke-width="1.4"/><circle class="chip" cx="79" cy="737" r="15"/><g class="ic icn" transform="translate(69.5 727.5) scale(.79)"><g><circle cx="12" cy="12" r="8.5"/><path d="M8 12.3l2.8 2.8L16.2 9.5"/></g></g><text class="t" x="102" y="734">Main chat reviews</text><text class="s" x="102" y="753">and integrates</text></g>
+<g class="k-ok"><rect class="tint shadow" x="410" y="700" width="190" height="74" rx="16" stroke-width="1.4"/><circle class="chip" cx="439" cy="737" r="15"/><g class="ic icn" transform="translate(429.5 727.5) scale(.79)"><g><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2.2 2.2L15.5 10"/></g></g><text class="t" x="462" y="742">Quality checks</text></g>
+<g class="k-acc"><rect class="tint shadow" x="660" y="700" width="250" height="74" rx="16" stroke-width="1.4"/><circle class="chip" cx="689" cy="737" r="15"/><g class="ic icn" transform="translate(679.5 727.5) scale(.79)"><g><path d="M12 3c3.5 2 5 5.5 4.5 10H7.5C7 8.5 8.5 5 12 3z"/><circle cx="12" cy="9.5" r="1.6"/><path d="M7.5 13l-2.5 3.5 3-.5M16.5 13l2.5 3.5-3-.5M10 17.5l2 3.5 2-3.5"/></g></g><text class="t" x="712" y="742">Deploy to Home Assistant</text></g>
+</svg>

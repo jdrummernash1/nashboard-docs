@@ -28,13 +28,19 @@ left- or right-handed phones).
 - **The card ⋯ menu** on every card's header: Full window, Collapse, Hide for today and Hide this card (with a confirm;
   admins can also turn a card off for everyone). Hidden cards come back from Customize menu → Hidden cards or the System
   page's Hidden cards section.
+- **Move and How this works** are in the same menu: Move drags a card to a new spot (the order is shared by every
+  screen), and How this works opens a short plain explanation of the card.
 - **Tap a card's top bar** to collapse or expand it. Buttons and links in the header still work as normal. Collapsing is
-  only for the moment: a refresh brings every card back expanded.
+  only for the moment: a refresh brings every card back expanded. A collapsed card shows a **one-line summary** in its
+  header, and cards stay locked in their columns when one collapses or expands (no jumping).
+- **A page intro line** under every page title says what the page is for; hide it from the line itself or in Settings.
+- **Interface scale** (Settings → Look and size) re-packs cards, columns and text smaller or larger; in Full window a
+  small − / + control sets it. Buttons, chips and switches have 44 px touch areas.
 - **NEW and UPDATED tags** in the menu: a page added in the last 24 hours shows NEW; a page whose Right now card has
   something new since you last opened it shows an UPDATED dot until you open it.
-- **Theme colours**: Display size offers seven accent colours (Amber, Coral, Rose, Violet, Blue, Teal, Green), per
+- **Theme colours**: Interface scale offers seven accent colours (Amber, Coral, Rose, Violet, Blue, Teal, Green), per
   person, readable in light and dark.
-- **Left- or right-handed** (Display size → Hand, per person): on phones the navigation, room card buttons, page header
+- **Left- or right-handed** (Interface scale → Hand, per person): on phones the navigation, room card buttons, page header
   buttons, add and mic buttons, Home card buttons and sheet buttons move to your thumb's side.
 - **Voice** on every quick-add list, and no character limits on text boxes.
 - **Swipe between pages** on phones: a clear sideways swipe on empty page or a card body goes to the next or previous
@@ -77,7 +83,8 @@ dashboard's own sign-in, never stale camera links.
 
 Day, week and a rolling 4-week month (this week plus three, up to five events a day that wrap to two lines, past days
 dimmed) across all your calendars, in the colours you pick (shared by everyone). Add and edit events, toggle calendars
-on and off, and see the meal plan alongside.
+on and off, and see the meal plan alongside. The wall calendar has big **Add event** and **Add to list** buttons with a
+microphone. Zoom to fit sizes rows correctly in Full window and keeps your scroll position.
 
 - **Tasks** card for Google Tasks: every list with due dates, overdue items in the warning colour, tick to complete and
   an add box per list. Tasks due today also show in Home's Up next card; overdue ones get a Home card.
@@ -129,10 +136,12 @@ the shopping list first asks **"Use what's in the pantry?"** and leaves the tick
 ## Pantry & Fridge
 
 What's on hand and when it expires, in a shared Home Assistant to-do list. Each item is **pantry, fridge or freezer**.
-Scan a barcode with the phone camera (Chrome on Android) or type it; the name comes from Open Food Facts. Add the
+The add form has a **barcode scan button** (camera, a photo, or typed); the name comes from Open Food Facts. The shopping
+and Storage add forms have the same button. Add the
 expiration date and amount. **Use soon** lists anything expiring within 3 days; **Used up** removes it, and the cart
 button also adds it to the shopping list. Home and the Kitchen room show a card for food to use soon.
 
+- **Leftovers tracker**: log leftovers with the date; Home shows an **Eat this first** card, oldest first.
 - **Storage places** you add and remove (shared for everyone; a Medicine place is included). Tap a place to set its
   container type (add and remove your own types) and what it sits inside; **Where** shows the nesting. On hand is
   grouped by place.
@@ -162,6 +171,7 @@ Tool storage, built on the Storage page's places and items (so the Storage searc
 - **One search box** for tools ("10 mm socket", "torque wrench") that shows the toolbox and drawer.
 - A small **photo per drawer**, and printable **QR labels** like the Storage page's.
 - A **Tool storage** card on the Garage room page.
+- **Car cards** (registration, inspection, oil change, recalls) also show here.
 - Recognising tools from a drawer photo **(planned)**.
 
 ## Kids
@@ -265,7 +275,8 @@ Show up to four pages at once on a large screen, each in its own tile.
 A full-screen mode for TVs and wall displays: clock, weather, cameras, and automatic cards (up next, commute,
 games, overhead aircraft, Space Station, packages, now playing, breaking news). Google Tasks due today or overdue
 show as a **Tasks** card. It can rotate between views or
-stay on one. Casting to a TV opens the same Display, and **each TV can have its own setup** (rotating or still, seconds
+stay on one. TV cards are denser, so more rows fit on each (up to five games, trips, tasks and events, four packages).
+Casting to a TV opens the same Display, and **each TV can have its own setup** (rotating or still, seconds
 per screen, which screens, night dimming). Casting creates or refreshes a view for that TV in Home Assistant's TV
 dashboard, so the TV still knows which one it is after a reload. Home's cards show as a strip on the radar and camera screens; a pet peeks in
 from a corner now and then.
@@ -317,6 +328,8 @@ lights, media, climate, doors, switches and scenes, cameras and sensors. Rooms c
   packages, medicine, pantry).
 - **Room icon**: a searchable grid of icons in the room's options, shared for everyone.
 
+While something in a room is playing, a **Now playing** card (turntable icon; channel and artwork for video players)
+shows on that room's page. A bedroom with a child set in Room settings also gets that child's cards (a child's room).
 Every room page also shows the cards that relate to it: the **Doorbell**, its maintenance jobs, low batteries, pet
 device problems, tonight's dinner and expiring food (Kitchen), packages (front of the house), cars (Garage), and
 **Storage here**: the containers from the Storage page whose place name contains the room's name.
@@ -336,6 +349,8 @@ Opened from System or the More menu (not in the side menu). Its cards are wide (
 - **Change log**: a heading per day and an expandable box per build.
 - **Shipped per day**: a chart of the last 14 days with a 7-day average.
 - **Hardware wishlist**: add a product link, × to remove, **Bought** moves it to Purchased; refreshes every minute.
+- **Live agents** and **Agents tally**: the main chat pinned (Working or Idle), a Helpers count, then Free and Paid tallies
+  with a bar for every job (status posts count as jobs) and a legend.
 - **Autopilot** (admins): opens the private control panel for the assistant that maintains the dashboard.
 
 See [Settings](settings.md#design-studio-backlog-and-ideas).
@@ -415,7 +430,9 @@ Each person picks their own hobbies (saved with their login); each hobby's cards
 same hobby sees the same content. Built-in hobbies: band and set lists, audio mixing and video editing, Ableton Live,
 book club, gardening (plants with watering reminders), running and cycling, reading list, board game night, cooking
 experiments and 3D printing, or add your own. A **Hobbies** Home card shows only your hobbies, only when something is
-soon (book club tonight, plants to water, game night, a show this week).
+soon (book club tonight, plants to water, game night, a show this week). The band hobby is **Gigs**: start, setup
+(2 hours before), show length, breakdown (1 hour after), a timeline, and import from an event link; Home shows a Gig
+card with the be-there-by time.
 
 ## Workout
 
@@ -439,19 +456,21 @@ what ships with Nashboard is on [Automations](automations.md).
 Home Assistant health at a glance: updates, backups, recent errors, devices that need attention, low batteries,
 and settings such as Menu pages, alerts and appearance.
 
+- **Who's on**: the live screens and people seen in the last minute.
 - **Home settings**: the household basics in one place (house name and Wi-Fi from Guest, pickup days from the Family
   Board, this device's zip, Home Assistant's location, time zone, units and people), each linking to where it's edited.
 - **Banner windows**: say which window, porch light or lamp in the house picture is which room or light (Highlight shows
   it).
 - **Low batteries** with each device's room, **Hidden cards** with Show again, the **Device setup** checklist (ticks per
-  device), the **User manual** link (kept for every user), and Display size on phones.
+  device), the **User manual** link (kept for every user), and Interface scale on phones.
 - **Saved data**: every saved app setting with its size, entries, last save, who saved it and its version, with
   **Undo** (the last 20 versions are kept, and a dated copy is exported every night). See
   [How it all connects](how-it-connects.md).
 
 ## About
 
-Version and build, **What's new**, the full feature list, data-source credits, the user manual, and **Run the tour
+Version and build (with the pieces count), **What's new**, the full feature list, a scrolling **Credits** card (a plain
+list with reduced motion), data-source credits, the user manual, and **Run the tour
 again**. It is always the last page, and an **i** button in the top bar opens it. Top-bar buttons that don't fit on a
 phone scroll with a soft fade.
 

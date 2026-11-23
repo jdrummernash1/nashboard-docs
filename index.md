@@ -5,7 +5,7 @@ title: Nashboard
 
 <!-- stats:start -->
 <style>.nbs{position:relative;border-radius:18px;overflow:hidden;margin:1.2rem 0 1.6rem;padding:calc(min(100%,1600px) * .2) 18px 18px;padding-top:20%;background:#0b0e14 url(images/hero-night.jpg) center top/100% auto no-repeat;box-shadow:0 10px 30px rgba(0,0,0,.25)}.nbs::before{content:"";position:absolute;inset:0;background:none}.nbs-g{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.nbs-t{padding:14px 16px;border-radius:14px;background:rgba(20,22,28,.42);border:1px solid rgba(255,255,255,.22);-webkit-backdrop-filter:blur(14px) saturate(140%);backdrop-filter:blur(14px) saturate(140%);color:#fff}.nbs-t b{display:block;font-size:1.5rem;line-height:1.2;font-weight:700;color:#fff}.nbs-t span{font-size:.82rem;color:rgba(255,255,255,.85)}@media (max-width:640px){.nbs{padding-top:132px!important;background-size:auto 140px!important;background-position:left top!important;padding-left:12px;padding-right:12px}.nbs-g{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.nbs-t{padding:10px 12px}.nbs-t b{font-size:1.2rem}}.nbs-u{position:relative;margin:12px 2px 0;font-size:.82rem;color:rgba(255,255,255,.9)}.nbs-u a{color:#ffd28a}</style>
-<div class="nbs" role="img" aria-label="Nashboard: the illustrated house at night, with project stats"><div class="nbs-g"><div class="nbs-t"><b>20,527</b><span>Lines of custom code</span></div><div class="nbs-t"><b>$128k–$257k</b><span>Market value · about 1,711 developer hours</span></div><div class="nbs-t"><b>38</b><span>Pages</span></div><div class="nbs-t"><b>233</b><span>Builds shipped</span></div><div class="nbs-t"><b>81</b><span>Open backlog items</span></div><div class="nbs-t"><b>6</b><span>Open bugs</span></div><div class="nbs-t"><b>310</b><span>Shipped this week</span></div></div><p class="nbs-u">Updated Nov 23 2026 · <a href="changelog.html">Change log</a></p></div>
+<div class="nbs" role="img" aria-label="Nashboard: the illustrated house at night, with project stats"><div class="nbs-g"><div class="nbs-t"><b>21,133</b><span>Lines of custom code</span></div><div class="nbs-t"><b>$132k–$264k</b><span>Market value · about 1,761 developer hours</span></div><div class="nbs-t"><b>38</b><span>Pages</span></div><div class="nbs-t"><b>237</b><span>Builds shipped</span></div><div class="nbs-t"><b>74</b><span>Open backlog items</span></div><div class="nbs-t"><b>7</b><span>Open bugs</span></div><div class="nbs-t"><b>329</b><span>Shipped this week</span></div></div><p class="nbs-u">Updated Nov 23 2026 · <a href="changelog.html">Change log</a></p></div>
 <!-- stats:end -->
 
 **Version 2.0** (November 2026): medicine & fever tracking, the pantry, pet characters, holiday themes, birthdays,
@@ -50,7 +50,7 @@ trash night) and leave on their own when it no longer does.
 - [Change log](changelog.md): everything shipped, newest first
 - [Home page](home.md): the banner, every Home card, and the pop-up cards
 - [All pages](pages.md): every page in menu order, with a screenshot of each
-- [Settings and personalisation](settings.md): menu pages, per-user settings, display size, alerts
+- [Settings and personalisation](settings.md): menu pages, per-user settings, interface scale, alerts
 - [Automations](automations.md): everything the house does on its own (phone alerts, reminders, confirm-first garage),
   what triggers each one and how to turn it off, plus the "make your own" templates
 - [Data sources](integrations.md): every Home Assistant integration and free service the app uses, what each one powers,

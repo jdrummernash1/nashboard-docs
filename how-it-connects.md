@@ -17,31 +17,21 @@ piece does what.
 
 Information flows in one direction, left to right, and only the last step is something you see or feel.
 
-<style>
-.hc{margin:1.4rem 0 1.8rem;color:inherit}
-.hc-row{display:flex;flex-wrap:wrap;align-items:stretch;gap:6px}
-.hc-box{flex:1 1 150px;min-width:150px;border:2px solid currentColor;border-radius:14px;padding:12px 12px 10px;background:rgba(127,127,127,.08)}
-.hc-box b{display:block;font-size:1rem;margin-bottom:4px}
-.hc-box small{display:block;font-size:.8rem;line-height:1.35;opacity:.85}
-.hc-num{display:inline-block;min-width:1.5em;height:1.5em;line-height:1.5em;text-align:center;border-radius:50%;border:1.5px solid currentColor;font-size:.75rem;font-weight:700;margin-right:6px}
-.hc-arrow{flex:0 0 22px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;opacity:.7}
-.hc-loop{margin-top:8px;border:1.5px dashed currentColor;border-radius:12px;padding:8px 12px;font-size:.82rem;opacity:.85}
-@media (max-width:720px){.hc-row{flex-direction:column}.hc-box{min-width:0}.hc-arrow{flex-basis:auto;transform:rotate(90deg);height:22px}}
-</style>
-<div class="hc" role="img" aria-label="Diagram: data sources feed Home Assistant, which feeds the dashboard and automations, which reach the screens and phones">
-<div class="hc-row">
-<div class="hc-box"><b><span class="hc-num">1</span>Data sources</b><small>Integrations: lights, locks, garage, doorbell, cameras, calendars, weather, packages, speakers, the router, pet devices, phones. Free web services: planes, Space Station, scores, news, air quality.</small></div>
-<div class="hc-arrow" aria-hidden="true">→</div>
-<div class="hc-box"><b><span class="hc-num">2</span>Home Assistant</b><small>Entities (one per sensor or switch), helpers (timers, text boxes, switches), to-do lists (shopping, pantry, chores) and the saved app data store (every Nashboard setting, merged and versioned).</small></div>
-<div class="hc-arrow" aria-hidden="true">→</div>
-<div class="hc-box"><b><span class="hc-num">3</span>The dashboard</b><small>Pages, each with its own cards. A card always lives on its page; Home shows a copy only while it matters. Rules decide when automatic cards appear and leave.</small></div>
-<div class="hc-arrow" aria-hidden="true">→</div>
-<div class="hc-box"><b><span class="hc-num">4</span>Automations</b><small>Run inside Home Assistant even when every screen is off. Watch helpers, clocks and sensors, then send notifications to phones, watches and car screens.</small></div>
-<div class="hc-arrow" aria-hidden="true">→</div>
-<div class="hc-box"><b><span class="hc-num">5</span>Screens</b><small>Phones, laptops, wall tablets, the kitchen tablet, TVs through casting, watch tiles and Android Auto / CarPlay.</small></div>
-</div>
-<div class="hc-loop">↺ The loop back: the dashboard also <b>writes</b> to Home Assistant. Tapping Done, starting a timer or adding to a list changes an entity or helper, and the dashboard writes its answers ("2 packages outside", "medicine OK at 1:40 AM") into helpers so automations can act on them.</div>
-</div>
+<img src="images/diagrams/how-it-connects-flow.svg" alt="Diagram: data sources feed Home Assistant, which feeds the dashboard and automations, which reach the screens and phones, with a loop back where the dashboard writes to Home Assistant" style="max-width:100%;height:auto">
+
+*Five steps from data source to screen, with the dashboard writing back to Home Assistant.*
+
+<details markdown="1"><summary>Text version</summary>
+
+1. **Data sources:** integrations (lights, locks, garage, doorbell, cameras, calendars, weather, packages, speakers, the router, pet devices, phones) and free web services (planes, Space Station, scores, news, air quality).
+2. **Home Assistant:** entities (one per sensor or switch), helpers (timers, text boxes, switches), to-do lists (shopping, pantry, chores) and the saved app data store (every Nashboard setting, merged and versioned).
+3. **The dashboard:** pages, each with its own cards. A card always lives on its page; Home shows a copy only while it matters. Rules decide when automatic cards appear and leave.
+4. **Automations:** run inside Home Assistant even when every screen is off. They watch helpers, clocks and sensors, then send notifications to phones, watches and car screens.
+5. **Screens:** phones, laptops, wall tablets, the kitchen tablet, TVs through casting, watch tiles and Android Auto / CarPlay.
+
+**The loop back:** the dashboard also writes to Home Assistant. Tapping Done, starting a timer or adding to a list changes an entity or helper, and the dashboard writes its answers ("2 packages outside", "medicine OK at 1:40 AM") into helpers so automations can act on them.
+
+</details>
 
 ## 1. Data sources: where the facts come from
 

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 590" width="1080" height="590" role="img" aria-labelledby="ttl desc" font-family="Segoe UI, system-ui, sans-serif">
+<title id="ttl">App architecture overview</title>
+<desc id="desc">Devices and online services feed Home Assistant on a Raspberry Pi 5. The dashboard file and the frontend data store sit beside it. Wall tablets, TVs and PCs open the dashboard; phone companion apps reach Android Auto, CarPlay and Wear OS. The AI PC deploys over the LAN.</desc>
+<style>
+  .bg{fill:#f6f7fb;stroke:#e4e7ee}
+  .card{fill:#ffffff;stroke:#dfe3ec;stroke-width:1.2}
+  .t{font:700 14px "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;fill:#1b2130}
+  .s{font:500 12px "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;fill:#566074}
+  .gl{font:700 11.5px "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;fill:#6b7385;letter-spacing:.08em;text-transform:uppercase}
+  .ttl{font:800 17px "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;fill:#1b2130}
+  .lb{font:600 11.5px "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;fill:#3a4357}
+  .lbbg{fill:#ffffff;stroke:#dfe3ec;stroke-width:1}
+  .grp{fill:rgba(120,130,150,.07);stroke:#c4cad8;stroke-width:1.4;stroke-dasharray:none}
+  .grpd{fill:rgba(120,130,150,.05);stroke:#b7bfd0;stroke-width:1.3;stroke-dasharray:3 5}
+  .ic{fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .ic .f{fill:currentColor}
+  .e{fill:none;stroke:#59627a;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .et{fill:none;stroke:#e08a00;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}
+  .ed{fill:none;stroke:#59627a;stroke-width:2;stroke-dasharray:2 6;stroke-linecap:round;stroke-linejoin:round}
+  .ar{fill:#59627a}.art{fill:#e08a00}
+  .shadow{filter:url(#sh)}
+  .num{stroke:none;fill:currentColor;font:800 14px "Segoe UI",system-ui,sans-serif}
+  /* node colour kinds: tint / ring / icon chip */
+  .k-acc .tint{fill:#fff3dc;stroke:#f2c06a}.k-acc .chip{fill:#ffb547}.k-acc .icn{stroke:#4a2f00;color:#4a2f00}
+  .k-info .tint{fill:#e6f1ff;stroke:#a9cdf6}.k-info .chip{fill:#4f9df0}.k-info .icn{stroke:#fff;color:#fff}
+  .k-ok .tint{fill:#e2f8ee;stroke:#97dcbc}.k-ok .chip{fill:#27b57a}.k-ok .icn{stroke:#fff;color:#fff}
+  .k-vio .tint{fill:#efe9ff;stroke:#cabaf6}.k-vio .chip{fill:#8b6ff0}.k-vio .icn{stroke:#fff;color:#fff}
+  .k-warn .tint{fill:#ffe9e5;stroke:#f5b5ab}.k-warn .chip{fill:#ef5e4d}.k-warn .icn{stroke:#fff;color:#fff}
+  .k-neu .tint{fill:#f1f3f8;stroke:#d2d7e3}.k-neu .chip{fill:#6c768d}.k-neu .icn{stroke:#fff;color:#fff}
+  @media (prefers-color-scheme: dark){
+    .bg{fill:#141922;stroke:#262d3a}
+    .card{fill:#1b212c;stroke:#2d3646}
+    .t,.ttl{fill:#eef1f6}
+    .s{fill:#a3adc0}
+    .gl{fill:#8f9ab0}
+    .lb{fill:#d3d9e6}
+    .lbbg{fill:#1b212c;stroke:#2d3646}
+    .grp{fill:rgba(160,175,205,.06);stroke:#3a4458}
+    .grpd{fill:rgba(160,175,205,.04);stroke:#444f66}
+    .e,.ed{stroke:#9aa5bd}.ar{fill:#9aa5bd}
+    .et{stroke:#ffb547}.art{fill:#ffb547}
+    .k-acc .tint{fill:#33290f;stroke:#7a5a1c}.k-acc .chip{fill:#ffb547}.k-acc .icn{stroke:#3a2500;color:#3a2500}
+    .k-info .tint{fill:#13263d;stroke:#2f5c93}.k-info .chip{fill:#5aa9ff}.k-info .icn{stroke:#06182c;color:#06182c}
+    .k-ok .tint{fill:#11291f;stroke:#25704f}.k-ok .chip{fill:#3ddc97}.k-ok .icn{stroke:#04210f;color:#04210f}
+    .k-vio .tint{fill:#241d3d;stroke:#5a4a9c}.k-vio .chip{fill:#a78bfa}.k-vio .icn{stroke:#160c3a;color:#160c3a}
+    .k-warn .tint{fill:#3a1a17;stroke:#8a3f36}.k-warn .chip{fill:#ff6b5b}.k-warn .icn{stroke:#3a0a05;color:#3a0a05}
+    .k-neu .tint{fill:#232a37;stroke:#3b4558}.k-neu .chip{fill:#8b93a3}.k-neu .icn{stroke:#10141b;color:#10141b}
+  }
+</style>
+<defs>
+  <filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#1b2130" flood-opacity=".16"/></filter>
+  <marker id="ms" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path class="ar" d="M0 1l9 4-9 4z"/></marker>
+  <marker id="mt" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto-start-reverse"><path class="art" d="M0 0l10 5-10 5z"/></marker>
+</defs>
+<rect class="bg" x="1" y="1" width="1078" height="588" rx="26"/>
+<rect class="grp" x="290" y="24" width="420" height="400" rx="22"/>
+<text class="gl" x="308" y="46">Raspberry Pi 5 · Home Assistant</text>
+<path class="e" d="M250 100L285 100L285 96L320 96" marker-end="url(#ms)"/>
+<path class="e" d="M250 218L285 218L285 118L320 118" marker-end="url(#ms)"/>
+<path class="e" d="M500 146L500 190" marker-end="url(#ms)" marker-start="url(#ms)"/>
+<path class="e" d="M500 280L500 322" marker-end="url(#ms)" marker-start="url(#ms)"/>
+<path class="e" d="M680 104L780 98" marker-end="url(#ms)"/>
+<path class="e" d="M1050 98L1066 98L1066 200L1050 200" marker-end="url(#ms)"/>
+<path class="e" d="M1066 200L1066 276L1050 276" marker-end="url(#ms)"/>
+<path class="e" d="M680 248L735 248L735 378L780 378" marker-end="url(#ms)"/>
+<path class="e" d="M330 518L500 518L500 424" marker-end="url(#ms)"/>
+<rect class="lbbg" x="362" y="508" width="106" height="20" rx="10"/><text class="lb" x="415" y="522" text-anchor="middle">deploy over LAN</text>
+<text class="gl" x="28" y="576">Legend</text><path class="e" d="M106 572h34" marker-end="url(#ms)"/><text class="lb" x="150" y="576">data or control flowing</text><g class="k-ok"><rect class="tint" x="318.6" y="564" width="22" height="16" rx="5" stroke-width="1.4"/></g><text class="lb" x="348.6" y="576">stored data</text><g class="k-vio"><rect class="tint" x="442.8" y="564" width="22" height="16" rx="5" stroke-width="1.4"/></g><text class="lb" x="472.8" y="576">AI PC</text>
+<g class="k-neu"><rect class="tint shadow" x="30" y="60" width="220" height="84" rx="16" stroke-width="1.4"/><circle class="chip" cx="59" cy="102" r="15"/><g class="ic icn" transform="translate(49.5 92.5) scale(.79)"><g><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M9 3v4M15 3v4M9 17v4M15 17v4M3 9h4M3 15h4M17 9h4M17 15h4"/></g></g><text class="t" x="82" y="99">Devices</text><text class="s" x="82" y="118">cameras, sensors</text></g>
+<g class="k-info"><rect class="tint shadow" x="30" y="176" width="220" height="84" rx="16" stroke-width="1.4"/><circle class="chip" cx="59" cy="218" r="15"/><g class="ic icn" transform="translate(49.5 208.5) scale(.79)"><g><path d="M7 18a4 4 0 0 1-.6-7.96A5.5 5.5 0 0 1 17 8.5 4.5 4.5 0 0 1 17.5 18z"/></g></g><text class="t" x="82" y="207">Online services</text><text class="s" x="82" y="226">Weather, flights,</text><text class="s" x="82" y="242">calendar, news</text></g>
+<g class="k-acc"><rect class="tint shadow" x="320" y="62" width="360" height="84" rx="16" stroke-width="1.4"/><circle class="chip" cx="349" cy="104" r="15"/><g class="ic icn" transform="translate(339.5 94.5) scale(.79)"><g><path d="M3 11l9-7 9 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-6h4v6"/></g></g><text class="t" x="372" y="101">HA core</text><text class="s" x="372" y="120">+ YAML + automations</text></g>
+<g class="k-info"><rect class="tint shadow" x="320" y="190" width="360" height="90" rx="16" stroke-width="1.4"/><circle class="chip" cx="349" cy="235" r="15"/><g class="ic icn" transform="translate(339.5 225.5) scale(.79)"><g><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></g></g><text class="t" x="372" y="232">www/dashboard.html</text><text class="s" x="372" y="251">+ dash-embed.js</text></g>
+<g class="k-ok"><g class="shadow"><path class="tint" d="M320 331v66a180 9 0 0 0 360 0V331a180 9 0 0 0 -360 0z" stroke-width="1.4"/></g><ellipse class="tint" cx="500" cy="331" rx="180" ry="9" stroke-width="1.4" style="fill-opacity:.7"/><circle class="chip" cx="349" cy="369" r="15"/><g class="ic icn" transform="translate(339.5 359.5) scale(.79)"><g><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/><path d="M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></g></g><text class="t" x="372" y="366">Frontend data</text><text class="s" x="372" y="385">system / user data</text></g>
+<g class="k-acc"><rect class="tint shadow" x="780" y="60" width="270" height="76" rx="16" stroke-width="1.4"/><circle class="chip" cx="809" cy="98" r="15"/><g class="ic icn" transform="translate(799.5 88.5) scale(.79)"><g><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></g></g><text class="t" x="832" y="103">Phone companion apps</text></g>
+<g class="k-neu"><rect class="tint shadow" x="780" y="170" width="270" height="60" rx="16" stroke-width="1.4"/><circle class="chip" cx="809" cy="200" r="15"/><g class="ic icn" transform="translate(799.5 190.5) scale(.79)"><g><path d="M4 15v-3l2-5h12l2 5v3"/><path d="M3 15h18v3H3z"/><circle cx="7.5" cy="18" r="1.4"/><circle cx="16.5" cy="18" r="1.4"/></g></g><text class="t" x="832" y="205">Android Auto / CarPlay</text></g>
+<g class="k-neu"><rect class="tint shadow" x="780" y="246" width="270" height="60" rx="16" stroke-width="1.4"/><circle class="chip" cx="809" cy="276" r="15"/><g class="ic icn" transform="translate(799.5 266.5) scale(.79)"><g><rect x="7" y="6" width="10" height="12" rx="3"/><path d="M9 6l.7-3h4.6L15 6M9 18l.7 3h4.6L15 18"/></g></g><text class="t" x="832" y="281">Wear OS</text></g>
+<g class="k-info"><rect class="tint shadow" x="780" y="340" width="270" height="76" rx="16" stroke-width="1.4"/><circle class="chip" cx="809" cy="378" r="15"/><g class="ic icn" transform="translate(799.5 368.5) scale(.79)"><g><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></g></g><text class="t" x="832" y="375">Browsers</text><text class="s" x="832" y="394">Wall tablets, TVs, PCs</text></g>
+<g class="k-vio"><rect class="tint shadow" x="30" y="480" width="300" height="76" rx="16" stroke-width="1.4"/><circle class="chip" cx="59" cy="518" r="15"/><g class="ic icn" transform="translate(49.5 508.5) scale(.79)"><g><rect x="4" y="5" width="16" height="11" rx="2"/><path d="M9 20h6M12 16v4"/><path d="M9 10.5h6"/></g></g><text class="t" x="82" y="515">AI PC</text><text class="s" x="82" y="534">Ollama + Claude tools</text></g>
+</svg>

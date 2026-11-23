@@ -15,10 +15,12 @@ title: Settings and personalisation
   (screen off too) about low planes overhead, a Space Station pass 10 minutes before, and 7700 emergencies within 200 nm.
 - **Menu order**: My order, or Most used (visit counts follow you; Home and the tab bar stay put).
 - **Hidden cards**: cards you hid with the ⋯ menu's Hide this card (bring them back from Customize menu → Hidden cards).
-- **Theme colour**: one of seven accents (Display size).
-- **Hand**: left- or right-handed phone layout (Display size → Hand).
+- **Theme colour**: one of seven accents (Interface scale).
+- **Hand**: left- or right-handed phone layout (Interface scale → Hand).
 - **User manual link**: kept for every user, remembered on each screen.
 - **Hobbies** you picked on the Hobbies page.
+- **Page intros**: a switch in Settings (or the Hide button on the line itself) hides the short intro under each page title.
+- **Interface scale**: cards, columns and text re-pack to the size you choose. Replaces Interface scale.
 - **Expanded cards**: whether collapsible cards (gas prices, AI usage) start open.
 
 These are stored in Home Assistant's own per-user storage, so they move with your login.
@@ -33,6 +35,8 @@ These are stored in Home Assistant's own per-user storage, so they move with you
 - Cards an admin turned off for everyone
 - The Storage inventory, Pantry places, cars, birthdays added by hand, holiday traditions, carry-out orders, family
   favorites, for-sale items, kids' ages, hobby cards and the workout log
+- Quiet hours on room TVs: a room's quiet hours also mute a TV or display in that room
+- Child in this room (Room settings): shows the kids' cards in that bedroom
 - Cast setups per TV and the banner windows map
 - The Out the door checklist and its ticks, and the three kitchen timers and their names
 - The background phone-alert switches kept in Home Assistant (plane and space alerts, gas price alert with its fuel and
@@ -43,7 +47,8 @@ Only Home Assistant admins can change the shared Guest information and pickup sc
 ## Saved on each device
 
 - Light or dark theme
-- Text/display size (scales the content, not the toolbar)
+- Interface scale (re-packs cards, columns and text; the toolbar stays)
+- Card drag order, with Reset order in the card menu to go back to the default
 - Planes map style, radius, flight paths and centring
 - The phone compass on or off
 - Cards swiped away for the day

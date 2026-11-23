@@ -119,7 +119,13 @@ Every chat and helper posts what it is doing with `tools/work-status.js` (starte
 
 ## 11. Flow diagram
 
-```mermaid
+<img src="images/diagrams/ai-build-flow.svg" alt="Flow from owner idea through autopilot panel, main chat, backlog, planning, helpers, review, quality checks, backup and deploy, with usage log feedback" style="max-width:100%;height:auto">
+
+*The build flow from an idea to a deploy.*
+
+<details markdown="1"><summary>Text version</summary>
+
+```text
 flowchart TD
   Owner([Owner on phone or PC]) -->|Jot it down| Ideas[Ideas in app]
   Owner -->|Save / requests| Panel[Autopilot panel]
@@ -149,3 +155,16 @@ flowchart TD
   Main -->|95% or context line| Stop[Clean stop or HANDOFF.md + fresh chat]
   Stop -->|re-arm after reset| Main
 ```
+
+</details>
+
+## 12. Batches of helpers (current practice)
+
+- A batch is 6 to 13 Sonnet helpers, each owning its own files so they never collide; the main chat writes each brief, then checks and integrates.
+- The main chat runs gap check, name-clash check, performance check, legend check and jump check on the combined result and fixes failures before deploying.
+- **Build progress lines:** short plain lines in chat as each stage finishes.
+- **Up-front approvals at hand-over:** when a chat is about to hand over to a fresh one, every approval the next stretch needs is asked for first, so work is not blocked.
+- **Context line:** a stop line on how full the chat's context is (85% in a long session), alongside the usage-window stop; reaching it writes the hand-off note and starts a fresh chat.
+- **Credits upkeep:** the credits rules in the session notes are re-read and kept current whenever usage or credit settings change.
+- **Cross-posting:** helpers and chats post their work to the shared live work status, and a result that matters to another area is posted there too.
+- **Live visibility:** the Design Studio shows the Agents tally and Live agents terminals; the docs carry the build-number banner.

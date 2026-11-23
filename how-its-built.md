@@ -181,7 +181,7 @@ switches to dark when your device is in dark mode.)
 
 Accessibility is built into the shared pieces rather than bolted on: buttons are real buttons with labels, diagrams
 carry text descriptions, charts and maps have legends so colour is never the only signal, text keeps readable contrast
-in both modes, motion respects the reduced-motion setting, and display size can be scaled per device.
+in both modes, motion respects the reduced-motion setting, and interface scale can be scaled per device.
 
 ## Phones, TVs, cars and Full window
 
@@ -246,7 +246,7 @@ The supporting rules:
 - **Configuration lives in Home Assistant, never in the app file.** Shared settings live in Home Assistant's saved app
   data; personal settings live in that person's user data and follow them to every device. A new build therefore can
   never wipe anything.
-- **Only device conveniences stay on the device** (theme, display size, a location pin). Anything a person enters is
+- **Only device conveniences stay on the device** (theme, interface scale, a location pin). Anything a person enters is
   never kept only in the browser.
 - **Keep data on a failed refresh.** A refresh that fails, comes back empty or arrives half-written never replaces data
   already on screen.

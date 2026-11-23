@@ -76,6 +76,14 @@ closed?".
 
 ---
 
+## What's new lately
+
+- **Leftovers:** log them on Pantry & Fridge and Home tells you what to eat first.
+- **Gigs:** the old Band card plans setup and breakdown times around the show.
+- **Scan it:** point the camera at a barcode when adding to shopping, pantry or storage.
+- **Wall calendar:** big buttons (and a microphone) to add an event or a list item.
+- **Bigger or smaller:** the Interface scale control re-packs everything to fit.
+
 ## Good to know
 
 - **Nothing physical happens by accident.** Garage doors and locks always ask you to confirm first, even from the car.
@@ -84,7 +92,7 @@ closed?".
 - **Your choices follow you.** The pages you pick and your alert settings go with your login to any device.
 - **Guests get their own page** with the Wi-Fi (scan the QR code), contacts and how-tos.
 - **On the TV:** tap the cast button to put a rotating dashboard (clock, weather, radar, cameras) on any TV.
-- **Holidays:** the banner decorates itself. If the animations bother you, Display size → Holiday decorations → Calm or
+- **Holidays:** the banner decorates itself. If the animations bother you, Interface scale → Holiday decorations → Calm or
   Off.
 
 ---
@@ -96,7 +104,7 @@ If you have a login but only visit sometimes:
 - **Use the Home screen and the Family Board.** Everything you need is there: who's home, today's events, chores, the
   shopping list and emergency contacts.
 - **Hide everything else** (Menu → Customize menu) so the menu only shows what you use.
-- **Make text bigger** with the Display size button (on the System page on phones).
+- **Make text bigger** with the Interface scale button (on the System page on phones).
 - **Babysitting?** The Medicine & fever card shows exactly what was given and when, and when the next dose is OK. Log
   anything you give so the parents see it on their phones.
 - **Can't find something?** Tap the bug button and say what you were looking for.

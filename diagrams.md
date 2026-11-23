@@ -9,7 +9,13 @@ Two flow diagrams: how the app works, and how AI is used both inside the app and
 
 Home Assistant (HA) runs on a Raspberry Pi 5. It talks to devices, cameras and online services. The dashboard is one HTML file served by HA, and everything a person enters is saved back into HA, never only in the page. Phones, the watch and the car reach HA through the companion apps, which also deliver notifications.
 
-```mermaid
+<img src="images/diagrams/how-the-app-works.svg" alt="Diagram of how the app works: devices, online services and cameras feed Home Assistant on a Raspberry Pi 5, with the dashboard, saved data, screens, companion apps and notifications" style="max-width:100%;height:auto">
+
+*How the app works: sources feed Home Assistant, which shares data with the dashboard and the companion apps.*
+
+<details markdown="1"><summary>Text version</summary>
+
+```text
 flowchart LR
   Devices[Devices and sensors] --> HA
   Online[Weather, flights, calendar, news] --> HA
@@ -33,6 +39,8 @@ flowchart LR
   Notify --> Companion
 ```
 
+</details>
+
 Legend:
 - Solid thin arrow: data or control flowing in the direction shown.
 - Double-line arrow: saved data (reads and writes of what people entered) and notification delivery.
@@ -44,7 +52,13 @@ Legend:
 
 Two separate uses of AI. Inside the app, HA Assist and AI Task call a local model on the AI PC (Ollama) or Google Gemini for features such as document import, photo dates and a bedtime story. On the build side, a main Claude chat coordinates and reviews, helpers do the contained work, and a single worker script routes jobs to the cheapest suitable model. Personal data only ever goes to the local Ollama models.
 
-```mermaid
+<img src="images/diagrams/ai-architecture.svg" alt="Diagram of the two uses of AI: inside the app (Assist to Ollama or Gemini) and building the app (owner, autopilot panel, Claude main chat, helpers, ai-worker routing, review, checks, deploy)" style="max-width:100%;height:auto">
+
+*The two uses of AI: features inside the app, and the way the app gets built.*
+
+<details markdown="1"><summary>Text version</summary>
+
+```text
 flowchart TD
   subgraph InApp[In the app]
     Assist[HA Assist and AI Task] -->|private jobs| OllamaA[Ollama on the AI PC]
@@ -76,6 +90,8 @@ flowchart TD
 
   Deploy --> Assist
 ```
+
+</details>
 
 Legend:
 - Solid arrow: a job or result moving along.

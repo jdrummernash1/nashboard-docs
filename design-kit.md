@@ -219,7 +219,7 @@ People will trust the dashboard with real things: lists, notes, medicine logs, s
 bug there is.
 
 - **Everything a person enters is saved on the server**, never only in the page or in browser storage. Browser storage is
-  for per-device conveniences only (theme on this screen, display size).
+  for per-device conveniences only (theme on this screen, interface scale).
 - **All saving goes through one central data layer** that reads the latest copy and merges into it, so two screens saving
   at once never wipe each other out.
 - **Never save a value that hasn't loaded.** A screen may only write a shared setting after it has successfully read it.
@@ -311,3 +311,12 @@ Before shipping any change, confirm:
 - [ ] No save can empty or sharply shrink a list without confirming; failed refreshes keep old data.
 - [ ] The fix (if this was a fix) is now a written rule and has been applied across the whole app.
 - [ ] All automated checks pass.
+
+## Addendum: newer conventions
+
+- **Locked in place.** Expanding or collapsing a card must not move it or its neighbours. Anchor scroll to the toggled card and keep every other card in its column. Automate it: collapse and expand a few cards and fail if the toggled card's top shifts more than a few pixels.
+- **Cross-posting.** Content that matters on several pages is posted to each without copying the stored data.
+- **Linked check boxes.** Check boxes that mean the same thing stay in step everywhere they appear.
+- **Rich descriptions.** Give items a fuller description where useful, with Show more for long text.
+- **Full-width exception.** One page-wide card (a "Right now" summary) may fill the width as an exception to the single-card width.
+- **Watch for mutation loops.** A script that keeps rewriting the page in response to its own changes burns CPU; include an idle-CPU check.

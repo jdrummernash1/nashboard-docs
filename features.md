@@ -28,7 +28,24 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 
 ---
 
-## Latest additions (builds .211–.229)
+## Latest additions (builds .230–.234)
+
+- **Interface scale:** one control replaces Interface scale. Cards, columns and text re-pack to the size you pick instead of zooming the page. A small scale control also floats in Full window.
+- **Cards and layout:** cards restack when one is hidden or dismissed (no gaps), keep their column when one collapses or expands, and collapsed cards show a one-line summary in the header (weather, air, UV, commute, cameras, calendar, packages, next event and more). A Reset order entry in the card menu puts cards back in the default order. Right now fills the full width first.
+- **Page intros and How this works:** a friendly line under every page title says what the page is for (a switch in Settings hides it), and every card menu has a How this works sheet.
+- **Smarter Home order:** urgent and recently changed cards float to the top with a small reason chip.
+- **Leftovers tracker:** on Pantry & Fridge, with an Eat this first card on Home.
+- **Barcode scanning:** a scan button on the shopping, pantry and storage add forms (camera, photo or typed code, looked up in Open Food Facts).
+- **Gigs card:** replaces the Band card with start, setup (2 hours before), show length, breakdown, a timeline, and import from an event link. Home gig suggestions show the be-there-by time.
+- **Wall calendar:** big Add event and Add to list buttons with a microphone.
+- **Rooms:** a Now playing card (with a turntable icon, and channel and artwork for video players) while something plays in that room, and kids' cards in any bedroom with a child set in Room settings. Quiet hours also mute a TV or display in that room.
+- **Garage:** car cards are also shown on the Garage page.
+- **Claude and agents:** Ask Claude (everyone) is split from Claude admin; the Agents card shows free and paid tallies with a bar per job; Right now shows the Claude card only while it is working. System page gets a Who's on card (live screens and people).
+- **Touch and polish:** chips, switches, top bar buttons, tile menus and card header buttons have 44 px tap areas; pets never vanish on a redraw; Home chips scroll in a marquee below the house; Full window icon on every radar.
+- **Medicine:** the medicine log and its matching to-do stay in sync both ways.
+- **About and tools:** a scrolling Credits card, the pieces count, NFC "Copy add-item link", and a jot-it-down trash button with Undo.
+
+## Earlier additions (builds .211–.229)
 
 - **Looks:** Classic, Paper, Glass and Bold designs; Auto follows the season and the theme button says what Auto follows.
 - **Storage NFC tags:** stick a tag on a storage box or garage drawer to open it. A tag link ending in add opens the box with Add item ready. Shared storage places, and Pantry & Fridge has its own fridge icon.
@@ -288,7 +305,7 @@ opened it gets an **UPDATED** dot.
 - **System**: Home Assistant health, updates, backups, low batteries, **Home settings** (the household basics in one
   place, each linking to where it's edited), **Hidden cards** (Show again), **Banner windows**, the **Device setup**
   checklist, the **User manual** link (kept for every user, remembered on each screen), **Saved data** (every saved app
-  setting with its size, entries, last save, who saved it and the version, plus Undo), and Display size on phones.
+  setting with its size, entries, last save, who saved it and the version, plus Undo), and Interface scale on phones.
 - **About**: version and build, what's new, every feature, data-source credits, the user manual and **Run the tour
   again**. It is always the last page in the menu, and an **i** button in the top bar opens it from anywhere. When the
   top-bar buttons don't fit on a phone, they scroll with a soft fade at the end.
@@ -407,7 +424,7 @@ Made as a **trailing record of what was given**, with quick buttons.
 - **Phones**: everything works on Android and iPhone. Phone layouts have a two-line title bar (the title, then the time,
   build number and connection dot, with Nashboard as a small centred N badge), the bug button, a compact weather card
   and touch-friendly cards.
-- **Left- or right-handed** (Display size → Hand, per person): on phones the navigation, room card buttons, page header
+- **Left- or right-handed** (Interface scale → Hand, per person): on phones the navigation, room card buttons, page header
   buttons, add and mic buttons, Home card buttons and sheet buttons mirror to your thumb's side.
 - **Phone notifications** (from Home Assistant, so they arrive with the screen off, on every phone with the app):
   planes overhead (one per pass), Space Station passes, 7700 emergencies within 200 nm, bad commute traffic, the dog
@@ -462,7 +479,7 @@ Made as a **trailing record of what was given**, with quick buttons.
 - **Cards pack neatly** in equal-width columns and centre, never wider than about five cards; once a page settles,
   nothing jumps sideways.
 - **One font** throughout on one size scale; light and dark themes (dark-enough colours in light mode); adjustable
-  display size.
+  interface scale.
 - **Swipe between pages** on phones: a clear sideways swipe on empty page or a card body moves to the next or previous
   page in menu order, with a short slide and a page-name hint. Card swipes, chip and tab rows, maps, the radar, charts
   and sliders keep their own gestures. Switch in Alerts & notifications.

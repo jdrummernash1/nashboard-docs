@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1140 1090" width="1140" height="1090" role="img" aria-labelledby="ttl desc" font-family="Segoe UI, system-ui, sans-serif">
+<title id="ttl">The AI build flow</title>
+<desc id="desc">From an idea through the autopilot panel, main chat, backlog, planning and helpers, to review, quality checks, backup and deploy, with a usage log feeding back into planning.</desc>
+<style>
+  .bg{fill:#f6f7fb;stroke:#e4e7ee}
+  .card{fill:#ffffff;stroke:#dfe3ec;stroke-width:1.2}
+  .t{font:700 14px "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;fill:#1b2130}
+  .s{font:500 12px "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;fill:#566074}
+  .gl{font:700 11.5px "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;fill:#6b7385;letter-spacing:.08em;text-transform:uppercase}
+  .ttl{font:800 17px "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;fill:#1b2130}
+  .lb{font:600 11.5px "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;fill:#3a4357}
+  .lbbg{fill:#ffffff;stroke:#dfe3ec;stroke-width:1}
+  .grp{fill:rgba(120,130,150,.07);stroke:#c4cad8;stroke-width:1.4;stroke-dasharray:none}
+  .grpd{fill:rgba(120,130,150,.05);stroke:#b7bfd0;stroke-width:1.3;stroke-dasharray:3 5}
+  .ic{fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .ic .f{fill:currentColor}
+  .e{fill:none;stroke:#59627a;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .et{fill:none;stroke:#e08a00;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}
+  .ed{fill:none;stroke:#59627a;stroke-width:2;stroke-dasharray:2 6;stroke-linecap:round;stroke-linejoin:round}
+  .ar{fill:#59627a}.art{fill:#e08a00}
+  .shadow{filter:url(#sh)}
+  .num{stroke:none;fill:currentColor;font:800 14px "Segoe UI",system-ui,sans-serif}
+  /* node colour kinds: tint / ring / icon chip */
+  .k-acc .tint{fill:#fff3dc;stroke:#f2c06a}.k-acc .chip{fill:#ffb547}.k-acc .icn{stroke:#4a2f00;color:#4a2f00}
+  .k-info .tint{fill:#e6f1ff;stroke:#a9cdf6}.k-info .chip{fill:#4f9df0}.k-info .icn{stroke:#fff;color:#fff}
+  .k-ok .tint{fill:#e2f8ee;stroke:#97dcbc}.k-ok .chip{fill:#27b57a}.k-ok .icn{stroke:#fff;color:#fff}
+  .k-vio .tint{fill:#efe9ff;stroke:#cabaf6}.k-vio .chip{fill:#8b6ff0}.k-vio .icn{stroke:#fff;color:#fff}
+  .k-warn .tint{fill:#ffe9e5;stroke:#f5b5ab}.k-warn .chip{fill:#ef5e4d}.k-warn .icn{stroke:#fff;color:#fff}
+  .k-neu .tint{fill:#f1f3f8;stroke:#d2d7e3}.k-neu .chip{fill:#6c768d}.k-neu .icn{stroke:#fff;color:#fff}
+  @media (prefers-color-scheme: dark){
+    .bg{fill:#141922;stroke:#262d3a}
+    .card{fill:#1b212c;stroke:#2d3646}
+    .t,.ttl{fill:#eef1f6}
+    .s{fill:#a3adc0}
+    .gl{fill:#8f9ab0}
+    .lb{fill:#d3d9e6}
+    .lbbg{fill:#1b212c;stroke:#2d3646}
+    .grp{fill:rgba(160,175,205,.06);stroke:#3a4458}
+    .grpd{fill:rgba(160,175,205,.04);stroke:#444f66}
+    .e,.ed{stroke:#9aa5bd}.ar{fill:#9aa5bd}
+    .et{stroke:#ffb547}.art{fill:#ffb547}
+    .k-acc .tint{fill:#33290f;stroke:#7a5a1c}.k-acc .chip{fill:#ffb547}.k-acc .icn{stroke:#3a2500;color:#3a2500}
+    .k-info .tint{fill:#13263d;stroke:#2f5c93}.k-info .chip{fill:#5aa9ff}.k-info .icn{stroke:#06182c;color:#06182c}
+    .k-ok .tint{fill:#11291f;stroke:#25704f}.k-ok .chip{fill:#3ddc97}.k-ok .icn{stroke:#04210f;color:#04210f}
+    .k-vio .tint{fill:#241d3d;stroke:#5a4a9c}.k-vio .chip{fill:#a78bfa}.k-vio .icn{stroke:#160c3a;color:#160c3a}
+    .k-warn .tint{fill:#3a1a17;stroke:#8a3f36}.k-warn .chip{fill:#ff6b5b}.k-warn .icn{stroke:#3a0a05;color:#3a0a05}
+    .k-neu .tint{fill:#232a37;stroke:#3b4558}.k-neu .chip{fill:#8b93a3}.k-neu .icn{stroke:#10141b;color:#10141b}
+  }
+</style>
+<defs>
+  <filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#1b2130" flood-opacity=".16"/></filter>
+  <marker id="ms" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path class="ar" d="M0 1l9 4-9 4z"/></marker>
+  <marker id="mt" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto-start-reverse"><path class="art" d="M0 0l10 5-10 5z"/></marker>
+</defs>
+<rect class="bg" x="1" y="1" width="1138" height="1088" rx="26"/>
+<rect class="grpd" x="24" y="510" width="1052" height="140" rx="22"/>
+<text class="gl" x="1058" y="532" text-anchor="end">Helpers · every job is logged</text>
+<path class="e" d="M300 76L380 76" marker-end="url(#ms)"/>
+<rect class="lbbg" x="303" y="66" width="74" height="20" rx="10"/><text class="lb" x="340" y="80" text-anchor="middle">Jot it down</text>
+<path class="e" d="M170 40L170 18L770 18L770 40" marker-end="url(#ms)"/>
+<rect class="lbbg" x="418" y="8" width="104" height="20" rx="10"/><text class="lb" x="470" y="22" text-anchor="middle">Save / requests</text>
+<path class="e" d="M480 112L480 160" marker-end="url(#ms)"/>
+<rect class="lbbg" x="440" y="126" width="80" height="20" rx="10"/><text class="lb" x="480" y="140" text-anchor="middle">read-ideas</text>
+<path class="e" d="M770 112L770 138L600 138L600 160" marker-end="url(#ms)"/>
+<rect class="lbbg" x="623" y="128" width="134" height="20" rx="10"/><text class="lb" x="690" y="142" text-anchor="middle">Send to Claude wakes</text>
+<path class="e" d="M380 200L290 200" marker-end="url(#ms)"/>
+<text class="lb" x="335" y="188" text-anchor="middle">95% or</text><text class="lb" x="335" y="226" text-anchor="middle">context line</text>
+<path class="e" d="M165 160L165 130L420 130L420 160" marker-end="url(#ms)"/>
+<rect class="lbbg" x="208" y="120" width="114" height="20" rx="10"/><text class="lb" x="265" y="134" text-anchor="middle">re-arm after reset</text>
+<path class="ed" d="M680 200L720 200" marker-end="url(#ms)"/>
+<path class="e" d="M880 200L920 200" marker-end="url(#ms)"/>
+<path class="e" d="M530 240L530 285" marker-end="url(#ms)"/>
+<path class="e" d="M530 357L530 400" marker-end="url(#ms)"/>
+<path class="e" d="M440 492L440 524L200 524L200 552" marker-end="url(#ms)"/>
+<rect class="lbbg" x="258" y="514" width="124" height="20" rx="10"/><text class="lb" x="320" y="528" text-anchor="middle">mechanical, private</text>
+<path class="e" d="M540 492L540 552" marker-end="url(#ms)"/>
+<rect class="lbbg" x="484" y="512" width="112" height="20" rx="10"/><text class="lb" x="540" y="526" text-anchor="middle">contained builds</text>
+<path class="e" d="M620 492L620 524L890 524L890 552" marker-end="url(#ms)"/>
+<rect class="lbbg" x="701" y="514" width="118" height="20" rx="10"/><text class="lb" x="760" y="528" text-anchor="middle">non-private, later</text>
+<path class="ed" d="M1030 510L1030 492" marker-end="url(#ms)"/>
+<path class="e" d="M860 446L680 446" marker-end="url(#ms)"/>
+<path class="e" d="M975 400L975 357" marker-end="url(#ms)"/>
+<path class="e" d="M200 630L200 665L530 665L530 690" marker-end="url(#ms)"/>
+<path class="e" d="M540 630L540 665" marker-end="url(#ms)"/>
+<path class="e" d="M890 630L890 665L530 665" marker-end="url(#ms)"/>
+<path class="ed" d="M680 728L1118 728L1118 440L1090 440" marker-end="url(#ms)"/>
+<rect class="lbbg" x="842" y="718" width="116" height="20" rx="10"/><text class="lb" x="900" y="732" text-anchor="middle">delegation review</text>
+<path class="e" d="M380 728L180 728L180 840" marker-end="url(#ms)"/>
+<path class="e" d="M360 840L360 808L470 808L470 766" marker-end="url(#ms)"/>
+<rect class="lbbg" x="395" y="798" width="40" height="20" rx="10"/><text class="lb" x="415" y="812" text-anchor="middle">fail</text>
+<path class="e" d="M420 900L520 900" marker-end="url(#ms)"/>
+<rect class="lbbg" x="448" y="874" width="44" height="20" rx="10"/><text class="lb" x="470" y="888" text-anchor="middle">pass</text>
+<path class="e" d="M690 900L740 900" marker-end="url(#ms)"/>
+<path class="e" d="M940 900L990 900" marker-end="url(#ms)"/>
+<path class="e" d="M840 932L840 990" marker-end="url(#ms)"/>
+<text class="gl" x="28" y="1072">Legend</text><path class="e" d="M106 1068h34" marker-end="url(#ms)"/><text class="lb" x="150" y="1072">job or result moving along</text><path class="ed" d="M337.20000000000005 1068h34" marker-end="url(#ms)"/><text class="lb" x="381.20000000000005" y="1072">logging, or a side note</text><g class="k-vio"><rect class="tint" x="549.8000000000001" y="1060" width="22" height="16" rx="5" stroke-width="1.4"/></g><text class="lb" x="579.8000000000001" y="1072">Claude and local AI</text><g class="k-ok"><rect class="tint" x="723.6000000000001" y="1060" width="22" height="16" rx="5" stroke-width="1.4"/></g><text class="lb" x="753.6000000000001" y="1072">review and checks</text><g class="k-acc"><rect class="tint" x="885.0000000000001" y="1060" width="22" height="16" rx="5" stroke-width="1.4"/></g><text class="lb" x="915.0000000000001" y="1072">owner and deploy</text>
+<g class="k-acc"><rect class="tint shadow" x="40" y="40" width="260" height="72" rx="36" stroke-width="1.4"/><circle class="chip" cx="69" cy="76" r="15"/><g class="ic icn" transform="translate(59.5 66.5) scale(.79)"><g><circle cx="12" cy="8" r="4"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0"/></g></g><text class="t" x="92" y="73">Owner</text><text class="s" x="92" y="92">on phone or PC</text></g>
+<g class="k-acc"><rect class="tint shadow" x="380" y="40" width="200" height="72" rx="16" stroke-width="1.4"/><circle class="chip" cx="409" cy="76" r="15"/><g class="ic icn" transform="translate(399.5 66.5) scale(.79)"><g><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></g></g><text class="t" x="432" y="81">Ideas in app</text></g>
+<g class="k-acc"><rect class="tint shadow" x="660" y="40" width="220" height="72" rx="16" stroke-width="1.4"/><circle class="chip" cx="689" cy="76" r="15"/><g class="ic icn" transform="translate(679.5 66.5) scale(.79)"><g><path d="M5 6h14M5 12h14M5 18h14"/><circle cx="9" cy="6" r="2" class="f"/><circle cx="15" cy="12" r="2" class="f"/><circle cx="8" cy="18" r="2" class="f"/></g></g><text class="t" x="712" y="81">Autopilot panel</text></g>
+<g class="k-vio"><rect class="tint shadow" x="380" y="160" width="300" height="80" rx="16" stroke-width="1.4"/><circle class="chip" cx="409" cy="200" r="15"/><g class="ic icn" transform="translate(399.5 190.5) scale(.79)"><g><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3.5 3.5 0 0 0 3 5.5A3 3 0 0 0 12 19V5a3 3 0 0 0-3-1z"/><path d="M15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3.5 3.5 0 0 1-3 5.5A3 3 0 0 1 12 19"/></g></g><text class="t" x="432" y="197">Main chat · Opus</text><text class="s" x="432" y="216">coordinator + reviewer</text></g>
+<g class="k-warn"><rect class="tint shadow" x="40" y="160" width="250" height="80" rx="16" stroke-width="1.4"/><circle class="chip" cx="69" cy="200" r="15"/><g class="ic icn" transform="translate(59.5 190.5) scale(.79)"><g><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M9.5 9.5h5v5h-5z"/></g></g><text class="t" x="92" y="197">Clean stop</text><text class="s" x="92" y="216">or HANDOFF.md + fresh chat</text></g>
+<g class="k-neu"><rect class="tint shadow" x="720" y="160" width="160" height="80" rx="16" stroke-width="1.4"/><circle class="chip" cx="749" cy="200" r="15"/><g class="ic icn" transform="translate(739.5 190.5) scale(.79)"><g><path d="M3 12h4l2.5-6 4 12 2.5-6H21"/></g></g><text class="t" x="772" y="205">work-status</text></g>
+<g class="k-neu"><rect class="tint shadow" x="920" y="160" width="190" height="80" rx="16" stroke-width="1.4"/><circle class="chip" cx="949" cy="200" r="15"/><g class="ic icn" transform="translate(939.5 190.5) scale(.79)"><g><path d="M5 20V12M10 20V6M15 20v-6M20 20V9"/></g></g><text class="t" x="972" y="197">Top bar agent count</text><text class="s" x="972" y="216">+ Home Claude card</text></g>
+<g class="k-acc"><rect class="tint shadow" x="380" y="285" width="300" height="72" rx="16" stroke-width="1.4"/><circle class="chip" cx="409" cy="321" r="15"/><g class="ic icn" transform="translate(399.5 311.5) scale(.79)"><g><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.6" cy="6" r="1"/><circle cx="4.6" cy="12" r="1"/><circle cx="4.6" cy="18" r="1"/></g></g><text class="t" x="432" y="318">BACKLOG.md</text><text class="s" x="432" y="337">easiest first</text></g>
+<g class="k-vio"><g class="shadow"><path class="tint" stroke-width="1.4" stroke-linejoin="round" d="M402 400H658L680 446L658 492H402L380 446z"/></g><circle class="chip" cx="421" cy="446" r="15"/><g class="ic icn" transform="translate(411.5 436.5) scale(.79)"><g><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.5 6H15a3 3 0 0 1 0 6H9a3 3 0 0 0 0 6h6.5"/></g></g><text class="t" x="444" y="443">Plan batch</text><text class="s" x="444" y="462">usage-model + delegation stats</text></g>
+<g class="k-vio"><rect class="tint shadow" x="50" y="552" width="300" height="78" rx="16" stroke-width="1.4"/><circle class="chip" cx="79" cy="591" r="15"/><g class="ic icn" transform="translate(69.5 581.5) scale(.79)"><g><rect x="4" y="4" width="16" height="6" rx="2"/><rect x="4" y="14" width="16" height="6" rx="2"/><path d="M8 7h.01M8 17h.01"/></g></g><text class="t" x="102" y="588">Local Ollama</text><text class="s" x="102" y="607">via ai-worker.js</text></g>
+<g class="k-vio"><rect class="tint shadow" x="390" y="552" width="300" height="78" rx="16" stroke-width="1.4"/><circle class="chip" cx="419" cy="591" r="15"/><g class="ic icn" transform="translate(409.5 581.5) scale(.79)"><g><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></g></g><text class="t" x="442" y="588">Sonnet / Haiku helpers</text><text class="s" x="442" y="607">Fable on request</text></g>
+<g class="k-info"><rect class="tint shadow" x="730" y="552" width="320" height="78" rx="16" stroke-width="1.4"/><circle class="chip" cx="759" cy="591" r="15"/><g class="ic icn" transform="translate(749.5 581.5) scale(.79)"><g><path d="M7 18a4 4 0 0 1-.6-7.96A5.5 5.5 0 0 1 17 8.5 4.5 4.5 0 0 1 17.5 18z"/></g></g><text class="t" x="782" y="588">Gemini / Groq / OpenRouter</text><text class="s" x="782" y="607">--cloud-ok only</text></g>
+<g class="k-ok"><g class="shadow"><path class="tint" d="M860 409v74a115 9 0 0 0 230 0V409a115 9 0 0 0 -230 0z" stroke-width="1.4"/></g><ellipse class="tint" cx="975" cy="409" rx="115" ry="9" stroke-width="1.4" style="fill-opacity:.7"/><circle class="chip" cx="889" cy="451" r="15"/><g class="ic icn" transform="translate(879.5 441.5) scale(.79)"><g><path d="M5 4h14v16H5z"/><path d="M8.5 9h7M8.5 12.5h7M8.5 16h4"/></g></g><text class="t" x="912" y="456">ai-usage log</text></g>
+<g class="k-neu"><rect class="tint shadow" x="860" y="285" width="230" height="72" rx="16" stroke-width="1.4"/><circle class="chip" cx="889" cy="321" r="15"/><g class="ic icn" transform="translate(879.5 311.5) scale(.79)"><g><rect x="3.5" y="5" width="17" height="14" rx="2.5"/><path d="M3.5 10h17"/></g></g><text class="t" x="912" y="318">AI usage card</text><text class="s" x="912" y="337">in the app</text></g>
+<g class="k-ok"><rect class="tint shadow" x="380" y="690" width="300" height="76" rx="16" stroke-width="1.4"/><circle class="chip" cx="409" cy="728" r="15"/><g class="ic icn" transform="translate(399.5 718.5) scale(.79)"><g><circle cx="12" cy="12" r="8.5"/><path d="M8 12.3l2.8 2.8L16.2 9.5"/></g></g><text class="t" x="432" y="733">Opus reviews + integrates</text></g>
+<g class="k-ok"><rect class="tint shadow" x="40" y="840" width="380" height="112" rx="16" stroke-width="1.4"/><circle class="chip" cx="69" cy="896" r="15"/><g class="ic icn" transform="translate(59.5 886.5) scale(.79)"><g><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2.2 2.2L15.5 10"/></g></g><text class="t" x="92" y="877">Quality checks</text><text class="s" x="92" y="896">build, namecheck, yamlcheck, gapcheck,</text><text class="s" x="92" y="912">mapcheck, legendcheck, datacheck,</text><text class="s" x="92" y="928">perfcheck</text></g>
+<g class="k-acc"><rect class="tint shadow" x="520" y="868" width="170" height="64" rx="16" stroke-width="1.4"/><circle class="chip" cx="549" cy="900" r="15"/><g class="ic icn" transform="translate(539.5 890.5) scale(.79)"><g><path d="M4 8l8-4 8 4v8l-8 4-8-4z"/><path d="M4 8l8 4 8-4M12 12v8"/></g></g><text class="t" x="572" y="905">HA backup</text></g>
+<g class="k-acc"><rect class="tint shadow" x="740" y="868" width="200" height="64" rx="16" stroke-width="1.4"/><circle class="chip" cx="769" cy="900" r="15"/><g class="ic icn" transform="translate(759.5 890.5) scale(.79)"><g><path d="M12 3c3.5 2 5 5.5 4.5 10H7.5C7 8.5 8.5 5 12 3z"/><circle cx="12" cy="9.5" r="1.6"/><path d="M7.5 13l-2.5 3.5 3-.5M16.5 13l2.5 3.5-3-.5M10 17.5l2 3.5 2-3.5"/></g></g><text class="t" x="792" y="905">deploy-dashboard.ps1</text></g>
+<g class="k-info"><g class="shadow"><path class="tint" d="M990 865v74a60 9 0 0 0 120 0V865a60 9 0 0 0 -120 0z" stroke-width="1.4"/></g><ellipse class="tint" cx="1050" cy="865" rx="60" ry="9" stroke-width="1.4" style="fill-opacity:.7"/><text class="t" x="1006" y="904">Home Assistant</text><text class="s" x="1006" y="923">on Pi</text></g>
+<g class="k-neu"><rect class="tint shadow" x="740" y="990" width="200" height="60" rx="16" stroke-width="1.4"/><circle class="chip" cx="769" cy="1020" r="15"/><g class="ic icn" transform="translate(759.5 1010.5) scale(.79)"><g><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></g></g><text class="t" x="792" y="1017">Deploy report</text><text class="s" x="792" y="1036">in chat</text></g>
+</svg>

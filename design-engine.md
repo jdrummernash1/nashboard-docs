@@ -113,7 +113,7 @@ The family relies on this data, so these rules are the top priority.
 - **Configuration lives in Home Assistant**, in its frontend system data or per-person user data, or in Home Assistant helpers and
   to-do lists. It never lives in the dashboard file, so a new build can never wipe it, and never only in the page or browser storage.
 - **Per person or per device.** Per-person settings (hidden pages and a list of synced preferences such as alert switches) follow the
-  person across devices. Anything not on that list, such as theme, display size or location pin, stays on that one device.
+  person across devices. Anything not on that list, such as theme, interface scale or location pin, stays on that one device.
 - **Guarded saving.** Every shared setting is saved through one function that refuses to save a key that has not loaded successfully
   on that screen. New shared settings must load before they can save. Why: saving before loading is how data gets overwritten with
   blanks.
@@ -144,3 +144,12 @@ The family relies on this data, so these rules are the top priority.
 - **Tap-target check:** fails anything smaller than the minimum size.
 - **Data check:** inventory of saved values, a round trip (seed, rebuild, reload, verify), and no silent shrinking of lists.
 - **Source and YAML checks:** the built dashboard must match its pieces, and configuration files must parse.
+
+## Newer rules (Nov 23)
+
+- **Locked in place:** expanding or collapsing a card never moves it or any other card; scroll stays anchored to the toggled card. Enforced by the jump check.
+- **Cross-posting:** a card's content can be posted to its other relevant pages or Home copies without duplicating the saved data.
+- **Linked check boxes:** check boxes that stand for the same thing stay in step wherever they appear.
+- **Rich descriptions:** items carry a fuller description where it helps, shown with Show more when long.
+- **Right now width exception:** the Right now card fills the full width, an exception to one single-card width per page.
+- **Checks:** the jump check joins the list above, and the performance check also catches scripts stuck in a page-mutation loop.

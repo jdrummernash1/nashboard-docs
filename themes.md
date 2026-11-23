@@ -12,7 +12,7 @@ only colours, borders, shadows and surfaces change.
 
 ## Looks
 
-Pick a look in **Settings, Display size**, in the Look row. Tap one of the four buttons; it applies at once.
+Pick a look in **Settings, Interface scale**, in the Look row. Tap one of the four buttons; it applies at once.
 
 ### Classic (default)
 - **Feel**: the original Nashboard. Warm charcoal in dark mode, a warm off-white in light mode, soft rounded cards with a
@@ -52,7 +52,7 @@ pale frosted blue-white, Bold in dark mode is black with bright outlines).
 ## Display modes for screens
 
 Dedicated screens such as a wall tablet or TV use the same looks and modes, set once on that device. Pairing **Bold** with
-**Dark** (or **Light** in a bright room) gives the most readable result at a distance; the display size setting beside the
+**Dark** (or **Light** in a bright room) gives the most readable result at a distance; the interface scale setting beside the
 Look row makes everything larger on top of that. Full window on any page zooms the page to fit the screen and uses the
 current look.
 
@@ -71,6 +71,28 @@ Text must be readable in every combination of look, mode and accent:
   every accent.
 - An automated check opens every page in dark and light and fails any text with too little contrast before a new version
   is released.
+
+## Holiday looks
+
+On holidays the Home banner dresses the house, and a few things drift past (falling leaves, snow, hearts, confetti). Anything that moves passes behind the house, never over it; things fixed to the house, like a wreath on the door or lights along the roof, stay on it. Turn it all off, or keep it still, with Holiday decorations in the Interface scale sheet (On, Calm, Off). These pictures come from the demo house with the date set to each holiday.
+
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin:16px 0">
+<figure style="margin:0"><img src="images/holidays/plain.jpg" alt="No holiday: the plain house" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">No holiday: the plain house</figcaption></figure>
+<figure style="margin:0"><img src="images/holidays/christmas-lights.jpg" alt="Christmas: string lights along the roofs, with the wreath (Dec 1-25)" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">Christmas: string lights along the roofs, with the wreath (Dec 1-25)</figcaption></figure>
+<figure style="margin:0"><img src="images/holidays/december-wreath.jpg" alt="December: a wreath on the front door (the rest of the month)" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">December: a wreath on the front door (the rest of the month)</figcaption></figure>
+<figure style="margin:0"><img src="images/holidays/halloween.jpg" alt="Halloween: pumpkins on the porch (the week before)" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">Halloween: pumpkins on the porch (the week before)</figcaption></figure>
+<figure style="margin:0"><img src="images/holidays/july4.jpg" alt="Fourth of July: a flag on the porch" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">Fourth of July: a flag on the porch</figcaption></figure>
+<figure style="margin:0"><img src="images/holidays/memorial-day.jpg" alt="Memorial Day: a flag on the porch" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">Memorial Day: a flag on the porch</figcaption></figure>
+<figure style="margin:0"><img src="images/holidays/valentines.jpg" alt="Valentine’s Day: heart garland and a heart on the door" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">Valentine’s Day: heart garland and a heart on the door</figcaption></figure>
+<figure style="margin:0"><img src="images/holidays/first-snow.jpg" alt="First snow: snow on the roofs when the weather says snow" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">First snow: snow on the roofs when the weather says snow</figcaption></figure>
+<figure style="margin:0"><img src="images/holidays/game-day.jpg" alt="Game day: bunting in the team colours" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">Game day: bunting in the team colours</figcaption></figure>
+<figure style="margin:0"><img src="images/holidays/thanksgiving.jpg" alt="Thanksgiving: leaf garland and a turkey" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">Thanksgiving: leaf garland and a turkey</figcaption></figure>
+<figure style="margin:0"><img src="images/holidays/st-patricks.jpg" alt="St. Patrick’s Day: shamrock garland" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">St. Patrick’s Day: shamrock garland</figcaption></figure>
+<figure style="margin:0"><img src="images/holidays/easter.jpg" alt="Easter: eggs on the lawn (the week before)" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">Easter: eggs on the lawn (the week before)</figcaption></figure>
+<figure style="margin:0"><img src="images/holidays/new-year.jpg" alt="New Year: banner and fireworks (Dec 31 and Jan 1)" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">New Year: banner and fireworks (Dec 31 and Jan 1)</figcaption></figure>
+<figure style="margin:0"><img src="images/holidays/hanukkah.jpg" alt="Hanukkah: a menorah in the window, one more candle each night" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">Hanukkah: a menorah in the window, one more candle each night</figcaption></figure>
+<figure style="margin:0"><img src="images/holidays/birthday.jpg" alt="A family birthday: balloons and a banner (shown with a demo name)" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">A family birthday: balloons and a banner (shown with a demo name)</figcaption></figure>
+</div>
 
 ## Quick guide
 

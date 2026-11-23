@@ -80,7 +80,7 @@ The aim is the most finished work per unit of usage, without risking data.
 - **AI worker** (`ai-worker.js`). One doorway for helper jobs. Without a flag a job stays on the local model, the only place personal data may go. With an explicit cloud-allowed flag (and no personal data) it routes through free cloud tiers within their limits, then falls back to local. Keys live in environment variables only.
 - **AI usage log and card** (`ai-usage.js`). One append-only log covers every agent: Claude chats and helpers, local models and cloud helpers, with tokens, time, cost and a task label. `summary` gives today, this week and all time; `publish` writes totals only (no prompts, answers or task text) to the Design Studio AI usage card.
 - **Market watchdog** (`ai-market-watch.js`). Checks free model lists from the cloud providers and the newest local models that fit the PC's graphics card, without using any AI. It remembers what it has seen, publishes only model names, and feeds a "New free AI options" card that appears while something new is waiting.
-- **Batching and targeted work.** Batch deploys, greps instead of whole-file reads, cropped screenshots only for layout changes, and up to ten coordinated helpers at once, each owning its own files.
+- **Batching and targeted work.** Batch deploys, greps instead of whole-file reads, cropped screenshots only for layout changes, and batches of 6 to 13 coordinated helpers at once, each owning its own files.
 
 ## Safety nets
 
@@ -88,3 +88,12 @@ The aim is the most finished work per unit of usage, without risking data.
 - Idle helpers and stuck test runs are stopped and restarted.
 - Only `docs/` is public, updated in one batch at most once a day and published only on request, with no personal details.
 - Whenever a helper, page or integration is added, the usage log, work status, deploy report, checks, docs and hand-off note are updated in the same pass.
+
+## Additions on Nov 23 2026
+
+- **Jump check** (`jumpcheck.js`). On the Design Studio page it collapses and re-expands three cards one at a time. After each toggle the toggled card's top must stay within 4 px of where it was on screen, and every other card must keep its column and still be there. It prints OK or each problem, and runs with the other checks before a deploy.
+- **Performance check catches mutation loops.** An idle-CPU and long-task baseline now flags a script that keeps changing the page in a loop (one such loop in the scrolling chips was found and fixed this way).
+- **Check list for a batch:** gap check, name-clash check, performance check, legend check and jump check, run by the main chat after the helpers finish and before integrating.
+- **Docs build-number banner.** The public docs show the build number they describe, so a reader can see how current they are.
+- **Design Studio agent views.** The Agents tally counts free and paid agents on one line; Live agents shows a terminal-style view of what each agent is working on, fed by the work-status tool.
+- **Build progress lines.** The main chat posts a short plain line as each stage of a batch finishes, and asks for every approval it will need up front at hand-over rather than mid-run.

@@ -18,11 +18,12 @@ Home is the page most screens sit on. It has a banner at the top and a grid of c
 - **House illustration** drawn in the browser, with day and night skies, stars and the moon. Windows light up
   when that room's lights are on; the porch light and lamp post follow the front-yard lights.
 - **Driveway and mailbox**: the mailbox (a stone pillar) swings its door open with envelopes when mail is
-  expected today, from USPS Informed Delivery emails. It stays beside the driveway and moves clear of the chips.
+  expected today, from USPS Informed Delivery emails. It stays beside the driveway.
 - **Compact weather overlay** on wide banners: temperature, conditions, the next hours and quick facts. Narrow
   screens get a regular weather card instead.
-- **Status chips**: lights on, garage, indoor temperature and humidity, mail and packages, low batteries,
-  open doors and windows, updates available, pet problems. Tap a chip to act on it or open its details.
+- **Status chips** in a scrolling marquee **below the house** (not over it): lights on, garage, indoor temperature and
+  humidity, mail and packages, low batteries, open doors and windows, updates available, pet problems. Tap a chip to
+  act on it or open its details. Chips and switches have large invisible touch areas.
 - **Tap the banner** for a bubble that explains what drives it: the sky (holiday, weather effect, sunrise and sunset) and
   the house (lights on, packages delivered today, holiday decorations), with links.
 - **Tidbit chip**: one fun fact per page load, rotating through topics (lines of code in the dashboard, planes
@@ -44,11 +45,23 @@ connection status.
 | **Games** | Your teams' games from a day before to a few hours after; live games show a pulsing dot and scores flash when they change |
 | **Up next tasks** | Google Tasks due today are added to the Up next card |
 | **Gas prices** | Cheapest nearby premium and diesel; collapsible |
+| **Right now** | A strip of the cards that matter this minute. It fills the full width first, and when only a few cards show they stretch to fill the row. The Claude card appears only while Claude is working and says what; idle placeholders are gone |
+| **Ask Claude** | Everyone can type a question or request for Claude |
+| **Claude admin** | Admins only: Claude's status and controls, split from Ask Claude |
+| **Eat this first** | Leftovers from the Pantry & Fridge leftovers tracker, oldest first |
+| **Gig night** | A gig coming up: start time, the be-there-by (setup) time and the plan |
 | **Claude usage** | AI plan usage for the house's Claude account; collapsible |
 | **Air quality** | Whenever outdoor air quality is Moderate or worse (AQI 51+): the same card as the Air page, with the next 12 hours and today's pollen when available. Stays at least 3 minutes |
 | **Breaking news** | Recent big headlines, local first |
 
-Commute trips live on the Commute page; Home shows Leave soon and On the way home only when they matter. Every card has a ⋯ menu in its header (Full window, Collapse, Hide for today, Hide this card), and tapping a card's top bar collapses or expands it.
+Commute trips live on the Commute page; Home shows Leave soon and On the way home only when they matter. Every card has a ⋯ menu in its header (Full window, Move, Collapse, Hide for today, Hide this card, How this works), and tapping a card's top bar collapses or expands it.
+
+- **Collapsed cards show a one-line summary** in the header (weather, air, UV, commute, cameras, calendar, packages, trash night, the Litter-Robot and more).
+- **Cards stay locked in place**: collapsing or expanding one never makes the others jump columns.
+- **Move** in the card menu lets you drag a card to a new spot. The order is shared, so every screen shows the same layout.
+- **How this works** in the card menu opens a short plain explanation of that card.
+- **Page intro line**: a friendly one-line description under the page title; hide it with its Hide button or in Settings.
+- **Rain radar** (and every radar) has a Full window button.
 
 ## Pop-up cards
 
@@ -98,6 +111,7 @@ leaves. Several have a one-tap action button.
 | Pet's medicine | A pet's medicine is due | Log now |
 | Overdue tasks | A Google Task is overdue | |
 | Pick up dinner? | Someone heads home between 4 and 8 PM | Call a carry-out place, Copy the order |
+| Eat this first | Leftovers are waiting in the fridge (oldest first) | |
 | Gas price drop | The cheapest nearby station for your fuel is at or below your price | |
 | Car due soon | A car's registration, inspection or oil change is due within 30 days | |
 | New car recall | The weekly recall check finds a new one | |
@@ -111,6 +125,7 @@ leaves. Several have a one-tap action button.
 | Movie night | Friday 5 to 9 PM: a pick from Family favorites | |
 | For sale | Something has been listed for sale for a month | Sold |
 | Hobbies | One of your hobbies has something coming up | |
+| Gig | A gig is coming: shows "Gig" with the be-there-by (setup) time | |
 | Medicine running low | A medicine expires within two weeks, or its quantity is 1 or low | Add to list |
 | Leaving the house | Everyone has left (for 45 minutes after) and lights are on, a lock is unlocked, the garage is open or a door or window is open | All off (locks and garage take two taps) |
 | Kitchen timer | A kitchen timer is running (counts down) | |
@@ -125,4 +140,6 @@ Every one of these also lives on its own page's **Right now** card (see [Every f
 
 The grid packs cards to leave the least empty space while the page loads. After that, positions are fixed: a card
 that grows (for example when expanded) pushes only the cards below it, and a new card drops into the shortest
-column. Nothing jumps sideways.
+column. Nothing jumps sideways. When a card is hidden or dismissed the others restack so no gap is left. Pets never
+vanish or flicker when the page redraws. The **interface scale** (Settings → Look and size) re-packs cards, columns and
+text smaller or larger, and Full window has its own − / + scale control.

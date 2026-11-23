@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 424" width="1120" height="424" role="img" aria-labelledby="ttl desc" font-family="Segoe UI, system-ui, sans-serif">
+<title id="ttl">How it all connects</title>
+<desc id="desc">Five steps left to right: data sources, Home Assistant, the dashboard, automations and screens, with a loop back where the dashboard writes to Home Assistant.</desc>
+<style>
+  .bg{fill:#f6f7fb;stroke:#e4e7ee}
+  .card{fill:#ffffff;stroke:#dfe3ec;stroke-width:1.2}
+  .t{font:700 14px "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;fill:#1b2130}
+  .s{font:500 12px "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;fill:#566074}
+  .gl{font:700 11.5px "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;fill:#6b7385;letter-spacing:.08em;text-transform:uppercase}
+  .ttl{font:800 17px "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;fill:#1b2130}
+  .lb{font:600 11.5px "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;fill:#3a4357}
+  .lbbg{fill:#ffffff;stroke:#dfe3ec;stroke-width:1}
+  .grp{fill:rgba(120,130,150,.07);stroke:#c4cad8;stroke-width:1.4;stroke-dasharray:none}
+  .grpd{fill:rgba(120,130,150,.05);stroke:#b7bfd0;stroke-width:1.3;stroke-dasharray:3 5}
+  .ic{fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .ic .f{fill:currentColor}
+  .e{fill:none;stroke:#59627a;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .et{fill:none;stroke:#e08a00;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}
+  .ed{fill:none;stroke:#59627a;stroke-width:2;stroke-dasharray:2 6;stroke-linecap:round;stroke-linejoin:round}
+  .ar{fill:#59627a}.art{fill:#e08a00}
+  .shadow{filter:url(#sh)}
+  .num{stroke:none;fill:currentColor;font:800 14px "Segoe UI",system-ui,sans-serif}
+  /* node colour kinds: tint / ring / icon chip */
+  .k-acc .tint{fill:#fff3dc;stroke:#f2c06a}.k-acc .chip{fill:#ffb547}.k-acc .icn{stroke:#4a2f00;color:#4a2f00}
+  .k-info .tint{fill:#e6f1ff;stroke:#a9cdf6}.k-info .chip{fill:#4f9df0}.k-info .icn{stroke:#fff;color:#fff}
+  .k-ok .tint{fill:#e2f8ee;stroke:#97dcbc}.k-ok .chip{fill:#27b57a}.k-ok .icn{stroke:#fff;color:#fff}
+  .k-vio .tint{fill:#efe9ff;stroke:#cabaf6}.k-vio .chip{fill:#8b6ff0}.k-vio .icn{stroke:#fff;color:#fff}
+  .k-warn .tint{fill:#ffe9e5;stroke:#f5b5ab}.k-warn .chip{fill:#ef5e4d}.k-warn .icn{stroke:#fff;color:#fff}
+  .k-neu .tint{fill:#f1f3f8;stroke:#d2d7e3}.k-neu .chip{fill:#6c768d}.k-neu .icn{stroke:#fff;color:#fff}
+  @media (prefers-color-scheme: dark){
+    .bg{fill:#141922;stroke:#262d3a}
+    .card{fill:#1b212c;stroke:#2d3646}
+    .t,.ttl{fill:#eef1f6}
+    .s{fill:#a3adc0}
+    .gl{fill:#8f9ab0}
+    .lb{fill:#d3d9e6}
+    .lbbg{fill:#1b212c;stroke:#2d3646}
+    .grp{fill:rgba(160,175,205,.06);stroke:#3a4458}
+    .grpd{fill:rgba(160,175,205,.04);stroke:#444f66}
+    .e,.ed{stroke:#9aa5bd}.ar{fill:#9aa5bd}
+    .et{stroke:#ffb547}.art{fill:#ffb547}
+    .k-acc .tint{fill:#33290f;stroke:#7a5a1c}.k-acc .chip{fill:#ffb547}.k-acc .icn{stroke:#3a2500;color:#3a2500}
+    .k-info .tint{fill:#13263d;stroke:#2f5c93}.k-info .chip{fill:#5aa9ff}.k-info .icn{stroke:#06182c;color:#06182c}
+    .k-ok .tint{fill:#11291f;stroke:#25704f}.k-ok .chip{fill:#3ddc97}.k-ok .icn{stroke:#04210f;color:#04210f}
+    .k-vio .tint{fill:#241d3d;stroke:#5a4a9c}.k-vio .chip{fill:#a78bfa}.k-vio .icn{stroke:#160c3a;color:#160c3a}
+    .k-warn .tint{fill:#3a1a17;stroke:#8a3f36}.k-warn .chip{fill:#ff6b5b}.k-warn .icn{stroke:#3a0a05;color:#3a0a05}
+    .k-neu .tint{fill:#232a37;stroke:#3b4558}.k-neu .chip{fill:#8b93a3}.k-neu .icn{stroke:#10141b;color:#10141b}
+  }
+</style>
+<defs>
+  <filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#1b2130" flood-opacity=".16"/></filter>
+  <marker id="ms" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path class="ar" d="M0 1l9 4-9 4z"/></marker>
+  <marker id="mt" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto-start-reverse"><path class="art" d="M0 0l10 5-10 5z"/></marker>
+</defs>
+<rect class="bg" x="1" y="1" width="1118" height="422" rx="26"/>
+
+<path class="e" d="M226 68L246 68" marker-end="url(#ms)"/>
+<path class="e" d="M446 68L466 68" marker-end="url(#ms)"/>
+<path class="e" d="M666 68L686 68" marker-end="url(#ms)"/>
+<path class="e" d="M886 68L906 68" marker-end="url(#ms)"/>
+<path class="ed" d="M566 226L566 252L346 252L346 228" marker-end="url(#ms)"/>
+<rect class="lbbg" x="410" y="242" width="92" height="20" rx="10"/><text class="lb" x="456" y="256" text-anchor="middle">writes back</text>
+<text class="gl" x="28" y="400">Legend</text><path class="e" d="M106 396h34" marker-end="url(#ms)"/><text class="lb" x="150" y="400">information flows this way</text><path class="ed" d="M337.20000000000005 396h34" marker-end="url(#ms)"/><text class="lb" x="381.20000000000005" y="400">the loop back</text>
+<g class="k-neu"><rect class="tint shadow" x="30" y="36" width="192" height="190" rx="18" stroke-width="1.4"/><circle class="chip" cx="60" cy="68" r="15"/><g class="icn"><text class="num" x="60" y="73" text-anchor="middle">1</text></g><text class="t" x="84" y="73">Data sources</text><text class="s" x="46" y="112">Integrations: lights,</text><text class="s" x="46" y="129">locks, garage, doorbell,</text><text class="s" x="46" y="146">cameras, calendars,</text><text class="s" x="46" y="163">weather, packages,</text><text class="s" x="46" y="180">speakers, the router, pet</text><text class="s" x="46" y="197">devices, phones. Free web</text><text class="s" x="46" y="214">services: planes, Space</text><text class="s" x="46" y="231">Station, scores, news, air</text><text class="s" x="46" y="248">quality.</text></g>
+<g class="k-acc"><rect class="tint shadow" x="250" y="36" width="192" height="190" rx="18" stroke-width="1.4"/><circle class="chip" cx="280" cy="68" r="15"/><g class="icn"><text class="num" x="280" y="73" text-anchor="middle">2</text></g><text class="t" x="304" y="73">Home Assistant</text><text class="s" x="266" y="112">Entities (one per sensor or</text><text class="s" x="266" y="129">switch), helpers (timers,</text><text class="s" x="266" y="146">text boxes, switches),</text><text class="s" x="266" y="163">to-do lists (shopping,</text><text class="s" x="266" y="180">pantry, chores) and the</text><text class="s" x="266" y="197">saved app data store (every</text><text class="s" x="266" y="214">Nashboard setting, merged</text><text class="s" x="266" y="231">and versioned).</text></g>
+<g class="k-info"><rect class="tint shadow" x="470" y="36" width="192" height="190" rx="18" stroke-width="1.4"/><circle class="chip" cx="500" cy="68" r="15"/><g class="icn"><text class="num" x="500" y="73" text-anchor="middle">3</text></g><text class="t" x="524" y="73">The dashboard</text><text class="s" x="486" y="112">Pages, each with its own</text><text class="s" x="486" y="129">cards. A card always lives</text><text class="s" x="486" y="146">on its page; Home shows a</text><text class="s" x="486" y="163">copy only while it matters.</text><text class="s" x="486" y="180">Rules decide when automatic</text><text class="s" x="486" y="197">cards appear and leave.</text></g>
+<g class="k-warn"><rect class="tint shadow" x="690" y="36" width="192" height="190" rx="18" stroke-width="1.4"/><circle class="chip" cx="720" cy="68" r="15"/><g class="icn"><text class="num" x="720" y="73" text-anchor="middle">4</text></g><text class="t" x="744" y="73">Automations</text><text class="s" x="706" y="112">Run inside Home Assistant</text><text class="s" x="706" y="129">even when every screen is</text><text class="s" x="706" y="146">off. Watch helpers, clocks</text><text class="s" x="706" y="163">and sensors, then send</text><text class="s" x="706" y="180">notifications to phones,</text><text class="s" x="706" y="197">watches and car screens.</text></g>
+<g class="k-ok"><rect class="tint shadow" x="910" y="36" width="192" height="190" rx="18" stroke-width="1.4"/><circle class="chip" cx="940" cy="68" r="15"/><g class="icn"><text class="num" x="940" y="73" text-anchor="middle">5</text></g><text class="t" x="964" y="73">Screens</text><text class="s" x="926" y="112">Phones, laptops, wall</text><text class="s" x="926" y="129">tablets, the kitchen</text><text class="s" x="926" y="146">tablet, TVs through</text><text class="s" x="926" y="163">casting, watch tiles and</text><text class="s" x="926" y="180">Android Auto / CarPlay.</text></g>
+<g class="k-neu"><rect class="tint shadow" x="30" y="268" width="1060" height="92" rx="16" stroke-width="1.4"/><circle class="chip" cx="59" cy="314" r="15"/><g class="ic icn" transform="translate(49.5 304.5) scale(.79)"><g><path d="M7 7h11l-3-3M17 17H6l3 3"/></g></g><text class="t" x="82" y="303">The loop back</text><text class="s" x="82" y="322">The dashboard also writes to Home Assistant. Tapping Done, starting a timer or adding to a list changes an entity or helper,</text><text class="s" x="82" y="338">and the dashboard writes its answers ("2 packages outside", "medicine OK at 1:40 AM") into helpers so automations can act on them.</text></g>
+</svg>

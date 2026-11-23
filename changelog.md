@@ -8,6 +8,23 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 
 ## Nov 23 2026
 
+- Agents card counts only agents active in the last 5 minutes. (BUILD .236)
+- Blocked work items clear themselves once the agent moves on. (BUILD .236)
+- Home "Recently used" card for cards used in the last 4 hours. (BUILD .236)
+- Live-game ball on Sports, drawn car with drive-in from its VIN, two Easter eggs. (BUILD .236)
+- Small-tile rows (rooms, devices, cameras, Home Now playing) fill the width first. (BUILD .236)
+- Card spec for AI-generated cards (rules/card-spec.md). (BUILD .236)
+- Pantry & Fridge offers only food places (pantry, fridge, freezer). (BUILD .234)
+- Design Studio Live agents: terminal tiles per agent, grouped. (BUILD .234)
+- Home cards ordered by one priority score with reason chips; urgent cards stay expanded. (BUILD .234)
+- Gig night card on Home on a gig day. (BUILD .234)
+- Interface scale: cards, columns and text re-pack instead of zooming. (BUILD .234)
+- How this works in every card menu (31 cards written). (BUILD .234)
+- Full-window announcement of what is new, once per build per device. (BUILD .234)
+- TV display: more rows per card, smaller type, 3 columns. (BUILD .234)
+- Drag to reorder cards on any page (Move in the card menu), saved for everyone. (BUILD .234)
+- Page intro lines under every page title (Hide intros switch). (BUILD .234)
+- Public change log now also filters pet and child names. (BUILD .234)
 - Agents card: main chat pinned (Working/Idle), then Free and Paid tallies with job bars. (BUILD .233)
 - Docs site banner shows the build number. (BUILD .233)
 - Missing icons added (music, user, image). (BUILD .233)
@@ -41,7 +58,6 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 - Home Claude card split into Ask Claude (everyone) and Claude admin. (BUILD .231)
 - System page "Who's on" card (live screens and people, last minute). (BUILD .231)
 - Cards restack when one is hidden or dismissed (no gaps left). (BUILD .230)
-- Calvin's medicine log and the matching to-do stay in sync both ways. (BUILD .230)
 - Tap targets: top bar buttons, tile menus and card header buttons now 44 px (chips and switches next). (BUILD .230)
 - Home Rain radar gets the Full window button. (BUILD .230)
 - NFC sheet "Copy add-item link"; About card shows the pieces count. (BUILD .230)
@@ -58,7 +74,6 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 - Docs/developer-tools.md. (BUILD .229)
 - Docs/design-engine.md. (BUILD .229)
 - Duplicates, daily chores and trash entries hidden with a "+N routine items hidden" note. (BUILD .229)
-- Room settings Quiet hours (Eleanor's Room on 8 PM to 8 AM by default); chimes and tones muted on that room's screen. (BUILD .229)
 - Growing text box, newest first, photo thumbnails, Edit button, no limit. (BUILD .229)
 - "How this works" on every hobby card. (BUILD .229)
 - Next 3 typical milestones per car from its mileage; feeds Car due soon within 500 mi. (BUILD .229)
@@ -72,6 +87,8 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 - Design Studio Right now strip with credits left and 5-hour / weekly bars. (BUILD .228)
 - AI market watchdog + "New free AI options" card with Add to Jot it down (BUILD .227).
 - Rule: tap targets 48 px; autopilot panel switches enlarged. Stuck check tool (tools/stuck-check.js).
+- BUILD .237: Ask Claude card under the banner (admin card anchors only while working); holiday and weather effects pass behind the house (housecheck); holiday leaves/clovers/hearts placement fixed; docs screenshots hide the admin card.
+- Docs release .235 published: every page refreshed, text diagrams rebuilt as SVG, holiday looks grid, new screenshots (no admin card).
 
 ## Nov 22 2026
 

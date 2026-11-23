@@ -10,7 +10,13 @@ Describes the finished shape of the dashboard and its surroundings.
 
 A single-file HTML5 dashboard ("Nashboard") served by Home Assistant (HA) running on a Raspberry Pi 5. Home Assistant talks to devices and services, the dashboard presents everything, phones and cars reach it through the HA companion apps, and an optional AI PC helps build it.
 
-```mermaid
+<img src="images/diagrams/app-architecture-overview.svg" alt="Diagram of the overall shape: devices and services feed Home Assistant on a Raspberry Pi 5, the dashboard serves browsers and companion apps, and an AI PC deploys over the LAN" style="max-width:100%;height:auto">
+
+*The overall shape of the dashboard and its surroundings.*
+
+<details markdown="1"><summary>Text version</summary>
+
+```text
 flowchart LR
   Devices[Devices, cameras, sensors] --> HA
   Cloud[Weather, flights, calendar, news] --> HA
@@ -27,6 +33,8 @@ flowchart LR
   Companion --> Watch[Wear OS]
   PC[AI PC: Ollama + Claude tools] -->|deploy over LAN| Pi
 ```
+
+</details>
 
 ## 2. Source and build
 
@@ -59,7 +67,7 @@ Every card has a permanent home on the page it relates to (rain coming on Weathe
 - **keepData:** a refresh that fails, comes back empty or half written never replaces data already shown.
 - Deploys refuse to publish a list that would lose more than 2 items, and read published files back.
 - Backups happen before every deploy, hourly during work and by count; retention is the 5 newest plus one per week and month. `datacheck` blocks a build if anything person-entered is not safely stored.
-- Per-device only: theme, display size, location pin. Per-person preferences follow the user (`PREF_KEYS`).
+- Per-device only: theme, interface scale, location pin. Per-person preferences follow the user (`PREF_KEYS`).
 
 ## 5. Design rules
 
