@@ -8,7 +8,7 @@ Describes the finished shape of the dashboard and its surroundings.
 
 ## 1. Overview
 
-A single-file HTML5 dashboard ("Nashboard") served by Home Assistant (HA) running on a Raspberry Pi 5. Home Assistant talks to devices and services, the dashboard presents everything, phones and cars reach it through the HA companion apps, and an optional AI PC helps build it.
+An HTML5 dashboard ("Nashboard") written as about 190 source pieces and generated into one page, served by Home Assistant (HA) running on a Raspberry Pi 5. Home Assistant talks to devices and services, the dashboard presents everything, phones and cars reach it through the HA companion apps, and an optional AI PC helps build it.
 
 <img src="images/diagrams/app-architecture-overview.svg" alt="Diagram of the overall shape: devices and services feed Home Assistant on a Raspberry Pi 5, the dashboard serves browsers and companion apps, and an AI PC deploys over the LAN" style="max-width:100%;height:auto">
 
@@ -22,7 +22,7 @@ flowchart LR
   Cloud[Weather, flights, calendar, news] --> HA
   subgraph Pi[Raspberry Pi 5 - Home Assistant]
     HA[HA core + YAML + automations]
-    Dash[www/dashboard.html<br/>+ dash-embed.js]
+    Dash[www/dashboard.html (generated)<br/>+ dash-embed.js<br/>+ seed files]
     Store[(frontend system/user data)]
   end
   HA <--> Dash
@@ -38,10 +38,12 @@ flowchart LR
 
 ## 2. Source and build
 
-- The source lives in `src/dashboard/` as small pieces joined in file-name order: head, styles (base, layout, cards, per-page), body, then script by feature (`040` start, `060` pages, `080` home, `090` masonry packing, one piece per page such as weather, map, rooms, finance, pets), then feature pieces `471` to `478`, the closing `479-app-end.js`, and the tail.
-- `tools/build-dashboard.js` joins them into `ha/www/dashboard.html`. The built file is never edited by hand; `--check` proves pieces and output match.
+- The source lives in `src/dashboard/` as about 190 numbered pieces (about 175 JavaScript, a dozen CSS and a few HTML), joined in file-name order: head, styles (base, layout, cards, per-page), body, then script by feature (start, pages, home, masonry packing, one piece per page such as weather, map, rooms, finance, pets), then the newest feature pieces, a closing piece and the tail. The count grows with the app and is shown on the About page.
+- `tools/build-dashboard.js` joins them into one generated page, `ha/www/dashboard.html`, and refuses to write it if the joined script does not parse (this catches two pieces declaring the same name). The built file is never edited by hand; `--check` proves pieces and output match. Build-time stats (lines of code, piece count) are stamped into the page.
+- `tools/deploy-dashboard.ps1` builds first, so what is copied to Home Assistant always matches the pieces.
+- Household values (default teams, trips, rooms) are kept out of the code in small seed files next to the page, read once into saved settings. `tools/genericcheck.js` fails the check pass when anything personal is hardcoded in a piece.
 - Feature pieces register buttons with `Object.assign(ACT, {...})` and keep their own name prefix; `tools/namecheck.js` fails any clash.
-- `dash-embed.js` is a Lovelace card that iframes the dashboard and hands it the HA token, so the page is signed in without its own login.
+- `dash-embed.js` is a small separate Lovelace card (deployed with the page) that frames the dashboard and hands it the HA token, so the page is signed in without its own login.
 - `ha/` mirrors only the hand-written parts of the Pi's config. Secrets, the database and most of `.storage` are never copied.
 
 ## 3. Pages and cards

@@ -7,7 +7,7 @@ Two flow diagrams: how the app works, and how AI is used both inside the app and
 
 ## 1. How the app works
 
-Home Assistant (HA) runs on a Raspberry Pi 5. It talks to devices, cameras and online services. The dashboard is one HTML file served by HA, and everything a person enters is saved back into HA, never only in the page. Phones, the watch and the car reach HA through the companion apps, which also deliver notifications.
+Home Assistant (HA) runs on a Raspberry Pi 5. It talks to devices, cameras and online services. The dashboard is one generated page (built from about 190 source pieces) served by HA, and everything a person enters is saved back into HA, never only in the page. Phones, the watch and the car reach HA through the companion apps, which also deliver notifications.
 
 <img src="images/diagrams/how-the-app-works.svg" alt="Diagram of how the app works: devices, online services and cameras feed Home Assistant on a Raspberry Pi 5, with the dashboard, saved data, screens, companion apps and notifications" style="max-width:100%;height:auto">
 
@@ -22,7 +22,7 @@ flowchart LR
   Frigate[Frigate cameras] --> HA
   subgraph Pi[Raspberry Pi 5 - Home Assistant]
     HA[HA core, YAML, automations]
-    subgraph Dash[Single-file dashboard]
+    subgraph Dash[Generated dashboard page]
       Pages[Pages] --> Cards[Cards live on their page]
       Cards -.->|only while it matters| HomeCopies[Home copies]
     end
@@ -50,7 +50,7 @@ Legend:
 
 ## 2. The AI architecture
 
-Two separate uses of AI. Inside the app, HA Assist and AI Task call a local model on the AI PC (Ollama) or Google Gemini for features such as document import, photo dates and a bedtime story. On the build side, a main Claude chat coordinates and reviews, helpers do the contained work, and a single worker script routes jobs to the cheapest suitable model. Personal data only ever goes to the local Ollama models.
+Two separate uses of AI. Inside the app, HA Assist and AI Task call a local model on the AI PC (Ollama) or Google Gemini for features such as document import, photo dates and a bedtime story. On the build side, a main Claude chat coordinates and reviews, helpers do the contained work, and one worker script routes jobs to the cheapest suitable model. Personal data only ever goes to the local Ollama models.
 
 <img src="images/diagrams/ai-architecture.svg" alt="Diagram of the two uses of AI: inside the app (Assist to Ollama or Gemini) and building the app (owner, autopilot panel, Claude main chat, helpers, ai-worker routing, review, checks, deploy)" style="max-width:100%;height:auto">
 

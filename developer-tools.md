@@ -22,13 +22,14 @@ A tour of the tools and the workflow behind the dashboard: how the code is built
 
 ## 1. The build pipeline
 
-The whole dashboard is one HTML file served by Home Assistant, but nobody edits that file. It is generated.
+Home Assistant serves the dashboard as one page, but that page is generated and nobody edits it. The code is about 190 source pieces.
 
-- **Source pieces** live in `src/dashboard/`: head, styles, body, then the script split by feature, then a tail. They are joined in file-name order. New feature code goes in its own numbered piece and registers its buttons with `Object.assign(ACT, {...})`.
-- **`build-dashboard.js`** joins the pieces into `ha/www/dashboard.html`. `--check` fails if the built file does not match the pieces (a sign someone edited the output directly).
+- **Source pieces** live in `src/dashboard/` (about 190 JavaScript, CSS and HTML files): head, styles, body, then the script split by feature, then a tail. They are joined in file-name order. New feature code goes in its own numbered piece and registers its buttons with `Object.assign(ACT, {...})`.
+- **`build-dashboard.js`** joins the pieces into the generated `ha/www/dashboard.html` and fails the build if the joined script does not parse. It also stamps in the line and piece counts. `--check` fails if the built file does not match the pieces (a sign someone edited the output directly).
 - **`src-patch.js`** is a small helper for patch scripts: replace exact text wherever it lives across the pieces (it refuses ambiguous matches), bump the build number, save and rebuild.
 - **`pull-from-ha.ps1`** copies the hand-written files from Home Assistant into the repo so the local copy is never assumed current.
 - **`ha-backup.ps1`** makes dated backups on the Home Assistant host before any deploy or edit of the dashboard or configuration, and at least hourly during work. Retention keeps the 5 newest plus the newest of each week and each month, per kind of file.
+- **Seed files** (`nashboard_seed_*.json` in `ha/www`) hold household starting values (such as default teams, trips and rooms) outside the code. The app reads each one once into saved settings.
 - **`deploy-dashboard.ps1`** backs up, builds, refuses if the live file changed since the last commit (so direct edits are never overwritten), copies to Home Assistant, and publishes the backlog and wishlist. Published lists are read back to confirm every row arrived, and a publish that would drop more than a couple of items is refused. The top bar shows "building" while a deploy runs.
 - **`yamlcheck.js`** and **`ha-reload.ps1`** handle YAML: the check runs before configuration is copied, and the reload asks Home Assistant to reload all YAML within about a minute, with no restart.
 - **`docs-stats.js`** and **`publish-docs.ps1`** regenerate the docs stats and publish `docs/` to the public site, which happens only on request.
@@ -37,7 +38,11 @@ The whole dashboard is one HTML file served by Home Assistant, but nobody edits 
 
 Every check is automatic and a failure blocks the deploy.
 
-- **gapcheck** renders every page in dark and light and fails any card that does not exactly fill its grid columns, so all single cards share one width and every gap is identical. It also fails text with too little contrast. It runs at desktop width and at phone widths, in groups of pages.
+- **gapcheck** renders every page in dark and light and fails any card that does not exactly fill its grid columns, so all single cards share one width and every gap is identical. It also fails a lone card stretched across the page and any vertical gap between stacked cards that differs from the column gap. It also fails text with too little contrast. It runs at desktop width and at phone widths, in groups of pages.
+- **overlapcheck** shows every card's 3-dot button and fails if any button, link or field sits on top of another one.
+- **rightnowcheck** fails any page that has more than one Right now area.
+- **genericcheck** fails when a personal name, place or device is hardcoded in the code instead of a setting.
+- **housecheck** checks the Home banner for every holiday look: nothing that falls or flies may pass in front of the house.
 - **namecheck** fails when two pieces declare the same top-level function, shared state slot or button key, because the later piece would silently win.
 - **mapcheck** renders every map at a spread of zooms (including fractional and Full window), and fails on missing tiles, markers that drift from their coordinates, or blank map past the last tile zoom.
 - **legendcheck** fails any chart, map or diagram that carries meaning through colour, line style or icon without a legend covering each style; deliberate decoration goes in an allowlist.
@@ -70,6 +75,33 @@ Auto mode keeps working through the backlog on its own, steered from a phone.
 - **Reset drift.** The 5-hour reset time moves, so every check-in compares it with the scheduled wake-up and re-arms the wake-up to five minutes after the new reset. Auto mode runs in the main chat through timed wake-ups so it stays visible on the phone.
 - **Fresh chat at the context line.** At a configurable context percentage the chat finishes its step cleanly, writes a hand-off note, starts one fresh session to continue, and stops.
 
+### How the main chat obeys the panel
+
+- **The panel** is a private control page that steers the automatic build mode. It sets: auto mode on or off, how many idle minutes count as stuck, the stop lines for usage and credits, and the approvals for the night (such as how many helpers may run). It never links from these docs.
+- **Reading it.** The main chat reads the panel at session start, at every check-in between items, before every build and deploy, and whenever it wakes. What the panel says wins over built-in defaults, and the chat says what changed.
+- **Mirror for the watcher.** Each time it reads the panel, the chat copies the on/off switch and the idle minutes into a small local file (`tools/automode.json`), together with the id of the current main chat. The watcher tools below read that file, so they never need the panel.
+- **Obeying the lines.** At a stop line (usage or credits) the chat finishes its step, commits, deploys and pushes, then stops cleanly. It will not use a helper the panel does not allow.
+- **Approvals.** A new main chat asks for everything that could stall an unattended run in one prompt at hand-over, and records the answers in the hand-over note so the next chat inherits them.
+
+### The stuck watcher
+
+One watcher (`stuck-watch.js`) keeps auto mode from stalling quietly.
+
+- **One at a time.** A lock file holds the watcher's process id and a heartbeat. A second copy exits at once; a dead or stale lock is taken over, so a crashed watcher never blocks the next one.
+- **Self-restarting.** Claude Code hooks start it at session start and again after every turn ends, so nobody has to remember to restart it. It stops by itself when auto mode is off or after six hours.
+- **What it does.** Every five minutes it runs `stuck-check.js` with a three-minute time limit, so a hung check cannot hang the watcher. The check cleans up leftover headless browsers and lists work items that have not updated.
+- **When it wakes the chat.** It wakes the main chat when nothing has changed for the idle minutes (no commit, no source or backlog change, no work item, no test run), when a test run hangs, or when the check itself hangs. The chat then starts the next batch or fixes the hung run.
+
+### Live work status in the app
+
+Every chat and helper posts what it is working on. The Claude Code hooks do this automatically: the main chat shows as working or waiting, and each helper gets its own line that closes when it ends. Three places in the app read it:
+
+- **Top bar Claude icon**: shows that work is going on and how many agents are active.
+- **Agents card** (Design Studio): the main chat pinned as Working or Idle, a Helpers count, and free and paid tallies with a bar per job.
+- **Live agents tiles**: a terminal-style tile per agent showing its current task, grouped.
+
+Items that stop updating are shown as idle, and finished items clear themselves.
+
 ## 5. The efficiency engine
 
 The aim is the most finished work per unit of usage, without risking data.
@@ -86,14 +118,14 @@ The aim is the most finished work per unit of usage, without risking data.
 
 - Backups before every deploy, hourly during work, and a full set after every 50 shipped items.
 - Idle helpers and stuck test runs are stopped and restarted.
-- Only `docs/` is public, updated in one batch at most once a day and published only on request, with no personal details.
+- Only `docs/` is public, with no personal details. The docs site is refreshed on every build that ends in 0, starting at build .260.
 - Whenever a helper, page or integration is added, the usage log, work status, deploy report, checks, docs and hand-off note are updated in the same pass.
 
 ## Additions on Nov 23 2026
 
 - **Jump check** (`jumpcheck.js`). On the Design Studio page it collapses and re-expands three cards one at a time. After each toggle the toggled card's top must stay within 4 px of where it was on screen, and every other card must keep its column and still be there. It prints OK or each problem, and runs with the other checks before a deploy.
 - **Performance check catches mutation loops.** An idle-CPU and long-task baseline now flags a script that keeps changing the page in a loop (one such loop in the scrolling chips was found and fixed this way).
-- **Check list for a batch:** gap check, name-clash check, performance check, legend check and jump check, run by the main chat after the helpers finish and before integrating.
+- **Check list for a batch:** gap check, overlap check, Right now check, name-clash check, generic check, performance check, legend check and jump check, run by the main chat after the helpers finish and before integrating.
 - **Docs build-number banner.** The public docs show the build number they describe, so a reader can see how current they are.
 - **Design Studio agent views.** The Agents tally counts free and paid agents on one line; Live agents shows a terminal-style view of what each agent is working on, fed by the work-status tool.
 - **Build progress lines.** The main chat posts a short plain line as each stage of a batch finishes, and asks for every approval it will need up front at hand-over rather than mid-run.

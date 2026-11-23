@@ -8,9 +8,9 @@ title: How it works and installing
 
 ## The pieces
 
-- **`www/dashboard.html`**: the whole dashboard in one file (HTML, CSS and JavaScript). It lives in Home Assistant's
+- **`www/dashboard.html`**: the whole dashboard as one generated page (HTML, CSS and JavaScript). It lives in Home Assistant's
   `www` folder and is served at `/local/dashboard.html`. In the repo the code is kept in numbered pieces
-  (`src/dashboard/`) that a small build script joins back into the one file before each deploy.
+  (`src/dashboard/`) (about 190 of them) that a small build script joins into that page, and checks it parses, before each deploy. Nobody edits the generated page. Household starting values live in small `nashboard_seed_*.json` files beside it.
 - **`www/dash-embed.js`**: a small Lovelace card that shows the dashboard full-size inside a Home Assistant
   dashboard and hands it the signed-in user's access token. When the dashboard is opened from the Google Cast app
   (where Home Assistant forbids framing), the card loads the page inline instead.

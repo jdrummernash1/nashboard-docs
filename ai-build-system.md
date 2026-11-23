@@ -95,7 +95,8 @@ A private artifact page, the owner's remote control for auto mode.
 3. **Easiest first.** After every import or finding, the open items are re-sorted by effort.
 4. **Batch build.** 5-30 items per build, split among helpers with separate files, integrated by the main chat.
 5. **Quality checks** (all must pass before deploy):
-   - `build-dashboard.js --check`: pieces and built file match.
+   - `build-dashboard.js --check`: the source pieces and the generated page match (and the joined script parses).
+   - `overlapcheck`, `rightnowcheck`, `genericcheck`, `jumpcheck`, `housecheck`: no overlapping controls, one Right now area per page, nothing personal hardcoded, no card jumps, holiday effects behind the house.
    - `namecheck`: no duplicate top-level functions, state slots or action keys across pieces.
    - `yamlcheck`: YAML safe before it goes to Home Assistant.
    - `gapcheck`: every card exactly fills its grid columns, with identical gaps, at desktop and phone widths; also checks text contrast in dark and light.
@@ -114,7 +115,7 @@ Every chat and helper posts what it is doing with `tools/work-status.js` (starte
 ## 10. Safety nets
 
 - **Backups:** `tools/ha-backup.ps1` before every deploy or edit of the dashboard or configuration, at least hourly during work, and a full set after every 50 shipped items. Retention: the 5 newest plus the newest of each week and month. User data files are backed up on the Pi and never leave it.
-- **Docs publishing:** `docs/` is the only public material. It is updated in one batch at most once a day, and published to the public site only when the owner asks. Never any personal details in it.
+- **Docs publishing:** `docs/` is the only public material. It is refreshed on every build that ends in 0, starting at build .260, and otherwise published to the public site only when the owner asks. Never any personal details in it.
 - **Rules follow features:** adding a helper, page or integration means updating the usage log, status tracking, deploy report, checks, docs, setup checklist, control panel and `HANDOFF.md` in the same pass.
 
 ## 11. Flow diagram

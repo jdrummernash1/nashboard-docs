@@ -263,11 +263,16 @@ fixed.
 
 | Check | What it enforces | When it runs |
 |---|---|---|
-| **Layout and contrast** (gapcheck) | Every card in a packing grid exactly fills the columns it spans, so single cards share one width and every gap is identical; cards outside the grid match the column; no text under 3:1 contrast. Runs every page in dark and light, on desktop, tablet and phone widths. | After every UI change |
+| **Layout and contrast** (gapcheck) | Every card in a packing grid exactly fills the columns it spans, so single cards share one width and every gap is identical, vertically too; a lone card is not stretched; cards outside the grid match the column; no text under 3:1 contrast. Runs every page in dark and light, on desktop, tablet and phone widths. | After every UI change |
+| **Overlap** (overlapcheck) | No button, link or field sits on top of another, including each card's 3-dot button. | After every UI change |
+| **One Right now** (rightnowcheck) | Every page has exactly one Right now area. | After every UI change |
+| **Nothing personal in code** (genericcheck) | No name, place or device is hardcoded in the code; household values live in settings and seed files. | Every build |
 | **Data retention** (datacheck) | Lists every place the app saves or reads data; fails any person-entered value kept only in the browser instead of Home Assistant. | Every build |
 | **Name clashes** (namecheck) | No two source pieces may declare the same top-level function, shared state slot or button action, since the later one would silently win. | Every build |
 | **Maps** (mapcheck) | Renders each map at whole and fractional zooms, past the base map's last tile zoom and in Full window; fails on uncovered areas, markers away from their true position, or blank map. | Any map change |
 | **Legends** (legendcheck) | Every chart, map or diagram that uses colour or line style for meaning has a legend in the same card covering each style. Pure decoration is allowlisted with a reason. | Any chart, map layer or coloured diagram change |
+| **No jumping** (jumpcheck) | Collapsing or expanding a card moves no other card and not the card itself. | Any card change |
+| **Holiday house** (housecheck) | Falling or flying holiday effects never pass in front of the house on Home. | Any holiday look change |
 | **Performance** (perfcheck) | Per-page render time, long tasks, memory and page size, plus idle CPU on Home, compared with a saved baseline; fails anything more than 30% worse. | Every fifth deploy |
 
 The checks run page groups in batches so each run finishes quickly, and phone layouts are checked at both an Android
@@ -275,15 +280,13 @@ and an iPhone size.
 
 ## How the build works
 
-The app ships as **one HTML file** that runs inside Home Assistant through a small dashboard card. Editing one huge file
-is error-prone, and impossible for several workers at once, so the source is split into many **numbered pieces**: head,
-styles, body, then the script by feature, then the closing part. A build script joins them in file-name order.
+The app is **written as about 190 numbered pieces** (JavaScript, CSS and a few HTML parts) and **served as one generated page** that runs inside Home Assistant through a small dashboard card. Editing one huge file is error-prone, and impossible for several workers at once, so the source is split: head, styles, body, then the script by feature, then the closing part. A build script joins them in file-name order, checks that the joined script parses, and writes the page. Nobody edits the generated page by hand.
 
 <div class="hb" role="img" aria-label="Diagram: numbered source pieces are joined by a build script, checked, backed up, deployed to Home Assistant, and the backlog and wishlist are published with list guards">
 <div class="hb-row">
 <div class="hb-box"><b>Source pieces</b><small>Numbered files: head, styles, body, one script piece per feature, then the end. New features slot in before the closing piece.</small></div>
 <div class="hb-arrow" aria-hidden="true">&rarr;</div>
-<div class="hb-box"><b>Build</b><small>Joins the pieces in order into the single app file. A check mode confirms the built file matches the pieces exactly.</small></div>
+<div class="hb-box"><b>Build</b><small>Joins the pieces in order into the generated app page and stops if it does not parse. A check mode confirms the built file matches the pieces exactly.</small></div>
 <div class="hb-arrow" aria-hidden="true">&rarr;</div>
 <div class="hb-box"><b>Checks</b><small>Syntax, name clashes, data retention, then the layout and contrast pass (plus maps, legends, performance when due).</small></div>
 <div class="hb-arrow" aria-hidden="true">&rarr;</div>

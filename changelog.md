@@ -8,6 +8,11 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 
 ## Nov 23 2026
 
+- Equal vertical gaps (Home fix + new gapcheck vertical test); filed ideas leave the Jot card within a minute of filing. (BUILD .253)
+- Design Studio packs: Live agents in the Right now row, short Agents bars; gapcheck catches lone cards and stretched Right now cards. (BUILD .252)
+- Marquee always scrolls; photo note clears on submit; filed ideas leave the Jot card; Nashboard title colour restored; Add button first in Tab order; page icons beside titles. (BUILD .251)
+- One Right now container per page: Design Studio's two sections merged; new rightnowcheck quality check. (BUILD .250)
+- Dishwasher card: type time left, see the end time, Clean/Dirty flip sign. (BUILD .250)
 - Agents card counts only agents active in the last 5 minutes. (BUILD .236)
 - Blocked work items clear themselves once the agent moves on. (BUILD .236)
 - Home "Recently used" card for cards used in the last 4 hours. (BUILD .236)
@@ -91,6 +96,16 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 - Docs release .235 published: every page refreshed, text diagrams rebuilt as SVG, holiday looks grid, new screenshots (no admin card).
 - BUILD .238: top bar buttons scroll again instead of squeezing (invisible tap areas); 6 Jot ideas filed.
 - BUILD .239: How this works text on 93 more cards; Edit setup on Holiday traditions; Backlog card hides checked-in ideas; YouTube now playing fix; card jump re-check passes; What's new block on the docs home.
+- BUILD .240: tapping a line in Good morning and other summary cards opens the real card; car animations get body-type shapes; Space page screenshot shows real-looking sky and launch data.
+- BUILD .241: household cars drawn to look like the real models, saved with each car; new car imports get their own drawing once.
+- BUILD .242: third car drawn from its real shape; real paint colours; colour picker after a car import and Edit colour on each car.
+- BUILD .243: generic by default: room extras (nursery, kids art, bedtime, house windows), commute places and trips, local news area, minor-league team and team suggestions are now settings any household can fill in; nothing personal is left in the code; new genericcheck quality check.
+- BUILD .244: new Security page with a saved alert history; fire safety (alarm card, escape plan, detector reminders, fire drill); valuables list for insurance; place picker by kind and pantry items in storage search.
+- BUILD .245: Claude icon and build number on phones too; compact Jot it down that moves up to a full-width card while typing; Roll up the car windows alert when rain is coming where the car is.
+- BUILD .246: Security modes (Away, Home, Night, Off) with alert choices, phone alerts and quiet hours; change log days collapse; Next up card shows the next 10 backlog items.
+- BUILD .247: chips marquee docked inside the house banner; Agents card and Claude light show agents running now; touch drag and drop on lists and meals; Local traffic card on the Guest page; animations pause in hidden tabs.
+- BUILD .248: card buttons never sit under the 3-dot button (new overlap check); fastest plane always on the Planes map; Jot it down shows the next import time; camera order drag and drop; self-restarting stuck watcher.
+- BUILD .249: Markets card shades gains and losses and shows top watchlist movers; urgent phone alerts now arrive with the screen off (high priority, no expiry).
 
 ## Nov 22 2026
 
