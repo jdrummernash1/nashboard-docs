@@ -8,6 +8,9 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 
 ## Nov 22 2026
 
+- Kids page pickup time (BUILD .221).
+- HA restarted twice: fixed the YAML that blocked restarts, all automations/timers/car items loaded, reload trigger and Claude usage sensors now read from disk; automatic YAML reload confirmed (20 s).
+- Claude status in the top bar, idle and waiting states (BUILD .220).
 - Flight board styles moved to their own slice, no visual change (BUILD .219).
 - Settings page, Your house editor, work-started alerts (BUILD .218).
 - Claude cost totals and Ask Claude on the Home Claude card (BUILD .217).
