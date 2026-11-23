@@ -6,6 +6,36 @@ title: Change log
 
 Everything shipped, newest first. Each build is a small batch of improvements. See [Every feature](features.md) for the full list.
 
+## Nov 23 2026
+
+- Frigate camera entities left out of camera lists; a camera without a snapshot yet no longer shows Offline. (BUILD .229)
+- Lines of code and pieces computed at build time (About card and market value tidbit). (BUILD .229)
+- Agents card with status lights and job bars. (BUILD .229)
+- Top bar switches to two rows on any device when it does not fit. (BUILD .229)
+- Auto look follows the season (Glass, Paper, Classic, Bold). (BUILD .229)
+- Home card when the Deck battery is under 20% and not charging (smart plug part still open). (BUILD .229)
+- NFC tag link with ?add=1 opens the box with Add item focused. (BUILD .229)
+- Docs/why-nashboard.md. (BUILD .229)
+- Docs/themes.md. (BUILD .229)
+- Docs/diagrams.md (two Mermaid diagrams with legends). (BUILD .229)
+- Docs/developer-tools.md. (BUILD .229)
+- Docs/design-engine.md. (BUILD .229)
+- Duplicates, daily chores and trash entries hidden with a "+N routine items hidden" note. (BUILD .229)
+- Room settings Quiet hours (Eleanor's Room on 8 PM to 8 AM by default); chimes and tones muted on that room's screen. (BUILD .229)
+- Growing text box, newest first, photo thumbnails, Edit button, no limit. (BUILD .229)
+- "How this works" on every hobby card. (BUILD .229)
+- Next 3 typical milestones per car from its mileage; feeds Car due soon within 500 mi. (BUILD .229)
+- Pantry & Fridge gets its own fridge icon everywhere; Room page sofa. (BUILD .229)
+- A Rain radar card appears at the top of Home while rain is coming or falling. (BUILD .229)
+- Tap-target audit tool tools/docs-shots/tapcheck.js (BUILD .229).
+- Home Claude card gets an accent outline and moves to the top while Claude is working. (BUILD .228)
+- About page "Provided by Home Assistant" card with Core, OS and Supervisor versions; About button tooltip names it. (BUILD .228)
+- Tapping a Right now row scrolls to the matching card and outlines it. (BUILD .228)
+- Top bar reads "N agents · building" during deploys. (BUILD .228)
+- Design Studio Right now strip with credits left and 5-hour / weekly bars. (BUILD .228)
+- AI market watchdog + "New free AI options" card with Add to Jot it down (BUILD .227).
+- Rule: tap targets 48 px; autopilot panel switches enlarged. Stuck check tool (tools/stuck-check.js).
+
 ## Nov 22 2026
 
 - Kids page pickup time (BUILD .221).

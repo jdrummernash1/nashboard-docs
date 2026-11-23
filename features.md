@@ -28,7 +28,31 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 
 ---
 
-## Latest additions (builds .207–.210)
+## Latest additions (builds .211–.229)
+
+- **Looks:** Classic, Paper, Glass and Bold designs; Auto follows the season and the theme button says what Auto follows.
+- **Storage NFC tags:** stick a tag on a storage box or garage drawer to open it. A tag link ending in add opens the box with Add item ready. Shared storage places, and Pantry & Fridge has its own fridge icon.
+- **Packages from email:** packages are added from email, with gifts hidden so surprises stay secret.
+- **Pantry:** sell-by and use-by dates, and missing ingredients for dinner.
+- **Kids page:** pickup time, and a bedtime story.
+- **Collapsed cards are remembered per person**; pet and Pi cards collapse the same way; page icons show an Updated dot.
+- **Claude and agents:** the Home Claude card shows cost totals and an Ask Claude box, gets an accent outline and moves to the top while Claude is working. An Agents card shows status lights and job bars, and the top bar reads "N agents, building" during deploys. Claude status (idle, waiting) shows in the top bar.
+- **Right now links:** tapping a row scrolls to the matching card and outlines it.
+- **About:** a "Provided by Home Assistant" card with the Core, OS and Supervisor versions; lines of code and pieces are counted at build time.
+- **Settings page and Your house editor**, with alerts when work starts.
+- **Top bar on two rows** on any device when it does not fit.
+- **Quiet hours per room:** a room's chimes and tones stay muted on that room's screen (a kid's room defaults to 8 PM to 8 AM).
+- **Week ahead:** duplicates, daily chores and trash entries are hidden with a "+N routine items hidden" note.
+- **Notes box:** grows as you type, newest first, with photo thumbnails, an Edit button and no limit.
+- **Hobbies:** "How this works" on every hobby card.
+- **Cars:** the next three typical service milestones per car from its mileage, feeding Car due soon within 500 miles.
+- **Cameras:** Frigate camera entities are left out of camera lists, and a camera without a snapshot yet no longer shows Offline.
+- **Crypto and Finance:** crypto updates around the clock.
+- **Design Studio:** a Right now strip with credits left and 5-hour and weekly bars, an AI market watchdog with a "New free AI options" card (Add to Jot it down), and checked-out items on top of the Backlog card.
+- **Tools and checks:** tap targets are at least 48 px (tap-target audit tool), a stuck check restarts anything idle, and AI helper tools split work between a local model and free cloud models.
+- **New docs pages:** why Nashboard, themes, diagrams, developer tools and the design engine.
+
+## Earlier additions (builds .207–.210)
 
 - **Document import:** snap or paste a flyer, schedule, menu, receipt, label or link. Home Assistant's AI reads it and the app shows a preview of what it will create (calendar events, pantry or shopping items, packages, medicines, warranties, Storage items, featured posts). Nothing is added until you confirm. A daily kids' schedule becomes a Kid monitor card, and menu days marked as not kid-friendly get a "Pack a lunch" reminder. Needs an AI integration in Home Assistant.
 - **Featured posts:** add a post (link, text, picture) to the Family Board; Home shows it until the date you pick, then it moves to an archive.
@@ -69,6 +93,7 @@ just for you, or (admins) turned off for everyone. The "Lives on" column is the 
 | **Overdue tasks** | A Google Task is overdue | See them | Calendar |
 | **Severe weather** | A National Weather Service warning is active where you are | Read it, until it expires | Weather |
 | **Rain coming** | Rain or snow is likely in the next few hours | When it starts and the chance; flags an open garage (Close, tap twice) and open windows | Weather |
+| **Rain radar** | At the top of Home while rain is coming or falling | Live radar map with your location pinned and a legend | Weather |
 | **Freeze tonight** | The overnight low is at or below freezing | Pipes, plants and pets reminder | Weather |
 | **Leave soon** | A calendar event with a location starts within the hour, or your commute says go | Navigate (Google Maps with stops) | Commute |
 | **On the way home** | Someone's commute home has started | Arrival time; slower than usual? | Commute |
@@ -109,7 +134,9 @@ just for you, or (admins) turned off for everyone. The "Lives on" column is the 
 | **Pollen** | Pollen is medium-high or worse (and the air quality card isn't up) | Today, tomorrow and asthma levels | Air & Allergy |
 | **Breaking news** | Big top stories from the last couple of hours, plus local news | Read the story | Home |
 | **Live game** | One of your teams is playing (a day before to a few hours after) | Live score (flashes on a change) and where to watch | Sports |
-| **Claude** | Claude Code usage near the limit, or a free reset waiting | Plan limits, credits, what Claude is doing, next run (Autopilot for admins) | Home |
+| **Claude** | Claude Code usage near the limit, or a free reset waiting; while Claude is working it gets an accent outline and moves to the top | Plan limits, credits, what Claude is doing, next run, Ask Claude (Autopilot for admins) | Home |
+| **New free AI options** | The weekly AI market watchdog finds a new free model or service | Read it; Add to Jot it down | Design Studio |
+| **Steam Deck battery** | The Deck's battery is under 20% and not charging | See the level (a smart plug part is still open) | Hobbies |
 
 On the Display / TV view, Google Tasks due today or overdue show as a **Tasks** card.
 
@@ -479,7 +506,9 @@ Home Assistant integrations: areas and devices, people, calendars (Google Calend
 Mealie, 17TRACK and an email account, Waze Travel Time, Flightradar24, Team Tracker (ESPN), Music Assistant and Cast,
 Android TV remote, a weather integration, IQVIA pollen, the router (SNMP, device tracker), a NAS, Speedtest.net,
 GasBuddy, Hatch, Litter-Robot, cameras and doorbells, a garage door, the companion apps (phones, watch, car, NFC tags),
-mobile notifications.
+mobile notifications, Frigate (camera detection), and Ollama and Google Gemini in Home Assistant (the AI behind document import).
+
+AI helper tools: a worker script sends jobs to a local Ollama model (the only place personal data may go) or, when a job has no personal data, to free cloud models (Groq, Gemini, OpenRouter free) within their free limits.
 
 Free services: Open-Meteo (weather and air quality), the National Weather Service (alerts, radar), adsb.lol and other
 ADS-B feeds (planes and 7700s), OpenSky (highest and fastest plane), Planespotters and Wikipedia (aircraft photos),
@@ -499,5 +528,5 @@ detection (people, packages, the mail truck, garage state); doorbell two-way tal
 portfolio numbers; nursery temperature and camera; new design concepts; live heart rate and treadmill data on the Workout
 page; energy and bills; laundry; pool; a smoker; a printer; a UPS battery backup; Kroger shopping sync; Google Find My
 Device; YouTube Music; more pet reactions and pet characters from a photo; medicine dose by weight and a sick-day card;
-a custom Android Auto app; more car items; a PIN to leave the Kids page and a story button; recognising tools from a
+a custom Android Auto app; more car items; recognising tools from a
 drawer photo; a central data store phase 2 (a database add-on).
