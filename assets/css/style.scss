@@ -42,3 +42,53 @@
   html body .tour-nav a{background:#2b4a75;color:#fff}
   html body .tour-nav a.nx{background:#f4a63a;color:#1d1406}
 }
+
+/* ===== App look: same tokens, fonts, glass cards and top bar as the real dashboard (from 020-styles-base.css) ===== */
+:root{--bg:#0d0f13;--bg2:#161a22;--card:rgba(255,255,255,.045);--card2:rgba(255,255,255,.075);--line:rgba(255,255,255,.07);--tx:#eef0f4;--mut:#8b93a3;--acc:#ffb547;--ok:#3ddc97;--info:#5aa9ff;--r:20px;--navbg:rgba(14,16,21,.72);--lk:#8cc2ff;color-scheme:dark}
+@media (prefers-color-scheme:light){:root:not([data-theme=dark]){--bg:#f2f0eb;--bg2:#fbfaf7;--card:#ffffff;--card2:#f3f1ec;--line:rgba(0,0,0,.07);--tx:#1b1d22;--mut:#6b7280;--navbg:rgba(250,249,246,.82);--lk:#1a5fb4;color-scheme:light}}
+:root[data-theme=light]{--bg:#f2f0eb;--bg2:#fbfaf7;--card:#ffffff;--card2:#f3f1ec;--line:rgba(0,0,0,.07);--tx:#1b1d22;--mut:#6b7280;--navbg:rgba(250,249,246,.82);--lk:#1a5fb4;color-scheme:light}
+:root[data-theme=dark]{color-scheme:dark}
+
+html body{margin:0;background:var(--bg);color:var(--tx);font-family:"SF Pro Text",-apple-system,BlinkMacSystemFont,"Segoe UI Variable Text","Segoe UI",Roboto,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+html body a{color:var(--lk)}
+html body a:hover{color:var(--acc)}
+
+.nb-bar{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:10px;padding:8px 14px;background:var(--navbg);-webkit-backdrop-filter:blur(18px) saturate(140%);backdrop-filter:blur(18px) saturate(140%);border-bottom:1px solid var(--line)}
+html body .nb-brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--tx);font-weight:700;flex:none}
+.nb-logo{display:grid;place-items:center;width:32px;height:32px;border-radius:10px;background:var(--acc);color:#1d1406;font-weight:800}
+.nb-nav{display:flex;gap:4px;flex:1;min-width:0;overflow-x:auto;scrollbar-width:none}
+.nb-nav::-webkit-scrollbar{display:none}
+html body .nb-nav a{display:flex;align-items:center;gap:6px;min-height:44px;padding:0 12px;border-radius:14px;white-space:nowrap;text-decoration:none;color:var(--mut);font-size:.92rem;font-weight:600}
+html body .nb-nav a:hover{background:var(--card2);color:var(--tx)}
+html body .nb-nav a.on{background:color-mix(in srgb,var(--acc) 20%,transparent);color:var(--tx);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--acc) 45%,transparent)}
+.nb-ic{font-size:1.05rem;line-height:1}
+.nb-theme{flex:none;width:44px;height:44px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--tx);font-size:1.2rem;cursor:pointer}
+.nb-theme:hover{background:var(--card2)}
+@media (max-width:720px){.nb-name{display:none}html body .nb-nav a{padding:0 10px}}
+
+/* Content as one rounded glass card */
+html body .main-content{max-width:980px;margin:18px auto;padding:22px 26px;background:var(--card);border:1px solid var(--line);border-radius:26px;color:var(--tx);box-shadow:0 10px 30px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-sizing:border-box;width:calc(100% - 24px)}
+@media (max-width:640px){html body .main-content{padding:14px 14px;border-radius:20px}}
+html body .main-content h1,html body .main-content h2,html body .main-content h3,html body .main-content h4,html body .main-content h5,html body .main-content h6{color:var(--tx);font-weight:700}
+html body .main-content h2{border-bottom:1px solid var(--line);padding-bottom:.25rem}
+html body .main-content h1{color:var(--acc)}
+html body .main-content strong,html body .main-content b{color:var(--tx)}
+html body .main-content code{background:var(--card2);color:var(--tx);border:1px solid var(--line);border-radius:8px}
+html body .main-content pre,html body .highlight{background:var(--bg2)!important;border:1px solid var(--line);border-radius:14px;color:var(--tx)}
+html body .main-content pre code{background:transparent;border:0}
+html body .main-content table{border-radius:14px;overflow:hidden;border-collapse:separate;border-spacing:0;border:1px solid var(--line)}
+html body .main-content table th{background:var(--card2);color:var(--tx);border:0;border-bottom:1px solid var(--line)}
+html body .main-content table td{background:transparent;border:0;border-bottom:1px solid var(--line);color:var(--tx)}
+html body .main-content table tr:nth-child(even) td{background:var(--card)}
+html body .main-content blockquote{background:var(--card);border-left:4px solid var(--acc);border-radius:0 14px 14px 0;color:var(--mut);margin:1rem 0;padding:.4rem 1rem}
+html body .main-content hr{background:var(--line);border:0;height:1px}
+html body .main-content img{max-width:100%;border-radius:14px}
+html body .main-content dl dt{color:var(--tx)}
+html body .site-footer{max-width:980px;margin:0 auto 24px;padding:0 16px;text-align:center;border:0;color:var(--mut);font-size:.85rem}
+html body .wn-b{color:var(--acc)}
+html body .tour-strip a{background:var(--card2);color:var(--tx)}
+html body .tour-strip a:hover{background:var(--acc);color:#1d1406}
+html body .tour-nav a{background:var(--info);color:#06121f}
+html body .tour-nav a.nx{background:var(--acc);color:#1d1406}
+html body .tour-step{border-top-color:var(--line)}
+html body .tour-count{color:var(--mut)}

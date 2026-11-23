@@ -75,6 +75,11 @@ Auto mode keeps working through the backlog on its own, steered from a phone.
 - **Reset drift.** The 5-hour reset time moves, so every check-in compares it with the scheduled wake-up and re-arms the wake-up to five minutes after the new reset. Auto mode runs in the main chat through timed wake-ups so it stays visible on the phone.
 - **Fresh chat at the context line.** At a configurable context percentage the chat finishes its step cleanly, writes a hand-off note, starts one fresh session to continue, and stops.
 
+<!-- Add when the shots exist (made from drafts/autopilot-demo.html, made-up values only), then delete this comment wrapper:
+![Autopilot panel, light theme, shown with demo values: status tiles, usage meters with stop lines, settings, work order, notes and agents](images/autopilot-panel-light.png)
+![Autopilot panel, dark theme, shown with demo values: status tiles, usage meters with stop lines, settings, work order, notes and agents](images/autopilot-panel-dark.png)
+-->
+
 ### How the main chat obeys the panel
 
 - **The panel** is a private control page that steers the automatic build mode. It sets: auto mode on or off, how many idle minutes count as stuck, the stop lines for usage and credits, and the approvals for the night (such as how many helpers may run). It never links from these docs.

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d0f13">
+  <title>{% if page.title and page.url != '/' %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <script>try{var t=localStorage.getItem('nb-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="nb-bar">
+    <a class="nb-brand" href="{{ '/' | relative_url }}"><span class="nb-logo">N</span><span class="nb-name">Nashboard</span></a>
+    <nav class="nb-nav" aria-label="Main">
+      {% assign items = "index.html|🏠|Home,tour.html|🧭|Tour,pages.html|🗂️|Pages,features.html|✨|Features,setup.html|🔧|Setup,settings.html|⚙️|Settings,themes.html|🎨|Themes,integrations.html|🔌|Integrations,how-its-built.html|🏗️|Build,changelog.html|📜|Changes" | split: "," %}
+      {% for it in items %}{% assign p = it | split: "|" %}{% assign cur = false %}
+        {% if p[0] == 'index.html' %}{% if page.url == '/' or page.url == '/index.html' %}{% assign cur = true %}{% endif %}{% elsif page.url contains p[0] %}{% assign cur = true %}{% endif %}
+        <a href="{{ p[0] | relative_url }}"{% if cur %} class="on" aria-current="page"{% endif %}><span class="nb-ic" aria-hidden="true">{{ p[1] }}</span><span>{{ p[2] }}</span></a>
+      {% endfor %}
+    </nav>
+    <button class="nb-theme" type="button" aria-label="Switch between dark and light theme" title="Dark / light">◐</button>
+  </header>
+  <main id="content" class="main-content">
+    {{ content }}
+  </main>
+  <footer class="site-footer"><span class="site-footer-credits">{{ site.title }} · <a href="{{ '/changelog.html' | relative_url }}">Change log</a></span></footer>
+  <script>
+  (function(){var b=document.querySelector('.nb-theme'),r=document.documentElement;
+  function dark(){var t=r.getAttribute('data-theme');return t?t==='dark':!matchMedia('(prefers-color-scheme: light)').matches}
+  b.addEventListener('click',function(){var n=dark()?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('nb-theme',n)}catch(e){}});
+  var a=document.querySelector('.nb-nav a.on');if(a&&a.scrollIntoView)try{a.scrollIntoView({inline:'center',block:'nearest'})}catch(e){}})();
+  </script>
+</body>
+</html>

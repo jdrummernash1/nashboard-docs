@@ -8,6 +8,18 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 
 ## Nov 23 2026
 
+- Bug button focuses the Jot box on mobile; doorbell person matching widened, debug guide written (idea b45d2b8e, check HA entities). (BUILD .256)
+- Markets refresh about once a minute; Jot box pastes pictures; touch scrolling smoothed; real car photos; YouTube counts as playing on TVs; wishlist Purchased fixed. (BUILD .256)
+- Home order model with Lower priority, prettier cards first, full-screen card notice, Today at a glance AI summary, New marks, kid's colour, oven / window / nursery sensors, Sitter page, Guest mode and guest traffic. (BUILD .256)
+- Laundry, pool, Energy and Bills Labs page, leak sensors, UPS, printer, garage door, smoker, smart plugs, earbuds and internet provider cards. (BUILD .256)
+- Frigate package, doorbell and closings cards, video states and mail truck, camera alert settings, cast timeout countdown, TV leveler, wall display (wake on approach, Nest Hub kitchen view). (BUILD .256)
+- AI suggestions card, Family inbox, toolbox photo import and picture, bedtime library, house photo colour fallback. (BUILD .256)
+- Native Android Auto app scaffold (android-auto/), not yet built or tested in a car. (BUILD .256)
+- Data store phase 2a helper (dsx) and key inventory; nothing converted yet. (BUILD .256)
+- Import now request handled; Jot box jumping already fixed in .255.
+- Jot box stays put (no jumping, touch scroll works while focused); pantry and other grids use the shared gap; System cards fill the row; About has one full-width Roll credits card, all cards open; room chips filter or jump. (BUILD .255)
+- Terminal tiles back (idle tiles stay), open backlog count in the top bar, new builds reach every screen within a minute, nav stays put on hover, trivia tidbits removed, pets keep playing while scrolling. (BUILD .254)
+- Docs published at build .253: factual architecture intro, autopilot panel, stuck watcher, live status; docs refresh every build ending in 0 from .260.
 - Equal vertical gaps (Home fix + new gapcheck vertical test); filed ideas leave the Jot card within a minute of filing. (BUILD .253)
 - Design Studio packs: Live agents in the Right now row, short Agents bars; gapcheck catches lone cards and stretched Right now cards. (BUILD .252)
 - Marquee always scrolls; photo note clears on submit; filed ideas leave the Jot card; Nashboard title colour restored; Add button first in Tab order; page icons beside titles. (BUILD .251)

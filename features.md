@@ -28,6 +28,34 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 
 ---
 
+## Latest additions (build .256)
+
+*(new in .256)*
+
+- **New pages:** Utilities (leaks, UPS, printer), Pool, Wellbeing, Sitter monitor, and Energy and bills in Labs. See [All pages](pages.md).
+- **Home and whole app:** Today at a glance (short summary card), a card order that puts urgent and richer cards first, an open backlog chip in the top bar, New marks on new cards, a Labs on/off switch, smooth touch scrolling, full-screen Card change notices, and a read-only Demo mode (`?demo=1`).
+- **Family:** Where is everyone (opt-in place sharing, Ring my phone), Family inbox (email filed into cards), daycare and school closings, Guest mode with a grown-up PIN, a favourite colour per child, and a Bedtime library.
+- **House and security:** Camera alerts, Frigate package, doorbell, video-state and mail-truck cards, Garage door, Smart plugs, a Laundry card and TV helpers (cast countdown and volume leveler).
+- **Garage and cars:** real car pictures, car value estimate, EV charging with nearby chargers, and Toolbox photo import.
+- **Hobbies, music and display:** Gaming (Steam, Xbox, PlayStation), Smoker, a Workout health card with treadmill sessions, YouTube Music playlists with a YouTube TV launcher, and a Picture frame mode for displays.
+- **Planes:** air traffic status, restricted airspace, flight restrictions and listen-and-world tiles.
+- **Now Playing and look:** a YouTube playlists card with YouTube and YouTube TV launch buttons (also on the cast pop-up), and an optional dimmed Background picture behind the pages (public-domain art or the Picture frame source). See [All pages](pages.md#now-playing-youtube-playlists-and-launch-buttons-new-in-256).
+- **Setup:** a Setup checklist card on the System page that detects which integrations and devices are still missing. See [All pages](pages.md#system-setup-checklist-new-in-256).
+- **Automations:** AI suggestions for new automations and rules, never applied automatically.
+- **Vision alarms:** camera snapshots read by a local AI by default (cloud only if allowed per check): grass getting long, scrape the windshield, it snowed and cats fed. See [All pages](pages.md#cameras-vision-alarms-new-in-256).
+- **Top bar and summaries:** a Refresh button in the top bar, and a one-sentence At a glance summary in the Right now card of Weather, Commute, Packages, Family Board, Pantry & Fridge and Security.
+- **Planes:** a glass photo card for the overhead plane, an AIR map layer for special-use airspace and active flight restrictions, and an Air restrictions near home card on Home.
+- **Energy:** solar, generator and grid cards (with a Power outage card on Home).
+- **Wellbeing:** opt-in family sharing of a mood dot and chosen gratitude notes, shown in How we're doing on the Family Board.
+- **Workout:** 14-day sleep and weight trends, a card for 2 hours after a workout, and Cast Workout page.
+- **Garage:** a drawn toolbox picture and NFC tags that open a drawer.
+- **Family Board:** the page heading is back, and the schedule can no longer be saved before it loads.
+- **Shopping and packages:** a Kroger-family store card and a Shop import card.
+- **Devices:** an Earbuds battery card (System) and an Internet provider card (Network).
+- **Wall and TV displays:** wake on approach, a Nest Hub kitchen view, and large-type TV cards.
+
+---
+
 ## Latest additions (builds .230–.234)
 
 - **Interface scale:** one control replaces Interface scale. Cards, columns and text re-pack to the size you pick instead of zooming the page. A small scale control also floats in Full window.

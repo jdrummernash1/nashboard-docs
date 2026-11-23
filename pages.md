@@ -12,7 +12,34 @@ example Cameras needs at least one camera.
 
 They're listed here in roughly the same order as the menu, so you can scroll through the whole app or jump to one:
 
-[Home](#home) · [Rooms](#rooms) · [Cameras](#cameras) · [Calendar](#calendar) · [Activity](#activity) · [Now Playing](#now-playing) · [Shopping](#shopping) · [Packages](#packages) · [Recipes](#recipes) · [Pantry & Fridge](#pantry--fridge) · [Storage](#storage) · [Garage](#garage) · [Kids](#kids) · [Weather](#weather) · [Air & Allergy](#air--allergy) · [Sports](#sports) · [Commute](#commute) · [Planes](#planes) · [Map](#map) · [Space](#space) · [Multi-view](#multi-view) · [Display](#display) · [Kitchen tablet](#kitchen-tablet) · [Finance](#finance) · [Room dashboards](#room-dashboards) · [Design Studio](#design-studio) · [Network & Storage](#network--storage) · [Family Board](#family-board) · [Guest](#guest) · [Maintenance](#maintenance) · [Pets](#pets) · [Hobbies](#hobbies) · [Workout](#workout) · [Automations](#automations) · [System](#system) · [About](#about) · [Labs](#labs)
+[Home](#home) · [Rooms](#rooms) · [Cameras](#cameras) · [Calendar](#calendar) · [Activity](#activity) · [Now Playing](#now-playing) · [Shopping](#shopping) · [Packages](#packages) · [Recipes](#recipes) · [Pantry & Fridge](#pantry--fridge) · [Storage](#storage) · [Garage](#garage) · [Kids](#kids) · [Weather](#weather) · [Air & Allergy](#air--allergy) · [Sports](#sports) · [Commute](#commute) · [Planes](#planes) · [Map](#map) · [Space](#space) · [Multi-view](#multi-view) · [Display](#display) · [Kitchen tablet](#kitchen-tablet) · [Finance](#finance) · [Room dashboards](#room-dashboards) · [Design Studio](#design-studio) · [Network & Storage](#network--storage) · [Family Board](#family-board) · [Guest](#guest) · [Maintenance](#maintenance) · [Pets](#pets) · [Hobbies](#hobbies) · [Workout](#workout) · [Utilities](#utilities) · [Pool](#pool) · [Wellbeing](#wellbeing) · [Sitter monitor](#sitter-monitor) · [Automations](#automations) · [System](#system) · [About](#about) · [Labs](#labs)
+
+**New in .256**:
+[On every page](#new-on-every-page-new-in-256) ·
+[Background picture](#background-picture-new-in-256) ·
+[Home: Today at a glance](#home-today-at-a-glance-and-card-order-new-in-256) ·
+[Rooms: Laundry](#rooms-laundry-new-in-256) ·
+[Cameras: alerts and Frigate](#cameras-alerts-and-frigate-new-in-256) ·
+[Cameras: vision alarms](#cameras-vision-alarms-new-in-256) ·
+[Planes: photo card, airspace layer, Home card](#planes-photo-card-airspace-layer-and-home-card-new-in-256) ·
+[Packages: Shop import](#packages-shop-import-new-in-256) ·
+[Shopping: Kroger-family store](#shopping-kroger-family-store-new-in-256) ·
+[Workout: extras](#workout-extras-new-in-256) ·
+[Display: wall display and TV cards](#display-wall-display-and-tv-big-type-cards-new-in-256) ·
+[Packages: Frigate](#packages-frigate-new-in-256) ·
+[Now Playing: YouTube playlists](#now-playing-youtube-playlists-and-launch-buttons-new-in-256) ·
+[Garage: new cards](#garage-new-cards-new-in-256) ·
+[Kids: new cards](#kids-new-cards-new-in-256) ·
+[Planes: air traffic tiles](#planes-air-traffic-tiles-new-in-256) ·
+[Display: picture frame](#display-picture-frame-new-in-256) ·
+[Family Board: new cards](#family-board-new-cards-new-in-256) ·
+[Guest: guest mode](#guest-guest-mode-new-in-256) ·
+[Hobbies: gaming and smoker](#hobbies-gaming-and-smoker-new-in-256) ·
+[Workout: health card](#workout-health-card-new-in-256) ·
+[Automations: suggestions](#automations-suggestions-new-in-256) ·
+[System: TV helpers](#system-tv-helpers-new-in-256) ·
+[System: Setup checklist](#system-setup-checklist-new-in-256) ·
+[Labs: Energy and bills](#labs-energy-and-bills-new-in-256)
 
 Also: [Things every page has](#things-every-page-has) (the card ⋯ menu, tap-to-collapse, Right now, theme colours,
 left- or right-handed phones).
@@ -50,6 +77,23 @@ left- or right-handed phones).
 - **A soft chime** the first time a screen loads a new build (once per build, never in quiet hours or on Calm/Off; a
   switch in Settings).
 
+## New on every page (new in .256)
+*(new in .256)*
+
+- **Open backlog chip:** a small number chip in the top bar shows how many items are open in the backlog; tap it to open the Design Studio. The strip scrolls instead of squeezing, and a failed load keeps the number already shown.
+- **New marks:** a new card gets a small "New" tag and a soft glow for up to 3 days. It goes away once you have seen it (on screen for 2 seconds) or tapped it, and the seen list follows your account.
+- **Labs switch:** Settings has a "Show Labs pages" switch that hides the whole Labs section from the menu for you. Each Labs page also keeps its own switch in Menu pages.
+- **Smooth touch scrolling:** while a finger is scrolling, timers and data loads that would redraw part of the page wait, then run once afterwards. Taps and typing are never held.
+- **Card change notices:** when a Home or Right now card adds or removes itself on its own, a large full-screen notice says so (readable from across the room). Changes you cause yourself and the first load stay silent, a burst of changes becomes one notice, and it closes by itself. A switch in Settings turns it off, for the whole household.
+- **Demo mode:** open the dashboard address with `?demo=1` and it runs on made-up sample data: no sign-in, read-only, nothing real is read or written, and a DEMO strip shows on every page.
+- **Refresh button:** a chip in the top bar, on every screen. A tap re-fetches the current page's data and redraws the page, unless you are typing in a text box (your text is never thrown away). A long press, or a tap while a new version is waiting, does a full safe reload, which also waits while you are typing, have unsaved text or have a sheet open. A short spin shows while it works, and a failed or empty load keeps the data already on screen.
+- **At a glance summaries:** Weather, Commute, Packages, Family Board, Pantry & Fridge and Security each show one optional sentence inside their Right now card. It is built the same way as Home's Today at a glance: a local model first, a cloud model only after "Allow cloud AI" has been switched on there, otherwise a plain sentence made from the page's own facts. Each page refreshes its sentence at most every 15 minutes (a failed try waits 10), and the text is shared by every screen. The **Page summaries** card on the System page turns all six off and stops the AI calls.
+
+### Background picture (new in .256)
+*(new in .256)*
+
+An optional soft picture behind every page, switched on in Settings under Display size, next to Look. It is **off by default**. **Pictures from** is either public-domain art (pick a theme such as Landscapes, Impressionism, Seascapes, Flowers, Japanese prints or Abstract) or whatever the Picture frame is set to show (an album such as Google Photos, or image entities). It changes slowly (every 5 minutes, 15 minutes, 1 hour, 6 hours or daily) and fades between pictures. **Dimming** (Light, Medium or Strong) lays the page's own background colour over the picture so text stays readable in dark and light and in every Look. A picture that won't load is skipped, and the choice follows you to every device.
+
 ## Home
 
 ![Home page](images/home-dark.jpg)
@@ -57,6 +101,12 @@ left- or right-handed phones).
 The page most screens sit on: an illustrated house banner with live status, and cards that appear when they matter
 (a plane overhead, rain coming, a game on, a package arriving) and leave when they don't. Every card and pop-up is
 described on the [Home page](home.md) guide and in the [Every feature](features.md#home-automatic-cards) table.
+
+### Home: Today at a glance and card order (new in .256)
+*(new in .256)*
+
+- **Today at a glance:** one Right now card with two or three sentences about what already happened today, what is going on now and what is coming. It uses the AI set up in Home Assistant when there is one; otherwise a plain summary built from the same facts (weather, calendar, alerts, packages, commute). A prompt only goes to a local model unless "Allow cloud AI" is switched on. The text is shared by every screen and refreshed at most every 15 minutes.
+- **Card order:** urgent cards first, then richer cards (more rows, buttons or a photo), then a "Lower priority" section where single-row cards are stacked together in one small card. Nothing is hidden. On Rooms, customised room cards come first.
 
 ## Rooms
 
@@ -69,6 +119,11 @@ a button for it. **Right now** shows low batteries (with each device's room), li
 house** check: when everyone has left (for 45 minutes after), a card lists lights left on, unlocked locks, an open
 garage and open doors or windows, with **All off** (locks and the garage take two taps).
 
+### Rooms: Laundry (new in .256)
+*(new in .256)*
+
+On a laundry or utility room page, a **Laundry** card follows any appliance on a power-monitoring plug: power above a threshold means running, low power for a few minutes means done. A Home card appears when a load finishes and goes away when the door opens (optional door sensor) or someone taps Done; a washer left finished for a while gets a "wet clothes forgotten" reminder. Appliances are picked in the card. The dishwasher keeps its own card.
+
 ## Cameras
 
 ![Cameras page](images/cameras.jpg)
@@ -76,6 +131,24 @@ garage and open doors or windows, with **All off** (locks and the garage take tw
 A camera wall like a security console: layouts (auto, 1, 2×2, 3×3, 4×4, 1+5, 1+7), grouping, ordering, hiding,
 labels, snapshot refresh rate or live video. Tap a camera for a large live view. Snapshots are fetched with the
 dashboard's own sign-in, never stale camera links.
+
+### Cameras: alerts and Frigate (new in .256)
+*(new in .256)*
+
+- **Camera alerts:** a card with status and recent detections, plus a settings sheet where each camera gets person detection, extra objects (car, animal, package), zones when the source reports them, quiet hours and who is notified. Detection comes from Frigate; other cameras still get quiet hours and a phone list.
+- **Frigate at the door:** a Talk button and Open camera link on the Doorbell card; a "Person at the door" card for 2 minutes after a Frigate person sensor fires; a "Frigate sees a package outside" card on Packages and Home.
+- **Video states:** pick any sensor that reports a state seen on video (for example a Frigate state classification such as door open or closed). Each shows its value, how long it has been so, and a snapshot, with an optional "alert when it is this for N minutes" Home card.
+- **Mail truck:** vehicle sensors and a front camera; each detection asks "Was that the mail truck?". Once enough answers are logged, a Home card says when the truck is usually due.
+
+### Cameras: vision alarms (new in .256)
+*(new in .256)*
+
+A camera snapshot is read by the AI set up in Home Assistant, and a **Vision alerts** card appears on Home only when the answer says something needs doing. Nothing is built in: each check is switched on, given a camera and a schedule (daily, weekly or hourly, with a time and, for outdoor checks, daylight hours only) from its settings sheet on the Cameras page. A check does nothing until it is on, has a camera and an AI is available. It uses a **local AI by default**; a cloud model is used for a check only if you turn on "Allow cloud AI" for that check. The snapshot sent for the AI is removed again afterwards, and a failed or empty check never replaces what is shown. Several screens may be open, but a check runs once, not once per screen.
+
+- **Grass is getting long:** a yard camera is asked weekly; a strip of the last few snapshots shows how it has changed, and **Mowed it** clears the card.
+- **Scrape the windshield:** on a cold morning (today's low or the current temperature under a limit you choose, inside a morning window), a driveway or car camera is asked whether the windshield is frosted or iced. The card says to leave a few extra minutes early. The temperature source, limit, window and extra minutes are all picked in the sheet; with no temperature source or forecast the check stays quiet and says what to add.
+- **It snowed:** a yard camera is asked for fresh snow after a cold night, with a Commute button on the card.
+- **Cats fed:** a camera at the feeding spot is asked at set times, and when a motion sensor you pick fires, whether a pet is eating or the bowl has food. The last time they were fed shows on the Pets page, and a card appears if nothing shows them fed by the time you set.
 
 ## Calendar
 
@@ -103,6 +176,13 @@ you open it and every minute while it's open.
 What every speaker is playing, with artwork, play/pause, seek, volume and per-speaker faders inside speaker groups.
 Browse and search Music Assistant to start something new.
 
+### Now Playing: YouTube playlists and launch buttons (new in .256)
+*(new in .256)*
+
+A **YouTube playlists** card. Save playlists by name by pasting a YouTube or YouTube Music playlist link (Settings on the card), choose a speaker or TV under **Play on**, and tap a playlist to play it there; Cast players open the YouTube app on that playlist, other players are sent the link. The **YouTube TV** section has one button per TV you pick in the card's Settings, and each opens YouTube TV on that TV. Playlists and the chosen TVs are saved in Home Assistant, so every screen shows the same ones. With nothing saved the card explains what to add.
+
+While a TV is showing the dashboard by casting, the **Cast dashboard** pop-up also gets **YouTube** and **YouTube TV** buttons for that TV. They try the TV's own YouTube source first, then its remote or the cast app, then the link, and say if the app couldn't be opened.
+
 ## Shopping
 
 ![Shopping page](images/shopping.jpg)
@@ -110,6 +190,11 @@ Browse and search Music Assistant to start something new.
 The Home Assistant shopping list (and Mealie's, if connected). Only shopping lists show here; chores, maintenance, the
 pantry and ideas stay on their own pages. Add several items at once (or say them), tick items into the cart, clear the
 cart, and "Buy again" from recent items. Changes show on every screen instantly.
+
+### Shopping: Kroger-family store (new in .256)
+*(new in .256)*
+
+A store card for any Kroger-family banner, picked in the card (the choice is saved for everyone). **Open store** opens the store's site; **Copy list + open store** copies the open items on the current shopping list and opens the store; **Send to the store's to-do list** appears only when Home Assistant has a to-do list named after the banner or Kroger; and a short row of store-search links covers the first open items. Any Home Assistant entity named after the banner or Kroger is listed. This is link-out only (no store account or sync). With no store picked, the card shows what to set up.
 
 ## Packages
 
@@ -122,6 +207,16 @@ date.
 
 **Package left outside**: when a delivery sits outside with nobody home, or is still out after dark, a card shows here
 and on Home, and every phone gets one notification.
+
+### Packages: Frigate (new in .256)
+*(new in .256)*
+
+A package left outside is shown with a live snapshot and an Open camera button when Frigate package sensors see one, and a calm note appears when a delivery was logged outside but Frigate no longer sees it. See Cameras for the rest of the Frigate cards.
+
+### Packages: Shop import (new in .256)
+*(new in .256)*
+
+A **Shop import** card with a paste box. Paste a Shop app order email, a carrier tracking link or a tracking number, and every tracking number found is added to the Packages list in the same shape as one typed by hand, never twice. Shop has no public connection to read automatically; to import without pasting, forward Shop order emails to the Family inbox, which files the tracking number as a package.
 
 ## Recipes
 
@@ -174,6 +269,18 @@ Tool storage, built on the Storage page's places and items (so the Storage searc
 - **Car cards** (registration, inspection, oil change, recalls) also show here.
 - Recognising tools from a drawer photo **(planned)**.
 
+### Garage: new cards (new in .256)
+*(new in .256)*
+
+- **Car pictures:** a real photo of the car instead of the drawn art. Order: a picture you saved on the car (link or upload), then an automatic matching photo of the same year, make and model from Wikimedia Commons (free, shown with a caption and a link to its licence page since colours can differ), then the drawn art.
+- **Car value:** type in a value and the date you looked it up (from any source); the card shows an estimate of today's value that depreciates at a yearly rate (default 15%, changeable per car). No price is scraped.
+- **EV charging:** battery, range, plugged and charging for any car integration. A "Plug in the car" card appears from 6 PM when the battery is below your chosen level and the car is not plugged in. A button looks up the nearest public chargers (Open Charge Map, free), with distance, plug types, power and Navigate.
+- **Garage door:** works with any cover. Open and Close are always offered, and the state is labelled "reported" because some openers report stale state. A Home card shows when the door has been open longer than a time you choose.
+- **Smart plugs:** pick any switch as a plug; each gets an on/off button, plus power and energy today when a sensor exists. An unavailable plug says where to fix it.
+- **Toolbox photo import:** take or pick a photo of a toolbox or drawer; the AI lists drawers and tools for review (rename, untick, change counts). Only Save writes to the Storage inventory, with drawers as places and tools as items.
+- **Toolbox picture:** every toolbox card shows a drawn picture of the box, built from the saved inventory. Drawers sit top to bottom in name order, hutch sections (Hutch, Top tray, Lid and similar) are drawn on top as a shelf of compartments, and drawers that differ only by Left or Right sit side by side in one row. Tap a drawer to see its tools under the picture, and a search on the Garage page lights up the drawers that hold a match. It follows dark and light and saves nothing new.
+- **NFC tags:** every toolbox and drawer has an **Attach a tag** button. The sheet shows the tag id to write with the Home Assistant companion app and can listen for the next scan to pair the tag in one tap (or paste an id). Scanning a paired tag opens the Garage page at that drawer with its contents highlighted for a few seconds. Listening for scans needs a screen signed in as an admin; other screens use a notification automation sketched in the project's drafts.
+
 ## Kids
 
 One big-button page for a kid's tablet, made only from things that already exist, with no settings and no editing:
@@ -185,6 +292,12 @@ One big-button page for a kid's tablet, made only from things that already exist
 - **Shows & channels** from Family favorites (anything on the "blocked for kids" list never shows).
 - **Pets**, a **plane overhead** and the **Space Station** flyover, and big **music** buttons.
 - A PIN to leave the page and a story button **(planned)**.
+
+### Kids: new cards (new in .256)
+*(new in .256)*
+
+- **Bedtime library:** an "Our books" shelf. Add a book by scanning its barcode, photographing the cover or typing a title or ISBN (looked up in Open Library, no key). "Read tonight" picks the least recently read book, one a day; "We read it" logs the day.
+- **Favourite colour:** in Room settings, a child can have a favourite colour that themes that child's room page, the medicine chip and the Kids page when only one child has a colour. No colour means no change.
 
 ## Weather
 
@@ -248,6 +361,18 @@ military aircraft ringed, and emergencies (squawk 7700) highlighted worldwide.
   scroll when they don't fit, and an **INFO** button that hides or shows the legend and info cards.
 - Optional phone alerts when a plane passes overhead (one per pass).
 
+### Planes: air traffic tiles (new in .256)
+*(new in .256)*
+
+Four tiles inside the Planes page grid, all from free sources without a key: **US air traffic status** (ground stops, delay programs, closures), **Restricted airspace** (restricted, prohibited, warning and alert areas near the map centre, with altitudes, times and a small sketch with a legend), **Flight restrictions** (temporary restrictions, optional state filter) and **Listen and world** (live air traffic audio links for chosen airports and links to other countries' air navigation services). Worldwide status feeds and official NOTAM search need a key or account, so those are links only.
+
+### Planes: photo card, airspace layer and Home card (new in .256)
+*(new in .256)*
+
+- **Plane photo card:** when an overhead alert fires while the Planes page is open, a glass card sits over the top-left of the map with the plane's picture (the same photo sources as the Home aircraft card) plus flight, type, altitude and route. The map controls stay clear on the right edge. Close it with the x; a dismissed plane stays dismissed, and the card closes by itself when the plane leaves the area.
+- **AIR map layer:** an **AIR** button next to PATH and INFO draws the nearby special-use airspace and the currently active temporary flight restrictions under the planes, with its own legend rows. On or off is remembered on each device.
+- **Air restrictions near home (Home card):** shown on Home only while it matters: a ground stop, ground delay or closure at a nearby airport, or an active temporary flight restriction that covers home or reaches within the Planes radius. On the Planes page it always shows, with a calm line when there is nothing ("No flight restrictions or ground stops near home").
+
 ## Map
 
 ![Map page](images/map.jpg)
@@ -280,6 +405,19 @@ Casting to a TV opens the same Display, and **each TV can have its own setup** (
 per screen, which screens, night dimming). Casting creates or refreshes a view for that TV in Home Assistant's TV
 dashboard, so the TV still knows which one it is after a reload. Home's cards show as a strip on the radar and camera screens; a pet peeks in
 from a corner now and then.
+
+### Display: picture frame (new in .256)
+*(new in .256)*
+
+A display can be a **picture frame**: when nobody is in the room it shows a full-screen slideshow, and when someone is there it shows the normal Display screens. Another Display screen can add the slideshow to its rotation. Sources are public-domain art (Art Institute of Chicago open data, by theme or search, with favourites), any Home Assistant image entity, or photo albums from the media library (including Google Photos once that integration is added). Someone is in the room while a chosen presence sensor is on, or the screen was touched recently; with no sensor it works from touch alone. Whether a screen is a picture frame is per device.
+
+### Display: wall display and TV big-type cards (new in .256)
+*(new in .256)*
+
+- **Wake on approach:** per screen, in the Cast sheet under This device, pick presence, motion or camera person sensors. When one sees someone, the screen wakes: the page undims, and the screen is switched on and brightened through the Fully Kiosk integration in Home Assistant, or woken with the companion app's screen-on command. After the room has been empty and untouched for a while it dims again; an optional setting limits this to night. A fully dark screen can only be woken from Home Assistant itself, so the same idea is also provided as an automation sketch. Settings are saved in Home Assistant under a random screen label, not a name.
+- **Nest Hub kitchen view:** a cast target can show a compact kitchen screen instead of the rotation: clock, timers, the out-the-door list, dishwasher, leftovers and today's events. Choose it in the Cast sheet under Setup for one TV.
+- **Wall display setup checklist:** a card on the Kitchen room page with live checks, and a Wall display group in Device setup.
+- **TV big-type cards:** on the Display view, chosen Home and Right now cards (Today at a glance, reading tonight, gaming and achievements, laundry, leak, UPS and printer alerts, bills due, the mail truck, the doorbell and person at the door) use a large-type look readable from across the room. Buttons and links are dropped because nothing can be tapped on a TV, long text is trimmed, and only the first few rows show (two for the doorbell and person at the door).
 
 ## Kitchen tablet
 
@@ -363,6 +501,7 @@ See [Settings](settings.md#design-studio-backlog-and-ideas).
 - **Internet**: connection status, router uptime, live download and upload speed, data used today and this month,
   router CPU and memory, and hourly speed tests with a 7-day chart.
 - **Internet services**: the status of the remote-access service, Cloudflare, GitHub and Discord.
+- **Internet provider** *(new in .256)*: a connectivity sensor (modem or router, ping or uptime) and optional speed-test sensors (download, upload, ping). If the connection is down for 2 minutes, Home and this page show an outage card with a link to the provider's outage page, which you type in the card's settings. It works from Home Assistant entities, since most providers have no public status feed.
 - **NAS** (Synology DSM): volume space and status (with an explanation when it needs attention), each drive's
   health and temperature, CPU, memory, temperature, traffic, update and security status.
 - **Home Assistant**: CPU, memory, disk and uptime.
@@ -389,6 +528,15 @@ the same kind.
 fever and medicine, medicine expiring, birthdays, holiday traditions, the week ahead, kids' ideas, movie night, for sale
 and the intercom.
 
+### Family Board: new cards (new in .256)
+*(new in .256)*
+
+- **Where is everyone:** one tile per person. Each person decides whether their place shows (off until they switch it on). Only Home, Work or Away, battery and last update show, never coordinates. **Ring my phone** uses a Find My Device sound button when there is one, otherwise the companion app notification command.
+- **Family inbox:** a dedicated email address read through Home Assistant's IMAP integration. The AI works out what each message is and files it as a calendar event, package, note or shopping item. Mail is untrusted: only allowed senders are filed by themselves, everything else waits for a tap, and every filed item has Undo. Without IMAP or AI the card says what to add.
+- **Closings:** places to watch (daycare, school), feeds, sensors and a manual "Closed today" toggle; a Home card shows while something is closed or delayed.
+- **How we're doing:** an opt-in card fed by the private Wellbeing page (see [Wellbeing](#wellbeing)). It shows a mood dot per person who chose to share and rotates the shared gratitude notes as one quiet line. It stays empty until someone opts in.
+- **Page title:** the Family Board now shows its **Family Board** heading like every other page; before, the page started straight into its cards with no title. The same build also stops the chore and trash schedule from being saved before it has finished loading, which could have overwritten it.
+
 ## Guest
 
 ![Guest page](images/guest.jpg)
@@ -398,6 +546,11 @@ QR code** (drawn on the device; the password is never sent anywhere) and copy bu
 "all lights off" button, the thermostat, tap-to-call contacts, how-tos and pet notes. Admins edit it; everyone sees
 the same information. Also: **weather now and the next 6 hours**, the live radar, and a **Watching TV** card with the
 TV remote steps and YouTube TV buttons for each TV (no passwords on the page).
+
+### Guest: guest mode (new in .256)
+*(new in .256)*
+
+An admin can turn on **guest mode** from a phone: every house screen switches to a simple guest view (the Guest page first, a short menu, no System, settings or editing). A grown-up PIN lifts it on one screen for 5 minutes of use, and an optional end date turns it off by itself. The screen you switch it from, and any screen set to opt out, keeps working normally. A small card on this page also turns on the Sitter monitor and opens it.
 
 ## Maintenance
 
@@ -434,6 +587,12 @@ soon (book club tonight, plants to water, game night, a show this week). The ban
 (2 hours before), show length, breakdown (1 hour after), a timeline, and import from an event link; Home shows a Gig
 card with the be-there-by time.
 
+### Hobbies: gaming and smoker (new in .256)
+*(new in .256)*
+
+- **Gaming:** one card fed by the Steam, Xbox and PlayStation integrations (or any similar entities, detected by name and tickable in settings). It shows what is being played on which device, account chips (Playing, Online, Away, Offline) and turns achievement counters going up into house events (toast, optional chime and confetti, a 3-hour Home card, a "Gamer of the week" tidbit). Rare ones are marked. Home shows a card only while a game is running.
+- **Smoker:** pit temperature, pit target, meat probe, probe goal and pellet level from any entities you pick. A Home card shows while a cook is running with an estimated time to the goal, and a Done card when the probe reaches it.
+
 ## Workout
 
 Made for a TV in the garage (big numbers you can read across the room), and it works on a phone too.
@@ -443,11 +602,54 @@ Made for a TV in the garage (big numbers you can read across the room), and it w
 - **Workout log** shared by the family, with a weekly total per person.
 - Live heart rate, calories and treadmill data **(planned)**.
 
+### Workout: health card (new in .256)
+*(new in .256)*
+
+A card in the Workout grid reads the Home Assistant companion app's health sensors (steps, heart rate, activity, distance, calories, weight, sleep, including those a watch syncs through Health Connect) and treadmill entities (running state, speed, distance). Each person picks their own sensors. When the treadmill starts, a session starts by itself, and when it stops the card offers Log it (or logs automatically when Auto-log is on). Only sensor choices are saved, never health values; nothing leaves the house.
+
+### Workout: extras (new in .256)
+*(new in .256)*
+
+- **14-day trends** of the sleep and weight sensors picked in the Health card, read from Home Assistant's history. The values are held in memory on that screen and never saved.
+- **After a workout:** for 2 hours after a workout ends (a treadmill session, a finished interval timer or a logged workout) a card shows on Home and in the Workout page's Right now with a short summary. The numbers stay in memory only.
+- **Cast Workout page:** sends the Workout page to a TV you choose, using the normal cast code, and the TV opens the page once it loads. Only which TV was chosen is remembered, never any health value.
+
+## Utilities
+*(new in .256)*
+
+Three cards, all auto-detected with a picker and a setup message when nothing is found:
+
+- **Leak sensors:** every moisture sensor, with a red "Water leak" Home card and one chime when a new leak appears.
+- **UPS:** battery charge, runtime left, load and status, with a "Running on battery" card.
+- **Printer:** ink, toner and drum levels, with a "Printer ink low" card under a limit you choose.
+
+## Pool
+*(new in .256)*
+
+Readings from sensors you pick (pH, chlorine, temperature, alkalinity, hardness, stabilizer), or from a manual test log until sensors exist. Each reading is shown against its range with plain guidance, plus a trend. Home shows a card only when something needs doing (out of range or a test is overdue).
+
+## Wellbeing
+*(new in .256)*
+
+A gentle, optional, private page: mood check-ins with a 14-day trend, a breathing exercise, a wind-down reminder, gratitude notes and a daily affirmation. It is saved per signed-in person and is private by default, with no scores, no diagnosis and no cloud AI.
+
+**Family sharing (opt-in):** each person can choose, only for themselves, to share two things with the family: a simple **mood dot** (just the latest check-in, never any notes) and the **gratitude notes they mark as shared**. Both switches are off by default. What is shared is kept separately from the private data and holds only what was explicitly shared. Turning a switch off, removing a note or erasing wellbeing data removes it from what the family sees. Shared items appear in the **How we're doing** card on the Family Board.
+
+## Sitter monitor
+*(new in .256)*
+
+A calm, phone-first page for whoever is watching a sick child at home: cameras for the chosen rooms, the child's room temperature and humidity, next medicine doses, the Medicine & fever card, quick-call contacts and emergency info (doctor, allergies, notes). It stays out of the menu until an admin turns on Show in the menu; setup is on the page, and a copy-link button shares its address with anyone signed in to Home Assistant on that device.
+
 ## Automations
 
 What the house does on its own: every Home Assistant automation as a friendly card (grouped, with when it last ran and a
 description), on/off and **Run now** for admins, and **Make your own** with five fill-in templates. The full list of
 what ships with Nashboard is on [Automations](automations.md).
+
+### Automations: suggestions (new in .256)
+*(new in .256)*
+
+A **Suggested for your home** card proposes new automations, app rules and badges, each with Accept, Dismiss and Later. Rule-based suggestions always work (from the devices and existing automations); **Ask the AI** uses the AI set up in Home Assistant only when pressed. Nothing is ever applied to Home Assistant: accepting an automation saves a sketch to read or copy.
 
 ## System
 
@@ -457,6 +659,7 @@ Home Assistant health at a glance: updates, backups, recent errors, devices that
 and settings such as Menu pages, alerts and appearance.
 
 - **Who's on**: the live screens and people seen in the last minute.
+- **Earbuds battery** *(new in .256)*: left, right and case battery levels (up to three sensors, usually from the phone's companion app) plus an optional Bluetooth connected sensor, with a low-battery card on Home and System at a level you choose (default 20%). Every sensor is picked in the card's settings or auto-detected by name and device class, so any earbuds work.
 - **Home settings**: the household basics in one place (house name and Wi-Fi from Guest, pickup days from the Family
   Board, this device's zip, Home Assistant's location, time zone, units and people), each linking to where it's edited.
 - **Banner windows**: say which window, porch light or lamp in the house picture is which room or light (Highlight shows
@@ -466,6 +669,16 @@ and settings such as Menu pages, alerts and appearance.
 - **Saved data**: every saved app setting with its size, entries, last save, who saved it and its version, with
   **Undo** (the last 20 versions are kept, and a dated copy is exported every night). See
   [How it all connects](how-it-connects.md).
+
+### System: TV helpers (new in .256)
+*(new in .256)*
+
+A settings and status card for TVs. **Cast timeout:** while a TV shows the dashboard by casting, a card counts down to when it will drop out, and the keep-alive time can be set. **Volume leveler:** per TV, on or off, how far to step down, and an optional sound-level sensor; the room page shows when the leveler last stepped in. The automations that act on these are sketches for review.
+
+### System: Setup checklist (new in .256)
+*(new in .256)*
+
+One card that lists every feature waiting on an integration, a piece of hardware or a setting, such as Frigate, the family inbox, game accounts, UPS and printer, leak sensors, pool monitor, laundry plugs, Health Connect, Google Photos, wall displays, AI Task, EV charging, the garage door and the smoker. Each row is detected live from Home Assistant, so nothing is typed in or saved: a done row says it was found, a to-do row says in one line what to add, and each row opens the feature's page. A progress bar shows how many are set up. Only features the app has are listed.
 
 ## About
 
@@ -481,3 +694,14 @@ phone scroll with a soft fade.
 Experiments: a **Browser** for quick look-ups (just the bar: back and reload, a bookmarks dropdown and the address with
 voice; tools behind a ⋯ menu; reopens your last page on each device; in Full window it works like a real browser) and a
 3D printer monitor.
+
+### Labs: Energy and bills (new in .256)
+*(new in .256)*
+
+An **Energy** page in Labs. It finds power, energy and cost sensors by type, shows what is using power now and usage today and this month (from long-term statistics, read only) with the biggest users, and estimates cost from a price per kWh you type in. **Bills** are entered by hand (name, amount, due date, repeat); Paid moves a repeating bill to its next date. Home shows bills due soon or overdue and an "unusually high day" note. Without energy monitoring the page explains what to add.
+
+**Solar, generator and grid cards:** three more cards on the Energy page. Nothing is hardcoded to a house; each finds its sensors by name (or from the sensors in Home Assistant's Energy settings, read only) and has a **Set up / Change** button with pickers. With nothing found, a card says what to add.
+
+- **Solar:** power now and energy today, from solar, PV or inverter sensors. Today's figure comes from long-term statistics unless the sensor already reports a daily total.
+- **Generator:** status, fuel level and when it was last exercised.
+- **Grid:** a status sensor for mains power. When it reports an outage, Home shows a **Power outage** card.
