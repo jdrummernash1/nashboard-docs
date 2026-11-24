@@ -25,8 +25,8 @@ title: Nashboard
 <!-- whatsnew:start -->
 <style>.wn{border:1px solid rgba(255,181,71,.45);background:rgba(255,181,71,.08);border-radius:16px;padding:14px 18px;margin:0 0 1.4rem}.wn h2{margin:0 0 .3rem;font-size:1.15rem;border:0}.wn p{margin:.2rem 0 .5rem;opacity:.85}.wn ul{margin:.3rem 0 0;padding-left:1.1rem}.wn li{margin:.18rem 0}.wn-b{display:inline-block;min-width:2.6em;font-weight:700;color:#d98a00}</style>
 <div class="wn"><h2>What's new · Nashboard 1.0 (build .265)</h2>
-<p>Everything shipped since the last docs update (build .265) · updated Nov 24 2026 · <a href="changelog.html">full change log</a></p>
-<p>No new builds since the last docs update.</p>
+<p>Everything since Nashboard 1.0 came out (build .264) · updated Nov 24 2026 · <a href="changelog.html">full change log</a></p>
+<ul><li><span class="wn-b">.265</span> Set-up cards fold into one "More to set up" card, the quiet-rows fold is remembered, the menu is grouped into sections, readable weather hour labels, Fire safety cards full width on the Family Board, readable NEW badge.</li><li><span class="wn-b">.264</span> Nashboard 1.0. Version label in About, docs site published with the 1.0 page, GitHub release v1.0 with the coffee link (preview: downloads open later).</li></ul>
 </div>
 <!-- whatsnew:end -->
 
