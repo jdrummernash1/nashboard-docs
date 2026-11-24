@@ -8,6 +8,7 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 
 ## Nashboard 1.x · Nov 24 2026
 
+- Phone banner chips a little smaller so the house shows more. (BUILD .271)
 - Phone and tablet page bar slides through every page (Frequent first, colour-tinted groups), card text grows to fill each card, two-line banner chips, the house editor gains mailbox, driveway, fence, shutters, garage door and lights choices, the phone banner shows the whole house. (BUILD .270)
 - Banner art reaches every edge (no grey band or hairline ring), colour-grouped side menu on desktop, Pantry and Recipes buttons no longer overlap, readable banner weather card on a day sky, an icon in the browser tab. (BUILD .269)
 - Home banner: the chip strip sits exactly on the banner's bottom edge and just under the horizon at every width, the mailbox stands still on the outside edge of the driveway. (BUILD .268)
