@@ -3,7 +3,7 @@
 Nashboard can be changed in three independent ways. Mix them freely; each is remembered per person and follows that
 person to every device they sign in on.
 
-1. **Look**: the overall style (Classic, Paper, Glass, Bold).
+1. **Look**: the overall style (Classic, Paper, Glass or Bold, or Auto, which changes with the season).
 2. **Mode**: Auto, Dark or Light.
 3. **Accent colour**: seven colours that tint buttons, highlights and the active menu item.
 
@@ -12,7 +12,7 @@ only colours, borders, shadows and surfaces change.
 
 ## Looks
 
-Pick a look in **Settings, Interface scale**, in the Look row. Tap one of the four buttons; it applies at once.
+Pick a look in **Settings, Interface scale**, in the Look row. Tap one of the five buttons; it applies at once.
 
 ### Classic (default)
 - **Feel**: the original Nashboard. Warm charcoal in dark mode, a warm off-white in light mode, soft rounded cards with a
@@ -35,6 +35,10 @@ Pick a look in **Settings, Interface scale**, in the Look row. Tap one of the fo
 - **Feel**: high contrast. Pure black (dark) or pure white (light) backgrounds, thick 2 px borders, no soft shadows,
   brighter secondary text, larger and heavier card titles, and a clear outline on the selected option in button groups.
 - **Suits**: wall screens and TVs viewed from across the room, bright rooms, and anyone who wants maximum legibility.
+
+### Auto (seasonal)
+- **Feel**: the look follows the calendar: Glass from December to February, Paper from March to May, Classic from June to August and Bold from September to November. Only screens set to Auto change.
+- **Suits**: a screen you want to feel fresh through the year without touching it.
 
 ## Modes: Auto, Dark, Light
 

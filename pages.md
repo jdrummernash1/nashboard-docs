@@ -6,7 +6,7 @@ title: All pages
 
 # All pages
 
-Pages appear in the side menu (or the bottom bar and "More" sheet on phones). Each Home Assistant user can choose
+Pages appear in the side menu (or the bottom bar and "More" sheet on phones). The menu, the More sheet and Menu pages are grouped under short headings: **Everyday**, **House**, **Family**, **Out & about**, **Fun & info**, **Labs** and **System**. Home and the tab-bar pages stay first and About stays last. Each Home Assistant user can choose
 which pages they see, and in what order; see [Settings](settings.md). Some pages only appear once their data exists:
 for example, Cameras needs at least one camera. Pages you set up yourself (Commute, Pets, Pool, Utilities and Energy)
 wait under **More to set up** in Menu pages, each with a **Set up** button that opens the page and adds it to your menu.
@@ -28,10 +28,10 @@ left- or right-handed phones).
   window, then the whole screen; it zooms the page so all of it fits.
 - **A Right now card** on pages that own Home cards. It shows what is live on that page (Rain coming on Weather, the
   dog timer on Pets, Leave soon on Commute). Everything quiet folds into one line, **All quiet · 8 things watched** (or
-  **and 6 quiet** under the live rows); tap it to see the whole list. A row for something the house does not have (no
+  **and 6 quiet** under the live rows); tap it to see the whole list; whether that fold is open is remembered for you on every device. A row for something the house does not have (no
   UPS, no pool reading, no car that charges) is left out, and a quiet row says the real state ("Garage door: Closed")
   or what it watches for. Home only shows copies while they matter.
-- **Set-up and settings cards come after the page's own cards**, never above them, so a page opens on its content.
+- **Set-up and settings cards come after the page's own cards**, never above them, so a page opens on its content. Cards that are still waiting to be set up fold into one **More to set up · N** card at the very end of the page; tap it to show them.
 - **The card ⋯ menu** on every card's header: Full window, Collapse, Hide for today and Hide this card (with a confirm;
   admins can also turn a card off for everyone). Hidden cards come back from Customize menu → Hidden cards or the System
   page's Hidden cards section.
@@ -325,7 +325,7 @@ and on the Garage room.
 A live map of aircraft around home or around the phone (5 to 500 nm), coloured by altitude, with flight paths,
 military aircraft ringed, and emergencies (squawk 7700) highlighted worldwide.
 
-- Glass cards on the map's edge: the plane you picked (all details and a small photo, or a labelled stock photo of its
+- Glass cards on the map's edge (on a phone they become a plain list under the map, so nothing is hidden or cut off): the plane you picked (all details and a small photo, or a labelled stock photo of its
   type), the **closest** plane, **military** planes in range, and the **highest** and **fastest plane in the world**
   right now (tap to fly the map there).
 - Arrivals and departures boards for nearby airports (airport tabs scroll on phones).

@@ -36,12 +36,13 @@ Other settings that live elsewhere:
 
 ## Saved per Home Assistant user (follows you to every device)
 
-- **Menu pages**: choose which pages appear in your side menu (System → Menu pages, or More → Customize menu).
+- **Menu pages**: choose which pages appear in your side menu (System → Menu pages, or More → Customize menu). The menu is grouped under Everyday, House, Family, Out & about, Fun & info, Labs and System, and your choices work inside each group.
   Home always stays. Hidden pages still open from links, Multi-view and Display.
 - **Alerts and sounds**: overhead plane alerts, Space Station alerts, emergency (7700) alerts, connection-lost
   alerts, the doorbell/person chime and the garage chime. With **phone alerts** on, Home Assistant also notifies phones
   (screen off too) about low planes overhead, a Space Station pass 10 minutes before, and 7700 emergencies within 200 nm.
 - **Menu order**: My order, or Most used (visit counts follow you; Home and the tab bar stay put).
+- **Quiet rows fold**: whether a page's "All quiet" fold is open or shut is remembered for you.
 - **Hidden cards**: cards you hid with the ⋯ menu's Hide this card (bring them back from Customize menu → Hidden cards).
 - **Theme colour**: one of seven accents (Interface scale).
 - **Hand**: left- or right-handed phone layout (Interface scale → Hand).

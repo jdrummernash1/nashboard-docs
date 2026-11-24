@@ -46,7 +46,7 @@ connection status.
 | **Up next tasks** | Google Tasks due today are added to the Up next card |
 | **Gas prices** | Cheapest nearby premium and diesel; collapsible |
 | **Right now** | The cards that matter this minute, in priority order. The Claude card (admins who maintain the app) appears only while Claude is working and says what |
-| **Ask Claude** | Everyone can type a question or request for Claude |
+| **Ask Claude** | Everyone can type a question or request for Claude; it opens Claude in a new browser tab |
 | **Claude admin** | Admins only: Claude's status and controls, split from Ask Claude |
 | **Eat this first** | Leftovers from the Pantry & Fridge leftovers tracker, oldest first |
 | **Gig night** | A gig coming up: start time, the be-there-by (setup) time and the plan |

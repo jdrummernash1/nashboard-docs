@@ -41,6 +41,7 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 - **Full-screen card notices are off by default**, and when on they are for urgent cards on wall screens and TVs.
 - **A real starting list.** The Setup checklist begins with Getting started (rooms, weather, calendar, shopping list,
   cameras, speakers, phones, commute); optional extras are folded away and not counted.
+- **A grouped menu:** the side menu, the phone More sheet and Menu pages share headings (Everyday, House, Family, Out & about, Fun & info, Labs, System), and cards waiting for set-up fold into one More to set up card at the end of each page.
 - **Pages that wait until set up** (Commute, Pets, Pool, Utilities, Energy) are listed under More to set up in Menu
   pages with a Set up button, instead of hiding with no way in.
 - **Kids page for kids:** no set-up text or edit buttons in front of a child; a Grown-ups button behind the PIN.

@@ -36,7 +36,7 @@ up in the menu by themselves the moment Home Assistant has a camera or a calenda
 
 Commute, Pets, Pool, Utilities and Energy stay out of the menu until they have something to show. Open **Settings →
 Menu pages**, scroll to **More to set up** and tap **Set up** on the ones your house has. The page opens with its own
-set-up steps and joins your menu.
+set-up steps and joins your menu. Cards that are waiting to be set up on any page are folded into one **More to set up** card at the end of that page, so every page opens on its main content.
 
 ## 5. Make Home yours
 

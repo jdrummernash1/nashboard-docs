@@ -8,6 +8,8 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 
 ## Nov 24 2026
 
+- Set-up cards fold into one "More to set up" card, the quiet-rows fold is remembered, the menu is grouped into sections, readable weather hour labels, Fire safety cards full width on the Family Board, readable NEW badge. (BUILD .265)
+- **Nashboard 1.0.** Version label in About, docs site published with the 1.0 page, GitHub release v1.0 with the coffee link (preview: downloads open later). (BUILD .264)
 - Ask Claude opens only a new tab (no error page), plane cards as a list under the map on phones, readable weather text on day and cloudy skies, Planes status text and icons in light mode. (BUILD .263)
 - Final 1.0 polish: Right now shows only live, real rows (quiet ones fold into one line, set-up cards move below), every Home card ranked, honest chips, card notices only for urgent cards on wall screens, Today at a glance under the banner, set-up pages stay out of the menu until set up, Getting started checklist, Kids page grown-ups lock, solid phone tab bar, easier-to-read text and bigger tap targets; docs site restyled like the app with Getting started, FAQ and a car app preview; backups now kept per account. (BUILD .262)
 - Privacy before 1.0: no seed or car-art files in the public folder, names filtered out of the published backlog, neutral picture file names, guest mode without commute, local-AI-only gate on every AI feature (AI privacy card), Who is on without pages, no hardcoded household values; developer tools (bug button, backlog count, Claude card) admin-only and out of the family view. (BUILD .261)

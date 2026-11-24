@@ -23,6 +23,7 @@ Nashboard pulls the useful facts from all those places into one calm screen, and
 - It watches things so you don't have to.
 - When something needs attention, a card appears. When the situation is over, the card goes away.
 - It is the same screen on a kitchen tablet, a phone, a laptop or a TV, so everyone in the house sees the same picture.
+- Pages for things your house does not have yet stay out of the way, tucked under "More to set up" until you want them.
 - It is made for the whole family, not only the person who set it up.
 
 ## You don't have to do anything
