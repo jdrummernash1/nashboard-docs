@@ -117,7 +117,7 @@ Every chat and helper posts what it is doing with `tools/work-status.js` (starte
 ## 10. Safety nets
 
 - **Backups:** `tools/ha-backup.ps1` before every deploy or edit of the dashboard or configuration, at least hourly during work, and a full set after every 50 shipped items. Retention: the 5 newest plus the newest of each week and month. User data files are backed up on the Pi and never leave it.
-- **Docs publishing:** `docs/` is the only public material. It is refreshed on every build that ends in 0, starting at build .260, and otherwise published to the public site only when the owner asks. Never any personal details in it.
+- **Docs publishing:** `docs/` is the only public material. It is refreshed on every version that ends in 0 (1.10, 1.20, ...), and otherwise published to the public site only when the owner asks. Never any personal details in it.
 - **Rules follow features:** adding a helper, page or integration means updating the usage log, status tracking, deploy report, checks, docs, setup checklist, control panel and `HANDOFF.md` in the same pass.
 
 ## 11. Flow diagram

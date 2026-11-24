@@ -50,7 +50,7 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 - **Workout** never takes a pet scale for your weight: health values are only picked from your own phone app.
 - **Demo mode** stays quiet unless you tap something, and the phone tab bar is solid.
 
-## Latest additions (builds .256 to .261)
+## Additions just before 1.0 (versions 0.256 to 0.261)
 
 - **New pages:** Utilities (leaks, UPS, printer), Pool, Wellbeing, Sitter monitor, and Energy and bills in Labs. See [All pages](pages.md).
 - **Home and whole app:** Today at a glance (short summary card), a card order that puts urgent and richer cards first, an open backlog chip in the top bar, New marks on new cards, a Labs on/off switch, smooth touch scrolling, full-screen Card change notices, and a read-only Demo mode (`?demo=1`).
@@ -76,7 +76,7 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 
 ---
 
-## Latest additions (builds .230–.234)
+## Earlier additions (versions 0.230–0.234)
 
 - **Interface scale:** one control replaces Interface scale. Cards, columns and text re-pack to the size you pick instead of zooming the page. A small scale control also floats in Full window.
 - **Cards and layout:** cards restack when one is hidden or dismissed (no gaps), keep their column when one collapses or expands, and collapsed cards show a one-line summary in the header (weather, air, UV, commute, cameras, calendar, packages, next event and more). A Reset order entry in the card menu puts cards back in the default order. Right now fills the full width first.
@@ -93,7 +93,7 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 - **Medicine:** the medicine log and its matching to-do stay in sync both ways.
 - **About and tools:** a scrolling Credits card, the pieces count, NFC "Copy add-item link", and a jot-it-down trash button with Undo.
 
-## Earlier additions (builds .211–.229)
+## Earlier additions (versions 0.211–0.229)
 
 - **Looks:** Classic, Paper, Glass and Bold designs; Auto follows the season and the theme button says what Auto follows.
 - **Storage NFC tags:** stick a tag on a storage box or garage drawer to open it. A tag link ending in add opens the box with Add item ready. Shared storage places, and Pantry & Fridge has its own fridge icon.
@@ -117,7 +117,7 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 - **Tools and checks:** tap targets are at least 48 px (tap-target audit tool), a stuck check restarts anything idle, and AI helper tools split work between a local model and free cloud models.
 - **New docs pages:** why Nashboard, themes, diagrams, developer tools and the design engine.
 
-## Earlier additions (builds .207–.210)
+## Earlier additions (versions 0.207–0.210)
 
 - **Document import:** snap or paste a flyer, schedule, menu, receipt, label or link. Home Assistant's AI reads it and the app shows a preview of what it will create (calendar events, pantry or shopping items, packages, medicines, warranties, Storage items, featured posts). Nothing is added until you confirm. A daily kids' schedule becomes a Kid monitor card, and menu days marked as not kid-friendly get a "Pack a lunch" reminder. Needs an AI integration in Home Assistant.
 - **Featured posts:** add a post (link, text, picture) to the Family Board; Home shows it until the date you pick, then it moves to an archive.
@@ -500,7 +500,7 @@ Made as a **trailing record of what was given**, with quick buttons.
 ## Phone, watch, TV and car
 
 - **Phones**: everything works on Android and iPhone. Phone layouts have a two-line title bar (the title, then the time,
-  build number and connection dot, with Nashboard as a small centred N badge), the bug button, a compact weather card
+  version and connection dot, with Nashboard as a small centred N badge), the bug button, a compact weather card
   and touch-friendly cards.
 - **Left- or right-handed** (Interface scale → Hand, per person): on phones the navigation, room card buttons, page header
   buttons, add and mic buttons, Home card buttons and sheet buttons mirror to your thumb's side.

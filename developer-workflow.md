@@ -136,7 +136,7 @@ You don't have to refresh anything:
 - **NEW tags.** A brand-new page shows a **NEW** tag in the menu, the More list and the menu picker for its first day.
 - **Updated dots.** When a build changes an existing page, a small **Updated** dot appears on that page's icon in the
   menu, More list and menu picker for 7 days, and clears as soon as you open the page.
-- **The build number** is always shown in the title bar, and the About page and Change log say what is new.
+- **The version** (for example 1.1: major before the decimal point, build after it) is always shown in the title bar, and the About page and Change log say what is new.
 
 ## Backups
 

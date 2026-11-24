@@ -121,7 +121,7 @@ The aim is the most finished work per unit of usage, without risking data.
 
 - Backups before every deploy, hourly during work, and a full set after every 50 shipped items.
 - Idle helpers and stuck test runs are stopped and restarted.
-- Only `docs/` is public, with no personal details. The docs site is refreshed on every build that ends in 0, starting at build .260.
+- Only `docs/` is public, with no personal details. The docs site is refreshed on every version that ends in 0 (1.10, 1.20, ...).
 - Whenever a helper, page or integration is added, the usage log, work status, deploy report, checks, docs and hand-off note are updated in the same pass.
 
 ## Recent additions
@@ -129,6 +129,6 @@ The aim is the most finished work per unit of usage, without risking data.
 - **Jump check** (`jumpcheck.js`). On the Design Studio page it collapses and re-expands three cards one at a time. After each toggle the toggled card's top must stay within 4 px of where it was on screen, and every other card must keep its column and still be there. It prints OK or each problem, and runs with the other checks before a deploy.
 - **Performance check catches mutation loops.** An idle-CPU and long-task baseline now flags a script that keeps changing the page in a loop (one such loop in the scrolling chips was found and fixed this way).
 - **Check list for a batch:** gap check, overlap check, Right now check, name-clash check, generic check, performance check, legend check and jump check, run by the main chat after the helpers finish and before integrating.
-- **Docs build-number banner.** The public docs show the build number they describe, so a reader can see how current they are.
+- **Docs version banner.** The public docs show the version they describe (for example 1.1), so a reader can see how current they are.
 - **Design Studio agent views.** The Agents tally counts free and paid agents on one line; Live agents shows a terminal-style view of what each agent is working on, fed by the work-status tool.
 - **Build progress lines.** The main chat posts a short plain line as each stage of a batch finishes, and asks for every approval it will need up front at hand-over rather than mid-run.
