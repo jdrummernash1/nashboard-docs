@@ -8,6 +8,7 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 
 ## Nashboard 1.0 · Nov 24 2026
 
+- Build numbers start over after 1.0: the app, About and the docs now show version 1.0, build .1; docs lead with the version; About page pictures added to the Diagrams docs page. (BUILD .266)
 - Set-up cards fold into one "More to set up" card, the quiet-rows fold is remembered, the menu is grouped into sections, readable weather hour labels, Fire safety cards full width on the Family Board, readable NEW badge. (BUILD .265)
 - **Nashboard 1.0.** Version label in About, docs site published with the 1.0 page, GitHub release v1.0 with the coffee link (preview: downloads open later). (BUILD .264)
 - Ask Claude opens only a new tab (no error page), plane cards as a list under the map on phones, readable weather text on day and cloudy skies, Planes status text and icons in light mode. (BUILD .263)
