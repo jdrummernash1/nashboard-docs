@@ -8,6 +8,7 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 
 ## Nashboard 1.x · Nov 24 2026
 
+- Banner art reaches every edge (no grey band or hairline ring), colour-grouped side menu on desktop, Pantry and Recipes buttons no longer overlap, readable banner weather card on a day sky, an icon in the browser tab. (BUILD .269)
 - Home banner: the chip strip sits exactly on the banner's bottom edge and just under the horizon at every width, the mailbox stands still on the outside edge of the driveway. (BUILD .268)
 - Top bar rebuilt for narrow screens: tight buttons that scroll past half the bar, the backlog count in the version line, scrolling text that is never cut off; card header links clear of the ⋯ button with a mouse. (BUILD .267)
 - One version number everywhere: major before the decimal point, build after it (this is 1.1; builds before 1.0 are 0.xxx); docs lead with the version; About page pictures added to the Diagrams docs page. (BUILD .266)
