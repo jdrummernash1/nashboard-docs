@@ -4,11 +4,11 @@ title: Nashboard
 
 
 <div class="nb-hero">
-<div class="nb-kick">Nashboard 1.5 · for Home Assistant</div>
+<div class="nb-kick">Nashboard 1.10 · for Home Assistant</div>
 <h1>The screen shows <em>what matters right now</em>, and gets out of the way otherwise.</h1>
 <p class="nb-lead">A dashboard for wall tablets, phones and TVs. Cards appear on their own when something needs attention (a plane overhead, the garage left open, rain coming, trash night) and leave on their own when it no longer does.</p>
 <div class="nb-chips"><span class="nb-chip acc">More than 40 pages</span><span class="nb-chip">Runs inside Home Assistant</span><span class="nb-chip">Your data stays at home</span><span class="nb-chip">Local AI only, unless you allow more</span><span class="nb-chip">Phones, tablets, TVs</span></div>
-<div class="nb-cta"><a class="nb-btn pri" href="tour.html">Take the tour</a><a class="nb-btn" href="getting-started.html">Get started</a><a class="nb-btn" href="faq.html">Questions</a></div>
+<div class="nb-cta"><a class="nb-btn pri" href="tour.html">Take the tour</a><a class="nb-btn" href="getting-started.html">Get started</a><a class="nb-btn" href="faq.html">Questions</a>{% if site.demo_url %}<a class="nb-btn" href="{{ site.demo_url }}" rel="noopener">Try the demo</a>{% endif %}</div>
 </div>
 
 <div class="nb-doors">
@@ -18,15 +18,15 @@ title: Nashboard
 </div>
 
 <!-- stats:start -->
-<style>.nbs{position:relative;border-radius:18px;overflow:hidden;margin:1.2rem 0 1.6rem;background:#0b0e14;box-shadow:0 10px 30px rgba(0,0,0,.25)}.nbs-v{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain}.nbs-h{position:relative;padding:16px 18px 0;color:#fff}.nbs-h b{display:block;font-size:1.6rem;line-height:1.15;font-weight:700;color:#fff!important}.nbs-h span{display:block;margin-top:2px;font-size:.95rem;color:rgba(255,255,255,.85)}.nbs-g{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;padding:14px 18px 0}.nbs-t{padding:14px 16px;border-radius:14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);color:#fff}.nbs-t b{display:block;font-size:1.5rem;line-height:1.2;font-weight:700;color:#fff}.nbs-t span{font-size:.82rem;color:rgba(255,255,255,.85)}@media (max-width:640px){.nbs-v{aspect-ratio:auto;height:120px}.nbs-h{padding:12px 12px 0}.nbs-h b{font-size:1.3rem}.nbs-g{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:12px 12px 0}.nbs-t{padding:10px 12px}.nbs-t b{font-size:1.2rem}}.nbs-u{position:relative;margin:12px 18px 0;padding-bottom:16px;font-size:.82rem;color:rgba(255,255,255,.9)}.nbs-u a{color:#ffd28a}</style>
-<div class="nbs"><img class="nbs-v" src="images/hero-live.jpg" alt="The Nashboard Home banner: the illustrated house with falling leaves and a scrolling strip of what needs attention"><div class="nbs-h"><b>Nashboard</b><span>The screen shows what matters right now, and gets out of the way otherwise.</span></div><div class="nbs-g"><div class="nbs-t"><b>34,829</b><span>Lines of custom code</span></div><div class="nbs-t"><b>$218k–$435k</b><span>Market value · about 2,902 developer hours</span></div><div class="nbs-t"><b>44</b><span>Pages</span></div><div class="nbs-t"><b>1.7</b><span>Version</span></div><div class="nbs-t"><b>40</b><span>Open backlog items</span></div><div class="nbs-t"><b>9</b><span>Open bugs</span></div><div class="nbs-t"><b>361</b><span>Changes shipped, last 7 days</span></div></div><p class="nbs-u">Updated Nov 24 2026 · <a href="changelog.html">Change log</a></p></div>
+<style>.nbs{position:relative;border-radius:18px;overflow:hidden;margin:1.2rem 0 1.6rem;background:#0b0e14;box-shadow:0 10px 30px rgba(0,0,0,.25)}.nbs-v{display:block;width:100%;height:auto;aspect-ratio:1600/241;object-fit:cover;object-position:50% 0}.nbs-h{position:relative;padding:16px 18px 0;color:#fff}.nbs-h b{display:block;font-size:1.6rem;line-height:1.15;font-weight:700;color:#fff!important}.nbs-h span{display:block;margin-top:2px;font-size:.95rem;color:rgba(255,255,255,.85)}.nbs-g{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;padding:14px 18px 0}.nbs-t{padding:14px 16px;border-radius:14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);color:#fff}.nbs-t b{display:block;font-size:1.5rem;line-height:1.2;font-weight:700;color:#fff}.nbs-t span{font-size:.82rem;color:rgba(255,255,255,.85)}@media (max-width:640px){.nbs-v{aspect-ratio:auto;height:120px;object-position:50% 0}.nbs-h{padding:12px 12px 0}.nbs-h b{font-size:1.3rem}.nbs-g{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:12px 12px 0}.nbs-t{padding:10px 12px}.nbs-t b{font-size:1.2rem}}.nbs-u{position:relative;margin:12px 18px 0;padding-bottom:16px;font-size:.82rem;color:rgba(255,255,255,.9)}.nbs-u a{color:#ffd28a}</style>
+<div class="nbs"><img class="nbs-v" src="images/hero-live.jpg" alt="The Nashboard Home banner: the illustrated house with falling leaves and a scrolling strip of what needs attention"><div class="nbs-h"><b>Nashboard</b><span>The screen shows what matters right now, and gets out of the way otherwise.</span></div><div class="nbs-g"><div class="nbs-t"><b>38,795</b><span>Lines of custom code</span></div><div class="nbs-t"><b>$242k–$485k</b><span>Market value · about 3,233 developer hours</span></div><div class="nbs-t"><b>45</b><span>Pages</span></div><div class="nbs-t"><b>1.10</b><span>Version</span></div><div class="nbs-t"><b>26</b><span>Open backlog items</span></div><div class="nbs-t"><b>4</b><span>Open bugs</span></div><div class="nbs-t"><b>368</b><span>Changes shipped, last 7 days</span></div></div><p class="nbs-u">Updated Nov 24 2026 · <a href="changelog.html">Change log</a></p></div>
 <!-- stats:end -->
 
 <!-- whatsnew:start -->
 <style>.wn{border:1px solid rgba(255,181,71,.45);background:rgba(255,181,71,.08);border-radius:16px;padding:14px 18px;margin:0 0 1.4rem}.wn h2{margin:0 0 .3rem;font-size:1.15rem;border:0}.wn p{margin:.2rem 0 .5rem;opacity:.85}.wn ul{margin:.3rem 0 0;padding-left:1.1rem}.wn li{margin:.18rem 0}.wn-b{display:inline-block;min-width:2.6em;font-weight:700;color:#d98a00}</style>
-<div class="wn"><h2>What's new · Nashboard 1.7</h2>
+<div class="wn"><h2>What's new · Nashboard 1.10</h2>
 <p>Everything since Nashboard 1.0 came out · updated Nov 24 2026 · <a href="changelog.html">full change log</a></p>
-<ul><li><span class="wn-b">1.6</span> Phone banner chips a little smaller so the house shows more.</li><li><span class="wn-b">1.5</span> Phone and tablet page bar slides through every page (Frequent first, colour-tinted groups), card text grows to fill each card, two-line banner chips, the house editor gains mailbox, driveway, fence, shutters, garage door and lights choices, the phone banner shows the whole house.</li><li><span class="wn-b">1.4</span> Banner art reaches every edge (no grey band or hairline ring), colour-grouped side menu on desktop, Pantry and Recipes buttons no longer overlap, readable banner weather card on a day sky, an icon in the browser tab.</li><li><span class="wn-b">1.3</span> Home banner: the chip strip sits exactly on the banner's bottom edge and just under the horizon at every width, the mailbox stands still on the outside edge of the driveway.</li><li><span class="wn-b">1.2</span> Top bar rebuilt for narrow screens: tight buttons that scroll past half the bar, the backlog count in the version line, scrolling text that is never cut off</li><li><span class="wn-b">1.2</span> Card header links clear of the ⋯ button with a mouse.</li><li><span class="wn-b">1.1</span> One version number everywhere: major before the decimal point, build after it (this is 1.1</li><li><span class="wn-b">1.1</span> Builds before 1.0 are 0.xxx)</li><li><span class="wn-b">1.1</span> Docs lead with the version</li><li><span class="wn-b">1.1</span> About page pictures added to the Diagrams docs page.</li><li><span class="wn-b">1.0</span> Set-up cards fold into one "More to set up" card, the quiet-rows fold is remembered, the menu is grouped into sections, readable weather hour labels, Fire safety cards full width on the Family Board, readable NEW badge.</li><li><span class="wn-b">1.0</span> Nashboard 1.0. Version label in About, docs site published with the 1.0 page, GitHub release v1.0 with the coffee link (preview: downloads open later).</li></ul>
+<ul><li><span class="wn-b">1.8</span> Version 1.8: honest Claude status, instant toggles everywhere, More sheet search and recent pages, one Settings home with five sections, a maintainer tools switch, Design Studio in one flow, Right now cards in one box, a banner clock, flight restrictions on the plane map and popup with a phone compass arrow, a demo-visit phone alert, a notifications list, an insurance list with room and spot, Lives here on room pages, house style from the photo import, cars drawn in their real colour, one How it works for every card, the TV camera-wall screen, and pets that land their jumps.</li><li><span class="wn-b">1.6</span> Phone banner chips a little smaller so the house shows more.</li><li><span class="wn-b">1.5</span> Phone and tablet page bar slides through every page (Frequent first, colour-tinted groups), card text grows to fill each card, two-line banner chips, the house editor gains mailbox, driveway, fence, shutters, garage door and lights choices, the phone banner shows the whole house.</li><li><span class="wn-b">1.4</span> Banner art reaches every edge (no grey band or hairline ring), colour-grouped side menu on desktop, Pantry and Recipes buttons no longer overlap, readable banner weather card on a day sky, an icon in the browser tab.</li><li><span class="wn-b">1.3</span> Home banner: the chip strip sits exactly on the banner's bottom edge and just under the horizon at every width, the mailbox stands still on the outside edge of the driveway.</li><li><span class="wn-b">1.2</span> Top bar rebuilt for narrow screens: tight buttons that scroll past half the bar, the backlog count in the version line, scrolling text that is never cut off</li><li><span class="wn-b">1.2</span> Card header links clear of the ⋯ button with a mouse.</li><li><span class="wn-b">1.1</span> One version number everywhere: major before the decimal point, build after it (this is 1.1</li><li><span class="wn-b">1.1</span> Builds before 1.0 are 0.xxx)</li><li><span class="wn-b">1.1</span> Docs lead with the version</li><li><span class="wn-b">1.1</span> About page pictures added to the Diagrams docs page.</li><li><span class="wn-b">1.0</span> Set-up cards fold into one "More to set up" card, the quiet-rows fold is remembered, the menu is grouped into sections, readable weather hour labels, Fire safety cards full width on the Family Board, readable NEW badge.</li><li><span class="wn-b">1.0</span> Nashboard 1.0. Version label in About, docs site published with the 1.0 page, GitHub release v1.0 with the coffee link (preview: downloads open later).</li></ul>
 </div>
 <!-- whatsnew:end -->
 
@@ -61,6 +61,7 @@ through casting. Nothing to host, no account of its own.
 - [Device setup checklist](device-setup.md): what each TV, wall tablet, phone, car and watch needs
 - [Data sources](integrations.md): every Home Assistant integration and free service the app uses
 - [Automations](automations.md): the phone alerts and reminders the house can run on its own, and how to turn each off
+- [Notifications](notifications.md): every notification the system can send, generated from the real automations
 
 ## Behind the scenes
 
@@ -73,7 +74,7 @@ through casting. Nothing to host, no account of its own.
 - [Future: car app](car-app.md): a Labs prototype for Android Auto, as design mockups
 - [Change log](changelog.md): everything shipped, newest first
 
-**How it is built, in short.** The code is written as about 290 small source pieces (JavaScript and CSS, one piece per
+**How it is built, in short.** The code is written as about 300 small source pieces (JavaScript and CSS, one piece per
 feature or page), not as one big file. A build script joins the pieces in order, checks that the result parses, and
 writes one generated page that Home Assistant serves. Nobody edits that generated page by hand. Before every deploy a set
 of automatic checks loads the real app in a headless browser and fails on any broken design rule (card gaps and widths,
@@ -109,80 +110,89 @@ Home card, and nothing personal hardcoded). Values that belong to one household 
 
 | Page | What it is |
 |---|---|
-| [Home](pages.md#home) | Banner, status, and the cards that matter right now |
-| [Rooms](pages.md#rooms) | Every room's lights and devices, with room dashboards |
-| [Cameras](pages.md#cameras) | Camera wall with layouts and live view |
-| [Calendar](pages.md#calendar) | Day, week and month views; add and edit events; Google Tasks |
+| [Home](pages.md#home) | Overview of the house |
+| [Rooms](pages.md#rooms) | Lights and devices by room |
+| [Cameras](pages.md#cameras) | Live camera views |
+| [Calendar](pages.md#calendar) | Agenda and events |
 
 ### Everyday
 
 | Page | What it is |
 |---|---|
-| [Family Board](pages.md#family-board) | Kitchen screen: who's home, today, trash, lists, medicine, birthdays, intercom |
-| [Shopping](pages.md#shopping) | The shared shopping list |
-| [Packages](pages.md#packages) | Shipments from any carrier, email import, autoship |
-| [Weather](pages.md#weather) | Forecast, radar, sun and moon |
-| [Activity](pages.md#activity) | Today's timeline: doorbell, doors, garage, arrivals, packages |
+| [Family Board](pages.md#family-board) | Who’s home, chores, medicine and birthdays |
+| [Shopping](pages.md#shopping) | Shopping list |
+| [Packages](pages.md#packages) | Tracking and autoships |
+| [Weather](pages.md#weather) | Forecast, radar and alerts |
+| [Activity](pages.md#activity) | What happened around the house today |
 
 ### House
 
 | Page | What it is |
 |---|---|
-| [Security](pages.md#security) | Alarm mode, alert choices and a saved security log |
-| [Pantry & Fridge](pages.md#pantry--fridge) | What's on hand and what expires soon |
-| [Recipes](pages.md#recipes) | Recipe book and meal plan from Mealie |
-| [Maintenance](pages.md#maintenance) | Recurring house jobs with countdowns |
-| [Storage](pages.md#storage) | Where things are kept, with QR labels and warranties |
-| [Garage](pages.md#garage) | Cars, the garage door, charging and searchable toolboxes |
-| [Automations](pages.md#automations) | What the house does on its own; make your own |
-| [Utilities](pages.md#utilities) | Water leak sensors, a UPS and printer ink |
-| [Pool](pages.md#pool) | Water readings, what to add and a test log |
+| [Pantry & Fridge](pages.md#pantry--fridge) | Pantry, fridge and freezer: what expires soon |
+| [Recipes](pages.md#recipes) | Meal plan and recipes |
+| [Maintenance](pages.md#maintenance) | Home maintenance schedule |
+| [Storage](pages.md#storage) | Where things are kept around the house |
+| [Garage](pages.md#garage) | Cars, the garage door, charging and your toolboxes |
+| [Automations](pages.md#automations) | What the house does on its own |
+| [Utilities](pages.md#utilities) | Water leaks, UPS battery and printer ink |
+| [Pool](pages.md#pool) | Water chemistry, what to add, and a test log |
 
 ### Family
 
 | Page | What it is |
 |---|---|
-| [Kids](pages.md#kids) | Big-button page for a kid's tablet: bedtime, star chart, coat check, shows |
-| [Pets](pages.md#pets) | Pet characters, dog timeout and feeder, pet medicine, litter box |
-| [Guest](pages.md#guest) | Wi-Fi QR code and house info for guests |
-| [Sitter monitor](pages.md#sitter-monitor) | A calm page for whoever is watching a sick child |
-| [Wellbeing](pages.md#wellbeing) | A private page: mood check-ins, breathing, gratitude |
-| [Workout](pages.md#workout) | Interval timer, routines, health stats and a workout log |
-| [Hobbies](pages.md#hobbies) | Each person's hobbies with shared cards |
+| [Kids](pages.md#kids) | Chores, stars, shows and fun, with big buttons |
+| [Pets](pages.md#pets) | Pet characters, timeout, feeder and devices |
+| [Guest](pages.md#guest) | Wi-Fi, contacts and how-tos for guests |
+| [Sitter monitor](pages.md#sitter-monitor) | Cameras, room, medicine and who to call |
+| [Wellbeing](pages.md#wellbeing) | Mood check-ins, breathing, wind-down and gratitude, just for you |
+| [Workout](pages.md#workout) | Routines, interval timer, health stats and a log |
+| [Hobbies](pages.md#hobbies) | Your hobbies, set lists, book club and more |
 
 ### Out & about
 
 | Page | What it is |
 |---|---|
-| [Commute](pages.md#commute) | Live drive times for each trip |
+| [Commute](pages.md#commute) | Trips, drive times and leave-soon |
 | [Map](pages.md#map) | People and devices on a map |
-| [Air & Allergy](pages.md#air--allergy) | Air quality, UV, pollen, "open the windows?" |
-| [Planes](pages.md#planes) | Live aircraft map, airport boards, highest plane worldwide |
-| [Space](pages.md#space) | Space Station passes, launches, satellites, sky dial |
+| [Air & Allergy](pages.md#air--allergy) | Air quality and pollen |
+| [Planes](pages.md#planes) | Aircraft overhead |
+| [Space](pages.md#space) | Space Station, launches and satellites |
 
 ### Fun & info
 
 | Page | What it is |
 |---|---|
-| [Now Playing](pages.md#now-playing) | Music around the house, speaker groups, browsing |
-| [Sports](pages.md#sports) | Your teams' games and live scores |
-| [Finance](pages.md#finance) | Watchlist and charts |
-| [Multi-view](pages.md#multi-view) | Several pages on one big screen |
+| [Now Playing](pages.md#now-playing) | What’s playing, browse and play |
+| [Sports](pages.md#sports) | Scores, schedules and replays |
+| [Finance](pages.md#finance) | Markets and watchlist |
+| [Multi-view](pages.md#multi-view) | Several pages at once |
 
 ### Labs
 
 | Page | What it is |
 |---|---|
 | [Labs](pages.md#labs) | Experiments such as Energy and bills |
+| [Browser](pages.md#labs) | Quick web look-ups |
+| [3D Printer](pages.md#labs) | 3D printer status |
+| [Energy](pages.md#labs-energy-and-bills) | Power, usage and bills |
 
 ### System
 
 | Page | What it is |
 |---|---|
-| [Network & Storage](pages.md#network--storage) | Internet, router, NAS, devices online |
-| [Settings](pages.md#settings) | Your own look, alerts, menu pages and location use |
-| [System](pages.md#system) | Health, updates, backups, settings, device setup |
-| [About](pages.md#about) | Version, what's new, features, credits, the tour |
+| [Network](pages.md#network--storage) | Wi-Fi devices, speed and internet services |
+| [Settings](pages.md#settings) | You, this screen, the household, alerts, and the house and app |
+| [System](pages.md#system) | Updates, batteries, backups and the app’s data |
+| [About](pages.md#about) | Version, what’s new, features and credits |
+
+### Other pages
+
+| Page | What it is |
+|---|---|
+| [Security](pages.md#security) | Alerts, doors, garage, locks, alarms and cameras, kept until seen |
+| [Hardware](pages.md#hardware) | Computers, printers, router and NAS |
 
 ### Screens and views
 

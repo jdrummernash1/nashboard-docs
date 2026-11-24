@@ -8,29 +8,65 @@ title: Settings and personalisation
 
 ## The Settings page
 
-**Settings** is a page in the menu (and a button on the System page). It holds your own settings in one place:
+**Settings** is a page in the menu. It holds your own settings in one place, in five sections. A row of chips at the
+top jumps to each one, and each has its own address (`#/settings/you`, `/screen`, `/household`, `/alerts`, `/app`).
+The scale button in the top bar opens **This screen**.
 
-| Card | What is in it |
+| Section | What is in it |
 |---|---|
-| **Look and size** | Theme (dark, light, or follow the device) and the **Interface scale** sheet: size, the Look, accent colour, the background picture, left- or right-handed layout and holiday decorations. Saved on this device, except the accent, Look and hand, which follow you. |
-| **Alerts and notifications** | Opens the alerts sheet (chimes, plane and Space Station alerts, phone alerts), plus switches for Swipe between pages, the New build sound, the Connection lost alert and the location pin. |
-| **Card change notices** | A full-screen notice when an urgent card appears or clears by itself. **Off by default.** When on, it shows on wall screens and TVs only; a phone, tablet or computer joins in when you switch on **On this screen too** there. Quiet hours swap it for a small message. Saved for the whole household. |
-| **Menu pages** | Which pages are in your menu and in what order, the **Show Labs pages** switch, hidden cards, and **More to set up**: pages that wait until they have something to show (Commute, Pets, Pool, Utilities, Energy), each with a Set up button. |
-| **Location use** | What used this device's location, or set a zip code instead. |
-| **The house and the app** | A link to the System page: updates, backups, hidden cards, saved data, device setup. |
+| **You** | Who you are signed in as, with a link to your Home Assistant profile (name, language, password). **Menu pages**: which pages are in your menu and in what order, saved to your account. |
+| **This screen** | Only this device. **Look and size**: theme (dark, light, or follow the device), the **Interface scale** sheet (size, the Look, accent colour, background picture, left- or right-handed layout, holiday decorations). **Location use**: what used this device's location, or a zip code instead. **Screen options**: start page, kid lock, kitchen tablet, picture frame and wake on approach. Casting to a TV stays in the Cast button. |
+| **Household** | **Your house** (the banner house), and shortcuts to Home settings, the Family Board and the Guest page. |
+| **Alerts** | **Household quiet hours**, the Alerts and notifications sheet (chimes, plane and Space Station alerts, phone alerts) with switches for Swipe between pages, Page intros, the New build sound, the Connection lost alert and the location pin, **Card change notices**, and (admins) Demo page alerts. |
+| **House and app** | A link to the System page (updates, backups, saved data, device setup) and the **Maintainer tools** switch. |
+
+### Instant switches
+
+Every switch flips the moment you tap it and saves in the background. If the save fails, it flips back and says so.
+
+### Household quiet hours (Settings, Alerts)
+
+One schedule for the whole house, saved for everyone. It is **off until you turn it on**; then pick a start and end time.
+These follow it, each with its own switch: chimes and tones, card change notices (a small message instead of the big
+one), announcements, the intercom (new messages are not played aloud; the card still shows), screen dim on the kitchen
+tablet and wall screens, and security phone alerts (smoke, CO and water leaks always come through). While it is active,
+wall screens and TVs show a "Quiet hours until..." line.
+
+- A **room** can opt out: Room settings, Quiet hours, **Follow household quiet hours**.
+- A **camera** can keep its doorbell chime.
+- Quiet hours you already set (a room's own, card notices, security, camera, kitchen tablet night) keep working. The
+  household schedule only adds quiet time. The card lists what still keeps its own times.
+
+### Card change notices (Settings, Alerts)
+
+A full-screen notice when an urgent card appears or clears by itself. **Off by default.** When on, it shows on wall
+screens and TVs only; a phone, tablet or computer joins in when you switch on **On this screen too** there (saved on
+that device). Its own quiet hours, and household quiet hours, swap it for a small message. Saved for the whole household.
+
+### Notifications
+
+The full list of notifications the app can send, what triggers each and where it shows, is on the **About** page and on
+[Notifications](notifications.md). Phone alerts have their own switches in Settings, Alerts.
+
+### Maintainer tools (Settings, House and app)
+
+One switch, saved for you, hides everything about building the app: the bug button, the open backlog count, the Claude
+status light, the usage card, lines of code, market value facts, "Claude started" notices and Design Studio. It is **on for
+admins and off for everyone else** until you choose. The switch shows for admins and for anyone who turned it on, so you
+can always turn it back on.
 
 Other settings that live elsewhere:
 
 - **Page summaries** (System page): one switch for the "At a glance" sentence on Weather, Commute, Packages, Family
   Board, Pantry & Fridge and Security.
 - **AI privacy** (System page, admins): local AI only, unless an admin allows cloud AI. Every AI feature follows it.
-- **Background picture** (Interface scale, next to Look): an optional soft picture behind every page, off by default.
+- **Background picture** (This screen, Interface scale, next to Look): an optional soft picture behind every page, off by default.
   Public-domain art by theme, or whatever the picture frame shows. It changes slowly and is dimmed so text stays readable.
 - **Looks** (Interface scale): Classic, Glass and the other looks, plus seven accent colours. See [Themes](themes.md).
 - **Guest mode** (Guest page, admins): one switch turns every house screen into a simple guest view (the Guest page
   first, a short menu, no settings or editing) until you turn it off or a date you choose. A grown-up PIN lifts it on
   one screen.
-- **Kid lock** (Cast sheet, This device): keeps a tablet on the Kids page behind a 4-digit grown-up PIN. The same PIN
+- **Kid lock** (Settings, This screen, with a Kids start page): keeps a tablet on the Kids page behind a 4-digit grown-up PIN. The same PIN
   opens **Grown-ups** on the Kids page.
 - **Room settings** (each room page): the room's layout, which sections show, and cards added to that room.
 
@@ -48,7 +84,7 @@ Other settings that live elsewhere:
 - **Hand**: left- or right-handed phone layout (Interface scale → Hand).
 - **User manual link**: kept for every user, remembered on each screen.
 - **Hobbies** you picked on the Hobbies page.
-- **Page intros**: a switch in Settings (or the Hide button on the line itself) hides the short intro under each page title.
+- **Page intros**: a switch in Settings, Alerts (or the Hide button on the line itself) hides the short intro under each page title.
 - **Collapsed cards**: tap a card's top bar to collapse or expand it; what you collapsed is remembered for you on
   every screen.
 - **Pages you switched on** from More to set up, and whether Labs pages show.
@@ -87,7 +123,7 @@ Only Home Assistant admins can change the shared Guest information and pickup sc
 
 ## Design Studio (backlog and ideas)
 
-System → **Design Studio** (also in the More menu) opens the project backlog inside the dashboard. Anyone can
+System → **Design Studio** (also in the More menu; shown only while Maintainer tools are on) opens the project backlog inside the dashboard. Anyone can
 **jot down an idea** there, by typing or with the microphone button; ideas go into a shared Home Assistant to-do list and are filed into the backlog at the
 next working session, after which they tick off automatically. The backlog itself is searchable, with sections that
 open and close and a "Show done" switch that opens the Done list and scrolls to it. Ignored Claude suggestions are archived in a collapsed

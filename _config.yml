@@ -1,6 +1,8 @@
 title: Nashboard
-description: Version 1.7 | A Home Assistant dashboard for wall tablets, phones and TVs that shows what matters right now.
+description: Version 1.10 | A Home Assistant dashboard for wall tablets, phones and TVs that shows what matters right now.
 theme: jekyll-theme-cayman
 markdown: kramdown
 exclude:
   - README.md
+# Address of a public demo of the app (the app's ?demo=1 mode: made-up house, read-only). Leave empty to hide the "Try the demo" button.
+demo_url: ""

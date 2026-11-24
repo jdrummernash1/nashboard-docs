@@ -22,9 +22,9 @@ A tour of the tools and the workflow behind the dashboard: how the code is built
 
 ## 1. The build pipeline
 
-Home Assistant serves the dashboard as one page, but that page is generated and nobody edits it. The code is about 290 source pieces.
+Home Assistant serves the dashboard as one page, but that page is generated and nobody edits it. The code is about 300 source pieces.
 
-- **Source pieces** live in `src/dashboard/` (about 290 JavaScript, CSS and HTML files): head, styles, body, then the script split by feature, then a tail. They are joined in file-name order. New feature code goes in its own numbered piece and registers its buttons with `Object.assign(ACT, {...})`.
+- **Source pieces** live in `src/dashboard/` (about 300 JavaScript, CSS and HTML files): head, styles, body, then the script split by feature, then a tail. They are joined in file-name order. New feature code goes in its own numbered piece and registers its buttons with `Object.assign(ACT, {...})`.
 - **`build-dashboard.js`** joins the pieces into the generated `ha/www/dashboard.html` and fails the build if the joined script does not parse. It also stamps in the line and piece counts. `--check` fails if the built file does not match the pieces (a sign someone edited the output directly).
 - **`src-patch.js`** is a small helper for patch scripts: replace exact text wherever it lives across the pieces (it refuses ambiguous matches), bump the build number, save and rebuild.
 - **`pull-from-ha.ps1`** copies the hand-written files from Home Assistant into the repo so the local copy is never assumed current.

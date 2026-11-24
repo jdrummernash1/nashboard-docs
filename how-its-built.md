@@ -4,7 +4,7 @@ title: How it's built
 
 # How it's built
 
-Nashboard is a large app (tens of thousands of lines, more than 35 pages) that was designed and built almost entirely
+Nashboard is a large app (tens of thousands of lines, more than 40 pages) that was designed and built almost entirely
 in conversation with Claude, Anthropic's AI model. What keeps something that size consistent is not a framework: it is
 a written set of **design models and rules**, a handful of **automatic quality checks** that enforce them, and a
 **build and deploy pipeline** that refuses to lose anything. This page explains all three, and then how the work itself
@@ -280,7 +280,7 @@ and an iPhone size.
 
 ## How the build works
 
-The app is **written as about 290 numbered pieces** (JavaScript, CSS and a few HTML parts) and **served as one generated page** that runs inside Home Assistant through a small dashboard card. Editing one huge file is error-prone, and impossible for several workers at once, so the source is split: head, styles, body, then the script by feature, then the closing part. A build script joins them in file-name order, checks that the joined script parses, and writes the page. Nobody edits the generated page by hand.
+The app is **written as about 300 numbered pieces** (JavaScript, CSS and a few HTML parts) and **served as one generated page** that runs inside Home Assistant through a small dashboard card. Editing one huge file is error-prone, and impossible for several workers at once, so the source is split: head, styles, body, then the script by feature, then the closing part. A build script joins them in file-name order, checks that the joined script parses, and writes the page. Nobody edits the generated page by hand.
 
 <div class="hb" role="img" aria-label="Diagram: numbered source pieces are joined by a build script, checked, backed up, deployed to Home Assistant, and the backlog and wishlist are published with list guards">
 <div class="hb-row">

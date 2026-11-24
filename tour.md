@@ -84,7 +84,7 @@ A step-by-step look at every page of Nashboard, in the order you would meet them
 <div class="tour-count">Step 3 of 41</div>
 <h2>The phone More sheet</h2>
 <img src="images/tour/tour-more-phone.jpg" alt="The More sheet on a phone, grouped under the same headings" loading="lazy">
-<p>On a phone the tab bar holds the main pages and More opens the rest, under the same headings, each page with a one-line description. Menu pages in Settings lists the same groups.</p>
+<p>On a phone the tab bar holds the main pages and More opens the rest as a two-column grid with a search box and your last three pages on top, then the same headings, each page with a one-line description. Menu pages in Settings lists the same groups.</p>
 <div class="tour-nav"><a href="#s-menu">&larr; The grouped menu</a><a class="nx" href="#s-rooms">Rooms &rarr;</a></div>
 </section>
 

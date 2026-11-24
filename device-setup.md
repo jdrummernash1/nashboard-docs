@@ -23,7 +23,7 @@ What each kind of device needs for Nashboard to work fully. The same checklist i
 
 - Install the Home Assistant app, or a kiosk browser (best for a wall screen: kiosk lock, screen on, starts by itself).
 - Turn on **Kitchen tablet** mode: open the dashboard on the display and add `?display=kitchen` to the address once (it
-  remembers), or open **Cast → This device → Kitchen tablet**. It shows Home and returns to Home after 2 minutes without a touch.
+  remembers), or open **Settings → This screen → Kitchen tablet**. It shows Home and returns to Home after 2 minutes without a touch.
 - Keep it plugged in, turn off the screen timeout, and allow the app to keep the screen on.
 - Set a comfortable day brightness. From 9 PM to 6:30 AM it dims itself after a minute without a touch; a tap wakes it.
 - Open **Rooms → Kitchen** to check the at-a-glance cards (Today, Who's home, Trash, Chores, the Living Room controls), the
@@ -33,7 +33,7 @@ What each kind of device needs for Nashboard to work fully. The same checklist i
 
 - Use a kiosk browser on the tablet (kiosk lock, screen on, starts by itself). With Fully Kiosk Browser, add its Home
   Assistant integration so the screen can be switched on and brightened.
-- Put a presence or motion sensor in the room, then open **Cast → This device** on that tablet and turn on **Wake on
+- Put a presence or motion sensor in the room, then open **Settings → This screen** on that tablet and turn on **Wake on
   approach**: pick the sensors, how long before it dims, the brightness and whether it only runs at night.
 - A screen that is fully off can only be woken from Home Assistant, so add a wake automation if yours sleeps.
 - The **Wall display setup** card on the Kitchen room page checks each of these live.

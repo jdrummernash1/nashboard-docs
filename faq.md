@@ -18,7 +18,7 @@ A working Home Assistant and an admin sign-in. Nashboard is two files inside Hom
 or account of its own. See [Set it up](setup.md).
 
 **Can I download it now?**
-Not yet. 1.0 is out as a preview: these pages show what it does and what installing takes. Downloads will be announced on [What is new](changelog.md).
+Not yet. Nashboard is out as a preview (now at version <!-- ver -->1.10<!-- /ver -->): these pages show what it does and what installing takes. Downloads will be announced on [What is new](changelog.md).
 
 **Does it cost anything?**
 There is no charge and no subscription. If it is useful to you, you can
@@ -26,7 +26,7 @@ There is no charge and no subscription. If it is useful to you, you can
 
 **Can I look before I set anything up?**
 Yes. Open the dashboard address with `?demo=1` on the end. It runs on a made-up sample house, is read-only, and never
-reads or changes your real house. A DEMO strip shows on every page.
+reads or changes your real house. A DEMO strip shows on every page. An admin can get an alert when someone opens the demo (Settings → Alerts).
 
 ## Privacy and data
 
@@ -58,7 +58,7 @@ The cast button shows a Display view made for across the room: bigger type, no b
 can have its own setup. A display can also be a picture frame when the room is empty.
 
 **Can I make everything bigger or smaller?**
-Interface scale (Settings → Look and size) re-packs cards, columns and text to the size you choose, per device. It is
+Interface scale (Settings → This screen → Look and size) re-packs cards, columns and text to the size you choose, per device. It is
 not a browser zoom, so nothing is cut off.
 
 ## Cards
@@ -83,13 +83,16 @@ you can open. Rows for things your house does not have are not shown.
 
 **Will a big notice take over my screen?**
 Not unless you ask for it. Card change notices are off by default. When switched on they are only for urgent cards,
-on wall screens and TVs; a phone joins in only if you turn it on for that phone.
+on wall screens and TVs; a phone joins in only if you turn it on for that phone. At night, household quiet hours (Settings → Alerts) turn it into a small message.
+
+**Can I make the house quiet at night?**
+Yes. Household quiet hours (Settings → Alerts) is one schedule that chimes, notices, announcements, the intercom, screen dim and phone alerts follow. It is off until you turn it on. A room can opt out, and smoke, CO and water-leak alerts always come through.
 
 ## Setting up
 
 **A page is missing from my menu.**
 Some pages appear once Home Assistant has what they show (a camera, a calendar, a speaker, a shopping list). Others
-(Commute, Pets, Pool, Utilities, Energy) wait under Settings → Menu pages → More to set up, each with a Set up button.
+(Commute, Pets, Pool, Utilities, Energy) wait under Settings → You → Menu pages → More to set up, each with a Set up button.
 
 **What should I set up first?**
 The Getting started list in the Setup checklist on the System page: rooms, weather, a calendar, a shopping list,

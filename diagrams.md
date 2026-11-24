@@ -7,7 +7,7 @@ Three diagrams: how the app works, how AI is used both inside the app and to bui
 
 ## 1. How the app works
 
-Home Assistant (HA) runs on a small server at home (a Raspberry Pi class computer is enough). It talks to devices, cameras and online services. The dashboard is one generated page (built from about 290 source pieces) served by HA, and everything a person enters is saved back into HA, never only in the page. Phones, the watch and the car reach HA through the companion apps, which also deliver notifications.
+Home Assistant (HA) runs on a small server at home (a Raspberry Pi class computer is enough). It talks to devices, cameras and online services. The dashboard is one generated page (built from about 300 source pieces) served by HA, and everything a person enters is saved back into HA, never only in the page. Phones, the watch and the car reach HA through the companion apps, which also deliver notifications.
 
 <img src="images/diagrams/how-the-app-works.svg" alt="Diagram of how the app works: devices, online services and cameras feed Home Assistant on a small home server, with the dashboard, saved data, screens, companion apps and notifications" style="max-width:100%;height:auto">
 
@@ -162,7 +162,7 @@ Whatever a person types, taps or picks is saved right away where it belongs: to 
 
 ### Where cards show up
 
-Every card lives on its own page. That page's Right now card shows the live rows and folds the quiet ones into one line. While something matters, a copy shows on Home (urgent first, then today, then the rest); when it stops mattering the copy goes away. Home never owns a card, it only borrows copies.
+Every card has a home page (and can also show on other pages where it is useful). That page's Right now card shows the live rows and folds the quiet ones into one line. While something matters, a copy shows on Home (urgent first, then today, then the rest); when it stops mattering the copy goes away. Home never owns a card, it only borrows copies.
 
 <img src="images/diagrams/about-where-cards-show-up.svg" alt="Where cards show up: each card lives on its own page, a copy appears on Home while it matters and goes away after." width="440">
 

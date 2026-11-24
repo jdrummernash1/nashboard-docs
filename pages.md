@@ -7,19 +7,19 @@ title: All pages
 # All pages
 
 <!-- pagemap:start -->
-<div class="pm"><div class="pm-card pm-tabs"><h3>Main tabs <small>bottom bar on phones</small></h3><div class="pm-chips"><a class="pm-chip" href="#home">Home</a><a class="pm-chip" href="#rooms">Rooms</a><a class="pm-chip" href="#cameras">Cameras</a><a class="pm-chip" href="#calendar">Calendar</a></div></div><div class="pm-card pm-t0"><h3>Everyday</h3><div class="pm-chips"><a class="pm-chip" href="#family-board">Family Board</a><a class="pm-chip" href="#shopping">Shopping</a><a class="pm-chip" href="#packages">Packages</a><a class="pm-chip" href="#weather">Weather</a><a class="pm-chip" href="#activity">Activity</a></div></div><div class="pm-card pm-t1"><h3>House</h3><div class="pm-chips"><a class="pm-chip" href="#security">Security</a><a class="pm-chip" href="#pantry--fridge">Pantry &amp; Fridge</a><a class="pm-chip" href="#recipes">Recipes</a><a class="pm-chip" href="#maintenance">Maintenance</a><a class="pm-chip" href="#storage">Storage</a><a class="pm-chip" href="#garage">Garage</a><a class="pm-chip" href="#automations">Automations</a><a class="pm-chip" href="#utilities">Utilities</a><a class="pm-chip" href="#pool">Pool</a></div></div><div class="pm-card pm-t0"><h3>Family</h3><div class="pm-chips"><a class="pm-chip" href="#kids">Kids</a><a class="pm-chip" href="#pets">Pets</a><a class="pm-chip" href="#guest">Guest</a><a class="pm-chip" href="#sitter-monitor">Sitter monitor</a><a class="pm-chip" href="#wellbeing">Wellbeing</a><a class="pm-chip" href="#workout">Workout</a><a class="pm-chip" href="#hobbies">Hobbies</a></div></div><div class="pm-card pm-t1"><h3>Out &amp; about</h3><div class="pm-chips"><a class="pm-chip" href="#commute">Commute</a><a class="pm-chip" href="#map">Map</a><a class="pm-chip" href="#air--allergy">Air &amp; Allergy</a><a class="pm-chip" href="#planes">Planes</a><a class="pm-chip" href="#space">Space</a></div></div><div class="pm-card pm-t0"><h3>Fun &amp; info</h3><div class="pm-chips"><a class="pm-chip" href="#now-playing">Now Playing</a><a class="pm-chip" href="#sports">Sports</a><a class="pm-chip" href="#finance">Finance</a><a class="pm-chip" href="#multi-view">Multi-view</a></div></div><div class="pm-card pm-t1"><h3>Labs</h3><div class="pm-chips"><a class="pm-chip" href="#labs">Browser</a><a class="pm-chip" href="#labs">3D Printer</a><a class="pm-chip" href="#labs-energy-and-bills">Energy</a></div></div><div class="pm-card pm-t0"><h3>System</h3><div class="pm-chips"><a class="pm-chip" href="#network--storage">Network</a><a class="pm-chip" href="#settings">Settings</a><a class="pm-chip" href="#system">System</a><a class="pm-chip" href="#about">About</a></div></div></div>
+<div class="pm"><div class="pm-card pm-tabs"><h3>Main tabs <small>bottom bar on phones</small></h3><div class="pm-chips"><a class="pm-chip" href="#home">Home</a><a class="pm-chip" href="#rooms">Rooms</a><a class="pm-chip" href="#cameras">Cameras</a><a class="pm-chip" href="#calendar">Calendar</a></div></div><div class="pm-card pm-t0"><h3>Everyday</h3><div class="pm-chips"><a class="pm-chip" href="#family-board">Family Board</a><a class="pm-chip" href="#shopping">Shopping</a><a class="pm-chip" href="#packages">Packages</a><a class="pm-chip" href="#weather">Weather</a><a class="pm-chip" href="#activity">Activity</a></div></div><div class="pm-card pm-t1"><h3>House</h3><div class="pm-chips"><a class="pm-chip" href="#pantry--fridge">Pantry &amp; Fridge</a><a class="pm-chip" href="#recipes">Recipes</a><a class="pm-chip" href="#maintenance">Maintenance</a><a class="pm-chip" href="#storage">Storage</a><a class="pm-chip" href="#garage">Garage</a><a class="pm-chip" href="#automations">Automations</a><a class="pm-chip" href="#utilities">Utilities</a><a class="pm-chip" href="#pool">Pool</a></div></div><div class="pm-card pm-t0"><h3>Family</h3><div class="pm-chips"><a class="pm-chip" href="#kids">Kids</a><a class="pm-chip" href="#pets">Pets</a><a class="pm-chip" href="#guest">Guest</a><a class="pm-chip" href="#sitter-monitor">Sitter monitor</a><a class="pm-chip" href="#wellbeing">Wellbeing</a><a class="pm-chip" href="#workout">Workout</a><a class="pm-chip" href="#hobbies">Hobbies</a></div></div><div class="pm-card pm-t1"><h3>Out &amp; about</h3><div class="pm-chips"><a class="pm-chip" href="#commute">Commute</a><a class="pm-chip" href="#map">Map</a><a class="pm-chip" href="#air--allergy">Air &amp; Allergy</a><a class="pm-chip" href="#planes">Planes</a><a class="pm-chip" href="#space">Space</a></div></div><div class="pm-card pm-t0"><h3>Fun &amp; info</h3><div class="pm-chips"><a class="pm-chip" href="#now-playing">Now Playing</a><a class="pm-chip" href="#sports">Sports</a><a class="pm-chip" href="#finance">Finance</a><a class="pm-chip" href="#multi-view">Multi-view</a></div></div><div class="pm-card pm-t1"><h3>Labs</h3><div class="pm-chips"><a class="pm-chip" href="#labs">Browser</a><a class="pm-chip" href="#labs">3D Printer</a><a class="pm-chip" href="#labs-energy-and-bills">Energy</a></div></div><div class="pm-card pm-t0"><h3>System</h3><div class="pm-chips"><a class="pm-chip" href="#network--storage">Network</a><a class="pm-chip" href="#settings">Settings</a><a class="pm-chip" href="#system">System</a><a class="pm-chip" href="#about">About</a></div></div></div>
 <!-- pagemap:end -->
 
 
 
-Pages appear in the side menu (or the bottom bar and "More" sheet on phones). The menu, the More sheet and Menu pages are grouped under short headings: **Everyday**, **House**, **Family**, **Out & about**, **Fun & info**, **Labs** and **System**. Home and the tab-bar pages stay first and About stays last. On a desktop each group is its own softly tinted container (alternating colours, no heading words; screen readers still hear the group name). A **Frequent** group of your most-used pages comes right after Home, and a page shown there is not listed again in its own group. Each Home Assistant user can choose
+Pages appear in the side menu (or the bottom bar and "More" sheet on phones). The menu, the More sheet and Menu pages are grouped under short headings: **Everyday**, **House**, **Family**, **Out & about**, **Fun & info**, **Labs** and **System**. Home and the tab-bar pages stay first and About stays last. On a desktop each group is its own softly tinted container (alternating colours, no heading words; screen readers still hear the group name). A **Frequent** group of your most-used pages comes right after Home, and a page shown there is not listed again in its own group. On a phone the **More** sheet is a two-column grid with a search box on top and your last three opened pages first, then the groups. Each Home Assistant user can choose
 which pages they see, and in what order; see [Settings](settings.md). Some pages only appear once their data exists:
 for example, Cameras needs at least one camera. Pages you set up yourself (Commute, Pets, Pool, Utilities and Energy)
 wait under **More to set up** in Menu pages, each with a **Set up** button that opens the page and adds it to your menu.
 
 They're listed here in roughly the same order as the menu, so you can scroll through the whole app or jump to one:
 
-[Home](#home) · [Rooms](#rooms) · [Cameras](#cameras) · [Calendar](#calendar) · [Activity](#activity) · [Now Playing](#now-playing) · [Shopping](#shopping) · [Packages](#packages) · [Recipes](#recipes) · [Pantry & Fridge](#pantry--fridge) · [Storage](#storage) · [Garage](#garage) · [Kids](#kids) · [Weather](#weather) · [Air & Allergy](#air--allergy) · [Sports](#sports) · [Commute](#commute) · [Planes](#planes) · [Map](#map) · [Space](#space) · [Multi-view](#multi-view) · [Display](#display) · [Kitchen tablet](#kitchen-tablet) · [Finance](#finance) · [Room dashboards](#room-dashboards) · [Design Studio](#design-studio) · [Network & Storage](#network--storage) · [Family Board](#family-board) · [Guest](#guest) · [Maintenance](#maintenance) · [Pets](#pets) · [Hobbies](#hobbies) · [Workout](#workout) · [Utilities](#utilities) · [Pool](#pool) · [Wellbeing](#wellbeing) · [Sitter monitor](#sitter-monitor) · [Automations](#automations) · [System](#system) · [About](#about) · [Labs](#labs)
+[Home](#home) · [Rooms](#rooms) · [Cameras](#cameras) · [Calendar](#calendar) · [Activity](#activity) · [Now Playing](#now-playing) · [Shopping](#shopping) · [Packages](#packages) · [Recipes](#recipes) · [Pantry & Fridge](#pantry--fridge) · [Storage](#storage) · [Garage](#garage) · [Kids](#kids) · [Weather](#weather) · [Air & Allergy](#air--allergy) · [Sports](#sports) · [Commute](#commute) · [Planes](#planes) · [Map](#map) · [Space](#space) · [Multi-view](#multi-view) · [Display](#display) · [Kitchen tablet](#kitchen-tablet) · [Finance](#finance) · [Room dashboards](#room-dashboards) · [Design Studio](#design-studio) · [Network & Storage](#network--storage) · [Hardware](#hardware) · [Family Board](#family-board) · [Guest](#guest) · [Maintenance](#maintenance) · [Pets](#pets) · [Hobbies](#hobbies) · [Workout](#workout) · [Utilities](#utilities) · [Pool](#pool) · [Wellbeing](#wellbeing) · [Sitter monitor](#sitter-monitor) · [Automations](#automations) · [System](#system) · [About](#about) · [Labs](#labs)
 
 [Security](#security) · [Settings](#settings) · [Utilities](#utilities) · [Pool](#pool) · [Wellbeing](#wellbeing) · [Sitter monitor](#sitter-monitor)
 
@@ -36,7 +36,7 @@ left- or right-handed phones).
   dog timer on Pets, Leave soon on Commute). Everything quiet folds into one line, **All quiet · 8 things watched** (or
   **and 6 quiet** under the live rows); tap it to see the whole list; whether that fold is open is remembered for you on every device. A row for something the house does not have (no
   UPS, no pool reading, no car that charges) is left out, and a quiet row says the real state ("Garage door: Closed")
-  or what it watches for. Home only shows copies while they matter.
+  or what it watches for. Home only shows copies while they matter. When a page has two or more Right now cards they sit together in one softly highlighted container labelled Right now; a single card stays plain.
 - **Set-up and settings cards come after the page's own cards**, never above them, so a page opens on its content. Cards that are still waiting to be set up fold into one **More to set up · N** card at the very end of the page; tap it to show them.
 - **The card ⋯ menu** on every card's header: Full window, Collapse, Hide for today and Hide this card (with a confirm;
   admins can also turn a card off for everyone). Hidden cards come back from Customize menu → Hidden cards or the System
@@ -65,7 +65,7 @@ left- or right-handed phones).
 
 ## More on every page
 
-- **Top bar:** buttons sit tight together; the button strip takes at most half the bar and scrolls past that, and every piece of top-bar and banner text scrolls on its own when it does not fit, instead of being cut off or overlapping. The version line shows the time, the version and, for admins who maintain the app, the number of open backlog items (for example "10:14 AM · v1.5 · 11 open"); tap the count to open the Design Studio. A failed load keeps the number already shown.
+- **Top bar:** buttons sit tight together; the button strip takes at most half the bar and scrolls past that, and top-bar text first tightens its spacing, and every piece of top-bar and banner text then scrolls on its own when it still does not fit, instead of being cut off or overlapping. The version line shows the time, the version and, for admins who maintain the app, the number of open backlog items (for example "10:14 AM · v<!-- ver -->1.10<!-- /ver --> · 11 open"); tap the count to open the Design Studio. A failed load keeps the number already shown.
 - **Phone and tablet page bar:** the bottom bar fits as many page buttons as the width allows and slides sideways through every page, Frequent pages first, then the groups in menu order as tinted segments (no heading words), with **More** always pinned at the end. Buttons are at least 48 px.
 - **Card text fills the card:** card titles (and marked main values) grow in a few steps, up to one and a half times, to use the room the card already has. No card gets taller, and sizes stay close from card to card.
 - **Browser tab icon:** the dashboard shows its own small house icon in the browser tab.
@@ -85,7 +85,7 @@ An optional soft picture behind every page, switched on in Settings under Displa
 
 ![Home page](images/home-dark.jpg)
 
-The page most screens sit on: an illustrated house banner with live status (the art reaches every edge of the banner, and a strip of two-line chips sits between the horizon and the banner's bottom edge), and cards that appear when they matter
+The page most screens sit on: an illustrated house banner with live status (the art reaches every edge of the banner, and a strip of two-line chips sits between the horizon and the banner's bottom edge; the clock is large, with the info chip stacked under it), and cards that appear when they matter
 (a plane overhead, rain coming, a game on, a package arriving) and leave when they don't. Every card and pop-up is
 described on the [Home page](home.md) guide and in the [Every feature](features.md#home-automatic-cards) table.
 
@@ -149,7 +149,7 @@ microphone. Zoom to fit sizes rows correctly in Full window and keeps your scrol
 
 One scrolling timeline of what happened around the house **today and yesterday**, newest first and grouped by hour: the
 doorbell and people at the front door, the garage and doors, locks, people arriving and leaving, packages, alarms and
-smoke, and intercom messages. **Filter chips** narrow it to one kind. It reads Home Assistant's logbook, refreshes when
+smoke, and intercom messages. **Filter chips** (Everyone, Doors, Cameras, Packages and Security) narrow it to one kind. **Security** is the saved security log joined into the same timeline: its important events stay **unseen** until someone taps them, and that unseen mark is shared with the [Security](#security) page and the menu badge. It reads Home Assistant's logbook, refreshes when
 you open it and every minute while it's open.
 
 ## Now Playing
@@ -171,7 +171,7 @@ While a TV is showing the dashboard by casting, the **Cast dashboard** pop-up al
 
 The Home Assistant shopping list (and Mealie's, if connected). Only shopping lists show here; chores, maintenance, the
 pantry and ideas stay on their own pages. Add several items at once (or say them), tick items into the cart, clear the
-cart, and "Buy again" from recent items. Changes show on every screen instantly.
+cart, and "Buy again" from recent items. Changes show on every screen instantly. **Start shopping** regroups the to-buy items by store section in a walking order (Produce, Bakery, Meat and fish, Dairy and eggs, Frozen, Drinks, Household, Pantry, Other) and offers to add tonight's missing dinner ingredients, asking first. Only the view changes; the list itself is untouched, and the switch is remembered per person.
 
 ### Shopping: Kroger-family store
 
@@ -236,6 +236,8 @@ button also adds it to the shopping list. Home and the Kitchen room show a card 
   dashboard.
 - **Low counts**: set a low number on an item; when it's at or below, **Running low** shows (with Add to shopping list).
 - **Warranty ending**: a card when an appliance's warranty ends within 30 days, with its serial, place and manual.
+- **Room and spot**: items and places can say which room they are kept in and where ("hall closet"). Each room page then has a **Lives here** card listing what is kept there; tap a row to open it here. The card only shows when the room has something.
+- **Insurance list (Valuables)**: a card for things worth insuring: name, room and spot, serial number, purchase date, price, receipt link, a photo and a value that says whether it is an AI estimate or your own, with a total. **Export insurance list** downloads a CSV and **Printable view** opens a page for your insurer; Estimate uses the AI set up in Home Assistant. Once a year a Home **Insurance list** card asks for a review (items with no serial number, values older than 12 months, or no review in a year), with Review and Remind me in a month.
 
 ## Garage
 
@@ -250,10 +252,12 @@ Tool storage, built on the Storage page's places and items (so the Storage searc
 
 ### Garage: new cards
 
-- **Car pictures:** a real photo of the car instead of the drawn art. Order: a picture you saved on the car (link or upload), then an automatic matching photo of the same year, make and model from Wikimedia Commons (free, shown with a caption and a link to its licence page since colours can differ), then the drawn art.
+- **Car colour and look:** **Colour & look** on each car sets a factory-colour swatch, a custom colour, or a colour picked by tapping the car in a photo (the nearest factory colour name is kept). The car is then drawn as a stock model tinted to that colour, which is the default.
+- **Car pictures:** instead of the drawing, each car can show **Stock photo** (an automatic matching photo of the same year, make and model from Wikimedia Commons, free, shown with a caption and a link to its licence page since colours can differ) or **My own photo** (a picture you saved on the car, link or upload). No images are scraped from commercial sites.
 - **Car value:** type in a value and the date you looked it up (from any source); the card shows an estimate of today's value that depreciates at a yearly rate (default 15%, changeable per car). No price is scraped.
 - **EV charging:** battery, range, plugged and charging for any car integration. A "Plug in the car" card appears from 6 PM when the battery is below your chosen level and the car is not plugged in. A button looks up the nearest public chargers (Open Charge Map, free), with distance, plug types, power and Navigate.
-- **Garage door:** works with any cover. Open and Close are always offered, and the state is labelled "reported" because some openers report stale state. A Home card shows when the door has been open longer than a time you choose.
+- **Garage door:** works with any cover. Open and Close are always offered, and the state is labelled "reported" because some openers report stale state. **Garage open too long:** a Home card (and a phone alert) shows when the door has been open longer than a time you choose (10 minutes by default), or sooner once it is past a bedtime hour you pick (10 PM by default, or off); Close appears only when a real opener exists and asks you to confirm. The settings are on this page.
+- **Toolbox brand badges:** each toolbox gets a nameplate on its card and a brand accent on its drawers: a small badge cropped from your own photo of the box (the photo import finds the brand plate), or the brand name in brand-style colours with a brushed-metal look for 18 common tool brands, or Other with your own text. No brand logo files are used.
 - **Smart plugs:** pick any switch as a plug; each gets an on/off button, plus power and energy today when a sensor exists. An unavailable plug says where to fix it.
 - **Toolbox photo import:** take or pick a photo of a toolbox or drawer; the AI lists drawers and tools for review (rename, untick, change counts). Only Save writes to the Storage inventory, with drawers as places and tools as items.
 - **Toolbox picture:** every toolbox card shows a drawn picture of the box, built from the saved inventory. Drawers sit top to bottom in name order, hutch sections (Hutch, Top tray, Lid and similar) are drawn on top as a shelf of compartments, and drawers that differ only by Left or Right sit side by side in one row. Tap a drawer to see its tools under the picture, and a search on the Garage page lights up the drawers that hold a match. It follows dark and light and saves nothing new.
@@ -278,6 +282,7 @@ editing and no set-up text: a card that is not set up yet is simply not there, a
 ### Kids: new cards
 
 - **Bedtime library:** an "Our books" shelf. Add a book by scanning its barcode, photographing the cover or typing a title or ISBN (looked up in Open Library, no key). "Read tonight" picks the least recently read book, one a day; "We read it" logs the day.
+- **Picture mode:** for children who cannot read yet. Behind the Grown-ups PIN a **Picture mode** switch turns the page into big icons and star chore buttons with no words, and a speaker button on each card reads it aloud with the device's own voice. Cards that need reading (story, kid monitor, bookshelf) are hidden. It is remembered per person on that device.
 - **Favourite colour:** in Room settings, a child can have a favourite colour that themes that child's room page, the medicine chip and the Kids page when only one child has a colour. No colour means no change.
 
 ## Weather
@@ -338,6 +343,8 @@ military aircraft ringed, and emergencies (squawk 7700) highlighted worldwide.
   type), the **closest** plane, **military** planes in range, and the **highest** and **fastest plane in the world**
   right now (tap to fly the map there).
 - Arrivals and departures boards for nearby airports (airport tabs scroll on phones).
+- **Flight restrictions:** active temporary flight restriction zones are drawn on the map as shaded areas that name their type and state on hover or tap. The plane popup and plane card also say in one line when a plane is inside, or within 3 nm of, an active restriction.
+- On a phone the plane popup has a **compass arrow** that turns with the phone to point at the plane (a fixed bearing in words if there is no compass; iPhone asks for motion permission with a button).
 - Satellite map, full window or full screen, the phone **compass** (the map turns as you turn), map buttons that
   scroll when they don't fit, and an **INFO** button that hides or shows the legend and info cards.
 - Optional phone alerts when a plane passes overhead (one per pass).
@@ -381,7 +388,7 @@ Show up to four pages at once on a large screen, each in its own tile.
 A full-screen mode for TVs and wall displays: clock, weather, cameras, and automatic cards (up next, commute,
 games, overhead aircraft, Space Station, packages, now playing, breaking news). Google Tasks due today or overdue
 show as a **Tasks** card. It can rotate between views or
-stay on one. TV cards are denser, so more rows fit on each (up to five games, trips, tasks and events, four packages).
+stay on one. **A new TV starts on one still "everything" screen built around the live camera wall**: every camera live in the middle, with the clock, compact weather, radar, up to six cards and a two-line chip strip around it. Urgent cards (doorbell, leak, fire, security, power) land big on top for 40 seconds, nothing meant only for whoever maintains the app shows, the layout scales up to 4K, and rotating screens fade softly. A TV that already has a saved choice keeps it; **Rotate** and **Everything** switch it. TV cards are denser, so more rows fit on each (up to five games, trips, tasks and events, four packages).
 Casting to a TV opens the same Display, and **each TV can have its own setup** (rotating or still, seconds
 per screen, which screens, night dimming). Casting creates or refreshes a view for that TV in Home Assistant's TV
 dashboard, so the TV still knows which one it is after a reload. Home's cards show as a strip on the radar and camera screens; a pet peeks in
@@ -393,14 +400,14 @@ A display can be a **picture frame**: when nobody is in the room it shows a full
 
 ### Display: wall display and TV big-type cards
 
-- **Wake on approach:** per screen, in the Cast sheet under This device, pick presence, motion or camera person sensors. When one sees someone, the screen wakes: the page undims, and the screen is switched on and brightened through the Fully Kiosk integration in Home Assistant, or woken with the companion app's screen-on command. After the room has been empty and untouched for a while it dims again; an optional setting limits this to night. A fully dark screen can only be woken from Home Assistant itself, so the same idea is also provided as an automation sketch. Settings are saved in Home Assistant under a random screen label, not a name.
+- **Wake on approach:** per screen, in Settings under This screen, pick presence, motion or camera person sensors. When one sees someone, the screen wakes: the page undims, and the screen is switched on and brightened through the Fully Kiosk integration in Home Assistant, or woken with the companion app's screen-on command. After the room has been empty and untouched for a while it dims again; an optional setting limits this to night. A fully dark screen can only be woken from Home Assistant itself, so the same idea is also provided as an automation sketch. Settings are saved in Home Assistant under a random screen label, not a name.
 - **Nest Hub kitchen view:** a cast target can show a compact kitchen screen instead of the rotation: clock, timers, the out-the-door list, dishwasher, leftovers and today's events. Choose it in the Cast sheet under Setup for one TV.
 - **Wall display setup checklist:** a card on the Kitchen room page with live checks, and a Wall display group in Device setup.
 - **TV big-type cards:** on the Display view, chosen Home and Right now cards (Today at a glance, reading tonight, gaming and achievements, laundry, leak, UPS and printer alerts, bills due, the mail truck, the doorbell and person at the door) use a large-type look readable from across the room. Buttons and links are dropped because nothing can be tapped on a TV, long text is trimmed, and only the first few rows show (two for the doorbell and person at the door).
 
 ## Kitchen tablet
 
-For a wall display in the kitchen, turned on per device: **Cast → This device → Kitchen tablet** (or add
+For a wall display in the kitchen, turned on per device: **Settings → This screen → Kitchen tablet** (or add
 `?display=kitchen` to the address; `?display=off` turns it off).
 
 - The display shows the normal Home page. After 2 minutes without a touch it goes back to Home and closes anything left
@@ -455,7 +462,7 @@ device problems, tonight's dinner and expiring food (Kitchen), packages (front o
 
 ![Design Studio page](images/backlog.jpg)
 
-Opened from System or the More menu (not in the side menu). Its cards are wide (at least a third of the page):
+Opened from System or the More menu (not in the side menu). A status line at the top comes from one live model of the work in progress, so every card agrees. Its cards are wide (at least a third of the page):
 
 - **Jot it down**: type or say an idea, attach a photo or screenshot, swipe left to remove one; it keeps a draft while
   you type and stays put after you submit. **Import now** asks for new ideas to be filed at the next check-in. Claude's
@@ -488,6 +495,17 @@ See [Settings](settings.md#design-studio-backlog-and-ideas).
   (weak signals in red) and live traffic.
 - **New on Wi-Fi**: Known dismisses it; **Unknown** logs it to a shared **Follow up later** list here (Done clears it).
 - **Offline devices**: anything unavailable, grouped by integration. The guest Wi-Fi details show here too.
+
+## Hardware
+
+The machines behind the house in one place, in the System group. Every card here also stays on its own page, and a card only shows for hardware that is set up. Nothing is saved; it only reads Home Assistant.
+
+- **Home Assistant host** (a Raspberry Pi or similar): CPU, memory, temperature, storage, network and power status, the same card as System.
+- **Desktop PC**: live CPU, GPU, memory, temperatures and disk fullness as gauges, from a PC agent in Home Assistant (HASS.Agent or Glances). Until one is installed it shows set-up steps, and it says Not reporting while the PC is off.
+- **Printers**: toner, drum and page levels, the same card as Utilities.
+- **3D printer**: state, percent done, time left, layer, nozzle and bed temperature, only when a 3D printer is found.
+- **Router** and **NAS** (Synology): internet status, uptime, speed, load and devices for the router; volume status and fullness, drives, load and temperature for the NAS. Tap Network for the full details.
+- Home shows a card while the PC is running hot (above 85 degrees), a disk is over 90 percent full or memory is nearly used up.
 
 ## Family Board
 
@@ -552,6 +570,8 @@ faults and history.
   bottle. A Home copy shows when a dose is due; a phone reminder if it's two hours late.
 - The cat medicine card shows the medicine bottle from Pantry & Fridge with its expiration date.
 - **Pet notes** (shared with the Guest page) show and edit here.
+- **Pet care due**: one card (here and on Home) lists each pet task due now, the cat's medicine and the dog's feeder, with a **Done** button. It stays until done and says overdue after an hour.
+- The pets follow the interface scale (same size at the normal scale), measure the real gap before a jump and land just inside the next card, and turn around when there is no safe landing. They stay off the TV page.
 - This is the pets' favourite page: they play here often (chases, naps on cards), and only rarely elsewhere.
 
 ## Hobbies
@@ -663,7 +683,7 @@ A page for the things that matter for safety, in two cards.
 - **Security log**: a saved log of people at cameras, packages, doors, the garage, locks, alarm changes, smoke, CO or
   gas, water leaks and cameras going offline. It keeps up to 500 events over 30 days and is the same on every screen.
   Entries stay **unseen** until you tap them or use Mark all seen; the menu badge counts the unseen important ones, and
-  filter chips narrow the list by kind or room.
+  filter chips narrow the list by kind or room. The same log appears under the **Security** chip on [Activity](#activity), with the same unseen marks.
 - **Camera states** and **Mail truck**: optional cards that watch what a camera reports (for example a gate left open
   for a while) and learn roughly when the mail arrives.
 - Its Right now card shows unseen alerts, and an **At a glance** sentence sums the day up.
@@ -673,12 +693,13 @@ house. A house with none of them still gets the log, which fills as devices are 
 
 ## Settings
 
-Your own settings in one place, in the menu and from a button on the System page. Its cards:
+Your own settings in one place, in the menu and from a button on the System page. Settings has five sections behind a chip row (You, This screen, Household, Alerts, House and app), and the top bar's scale and bell buttons open This screen and Alerts. Its cards:
 
 - **Look and size** (this device): the theme (dark, light or follow the device) and the Interface scale sheet, which
   also holds the Look, accent colour, the optional background picture, handedness and holiday decorations.
 - **Alerts and notifications**: opens the alerts sheet (chimes, plane and Space Station alerts, phone alerts), with
   switches for Swipe between pages, the New build sound, the Connection lost alert and the location pin.
+- **Household quiet hours** (Alerts section): one schedule, off until you turn it on, that chimes, notices, announcements, the intercom, screen dimming and security phone alerts all follow. Each follower has its own switch, a room or a camera can opt out, and existing per-feature quiet times keep working. Wall screens and TVs show a line while it is active.
 - **Card change notices**: the full-screen notice for urgent cards on wall screens and TVs (off by default), with
   "On this screen too" and quiet hours.
 - **Menu pages**: choose and order the pages in your menu, switch Labs pages on or off, bring hidden cards back, and
@@ -690,7 +711,7 @@ Everything is described on [Settings and personalisation](settings.md).
 
 ## About
 
-Version and build (with the pieces count), **What's new**, the full feature list, a scrolling **Credits** card (a plain
+Version and build (with the pieces count; facts such as card counts, checks and models are generated when the app is built, so they never go stale), **What's new**, the full feature list, a scrolling **Credits** card (a plain
 list with reduced motion), data-source credits, the user manual, and **Run the tour
 again**. It also has five simple pictures (how the app works, how your data is kept, where cards show up, who can see what, and for admins how the AI builds it); see [About page diagrams](diagrams.md#about-page-diagrams). It is always the last page, and an **i** button in the top bar opens it. Top-bar buttons that don't fit on a
 phone scroll with a soft fade.

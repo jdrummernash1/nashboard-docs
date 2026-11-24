@@ -51,6 +51,17 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
   maintainer tools are out of the family's view.
 - **Workout** never takes a pet scale for your weight: health values are only picked from your own phone app.
 - **Demo mode** stays quiet unless you tap something, and the phone tab bar is solid.
+- **Banner and top bar:** the banner clock is bigger with the info chip stacked under it, and top-bar text tightens its spacing before it starts to scroll. The About page facts (card counts, checks, models) are written at build time, and the Design Studio status comes from one live model.
+- **First-screen check:** a quality check fails any page whose main card starts too far down or leaves the first screen mostly empty.
+
+## New in versions 1.6 to <!-- ver -->1.10<!-- /ver -->
+
+- **Pages:** a [Hardware](pages.md#hardware) page (the host, a desktop PC, printers, a 3D printer, the router and the NAS); an [Activity](pages.md#activity) timeline with a Security chip and shared unseen marks; **Start shopping** by aisle on [Shopping](pages.md#shopping); **Picture mode** on [Kids](pages.md#kids).
+- **Garage and Storage:** car **Colour & look**, toolbox brand badges, an insurance list with room and spot, and a **Lives here** card on each room page. See [Garage](pages.md#garage) and [Storage](pages.md#storage).
+- **Home cards:** Power cut, Garage open too long, Pet care due and a yearly Insurance list review (rows in the table below).
+- **Whole app:** household quiet hours (Settings, Alerts), one highlighted **Right now** container when a page has several cards, a clock on the Home banner, and a More sheet that is a two-column grid with search.
+- **Planes and Pets:** flight restriction zones on the map and in the plane popup, a phone compass arrow, and pets that follow the interface scale.
+- **TV:** a new TV starts on one still screen built around the live camera wall ([Display](pages.md#display)).
 
 ## Additions just before 1.0 (versions 0.256 to 0.261)
 
@@ -153,11 +164,11 @@ just for you, or (admins) turned off for everyone. The "Lives on" column is the 
 | **Fire alarm** | A smoke, CO, heat or gas sensor is on, or a camera hears an alarm | Call button, the escape steps, steps full screen | Family Board |
 | **Water leak** | A leak sensor is wet | See which sensor and room; one chime | Utilities |
 | **Power outage** | The grid sensor you picked reports an outage | See since when | Energy (Labs) |
-| **Running on battery** | The UPS reports it is on battery | Charge and runtime left | Utilities |
+| **Power cut (running on battery)** | The UPS has been on battery for 30 seconds | About how many minutes are left and what goes down first; "Power is back" for 2 minutes after | Utilities |
 | **Person at the door** | A camera's person sensor fired in the last 2 minutes (and the Doorbell card is not already up) | Snapshot, Talk, Open camera, Ignore | Family Board, front rooms |
 | **Security alerts** | There are unseen important security events | Open the Security log | Security |
 | **Garage open** | A garage door has been open more than 10 minutes | Close (tap twice to confirm) | Rooms |
-| **Garage door left open** | The door you picked has been open longer than the time you chose | Close (tap twice to confirm) | Garage |
+| **Garage open too long** | The door you picked has been open longer than the time you chose, or it is past the bedtime hour you set | Close (tap twice to confirm), only when the door can be closed from here | Garage |
 | **Plug in the car** | After 6 PM, the car's battery is under your level and it is not plugged in | See charge and range | Garage |
 | **Roll up the car windows** | A car window is open and rain is likely where the car is | See which windows | Commute |
 | **Nursery temperature** | The nursery is warmer or colder than the range you set | See the reading | Family Board |
@@ -183,6 +194,7 @@ just for you, or (admins) turned off for everyone. The "Lives on" column is the 
 | **Dog timeout** | The dog timeout timer is running | Minutes left (with the little dog); Done | Pets |
 | **Dog feeder** | Feeding is in the next 10 minutes | See the time (with the little dog) | Pets |
 | **Pet's medicine** | A pet's medicine is due | Log now | Pets |
+| **Pet care due** | The cat's medicine or the dog's feeder is due | Done; says overdue after an hour | Pets |
 | **Markets** | Weekdays an hour around the market open and close, and two hours after a big move (watchlist 2%+ or a stock 5%+) | Indexes, watchlist average, biggest mover | Finance |
 | **UV high** | 10 AM to 4 PM when the UV index is 6 or more | Sunscreen and shade reminder | Weather |
 | **Rocket launch** | 30 minutes before to 10 minutes after a liftoff | Countdown and where to look | Space |
@@ -209,6 +221,7 @@ just for you, or (admins) turned off for everyone. The "Lives on" column is the 
 | **Medicine running low** | A medicine expires within two weeks, or its quantity is 1 or low | See which; Add to list | Family Board, Pantry & Fridge |
 | **Pantry: use soon** | Pantry, fridge or freezer food expires in the next 3 days or just expired | Used up | Pantry & Fridge |
 | **Running low** | A stored item is at or below its low count | Add to shopping list | Storage |
+| **Insurance list** | Once a year, or when valuables have no serial number or a value older than 12 months | Review; Remind me in a month | Storage |
 | **Warranty ending** | An appliance warranty ends within 30 days | Serial, place and manual link | Storage |
 | **Birthday coming up** | A birthday (calendar or added by hand) is within two weeks | Add "Gift for …" to the shopping list, then it shows ✓ | Family Board |
 | **Holiday tradition** | The week of a holiday you've saved a tradition for | Directions | Family Board |
@@ -257,6 +270,7 @@ the feeder, internet services and more. Every new feature adds a fact when it ha
   follow it.
 - **The mailbox** stands on the outside edge of the driveway (or where you choose in Your house) and its door swings open with envelopes when mail is expected today (USPS Informed Delivery emails).
 - **Art to the edges, chip strip in place:** the banner picture reaches every edge of its card (no grey band), and the strip of **two-line chips** (label on top, detail below, a long line scrolls inside its chip) sits between the horizon and the banner's bottom edge at every width. On phones the banner shows the whole house.
+- **Clock** card at the top right of the banner on wide screens (1100 px and up), opposite the weather card: time, weekday and date in the home's time zone. Phones and tablets show the time in the top bar instead.
 - **Weather** sits in the banner on wide screens, and as a compact card on phones (current conditions, the next few
   hours, rain, wind, sunrise) that opens to the full forecast with a tap and opens by itself when rain is likely.
 - **Info chips** for lights on, the garage, indoor temperature and humidity, mail and packages, low batteries, open
@@ -308,14 +322,14 @@ opened it gets an **UPDATED** dot.
 - **Now Playing**: what every speaker is playing, with controls, per-speaker faders in groups and Music Assistant
   browsing.
 - **Shopping**: only the shopping lists (other lists stay on their own pages), with voice entry, ticks into the cart and
-  Buy again.
+  Buy again, and **Start shopping** to regroup the list by store section.
 - **Pantry & Fridge**: what's on hand and when it expires, in a shared to-do list. Each item is pantry, fridge or
   freezer. Scan a barcode with the phone camera (name from Open Food Facts) or type it, add the date and amount. "Use
   soon" lists anything expiring within 3 days; **Used up** removes it and the cart button also adds it to the shopping
   list. **Storage places** you add and remove (Medicine included), each with a container type and able to sit inside
   another place (Where shows the nesting); On hand is grouped by place. Medicines in the Medicine place warn before they
   expire. **Suggested use-by dates**: an item with no date gets a suggestion from standard food storage times (USDA
-  FoodKeeper, about 200 foods, for pantry, fridge or freezer), marked as suggested, with one-tap **Accept**. Separate sell-by and use-by dates **(planned)**.
+  FoodKeeper, about 200 foods, for pantry, fridge or freezer), marked as suggested, with one-tap **Accept**.
 - **Storage** ("where's it stored"): a house inventory. Places nest (Garage › Red toolbox › Drawer 3); items have a
   count, note and photo, and appliances a serial number, purchase date, warranty end and manual link. One search box
   finds anything ("where are the christmas lights") with its full path. **Printable QR labels** for every place
@@ -358,11 +372,12 @@ opened it gets an **UPDATED** dot.
   brightest satellites, a sky dial that turns with the phone (with a legend, also on the Home card), and upcoming rocket
   launches.
 - **Multi-view**: up to four pages on one big screen.
-- **Display**: a full-screen rotating dashboard for TVs and wall screens (see Casting).
+- **Display**: a full-screen dashboard for TVs and wall screens (see Casting). A new TV starts on one still screen built around the live camera wall; rotating screens are a choice.
 - **Finance**: a watchlist from a Google Sheet with day moves and sparklines, market indexes, and a **Bitcoin
   long-term power law** chart (with a legend) that zooms (preset windows or drag across it) and remembers the zoom.
 - **Network & Storage**: devices on the Wi-Fi (busiest first, weak signal in red), new-device alerts with a **Follow up
   later** list, internet speed history, router and NAS health, guest Wi-Fi, and an **Internet services** card.
+- **Hardware**: the machines behind the house in one place: the Home Assistant host, a desktop PC with live gauges, printers, a 3D printer, the router and the NAS (each only when set up).
 - **Family Board**: made for the kitchen with bigger text: the clock and weather, who's home, trash and recycling days,
   today's events and dinner, chores, the shopping list, **Medicine & fever**, **Birthdays**, the **Intercom**,
   **Holiday traditions**, **Carry-out orders**, **Kids' activity ideas**, **Family favorites**, **For sale**, the **Week
@@ -626,10 +641,7 @@ Not built yet:
 
 - A car app for Android Auto and CarPlay (a design prototype exists; see [Future: car app](car-app.md)). Today the car
   uses the Home Assistant app's own favourites.
-- One Settings home, a grouped menu and one household quiet-hours setting.
-- Merging cards that overlap (one Front door card, one Camera alerts area, one Internet card).
 - Package tracking through the postal service's own developer feed.
-- Separate sell-by and use-by dates in the pantry.
 - Medicine dose by weight and a "sick day" Home card.
 - More pet reactions.
 - A 3D printer page (the Labs page is a placeholder).

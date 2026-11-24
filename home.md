@@ -90,64 +90,118 @@ Pop-up cards appear at the top when something needs attention. Each stays **at l
 doesn't flicker; if the situation clears sooner the card says so ("Closed now", "Lights are off now") and then
 leaves. Several have a one-tap action button.
 
-| Pop-up | Shows when | Action |
+<!-- homecards:start -->
+The app has 106 automatic Home cards. This table is written from the app's own list and its How it works texts, so it always matches the app.
+
+| Home card | Shows when | What you can do |
 |---|---|---|
-| Garage open | A garage door has been open more than 10 minutes | Close (tap twice to confirm) |
-| Litter-Robot | Waste drawer nearly full, litter low, or a fault | |
-| Rain coming | Rain or snow likely in the next few hours | |
-| Freeze tonight | The overnight low will be at or below freezing | |
-| Dinner tonight | Tonight's dinner from the meal plan, with when to start cooking | |
-| Autoship soon | A recurring order ships within two days | |
-| Maintenance due | A house job is due or overdue | Done |
-| Trash night | The evening before (and morning of) trash or recycling pickup | |
-| Lights still on | Late at night with two or more lights on | All off |
-| Dog timeout | The dog timeout timer is running (counts down) | Done |
-| Dog feeder | The feeder runs in the next 10 minutes | |
-| Chores today | Family Board chores due today or overdue | Done |
-| Markets | Weekdays around the market open and close, or after a big move | |
-| Rocket launch | From 30 minutes before liftoff to 10 minutes after | |
-| UV high | Around midday when the UV index is 6 or more | |
-| Severe weather | A National Weather Service warning is active where you are | |
-| Leave soon | A calendar event with a location starts within the hour, or a commute trip says it's time to go | Navigate |
-| Nursery asleep | The nursery sound machine is playing at night (chimes go quiet) | |
-| New on Wi-Fi | A device this screen hasn't seen before joins the network | Known |
-| House health | No recent backup, or a storage volume needs attention (admins) | |
-| Pollen | Pollen is medium-high or higher (and the air quality card isn't showing) | |
-| Internet outage | A service the house depends on (remote access, Cloudflare, GitHub, Discord) reports a problem | |
-| Medicine | A medicine was given and the next dose isn't OK yet ("next dose OK at …") | |
-| Fever | A temperature of 100.4°F or higher was logged in the last 12 hours, with when Tylenol or ibuprofen is next OK | |
-| Pantry: use soon | Pantry food expires in the next 3 days or just expired | Used up |
-| Birthday coming up | A birthday on the calendar is within two weeks | Add gift to list |
-| Intercom | Someone recorded a message for every screen in the last 10 minutes | Play |
-| On the way home | Someone's commute home has started (arrival time, slower than usual) | |
-| Claude | Claude Code usage near the limit, or a free usage reset waiting | |
-| What's new | After an update, listing every change since this screen last looked | Got it |
-| Good morning | 6 to 9 AM: weather, the first event, when to leave and the drive time, trash pickup, once-a-day medicines not given yet, the next birthday | |
-| Goodnight check | 9 PM to 1 AM when lights are on, a door is unlocked, the garage is open or a TV is on | All off, Lock, Close (confirmed), Turn off |
-| Doorbell | Someone rings or a person is at the front door (a live snapshot) | Ignore |
-| Pet's medicine | A pet's medicine is due | Log now |
-| Overdue tasks | A Google Task is overdue | |
-| Pick up dinner? | Someone heads home between 4 and 8 PM | Call a carry-out place, Copy the order |
-| Eat this first | Leftovers are waiting in the fridge (oldest first) | |
-| Gas price drop | The cheapest nearby station for your fuel is at or below your price | |
-| Car due soon | A car's registration, inspection or oil change is due within 30 days | |
-| New car recall | The weekly recall check finds a new one | |
-| Low batteries | Any device's battery is low (with its room) | |
-| Medicine expiring | A medicine in the Pantry's Medicine place expires within a month | |
-| Running low | A stored item is at or below its low count | Add to shopping list |
-| Warranty ending | An appliance warranty ends within 30 days | |
-| Holiday tradition | The week of a holiday you've saved a tradition for | Directions |
-| The week ahead | Sunday 5 to 9 PM: events, trash days, birthdays, maintenance, weather trend | |
-| Something to do today | Weekend mornings 8 to 10 AM: a kids' idea that fits the weather | |
-| Movie night | Friday 5 to 9 PM: a pick from Family favorites | |
-| For sale | Something has been listed for sale for a month | Sold |
-| Hobbies | One of your hobbies has something coming up | |
-| Gig | A gig is coming: shows "Gig" with the be-there-by (setup) time | |
-| Medicine running low | A medicine expires within two weeks, or its quantity is 1 or low | Add to list |
-| Leaving the house | Everyone has left (for 45 minutes after) and lights are on, a lock is unlocked, the garage is open or a door or window is open | All off (locks and garage take two taps) |
-| Kitchen timer | A kitchen timer is running (counts down) | |
-| Out the door | Weekday mornings 6:00 to 9:30, until everything is ticked or everyone has left | Tick items |
-| Package left outside | A delivery sits out with nobody home, or after dark | |
+| Garage open | On Home when a garage door has been open longer than the minutes you set (10 by default), or sooner after bedtime; goes away when closed. | Tap Close and confirm to close the door (only when the door can be closed from here). |
+| Litter-Robot | Appears when the waste drawer is 80 percent full or more, the litter is 30 percent or lower, or the robot reports a fault; goes away once fixed. | Read only. |
+| Dog timeout | While the timeout timer is running; gone when time is up. | Tap Done to cancel the timer early. |
+| Dog feeder | On Home during the 10 minutes before the feeder is due; goes away after feeding. | Read only. |
+| Markets | Weekdays within an hour of the 9:30 AM or 4:00 PM Eastern open and close, or for 2 hours after the watchlist average moves 2 percent or any one symbol moves 5 percent. | Tap it to open the Finance page. |
+| UV high | On days when the UV index is high. | Read-only. |
+| Rocket launch | On Home from 30 minutes before a launch's scheduled time until 10 minutes after it. | Tap it to open the Space page. |
+| Chores today | Appears while chores remain today; gone when all are done. | Tap a chore to mark it done. |
+| Severe weather | While an extreme or severe alert, or any warning, is active for the location; clears when it ends. | Tap it to open the Weather page. |
+| Leave soon | On Home when a timed event with a location starts within the next hour (shows up to two). | Tap Navigate to open directions to the event location. |
+| Nursery asleep | Only between 6 PM and 8 AM, while the sound machine is playing; clears when it stops. | Read only. |
+| New on Wi-Fi | When a new device appears, until you deal with it. | Tap it to open the Network page and name it or mark it Unknown. |
+| House health | On Home for admins only, when one of those is wrong; disappears once fixed. | Tap its link to open System or Network for details. |
+| Internet outage | Appears when one of those status pages reports anything other than normal; clears when it recovers. | Read only. |
+| Fever | Shortly after a fever is logged. | Tap it to open the Medicine card and add a new reading. |
+| Medicine | On Home while a medicine was given and its next safe dose time is still ahead (within 24 hours). | Read only. |
+| Pantry: use soon | Appears when items are near their use-by date; clears when used or removed. | Tap Used up to remove an item; the Pantry page has the full list. |
+| Birthday coming up | In the days before a birthday; gone after the day. | Read-only. |
+| Holiday tradition | On Home as that holiday gets close; goes away after. | Read only. |
+| Good morning | From 6 AM to 9 AM, when there is more than one item to show. | Read only. |
+| Goodnight check | From 9 PM to 1 AM, while a light, lock or the garage is still on or open. | Tap a button to lock or turn something off; Everything runs all of them. |
+| The week ahead | On Home on Sunday evening only, from 5 to 9 PM. | Read only. |
+| Medicine running low | Appears when a medicine has 14 days or fewer left, is near expiry, or its quantity is marked low or empty. | Tap Add to list to put it on the shopping list, or open the Pantry page. |
+| For sale | When something has been listed a month or longer. | Read-only. |
+| Low batteries | On Home when a battery is low; goes away when replaced. | Read only. |
+| Movie night | Fridays from 5 PM to 9 PM, when at least one movie is saved in Family favorites. | Open the Family favorites list with the see all link. |
+| New car recall | When a new recall is found. | Tap it to open the Commute page for details. |
+| Intercom | On Home for 10 minutes after a new message is recorded. | Tap Play to hear it. |
+| On the way home | While a commute trip ending at home is active, the person is not home, and their location changed in the last 90 minutes; goes away when they arrive. | Read only. |
+| Rain coming | When rain or snow is at least 60 percent likely (or forecast) in the next 3 hours and it is not already raining. | Read-only. |
+| Freeze tonight | On Home after noon when the forecast low in the next 20 hours is 32 F or colder. | Read only. |
+| Dinner tonight | Appears when dinner is planned; empty otherwise. | Tap it to open the recipe. |
+| Autoship soon | When an order is due soon; gone after delivery. | Tap it to open the Packages page. |
+| Maintenance due | On Home when a job is due; goes away when done. | Tap Done to mark it finished. |
+| Trash night | Appears the evening before pickup and goes away the next day. | Read only. |
+| Lights still on | From 11 PM to 5 AM when two or more lights are on. | Tap All off to turn them off. |
+| Cat’s medicine | On Home when the next dose time has passed; goes away once a dose is logged. | Tap Log now to record that the dose was given. |
+| Overdue tasks | Only when a task is past its due date. | Read-only; finish tasks on the Calendar page. |
+| Running low | On Home when an item's count reaches its low level. | Read only; update the count on the Storage page. |
+| Warranty ending | On Home when a stored item has a warranty ending in the next 30 days. | Tap the Manual link if one is saved. |
+| Car due soon | When a date is within 30 days or overdue, or an oil change is within 500 miles. | Read-only. |
+| Hobbies | On Home when something for a picked hobby is due today, tomorrow or within a week. | Read only; open the Hobbies page for details. |
+| Something to do today | Saturday and Sunday mornings, 8 to 10 AM. | Read-only; the Family Board card has We did it. |
+| Doorbell | Appears on a ring or person detection and stays 10 minutes after the last one, on Home, Cameras, Security and room pages (never a second copy). | Talk, open the camera, or tap Got it to hide it on this screen until the next ring. |
+| Package left outside | Appears for a package delivered within 24 hours when nobody is home today or after dusk, until you tap Got it. | Tap Got it to hide that package. |
+| New free AI options | On Home for admins while finds from the last 7 days remain. | Tap Add to Jot it down to file it as an idea, or Dismiss. |
+| Air restrictions near home | When a nearby airport is affected or a restriction covers or is near home. | Read-only. |
+| Pet care due | On Home while a pet task is due; stays until Done and says overdue after an hour. | Tap Done to log the dose or confirm the feeding. |
+| Bedtime | From the usual bedtime hour for 3 hours, while a routine runs, and while sitter mode is on. | Tap Start to begin the routine or Next to move to the following step. |
+| Roll up the car windows | Appears when a car window is open and it is raining or the rain chance is 50 percent or more. | Read it and close the windows; the card clears once they are closed or the rain risk passes. |
+| Pick up dinner? | On Home 4 to 8 PM when someone is heading home from a trip. | Tap a phone number to call, or Copy the order. |
+| Dishwasher | Home shows it while running or clean. A kitchen room page also shows it when dirty. | Start or cancel a timer, and tap Emptied when the dishes are put away. |
+| Pickup soon | In the 15 minutes before pickup, on days the schedule applies. | Read-only. |
+| Pack a lunch | On Home from 6 to 9:30 AM on days marked as pack a lunch. | Read only; change the days in the Kid monitor card. |
+| Earbuds battery | On Home when any earbud battery is at or below the limit you set. | Read only; put them on the charger. |
+| Internet provider outage | On Home when the sensor has said down for more than 2 minutes; clears when back up. | Open the provider outage page link if one is saved in the Internet card settings. |
+| Bills due | When a bill is due within the lead time (default 3 days) or is overdue. | Tap Mark paid; a repeating bill moves to its next date. |
+| Energy | Appears after noon when today so far is at least 1.5 times the recent daily average. | Read only. |
+| Power outage | Appears only while that grid sensor reports an outage and goes away when power is back. | Tap Open to go to the Energy page. |
+| Plug in the car | Appears from 6 PM when the battery is below your chosen level and the car is not plugged in. | Read only. |
+| Added from email | When something was added in the last 24 hours or an email is waiting. | Follow the link to the Family Board to undo an item or approve a waiting email. |
+| Featured | Until the post's show-until date. | Tap the link to open the post. |
+| Gaming | On Home while someone is playing. | Read only. |
+| Achievement | Appears for 3 hours after an unlock. | Read only. |
+| Garage door left open | Appears when a door picked in settings, or a limit shorter than 10 minutes, has been open too long; the plain Garage open card covers the default 10 minutes. | Tap Close and confirm to close the door. |
+| Gas price drop | Appears when gas alerts are on and a station within 8 miles is at or below your target price, or the regular-gas area average fell 10 percent in a day. | Tap Go to open driving directions in Google Maps. |
+| Gig night | Appears from the morning of a gig day until breakdown ends. | Read only. |
+| Nursery temperature | On Home in the evening and night, or while the nursery is asleep, when outside the range. | Read only; set sensors and range with Pick sensors on the Family page. |
+| For your hobbies | Garden tip 7 AM to 8 PM when no rain is forecast for 3 days; running tip 5 AM to 7 PM when a 2+ hour window is 40 to 82 degrees, dry and calm. | Tap the Hobbies link. |
+| Insurance list | Only when something on the list needs review and you have not snoozed it; hidden when the list is empty or all up to date. | Tap Review to open Storage, where you can mark the list reviewed or be reminded in a month. |
+| Timers | On Home while any kitchen timer is running or paused. | Tap Cancel to stop a timer; a chime and message play when one finishes. |
+| Laundry | On Home while an appliance is running or finished; clears when its door opens or you tap Done. | Tap Done when the clothes are moved. |
+| Pool | Appears when a reading is low or high, or the last manual test is older than your reminder days. | Tap Open Pool or Log a test to go to the Pool page. |
+| Everyone left | Appears for 45 minutes after the last person leaves, only if something is left on or open. | Turn all lights off, or lock and close the garage with a tap-twice confirm. |
+| Eat this first | Appears when a leftover is due within a day or already past its date. | Read only on Home; manage leftovers on the Pantry page. |
+| Reading tonight | About 6 to 9 PM, when a book is picked for today. | Tap We read it to log it. |
+| Out the door | On Home weekday mornings 6 to 9:30 AM, while someone is home and items remain unticked. | Tap the link to open the Kitchen checklist and tick items off. |
+| Quiet hours | On wall screens and TVs only while quiet hours are active. | Read only; change it in Settings. |
+| Real-device checks | On Home once a week while any check is unticked; stops when all are ticked. | Open the checks, or remind me next week. |
+| Recently used | Appears when a card on another page was used in the last 4 hours. | Tap a row to go back to that card. |
+| Calendar clash | On the Calendar page and Family Board when a clash is found; on Home only for a clash today. Gone after Fixed or Not a clash. | Tap Fixed when you sorted it, or Not a clash to stop flagging that pair. |
+| Overnight | Built once on the first screen wake after 6 AM; shows on Home and Security until 10 AM. | Tap Got it to hide it for the day. |
+| Trip prep | From 3 days before a trip until you leave, and again on the last day of the trip until the day after. | Tap Open the plan to tick things off on the Family Board. |
+| Something unusual | Only when today drifts from the usual for that weekday and a weekday has at least 3 learned days; hidden once answered. | Tap Expected to teach it that this is normal on that weekday, or Dismiss to hide it for today. |
+| Weekend plans | Friday after 5 PM until Sunday night. | Tap Add to put a plan on the family calendar. |
+| Security alerts | When an important alert from the last 24 hours has not been marked seen. | Read-only here; mark alerts seen on the Activity page under the Security chip. |
+| Smoker | On Home while the pit is hot, or once the probe reaches its goal until dismissed (dismissing hides it for 6 hours). | Tap Dismiss on the done message. |
+| Steam Deck battery | Only when the battery is under 20 percent and not charging. | Read-only. |
+| Cast dashboard | Appears while a TV is casting the dashboard, and only if the cast countdown is on. | Open YouTube, YouTube TV or the Watch app on that TV with a tap. |
+| TV volume leveler | Only on a room page, for a TV in that room with the leveler on. | Read-only. |
+| Running on battery | After 30 seconds on battery, and for two minutes after the power returns. | Tap Safe shutdown (and confirm) when a NAS shutdown button exists. |
+| Printer ink low | When a level is at or below the limit set on the Utilities page. | Read-only. |
+| Vision alerts | Appears when a vision check is on and its latest answer is an alert you have not yet acknowledged. | Tap the acknowledge button to dismiss the alert. |
+| Cats not fed yet | After the feed-by time passes with no feeding seen. | Tap Fed them to clear it. |
+| Wellbeing | Affirmation 5 to 11 AM if turned on; wind-down from the lead time before bedtime until an hour after, if on. | Tap the link to open the Wellbeing page. |
+| What’s new | Appears on the first open after an update, until you tap Got it or the New marks days pass (default 3). | Tap Got it, or Settings for sound, the big announcement, wall screens and how long the marks stay. |
+| Claude is working | For admins with the alert switch on, while any item is active. | Read-only. |
+| Workout summary | On Home for 2 hours after a workout or interval timer finishes. | Read only. |
+| Shopping run | On the weekly shopping day, or when the list reaches the set size. | Tap Start shopping to open the list grouped by store section. |
+| Package on the porch | While the package sensor is on, or a logged outside package is gone from view. | Open the camera from the button. |
+| Closings and delays today | Only when a feed lists a matching closing or delay today. | Tap Details to open the source page. |
+| Camera sees something | On Home when a watched state equals its alert value for the minutes you set. | Tap Open camera to see the camera. |
+| Mail truck | On Home when a vehicle sensor turns on, or near the usual mail time once learned and not yet seen. | Tap Yes, mail truck or Not it, or Open camera. |
+| PC running hot or full | On Home while one of those is true; gone when it clears. | Read-only. |
+| 3D print | On Home for an hour after a finish, or three hours after a failure; gone after. | Read-only. |
+| Router or NAS offline | On Home while it is true; gone when it is back. | Read-only. |
+<!-- homecards:end -->
 
 Every one of these also lives on its own page's **Right now** card (see [Every feature](features.md#home-automatic-cards) for which page owns which). Add `?popdemo=1` to the dashboard address to preview every pop-up card with sample text.
 

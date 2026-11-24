@@ -88,6 +88,7 @@ This is the core idea: **the screen shows what matters right now and gets out of
 - **Every card has a home page** where it always shows: "Rain coming" lives on Weather, "Trash night" on a family page,
   "Leave soon" on Commute, the dog on Pets. On its page it shows all the time, with a calm line when nothing is happening
   ("No rain expected soon").
+- **A card can live in more than one place.** Every card has a home page and can also appear on any other page where it is useful (one shared card, drawn the same way). The Raspberry Pi card, for example, is on System and on Hardware.
 - **Home never owns a card.** When a card's information matters (it has a clear show rule), Home shows a **copy** of it.
   When it stops mattering (a clear hide rule), the copy goes away by itself.
 - Give every pop-up copy a **minimum time on screen** (a few minutes) so it doesn't flicker, and let it say when the
@@ -293,7 +294,7 @@ Before shipping any change, confirm:
 - [ ] Every new card uses the shared card helper and one of the three sizes (standard, wide, full).
 - [ ] The page's cards are in a packing grid, fill their columns, and share one single-card width.
 - [ ] Container cards square up their tiles and never cut a name below one whole word.
-- [ ] The card lives on its own page; any Home copy has a clear show rule and hide rule.
+- [ ] The card has a home page (it may also show on other pages where it is useful); any Home copy has a clear show rule and hide rule.
 - [ ] Related pages show the card too.
 - [ ] Content stays within the page width cap (except in Full window).
 - [ ] Only the body font family and the size scale tokens are used.

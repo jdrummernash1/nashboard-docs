@@ -14,7 +14,7 @@ page starts once the dashboard opens.
 ## 1. Take the welcome tour
 
 The first time you sign in, a short tour explains the menu, alerts, location and the cards that come and go. You can
-run it again from the **About** page.
+run it again from the **About** page. To look around first with made-up data, open the dashboard address with `?demo=1` on the end.
 
 ## 2. Let your rooms appear
 
@@ -34,8 +34,7 @@ up in the menu by themselves the moment Home Assistant has a camera or a calenda
 
 ## 4. Set up the pages that wait for you
 
-Commute, Pets, Pool, Utilities and Energy stay out of the menu until they have something to show. Open **Settings →
-Menu pages**, scroll to **More to set up** and tap **Set up** on the ones your house has. The page opens with its own
+Commute, Pets, Pool, Utilities and Energy stay out of the menu until they have something to show. Open **Settings → You → Menu pages**, scroll to **More to set up** and tap **Set up** on the ones your house has. The page opens with its own
 set-up steps and joins your menu. Cards that are waiting to be set up on any page are folded into one **More to set up** card at the end of that page, so every page opens on its main content.
 
 ## 5. Make Home yours
@@ -46,10 +45,10 @@ go on their own. What you can do:
 - **Hide a card** from its ⋯ menu: for today, for good (just for you), or, as an admin, for everyone.
 - **Move a card** with Move in the same menu.
 - **Collapse a card** by tapping its top bar. Your choice is remembered on every screen you sign in to.
-- **Draw your house**: the **Your house** card on the Settings page sets the roof, walls, door, windows and trees of
+- **Draw your house**: the **Your house** card (Settings → Household) sets the roof, walls, door, windows and trees of
   the banner house, plus the mailbox, driveway, fence, shutters, garage door, lights and holiday decorations, and can suggest them from a photo.
 
-Every card also lives on its own page (Rain coming on Weather, Trash night on the Family Board), so hiding a Home copy
+Every card also lives on at least one page of its own (Rain coming on Weather, Trash night on the Family Board), so hiding a Home copy
 never loses anything.
 
 ## 6. Set up each person
@@ -60,19 +59,21 @@ never loses anything.
   message to send. Nothing is emailed by the app.
 - **Phones**: install the Home Assistant app and sign in. It brings who is home, notifications with the screen off, and
   phone sensors. On the Family Board, each person chooses whether their place shows.
-- **Menu pages** (Settings): choose the pages you want and their order.
+- **Menu pages** (Settings → You): choose the pages you want and their order.
 
 ## 7. Put it on the wall and the TV
 
 - **A wall tablet**: open the dashboard in a kiosk browser and tap **Full window**. Kitchen tablet mode returns to Home
-  when idle and dims at night. With a presence or motion sensor, **Wake on approach** (Cast sheet → This device)
+  when idle and dims at night. With a presence or motion sensor, **Wake on approach** (Settings → This screen)
   brightens the screen when someone walks up.
 - **A TV**: the cast button in the top bar shows a rotating Display view; each TV can have its own setup. A display can
   also be a picture frame when the room is empty.
-- **A kid's tablet**: set the start page to Kids and turn on the kid lock (Cast sheet → This device) with a 4-digit
+- **A kid's tablet**: set the start page to Kids and turn on the kid lock (Settings → This screen) with a 4-digit
   grown-up PIN.
 
 The full list per device is on the [Device setup checklist](device-setup.md).
+
+Quiet at night: turn on Household quiet hours (Settings → Alerts) so chimes, big notices, announcements, the intercom and screen dim all follow one schedule.
 
 ## 8. Decide about AI
 
