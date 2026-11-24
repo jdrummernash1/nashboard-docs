@@ -683,7 +683,7 @@ Everything is described on [Settings and personalisation](settings.md).
 
 Version and build (with the pieces count), **What's new**, the full feature list, a scrolling **Credits** card (a plain
 list with reduced motion), data-source credits, the user manual, and **Run the tour
-again**. It is always the last page, and an **i** button in the top bar opens it. Top-bar buttons that don't fit on a
+again**. It also has five simple pictures (how the app works, how your data is kept, where cards show up, who can see what, and for admins how the AI builds it); see [About page diagrams](diagrams.md#about-page-diagrams). It is always the last page, and an **i** button in the top bar opens it. Top-bar buttons that don't fit on a
 phone scroll with a soft fade.
 
 ## Labs

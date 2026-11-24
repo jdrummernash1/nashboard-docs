@@ -3,7 +3,7 @@ title: Diagrams
 ---
 # Diagrams
 
-Three diagrams: how the app works, how AI is used both inside the app and to build it, and how a build is checked, kept moving and shown to friends.
+Three diagrams: how the app works, how AI is used both inside the app and to build it, and how a build is checked, kept moving and shown to friends. Further down: [the pictures on the About page](#about-page-diagrams), the simple ones the app shows everyone.
 
 ## 1. How the app works
 
@@ -143,3 +143,37 @@ Legend:
 - Solid arrow: a job or result moving along.
 - Dotted arrow: a side route (the Fable review) or the watcher waking the main chat.
 - Purple boxes: Claude helpers. Green: the existing checks. Orange: the new checks and the deploy. Grey: the watcher. Blue: demo mode.
+
+## About page diagrams
+
+These are the quick pictures on the app's **About** page, drawn for everyone in the household rather than for builders. They use one picture language: a plain box is a thing or a step, a tinted box is the centre of that picture, a cylinder is saved data, a dashed outline is a boundary, a safeguard or something that goes away, a solid arrow is a flow, a dotted arrow happens on its own (or goes online), and a numbered badge gives the order.
+
+### How the app works
+
+Your devices and cameras feed Home Assistant inside your home. Online services (weather, flights, calendars, news) come in over the internet. Home Assistant serves the dashboard and keeps its saved data; screens and the phone apps show it.
+
+<img src="images/diagrams/about-how-the-app-works.svg" alt="How the app works: devices, cameras and online services feed Home Assistant inside your home, which serves the dashboard and its saved data to screens and phone apps." width="440">
+
+### How your data is kept
+
+Whatever a person types, taps or picks is saved right away where it belongs: to you, to the household, or to this screen only. Every screen and phone then loads the same data. Safeguards: a failed or empty load never replaces what is on screen, updates back up first and migrate old data, and the last 20 versions can be undone, with a copy every night.
+
+<img src="images/diagrams/about-how-data-is-kept.svg" alt="How your data is kept: an entry is saved right away to you, the household or this screen, and every screen loads it back; safeguards for failed loads, updates and undo." width="440">
+
+### Where cards show up
+
+Every card lives on its own page. That page's Right now card shows the live rows and folds the quiet ones into one line. While something matters, a copy shows on Home (urgent first, then today, then the rest); when it stops mattering the copy goes away. Home never owns a card, it only borrows copies.
+
+<img src="images/diagrams/about-where-cards-show-up.svg" alt="Where cards show up: each card lives on its own page, a copy appears on Home while it matters and goes away after." width="440">
+
+### Who can see what
+
+Each step out sees less: your own choices and the private Wellbeing page are only yours; lists, schedules, rooms and cameras are shared with the household; guests and sitters get the Guest page and a short menu; and online AI gets nothing unless an admin allows cloud AI.
+
+<img src="images/diagrams/about-who-sees-what.svg" alt="Who can see what: only you, everyone in the household, guests and sitters, and online AI, each seeing less." width="440">
+
+### Behind the scenes: how the AI builds it
+
+Shown on About to admins only: an idea goes to the backlog, the main Claude chat plans a batch, helpers do the work starting with the cheapest, and every change passes the automatic checks before it is deployed. The full version is diagram 3 above.
+
+<img src="images/diagrams/about-how-ai-builds-it.svg" alt="How the AI builds the app: idea, backlog, main chat plans, helpers do the work, checks, deploy." width="440">

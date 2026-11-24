@@ -6,7 +6,7 @@ title: Change log
 
 Everything shipped, newest first. Each build is a small batch of improvements. See [Every feature](features.md) for the full list.
 
-## Nov 24 2026
+## Nashboard 1.0 · Nov 24 2026
 
 - Set-up cards fold into one "More to set up" card, the quiet-rows fold is remembered, the menu is grouped into sections, readable weather hour labels, Fire safety cards full width on the Family Board, readable NEW badge. (BUILD .265)
 - **Nashboard 1.0.** Version label in About, docs site published with the 1.0 page, GitHub release v1.0 with the coffee link (preview: downloads open later). (BUILD .264)
@@ -15,7 +15,7 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 - Privacy before 1.0: no seed or car-art files in the public folder, names filtered out of the published backlog, neutral picture file names, guest mode without commute, local-AI-only gate on every AI feature (AI privacy card), Who is on without pages, no hardcoded household values; developer tools (bug button, backlog count, Claude card) admin-only and out of the family view. (BUILD .261)
 - Release candidate 1.0: TV view with compact weather and radar, banner colours and leaves in front, same-size buttons everywhere (sizecheck), 44 px tap targets on every page (tapcheck), contrast check, camera sound, Garage on shared storage places, bug button always on screen, Family Board document import, Amazon status updates, crisp About diagrams, smooth Home scrolling, longest idle agent, dishwasher seconds. (BUILD .260)
 
-## Builds .227 to .259
+## Pre-release · Builds .227 to .259
 
 - Hotfix: Refresh button the same size as the other top bar buttons. (BUILD .259)
 - Import now request handled.
@@ -132,7 +132,7 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 - BUILD .248: card buttons never sit under the 3-dot button (new overlap check); fastest plane always on the Planes map; Jot it down shows the next import time; camera order drag and drop; self-restarting stuck watcher.
 - BUILD .249: Markets card shades gains and losses and shows top watchlist movers; urgent phone alerts now arrive with the screen off (high priority, no expiry).
 
-## Builds .205 to .222
+## Pre-release · Builds .205 to .222
 
 - Kids page pickup time (BUILD .221).
 - HA restarted twice: fixed the YAML that blocked restarts, all automations/timers/car items loaded, reload trigger and Claude usage sensors now read from disk; automatic YAML reload confirmed (20 s).
@@ -154,7 +154,7 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 - Kids page, pantry use-by suggestions, Garage tool storage, map zoom check, Storage here count fix (BUILD .206).
 - Swipe between pages on phones, Planes map zoom fixes (tile seams, blank past zoom 16), trail entries in the map legend (BUILD .205).
 
-## Builds .110 to .204
+## Pre-release · Builds .110 to .204
 
 - Each TV gets its own TV-dashboard view (survives reloads), legend on the Map path (BUILD .204).
 - New build chime, wishlist links show at once with a Pending tag, legends on the Planes map and Bitcoin chart (BUILD .203).
@@ -252,7 +252,7 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 - Design rule: cards live on their page first; Home shows copies when they matter.
 - Dog timeout uses the dog's name from Pet characters (BUILD .110).
 
-## Builds .18 to .109
+## Pre-release · Builds .18 to .109
 
 - Shopping page shows only shopping lists (BUILD .109).
 - Docs version 2.0: Living with Nashboard guide, Home pop-up table and pages refreshed, Pantry page added.
