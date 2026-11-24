@@ -41,7 +41,9 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 - **Full-screen card notices are off by default**, and when on they are for urgent cards on wall screens and TVs.
 - **A real starting list.** The Setup checklist begins with Getting started (rooms, weather, calendar, shopping list,
   cameras, speakers, phones, commute); optional extras are folded away and not counted.
-- **A grouped menu:** the side menu, the phone More sheet and Menu pages share headings (Everyday, House, Family, Out & about, Fun & info, Labs, System), and cards waiting for set-up fold into one More to set up card at the end of each page.
+- **A grouped menu:** the side menu, the phone More sheet and Menu pages share headings (Everyday, House, Family, Out & about, Fun & info, Labs, System), and cards waiting for set-up fold into one More to set up card at the end of each page. On a desktop the groups are colour-tinted containers instead of heading words, with a Frequent group of your most-used pages first.
+- **Phone and tablet page bar:** slides through every page (Frequent first, tinted groups, More pinned), buttons at least 48 px.
+- **Card text fills the card:** titles and main values grow to use the space each card already has, without making any card taller.
 - **Pages that wait until set up** (Commute, Pets, Pool, Utilities, Energy) are listed under More to set up in Menu
   pages with a Set up button, instead of hiding with no way in.
 - **Kids page for kids:** no set-up text or edit buttons in front of a child; a Grown-ups button behind the PIN.
@@ -105,7 +107,8 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 - **Right now links:** tapping a row scrolls to the matching card and outlines it.
 - **About:** a "Provided by Home Assistant" card with the Core, OS and Supervisor versions; lines of code and pieces are counted at build time.
 - **Settings page and Your house editor**, with alerts when work starts.
-- **Top bar on two rows** on any device when it does not fit.
+- **Top bar:** tight buttons that scroll past half the bar, the open-backlog count in the version line, and text that scrolls instead of being cut off (replaces the earlier two-row top bar). A small house icon shows in the browser tab.
+- **Pantry and Recipes buttons:** every chip delete button and meal-plan handle or remove button has its own 44 px touch area, so none overlap.
 - **Quiet hours per room:** a room's chimes and tones stay muted on that room's screen (a kid's room defaults to 8 PM to 8 AM).
 - **Week ahead:** duplicates, daily chores and trash entries are hidden with a "+N routine items hidden" note.
 - **Notes box:** grows as you type, newest first, with photo thumbnails, an Edit button and no limit.
@@ -252,7 +255,8 @@ the feeder, internet services and more. Every new feature adds a fact when it ha
 - **Banner windows map** (System page): choose which Home Assistant room or light each window, the porch light and the
   lamp in the house picture stand for, with a Highlight button to see which is which. The lights and decorations
   follow it.
-- **The mailbox door** swings open with envelopes when mail is expected today (USPS Informed Delivery emails).
+- **The mailbox** stands on the outside edge of the driveway (or where you choose in Your house) and its door swings open with envelopes when mail is expected today (USPS Informed Delivery emails).
+- **Art to the edges, chip strip in place:** the banner picture reaches every edge of its card (no grey band), and the strip of **two-line chips** (label on top, detail below, a long line scrolls inside its chip) sits between the horizon and the banner's bottom edge at every width. On phones the banner shows the whole house.
 - **Weather** sits in the banner on wide screens, and as a compact card on phones (current conditions, the next few
   hours, rain, wind, sunrise) that opens to the full forecast with a tap and opens by itself when rain is likely.
 - **Info chips** for lights on, the garage, indoor temperature and humidity, mail and packages, low batteries, open
@@ -269,7 +273,7 @@ the feeder, internet services and more. Every new feature adds a fact when it ha
 - **Tap the house banner** to see why it looks the way it does: a bubble explains what drives the sky (holiday, weather
   effect, sunrise and sunset) and what drives the house (lights on, packages delivered today, holiday decorations), with
   links to the pages behind each.
-- **Your house from a photo**: the Your house editor reads a photo of your home and suggests the roof, walls, trim, door and trees for the banner (with an AI in Home Assistant, or from the photo's colours on the device, where the photo never leaves it). You review every choice before saving.
+- **Your house from a photo**: the Your house editor reads a photo of your home and suggests the roof, walls, trim, door and trees for the banner (with an AI in Home Assistant, or from the photo's colours on the device, where the photo never leaves it). You review every choice before saving. The editor also has a **Mailbox** section (spot: outside or inside edge of the driveway, by the front walk, on the porch wall or none; style: classic post box, stone or brick pillar, modern box, wall-mounted; colour), a **Driveway** (side, straight or curved, surface colour), a **fence** (none, picket, privacy, split rail, with colour), **shutter colour**, **garage door** style and colour, and switches for **path lights**, **string lights** and **holiday decorations**. A live preview shows each choice.
 
 ---
 

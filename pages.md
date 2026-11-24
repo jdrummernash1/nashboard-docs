@@ -12,7 +12,7 @@ title: All pages
 
 
 
-Pages appear in the side menu (or the bottom bar and "More" sheet on phones). The menu, the More sheet and Menu pages are grouped under short headings: **Everyday**, **House**, **Family**, **Out & about**, **Fun & info**, **Labs** and **System**. Home and the tab-bar pages stay first and About stays last. Each Home Assistant user can choose
+Pages appear in the side menu (or the bottom bar and "More" sheet on phones). The menu, the More sheet and Menu pages are grouped under short headings: **Everyday**, **House**, **Family**, **Out & about**, **Fun & info**, **Labs** and **System**. Home and the tab-bar pages stay first and About stays last. On a desktop each group is its own softly tinted container (alternating colours, no heading words; screen readers still hear the group name). A **Frequent** group of your most-used pages comes right after Home, and a page shown there is not listed again in its own group. Each Home Assistant user can choose
 which pages they see, and in what order; see [Settings](settings.md). Some pages only appear once their data exists:
 for example, Cameras needs at least one camera. Pages you set up yourself (Commute, Pets, Pool, Utilities and Energy)
 wait under **More to set up** in Menu pages, each with a **Set up** button that opens the page and adds it to your menu.
@@ -65,7 +65,10 @@ left- or right-handed phones).
 
 ## More on every page
 
-- **Open backlog chip** (admins who maintain the app only): a small number chip in the top bar shows how many items are open in the backlog; tap it to open the Design Studio. The strip scrolls instead of squeezing, and a failed load keeps the number already shown.
+- **Top bar:** buttons sit tight together; the button strip takes at most half the bar and scrolls past that, and every piece of top-bar and banner text scrolls on its own when it does not fit, instead of being cut off or overlapping. The version line shows the time, the version and, for admins who maintain the app, the number of open backlog items (for example "10:14 AM · v1.5 · 11 open"); tap the count to open the Design Studio. A failed load keeps the number already shown.
+- **Phone and tablet page bar:** the bottom bar fits as many page buttons as the width allows and slides sideways through every page, Frequent pages first, then the groups in menu order as tinted segments (no heading words), with **More** always pinned at the end. Buttons are at least 48 px.
+- **Card text fills the card:** card titles (and marked main values) grow in a few steps, up to one and a half times, to use the room the card already has. No card gets taller, and sizes stay close from card to card.
+- **Browser tab icon:** the dashboard shows its own small house icon in the browser tab.
 - **New marks:** a new card gets a small "New" tag and a soft glow for up to 3 days. It goes away once you have seen it (on screen for 2 seconds) or tapped it, and the seen list follows your account.
 - **Labs switch:** Settings has a "Show Labs pages" switch that hides the whole Labs section from the menu for you. Each Labs page also keeps its own switch in Menu pages.
 - **Smooth touch scrolling:** while a finger is scrolling, timers and data loads that would redraw part of the page wait, then run once afterwards. Taps and typing are never held.
@@ -82,7 +85,7 @@ An optional soft picture behind every page, switched on in Settings under Displa
 
 ![Home page](images/home-dark.jpg)
 
-The page most screens sit on: an illustrated house banner with live status, and cards that appear when they matter
+The page most screens sit on: an illustrated house banner with live status (the art reaches every edge of the banner, and a strip of two-line chips sits between the horizon and the banner's bottom edge), and cards that appear when they matter
 (a plane overhead, rain coming, a game on, a package arriving) and leave when they don't. Every card and pop-up is
 described on the [Home page](home.md) guide and in the [Every feature](features.md#home-automatic-cards) table.
 

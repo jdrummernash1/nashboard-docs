@@ -36,7 +36,7 @@ Other settings that live elsewhere:
 
 ## Saved per Home Assistant user (follows you to every device)
 
-- **Menu pages**: choose which pages appear in your side menu (System → Menu pages, or More → Customize menu). The menu is grouped under Everyday, House, Family, Out & about, Fun & info, Labs and System, and your choices work inside each group.
+- **Menu pages**: choose which pages appear in your side menu (System → Menu pages, or More → Customize menu). The menu is grouped under Everyday, House, Family, Out & about, Fun & info, Labs and System, and your choices work inside each group. A **Frequent** group of your most-used pages comes first on the side menu and the phone and tablet page bar.
   Home always stays. Hidden pages still open from links, Multi-view and Display.
 - **Alerts and sounds**: overhead plane alerts, Space Station alerts, emergency (7700) alerts, connection-lost
   alerts, the doorbell/person chime and the garage chime. With **phone alerts** on, Home Assistant also notifies phones

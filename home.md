@@ -17,11 +17,11 @@ Home is the page most screens sit on. It has a banner at the top and a grid of c
 
 - **House illustration** drawn in the browser, with day and night skies, stars and the moon. Windows light up
   when that room's lights are on; the porch light and lamp post follow the front-yard lights.
-- **Driveway and mailbox**: the mailbox (a stone pillar) swings its door open with envelopes when mail is
-  expected today, from USPS Informed Delivery emails. It stays beside the driveway.
+- **Driveway and mailbox**: the mailbox stands on the outside edge of the driveway by default (you can move it, restyle it or recolour it in Your house) and swings its door open with envelopes when mail is
+  expected today, from USPS Informed Delivery emails. It stays put.
 - **Compact weather overlay** on wide banners: temperature, conditions, the next hours and quick facts. Narrow
   screens get a regular weather card instead.
-- **Status chips** in a scrolling marquee **below the house** (not over it): lights on, garage, indoor temperature and
+- **Status chips** in a scrolling strip of two-line chips (label on top, detail below) **below the house** (not over it), sitting between the horizon and the banner's bottom edge: lights on, garage, indoor temperature and
   humidity, mail and packages, low batteries, open doors and windows, updates available, pet problems. Tap a chip to
   act on it or open its details. Chips and switches have large invisible touch areas.
 - **Tap the banner** for a bubble that explains what drives it: the sky (holiday, weather effect, sunrise and sunset) and
@@ -29,8 +29,8 @@ Home is the page most screens sit on. It has a banner at the top and a grid of c
 - **Tidbit chip**: one fun fact per page load, rotating through topics (lines of code in the dashboard, planes
   overhead, Space Station passes, packages this year, devices reporting, daylight and more).
 
-The top bar shows the greeting, the time and date, how many lines of custom code the dashboard has, and the
-connection status.
+The top bar shows the greeting, the time and date, the version (with the open-backlog count for admins) and the
+connection status. Its buttons sit tight, and text that does not fit scrolls instead of being cut off.
 
 ## Cards
 

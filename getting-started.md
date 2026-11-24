@@ -47,7 +47,7 @@ go on their own. What you can do:
 - **Move a card** with Move in the same menu.
 - **Collapse a card** by tapping its top bar. Your choice is remembered on every screen you sign in to.
 - **Draw your house**: the **Your house** card on the Settings page sets the roof, walls, door, windows and trees of
-  the banner house, and can suggest them from a photo.
+  the banner house, plus the mailbox, driveway, fence, shutters, garage door, lights and holiday decorations, and can suggest them from a photo.
 
 Every card also lives on its own page (Rain coming on Weather, Trash night on the Family Board), so hiding a Home copy
 never loses anything.

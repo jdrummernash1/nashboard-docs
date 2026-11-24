@@ -50,8 +50,8 @@ and a 4-digit PIN, and a kid lock can keep a tablet on that page.
 ## Screens
 
 **Does it work on phones and tablets?**
-Yes, on Android and iPhone, in the Home Assistant app or a browser. Phones get a bottom tab bar and a More sheet; the
-layout re-packs to the screen instead of shrinking. More lists the other pages under the same headings as the side menu.
+Yes, on Android and iPhone, in the Home Assistant app or a browser. Phones and tablets get a bottom page bar that slides through every page (your most-used pages first, More always pinned at the end); the
+layout re-packs to the screen instead of shrinking, and card text grows to fill each card. More lists the other pages under the same headings as the side menu.
 
 **And on a TV?**
 The cast button shows a Display view made for across the room: bigger type, no buttons, rotating screens, and each TV
