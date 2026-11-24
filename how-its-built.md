@@ -280,7 +280,7 @@ and an iPhone size.
 
 ## How the build works
 
-The app is **written as about 190 numbered pieces** (JavaScript, CSS and a few HTML parts) and **served as one generated page** that runs inside Home Assistant through a small dashboard card. Editing one huge file is error-prone, and impossible for several workers at once, so the source is split: head, styles, body, then the script by feature, then the closing part. A build script joins them in file-name order, checks that the joined script parses, and writes the page. Nobody edits the generated page by hand.
+The app is **written as about 290 numbered pieces** (JavaScript, CSS and a few HTML parts) and **served as one generated page** that runs inside Home Assistant through a small dashboard card. Editing one huge file is error-prone, and impossible for several workers at once, so the source is split: head, styles, body, then the script by feature, then the closing part. A build script joins them in file-name order, checks that the joined script parses, and writes the page. Nobody edits the generated page by hand.
 
 <div class="hb" role="img" aria-label="Diagram: numbered source pieces are joined by a build script, checked, backed up, deployed to Home Assistant, and the backlog and wishlist are published with list guards">
 <div class="hb-row">

@@ -92,3 +92,105 @@ html body .tour-nav a{background:var(--info);color:#06121f}
 html body .tour-nav a.nx{background:var(--acc);color:#1d1406}
 html body .tour-step{border-top-color:var(--line)}
 html body .tour-count{color:var(--mut)}
+
+/* ===== 1.0: the docs site looks like the app =====
+   Top bar with the same line icons as the app menu, every section a glass card, chips, the amber accent, framed screenshots,
+   a hero on the home page, a footer with the coffee link, and on phones the same bottom tab bar and More sheet as the app. */
+:root{--acc-tx:#ffb547;--gap:16px;--glass:rgba(255,255,255,.045);--shadow:0 10px 30px rgba(0,0,0,.28)}
+@media (prefers-color-scheme:light){:root:not([data-theme=dark]){--acc-tx:#8a5200;--glass:#ffffff;--shadow:0 8px 24px rgba(40,30,10,.10)}}
+:root[data-theme=light]{--acc-tx:#8a5200;--glass:#ffffff;--shadow:0 8px 24px rgba(40,30,10,.10)}
+html body{background:radial-gradient(1200px 600px at 12% -10%,color-mix(in srgb,var(--acc) 9%,transparent),transparent 60%),var(--bg);background-attachment:fixed}
+
+/* top bar */
+.nb-ic{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+html body .nb-brand .nb-name{color:var(--acc-tx);font-weight:800;letter-spacing:-.01em}
+.nb-tag{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin-left:2px}
+.nb-logo{box-shadow:0 4px 14px color-mix(in srgb,var(--acc) 40%,transparent)}
+html body .nb-nav a{gap:8px;min-height:48px;border-radius:16px}
+html body .nb-nav a.on .nb-ic{color:var(--acc-tx)}
+.nb-theme{display:grid;place-items:center;min-width:48px;min-height:48px}
+
+/* every section is a card */
+html body .main-content.nb-cards{background:none;border:0;box-shadow:none;padding:0;-webkit-backdrop-filter:none;backdrop-filter:none;display:flex;flex-direction:column;gap:var(--gap);margin:var(--gap) auto}
+.nb-card{background:var(--glass);border:1px solid var(--line);border-radius:22px;padding:18px 22px;box-shadow:var(--shadow);min-width:0;overflow-wrap:break-word}
+.nb-card > :first-child{margin-top:0}
+.nb-card > :last-child{margin-bottom:0}
+html body .main-content .nb-card h2{display:flex;align-items:center;gap:10px;border:0;padding:0;margin:0 0 .7rem;font-size:1.25rem}
+html body .main-content .nb-card h2::before{content:"";flex:none;width:10px;height:10px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 4px color-mix(in srgb,var(--acc) 22%,transparent)}
+html body .main-content h3{margin-top:1.2rem}
+html body .main-content h1{font-size:clamp(1.7rem,4vw,2.3rem);letter-spacing:-.02em;margin:.2rem 0 .6rem;color:var(--acc-tx)}
+html body .main-content a{text-underline-offset:3px}
+html body .main-content table{display:block;overflow-x:auto;max-width:100%}
+@media (max-width:640px){.nb-card{padding:14px;border-radius:18px}}
+
+/* chips, like the app's status chips */
+.nb-chips{display:flex;flex-wrap:wrap;gap:8px;margin:.6rem 0 1rem}
+.nb-chip{display:inline-flex;align-items:center;gap:6px;min-height:32px;padding:0 12px;border-radius:999px;background:var(--card2);border:1px solid var(--line);font-size:.85rem;font-weight:600;color:var(--tx)}
+.nb-chip.acc{background:color-mix(in srgb,var(--acc) 18%,transparent);border-color:color-mix(in srgb,var(--acc) 45%,transparent)}
+
+/* buttons */
+html body .main-content a.nb-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 20px;border-radius:999px;font-weight:700;text-decoration:none;border:1px solid var(--line);background:var(--card2);color:var(--tx)}
+html body .main-content a.nb-btn.pri{background:var(--acc);border-color:var(--acc);color:#1d1406;box-shadow:0 8px 20px color-mix(in srgb,var(--acc) 35%,transparent)}
+html body .main-content a.nb-btn:hover{filter:brightness(1.08);color:var(--tx)}
+html body .main-content a.nb-btn.pri:hover{color:#1d1406}
+
+/* hero (home page) */
+.nb-hero{position:relative;border-radius:26px;padding:clamp(22px,5vw,44px);border:1px solid var(--line);background:linear-gradient(135deg,color-mix(in srgb,var(--acc) 16%,transparent),transparent 55%),var(--glass);box-shadow:var(--shadow);overflow:hidden}
+.nb-hero .nb-kick{font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--acc-tx)}
+html body .main-content .nb-hero h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.05;margin:.35rem 0 .6rem;color:var(--tx)}
+html body .main-content .nb-hero h1 em{font-style:normal;color:var(--acc-tx)}
+.nb-hero p.nb-lead{font-size:clamp(1rem,2.2vw,1.2rem);color:var(--mut);max-width:46rem;margin:0 0 1rem}
+.nb-hero .nb-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:.4rem}
+/* three doors */
+.nb-doors{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:var(--gap)}
+html body .main-content a.nb-door{display:block;text-decoration:none;color:var(--tx);background:var(--glass);border:1px solid var(--line);border-radius:22px;padding:18px 20px;box-shadow:var(--shadow);transition:transform .15s,border-color .15s}
+html body .main-content a.nb-door:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--acc) 55%,transparent);color:var(--tx)}
+.nb-door b{display:flex;align-items:center;gap:10px;font-size:1.1rem}
+.nb-door b .nb-ic{color:var(--acc-tx)}
+.nb-door small{display:block;margin-top:6px;color:var(--mut);font-size:.9rem;line-height:1.45}
+.nb-door span{display:inline-block;margin-top:10px;font-weight:700;color:var(--acc-tx);font-size:.9rem}
+@media (prefers-reduced-motion:reduce){html body .main-content a.nb-door{transition:none}html body .main-content a.nb-door:hover{transform:none}}
+
+/* framed screenshots: a picture on its own line sits in a window frame, like a screen on the wall */
+html body .main-content p:has(> img:only-child:not([src$=".svg"]):not([src*="snip-"])){margin:1rem 0;padding:30px 8px 8px;border-radius:18px;border:1px solid var(--line);background:var(--bg2);box-shadow:var(--shadow);position:relative;line-height:0}
+html body .main-content p:has(> img:only-child:not([src$=".svg"]):not([src*="snip-"]))::before{content:"";position:absolute;top:11px;left:14px;width:8px;height:8px;border-radius:50%;background:#ff5f57;box-shadow:14px 0 0 #febc2e,28px 0 0 #28c840}
+html body .main-content p:has(> img:only-child:not([src$=".svg"]):not([src*="snip-"])) > img{display:block;width:100%;border-radius:11px}
+html body .main-content td img{border-radius:12px;border:1px solid var(--line)}
+
+/* footer */
+html body .site-footer{max-width:980px;margin:8px auto 28px;padding:0 12px;text-align:left;box-sizing:border-box;width:100%}
+.nb-foot{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;padding:16px 20px;border-radius:22px;border:1px solid var(--line);background:var(--glass)}
+.nb-foot-l{display:flex;align-items:center;gap:12px;flex:1 1 240px;min-width:0}
+.nb-foot-l b{display:block;color:var(--tx)}
+.nb-foot-l small{display:block;color:var(--mut)}
+.nb-foot-n{display:flex;flex-wrap:wrap;gap:4px 6px}
+html body .nb-foot-n a{display:inline-flex;align-items:center;min-height:44px;padding:0 10px;border-radius:12px;color:var(--mut);text-decoration:none;font-weight:600}
+html body .nb-foot-n a:hover{background:var(--card2);color:var(--tx)}
+html body .site-footer a.bmc{display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 18px;border-radius:999px;background:var(--acc);color:#1d1406;font-weight:700;text-decoration:none;box-shadow:0 8px 20px color-mix(in srgb,var(--acc) 30%,transparent)}
+html body .site-footer a.bmc:hover{filter:brightness(1.08);color:#1d1406}
+.nb-foot-s{text-align:center;color:var(--mut);font-size:.8rem;margin:10px 0 0}
+
+/* phones: the app's bottom tab bar and More sheet (solid, so page text never shows through) */
+.nb-tabs,.nb-sheet{display:none}
+@media (max-width:720px){
+  .nb-nav{display:none}
+  .nb-bar{justify-content:space-between}
+  html body{padding-bottom:calc(74px + env(safe-area-inset-bottom))}
+  .nb-tabs{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;justify-content:space-around;align-items:stretch;height:calc(66px + env(safe-area-inset-bottom));padding:4px 6px env(safe-area-inset-bottom);background:var(--bg2);border-top:1px solid var(--line);box-sizing:border-box}
+  html body .nb-tabs a,.nb-tabs button{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:48px;border:0;background:none;color:var(--mut);font:inherit;font-size:.72rem;font-weight:600;text-decoration:none;border-radius:14px;cursor:pointer}
+  html body .nb-tabs a.on{color:var(--tx)}
+  html body .nb-tabs a.on .nb-ic{color:var(--acc-tx)}
+  .nb-tabs .nb-ic{width:22px;height:22px}
+  .nb-sheet:not([hidden]){display:block;position:fixed;inset:0;z-index:70;background:rgba(4,6,10,.6)}
+  .nb-sheet-in{position:absolute;left:0;right:0;bottom:0;max-height:80vh;overflow:auto;padding:16px 14px calc(18px + env(safe-area-inset-bottom));border-radius:24px 24px 0 0;background:var(--bg2);border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .nb-sheet-t{grid-column:1/-1;color:var(--tx);padding:0 4px 4px}
+  html body .nb-sheet-in a{display:flex;align-items:center;gap:10px;min-height:52px;padding:0 12px;border-radius:14px;background:var(--card);border:1px solid var(--line);color:var(--tx);text-decoration:none;font-weight:600;font-size:.92rem}
+  html body .nb-sheet-in a.on{border-color:color-mix(in srgb,var(--acc) 55%,transparent)}
+  html body .nb-sheet-in a.on .nb-ic{color:var(--acc-tx)}
+}
+
+/* the stats banner keeps its own white type on the night picture, in both themes */
+html body .main-content .nbs-t b,html body .main-content .nbs-t span{color:#fff}
+html body .main-content .nbs .nbs-u,html body .main-content .nbs .nbs-u a{color:#fff}
+/* pictures that already carry their own window frame (snip-*.jpg) are shown as they are */
+html body .main-content p > img[src*="snip-"]{display:block;margin:1rem auto;box-shadow:var(--shadow)}

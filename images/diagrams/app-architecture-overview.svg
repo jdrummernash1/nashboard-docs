@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 590" width="1080" height="590" role="img" aria-labelledby="ttl desc" font-family="Segoe UI, system-ui, sans-serif">
 <title id="ttl">App architecture overview</title>
-<desc id="desc">Devices and online services feed Home Assistant on a Raspberry Pi 5. The dashboard file and the frontend data store sit beside it. Wall tablets, TVs and PCs open the dashboard; phone companion apps reach Android Auto, CarPlay and Wear OS. The AI PC deploys over the LAN.</desc>
+<desc id="desc">Devices and online services feed Home Assistant on a small home server. The dashboard file and the frontend data store sit beside it. Wall tablets, TVs and PCs open the dashboard; phone companion apps reach Android Auto, CarPlay and Wear OS. The AI PC deploys over the LAN.</desc>
 <style>
   .bg{fill:#f6f7fb;stroke:#e4e7ee}
   .card{fill:#ffffff;stroke:#dfe3ec;stroke-width:1.2}
@@ -54,7 +54,7 @@
 </defs>
 <rect class="bg" x="1" y="1" width="1078" height="588" rx="26"/>
 <rect class="grp" x="290" y="24" width="420" height="400" rx="22"/>
-<text class="gl" x="308" y="46">Raspberry Pi 5 · Home Assistant</text>
+<text class="gl" x="308" y="46">Home server · Home Assistant</text>
 <path class="e" d="M250 100L285 100L285 96L320 96" marker-end="url(#ms)"/>
 <path class="e" d="M250 218L285 218L285 118L320 118" marker-end="url(#ms)"/>
 <path class="e" d="M500 146L500 190" marker-end="url(#ms)" marker-start="url(#ms)"/>

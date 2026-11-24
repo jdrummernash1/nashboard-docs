@@ -78,6 +78,11 @@ closed?".
 
 ## What's new lately
 
+- **Pages open on what matters:** each page's Right now shows only what is live. Everything quiet folds into one line you can open.
+- **Today at a glance:** the first card on Home sums up the day in a couple of sentences.
+- **Urgent first:** a leak, a power cut or someone at the door is always at the top of Home.
+- **Kids page for kids:** grown-up controls sit behind the Grown-ups button and the PIN.
+- **More to set up:** pages for things you may not have (a pool, a commute, pets) wait in Menu pages until you tap Set up.
 - **Leftovers:** log them on Pantry & Fridge and Home tells you what to eat first.
 - **Gigs:** the old Band card plans setup and breakdown times around the show.
 - **Scan it:** point the camera at a barcode when adding to shopping, pantry or storage.

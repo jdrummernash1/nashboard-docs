@@ -7,9 +7,9 @@ Three diagrams: how the app works, how AI is used both inside the app and to bui
 
 ## 1. How the app works
 
-Home Assistant (HA) runs on a Raspberry Pi 5. It talks to devices, cameras and online services. The dashboard is one generated page (built from about 190 source pieces) served by HA, and everything a person enters is saved back into HA, never only in the page. Phones, the watch and the car reach HA through the companion apps, which also deliver notifications.
+Home Assistant (HA) runs on a small server at home (a Raspberry Pi class computer is enough). It talks to devices, cameras and online services. The dashboard is one generated page (built from about 290 source pieces) served by HA, and everything a person enters is saved back into HA, never only in the page. Phones, the watch and the car reach HA through the companion apps, which also deliver notifications.
 
-<img src="images/diagrams/how-the-app-works.svg" alt="Diagram of how the app works: devices, online services and cameras feed Home Assistant on a Raspberry Pi 5, with the dashboard, saved data, screens, companion apps and notifications" style="max-width:100%;height:auto">
+<img src="images/diagrams/how-the-app-works.svg" alt="Diagram of how the app works: devices, online services and cameras feed Home Assistant on a small home server, with the dashboard, saved data, screens, companion apps and notifications" style="max-width:100%;height:auto">
 
 *How the app works: sources feed Home Assistant, which shares data with the dashboard and the companion apps.*
 
@@ -20,7 +20,7 @@ flowchart LR
   Devices[Devices and sensors] --> HA
   Online[Weather, flights, calendar, news] --> HA
   Frigate[Frigate cameras] --> HA
-  subgraph Pi[Raspberry Pi 5 - Home Assistant]
+  subgraph Pi[Home server - Home Assistant]
     HA[HA core, YAML, automations]
     subgraph Dash[Generated dashboard page]
       Pages[Pages] --> Cards[Cards live on their page]
@@ -45,7 +45,7 @@ Legend:
 - Solid thin arrow: data or control flowing in the direction shown.
 - Double-line arrow: saved data (reads and writes of what people entered) and notification delivery.
 - Dotted arrow: a copy that appears temporarily and goes away again.
-- Boxed group: runs on the Raspberry Pi 5.
+- Boxed group: runs on the home server.
 - Cylinder: stored data.
 
 ## 2. The AI architecture
@@ -58,6 +58,7 @@ Two separate uses of AI. Inside the app, HA Assist and AI Task call a local mode
 
 <details markdown="1"><summary>Text version</summary>
 
+{% raw %}
 ```text
 flowchart TD
   subgraph InApp[In the app]
@@ -90,6 +91,7 @@ flowchart TD
 
   Deploy --> Assist
 ```
+{% endraw %}
 
 </details>
 

@@ -22,9 +22,9 @@ A tour of the tools and the workflow behind the dashboard: how the code is built
 
 ## 1. The build pipeline
 
-Home Assistant serves the dashboard as one page, but that page is generated and nobody edits it. The code is about 190 source pieces.
+Home Assistant serves the dashboard as one page, but that page is generated and nobody edits it. The code is about 290 source pieces.
 
-- **Source pieces** live in `src/dashboard/` (about 190 JavaScript, CSS and HTML files): head, styles, body, then the script split by feature, then a tail. They are joined in file-name order. New feature code goes in its own numbered piece and registers its buttons with `Object.assign(ACT, {...})`.
+- **Source pieces** live in `src/dashboard/` (about 290 JavaScript, CSS and HTML files): head, styles, body, then the script split by feature, then a tail. They are joined in file-name order. New feature code goes in its own numbered piece and registers its buttons with `Object.assign(ACT, {...})`.
 - **`build-dashboard.js`** joins the pieces into the generated `ha/www/dashboard.html` and fails the build if the joined script does not parse. It also stamps in the line and piece counts. `--check` fails if the built file does not match the pieces (a sign someone edited the output directly).
 - **`src-patch.js`** is a small helper for patch scripts: replace exact text wherever it lives across the pieces (it refuses ambiguous matches), bump the build number, save and rebuild.
 - **`pull-from-ha.ps1`** copies the hand-written files from Home Assistant into the repo so the local copy is never assumed current.
@@ -75,10 +75,8 @@ Auto mode keeps working through the backlog on its own, steered from a phone.
 - **Reset drift.** The 5-hour reset time moves, so every check-in compares it with the scheduled wake-up and re-arms the wake-up to five minutes after the new reset. Auto mode runs in the main chat through timed wake-ups so it stays visible on the phone.
 - **Fresh chat at the context line.** At a configurable context percentage the chat finishes its step cleanly, writes a hand-off note, starts one fresh session to continue, and stops.
 
-<!-- Add when the shots exist (made from drafts/autopilot-demo.html, made-up values only), then delete this comment wrapper:
 ![Autopilot panel, light theme, shown with demo values: status tiles, usage meters with stop lines, settings, work order, notes and agents](images/autopilot-panel-light.png)
 ![Autopilot panel, dark theme, shown with demo values: status tiles, usage meters with stop lines, settings, work order, notes and agents](images/autopilot-panel-dark.png)
--->
 
 ### How the main chat obeys the panel
 
@@ -126,7 +124,7 @@ The aim is the most finished work per unit of usage, without risking data.
 - Only `docs/` is public, with no personal details. The docs site is refreshed on every build that ends in 0, starting at build .260.
 - Whenever a helper, page or integration is added, the usage log, work status, deploy report, checks, docs and hand-off note are updated in the same pass.
 
-## Additions on Nov 23 2026
+## Recent additions
 
 - **Jump check** (`jumpcheck.js`). On the Design Studio page it collapses and re-expands three cards one at a time. After each toggle the toggled card's top must stay within 4 px of where it was on screen, and every other card must keep its column and still be there. It prints OK or each problem, and runs with the other checks before a deploy.
 - **Performance check catches mutation loops.** An idle-CPU and long-task baseline now flags a script that keeps changing the page in a loop (one such loop in the scrolling chips was found and fixed this way).

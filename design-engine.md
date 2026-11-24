@@ -128,7 +128,7 @@ The family relies on this data, so these rules are the top priority.
   Backups are also made hourly while working, and after every batch of shipped items. Retention keeps the newest few, plus the newest
   of each week and each month. Deploys also back up saved frontend data, which never leaves the home server. Secrets and the database
   are never copied.
-- **Source of truth.** The dashboard is built from about 190 small source pieces that a build script joins into one generated page. The built file is never edited by hand,
+- **Source of truth.** The dashboard is built from about 290 small source pieces that a build script joins into one generated page. The built file is never edited by hand,
   and files are always pulled from Home Assistant first so a stale local copy is never assumed current.
 - **YAML safety.** Configuration files are syntax-checked before copying, and Home Assistant reloads them automatically afterwards.
 
@@ -145,7 +145,7 @@ The family relies on this data, so these rules are the top priority.
 - **Data check:** inventory of saved values, a round trip (seed, rebuild, reload, verify), and no silent shrinking of lists.
 - **Source and YAML checks:** the built dashboard must match its pieces, and configuration files must parse.
 
-## Newer rules (Nov 23)
+## Newer rules
 
 - **Locked in place:** expanding or collapsing a card never moves it or any other card; scroll stays anchored to the toggled card. Enforced by the jump check.
 - **Cross-posting:** a card's content can be posted to its other relevant pages or Home copies without duplicating the saved data.

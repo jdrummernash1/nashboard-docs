@@ -376,8 +376,28 @@ dashboard is maintained and is optional.
 
 ---
 
+## Added for 1.0
+
+Each of these is optional. A card that uses one says what to add when it is missing.
+
+| Source | What it powers | Needs |
+|---|---|---|
+| **Camera detection** (Frigate or any detector that makes person, package and state sensors) | Camera alerts, Person at the door, Package on the porch, Camera states, the Mail truck card, the Security log | The detector's Home Assistant integration |
+| **AI Task or a conversation agent** in Home Assistant (a local model such as Ollama first) | Today at a glance, page summaries, document and photo import, vision checks, the bedtime story, automation suggestions | Optional; only a local model is used unless an admin allows cloud AI |
+| **Open Charge Map** | Nearby chargers on the EV charging card | Nothing (public data) |
+| **Art Institute of Chicago open data** | Public-domain art for the background picture and the picture frame | Nothing (no key) |
+| **Open Library** | Looking up a book by title, ISBN or barcode for the bedtime library | Nothing (no key) |
+| **Wikimedia Commons** | A stock photo of each car's model when you have not added your own | Nothing; credited on About |
+| **US air traffic status and airspace feeds** | Air traffic tiles, restricted airspace and flight restrictions on Planes | Nothing (public data, US only) |
+| **Game accounts** (Steam, Xbox, PlayStation Network integrations) | The Gaming card, achievements, gamer of the week | The matching Home Assistant integration |
+| **Fully Kiosk Browser** integration, or the phone app's screen command | Wake on approach for wall tablets | A presence or motion sensor in the room |
+| **Power-monitoring plugs** | Laundry done, smart plugs, energy now | A plug that reports watts |
+| **A UPS** (NUT or APC UPS Daemon), **printer** (IPP, Brother, SNMP) and **leak sensors** | The Utilities page | The matching integration |
+| **Pool sensors**, **a pellet smoker**, **solar, generator and grid sensors** | Pool, the Smoker card, Energy sources | The matching integration, or log by hand (pool) |
+| **Health Connect sensors** from the Home Assistant phone app | The Workout health card | Turn the sensors on in the app |
+| **Google Find Hub / Find My Device**, or the phone app | Ring my phone on the Family Board | Either one |
+| **A Kroger-family store** | Open the store with your list, store-search links | Nothing; a store to-do list is optional |
+
 ## Planned sources
 
-Frigate camera detection (people, packages, the mail truck, garage state); package emails from any store; Kroger shopping
-sync; a UPS battery backup; a smoker; a printer; a pool sensor; power-monitoring plugs for laundry and energy; Google Find
-My Device; heart rate and treadmill data for the Workout page (watch and Health Connect); YouTube Music.
+Package tracking through the postal service's own developer feed; a custom car app (see [Future: car app](car-app.md)).

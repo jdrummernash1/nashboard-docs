@@ -29,6 +29,17 @@ What each kind of device needs for Nashboard to work fully. The same checklist i
 - Open **Rooms → Kitchen** to check the at-a-glance cards (Today, Who's home, Trash, Chores, the Living Room controls), the
   **Timers** (a chime plays when one finishes, so keep the volume up; it stays quiet at night) and **Out the door**.
 
+## Wall display, any room
+
+- Use a kiosk browser on the tablet (kiosk lock, screen on, starts by itself). With Fully Kiosk Browser, add its Home
+  Assistant integration so the screen can be switched on and brightened.
+- Put a presence or motion sensor in the room, then open **Cast → This device** on that tablet and turn on **Wake on
+  approach**: pick the sensors, how long before it dims, the brightness and whether it only runs at night.
+- A screen that is fully off can only be woken from Home Assistant, so add a wake automation if yours sleeps.
+- The **Wall display setup** card on the Kitchen room page checks each of these live.
+- Full-screen card notices for urgent cards are off by default; turn them on in **Settings → Card change notices** if
+  you want the wall screen to announce a leak or someone at the door.
+
 ## Phones (Android and iPhone)
 
 - Install the Home Assistant companion app, sign in, and set Nashboard as the app's default dashboard.

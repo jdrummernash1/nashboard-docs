@@ -2,7 +2,7 @@
 <html lang="{{ site.lang | default: 'en-US' }}">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0d0f13">
   <title>{% if page.title and page.url != '/' %}{{ page.title }} · {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ site.description }}">
@@ -10,26 +10,86 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
+  {% comment %} The same line icons the app's menu uses, drawn once and reused by the top bar, the phone tab bar and the More sheet. {% endcomment %}
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="i-tour" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></symbol>
+    <symbol id="i-pages" viewBox="0 0 24 24"><rect x="3" y="3" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="2"/></symbol>
+    <symbol id="i-feat" viewBox="0 0 24 24"><path d="m12 3 1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 16v4M17 18h4"/></symbol>
+    <symbol id="i-start" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.8 2.8L16 9.5"/></symbol>
+    <symbol id="i-setup" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></symbol>
+    <symbol id="i-set" viewBox="0 0 24 24"><path d="M4 6h9M17 6h3M4 12h3M11 12h9M4 18h11M19 18h1"/><circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+    <symbol id="i-data" viewBox="0 0 24 24"><path d="M9 2v6M15 2v6M6 8h12v3a6 6 0 0 1-12 0zM12 17v5"/></symbol>
+    <symbol id="i-faq" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.2a2.5 2.5 0 1 1 3.6 2.2c-.8.4-1.2 1-1.2 1.8M12 17h.01"/></symbol>
+    <symbol id="i-build" viewBox="0 0 24 24"><path d="M12 3 2.5 8 12 13l9.5-5zM2.5 13 12 18l9.5-5"/></symbol>
+    <symbol id="i-log" viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"/></symbol>
+    <symbol id="i-more" viewBox="0 0 24 24"><path d="M5 12h.01M12 12h.01M19 12h.01"/></symbol>
+    <symbol id="i-theme" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v18a9 9 0 0 0 0-18z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-coffee" viewBox="0 0 24 24"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 3v3M12 3v3"/></symbol>
+  </svg>
+  {% assign u = page.url %}
+  {% capture navlinks %}
+    <a href="{{ '/' | relative_url }}"{% if u == '/' or u == '/index.html' %} class="on" aria-current="page"{% endif %}><svg class="nb-ic"><use href="#i-home"/></svg><span>Home</span></a>
+    <a href="{{ '/tour.html' | relative_url }}"{% if u contains 'tour' %} class="on" aria-current="page"{% endif %}><svg class="nb-ic"><use href="#i-tour"/></svg><span>Tour</span></a>
+    <a href="{{ '/pages.html' | relative_url }}"{% if u contains 'pages' or u contains 'home.html' %} class="on" aria-current="page"{% endif %}><svg class="nb-ic"><use href="#i-pages"/></svg><span>Pages</span></a>
+    <a href="{{ '/features.html' | relative_url }}"{% if u contains 'features' %} class="on" aria-current="page"{% endif %}><svg class="nb-ic"><use href="#i-feat"/></svg><span>Features</span></a>
+    <a href="{{ '/getting-started.html' | relative_url }}"{% if u contains 'getting-started' %} class="on" aria-current="page"{% endif %}><svg class="nb-ic"><use href="#i-start"/></svg><span>Get started</span></a>
+    <a href="{{ '/setup.html' | relative_url }}"{% if u contains '/setup' or u contains 'device-setup' %} class="on" aria-current="page"{% endif %}><svg class="nb-ic"><use href="#i-setup"/></svg><span>Set up</span></a>
+    <a href="{{ '/settings.html' | relative_url }}"{% if u contains 'settings' or u contains 'themes' %} class="on" aria-current="page"{% endif %}><svg class="nb-ic"><use href="#i-set"/></svg><span>Settings</span></a>
+    <a href="{{ '/integrations.html' | relative_url }}"{% if u contains 'integrations' or u contains 'automations' %} class="on" aria-current="page"{% endif %}><svg class="nb-ic"><use href="#i-data"/></svg><span>Data</span></a>
+    <a href="{{ '/faq.html' | relative_url }}"{% if u contains 'faq' %} class="on" aria-current="page"{% endif %}><svg class="nb-ic"><use href="#i-faq"/></svg><span>FAQ</span></a>
+    <a href="{{ '/how-its-built.html' | relative_url }}"{% if u contains 'how-its-built' or u contains 'ai-build' or u contains 'developer' or u contains 'design-' or u contains 'diagrams' or u contains 'architecture' %} class="on" aria-current="page"{% endif %}><svg class="nb-ic"><use href="#i-build"/></svg><span>Behind the scenes</span></a>
+    <a href="{{ '/changelog.html' | relative_url }}"{% if u contains 'changelog' %} class="on" aria-current="page"{% endif %}><svg class="nb-ic"><use href="#i-log"/></svg><span>Changes</span></a>
+  {% endcapture %}
   <header class="nb-bar">
-    <a class="nb-brand" href="{{ '/' | relative_url }}"><span class="nb-logo">N</span><span class="nb-name">Nashboard</span></a>
-    <nav class="nb-nav" aria-label="Main">
-      {% assign items = "index.html|🏠|Home,tour.html|🧭|Tour,pages.html|🗂️|Pages,features.html|✨|Features,setup.html|🔧|Setup,settings.html|⚙️|Settings,themes.html|🎨|Themes,integrations.html|🔌|Integrations,how-its-built.html|🏗️|Build,changelog.html|📜|Changes" | split: "," %}
-      {% for it in items %}{% assign p = it | split: "|" %}{% assign cur = false %}
-        {% if p[0] == 'index.html' %}{% if page.url == '/' or page.url == '/index.html' %}{% assign cur = true %}{% endif %}{% elsif page.url contains p[0] %}{% assign cur = true %}{% endif %}
-        <a href="{{ p[0] | relative_url }}"{% if cur %} class="on" aria-current="page"{% endif %}><span class="nb-ic" aria-hidden="true">{{ p[1] }}</span><span>{{ p[2] }}</span></a>
-      {% endfor %}
-    </nav>
-    <button class="nb-theme" type="button" aria-label="Switch between dark and light theme" title="Dark / light">◐</button>
+    <a class="nb-brand" href="{{ '/' | relative_url }}" aria-label="Nashboard docs home"><span class="nb-logo" aria-hidden="true">N</span><span class="nb-name">Nashboard</span><span class="nb-tag">Docs</span></a>
+    <nav class="nb-nav" aria-label="Main">{{ navlinks }}</nav>
+    <button class="nb-theme" type="button" aria-label="Switch between dark and light theme" title="Dark / light"><svg class="nb-ic"><use href="#i-theme"/></svg></button>
   </header>
-  <main id="content" class="main-content">
+  <main id="content" class="main-content{% if u == '/' or u == '/index.html' %} nb-home{% endif %}">
     {{ content }}
   </main>
-  <footer class="site-footer"><span class="site-footer-credits">{{ site.title }} · <a href="{{ '/changelog.html' | relative_url }}">Change log</a></span></footer>
+  <footer class="site-footer">
+    <div class="nb-foot">
+      <div class="nb-foot-l"><span class="nb-logo" aria-hidden="true">N</span><div><b>{{ site.title }}</b><small>A Home Assistant dashboard that shows what matters right now.</small></div></div>
+      <nav class="nb-foot-n" aria-label="Footer"><a href="{{ '/getting-started.html' | relative_url }}">Get started</a><a href="{{ '/faq.html' | relative_url }}">FAQ</a><a href="{{ '/changelog.html' | relative_url }}">Change log</a><a href="{{ '/car-app.html' | relative_url }}">Future: car app</a></nav>
+      <a class="bmc" href="https://buymeacoffee.com/jdrummernash1" target="_blank" rel="noopener"><svg class="nb-ic"><use href="#i-coffee"/></svg><span>Buy me a coffee</span></a>
+    </div>
+    <p class="nb-foot-s">Screenshots use a made-up demo house; no real data.</p>
+  </footer>
+  {% comment %} Phones: the same bottom tab bar and More sheet as the app. {% endcomment %}
+  <nav class="nb-tabs" aria-label="Sections">
+    <a href="{{ '/' | relative_url }}"{% if u == '/' or u == '/index.html' %} class="on"{% endif %}><svg class="nb-ic"><use href="#i-home"/></svg><span>Home</span></a>
+    <a href="{{ '/tour.html' | relative_url }}"{% if u contains 'tour' %} class="on"{% endif %}><svg class="nb-ic"><use href="#i-tour"/></svg><span>Tour</span></a>
+    <a href="{{ '/pages.html' | relative_url }}"{% if u contains 'pages' %} class="on"{% endif %}><svg class="nb-ic"><use href="#i-pages"/></svg><span>Pages</span></a>
+    <a href="{{ '/getting-started.html' | relative_url }}"{% if u contains 'getting-started' %} class="on"{% endif %}><svg class="nb-ic"><use href="#i-start"/></svg><span>Start</span></a>
+    <button type="button" class="nb-morebtn" aria-expanded="false" aria-controls="nb-sheet"><svg class="nb-ic"><use href="#i-more"/></svg><span>More</span></button>
+  </nav>
+  <div class="nb-sheet" id="nb-sheet" hidden><div class="nb-sheet-in" role="dialog" aria-label="All sections"><b class="nb-sheet-t">All sections</b>{{ navlinks }}</div></div>
   <script>
-  (function(){var b=document.querySelector('.nb-theme'),r=document.documentElement;
+  (function(){var d=document,r=d.documentElement,b=d.querySelector('.nb-theme');
   function dark(){var t=r.getAttribute('data-theme');return t?t==='dark':!matchMedia('(prefers-color-scheme: light)').matches}
   b.addEventListener('click',function(){var n=dark()?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('nb-theme',n)}catch(e){}});
-  var a=document.querySelector('.nb-nav a.on');if(a&&a.scrollIntoView)try{a.scrollIntoView({inline:'center',block:'nearest'})}catch(e){}})();
+  var a=d.querySelector('.nb-nav a.on');if(a&&a.scrollIntoView)try{a.scrollIntoView({inline:'center',block:'nearest'})}catch(e){}
+  // More sheet (phones)
+  var mb=d.querySelector('.nb-morebtn'),sh=d.getElementById('nb-sheet');
+  function sheet(o){sh.hidden=!o;mb.setAttribute('aria-expanded',o?'true':'false')}
+  mb.addEventListener('click',function(){sheet(sh.hidden)});
+  sh.addEventListener('click',function(e){if(e.target===sh)sheet(false)});
+  d.addEventListener('keydown',function(e){if(e.key==='Escape')sheet(false)});
+  // Every section is a card, like the app: the content between two h2 headings becomes one glass card.
+  // (Without scripts the page is one plain card and reads the same.)
+  var m=d.getElementById('content');if(!m)return;
+  var kids=[].slice.call(m.childNodes),cur=null,solo=/(^|\s)(nbs|wn|nb-hero|nb-doors|nb-solo)(\s|$)/;
+  m.classList.add('nb-cards');
+  kids.forEach(function(k){
+    if(k.nodeType===1&&(solo.test(k.className||'')||k.tagName==='STYLE'||k.tagName==='SCRIPT')){cur=null;return}
+    if(k.nodeType===1&&k.tagName==='H2')cur=null;
+    if(k.nodeType===1&&k.tagName==='HR'){k.parentNode.removeChild(k);cur=null;return}
+    if(!cur){if(k.nodeType!==1&&!(k.nodeType===3&&/\S/.test(k.nodeValue)))return;cur=d.createElement('section');cur.className='nb-card';m.insertBefore(cur,k)}
+    cur.appendChild(k)});
+  if(location.hash){try{var t=d.getElementById(decodeURIComponent(location.hash.slice(1)));if(t)t.scrollIntoView()}catch(e){}}
+  })();
   </script>
 </body>
 </html>

@@ -6,6 +6,34 @@ title: Settings and personalisation
 
 # Settings and personalisation
 
+## The Settings page
+
+**Settings** is a page in the menu (and a button on the System page). It holds your own settings in one place:
+
+| Card | What is in it |
+|---|---|
+| **Look and size** | Theme (dark, light, or follow the device) and the **Interface scale** sheet: size, the Look, accent colour, the background picture, left- or right-handed layout and holiday decorations. Saved on this device, except the accent, Look and hand, which follow you. |
+| **Alerts and notifications** | Opens the alerts sheet (chimes, plane and Space Station alerts, phone alerts), plus switches for Swipe between pages, the New build sound, the Connection lost alert and the location pin. |
+| **Card change notices** | A full-screen notice when an urgent card appears or clears by itself. **Off by default.** When on, it shows on wall screens and TVs only; a phone, tablet or computer joins in when you switch on **On this screen too** there. Quiet hours swap it for a small message. Saved for the whole household. |
+| **Menu pages** | Which pages are in your menu and in what order, the **Show Labs pages** switch, hidden cards, and **More to set up**: pages that wait until they have something to show (Commute, Pets, Pool, Utilities, Energy), each with a Set up button. |
+| **Location use** | What used this device's location, or set a zip code instead. |
+| **The house and the app** | A link to the System page: updates, backups, hidden cards, saved data, device setup. |
+
+Other settings that live elsewhere:
+
+- **Page summaries** (System page): one switch for the "At a glance" sentence on Weather, Commute, Packages, Family
+  Board, Pantry & Fridge and Security.
+- **AI privacy** (System page, admins): local AI only, unless an admin allows cloud AI. Every AI feature follows it.
+- **Background picture** (Interface scale, next to Look): an optional soft picture behind every page, off by default.
+  Public-domain art by theme, or whatever the picture frame shows. It changes slowly and is dimmed so text stays readable.
+- **Looks** (Interface scale): Classic, Glass and the other looks, plus seven accent colours. See [Themes](themes.md).
+- **Guest mode** (Guest page, admins): one switch turns every house screen into a simple guest view (the Guest page
+  first, a short menu, no settings or editing) until you turn it off or a date you choose. A grown-up PIN lifts it on
+  one screen.
+- **Kid lock** (Cast sheet, This device): keeps a tablet on the Kids page behind a 4-digit grown-up PIN. The same PIN
+  opens **Grown-ups** on the Kids page.
+- **Room settings** (each room page): the room's layout, which sections show, and cards added to that room.
+
 ## Saved per Home Assistant user (follows you to every device)
 
 - **Menu pages**: choose which pages appear in your side menu (System → Menu pages, or More → Customize menu).
@@ -20,8 +48,9 @@ title: Settings and personalisation
 - **User manual link**: kept for every user, remembered on each screen.
 - **Hobbies** you picked on the Hobbies page.
 - **Page intros**: a switch in Settings (or the Hide button on the line itself) hides the short intro under each page title.
-- **Interface scale**: cards, columns and text re-pack to the size you choose. Replaces Interface scale.
-- **Expanded cards**: whether collapsible cards (gas prices, AI usage) start open.
+- **Collapsed cards**: tap a card's top bar to collapse or expand it; what you collapsed is remembered for you on
+  every screen.
+- **Pages you switched on** from More to set up, and whether Labs pages show.
 
 These are stored in Home Assistant's own per-user storage, so they move with your login.
 
@@ -48,6 +77,7 @@ Only Home Assistant admins can change the shared Guest information and pickup sc
 
 - Light or dark theme
 - Interface scale (re-packs cards, columns and text; the toolbar stays)
+- Whether this screen also shows the full-screen card notice ("On this screen too")
 - Card drag order, with Reset order in the card menu to go back to the default
 - Planes map style, radius, flight paths and centring
 - The phone compass on or off

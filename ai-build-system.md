@@ -73,6 +73,8 @@ Before each batch, `node tools/ai-usage.js delegation` shows the first-time pass
 
 ## 6. The autopilot control panel
 
+![The autopilot panel, shown with made-up demo values: status tiles, usage meters with stop lines, settings, the work order and the agents](images/autopilot-panel-dark.png)
+
 A private artifact page, the owner's remote control for auto mode.
 
 - **Settings** (read by Claude at every check-in, before every build and deploy): auto on/off, pause until, weekly stop, credits and the credit stop line, work order, "next", notes.

@@ -3,76 +3,83 @@ title: Nashboard
 ---
 
 
+<div class="nb-hero">
+<div class="nb-kick">Nashboard 1.0 · for Home Assistant</div>
+<h1>The screen shows <em>what matters right now</em>, and gets out of the way otherwise.</h1>
+<p class="nb-lead">A dashboard for wall tablets, phones and TVs. Cards appear on their own when something needs attention (a plane overhead, the garage left open, rain coming, trash night) and leave on their own when it no longer does.</p>
+<div class="nb-chips"><span class="nb-chip acc">More than 40 pages</span><span class="nb-chip">Runs inside Home Assistant</span><span class="nb-chip">Your data stays at home</span><span class="nb-chip">Local AI only, unless you allow more</span><span class="nb-chip">Phones, tablets, TVs</span></div>
+<div class="nb-cta"><a class="nb-btn pri" href="tour.html">Take the tour</a><a class="nb-btn" href="getting-started.html">Get started</a><a class="nb-btn" href="faq.html">Questions</a></div>
+</div>
+
+<div class="nb-doors">
+<a class="nb-door" href="living-with-nashboard.html"><b><svg class="nb-ic" aria-hidden="true"><use href="#i-home"/></svg>Use it</b><small>For everyone in the family: what the cards mean, the everyday habits, every page with a picture.</small><span>Living with Nashboard ›</span></a>
+<a class="nb-door" href="setup.html"><b><svg class="nb-ic" aria-hidden="true"><use href="#i-setup"/></svg>Set it up</b><small>For the person with the Home Assistant sign-in: install in six steps, then the Getting started list.</small><span>Set it up ›</span></a>
+<a class="nb-door" href="how-its-built.html"><b><svg class="nb-ic" aria-hidden="true"><use href="#i-build"/></svg>Behind the scenes</b><small>For the curious: the design rules, the automatic quality checks, and how it was built with AI helpers.</small><span>How it's built ›</span></a>
+</div>
+
 <!-- stats:start -->
 <style>.nbs{position:relative;border-radius:18px;overflow:hidden;margin:1.2rem 0 1.6rem;padding:calc(min(100%,1600px) * .2) 18px 18px;padding-top:20%;background:#0b0e14 url(images/hero-night.jpg) center top/100% auto no-repeat;box-shadow:0 10px 30px rgba(0,0,0,.25)}.nbs::before{content:"";position:absolute;inset:0;background:none}.nbs-g{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.nbs-t{padding:14px 16px;border-radius:14px;background:rgba(20,22,28,.42);border:1px solid rgba(255,255,255,.22);-webkit-backdrop-filter:blur(14px) saturate(140%);backdrop-filter:blur(14px) saturate(140%);color:#fff}.nbs-t b{display:block;font-size:1.5rem;line-height:1.2;font-weight:700;color:#fff}.nbs-t span{font-size:.82rem;color:rgba(255,255,255,.85)}@media (max-width:640px){.nbs{padding-top:132px!important;background-size:auto 140px!important;background-position:left top!important;padding-left:12px;padding-right:12px}.nbs-g{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.nbs-t{padding:10px 12px}.nbs-t b{font-size:1.2rem}}.nbs-u{position:relative;margin:12px 2px 0;font-size:.82rem;color:rgba(255,255,255,.9)}.nbs-u a{color:#ffd28a}</style>
-<div class="nbs" role="img" aria-label="Nashboard: the illustrated house at night, with project stats"><div class="nbs-g"><div class="nbs-t"><b>32,723</b><span>Lines of custom code</span></div><div class="nbs-t"><b>$205k–$409k</b><span>Market value · about 2,727 developer hours</span></div><div class="nbs-t"><b>44</b><span>Pages</span></div><div class="nbs-t"><b>.256</b><span>Latest build number</span></div><div class="nbs-t"><b>27</b><span>Open backlog items</span></div><div class="nbs-t"><b>5</b><span>Open bugs</span></div><div class="nbs-t"><b>346</b><span>Changes shipped, last 7 days</span></div></div><p class="nbs-u">Updated Nov 23 2026 · <a href="changelog.html">Change log</a></p></div>
+<div class="nbs" role="img" aria-label="Nashboard: the illustrated house at night, with project stats"><div class="nbs-g"><div class="nbs-t"><b>34,339</b><span>Lines of custom code</span></div><div class="nbs-t"><b>$215k–$429k</b><span>Market value · about 2,862 developer hours</span></div><div class="nbs-t"><b>44</b><span>Pages</span></div><div class="nbs-t"><b>.264</b><span>Latest build number</span></div><div class="nbs-t"><b>11</b><span>Open backlog items</span></div><div class="nbs-t"><b>2</b><span>Open bugs</span></div><div class="nbs-t"><b>353</b><span>Changes shipped, last 7 days</span></div></div><p class="nbs-u">Updated Nov 24 2026 · <a href="changelog.html">Change log</a></p></div>
 <!-- stats:end -->
 
 <!-- whatsnew:start -->
 <style>.wn{border:1px solid rgba(255,181,71,.45);background:rgba(255,181,71,.08);border-radius:16px;padding:14px 18px;margin:0 0 1.4rem}.wn h2{margin:0 0 .3rem;font-size:1.15rem;border:0}.wn p{margin:.2rem 0 .5rem;opacity:.85}.wn ul{margin:.3rem 0 0;padding-left:1.1rem}.wn li{margin:.18rem 0}.wn-b{display:inline-block;min-width:2.6em;font-weight:700;color:#d98a00}</style>
-<div class="wn"><h2>What's new · latest release build .256</h2>
-<p>Everything shipped since the last docs update (build .253) · updated Nov 23 2026 · <a href="changelog.html">full change log</a></p>
-<ul><li><span class="wn-b">.256</span> Bug button focuses the Jot box on mobile</li><li><span class="wn-b">.256</span> Doorbell person matching widened, debug guide written (idea b45d2b8e, check HA entities).</li><li><span class="wn-b">.256</span> Markets refresh about once a minute</li><li><span class="wn-b">.256</span> Jot box pastes pictures</li><li><span class="wn-b">.256</span> Touch scrolling smoothed</li><li><span class="wn-b">.256</span> Real car photos</li><li><span class="wn-b">.256</span> YouTube counts as playing on TVs</li><li><span class="wn-b">.256</span> Wishlist Purchased fixed.</li><li><span class="wn-b">.256</span> Home order model with Lower priority, prettier cards first, full-screen card notice, Today at a glance AI summary, New marks, kid's colour, oven / window / nursery sensors, Sitter page, Guest mode and guest traffic.</li><li><span class="wn-b">.256</span> Laundry, pool, Energy and Bills Labs page, leak sensors, UPS, printer, garage door, smoker, smart plugs, earbuds and internet provider cards.</li><li><span class="wn-b">.256</span> Frigate package, doorbell and closings cards, video states and mail truck, camera alert settings, cast timeout countdown, TV leveler, wall display (wake on approach, Nest Hub kitchen view).</li><li><span class="wn-b">.256</span> AI suggestions card, Family inbox, toolbox photo import and picture, bedtime library, house photo colour fallback.</li><li><span class="wn-b">.256</span> Native Android Auto app scaffold (android-auto/), not yet built or tested in a car.</li><li><span class="wn-b">.256</span> Data store phase 2a helper (dsx) and key inventory</li><li><span class="wn-b">.256</span> Nothing converted yet.</li><li><span class="wn-b">.255</span> Jot box stays put (no jumping, touch scroll works while focused)</li><li><span class="wn-b">.255</span> Pantry and other grids use the shared gap</li><li><span class="wn-b">.255</span> System cards fill the row</li><li><span class="wn-b">.255</span> About has one full-width Roll credits card, all cards open</li><li><span class="wn-b">.255</span> Room chips filter or jump.</li><li><span class="wn-b">.254</span> Terminal tiles back (idle tiles stay), open backlog count in the top bar, new builds reach every screen within a minute, nav stays put on hover, trivia tidbits removed, pets keep playing while scrolling.</li></ul>
+<div class="wn"><h2>What's new · latest release build .264</h2>
+<p>Everything shipped since the last docs update (build .256) · updated Nov 24 2026 · <a href="changelog.html">full change log</a></p>
+<ul><li><span class="wn-b">.263</span> Ask Claude opens only a new tab (no error page), plane cards as a list under the map on phones, readable weather text on day and cloudy skies, Planes status text and icons in light mode.</li><li><span class="wn-b">.262</span> Final 1.0 polish: Right now shows only live, real rows (quiet ones fold into one line, set-up cards move below), every Home card ranked, honest chips, card notices only for urgent cards on wall screens, Today at a glance under the banner, set-up pages stay out of the menu until set up, Getting started checklist, Kids page grown-ups lock, solid phone tab bar, easier-to-read text and bigger tap targets</li><li><span class="wn-b">.262</span> Docs site restyled like the app with Getting started, FAQ and a car app preview</li><li><span class="wn-b">.262</span> Backups now kept per account.</li><li><span class="wn-b">.261</span> Privacy before 1.0: no seed or car-art files in the public folder, names filtered out of the published backlog, neutral picture file names, guest mode without commute, local-AI-only gate on every AI feature (AI privacy card), Who is on without pages, no hardcoded household values</li><li><span class="wn-b">.261</span> Developer tools (bug button, backlog count, Claude card) admin-only and out of the family view.</li><li><span class="wn-b">.260</span> Release candidate 1.0: TV view with compact weather and radar, banner colours and leaves in front, same-size buttons everywhere (sizecheck), 44 px tap targets on every page (tapcheck), contrast check, camera sound, Garage on shared storage places, bug button always on screen, Family Board document import, Amazon status updates, crisp About diagrams, smooth Home scrolling, longest idle agent, dishwasher seconds.</li><li><span class="wn-b">.259</span> Hotfix: Refresh button the same size as the other top bar buttons.</li><li><span class="wn-b">.258</span> Data store phase 2: all saved data through one safe-save helper (no empty-over-real, merge with the freshest copy, versioned, photo-free inventory backup)</li><li><span class="wn-b">.258</span> Sports preferences load for the first time</li><li><span class="wn-b">.258</span> Bedtime library Listen mode</li><li><span class="wn-b">.258</span> House shape from a photo</li><li><span class="wn-b">.258</span> NFC tag map</li><li><span class="wn-b">.258</span> Device setup ticks saved in HA</li><li><span class="wn-b">.258</span> System overlap fix</li><li><span class="wn-b">.258</span> Speed fixes for hidden tabs. Parallel quality checks.</li><li><span class="wn-b">.257</span> Every page packs with no holes (flowcheck passes everywhere)</li><li><span class="wn-b">.257</span> Claude needs-you banner on every screen + phone push when Claude waits on an Allow prompt.</li></ul>
 </div>
 <!-- whatsnew:end -->
-
-Nashboard is a custom dashboard for [Home Assistant](https://www.home-assistant.io/). It runs inside Home Assistant
-(through a small Lovelace card), so it works anywhere Home Assistant does: wall tablets, phones, laptops, and TVs
-through casting.
-
-**How it is built, in short.** The code is written as about 190 small source pieces (JavaScript and CSS, one piece per
-feature or page), not as one big file. A build script joins the pieces in order, checks that the result parses, and
-writes one generated page that Home Assistant serves. Nobody edits that generated page by hand. Before every deploy a set
-of automatic checks loads the real app in a headless browser and fails on any broken design rule (card gaps and widths,
-overlapping controls, one Right now area per page, name clashes, saved data, maps, legends, speed, and nothing personal
-hardcoded). Values that belong to one household (teams, trips, rooms) live in small seed files and in saved settings,
-never in the code. The app is built by a main Claude chat with helper agents, steered from a private control panel; see
-[How the AI builds it](ai-build-system.md).
-
-*Docs schedule: this site is refreshed on every build that ends in 0, starting at build .260.*
-
-It is built around one idea: **the screen should show what matters right now, and get out of the way otherwise.**
-Cards appear on their own when something needs attention (a plane overhead, the garage left open, rain coming,
-trash night) and leave on their own when it no longer does.
 
 ![The Home page on a laptop](images/snip-home.jpg)
 
 ![Home and the Nursery room on phones](images/snip-phones.jpg)
 
-*Screenshots use a made-up demo house; no real data.*
+Nashboard is a custom dashboard for [Home Assistant](https://www.home-assistant.io/). It runs inside Home Assistant
+(through a small dashboard card), so it works anywhere Home Assistant does: wall tablets, phones, laptops, and TVs
+through casting. Nothing to host, no account of its own.
 
-## Contents
+☕ If Nashboard is useful to you, you can [buy me a coffee](https://buymeacoffee.com/jdrummernash1).
 
-- [Why Nashboard](why-nashboard.md): what problem it solves, for someone new to smart homes (you don't have to do anything)
-- [Guided tour](tour.md): a step-by-step visual walkthrough of every page, one screenshot each
-- [Living with Nashboard](living-with-nashboard.md): the everyday habits that get the most out of it, for everyone in
-  the family (no smart-home experience needed)
-- [How it all connects](how-it-connects.md): the story from devices and data sources through Home Assistant to the
-  cards, phone alerts and screens, with worked examples
-- [How it's built](how-its-built.md): the design models and rules behind the app, the automatic quality checks, the
-  build and deploy pipeline, and how it was built with Claude (a coordinator session and its helper agents)
-- [How the AI builds it](ai-build-system.md): the main chat and its helpers (Claude, local and free cloud models), usage
-  tracking, the autopilot panel, the idea-to-deploy flow and the safety nets
-- [Diagrams](diagrams.md): how the app works and the AI architecture, as two flow diagrams
-- [App architecture](app-architecture.md): how the finished app is structured, how its data is protected, and the server
-  placement and hardware it needs
-- [Developer workflow](developer-workflow.md): how ideas jotted in the dashboard become builds, with the live backlog,
-  Claude's suggestions, quality checks, update chimes and the autopilot panel
-- [Developer tools](developer-tools.md): the build pipeline, quality checks, autopilot panel, stuck watcher, live status, usage monitoring and the efficiency engine
-- [Design engine](design-engine.md): every design rule and data rule in plain language, and the checks that enforce them
-- [Themes](themes.md): every look, light/dark mode and accent colour, and when each suits
-- [Design kit](design-kit.md): the design rules as one shareable file you can drop into your own dashboard project
+## Use it
+
+- [Why Nashboard](why-nashboard.md): what problem it solves, for someone new to smart homes
+- [Guided tour](tour.md): a step-by-step visual walkthrough, one screenshot per page
+- [Living with Nashboard](living-with-nashboard.md): the everyday habits that get the most out of it
+- [Home page](home.md): the banner, every Home card, and how the order is decided
+- [All pages](pages.md): every page, with a screenshot of each
 - [Every feature](features.md): the complete list, including every automatic Home card
+- [Themes](themes.md): every look, light and dark, and the accent colours
+- [Nashboard 1.0](release-1.0.md): what is in the first release
+- [FAQ](faq.md): the questions people ask first
+
+## Set it up
+
+- [Set it up](setup.md): what you need, installing in six steps, and what each page needs
+- [Getting started](getting-started.md): your first hour, in the order that works
+- [Settings and personalisation](settings.md): the Settings page, per-person settings, interface scale, alerts
+- [Device setup checklist](device-setup.md): what each TV, wall tablet, phone, car and watch needs
+- [Data sources](integrations.md): every Home Assistant integration and free service the app uses
+- [Automations](automations.md): the phone alerts and reminders the house can run on its own, and how to turn each off
+
+## Behind the scenes
+
+- [How it all connects](how-it-connects.md): from devices and data sources through Home Assistant to the cards
+- [How it's built](how-its-built.md): the design models and rules, the quality checks, the build and deploy pipeline
+- [How the AI builds it](ai-build-system.md): the main chat and its helpers, usage tracking, the autopilot panel
+- [Diagrams](diagrams.md) and [App architecture](app-architecture.md): how the app is structured and how data is protected
+- [Developer workflow](developer-workflow.md) and [Developer tools](developer-tools.md): from a jotted idea to a deployed build
+- [Design engine](design-engine.md) and [Design kit](design-kit.md): every design rule in plain language, and as one shareable file
+- [Future: car app](car-app.md): a Labs prototype for Android Auto, as design mockups
 - [Change log](changelog.md): everything shipped, newest first
-- [Home page](home.md): the banner, every Home card, and the pop-up cards
-- [All pages](pages.md): every page in menu order, with a screenshot of each
-- [Settings and personalisation](settings.md): menu pages, per-user settings, interface scale, alerts
-- [Automations](automations.md): everything the house does on its own (phone alerts, reminders, confirm-first garage),
-  what triggers each one and how to turn it off, plus the "make your own" templates
-- [Data sources](integrations.md): every Home Assistant integration and free service the app uses, what each one powers,
-  how to set it up and its limits
-- [Device setup checklist](device-setup.md): what each TV, phone, car and watch needs
-- [How it works and installing](setup.md): the files, the card, deploying, backups
+
+**How it is built, in short.** The code is written as about 290 small source pieces (JavaScript and CSS, one piece per
+feature or page), not as one big file. A build script joins the pieces in order, checks that the result parses, and
+writes one generated page that Home Assistant serves. Nobody edits that generated page by hand. Before every deploy a set
+of automatic checks loads the real app in a headless browser and fails on any broken design rule (card gaps and widths,
+overlapping controls, one Right now area per page, name clashes, saved data, maps, legends, speed, a priority for every
+Home card, and nothing personal hardcoded). Values that belong to one household live in saved settings, never in the code.
+
+*Screenshots use a made-up demo house; no real data.*
 
 ## Highlights
 
@@ -82,9 +89,9 @@ trash night) and leave on their own when it no longer does.
   breaking news, gas prices, and more, each shown only when useful.
 - **Pop-up cards** (garage open, rain coming, freeze tonight, lights still on, maintenance due, trash night and others) that stay at least three minutes and say when the situation clears.
 - **Stable layout**: once a page settles, cards never jump sideways; new cards drop into the emptiest spot.
-- **More than 30 pages**, from Rooms, Cameras and Calendar to Planes, Space, Air & Allergy, Network & Storage, a Family
-  Board, a Guest page, Storage, Hobbies, Workout, an Activity timeline and per-room dashboards such as a calm Nursery
-  screen, plus a Kitchen tablet mode for a wall screen.
+- **More than 40 pages**, from Rooms, Cameras and Calendar to Planes, Space, Air & Allergy, Network & Storage, a Family
+  Board, Security, a Guest page, Storage, Hobbies, Workout, an Activity timeline and per-room dashboards such as a calm
+  Nursery screen, plus a Kitchen tablet mode for a wall screen.
 - **Background automations** that reach every phone with the screen off: medicine OK again, the dog timeout, birthdays,
   the week ahead, the goodnight check, gas price drops, a package left outside, planes and the Space Station. See
   [Automations](automations.md).
@@ -109,7 +116,7 @@ trash night) and leave on their own when it no longer does.
 | [Recipes](pages.md#recipes) | Recipe book and meal plan from Mealie |
 | [Pantry & Fridge](pages.md#pantry--fridge) | What's on hand and what expires soon |
 | [Storage](pages.md#storage) | Where things are kept, with QR labels and warranties |
-| [Garage](pages.md#garage) | Tool storage: toolboxes, drawers and every tool, searchable |
+| [Garage](pages.md#garage) | Cars, the garage door, charging and searchable toolboxes |
 | [Kids](pages.md#kids) | Big-button page for a kid's tablet: bedtime, star chart, coat check, shows |
 | [Weather](pages.md#weather) | Forecast, radar, sun and moon |
 | [Air & Allergy](pages.md#air--allergy) | Air quality, UV, pollen, "open the windows?" |
@@ -129,8 +136,14 @@ trash night) and leave on their own when it no longer does.
 | [Maintenance](pages.md#maintenance) | Recurring house jobs with countdowns |
 | [Pets](pages.md#pets) | Pet characters, dog timeout and feeder, pet medicine, litter box |
 | [Hobbies](pages.md#hobbies) | Each person's hobbies with shared cards |
-| [Workout](pages.md#workout) | Interval timer, routines and a workout log |
+| [Workout](pages.md#workout) | Interval timer, routines, health stats and a workout log |
+| [Security](pages.md#security) | Alarm mode, alert choices and a saved security log |
+| [Utilities](pages.md#utilities) | Water leak sensors, a UPS and printer ink |
+| [Pool](pages.md#pool) | Water readings, what to add and a test log |
+| [Wellbeing](pages.md#wellbeing) | A private page: mood check-ins, breathing, gratitude |
+| [Sitter monitor](pages.md#sitter-monitor) | A calm page for whoever is watching a sick child |
 | [Automations](pages.md#automations) | What the house does on its own; make your own |
 | [System](pages.md#system) | Health, updates, backups, settings, device setup |
+| [Settings](pages.md#settings) | Your own look, alerts, menu pages and location use |
 | [About](pages.md#about) | Version, what's new, features, credits, the tour |
-| [Labs](pages.md#labs) | Experiments such as a 3D printer monitor |
+| [Labs](pages.md#labs) | Experiments such as Energy and bills |

@@ -45,7 +45,7 @@ connection status.
 | **Games** | Your teams' games from a day before to a few hours after; live games show a pulsing dot and scores flash when they change |
 | **Up next tasks** | Google Tasks due today are added to the Up next card |
 | **Gas prices** | Cheapest nearby premium and diesel; collapsible |
-| **Right now** | A strip of the cards that matter this minute. It fills the full width first, and when only a few cards show they stretch to fill the row. The Claude card appears only while Claude is working and says what; idle placeholders are gone |
+| **Right now** | The cards that matter this minute, in priority order. The Claude card (admins who maintain the app) appears only while Claude is working and says what |
 | **Ask Claude** | Everyone can type a question or request for Claude |
 | **Claude admin** | Admins only: Claude's status and controls, split from Ask Claude |
 | **Eat this first** | Leftovers from the Pantry & Fridge leftovers tracker, oldest first |
@@ -62,6 +62,23 @@ Commute trips live on the Commute page; Home shows Leave soon and On the way hom
 - **How this works** in the card menu opens a short plain explanation of that card.
 - **Page intro line**: a friendly one-line description under the page title; hide it with its Hide button or in Settings.
 - **Rain radar** (and every radar) has a Full window button.
+
+## Today at a glance and the order of cards
+
+- **Today at a glance** is always the first card under the banner: two or three sentences about what already happened
+  today, what is going on now and what is coming. With an AI set up in Home Assistant it is written by a local model
+  (a cloud model only after an admin allows it); without one it is a plain summary built from the same facts.
+- **Every automatic card has a priority**, so the order means something:
+  1. **Urgent**: a fire alarm, a water leak, a power cut, someone at the door, severe weather, time to leave.
+  2. **Needs doing today**: chores, maintenance that is due, medicine running low, trash night, a package outside.
+  3. **Worth knowing**: low batteries, dinner tonight, a birthday coming up.
+  4. **Lower priority**: quiet single-row cards are stacked together in one small card titled Lower priority, so they
+     take one slot instead of six. Nothing is hidden.
+- **Chips on a title** appear only when they add something the title does not say: the minutes left on a timed card
+  ("23 min") or "overdue".
+- **Full-screen card notices are off by default.** Turn them on in Settings and an urgent card that appears or clears
+  by itself shows a big notice on wall screens and TVs. A phone, tablet or computer only joins in if you switch on "On
+  this screen too" on that device. See [Settings](settings.md).
 
 ## Pop-up cards
 

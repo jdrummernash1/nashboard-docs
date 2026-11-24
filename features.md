@@ -15,8 +15,9 @@ themselves when something needs you and disappear when it doesn't.
 
 **Cards live on their page first.** Every card has a home on the page it relates to, where it always shows: Rain coming
 and Freeze tonight on Weather, Trash night on the Family Board, the dog on Pets, Leave soon on Commute. Each page has a
-**Right now** card under its header that shows those cards all the time, with a calm line when nothing is happening
-("No rain expected soon"). **Home never owns a card**: when one matters, Home shows a copy of it, and the copy goes away
+**Right now** card under its header that shows what is live there. Everything quiet folds into one line ("All quiet ·
+8 things watched") that opens to the full list, and a row for something the house does not have is left out.
+**Home never owns a card**: when one matters, Home shows a copy of it, and the copy goes away
 again. Anything shown on one page also appears on the page it relates to (a dishwasher reminder on the Kitchen room,
 low batteries on the device's room, pet notes on Pets).
 
@@ -28,9 +29,27 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 
 ---
 
-## Latest additions (build .256)
+## New for 1.0
 
-*(new in .256)*
+- **Pages open on their content.** Right now shows only what is live; quiet rows fold into one line; set-up and
+  settings cards sit after the page's own cards. A room page shows only its own rows.
+- **Right now tells the truth.** No more "Power is on" with no UPS: a feature that is not set up has no row, and quiet
+  rows read the real state.
+- **Home order you can trust.** Every automatic card has a priority, so a leak or someone at the door is never filed
+  under Lower priority. **Today at a glance** is the first card under the banner. Chips on titles only say something
+  new (minutes left, overdue).
+- **Full-screen card notices are off by default**, and when on they are for urgent cards on wall screens and TVs.
+- **A real starting list.** The Setup checklist begins with Getting started (rooms, weather, calendar, shopping list,
+  cameras, speakers, phones, commute); optional extras are folded away and not counted.
+- **Pages that wait until set up** (Commute, Pets, Pool, Utilities, Energy) are listed under More to set up in Menu
+  pages with a Set up button, instead of hiding with no way in.
+- **Kids page for kids:** no set-up text or edit buttons in front of a child; a Grown-ups button behind the PIN.
+- **Privacy:** local AI only unless an admin allows cloud AI, guests do not see the family's commute, and the app's
+  maintainer tools are out of the family's view.
+- **Workout** never takes a pet scale for your weight: health values are only picked from your own phone app.
+- **Demo mode** stays quiet unless you tap something, and the phone tab bar is solid.
+
+## Latest additions (builds .256 to .261)
 
 - **New pages:** Utilities (leaks, UPS, printer), Pool, Wellbeing, Sitter monitor, and Energy and bills in Labs. See [All pages](pages.md).
 - **Home and whole app:** Today at a glance (short summary card), a card order that puts urgent and richer cards first, an open backlog chip in the top bar, New marks on new cards, a Labs on/off switch, smooth touch scrolling, full-screen Card change notices, and a read-only Demo mode (`?demo=1`).
@@ -39,11 +58,11 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 - **Garage and cars:** real car pictures, car value estimate, EV charging with nearby chargers, and Toolbox photo import.
 - **Hobbies, music and display:** Gaming (Steam, Xbox, PlayStation), Smoker, a Workout health card with treadmill sessions, YouTube Music playlists with a YouTube TV launcher, and a Picture frame mode for displays.
 - **Planes:** air traffic status, restricted airspace, flight restrictions and listen-and-world tiles.
-- **Now Playing and look:** a YouTube playlists card with YouTube and YouTube TV launch buttons (also on the cast pop-up), and an optional dimmed Background picture behind the pages (public-domain art or the Picture frame source). See [All pages](pages.md#now-playing-youtube-playlists-and-launch-buttons-new-in-256).
-- **Setup:** a Setup checklist card on the System page that detects which integrations and devices are still missing. See [All pages](pages.md#system-setup-checklist-new-in-256).
+- **Now Playing and look:** a YouTube playlists card with YouTube and YouTube TV launch buttons (also on the cast pop-up), and an optional dimmed Background picture behind the pages (public-domain art or the Picture frame source). See [All pages](pages.md#now-playing-youtube-playlists-and-launch-buttons).
+- **Setup:** a Setup checklist card on the System page that detects which integrations and devices are still missing. See [All pages](pages.md#system-setup-checklist).
 - **Automations:** AI suggestions for new automations and rules, never applied automatically.
-- **Vision alarms:** camera snapshots read by a local AI by default (cloud only if allowed per check): grass getting long, scrape the windshield, it snowed and cats fed. See [All pages](pages.md#cameras-vision-alarms-new-in-256).
-- **Top bar and summaries:** a Refresh button in the top bar, and a one-sentence At a glance summary in the Right now card of Weather, Commute, Packages, Family Board, Pantry & Fridge and Security.
+- **Vision alarms:** camera snapshots read by a local AI by default (cloud only if allowed per check): grass getting long, scrape the windshield, it snowed and cats fed. See [All pages](pages.md#cameras-vision-alarms).
+- **Top bar and summaries:** a Refresh button in the top bar, and a one-sentence At a glance summary card on Weather, Commute, Packages, Family Board, Pantry & Fridge and Security.
 - **Planes:** a glass photo card for the overhead plane, an AIR map layer for special-use airspace and active flight restrictions, and an Air restrictions near home card on Home.
 - **Energy:** solar, generator and grid cards (with a Power outage card on Home).
 - **Wellbeing:** opt-in family sharing of a mood dot and chosen gratitude notes, shown in How we're doing on the Family Board.
@@ -126,7 +145,36 @@ just for you, or (admins) turned off for everyone. The "Lives on" column is the 
 | **Kitchen timer** | A kitchen timer is running | Countdown with the timer's name; pause or cancel | Kitchen room |
 | **Out the door** | Weekday mornings 6:00 to 9:30, until everything is ticked or everyone has left | Tick off Backpack, Snacks, Water bottle, Lunch, Meds | Kitchen room |
 | **Doorbell** | Someone rings or a person is seen at the front door (2 minutes after the last one) | Front-door snapshot; Ignore | Family Board, every room |
+| **Today at a glance** | Whenever there is something to say; always the first card under the banner | Read the day in two or three sentences; Refresh; an admin can allow cloud AI | Home |
+| **Fire alarm** | A smoke, CO, heat or gas sensor is on, or a camera hears an alarm | Call button, the escape steps, steps full screen | Family Board |
+| **Water leak** | A leak sensor is wet | See which sensor and room; one chime | Utilities |
+| **Power outage** | The grid sensor you picked reports an outage | See since when | Energy (Labs) |
+| **Running on battery** | The UPS reports it is on battery | Charge and runtime left | Utilities |
+| **Person at the door** | A camera's person sensor fired in the last 2 minutes (and the Doorbell card is not already up) | Snapshot, Talk, Open camera, Ignore | Family Board, front rooms |
+| **Security alerts** | There are unseen important security events | Open the Security log | Security |
 | **Garage open** | A garage door has been open more than 10 minutes | Close (tap twice to confirm) | Rooms |
+| **Garage door left open** | The door you picked has been open longer than the time you chose | Close (tap twice to confirm) | Garage |
+| **Plug in the car** | After 6 PM, the car's battery is under your level and it is not plugged in | See charge and range | Garage |
+| **Roll up the car windows** | A car window is open and rain is likely where the car is | See which windows | Commute |
+| **Nursery temperature** | The nursery is warmer or colder than the range you set | See the reading | Family Board |
+| **Closings and delays today** | A daycare or school you watch is closed or delayed today | See why, open the source | Family Board |
+| **Internet provider outage** | The connection has been down for 2 minutes | Open your provider's outage page | Network |
+| **Laundry** | A load finished (until the door opens or you tap Done); a reminder if it sits | Done | Laundry room |
+| **Dishwasher** | It is running, or clean and waiting to be emptied | Emptied | Kitchen room |
+| **Package on the porch** | A camera's package sensor sees a package | Snapshot, Open camera | Packages |
+| **Vision alerts** | A camera check says yes (grass getting long, frost on the windshield, fresh snow) | Dismiss; Commute button on snow days | Cameras |
+| **Cats not fed yet** | The feeding camera has not seen them fed by the time you set | Fed them | Pets |
+| **Camera sees something** | A camera state you watch has held for your minutes | Open camera | Security |
+| **Mail truck** | A vehicle stopped out front, or the mail is due about now | Yes, mail truck / Not it | Security |
+| **Added from email** | The Family inbox filed something in the last day, or an email waits for a tap | Open or undo on the Family Board | Family Board |
+| **Pool** | A reading is out of range or a test is overdue | Open Pool, Log a test | Pool |
+| **Smoker** | A cook is running, or the meat reached its goal | Dismiss | Hobbies |
+| **Gaming** and **Achievement** | Someone is playing, or unlocked something in the last 3 hours | See who and what | Hobbies |
+| **Earbuds battery** | A level is at or under your limit | See which bud | System |
+| **Printer ink low** | A level is under your limit | See which colour | Utilities |
+| **Bills due** | A bill is due within your reminder days, or overdue | See the bill | Energy (Labs) |
+| **Air restrictions near home** | A flight restriction or ground stop is active near home | See the details | Planes |
+| **Workout summary** | For 2 hours after a workout | See the session | Workout |
 | **Litter-Robot** | The litter box needs emptying, litter is low, or it has a fault (uses the pet's name) | Jump to Pets | Pets |
 | **Dog timeout** | The dog timeout timer is running | Minutes left (with the little dog); Done | Pets |
 | **Dog feeder** | Feeding is in the next 10 minutes | See the time (with the little dog) | Pets |
@@ -220,7 +268,7 @@ the feeder, internet services and more. Every new feature adds a fact when it ha
 - **Tap the house banner** to see why it looks the way it does: a bubble explains what drives the sky (holiday, weather
   effect, sunrise and sunset) and what drives the house (lights on, packages delivered today, holiday decorations), with
   links to the pages behind each.
-- **House picture import** to make the banner look like your own house **(planned)**.
+- **Your house from a photo**: the Your house editor reads a photo of your home and suggests the roof, walls, trim, door and trees for the banner (with an AI in Home Assistant, or from the photo's colours on the device, where the photo never leaves it). You review every choice before saving.
 
 ---
 
@@ -248,7 +296,7 @@ opened it gets an **UPDATED** dot.
 - **Cameras**: a camera wall with layouts, grouping, live view, Full window and full screen.
 - **Calendar**: day, week and a rolling 4-week month (up to 5 events a day, past days dimmed) across every calendar in
   shared colours; add and edit events; a **Tasks** card for Google Tasks (tick off, add, due dates, overdue in the warning colour).
-  Calendar events from a photo of a flyer or a school lunch menu **(planned)**.
+  **Import** reads a photo, screenshot, pasted text or link (a flyer, a school lunch menu, a daycare schedule) with the AI set up in Home Assistant and offers the events to add.
 - **Activity**: today's (and yesterday's) timeline, newest first and grouped by hour: the doorbell and people at the
   door, doors and the garage, locks, people arriving and leaving, packages, alarms and smoke, intercom messages. Filter
   chips; refreshes every minute.
@@ -262,8 +310,7 @@ opened it gets an **UPDATED** dot.
   list. **Storage places** you add and remove (Medicine included), each with a container type and able to sit inside
   another place (Where shows the nesting); On hand is grouped by place. Medicines in the Medicine place warn before they
   expire. **Suggested use-by dates**: an item with no date gets a suggestion from standard food storage times (USDA
-  FoodKeeper, about 200 foods, for pantry, fridge or freezer), marked as suggested, with one-tap **Accept**. Reading the
-  date from a photo and separate sell-by and use-by dates **(planned)**.
+  FoodKeeper, about 200 foods, for pantry, fridge or freezer), marked as suggested, with one-tap **Accept**. Separate sell-by and use-by dates **(planned)**.
 - **Storage** ("where's it stored"): a house inventory. Places nest (Garage › Red toolbox › Drawer 3); items have a
   count, note and photo, and appliances a serial number, purchase date, warranty end and manual link. One search box
   finds anything ("where are the christmas lights") with its full path. **Printable QR labels** for every place
@@ -271,13 +318,14 @@ opened it gets an **UPDATED** dot.
   cards.
 - **Garage** (tool storage): toolboxes and tool chests with their drawers and the tools in each, one search box ("10 mm
   socket"), a small photo per drawer and printable QR labels. It is built on the Storage page's places and items, so the
-  Storage search finds tools too, and the Garage room page shows a **Tool storage** card. Recognising tools from a
-  drawer photo **(planned)**.
+  Storage search finds tools too, and the Garage room page shows a **Tool storage** card. **Tools from a photo**: photograph a
+  toolbox or drawer and the AI lists the drawers and tools for you to review before saving.
 - **Kids**: one big-button page for a kid's tablet, made only from things that already exist: the time and a bedtime
   countdown, **Coat check** from the weather, a **star chart** (each Family Board chore done earns a star), the **Out
   the door** checklist, shows and channels from Family favorites (anything blocked for kids never shows), the pets, a
-  plane overhead and the Space Station, and big music buttons. No settings and no editing. A PIN to leave and a story
-  button **(planned)**.
+  plane overhead and the Space Station, and big music buttons. A child sees no settings, no editing and no set-up text; adding and
+  importing sit behind a **Grown-ups** button and the 4-digit PIN. **Tell me a story** makes a gentle bedtime story from
+  the day, and a **kid lock** keeps a tablet on this page.
 - **Recipes**: the family recipe book from Mealie. Paste a link to save any recipe. **Cook mode** shows one step at a
   time in big text that shrinks to fit, with the **amounts inline** ("whisk the **2 cups** flour") and a row of the
   step's ingredients with a little picture for each. Sending a recipe to the shopping list first asks **"Use what's in
@@ -316,7 +364,7 @@ opened it gets an **UPDATED** dot.
   ahead**, emergency contacts and the Doorbell.
 - **Guest**: everything a guest or sitter needs: a welcome note, Wi-Fi with a QR code, weather now and the next 6 hours,
   the live radar, contacts, how-tos, pet notes, a **Watching TV** card (remote steps and YouTube TV buttons per TV) and a
-  few safe controls. Guest mode for every screen at once **(planned)**.
+  few safe controls. **Guest mode** turns every house screen into a simple guest view (no commute or family routine, no settings) until you turn it off or a date you set; a grown-up PIN lifts it on one screen.
 - **Maintenance**: recurring home jobs with due dates and countdown bars; Done resets the schedule; jobs also show on
   their room; car due dates show here too.
 - **Pets**: pet characters, the dog timeout and feeder times, pet devices, pet medicine (NFC tag, Log now), pet notes and
@@ -327,7 +375,7 @@ opened it gets an **UPDATED** dot.
   something is coming up.
 - **Workout**: made for a TV in the garage (big digits readable across the room) and phones: an **interval timer**
   (work, rest, rounds) with a progress ring and optional beeps, saved routines, and a shared workout log with weekly
-  totals per person. Heart rate, calories and treadmill data **(planned)**.
+  totals per person. A **health card** shows steps, heart rate, sleep and weight from your own phone app's sensors and times treadmill sessions; a value from anywhere else is never picked for you.
 - **Automations**: everything the house does on its own, as friendly cards with on/off, last ran, description and Run
   now, plus **Make your own** templates (see [Automations](automations.md)).
 - **System**: Home Assistant health, updates, backups, low batteries, **Home settings** (the household basics in one
@@ -410,7 +458,8 @@ Made as a **trailing record of what was given**, with quick buttons.
   expiration date.
 - **Litter box** status, drawer and litter level, faults and history.
 - **Pet notes** from the Guest page show (and edit) here.
-- More pet reactions and pet characters from a photo **(planned)**.
+- **Pet characters from a photo**: a photo suggests the coat colour and pattern, with a before and after drawing; the photo stays on the device.
+- More pet reactions **(planned)**.
 
 ---
 
@@ -488,7 +537,7 @@ Made as a **trailing record of what was given**, with quick buttons.
 
 - **Card ⋯ menu** on every card header: Full window, Collapse, Hide for today, Hide this card (and, for admins, turn it
   off for everyone). It opens above everything and works on collapsed cards.
-- **Tap a card's top bar** to collapse or expand it, on every page. A refresh brings every card back expanded.
+- **Tap a card's top bar** to collapse or expand it, on every page. What you collapse is remembered for you on every screen; other people keep their own view.
 - **Hidden cards** follow your login and come back from Customize menu → Hidden cards or the System page.
 - **Full window** on every page (and full screen on the second tap); it zooms the page so the whole page fits.
 - **Voice input** on every list (say "milk, eggs, bread").
@@ -568,10 +617,15 @@ Details for each, with setup and limits: [Data sources](integrations.md).
 
 ## Planned (from the backlog)
 
-House picture import and characterisation; calendar events from a photo; package emails from any shipper; Frigate camera
-detection (people, packages, the mail truck, garage state); doorbell two-way talk; guest mode for every screen; true
-portfolio numbers; nursery temperature and camera; new design concepts; live heart rate and treadmill data on the Workout
-page; energy and bills; laundry; pool; a smoker; a printer; a UPS battery backup; Kroger shopping sync; Google Find My
-Device; YouTube Music; more pet reactions and pet characters from a photo; medicine dose by weight and a sick-day card;
-a custom Android Auto app; more car items; recognising tools from a
-drawer photo; a central data store phase 2 (a database add-on).
+Not built yet:
+
+- A car app for Android Auto and CarPlay (a design prototype exists; see [Future: car app](car-app.md)). Today the car
+  uses the Home Assistant app's own favourites.
+- One Settings home, a grouped menu and one household quiet-hours setting.
+- Merging cards that overlap (one Front door card, one Camera alerts area, one Internet card).
+- Package tracking through the postal service's own developer feed.
+- Separate sell-by and use-by dates in the pantry.
+- Medicine dose by weight and a "sick day" Home card.
+- More pet reactions.
+- A 3D printer page (the Labs page is a placeholder).
+- A database add-on behind the saved-data layer.

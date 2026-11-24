@@ -152,6 +152,8 @@ Old backups are pruned automatically: the newest few are kept, plus the newest o
 
 ## The autopilot control panel
 
+![The autopilot panel, shown with made-up demo values: status tiles, usage meters with stop lines, settings, the work order and the agents](images/autopilot-panel-dark.png)
+
 Claude can work in long, unattended stretches: finish a request, then carry straight on through the backlog, importing
 new ideas after every deploy. The owner steers that from a small private **control panel** (an admin-only **Autopilot**
 button in the Design Studio links to it). It offers:

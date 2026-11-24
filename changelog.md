@@ -6,8 +6,19 @@ title: Change log
 
 Everything shipped, newest first. Each build is a small batch of improvements. See [Every feature](features.md) for the full list.
 
-## Nov 23 2026
+## Nov 24 2026
 
+- Ask Claude opens only a new tab (no error page), plane cards as a list under the map on phones, readable weather text on day and cloudy skies, Planes status text and icons in light mode. (BUILD .263)
+- Final 1.0 polish: Right now shows only live, real rows (quiet ones fold into one line, set-up cards move below), every Home card ranked, honest chips, card notices only for urgent cards on wall screens, Today at a glance under the banner, set-up pages stay out of the menu until set up, Getting started checklist, Kids page grown-ups lock, solid phone tab bar, easier-to-read text and bigger tap targets; docs site restyled like the app with Getting started, FAQ and a car app preview; backups now kept per account. (BUILD .262)
+- Privacy before 1.0: no seed or car-art files in the public folder, names filtered out of the published backlog, neutral picture file names, guest mode without commute, local-AI-only gate on every AI feature (AI privacy card), Who is on without pages, no hardcoded household values; developer tools (bug button, backlog count, Claude card) admin-only and out of the family view. (BUILD .261)
+- Release candidate 1.0: TV view with compact weather and radar, banner colours and leaves in front, same-size buttons everywhere (sizecheck), 44 px tap targets on every page (tapcheck), contrast check, camera sound, Garage on shared storage places, bug button always on screen, Family Board document import, Amazon status updates, crisp About diagrams, smooth Home scrolling, longest idle agent, dishwasher seconds. (BUILD .260)
+
+## Builds .227 to .259
+
+- Hotfix: Refresh button the same size as the other top bar buttons. (BUILD .259)
+- Import now request handled.
+- Data store phase 2: all saved data through one safe-save helper (no empty-over-real, merge with the freshest copy, versioned, photo-free inventory backup); sports preferences load for the first time; bedtime library Listen mode; house shape from a photo; NFC tag map; device setup ticks saved in HA; System overlap fix; speed fixes for hidden tabs. Parallel quality checks. (BUILD .258)
+- Every page packs with no holes (flowcheck passes everywhere); Claude needs-you banner on every screen + phone push when Claude waits on an Allow prompt. (BUILD .257)
 - Bug button focuses the Jot box on mobile; doorbell person matching widened, debug guide written (idea b45d2b8e, check HA entities). (BUILD .256)
 - Markets refresh about once a minute; Jot box pastes pictures; touch scrolling smoothed; real car photos; YouTube counts as playing on TVs; wishlist Purchased fixed. (BUILD .256)
 - Home order model with Lower priority, prettier cards first, full-screen card notice, Today at a glance AI summary, New marks, kid's colour, oven / window / nursery sensors, Sitter page, Guest mode and guest traffic. (BUILD .256)
@@ -119,7 +130,7 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 - BUILD .248: card buttons never sit under the 3-dot button (new overlap check); fastest plane always on the Planes map; Jot it down shows the next import time; camera order drag and drop; self-restarting stuck watcher.
 - BUILD .249: Markets card shades gains and losses and shows top watchlist movers; urgent phone alerts now arrive with the screen off (high priority, no expiry).
 
-## Nov 22 2026
+## Builds .205 to .222
 
 - Kids page pickup time (BUILD .221).
 - HA restarted twice: fixed the YAML that blocked restarts, all automations/timers/car items loaded, reload trigger and Claude usage sensors now read from disk; automatic YAML reload confirmed (20 s).
@@ -141,7 +152,7 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 - Kids page, pantry use-by suggestions, Garage tool storage, map zoom check, Storage here count fix (BUILD .206).
 - Swipe between pages on phones, Planes map zoom fixes (tile seams, blank past zoom 16), trail entries in the map legend (BUILD .205).
 
-## Nov 21 2026
+## Builds .110 to .204
 
 - Each TV gets its own TV-dashboard view (survives reloads), legend on the Map path (BUILD .204).
 - New build chime, wishlist links show at once with a Pending tag, legends on the Planes map and Bitcoin chart (BUILD .203).
@@ -239,7 +250,7 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 - Design rule: cards live on their page first; Home shows copies when they matter.
 - Dog timeout uses the dog's name from Pet characters (BUILD .110).
 
-## Nov 20 2026
+## Builds .18 to .109
 
 - Shopping page shows only shopping lists (BUILD .109).
 - Docs version 2.0: Living with Nashboard guide, Home pop-up table and pages refreshed, Pantry page added.
@@ -297,7 +308,6 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 - Backlog page: Hardware wishlist with add-by-link and remove (BUILD .50).
 - Commute: Navigate button on every trip card, on phones and Home (BUILD .49).
 - Quick-add forms and card text boxes fit any card width (Add shows just + in narrow cards) (BUILD .48).
-- Pollen: shared card on Air, Weather and Home (auto when medium–high) (BUILD .46). BigDisk checked, IQVIA added.
 - Home Assistant restarted; all teams back through the Teams picker.
 - Quick wins: commute cards only around the trip; refresh after reconnect; shared loading and empty look (BUILD .45).
 - Sports: all teams removable (moved out of configuration.yaml); team dropdown by league (BUILD .44).
@@ -325,7 +335,7 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 - Home: Air quality card (Moderate or worse), shared with the Air page.
 - Earlier Nov 20: highest plane worldwide, card debounce, stable card placement, Air & Allergy, Guest, Family Board,
 
-## Nov 19 2026
+## Earlier builds
 
 - Home "Overhead" card: photo shows only once loaded (falls back to Planespotters if the first photo fails),
 - Planes page: glass cards on the map's left edge for the picked plane (all details, small photo), the closest
