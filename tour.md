@@ -44,7 +44,7 @@ A step-by-step look at every page of Nashboard, in the order you would meet them
 <li><a href="#s-packages" title="Packages">21</a></li>
 <li><a href="#s-shopping" title="Shopping">22</a></li>
 <li><a href="#s-recipes" title="Recipes">23</a></li>
-<li><a href="#s-music" title="Music">24</a></li>
+<li><a href="#s-music" title="Now Playing">24</a></li>
 <li><a href="#s-finance" title="Finance">25</a></li>
 <li><a href="#s-network" title="Network">26</a></li>
 <li><a href="#s-maint" title="Maintenance">27</a></li>
@@ -245,12 +245,12 @@ A step-by-step look at every page of Nashboard, in the order you would meet them
 <h2>Recipes</h2>
 <img src="images/tour/tour-recipes.jpg" alt="The Recipes page with demo data" loading="lazy">
 <p>The meal plan and a recipe box with a hands-free cook mode.</p>
-<div class="tour-nav"><a href="#s-shopping">&larr; Shopping</a><a class="nx" href="#s-music">Music &rarr;</a></div>
+<div class="tour-nav"><a href="#s-shopping">&larr; Shopping</a><a class="nx" href="#s-music">Now Playing &rarr;</a></div>
 </section>
 
 <section class="tour-step" id="s-music">
 <div class="tour-count">Step 24 of 41</div>
-<h2>Music</h2>
+<h2>Now Playing</h2>
 <img src="images/tour/tour-music.jpg" alt="The Now Playing page: a TV playing a nature documentary, with playback buttons and a volume slider" loading="lazy">
 <p>What is playing in each room, with browse and play controls.</p>
 <div class="tour-nav"><a href="#s-recipes">&larr; Recipes</a><a class="nx" href="#s-finance">Finance &rarr;</a></div>
@@ -261,7 +261,7 @@ A step-by-step look at every page of Nashboard, in the order you would meet them
 <h2>Finance</h2>
 <img src="images/tour/tour-finance.jpg" alt="The Finance page with demo data" loading="lazy">
 <p>Markets and a watchlist with live quotes.</p>
-<div class="tour-nav"><a href="#s-music">&larr; Music</a><a class="nx" href="#s-network">Network &rarr;</a></div>
+<div class="tour-nav"><a href="#s-music">&larr; Now Playing</a><a class="nx" href="#s-network">Network &rarr;</a></div>
 </section>
 
 <section class="tour-step" id="s-network">
@@ -364,7 +364,7 @@ A step-by-step look at every page of Nashboard, in the order you would meet them
 <div class="tour-count">Step 38 of 41</div>
 <h2>Design Studio</h2>
 <img src="images/tour/tour-backlog.jpg" alt="The Design Studio page with demo data" loading="lazy">
-<p>Where ideas, bugs and the build plan live. Jot something down and it is filed into the plan.</p>
+<p>Where ideas, bugs and the build plan live. Jot something down and it is filed into the plan. It is a maintainer page: it appears with the Maintainer tools switch in Settings and opens from the System page.</p>
 <div class="tour-nav"><a href="#s-display">&larr; Display and TV</a><a class="nx" href="#s-system">System &rarr;</a></div>
 </section>
 
@@ -392,4 +392,4 @@ A step-by-step look at every page of Nashboard, in the order you would meet them
 <div class="tour-nav"><a href="#s-settings">&larr; Settings</a><a class="nx" href="#top">Back to the top</a></div>
 </section>
 
-That is the whole app. For the full list of what each page can do, see [Every feature](features.md), and for everyday habits see [Living with Nashboard](living-with-nashboard.md).
+That covers the main pages. A few smaller ones, such as Utilities, Pool, Sitter monitor, Hardware, Labs and the Kitchen tablet view, show up in the menu when they apply to your house and are described on [All pages](pages.md). For the full list of what each page can do, see [Every feature](features.md), and for everyday habits see [Living with Nashboard](living-with-nashboard.md).

@@ -127,7 +127,7 @@ This is the core idea: **the screen shows what matters right now and gets out of
   light mode (for example `--warn-tx`, `--bad-tx`, `--ok-tx`). **Never** put a bright accent colour straight on text; it
   is unreadable on a light background.
 - **Text on an accent background** (selected chips, primary buttons) uses a fixed dark ink, never the accent text token.
-- **Minimum contrast:** text must reach at least 3:1 against its background in both themes (aim higher for body text).
+- **Minimum contrast:** text and icons must reach at least WCAG AA contrast (4.5:1 for normal text, 3:1 for large text and icons) against their background in both themes.
   The exception is text over a live map or photo, which is judged by eye.
 - If people can pick an accent colour, check every choice in both themes.
 
@@ -274,12 +274,13 @@ before every deploy and block the deploy on any failure.
 | Check | What it should fail on | Run it |
 |---|---|---|
 | **Layout gaps** | A card that doesn't exactly fill the columns it spans; single cards of different widths on one page; uneven gaps. At desktop, tablet and phone widths. | Every UI change |
-| **Contrast** | Any text under 3:1, on every page, in **both** light and dark. | Every UI change |
+| **Contrast** | Any text or icon below WCAG AA contrast, on every page, in **both** light and dark. | Every UI change |
 | **Data retention** | Person-entered data kept only in browser storage; a seeded value that doesn't survive a rebuild and reload; a save that empties or sharply shrinks a list without a confirm. | Every build |
 | **Maps** | Missing tiles, blank areas or drifting markers at whole and fractional zooms, in satellite view and in Full window. | Any map change |
 | **Legends** | A colour, line style or icon drawn without a matching legend entry. | Any chart, map or diagram change |
 | **Name clashes** | Two parts of the code declaring the same top-level name or shared state key. | Every build |
 | **Performance** | Render time, long tasks, memory or page size more than about 30% worse than a saved baseline. | Every few deploys |
+| **Tap size** | Any control whose hit area is under 44 px (aim for 48). | Every UI change |
 | **Phones** | Layout shots at an Android and an iPhone size, plus a code scan for iPhone-unsupported APIs used without a fallback. | Phone-affecting changes |
 
 Tips: run long page lists in groups so each run finishes quickly; crop screenshots to the part that changed; and refresh
@@ -299,7 +300,7 @@ Before shipping any change, confirm:
 - [ ] Content stays within the page width cap (except in Full window).
 - [ ] Only the body font family and the size scale tokens are used.
 - [ ] Colours come from tokens; meaning text uses the darker text tokens; ink on accent backgrounds is the fixed dark ink.
-- [ ] Looks right and passes 3:1 contrast in **both** light and dark.
+- [ ] Looks right and passes WCAG AA contrast in **both** light and dark.
 - [ ] Full window fits the whole page with no scrolling.
 - [ ] Card headers collapse on tap; actions are in the ⋯ menu; collapse state is saved per person.
 - [ ] No text overruns its box; it shrinks to fit or has Show more.

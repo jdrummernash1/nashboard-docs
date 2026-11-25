@@ -7,7 +7,7 @@ Three diagrams: how the app works, how AI is used both inside the app and to bui
 
 ## 1. How the app works
 
-Home Assistant (HA) runs on a small server at home (a Raspberry Pi class computer is enough). It talks to devices, cameras and online services. The dashboard is one generated page (built from about 300 source pieces) served by HA, and everything a person enters is saved back into HA, never only in the page. Phones, the watch and the car reach HA through the companion apps, which also deliver notifications.
+Home Assistant (HA) runs on a small server at home (a Raspberry Pi class computer is enough). It talks to devices, cameras and online services. The dashboard is one generated page (built from about 340 source pieces) served by HA, and everything a person enters is saved back into HA, never only in the page. Phones, the watch and the car reach HA through the companion apps, which also deliver notifications.
 
 <img src="images/diagrams/how-the-app-works.svg" alt="Diagram of how the app works: devices, online services and cameras feed Home Assistant on a small home server, with the dashboard, saved data, screens, companion apps and notifications" style="max-width:100%;height:auto">
 

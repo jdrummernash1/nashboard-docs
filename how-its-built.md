@@ -125,6 +125,10 @@ Rules that keep the grid honest:
 - **Every page packs.** A page's card container is either a packing grid or a deliberate fixed layout (a calm nursery
   screen, a kitchen board). Plain grids that leave gaps are not allowed.
 
+### Smart layout
+
+Home and the pages with a Right now box use **Smart layout**, which is on by default (a per-screen switch under Settings, This screen). Each card is sized to fit what it shows, every card packs in one flow, section names become small labels with a row of section chips, and your card order is kept: a card moved into another section stays there. Cards slide gently into place and never under a finger. Turn it off and the plain packing grid above applies.
+
 ### Page width
 
 On very wide screens, content never spreads wider than about **five standard cards**. It centres with side margins
@@ -277,6 +281,15 @@ fixed.
 | **First screen** (firstscreencheck) | The main card starts on the first screen and no tall card is mostly empty. | After every UI change |
 | **Words** (wordscheck) | Plurals, typos, doubled words and page intros on every page. | After every UI change |
 | **Moving cards** (movecheck) | Every card size can be lifted, dragged and dropped with a 44 px handle. | Any card or layout change |
+| **Contrast** (contrastcheck) | Text and icons meet WCAG AA contrast in dark and light. | After every UI change |
+| **Touch size** (tapcheck) | Every control has a hit area of at least 44 px (aim 48). | After every UI change |
+| **Page flow** (flowcheck) | Whole-page card flow: no cards touching or closer than the gap, no card alone beside empty columns, one column grid. | After every UI change |
+| **Switches** (togglecheck) | Every switch flips within 100 ms. | After every UI change |
+| **How it works** (howcheck) | Every card has exactly one How it works entry. | After every UI change |
+| **Button sizes** (sizecheck) | Sibling buttons in a bar or group are the same size. | After every UI change |
+| **Smooth scrolling** (scrollcheck) | Touch scrolling stays smooth. | After every UI change |
+| **Saves** (savecheck) | Every save waits for its data to load first, never writes empty over data, keeps no person-entered data only in the browser, and versions object data. | Every build |
+| **Load** (loadcheck) | Loads the app without a browser and fails on a load-time crash. | Every build |
 | **Performance** (perfcheck) | Per-page render time, long tasks, memory and page size, plus idle CPU on Home, compared with a saved baseline; fails anything more than 30% worse. | Every fifth deploy |
 
 The checks run page groups in batches so each run finishes quickly (each stops itself after 5 minutes, and a shared queue lets 4 run at once), and phone layouts are checked at both an Android
@@ -284,7 +297,7 @@ and an iPhone size.
 
 ## How the build works
 
-The app is **written as about 300 numbered pieces** (JavaScript, CSS and a few HTML parts) and **served as one generated page** that runs inside Home Assistant through a small dashboard card. Editing one huge file is error-prone, and impossible for several workers at once, so the source is split: head, styles, body, then the script by feature, then the closing part. A build script joins them in file-name order, checks that the joined script parses, and writes the page. Nobody edits the generated page by hand.
+The app is **written as more than 300 numbered pieces** (JavaScript, CSS and a few HTML parts) and **served as one generated page** that runs inside Home Assistant through a small dashboard card. Editing one huge file is error-prone, and impossible for several workers at once, so the source is split: head, styles, body, then the script by feature, then the closing part. A build script joins them in file-name order, checks that the joined script parses, and writes the page. Nobody edits the generated page by hand.
 
 <div class="hb" role="img" aria-label="Diagram: numbered source pieces are joined by a build script, checked, backed up, deployed to Home Assistant, and the backlog and wishlist are published with list guards">
 <div class="hb-row">

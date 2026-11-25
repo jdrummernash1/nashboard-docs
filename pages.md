@@ -21,7 +21,7 @@ They're listed here in roughly the same order as the menu, so you can scroll thr
 
 [Home](#home) · [Rooms](#rooms) · [Cameras](#cameras) · [Calendar](#calendar) · [Activity](#activity) · [Now Playing](#now-playing) · [Shopping](#shopping) · [Packages](#packages) · [Recipes](#recipes) · [Pantry & Fridge](#pantry--fridge) · [Storage](#storage) · [Garage](#garage) · [Kids](#kids) · [Weather](#weather) · [Air & Allergy](#air--allergy) · [Sports](#sports) · [Commute](#commute) · [Planes](#planes) · [Map](#map) · [Space](#space) · [Multi-view](#multi-view) · [Display](#display) · [Kitchen tablet](#kitchen-tablet) · [Finance](#finance) · [Room dashboards](#room-dashboards) · [Design Studio](#design-studio) · [Network & Storage](#network--storage) · [Hardware](#hardware) · [Family Board](#family-board) · [Guest](#guest) · [Maintenance](#maintenance) · [Pets](#pets) · [Hobbies](#hobbies) · [Workout](#workout) · [Utilities](#utilities) · [Pool](#pool) · [Wellbeing](#wellbeing) · [Sitter monitor](#sitter-monitor) · [Automations](#automations) · [System](#system) · [About](#about) · [Labs](#labs)
 
-[Settings](#settings) · [Utilities](#utilities) · [Pool](#pool) · [Wellbeing](#wellbeing) · [Sitter monitor](#sitter-monitor)
+Also: [Settings](#settings) and [Security](#security) (a chip inside Activity, not its own page).
 
 Also: [Things every page has](#things-every-page-has) (the card ⋯ menu, tap-to-collapse, Right now, theme colours,
 left- or right-handed phones).
@@ -42,7 +42,7 @@ left- or right-handed phones).
   admins can also turn a card off for everyone). It also lists the card's **related settings** above How this works (a Settings entry that runs the card's own set-up button, the exact settings of cards that have them such as Bedtime settings or the trash and recycling schedule, and "Shows on the ... page" for a Home card that belongs to another page). New cards get these entries automatically. Hidden cards come back from Customize menu → Hidden cards or the System
   page's Hidden cards section.
 - **Remove from this page and Add a card here** are also in the card ⋯ menu. Remove only hides the card on that page: nothing saved in it is touched, and it comes back from the toast's Undo or from **Cards on this page** (opened by Add a card here, with an On this page tab and an Add a card tab). **Hide just for me** hides a card only for you; Remove from this page applies to everyone at home. Add a card here shows a card from another page (for example Medicine & fever on Kids) with the same live data and buttons. Nothing can be removed from Settings, so you can always get back. Settings → Household has the same screen as **Cards on each page**.
-- **Move and How this works** are in the same menu: Move drags a card to a new spot (the order is shared by every
+- **Move and How this works** are in the same menu. While Move mode is on, a **Cancel move** button sits beside Done so you can leave without changing the order. Move drags a card to a new spot (the order is shared by every
   screen), and How this works opens a short plain explanation of the card.
 - **Tap a card's top bar** to collapse or expand it. Buttons and links in the header still work as normal. What you
   collapse is remembered for you (it follows your sign-in to every screen); other people keep their own view. A
@@ -66,7 +66,7 @@ left- or right-handed phones).
 
 ## More on every page
 
-- **Top bar:** buttons sit tight together; the button strip takes at most half the bar and scrolls past that, and top-bar text first tightens its spacing, and every piece of top-bar and banner text then scrolls on its own when it still does not fit, instead of being cut off or overlapping. The version line shows the time, the version and, for admins who maintain the app, the number of open backlog items (for example "10:14 AM · v<!-- ver -->1.15<!-- /ver --> · 11 open"); tap the count to open the Design Studio. A failed load keeps the number already shown.
+- **Top bar:** buttons sit tight together; the button strip takes at most half the bar and scrolls past that, and top-bar text first tightens its spacing, and every piece of top-bar and banner text then scrolls on its own when it still does not fit, instead of being cut off or overlapping. The version line shows the time, the version and, for admins who maintain the app, the number of open backlog items (for example "10:14 AM · v<!-- ver -->1.20<!-- /ver --> · 11 open"); tap the count to open the Design Studio. A failed load keeps the number already shown.
 - **Phone and tablet page bar:** the bottom bar fits as many page buttons as the width allows and slides sideways through every page, Frequent pages first, then the groups in menu order as tinted segments (no heading words), with **More** always pinned at the end. Buttons are at least 48 px.
 - **Card text fills the card:** card titles (and marked main values) grow in a few steps, up to one and a half times, to use the room the card already has. No card gets taller, and sizes stay close from card to card.
 - **Browser tab icon:** the dashboard shows its own small house icon in the browser tab.
@@ -93,15 +93,27 @@ described on the [Home page](home.md) guide and in the [Every feature](features.
 
 ### Home: Sticky notes
 
-A **Sticky notes** card sits beside Today at a glance. Anyone in the household can post a **note**, a **reminder** (date optional) or a **countdown** (date required); each shows who posted it and the days left or overdue. Mark a reminder **Done** or remove any note (Undo is offered). Notes are saved for the whole household in Home Assistant and never replaced by an empty list. A reminder that is due or a countdown in its last day also appears as a Right now card on Home. Tap a note to edit its text or date in place (Undo is offered). Dated reminders that are not done can also reach phones at 8 AM on the due day once the matching Home Assistant automation is switched on. The trash-cans reminder's **Done** button now shows **Done by** and a first name until the pickup passes.
+A small **Sticky notes** button with a count sits on the Home banner and opens the notes. Anyone in the household can post a **note**, a **reminder** (date optional) or a **countdown** (date required); each shows who posted it and the days left or overdue. Mark a reminder **Done** or remove any note (Undo is offered). While one or two notes are open they also show as small yellow **paper** notes pinned to the banner; tap one to open the notes. The banner never stretches tall: if its picture or notes would push it past its normal height, it repairs itself back to size. Notes are saved for the whole household in Home Assistant and never replaced by an empty list. A reminder that is due or a countdown in its last day also appears as a Right now card on Home. Tap a note to edit its text or date in place (Undo is offered). Dated reminders that are not done can also reach phones at 8 AM on the due day once the matching Home Assistant automation is switched on. The trash-cans reminder's **Done** button now shows **Done by** and a first name until the pickup passes.
 
-### Home: Smart layout (trial)
+### Home: Right now Done hides a row everywhere
 
-The way cards are sized and sorted is moving to one model: **every card measures what it shows and picks its own size, one packer fills one canvas per page, and the order comes from priority first, then use, with your own moves always winning.** Nothing saved is read differently, and old saved order and sizes are kept. The first piece is a trial on Home only, off by default and per device: **Settings, This screen, Smart layout (Home, trial)**. With it on, only the banner is a pinned full row; the weather card and Now playing no longer split the page into separate areas; a card made wide drops to one column when its content fits there and grows a step when its text would overrun; and no lone card is stretched across a row. Nothing repacks under a finger, a scroll or while you type. Other pages follow in later versions; meanwhile the standard packer on every page now widens a card into a free column beside it instead of leaving a hole.
+Tap **Done**, **Seen**, **Got it** or **Dismiss** on a Right now row, a Home card or a page's Right now card and the row hides at once on this screen and on every other screen at home, including the Display. The note says who tapped and offers **Undo**. A dismissal ends by itself after 6 hours, or when the situation clears and later comes back (it counts as new then). The record is saved in Home Assistant with who and when, so two screens never undo each other. Sticky-note reminders keep their own Undo.
 
-### Home: Raise cards and pages you use (trial)
+### Home: Wall screen user
 
-With Smart layout on, the page remembers which cards you tap, expand or keep collapsed (counts only, no content, fading over about two weeks) and, on Home, Family and System, moves a card you use up to three places, or one you leave collapsed down to three. Your own card order, Right now cards and the banner always come first. The order is decided once per visit so nothing shuffles while you read; a raised card gets a small arrow after its title and a line in its ⋯ menu saying why. Turn it off in **Settings → This screen → Raise cards you use**; the counts are saved per person in Home Assistant.
+A **wall screen user** is a Home Assistant login that an administrator marks for a shared wall tablet or kitchen screen. Mark it in **Settings, This screen, Wall screen user**: the card lists the logins that are not administrators, each with a switch. An administrator login is never a wall screen, and the setting stores only which logins are marked, not names or passwords. If no such login exists yet, the card says how to create one in Home Assistant (a person who may sign in and is not an administrator).
+
+On a marked login the screen hides what is personal or for grown-ups: cards for valuables, the security log, camera pictures, car value, invites and the saved-data list, and each person's own data (Finance, workout history, My gift ideas, the package email setup). Their pages, Right now rows and sheets are hidden too. Only a short list of shared things can still be changed from the wall: medicine doses, sticky notes, kids stars, the family board, the dishwasher, laundry, leftovers, the intercom, a shopping run and Right now Done. Everything else is read only there, and a refused change says so calmly and never changes saved data. Saving from a wall login uses an optional wall save helper in Home Assistant; without it those changes are refused with a short note.
+
+This is a privacy convenience, not a lock: grown-up household data is still stored where any Home Assistant login could read it, so it is hidden on the wall rather than made secret. Each person's own data is kept in their own Home Assistant account and is returned only to them.
+
+### Home: Smart layout
+
+Cards are sized and sorted by one model: **every card measures what it shows and picks its own size, one packer fills one canvas per page, and the order comes from priority first, then use, with your own moves always winning.** Nothing saved is read differently, and old saved order and sizes are kept. It is on by default and per device: **Settings, This screen, Smart layout** turns it off for that screen (it stays off there until you turn it back on). With it on, Home and every page with a Right now box (Family, System, Commute, Finance, Space, Network, Packages, Recipes, Pantry, Pets, Rooms, Activity) become one canvas: section names turn into small labels and a row of section chips, Right now cards come first, your card order is kept, and a card you move into another section stays there. With it on, only the banner is a pinned full row; the weather card and Now playing no longer split the page into separate areas; a card made wide drops to one column when its content fits there and grows a step when its text would overrun; and no lone card is stretched across a row. Nothing repacks under a finger, a scroll or while you type. Other pages use the standard packer, which widens a card into a free column beside it instead of leaving a hole.
+
+### Home: Raise cards and pages you use
+
+While Smart layout is on (the default), the page remembers which cards you tap, expand or keep collapsed (counts only, no content, fading over about two weeks) and, on Home and every page that is one canvas under Smart layout, moves a card you use up to three places, or one you leave collapsed down to three. **Pages rise by use too:** after about 5 seconds on a page its visit is counted, and in the menu groups and the More sheet a page you open often moves up to three places inside its own group (Home, the bottom-bar pages and About never move, and nothing changes if you chose your own order). The menu order is read once when the app loads, so it never reorders while a page is open. Your own card order, Right now cards and the banner always come first. The order is decided once per visit so nothing shuffles while you read; a raised card gets a small arrow after its title and a line in its ⋯ menu saying why. Turn it off in **Settings → This screen → Raise cards and pages you use**; the counts are saved per person in Home Assistant.
 
 ### Home: Today at a glance and card order
 
@@ -386,7 +398,7 @@ A live map of aircraft around home or around the phone (5 to 500 nm), coloured b
 military aircraft ringed, and emergencies (squawk 7700) highlighted worldwide.
 
 - Glass cards on the map's edge (on a phone they become a plain list under the map, so nothing is hidden or cut off): the plane you picked (all details and a small photo, or a labelled stock photo of its
-  type), the **closest** plane, **military** planes in range, and the **highest** and **fastest plane in the world**
+  type), the one **Closest** card, **military** planes in range, and the **highest** and **fastest plane in the world**
   right now (tap to fly the map there).
 - Arrivals and departures boards for nearby airports (airport tabs scroll on phones).
 - **Flight restrictions:** active temporary flight restriction zones are drawn on the map as shaded areas that name their type and state on hover or tap. The plane popup and plane card also say in one line when a plane is inside, or within 3 nm of, an active restriction.
@@ -421,6 +433,8 @@ People and tracked devices on a map with their recent path for the day, commute 
 The Space Station: where it is, the next visible pass, every pass for three days, and whether each is visible.
 Upcoming rocket launches. Bright satellites overhead now, and a **sky dial** that can turn with the phone's
 compass.
+
+Space keeps working when a source is slow: the Station's orbit and the rocket launch list each have a backup source, the last good data stays on screen if a refresh fails (with a calm note saying how old it is), and a failed or old load retries by itself at most every 5 minutes.
 
 ## Multi-view
 
@@ -466,7 +480,7 @@ For a wall display in the kitchen, turned on per device: **Settings → This scr
 `?display=kitchen` to the address; `?display=off` turns it off).
 
 - The display shows the normal Home page. After 2 minutes without a touch it goes back to Home and closes anything left
-  open, and it keeps the screen awake.
+  open, and it keeps the screen awake (one screen wake lock, reused and released when you leave the display).
 - 9 PM to 6:30 AM it dims after a minute without a touch (a tap wakes it), with no animations or chimes.
 - The kitchen at-a-glance cards are on the Kitchen room page: Today, Who's home, Trash & recycling and Chores from the
   Family Board, plus the Living Room controls. Room settings can hide them.
@@ -529,9 +543,10 @@ Opened from System or the More menu (not in the side menu). A status line at the
 - **Shipped per day**: a chart of the last 14 days with a 7-day average.
 - **Hardware wishlist**: add a product link, × to remove, **Bought** moves it to Purchased; refreshes every minute.
 - **Agents**: one card for every agent used lately. It shows how many are running, then small terminal-style tiles for the main chat, the team leads, helpers and free AI, with their latest lines. It also shows jobs done today with a bar for every job.
-- **Agent org chart**: who works for whom: the main chat, team leads, paid and free helpers, the quality checks and the last few builds.
+- **AI usage**: refreshes by itself and lists every model in use.
+- **Agent org chart**: who works for whom (the 12 standard team leads, shown even when idle): the main chat, team leads, paid and free helpers, the quality checks and the last few builds.
 - **Agent activity keeps refreshing**: the Agents card and the live status refresh when the screen wakes, regains focus or comes back online, and a watchdog refetches when the data goes stale, so a throttled or low-memory device does not freeze on old lines.
-- **Visits** (admins only, never in the demo): demo-page visits today, over the last 7 and 30 days, a 14-day bar chart and a split by device type, with a placeholder for docs-site visits. A visit counts at most once every 10 minutes and only the day and device type are saved.
+- **Visits** (admins only, never in the demo): demo-page visits today, over the last 7 and 30 days, a 14-day bar chart and a split by device type, with a docs-site visits row that stays "not set up" until an address is added. Agents hide from the Agents card after 5 idle minutes. A visit counts at most once every 10 minutes and only the day and device type are saved.
 - **Autopilot** (admins): opens the private control panel for the assistant that maintains the dashboard.
 
 See [Settings](settings.md#design-studio-backlog-and-ideas).
@@ -588,6 +603,10 @@ the same kind.
 **Right now** on the Family Board covers Good morning, Goodnight check, chores, trash night, lights left on, the nursery,
 fever and medicine, medicine expiring, birthdays, holiday traditions, the week ahead, kids' ideas, movie night, for sale
 and the intercom.
+
+### Family: My gift ideas (private)
+
+A card for gifts you plan to give someone: who it is for, the idea, a link, a price, the occasion, a date and a status (idea, bought, wrapped), with private notes per person (sizes, favourite brands) that feed the AI. It is **private to the person signed in**: saved only in your own Home Assistant account, never in the shared household data, so another account on the same home sees an empty list. It never appears on the Display or TV page, on a wall or kiosk screen, or where nobody is signed in. Ideas from an AI come only from an AI in your home, show before anything is saved, and are kept only when you tap Add; with no home AI the rest works the same.
 
 ### Family Board: new cards
 

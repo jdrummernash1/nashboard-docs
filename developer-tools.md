@@ -22,11 +22,11 @@ A tour of the tools and the workflow behind the dashboard: how the code is built
 
 ## 1. The build pipeline
 
-Home Assistant serves the dashboard as one page, but that page is generated and nobody edits it. The code is about 300 source pieces.
+Home Assistant serves the dashboard as one page, but that page is generated and nobody edits it. The code is about 340 source pieces.
 
-- **Source pieces** live in `src/dashboard/` (about 300 JavaScript, CSS and HTML files): head, styles, body, then the script split by feature, then a tail. They are joined in file-name order. New feature code goes in its own numbered piece and registers its buttons with `Object.assign(ACT, {...})`.
+- **Source pieces** live in `src/dashboard/` (about 340 JavaScript, CSS and HTML files): head, styles, body, then the script split by feature, then a tail. They are joined in file-name order. New feature code goes in its own numbered piece and registers its buttons with `Object.assign(ACT, {...})`.
 - **`demo-sync.js`** generates the in-app demo house from the screenshot sample house during the build. The build fails if the sample data changes so that the demo can no longer be made from it (`--check` tests this).
-- **`ollama-pool.js`** runs local AI jobs from a drop folder, starting 5 at a time and adding more (up to 10) while answers are quick and the graphics card has room. It drops one when answers slow down. Jobs run one model at a time, stay on this PC, and are logged.
+- **`ollama-pool.js`** runs local AI jobs from a drop folder, starting 5 at a time and adding more (up to 10, or fewer when the PC is busy) while answers are quick and the graphics card has room. It drops one when answers slow down. Jobs run one model at a time, stay on this PC, and are logged.
 - **`build-dashboard.js`** joins the pieces into the generated `ha/www/dashboard.html` and fails the build if the joined script does not parse. It also stamps in the line and piece counts. `--check` fails if the built file does not match the pieces (a sign someone edited the output directly).
 - **`src-patch.js`** is a small helper for patch scripts: replace exact text wherever it lives across the pieces (it refuses ambiguous matches), bump the build number, save and rebuild.
 - **`pull-from-ha.ps1`** copies the hand-written files from Home Assistant into the repo so the local copy is never assumed current.
@@ -56,7 +56,12 @@ Every check is automatic and a failure blocks the deploy.
 - **wordscheck** reads the text of every page for wrong plurals ("1 items"), typos, doubled words, calm lines for things not set up, and a missing page intro.
 - **movecheck** lifts a card of every size on Home and Rooms the way Move does and checks the flying copy, the 44 px handle, dropping next to another column and cancelling cleanly.
 - **Time and queue limits:** every check stops itself after 5 minutes, so page lists are kept short. Checks wait in a machine-wide queue (`harness-queue.js`) that lets 4 run at once.
-- **tapcheck** (planned) will audit that every tap target is at least 48 px.
+- **tapcheck** audits that every control's hit area is at least 44 px (aim 48), at phone, tablet and desktop widths.
+- **contrastcheck** fails any text or icon under WCAG AA contrast, in dark and light.
+- **togglecheck** fails any switch that takes more than 100 ms to flip.
+- **howcheck** fails any card that does not have exactly one How it works entry; **optioncheck** fails any card whose 3-dot button does not open its menu close by and on screen.
+- **flowcheck** checks the whole page: no cards touching or closer than the gap, no card alone beside empty columns.
+- **sizecheck**, **scrollcheck**, **loadcheck** and **savecheck** check that sibling buttons match in size, touch scrolling stays smooth, the page does not crash while loading, and every save is guarded so it never writes empty over data.
 - **stuck-check** finds leftover headless browser processes from test runs, live work items not updated for five minutes, and background jobs running far too long. `--fix` cleans up the browser leftovers. It runs at every check-in, before harness runs and before deploys.
 
 Data is treated as sacred: everything a person enters lives in Home Assistant, never only in the page, and any change to a saved shape ships with a versioned migration that keeps every old field.
@@ -128,7 +133,7 @@ The aim is the most finished work per unit of usage, without risking data.
 
 - Backups before every deploy, hourly during work, and a full set after every 50 shipped items.
 - Idle helpers and stuck test runs are stopped and restarted.
-- Only `docs/` is public, with no personal details. The docs site is refreshed on every version that ends in 0 (1.10, 1.20, ...).
+- Only `docs/` is public, with no personal details. The docs site is refreshed on a regular schedule, not on every build.
 - Whenever a helper, page or integration is added, the usage log, work status, deploy report, checks, docs and hand-off note are updated in the same pass.
 
 ## Recent additions
@@ -136,6 +141,6 @@ The aim is the most finished work per unit of usage, without risking data.
 - **Jump check** (`jumpcheck.js`). On the Design Studio page it collapses and re-expands three cards one at a time. After each toggle the toggled card's top must stay within 4 px of where it was on screen, and every other card must keep its column and still be there. It prints OK or each problem, and runs with the other checks before a deploy.
 - **Performance check catches mutation loops.** An idle-CPU and long-task baseline now flags a script that keeps changing the page in a loop (one such loop in the scrolling chips was found and fixed this way).
 - **Check list for a batch:** gap check, overlap check, Right now check, name-clash check, generic check, performance check, legend check and jump check, run by the main chat after the helpers finish and before integrating.
-- **Docs version banner.** The public docs show the version they describe (for example 1.1), so a reader can see how current they are.
+- **Docs version banner.** The public docs show the version they describe (for example 1.20), so a reader can see how current they are.
 - **Design Studio agent views.** The Agents tally counts free and paid agents on one line; Live agents shows a terminal-style view of what each agent is working on, fed by the work-status tool.
 - **Build progress lines.** The main chat posts a short plain line as each stage of a batch finishes, and asks for every approval it will need up front at hand-over rather than mid-run.

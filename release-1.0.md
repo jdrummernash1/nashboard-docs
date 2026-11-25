@@ -19,7 +19,7 @@ Home Assistant and from what you enter.
 - **More than 40 pages.** Home, Rooms (a page for every Home Assistant area, made automatically), Cameras, Calendar,
   Weather, Air & Allergy, Planes, Space, Map, Commute, Sports, Packages, Shopping, Recipes, Pantry & Fridge, Storage,
   Garage, Family Board, Kids, Pets, Guest, Maintenance, Hobbies, Workout, Security, Activity, Automations, Network,
-  Finance, Settings, System and About, plus Utilities, Pool, Wellbeing, a Sitter monitor and Energy (in Labs).
+  Finance, Now Playing, Multi-view, Hardware, Settings, System and About, plus Utilities, Pool, Wellbeing, a Sitter monitor and Energy (in Labs).
 - **Home that sorts itself.** About 95 automatic cards, each with a priority. Urgent ones (a water leak, a power cut,
   someone at the door) come first; quiet ones are stacked together. Today at a glance, a short summary of the day, is
   the first card under the banner.

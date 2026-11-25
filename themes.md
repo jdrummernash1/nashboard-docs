@@ -1,7 +1,7 @@
 # Themes and looks
 
-Nashboard can be changed in three independent ways. Mix them freely; each is remembered per person and follows that
-person to every device they sign in on.
+Nashboard can be changed in three independent ways. Mix them freely. The Look and the accent colour follow you to every
+device you sign in on; the Mode is remembered on each device.
 
 1. **Look**: the overall style (Classic, Paper, Glass or Bold, or Auto, which changes with the season).
 2. **Mode**: Auto, Dark or Light.
@@ -89,7 +89,7 @@ On holidays the Home banner dresses the house, and a few things drift past (fall
 <figure style="margin:0"><img src="images/holidays/memorial-day.jpg" alt="Memorial Day: a flag on the porch" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">Memorial Day: a flag on the porch</figcaption></figure>
 <figure style="margin:0"><img src="images/holidays/valentines.jpg" alt="Valentine’s Day: heart garland and a heart on the door" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">Valentine’s Day: heart garland and a heart on the door</figcaption></figure>
 <figure style="margin:0"><img src="images/holidays/first-snow.jpg" alt="First snow: snow on the roofs when the weather says snow" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">First snow: snow on the roofs when the weather says snow</figcaption></figure>
-<figure style="margin:0"><img src="images/holidays/game-day.jpg" alt="Game day: bunting in the team colours" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">Game day: bunting in the team colours</figcaption></figure>
+<figure style="margin:0"><img src="images/holidays/game-day.jpg" alt="Game day: balloons in the team colours on the mailbox" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">Game day: balloons in the team colours on the mailbox</figcaption></figure>
 <figure style="margin:0"><img src="images/holidays/thanksgiving.jpg" alt="Thanksgiving: leaf garland and a turkey" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">Thanksgiving: leaf garland and a turkey</figcaption></figure>
 <figure style="margin:0"><img src="images/holidays/st-patricks.jpg" alt="St. Patrick’s Day: shamrock garland" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">St. Patrick’s Day: shamrock garland</figcaption></figure>
 <figure style="margin:0"><img src="images/holidays/easter.jpg" alt="Easter: eggs on the lawn (the week before)" loading="lazy" style="width:100%;height:auto;border-radius:10px;display:block"><figcaption style="font-size:.9em;margin-top:6px">Easter: eggs on the lawn (the week before)</figcaption></figure>

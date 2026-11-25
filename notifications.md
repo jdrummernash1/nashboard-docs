@@ -8,7 +8,7 @@ title: Notifications
 
 Every notification Nashboard can send, in plain words. **Phone** means a push notification from Home Assistant to the phones that have the Home Assistant app; **Screen** means a pop-up, banner or chime on a Nashboard screen. Most can be switched off in **Settings → Alerts**, and the ones that go to phones only go to people who are set up to get them.
 
-This list is generated from the real automations and the Alerts sheet, and a check fails the build when a new notification is not described here, so it stays complete. Currently **42** notifications.
+This list is generated from the real automations and the Alerts sheet, and a check fails the build when a new notification is not described here, so it stays complete. Currently **43** notifications.
 
 ## Doors, cameras and packages
 
@@ -55,6 +55,7 @@ This list is generated from the real automations and the Alerts sheet, and a che
 | Week ahead | Phone | Sunday evening: how many events are coming and which day is busiest. |
 | Birthday in two weeks | Phone | Two weeks before a birthday on the calendar. |
 | Closing or delay today | Phone | A closing or delay is announced for today. |
+| Sticky note reminder due | Phone | A reminder on the Sticky notes card reaches its due day (8 AM). |
 
 ## Home status
 

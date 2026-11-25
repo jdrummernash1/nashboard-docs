@@ -42,25 +42,25 @@ connection status. Its buttons sit tight, and text that does not fit scrolls ins
 | **Cameras** | Camera snapshots |
 | **Overhead** | A plane within 5 nm: photo, airline, route, altitude, speed and live distance. Stays at least 3 minutes and follows the plane as it leaves |
 | **Space Station** | From 10 minutes before the ISS rises until it sets: a live sky dial with the pass track and where to look |
-| **Black-owned businesses** | A suggestion card, once a directory is set up. Reads (on this screen only) home jobs due within two weeks, the shopping list and upcoming events, and turns them into at most three generic search words such as "gutter cleaning" or "bakery". Only those words and the general area typed in its settings are sent, never names, addresses or list items. A directory on your own network is always allowed; any other is used only while cloud use is allowed in AI privacy. With none set up it makes no request and says how to set one up. Menu: Business settings (admins paste a directory web address with {q} where the words go), Mute for 30 days, Hide this card. |
+| **Black-owned businesses** | A suggestion card that works with or without a directory. Reads (on this screen only) home jobs due within two weeks, the shopping list and upcoming events, and turns them into at most three generic search words such as "gutter cleaning" or "bakery". Only those words and the general area typed in its settings are sent, never names, addresses or list items. A directory on your own network is always allowed; any other is used only while cloud use is allowed in AI privacy. The home's local AI can also pick the needs, including seasonal ones such as gutters before winter. With no directory it shows them as "Your home may need: ..." with a Search button that opens a web search for Black-owned businesses of that kind in a new tab when tapped; the dashboard sends nothing itself and never makes up business names. The card's title is Black-owned businesses by default; **Kinds of business to support** in Business settings lets you pick Black-owned, Women-owned, Veteran-owned, LGBTQ+-owned, Latino-owned, Asian-owned, Indigenous-owned, Family-owned or Local and independent (with more than one, or a different one, the title becomes Businesses to support). Menu: Business settings (admins paste a directory web address with {q} where the words go), Mute for 30 days, Hide this card. |
 | **Games** | Your teams' games from a day before to a few hours after; live games show a pulsing dot and scores flash when they change |
 | **Up next tasks** | Google Tasks due today are added to the Up next card |
 | **Gas prices** | Cheapest nearby premium and diesel; collapsible |
 | **Right now** | The cards that matter this minute, in priority order. The Claude card (admins who maintain the app) appears only while Claude is working and says what |
-| **Ask Claude** | Everyone can type a question or request for Claude; it opens Claude in a new browser tab |
-| **Claude admin** | Admins only: Claude's status and controls, split from Ask Claude |
+| **Ask AI** | Everyone can type a question or request. It is answered in the card by the first AI available, in this order: an AI in your home (Home Assistant), Ollama, a cloud AI (only when an admin allowed cloud AI), then Claude (also only with cloud AI allowed). A drop-down lists only the AI available now and remembers your pick; with none picked it chooses for you. Claude on claude.ai (a new browser tab) is listed only when an admin allowed cloud AI; with no AI available the card says so calmly |
+| **Claude admin** | Admins only: Claude's status and controls, split from Ask AI |
 | **Eat this first** | Leftovers from the Pantry & Fridge leftovers tracker, oldest first |
 | **Gig night** | A gig coming up: start time, the be-there-by (setup) time and the plan |
 | **Claude usage** | AI plan usage for the house's Claude account; collapsible |
 | **Air quality** | Whenever outdoor air quality is Moderate or worse (AQI 51+): the same card as the Air page, with the next 12 hours and today's pollen when available. Stays at least 3 minutes |
 | **Breaking news** | Recent big headlines, local first |
 
-Commute trips live on the Commute page; Home shows Leave soon and On the way home only when they matter. Every card has a ⋯ menu in its header (Full window, Move, Collapse, Hide for today, Hide just for me, How this works), and tapping a card's top bar collapses or expands it.
+Commute trips live on the Commute page; Home shows Leave soon and On the way home only when they matter. Every card has a ⋯ menu in its header (Full window, Move, Collapse, Hide for today, Hide just for me, How it works), and tapping a card's top bar collapses or expands it.
 
 - **Collapsed cards show a one-line summary** in the header (weather, air, UV, commute, cameras, calendar, packages, trash night, the Litter-Robot and more).
 - **Cards stay locked in place**: collapsing or expanding one never makes the others jump columns.
 - **Move** in the card menu lets you drag a card to a new spot. The order is shared, so every screen shows the same layout.
-- **How this works** in the card menu opens a short plain explanation of that card.
+- **How it works** in the card menu opens a short plain explanation of that card.
 - **Page intro line**: a friendly one-line description under the page title; hide it with its Hide button or in Settings.
 - **Rain radar** (and every radar) has a Full window button.
 
@@ -96,24 +96,24 @@ The app has 108 automatic Home cards. This table is written from the app's own l
 
 | Home card | Shows when | What you can do |
 |---|---|---|
-| Garage open | On Home when a garage door has been open longer than the minutes you set (10 by default), or sooner after bedtime; goes away when closed. | Tap Close and confirm to close the door (only when the door can be closed from here). |
+| Garage open | On Home when a garage door has been open more than 10 minutes; goes away when closed. | Tap Close and confirm to close the door. |
 | Litter-Robot | Appears when the waste drawer is 80 percent full or more, the litter is 30 percent or lower, or the robot reports a fault; goes away once fixed. | Read only. |
 | Dog timeout | While the timeout timer is running; gone when time is up. | Tap Done to cancel the timer early. |
 | Dog feeder | On Home during the 10 minutes before the feeder is due; goes away after feeding. | Read only. |
 | Markets | Weekdays within an hour of the 9:30 AM or 4:00 PM Eastern open and close, or for 2 hours after the watchlist average moves 2 percent or any one symbol moves 5 percent. | Tap it to open the Finance page. |
 | UV high | Between 10 AM and 4 PM while the UV index is 6 or more. | Read-only. |
 | Rocket launch | On Home from 30 minutes before a launch's scheduled time until 10 minutes after it. | Tap it to open the Space page. |
-| Chores today | Appears while chores remain today; gone when all are done. | Tap a chore to mark it done. |
+| Chores today | Appears while chores are due or overdue; gone when all are done. | Tap Done on a chore to mark it done. |
 | Severe weather | While an extreme or severe alert, or any warning, is active for the location; clears when it ends. | Tap it to open the Weather page. |
 | Leave soon | On Home when a timed event with a location starts within the next hour (shows up to two). | Tap Navigate to open directions to the event location. |
 | Nursery asleep | Only between 6 PM and 8 AM, while the sound machine is playing; clears when it stops. | Read only. |
 | New on Wi-Fi | When a new device appears, until you deal with it. | Tap it to open the Network page and name it or mark it Unknown. |
 | House health | On Home for admins only, when one of those is wrong; disappears once fixed. | Tap its link to open System or Network for details. |
-| Internet outage | Appears when one of those status pages reports anything other than normal; clears when it recovers. | Read only. |
+| Internet outage | Appears when the router reports no connection, or when one of those status pages reports anything other than normal; clears when it recovers. | Read only; choose which services to watch on the Network page. |
 | Fever | On Home for 12 hours after a temperature of 100.4 F or higher is logged. | Tap Log temp to open the Family Board and add a new reading. |
 | Medicine | On Home while a medicine was given and its next safe dose time is still ahead (within 24 hours). | Read only. |
 | Pantry: use soon | Appears when items are near their use-by date; clears when used or removed. | Tap Used up to remove an item; the Pantry page has the full list. |
-| Birthday coming up | In the days before a birthday; gone after the day. | Read-only. |
+| Birthday coming up | In the 14 days before a birthday; gone after the day. | Tap Add gift to list when no gift is on the list yet. |
 | Holiday tradition | On Home as that holiday gets close; goes away after. | Read only. |
 | Good morning | From 6 AM to 9 AM, when there is more than one item to show. | Read only. |
 | Goodnight check | From 9 PM to 1 AM, while a light, lock or the garage is still on or open. | Tap a button to lock or turn something off; Everything runs all of them. |
@@ -122,13 +122,13 @@ The app has 108 automatic Home cards. This table is written from the app's own l
 | For sale | When something has been listed a month or longer. | Read-only. |
 | Low batteries | On Home when a battery is low; goes away when replaced. | Read only. |
 | Movie night | Fridays from 5 PM to 9 PM, when at least one movie is saved in Family favorites. | Open the Family favorites list with the see all link. |
-| New car recall | When a new recall is found. | Tap it to open the Commute page for details. |
+| New car recall | When a new recall is found; shown on the Commute page. | Follow the link to check the car at NHTSA, then tap Seen. |
 | Intercom | On Home for 10 minutes after a new message is recorded. | Tap Play to hear it. |
 | On the way home | While a commute trip ending at home is active, the person is not home, and their location changed in the last 90 minutes; goes away when they arrive. | Read only. |
 | Rain coming | When rain or snow is at least 60 percent likely (or forecast) in the next 3 hours and it is not already raining. | Close an open garage door from the card (tap twice to confirm). |
 | Freeze tonight | On Home after noon when the forecast low in the next 20 hours is 32 F or colder. | Read only. |
-| Dinner tonight | Appears when dinner is planned; empty otherwise. | Tap it to open the recipe. |
-| Autoship soon | When an order is due soon; gone after delivery. | Tap it to open the Packages page. |
+| Dinner tonight | Appears from 11 AM on a day with dinner planned; empty otherwise. | Read only. |
+| Autoship soon | When an order ships within the next 2 days; gone after that day. | Read-only. |
 | Maintenance due | On Home when a job is due; goes away when done. | Tap Done to mark it finished. |
 | Trash night | From 3 PM the day before pickup until 9 AM on the pickup day. | Tap Done once the bins are out; it shows who did it ('Done by' and a first name) until the pickup passes, then hides. |
 | Lights still on | From 11 PM to 5 AM when two or more lights are on. | Tap All off to turn them off. |
@@ -139,13 +139,13 @@ The app has 108 automatic Home cards. This table is written from the app's own l
 | Car due soon | When a date is within 30 days or overdue, or an oil change is within 500 miles. | Read-only. |
 | Hobbies | On Home when something for a picked hobby is due today, tomorrow or within a week. | Read only; open the Hobbies page for details. |
 | Something to do today | Saturday and Sunday mornings, 8 to 10 AM. | Read-only; the Family Board card has We did it. |
-| Doorbell | Appears on a ring or person detection and stays 10 minutes after the last one, on Home, Cameras, the Activity page and room pages (never a second copy). | Talk, open the camera, or tap Got it to hide it on this screen until the next ring. |
+| Doorbell | Appears on a ring or person detection and stays 10 minutes after the last one (longer while a person is still detected), on Home, Cameras, the Activity page and room pages (never a second copy). | Tap Got it to hide it on this screen until the next ring. |
 | Package left outside | Appears for a package delivered within 24 hours when nobody is home today or after dusk, until you tap Got it. | Tap Got it to hide that package. |
 | New free AI options | On Home for admins while finds from the last 7 days remain. | Tap Add to Jot it down to file it as an idea, or Dismiss. |
 | Air restrictions near home | When a nearby airport is affected or a restriction covers or is near home. | Read-only. |
 | Pet care due | On Home while a pet task is due; stays until Done and says overdue after an hour. | Tap Done to log the dose or confirm the feeding. |
 | Bedtime | From the usual bedtime hour for 3 hours, while a routine runs, and while sitter mode is on. | Tap Start to begin the routine or Next to move to the following step. |
-| Black-owned businesses | On Home while a job due within two weeks, a calendar event or a shopping item matches a business type, and it is not muted. Until a directory is set up it says so and offers Set up. | Open settings from the 3-dot menu to set the directory address and area. |
+| Black-owned businesses | A job, event or shopping item matches a business type, or a seasonal need applies, and the card is not muted. | Open Business settings (3-dot menu) to pick the kinds, set a directory address and area, and choose how many to show. |
 | Roll up the car windows | Appears when a car window is open and it is raining or the rain chance is 50 percent or more. | Read it and close the windows; the card clears once they are closed or the rain risk passes. |
 | Pick up dinner? | On Home 4 to 8 PM when someone is heading home from a trip. | Tap a phone number to call, or Copy the order. |
 | Dishwasher | Home shows it while running or clean. A kitchen room page also shows it when dirty. | Start or cancel a timer, and tap Emptied when the dishes are put away. |
@@ -212,7 +212,7 @@ Every one of these also lives on its own page's **Right now** card (see [Every f
 
 <img src="images/home-phone.jpg" alt="Home on a phone" width="320">
 
-The grid packs cards to leave the least empty space while the page loads. After that, positions are fixed: a card
+**Smart layout** is on by default (Settings, This screen). Home and the pages with a Right now box size each card to fit what it shows, pack every card in one flow, and show section names as small labels with a row of section chips. Your card order is kept, and a card you move into another section stays there; you can switch it off per screen. The grid packs cards to leave the least empty space while the page loads. After that, positions are fixed: a card
 that grows (for example when expanded) pushes only the cards below it, and a new card drops into the shortest
 column. Nothing jumps sideways. When a card is hidden or dismissed the others restack so no gap is left. Pets never
 vanish or flicker when the page redraws. The **interface scale** (Settings → Look and size) re-packs cards, columns and

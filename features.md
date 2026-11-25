@@ -58,10 +58,34 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 - **Demo and speed (1.11, 1.12):** the demo house is generated from the screenshot sample house, the Home page uses far less CPU when idle, and background work waits until you stop scrolling.
 - **First-screen check:** a quality check fails any page whose main card starts too far down or leaves the first screen mostly empty.
 
-## New in versions 1.6 to <!-- ver -->1.15<!-- /ver -->
+## New in versions 1.6 to <!-- ver -->1.20<!-- /ver -->
 
+- **Smart layout on by default (1.17, 1.19):** Home and every page with a Right now box (Family, System, Commute, Finance, Space, Network, Packages, Recipes, Pantry, Pets, Rooms, Activity) are one canvas with small section labels and a row of section chips. A card you move into another section stays there, and use order weighs where cards sit. **Settings, This screen, Smart layout** turns it off for that screen only ([Smart layout](pages.md#home-smart-layout)).
+- **Right now Done everywhere (1.19):** Done, Seen, Got it or Dismiss on a Right now row hides it on every screen at once, says who tapped, offers Undo and expires after 6 hours ([Right now Done](pages.md#home-right-now-done-hides-a-row-everywhere)).
+- **Wall screen user (1.19):** an administrator marks a non-administrator login as a wall screen; on it, grown-ups' and personal cards are hidden and only a few shared lists can be changed ([Wall screen user](pages.md#home-wall-screen-user)).
+- **Sticky notes on the banner (1.20):** a small notes button with a count sits on the Home banner, and one or two open notes show as small yellow paper notes pinned to it ([Sticky notes](pages.md#home-sticky-notes)).
+- **Banner safety net (1.20):** the Home banner never stretches tall; if something pushes it past its normal height it repairs itself.
+- **Cancel move (1.20):** while Move mode is on, a Cancel move button sits beside Done and leaves the order unchanged.
+- **Empty Add hints (1.20):** an empty Add list (garage, wellbeing, hobbies) says what to type instead of staying blank.
+- **Game-day balloons (1.20):** on a game day, balloons in the team colours float by the mailbox ([Themes](themes.md)).
+- **Display keeps the screen awake (1.20):** the Display uses one screen wake lock, reused and released when you leave it.
+- **Privacy on wall screens (1.20):** cards only grown-ups use stay out of the shared Recently used list, so a wall screen never shows them.
+- **Businesses card (1.18, 1.19):** the home's AI can pick the needs (seasonal ones too), with a one-tap web search when no directory is set, and **Kinds of business to support** lets you choose Black-owned (the default) or other kinds ([Home](home.md#cards)).
+- **Ask AI and cloud (1.19):** the claude.ai choice appears only when an admin allowed cloud AI.
+- **Colours and scrolling (1.17, 1.18):** the card 3-dot icon, menu SOON badge, Finance tags, Print monitor icon, Wellbeing breathing text, banner pill and sun icon meet the readable-colour standard in dark and light; phone scrolling waits out a whole swipe before background work runs; house decor sway is off on phones.
+- **House picture (1.16 to 1.19):** the banner's windows, porch light and lamp can be linked to rooms and lights, the mailbox glows while mail waits, the garage door shows open and the solar panels shimmer while producing, each only when Home Assistant has the matching device and each with its own switch in Your house. Up to two trees per side, and the photo reader asks for one or two.
+- **Signing in on another device (1.17):** a person's set-aside settings come back when they sign in again, and the look switches at once.
+- **Docs visit count (1.19):** these docs can count visits with a privacy-friendly counter, only once an owner turns it on; nothing is added until then.
+- **Ask AI (1.16):** the Home question card is now **Ask AI** and answers inside the card. It tries an AI in your home first, then Ollama, then a cloud AI (only when an admin allowed cloud AI), then Claude. A drop-down lists only what is available now and remembers your pick for you ([Home](home.md#cards)).
+- **My gift ideas (1.16):** a private Family card for gifts you plan to give. It is saved only in your own Home Assistant account, so another person signed in on the same home cannot see it, and it never appears on the TV, wall or kiosk screens. A home AI can suggest ideas, shown for you to keep or skip ([Family](pages.md#family-my-gift-ideas-private)).
+- **Light buttons (1.16):** a light's button tints with its live colour, or a warm or cool white for a colour-temperature light.
+- **Space (1.16):** a backup source for the Station's orbit and launches, the last good data kept when a source fails, a retry every 5 minutes and calm notes saying how old the data is ([Space](pages.md#space)).
+- **Planes (1.16):** one **Closest** card; the map no longer repeats it.
+- **Hardware (1.16):** a PC that is connected but not sending readings shows numbered steps to finish in HASS.Agent ([Hardware](pages.md#hardware)).
+- **Design Studio (1.16, admins):** the AI usage card refreshes itself and lists every model, agents hide after 5 idle minutes, and the org chart shows the 12 standard team leads.
+- **Sign-in switch (1.16):** when someone else signs in on a device, the first person's saved copy there is set aside, never sent up or deleted.
 - **Cards on each page (1.15):** take a card off a page, or show a card from another page on it, from the card's menu or one screen ([Things every page has](pages.md#things-every-page-has), [Settings](settings.md)).
-- **Raise cards you use (1.15, trial):** with Smart layout on, cards you use often move up a little and are marked with a small arrow ([Raise cards you use](pages.md#home-raise-cards-you-use-trial)).
+- **Raise cards and pages you use (1.15, 1.16):** with Smart layout on (the default), cards you use often move up a little and are marked with a small arrow, and in the menu a page you open often moves up inside its group ([Raise cards and pages you use](pages.md#home-raise-cards-and-pages-you-use)).
 - **Black-owned businesses (1.15):** a Home suggestion card that turns upcoming home jobs, the shopping list and calendar events into generic search words and lists businesses from a directory an admin sets up ([Home](home.md#cards)).
 - **Sticky notes and the trash reminder (1.15):** notes edit in place with Undo, dated reminders can reach phones at 8 AM, and the trash Done button shows who took the bins out.
 - **House picture (1.15):** the photo reader also fills in walk, chimney, flower beds, hedge, yard tree, solar, driveway shape, porch, gutters, flag, skylight and garage style for you to review.
@@ -73,7 +97,7 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 - **Kids (1.14):** a configurable [baby monitor](pages.md#kids) card for any camera, with night view and a sound or motion alert.
 - **Admin (1.13, 1.14):** a **Visits** card for demo visits, a **Throttle the Model** card on About (see [How the AI builds it](ai-build-system.md)), and agent activity that keeps refreshing on throttled devices ([Design Studio](pages.md#design-studio)).
 - **Looks and checks (1.14):** room and card icons readable on and off in dark and light (the contrast check now tests icons), and card headers 48 px tall.
-- **Layout (1.14, 1.15):** the [Smart layout trial](pages.md#home-smart-layout-trial) on Home (Settings, This screen), the first step of the dynamic layout model; the packer fills free columns beside a wide card; Family scrolls smoothly on a phone.
+- **Layout (1.14, 1.15):** [Smart layout](pages.md#home-smart-layout), now on by default (Settings, This screen turns it off per screen), the first step of the dynamic layout model; the packer fills free columns beside a wide card; Family scrolls smoothly on a phone.
 
 - **Pages:** a [Hardware](pages.md#hardware) page (the host, a desktop PC, printers, a 3D printer, the router and the NAS); an [Activity](pages.md#activity) timeline with a Security chip and shared unseen marks; **Start shopping** by aisle on [Shopping](pages.md#shopping); **Picture mode** on [Kids](pages.md#kids).
 - **Garage and Storage:** car **Colour & look**, toolbox brand badges, an insurance list with room and spot, and a **Lives here** card on each room page. See [Garage](pages.md#garage) and [Storage](pages.md#storage).
@@ -120,7 +144,7 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 - **Wall calendar:** big Add event and Add to list buttons with a microphone.
 - **Rooms:** a Now playing card (with a turntable icon, and channel and artwork for video players) while something plays in that room, and kids' cards in any bedroom with a child set in Room settings. Quiet hours also mute a TV or display in that room.
 - **Garage:** car cards are also shown on the Garage page.
-- **Claude and agents:** Ask Claude (everyone) is split from Claude admin; the Agents card shows free and paid tallies with a bar per job; Right now shows the Claude card only while it is working. System page gets a Who's on card (live screens and people).
+- **Claude and agents:** Ask AI (everyone) is split from Claude admin; the Agents card shows free and paid tallies with a bar per job; Right now shows the Claude card only while it is working. System page gets a Who's on card (live screens and people).
 - **Touch and polish:** chips, switches, top bar buttons, tile menus and card header buttons have 44 px tap areas; pets never vanish on a redraw; Home chips scroll in a marquee below the house; Full window icon on every radar.
 - **Medicine:** the medicine log and its matching to-do stay in sync both ways.
 - **About and tools:** a scrolling Credits card, the pieces count, NFC "Copy add-item link", and a jot-it-down trash button with Undo.
@@ -179,7 +203,7 @@ just for you, or (admins) turned off for everyone. The "Lives on" column is the 
 | **Kitchen timer** | A kitchen timer is running | Countdown with the timer's name; pause or cancel | Kitchen room |
 | **Out the door** | Weekday mornings 6:00 to 9:30, until everything is ticked or everyone has left | Tick off Backpack, Snacks, Water bottle, Lunch, Meds | Kitchen room |
 | **Doorbell** | Someone rings or a person is seen at the front door (2 minutes after the last one) | Front-door snapshot; Ignore | Family Board, every room |
-| **Sticky notes** | Always on Home, beside Today at a glance | Post a note, reminder or countdown; mark reminders Done | Home |
+| **Sticky notes** | A button on the Home banner (paper notes pinned there while one or two are open) | Post a note, reminder or countdown; mark reminders Done | Home |
 | **Today at a glance** | Whenever there is something to say; always the first card under the banner | Read the day in two or three sentences; Refresh; an admin can allow cloud AI | Home |
 | **Fire alarm** | A smoke, CO, heat or gas sensor is on, or a camera hears an alarm | Call button, the escape steps, steps full screen | Family Board |
 | **Water leak** | A leak sensor is wet | See which sensor and room; one chime | Utilities |
@@ -264,7 +288,7 @@ just for you, or (admins) turned off for everyone. The "Lives on" column is the 
 | **Pollen** | Pollen is medium-high or worse (and the air quality card isn't up) | Today, tomorrow and asthma levels | Air & Allergy |
 | **Breaking news** | Big top stories from the last couple of hours, plus local news | Read the story | Home |
 | **Live game** | One of your teams is playing (a day before to a few hours after) | Live score (flashes on a change) and where to watch | Sports |
-| **Claude** | Claude Code usage near the limit, or a free reset waiting; while Claude is working it gets an accent outline and moves to the top | Plan limits, credits, what Claude is doing, next run, Ask Claude (Autopilot for admins) | Home |
+| **Claude** | Claude Code usage near the limit, or a free reset waiting; while Claude is working it gets an accent outline and moves to the top | Plan limits, credits, what Claude is doing, next run, Ask AI (Autopilot for admins) | Home |
 | **New free AI options** | The weekly AI market watchdog finds a new free model or service | Read it; Add to Jot it down | Design Studio |
 | **Steam Deck battery** | The Deck's battery is under 20% and not charging | See the level (a smart plug part is still open) | Hobbies |
 
@@ -528,7 +552,7 @@ Made as a **trailing record of what was given**, with quick buttons.
   aloud** on a kitchen speaker on weekday mornings.
 - **Carry-out orders**: saved places with their phone number and usual order; Pick up dinner? offers them on the way
   home with Copy the order.
-- **Kids' activity ideas**: 68 built-in ideas, chosen for the kids' ages, the weather and the time of day, with "We did
+- **Kids' activity ideas**: 72 built-in ideas, chosen for the kids' ages, the weather and the time of day, with "We did
   it"; a weekend-morning Home card.
 - **Family favorites**: movies, shows and YouTube channels, plus a "blocked for kids" list; a Friday movie-night card.
 - **For sale**: item, price, where it's listed, Sold; a Home nudge after a month.

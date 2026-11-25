@@ -115,12 +115,13 @@ browser (or reads the source) and fails the moment a design rule is broken:
 | Check | What it catches |
 |---|---|
 | **Layout gap check** | A card that doesn't exactly fill its grid columns, two single cards with slightly different widths, or uneven gaps. Runs at desktop, tablet and phone widths. |
-| **Light and dark contrast** | Any text under 3:1 contrast, checked on every page in both light and dark mode. |
+| **Light and dark contrast** | Any text or icon below WCAG AA contrast, checked on every page in both light and dark mode. |
 | **Maps at every zoom** | Missing map tiles, blank areas, or markers that drift from their true position, at whole and in-between zoom levels and in Full window. |
 | **Legends** | A chart, map or diagram that uses a colour, line style or icon for meaning without a legend entry for it. |
 | **Data retention** | Anything a person entered that would be kept only in one browser instead of on the home server, or a save that could wipe or shrink a list. |
 | **Name clashes** | Two parts of the code quietly defining the same thing, where one would silently override the other. |
 | **Performance** | Pages that got noticeably slower or heavier than the saved baseline (every fifth deploy). |
+| **Tap size, toggles, card menus** | A control with a hit area under 44 px, a switch that is slow to flip, or a card whose 3-dot menu opens far away or off screen. |
 
 A failure blocks the deploy until it is fixed. The checks exist because each one caught a real problem once; see
 [Rules that grow](how-its-built.md#rules-that-grow).
@@ -136,7 +137,7 @@ You don't have to refresh anything:
 - **NEW tags.** A brand-new page shows a **NEW** tag in the menu, the More list and the menu picker for its first day.
 - **Updated dots.** When a build changes an existing page, a small **Updated** dot appears on that page's icon in the
   menu, More list and menu picker for 7 days, and clears as soon as you open the page.
-- **The version** (for example 1.1: major before the decimal point, build after it) is always shown in the title bar, and the About page and Change log say what is new.
+- **The version** (for example 1.20: major before the decimal point, build after it) is always shown in the title bar, and the About page and Change log say what is new.
 
 ## Backups
 

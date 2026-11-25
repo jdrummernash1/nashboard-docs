@@ -37,7 +37,7 @@ What each kind of device needs for Nashboard to work fully. The same checklist i
   approach**: pick the sensors, how long before it dims, the brightness and whether it only runs at night.
 - A screen that is fully off can only be woken from Home Assistant, so add a wake automation if yours sleeps.
 - The **Wall display setup** card on the Kitchen room page checks each of these live.
-- Full-screen card notices for urgent cards are off by default; turn them on in **Settings → Card change notices** if
+- Full-screen card notices for urgent cards are off by default; turn them on in **Settings → Alerts → Card change notices** if
   you want the wall screen to announce a leak or someone at the door.
 
 ## Phones (Android and iPhone)

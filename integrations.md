@@ -70,7 +70,7 @@ Home banner, the Goodnight check and the Activity timeline.
 - **Supervisor and backups** feed the System page and the admin-only House health card.
 
 **Setup:** a working Home Assistant install. The dashboard runs inside it through a small Lovelace card (see
-[How it works](setup.md)). Admin-only actions (editing shared info, running automations, saving new ones) use Home
+[Set it up](setup.md)). Admin-only actions (editing shared info, running automations, saving new ones) use Home
 Assistant's own admin flag.
 
 **Limits:** the dashboard can only do what the signed-in user is allowed to do. Some actions (saving a new automation)
@@ -168,7 +168,7 @@ house picture, whose door opens when mail is expected today.
 for the email part.
 
 **Limits:** USPS tracking through 17TRACK may need its own activation. Whether a package is "outside" is worked out from
-delivery status, who's home and the time of day; camera confirmation is planned (Frigate).
+delivery status, who's home and the time of day; when a Frigate package sensor is set up, it also confirms with a camera.
 
 ---
 
@@ -343,7 +343,7 @@ the pet characters' reaction, and the Activity timeline.
 **Setup:** any Home Assistant camera integration; doorbell buttons and person-detection sensors are found automatically.
 Snapshots are fetched with the dashboard's own sign-in.
 
-**Planned:** **Frigate** on-device video detection for people, packages, the mail truck and the garage door's state.
+**Frigate** (optional) adds on-device video detection for people, packages, the mail truck and the garage door's state; see [Cameras: alerts and Frigate](pages.md#cameras-alerts-and-frigate).
 
 ## Nursery: Hatch
 

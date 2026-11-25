@@ -18,7 +18,7 @@ A working Home Assistant and an admin sign-in. Nashboard is two files inside Hom
 or account of its own. See [Set it up](setup.md).
 
 **Can I download it now?**
-Not yet. Nashboard is out as a preview (now at version <!-- ver -->1.15<!-- /ver -->): these pages show what it does and what installing takes. Downloads will be announced on [What is new](changelog.md).
+Not yet. Nashboard is out as a preview (now at version <!-- ver -->1.20<!-- /ver -->): these pages show what it does and what installing takes. Downloads will be announced on [What is new](changelog.md).
 
 **Does it cost anything?**
 There is no charge and no subscription. If it is useful to you, you can

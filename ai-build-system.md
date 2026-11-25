@@ -19,9 +19,9 @@ One expensive, careful model (the **main chat**, Opus) plans, integrates and che
 
 ### Helper agents (subagents)
 - **Sonnet / Haiku at low effort** for contained builds, lookups, filing and mechanical edits; effort goes up only after a low attempt fails.
-- **Fable** is allowed for helpers but only after asking the owner each time.
+- **Fable** gets one short helper per build for the highest-judgement task (standing approval), until any usage meter reaches 50%; more than that only after asking the owner.
 - **Opus** is used for reviews, audits and docs writing.
-- Up to 10 extra agents at once without asking, as long as they are coordinated. Each owns its own files (its own new `src/dashboard/47x-*.js` piece plus named pieces it may edit). Helpers never commit, deploy, edit `BACKLOG.md` or bump the build number; the main chat does.
+- Many agents at once (see the Nov 24 method below for the numbers), as long as they are coordinated. Each owns its own files (its own new `src/dashboard/47x-*.js` piece plus named pieces it may edit). Helpers never commit, deploy, edit `BACKLOG.md` or bump the build number; the main chat does.
 - Any helper idle more than 5 minutes is stopped and restarted (or its work picked up); leftover headless browser processes are cleared.
 
 ### Side sessions
@@ -41,8 +41,8 @@ A gaming-class PC (RTX 2080, 8 GB VRAM, 32 GB RAM) runs Ollama. Current models:
 `node tools/ai-worker.js --model qwen3.5:9b --prompt "..." [--image f.jpg] [--json] [--task "label"]`.
 It sends one job, prints the answer and logs tokens, time and cost.
 
-### Planned free cloud helpers
-Gemini first, then Groq and OpenRouter, added as providers in the same worker. Rules:
+### Free cloud helpers
+Groq, Gemini and OpenRouter free tiers are providers in the same worker, each used up to 95% of its free allowance. Rules:
 - **Personal data goes only to Ollama.** Cloud providers need `--cloud-ok` on every call, so nothing private leaves the PC by accident.
 - API keys live in environment variables only, never on a command line or in chat.
 - Cloud output is untrusted until Opus checks it.
@@ -142,7 +142,7 @@ Every chat and helper posts what it is doing with `tools/work-status.js` (starte
 ## 10. Safety nets
 
 - **Backups:** `tools/ha-backup.ps1` before every deploy or edit of the dashboard or configuration, at least hourly during work, and a full set after every 50 shipped items. Retention: the 5 newest plus the newest of each week and month. User data files are backed up on the Pi and never leave it.
-- **Docs publishing:** `docs/` is the only public material. It is refreshed on every version that ends in 0 (1.10, 1.20, ...), and otherwise published to the public site only when the owner asks. Never any personal details in it.
+- **Docs publishing:** `docs/` is the only public material. It is refreshed on every version that ends in 0 or 5 (1.10, 1.15, 1.20, ...), and otherwise published to the public site only when the owner asks. Never any personal details in it.
 - **Rules follow features:** adding a helper, page or integration means updating the usage log, status tracking, deploy report, checks, docs, setup checklist, control panel and `HANDOFF.md` in the same pass.
 
 ## 11. Flow diagram
@@ -188,7 +188,7 @@ flowchart TD
 
 ## 12. Batches of helpers (current practice)
 
-- A batch is 6 to 13 Sonnet helpers, each owning its own files so they never collide; the main chat writes each brief, then checks and integrates.
+- A batch is many Sonnet helpers (the numbers are in section 3), each owning its own files so they never collide; the main chat writes each brief, then checks and integrates.
 - The main chat runs gap check, name-clash check, performance check, legend check and jump check on the combined result and fixes failures before deploying.
 - **Build progress lines:** short plain lines in chat as each stage finishes.
 - **Up-front approvals at hand-over:** when a chat is about to hand over to a fresh one, every approval the next stretch needs is asked for first, so work is not blocked.
