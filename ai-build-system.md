@@ -55,6 +55,31 @@ This is tuned by data, not guesswork. After checking any helper's work the coord
 `node tools/ai-usage.js review --helper <model> --effort <level> --kind filing|code|yaml|docs|research|ocr --verdict ok|fixed|redo`.
 Before each batch, `node tools/ai-usage.js delegation` shows the first-time pass rate per kind of job per helper and effort. A kind that keeps needing fixes moves up a level; one that keeps passing gets tried one level lower.
 
+### Throttle the model (the short version)
+
+The app can run many helpers at once, so the model for each job is throttled: the cheapest one that has been doing that kind of work well is used, and the expensive models are kept for judgement.
+
+- **Chosen by usage, complexity and price.** Each kind of job has a place on a ladder from local models to free cloud helpers to Haiku, Sonnet, Opus and Fable, each at low, medium or high effort. Plan usage also lowers the number of helpers as it climbs.
+- **A PID controller adjusts it.** After each checked result it steps the kind up or down a rung, aiming for a steady quality, so easy work gets cheaper over time and work that slips gets a stronger model at once.
+- **Everything is checked by something stronger.** Workers by their team lead, leads by the check crew, then the main chat.
+- **The org chart** is one main chat, team leads, their workers, a check crew and a docs team, shown live on the maintainer pages.
+- **A CPU governor** keeps the build PC from being overloaded by pacing parallel checks.
+
+The numbered method below has the details. The same summary is in the app under About, Behind the scenes.
+
+### How models, helper counts and effort are chosen (Nov 24 method)
+
+1. Each build starts with about 15 backlog items, easiest first, grouped into teams by the files they touch so no two teams edit the same file (claims live in `tools/team-claims.json`).
+2. Before a team starts, the controller `node tools/delegate-pid.js pick --kind <kind>` names its model **and** effort for that kind of work (layout, check sweep, YAML, docs, research, code fix, code review, data migration, visual check), from a ladder: local Ollama, free cloud helpers, Haiku, Sonnet, Opus, Fable, each at low, medium or high effort.
+3. The controller has hard limits: code never goes to local or free cloud models, personal data never leaves the PC, and data migrations never drop below Sonnet at high effort; new kinds start at Sonnet medium.
+4. After every report the coordinator checks the work (diffs, checks, screenshots) and logs the result (`delegate-pid.js log`): ok, fixed with a number of fixes, or redo, plus a 0-1 quality score.
+5. The controller works like a PID loop on a target quality of 0.85: the proportional part reacts to the latest results, the integral part to the long-run pass rate (clamped so old history cannot take over), and the derivative part to the trend; a kind that slips moves up one rung at once, and one that keeps passing tries a cheaper rung after three clean passes in a row.
+6. Team count: at least about 30 Claude agents run while auto mode is on, each team lead may add up to two workers, with a hard cap of 50 that drops by 10 for every 10% of usage past half the plan window, and a clean stop at 95% so nothing spills into paid usage.
+7. A CPU governor keeps the build PC near 75% on a 5-minute average, lowering the number of parallel browser checks, the local-model pool and the suggested agent count above 85% and raising them below 65%, at most one step every two minutes, so short spikes do not matter.
+8. Local models run outside that cap in a pool of 5 that grows to 10 while answers stay quick, one model at a time so nothing swaps in the graphics card, and only for yes/no and wording jobs, because local rewrites and code reviews proved unreliable.
+9. Free cloud helpers get a batch every build (proofreading, alt text, release-note drafts), kept under 95% of each free allowance, and a stronger model applies only the good results.
+10. Builds overlap: while one build's checks run, the next build's teams start; every 5 minutes the coordinator checks for stuck runs (each check stops itself at 5 minutes), CPU, usage and progress, and writes lessons to `tools/team-notes.md` and back into the controller so the next picks start smarter.
+
 ## 4. Usage tracking across all agents
 
 `tools/ai-usage.js` keeps one append-only log (`tools/ai-usage-log.jsonl`, committed so it survives) for Claude (main chat and helpers), Ollama and the cloud helpers. Each line records helper, model, tokens in/out, time, cost and a task label.

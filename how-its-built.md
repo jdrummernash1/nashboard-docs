@@ -181,7 +181,7 @@ switches to dark when your device is in dark mode.)
 
 Accessibility is built into the shared pieces rather than bolted on: buttons are real buttons with labels, diagrams
 carry text descriptions, charts and maps have legends so colour is never the only signal, text keeps readable contrast
-in both modes, motion respects the reduced-motion setting, and interface scale can be scaled per device.
+in both modes, motion respects the reduced-motion setting, and interface scale can be adjusted per device.
 
 ## Phones, TVs, cars and Full window
 
@@ -269,13 +269,17 @@ fixed.
 | **Nothing personal in code** (genericcheck) | No name, place or device is hardcoded in the code; household values live in settings and seed files. | Every build |
 | **Data retention** (datacheck) | Lists every place the app saves or reads data; fails any person-entered value kept only in the browser instead of Home Assistant. | Every build |
 | **Name clashes** (namecheck) | No two source pieces may declare the same top-level function, shared state slot or button action, since the later one would silently win. | Every build |
-| **Maps** (mapcheck) | Renders each map at whole and fractional zooms, past the base map's last tile zoom and in Full window; fails on uncovered areas, markers away from their true position, or blank map. | Any map change |
+| **Maps** (mapcheck) | Renders each map at whole and fractional zooms, past the base map's last tile zoom and in Full window; fails on uncovered areas, markers away from their true position, or a blank map. | Any map change |
 | **Legends** (legendcheck) | Every chart, map or diagram that uses colour or line style for meaning has a legend in the same card covering each style. Pure decoration is allowlisted with a reason. | Any chart, map layer or coloured diagram change |
 | **No jumping** (jumpcheck) | Collapsing or expanding a card moves no other card and not the card itself. | Any card change |
 | **Holiday house** (housecheck) | Falling or flying holiday effects never pass in front of the house on Home. | Any holiday look change |
+| **Device** (devicecheck) | Phone and tablet behaviour with real touch events, a slow CPU, rotation, offline and the companion app. | Any touch or layout change |
+| **First screen** (firstscreencheck) | The main card starts on the first screen and no tall card is mostly empty. | After every UI change |
+| **Words** (wordscheck) | Plurals, typos, doubled words and page intros on every page. | After every UI change |
+| **Moving cards** (movecheck) | Every card size can be lifted, dragged and dropped with a 44 px handle. | Any card or layout change |
 | **Performance** (perfcheck) | Per-page render time, long tasks, memory and page size, plus idle CPU on Home, compared with a saved baseline; fails anything more than 30% worse. | Every fifth deploy |
 
-The checks run page groups in batches so each run finishes quickly, and phone layouts are checked at both an Android
+The checks run page groups in batches so each run finishes quickly (each stops itself after 5 minutes, and a shared queue lets 4 run at once), and phone layouts are checked at both an Android
 and an iPhone size.
 
 ## How the build works
@@ -343,7 +347,7 @@ The ground rules for helpers:
   slip.
 - **No shipping.** Helpers never commit, deploy, or touch the backlog. The coordinator integrates their work, runs every
   check, and ships one batch.
-- **Right model for the job.** Opus for reviews, audits and documentation; Sonnet for contained builds.
+- **Right model for the job.** Opus for reviews, audits and documentation; Sonnet for contained builds. Models are throttled by usage, complexity and price, and a small controller moves each kind of job up or down a level based on how well the last results checked out; see [How the AI builds it](ai-build-system.md).
 
 ### From an idea to a build
 

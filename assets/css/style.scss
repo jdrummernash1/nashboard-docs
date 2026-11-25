@@ -207,3 +207,11 @@ html body .main-content p > img[src*="snip-"]{display:block;margin:1rem auto;box
 html body .main-content a.pm-chip,.pm-chip{display:inline-flex;align-items:center;min-height:48px;padding:0 16px;border-radius:999px;background:var(--card2);border:1px solid var(--line);font-size:1rem;font-weight:600;color:var(--tx);text-decoration:none}
 html body .main-content a.pm-chip:hover{background:color-mix(in srgb,var(--acc) 22%,var(--card2));color:var(--tx)}
 @media (max-width:640px){.pm-card{padding:12px}.pm-chip{padding:0 14px}}
+
+/* coffee: accent pill in the top bar (icon only under 900px, hidden on phones which have the footer button), and the landing-page button */
+html body .nb-coffee{flex:none;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:var(--acc);color:#1d1406;font-weight:700;text-decoration:none;white-space:nowrap}
+html body .nb-coffee:hover{filter:brightness(1.08);color:#1d1406}
+@media (max-width:900px){html body .nb-coffee span{display:none}html body .nb-coffee{width:44px;padding:0;justify-content:center}}
+@media (max-width:720px){html body .nb-coffee{display:none}}
+html body .main-content a.nb-btn.cof{background:var(--acc);border-color:var(--acc);color:#1d1406}
+html body .main-content a.nb-btn.cof:hover{color:#1d1406}

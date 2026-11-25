@@ -110,7 +110,7 @@ How a build runs. The main Opus chat hands contained work to up to 20 Sonnet hel
 - flowcheck (whole-page card flow), scrollcheck (smooth touch scrolling), loadcheck (no load-time crashes in the built page) and savecheck (saved data survives).
 - The build itself, plus yamlcheck, mapcheck, legendcheck, datacheck and perfcheck where they apply.
 
-A stuck watcher keeps unattended building from stalling: Claude Code hooks start one copy of `stuck-watch.js` at session start and after each stop, it runs `stuck-check.js` every five minutes with a three-minute limit, and it wakes the main chat when the chat is idle or a test run hangs. Demo mode opens the same page with `?demo=1` on made-up sample data: no sign-in, a fake connection, nothing saved to the real house, read-only, and a DEMO strip on every page.
+A stuck watcher keeps unattended building from stalling: Claude Code hooks start one copy of `stuck-watch.js` at session start and after each stop. It runs `stuck-check.js` every five minutes with a three-minute limit, and it wakes the main chat when the chat is idle or a test run hangs. Demo mode opens the same page with `?demo=1` on made-up sample data: no sign-in, a fake connection, nothing saved to the real house, read-only, and a DEMO strip on every page.
 
 <img src="images/diagrams/build-quality-swarm.svg" alt="Diagram of a build: the main Opus chat, up to 20 Sonnet helpers and one Fable helper, Opus integrating, nine quality checks, backup and deploy, the stuck watcher that wakes the main chat, and demo mode on sample data" style="max-width:100%;height:auto">
 

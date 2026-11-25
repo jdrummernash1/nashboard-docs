@@ -8,7 +8,7 @@ title: Notifications
 
 Every notification Nashboard can send, in plain words. **Phone** means a push notification from Home Assistant to the phones that have the Home Assistant app; **Screen** means a pop-up, banner or chime on a Nashboard screen. Most can be switched off in **Settings → Alerts**, and the ones that go to phones only go to people who are set up to get them.
 
-This list is generated from the real automations and the Alerts sheet, and a check fails the build when a new notification is not described here, so it stays complete. Currently **41** notifications.
+This list is generated from the real automations and the Alerts sheet, and a check fails the build when a new notification is not described here, so it stays complete. Currently **42** notifications.
 
 ## Doors, cameras and packages
 
@@ -18,6 +18,7 @@ This list is generated from the real automations and the Alerts sheet, and a che
 | Someone at the front | Phone | A camera sees a person at the front door or yard, with a picture. |
 | Package still on the porch | Phone | A camera sees a package left outside and it stays there. |
 | Package arriving today | Phone | A shipping email says a package is out for delivery or arriving today. |
+| Camera alert (person, car, animal or package) | Phone | A camera tracks something you chose in the Camera alerts settings, with a picture. Off until you switch it on; replaces the older front person alert. |
 | Front yard look | Phone | Asked for from the car or a phone: sends a current picture of the front yard. |
 | Open or close the garage? | Phone | Asked for from the car or a phone: a notification with Open or Close to confirm before anything moves. |
 

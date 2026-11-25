@@ -42,6 +42,7 @@ connection status. Its buttons sit tight, and text that does not fit scrolls ins
 | **Cameras** | Camera snapshots |
 | **Overhead** | A plane within 5 nm: photo, airline, route, altitude, speed and live distance. Stays at least 3 minutes and follows the plane as it leaves |
 | **Space Station** | From 10 minutes before the ISS rises until it sets: a live sky dial with the pass track and where to look |
+| **Black-owned businesses** | A suggestion card, once a directory is set up. Reads (on this screen only) home jobs due within two weeks, the shopping list and upcoming events, and turns them into at most three generic search words such as "gutter cleaning" or "bakery". Only those words and the general area typed in its settings are sent, never names, addresses or list items. A directory on your own network is always allowed; any other is used only while cloud use is allowed in AI privacy. With none set up it makes no request and says how to set one up. Menu: Business settings (admins paste a directory web address with {q} where the words go), Mute for 30 days, Hide this card. |
 | **Games** | Your teams' games from a day before to a few hours after; live games show a pulsing dot and scores flash when they change |
 | **Up next tasks** | Google Tasks due today are added to the Up next card |
 | **Gas prices** | Cheapest nearby premium and diesel; collapsible |
@@ -54,7 +55,7 @@ connection status. Its buttons sit tight, and text that does not fit scrolls ins
 | **Air quality** | Whenever outdoor air quality is Moderate or worse (AQI 51+): the same card as the Air page, with the next 12 hours and today's pollen when available. Stays at least 3 minutes |
 | **Breaking news** | Recent big headlines, local first |
 
-Commute trips live on the Commute page; Home shows Leave soon and On the way home only when they matter. Every card has a ⋯ menu in its header (Full window, Move, Collapse, Hide for today, Hide this card, How this works), and tapping a card's top bar collapses or expands it.
+Commute trips live on the Commute page; Home shows Leave soon and On the way home only when they matter. Every card has a ⋯ menu in its header (Full window, Move, Collapse, Hide for today, Hide just for me, How this works), and tapping a card's top bar collapses or expands it.
 
 - **Collapsed cards show a one-line summary** in the header (weather, air, UV, commute, cameras, calendar, packages, trash night, the Litter-Robot and more).
 - **Cards stay locked in place**: collapsing or expanding one never makes the others jump columns.
@@ -91,7 +92,7 @@ doesn't flicker; if the situation clears sooner the card says so ("Closed now", 
 leaves. Several have a one-tap action button.
 
 <!-- homecards:start -->
-The app has 106 automatic Home cards. This table is written from the app's own list and its How it works texts, so it always matches the app.
+The app has 108 automatic Home cards. This table is written from the app's own list and its How it works texts, so it always matches the app.
 
 | Home card | Shows when | What you can do |
 |---|---|---|
@@ -100,7 +101,7 @@ The app has 106 automatic Home cards. This table is written from the app's own l
 | Dog timeout | While the timeout timer is running; gone when time is up. | Tap Done to cancel the timer early. |
 | Dog feeder | On Home during the 10 minutes before the feeder is due; goes away after feeding. | Read only. |
 | Markets | Weekdays within an hour of the 9:30 AM or 4:00 PM Eastern open and close, or for 2 hours after the watchlist average moves 2 percent or any one symbol moves 5 percent. | Tap it to open the Finance page. |
-| UV high | On days when the UV index is high. | Read-only. |
+| UV high | Between 10 AM and 4 PM while the UV index is 6 or more. | Read-only. |
 | Rocket launch | On Home from 30 minutes before a launch's scheduled time until 10 minutes after it. | Tap it to open the Space page. |
 | Chores today | Appears while chores remain today; gone when all are done. | Tap a chore to mark it done. |
 | Severe weather | While an extreme or severe alert, or any warning, is active for the location; clears when it ends. | Tap it to open the Weather page. |
@@ -109,7 +110,7 @@ The app has 106 automatic Home cards. This table is written from the app's own l
 | New on Wi-Fi | When a new device appears, until you deal with it. | Tap it to open the Network page and name it or mark it Unknown. |
 | House health | On Home for admins only, when one of those is wrong; disappears once fixed. | Tap its link to open System or Network for details. |
 | Internet outage | Appears when one of those status pages reports anything other than normal; clears when it recovers. | Read only. |
-| Fever | Shortly after a fever is logged. | Tap it to open the Medicine card and add a new reading. |
+| Fever | On Home for 12 hours after a temperature of 100.4 F or higher is logged. | Tap Log temp to open the Family Board and add a new reading. |
 | Medicine | On Home while a medicine was given and its next safe dose time is still ahead (within 24 hours). | Read only. |
 | Pantry: use soon | Appears when items are near their use-by date; clears when used or removed. | Tap Used up to remove an item; the Pantry page has the full list. |
 | Birthday coming up | In the days before a birthday; gone after the day. | Read-only. |
@@ -124,26 +125,27 @@ The app has 106 automatic Home cards. This table is written from the app's own l
 | New car recall | When a new recall is found. | Tap it to open the Commute page for details. |
 | Intercom | On Home for 10 minutes after a new message is recorded. | Tap Play to hear it. |
 | On the way home | While a commute trip ending at home is active, the person is not home, and their location changed in the last 90 minutes; goes away when they arrive. | Read only. |
-| Rain coming | When rain or snow is at least 60 percent likely (or forecast) in the next 3 hours and it is not already raining. | Read-only. |
+| Rain coming | When rain or snow is at least 60 percent likely (or forecast) in the next 3 hours and it is not already raining. | Close an open garage door from the card (tap twice to confirm). |
 | Freeze tonight | On Home after noon when the forecast low in the next 20 hours is 32 F or colder. | Read only. |
 | Dinner tonight | Appears when dinner is planned; empty otherwise. | Tap it to open the recipe. |
 | Autoship soon | When an order is due soon; gone after delivery. | Tap it to open the Packages page. |
 | Maintenance due | On Home when a job is due; goes away when done. | Tap Done to mark it finished. |
-| Trash night | Appears the evening before pickup and goes away the next day. | Read only. |
+| Trash night | From 3 PM the day before pickup until 9 AM on the pickup day. | Tap Done once the bins are out; it shows who did it ('Done by' and a first name) until the pickup passes, then hides. |
 | Lights still on | From 11 PM to 5 AM when two or more lights are on. | Tap All off to turn them off. |
-| Cat’s medicine | On Home when the next dose time has passed; goes away once a dose is logged. | Tap Log now to record that the dose was given. |
+| Cat’s medicine | No longer shown on its own: the cat's medicine row now appears inside the Pet care due card. | Tap Log now to record that the dose was given. |
 | Overdue tasks | Only when a task is past its due date. | Read-only; finish tasks on the Calendar page. |
 | Running low | On Home when an item's count reaches its low level. | Read only; update the count on the Storage page. |
 | Warranty ending | On Home when a stored item has a warranty ending in the next 30 days. | Tap the Manual link if one is saved. |
 | Car due soon | When a date is within 30 days or overdue, or an oil change is within 500 miles. | Read-only. |
 | Hobbies | On Home when something for a picked hobby is due today, tomorrow or within a week. | Read only; open the Hobbies page for details. |
 | Something to do today | Saturday and Sunday mornings, 8 to 10 AM. | Read-only; the Family Board card has We did it. |
-| Doorbell | Appears on a ring or person detection and stays 10 minutes after the last one, on Home, Cameras, Security and room pages (never a second copy). | Talk, open the camera, or tap Got it to hide it on this screen until the next ring. |
+| Doorbell | Appears on a ring or person detection and stays 10 minutes after the last one, on Home, Cameras, the Activity page and room pages (never a second copy). | Talk, open the camera, or tap Got it to hide it on this screen until the next ring. |
 | Package left outside | Appears for a package delivered within 24 hours when nobody is home today or after dusk, until you tap Got it. | Tap Got it to hide that package. |
 | New free AI options | On Home for admins while finds from the last 7 days remain. | Tap Add to Jot it down to file it as an idea, or Dismiss. |
 | Air restrictions near home | When a nearby airport is affected or a restriction covers or is near home. | Read-only. |
 | Pet care due | On Home while a pet task is due; stays until Done and says overdue after an hour. | Tap Done to log the dose or confirm the feeding. |
 | Bedtime | From the usual bedtime hour for 3 hours, while a routine runs, and while sitter mode is on. | Tap Start to begin the routine or Next to move to the following step. |
+| Black-owned businesses | On Home while a job due within two weeks, a calendar event or a shopping item matches a business type, and it is not muted. Until a directory is set up it says so and offers Set up. | Open settings from the 3-dot menu to set the directory address and area. |
 | Roll up the car windows | Appears when a car window is open and it is raining or the rain chance is 50 percent or more. | Read it and close the windows; the card clears once they are closed or the rain risk passes. |
 | Pick up dinner? | On Home 4 to 8 PM when someone is heading home from a trip. | Tap a phone number to call, or Copy the order. |
 | Dishwasher | Home shows it while running or clean. A kitchen room page also shows it when dirty. | Start or cancel a timer, and tap Emptied when the dishes are put away. |
@@ -176,13 +178,14 @@ The app has 106 automatic Home cards. This table is written from the app's own l
 | Real-device checks | On Home once a week while any check is unticked; stops when all are ticked. | Open the checks, or remind me next week. |
 | Recently used | Appears when a card on another page was used in the last 4 hours. | Tap a row to go back to that card. |
 | Calendar clash | On the Calendar page and Family Board when a clash is found; on Home only for a clash today. Gone after Fixed or Not a clash. | Tap Fixed when you sorted it, or Not a clash to stop flagging that pair. |
-| Overnight | Built once on the first screen wake after 6 AM; shows on Home and Security until 10 AM. | Tap Got it to hide it for the day. |
+| Overnight | Built once on the first screen wake after 6 AM; shows on Home and the Activity page (Security chip) until 10 AM. | Tap Got it to hide it for the day. |
 | Trip prep | From 3 days before a trip until you leave, and again on the last day of the trip until the day after. | Tap Open the plan to tick things off on the Family Board. |
 | Something unusual | Only when today drifts from the usual for that weekday and a weekday has at least 3 learned days; hidden once answered. | Tap Expected to teach it that this is normal on that weekday, or Dismiss to hide it for today. |
 | Weekend plans | Friday after 5 PM until Sunday night. | Tap Add to put a plan on the family calendar. |
 | Security alerts | When an important alert from the last 24 hours has not been marked seen. | Read-only here; mark alerts seen on the Activity page under the Security chip. |
 | Smoker | On Home while the pit is hot, or once the probe reaches its goal until dismissed (dismissing hides it for 6 hours). | Tap Dismiss on the done message. |
 | Steam Deck battery | Only when the battery is under 20 percent and not charging. | Read-only. |
+| Sticky notes due | Only while a reminder is due or overdue, or a countdown is in its last day. | Tap Done on a reminder. |
 | Cast dashboard | Appears while a TV is casting the dashboard, and only if the cast countdown is on. | Open YouTube, YouTube TV or the Watch app on that TV with a tap. |
 | TV volume leveler | Only on a room page, for a TV in that room with the leveler on. | Read-only. |
 | Running on battery | After 30 seconds on battery, and for two minutes after the power returns. | Tap Safe shutdown (and confirm) when a NAS shutdown button exists. |

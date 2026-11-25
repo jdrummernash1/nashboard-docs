@@ -15,10 +15,12 @@ The scale button in the top bar opens **This screen**.
 | Section | What is in it |
 |---|---|
 | **You** | Who you are signed in as, with a link to your Home Assistant profile (name, language, password). **Menu pages**: which pages are in your menu and in what order, saved to your account. |
-| **This screen** | Only this device. **Look and size**: theme (dark, light, or follow the device), the **Interface scale** sheet (size, the Look, accent colour, background picture, left- or right-handed layout, holiday decorations). **Location use**: what used this device's location, or a zip code instead. **Screen options**: start page, kid lock, kitchen tablet, picture frame and wake on approach. Casting to a TV stays in the Cast button. |
-| **Household** | **Your house** (the banner house), and shortcuts to Home settings, the Family Board and the Guest page. |
+| **This screen** | Only this device. **Look and size**: theme (dark, light, or follow the device), the **Interface scale** sheet (size, the Look, accent colour, background picture, left- or right-handed layout, holiday decorations). **Location use**: what used this device's location, or a zip code instead. **Screen options**: start page, kid lock, kitchen tablet, picture frame and wake on approach. **Smart layout (Home, trial)**: an off-by-default switch for this device only; see [Smart layout](pages.md#home-smart-layout-trial). Casting to a TV stays in the Cast button. |
+| **Household** | **Your house** (the banner house), the **Kids** list, and shortcuts to Home settings, the Family Board and the Guest page. |
 | **Alerts** | **Household quiet hours**, the Alerts and notifications sheet (chimes, plane and Space Station alerts, phone alerts) with switches for Swipe between pages, Page intros, the New build sound, the Connection lost alert and the location pin, **Card change notices**, and (admins) Demo page alerts. |
 | **House and app** | A link to the System page (updates, backups, saved data, device setup) and the **Maintainer tools** switch. |
+
+Under **Household** there is also **Cards on each page**: take a card off a page for everyone at home, or show a card from another page on it. Removed cards are only hidden, so nothing saved in them is lost. **This screen** has **Raise cards and pages you use (trial)**, which lets Smart layout move cards you use up a little (see [Raise cards you use](pages.md#home-raise-cards-you-use-trial)).
 
 ### Instant switches
 
@@ -79,7 +81,7 @@ Other settings that live elsewhere:
   (screen off too) about low planes overhead, a Space Station pass 10 minutes before, and 7700 emergencies within 200 nm.
 - **Menu order**: My order, or Most used (visit counts follow you; Home and the tab bar stay put).
 - **Quiet rows fold**: whether a page's "All quiet" fold is open or shut is remembered for you.
-- **Hidden cards**: cards you hid with the ⋯ menu's Hide this card (bring them back from Customize menu → Hidden cards).
+- **Hidden cards**: cards you hid with the ⋯ menu's Hide just for me (bring them back from Customize menu → Hidden cards).
 - **Theme colour**: one of seven accents (Interface scale).
 - **Hand**: left- or right-handed phone layout (Interface scale → Hand).
 - **User manual link**: kept for every user, remembered on each screen.
@@ -99,6 +101,7 @@ These are stored in Home Assistant's own per-user storage, so they move with you
 - Maintenance jobs and Chores (Home Assistant to-do lists)
 - Room pictures (when shared pictures are set up), room icons and Room settings (layout, hidden sections, added cards)
 - Cards an admin turned off for everyone
+- Cards removed from or added to a page (Cards on each page)
 - The Storage inventory, Pantry places, cars, birthdays added by hand, holiday traditions, carry-out orders, family
   favorites, for-sale items, kids' ages, hobby cards and the workout log
 - Quiet hours on room TVs: a room's quiet hours also mute a TV or display in that room

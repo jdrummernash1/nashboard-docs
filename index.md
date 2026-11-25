@@ -4,11 +4,11 @@ title: Nashboard
 
 
 <div class="nb-hero">
-<div class="nb-kick">Nashboard 1.10 · for Home Assistant</div>
+<div class="nb-kick">Nashboard 1.15 · for Home Assistant</div>
 <h1>The screen shows <em>what matters right now</em>, and gets out of the way otherwise.</h1>
 <p class="nb-lead">A dashboard for wall tablets, phones and TVs. Cards appear on their own when something needs attention (a plane overhead, the garage left open, rain coming, trash night) and leave on their own when it no longer does.</p>
 <div class="nb-chips"><span class="nb-chip acc">More than 40 pages</span><span class="nb-chip">Runs inside Home Assistant</span><span class="nb-chip">Your data stays at home</span><span class="nb-chip">Local AI only, unless you allow more</span><span class="nb-chip">Phones, tablets, TVs</span></div>
-<div class="nb-cta"><a class="nb-btn pri" href="tour.html">Take the tour</a><a class="nb-btn" href="getting-started.html">Get started</a><a class="nb-btn" href="faq.html">Questions</a>{% if site.demo_url %}<a class="nb-btn" href="{{ site.demo_url }}" rel="noopener">Try the demo</a>{% endif %}</div>
+<div class="nb-cta"><a class="nb-btn pri" href="tour.html">Take the tour</a><a class="nb-btn" href="getting-started.html">Get started</a><a class="nb-btn" href="faq.html">Questions</a><a class="nb-btn cof" href="https://buymeacoffee.com/jdrummernash1" target="_blank" rel="noopener"><svg class="nb-ic" aria-hidden="true"><use href="#i-coffee"/></svg>Buy me a coffee</a>{% if site.demo_url %}<a class="nb-btn" href="{{ site.demo_url }}" rel="noopener">Try the demo</a>{% endif %}</div>
 </div>
 
 <div class="nb-doors">
@@ -19,13 +19,13 @@ title: Nashboard
 
 <!-- stats:start -->
 <style>.nbs{position:relative;border-radius:18px;overflow:hidden;margin:1.2rem 0 1.6rem;background:#0b0e14;box-shadow:0 10px 30px rgba(0,0,0,.25)}.nbs-v{display:block;width:100%;height:auto;aspect-ratio:1600/241;object-fit:cover;object-position:50% 0}.nbs-h{position:relative;padding:16px 18px 0;color:#fff}.nbs-h b{display:block;font-size:1.6rem;line-height:1.15;font-weight:700;color:#fff!important}.nbs-h span{display:block;margin-top:2px;font-size:.95rem;color:rgba(255,255,255,.85)}.nbs-g{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;padding:14px 18px 0}.nbs-t{padding:14px 16px;border-radius:14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);color:#fff}.nbs-t b{display:block;font-size:1.5rem;line-height:1.2;font-weight:700;color:#fff}.nbs-t span{font-size:.82rem;color:rgba(255,255,255,.85)}@media (max-width:640px){.nbs-v{aspect-ratio:auto;height:120px;object-position:50% 0}.nbs-h{padding:12px 12px 0}.nbs-h b{font-size:1.3rem}.nbs-g{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:12px 12px 0}.nbs-t{padding:10px 12px}.nbs-t b{font-size:1.2rem}}.nbs-u{position:relative;margin:12px 18px 0;padding-bottom:16px;font-size:.82rem;color:rgba(255,255,255,.9)}.nbs-u a{color:#ffd28a}</style>
-<div class="nbs"><img class="nbs-v" src="images/hero-live.jpg" alt="The Nashboard Home banner: the illustrated house with falling leaves and a scrolling strip of what needs attention"><div class="nbs-h"><b>Nashboard</b><span>The screen shows what matters right now, and gets out of the way otherwise.</span></div><div class="nbs-g"><div class="nbs-t"><b>38,795</b><span>Lines of custom code</span></div><div class="nbs-t"><b>$242k–$485k</b><span>Market value · about 3,233 developer hours</span></div><div class="nbs-t"><b>45</b><span>Pages</span></div><div class="nbs-t"><b>1.10</b><span>Version</span></div><div class="nbs-t"><b>26</b><span>Open backlog items</span></div><div class="nbs-t"><b>4</b><span>Open bugs</span></div><div class="nbs-t"><b>368</b><span>Changes shipped, last 7 days</span></div></div><p class="nbs-u">Updated Nov 24 2026 · <a href="changelog.html">Change log</a></p></div>
+<div class="nbs"><img class="nbs-v" src="images/hero-live.jpg" alt="The Nashboard Home banner: the illustrated house with falling leaves and a scrolling strip of what needs attention"><div class="nbs-h"><b>Nashboard</b><span>The screen shows what matters right now, and gets out of the way otherwise.</span></div><div class="nbs-g"><div class="nbs-t"><b>41,540</b><span>Lines of custom code</span></div><div class="nbs-t"><b>$260k–$519k</b><span>Market value · about 3,462 developer hours</span></div><div class="nbs-t"><b>45</b><span>Pages</span></div><div class="nbs-t"><b>1.15</b><span>Version</span></div><div class="nbs-t"><b>28</b><span>Open backlog items</span></div><div class="nbs-t"><b>6</b><span>Open bugs</span></div><div class="nbs-t"><b>374</b><span>Changes shipped, last 7 days</span></div></div><p class="nbs-u">Updated Nov 25 2026 · <a href="changelog.html">Change log</a></p></div>
 <!-- stats:end -->
 
 <!-- whatsnew:start -->
 <style>.wn{border:1px solid rgba(255,181,71,.45);background:rgba(255,181,71,.08);border-radius:16px;padding:14px 18px;margin:0 0 1.4rem}.wn h2{margin:0 0 .3rem;font-size:1.15rem;border:0}.wn p{margin:.2rem 0 .5rem;opacity:.85}.wn ul{margin:.3rem 0 0;padding-left:1.1rem}.wn li{margin:.18rem 0}.wn-b{display:inline-block;min-width:2.6em;font-weight:700;color:#d98a00}</style>
-<div class="wn"><h2>What's new · Nashboard 1.10</h2>
-<p>Everything since Nashboard 1.0 came out · updated Nov 24 2026 · <a href="changelog.html">full change log</a></p>
+<div class="wn"><h2>What's new · Nashboard 1.15</h2>
+<p>Everything since Nashboard 1.0 came out · updated Nov 25 2026 · <a href="changelog.html">full change log</a></p>
 <ul><li><span class="wn-b">1.8</span> Version 1.8: honest Claude status, instant toggles everywhere, More sheet search and recent pages, one Settings home with five sections, a maintainer tools switch, Design Studio in one flow, Right now cards in one box, a banner clock, flight restrictions on the plane map and popup with a phone compass arrow, a demo-visit phone alert, a notifications list, an insurance list with room and spot, Lives here on room pages, house style from the photo import, cars drawn in their real colour, one How it works for every card, the TV camera-wall screen, and pets that land their jumps.</li><li><span class="wn-b">1.6</span> Phone banner chips a little smaller so the house shows more.</li><li><span class="wn-b">1.5</span> Phone and tablet page bar slides through every page (Frequent first, colour-tinted groups), card text grows to fill each card, two-line banner chips, the house editor gains mailbox, driveway, fence, shutters, garage door and lights choices, the phone banner shows the whole house.</li><li><span class="wn-b">1.4</span> Banner art reaches every edge (no grey band or hairline ring), colour-grouped side menu on desktop, Pantry and Recipes buttons no longer overlap, readable banner weather card on a day sky, an icon in the browser tab.</li><li><span class="wn-b">1.3</span> Home banner: the chip strip sits exactly on the banner's bottom edge and just under the horizon at every width, the mailbox stands still on the outside edge of the driveway.</li><li><span class="wn-b">1.2</span> Top bar rebuilt for narrow screens: tight buttons that scroll past half the bar, the backlog count in the version line, scrolling text that is never cut off</li><li><span class="wn-b">1.2</span> Card header links clear of the ⋯ button with a mouse.</li><li><span class="wn-b">1.1</span> One version number everywhere: major before the decimal point, build after it (this is 1.1</li><li><span class="wn-b">1.1</span> Builds before 1.0 are 0.xxx)</li><li><span class="wn-b">1.1</span> Docs lead with the version</li><li><span class="wn-b">1.1</span> About page pictures added to the Diagrams docs page.</li><li><span class="wn-b">1.0</span> Set-up cards fold into one "More to set up" card, the quiet-rows fold is remembered, the menu is grouped into sections, readable weather hour labels, Fire safety cards full width on the Family Board, readable NEW badge.</li><li><span class="wn-b">1.0</span> Nashboard 1.0. Version label in About, docs site published with the 1.0 page, GitHub release v1.0 with the coffee link (preview: downloads open later).</li></ul>
 </div>
 <!-- whatsnew:end -->
@@ -185,6 +185,7 @@ Home card, and nothing personal hardcoded). Values that belong to one household 
 | [Network](pages.md#network--storage) | Wi-Fi devices, speed and internet services |
 | [Settings](pages.md#settings) | You, this screen, the household, alerts, and the house and app |
 | [System](pages.md#system) | Updates, batteries, backups and the app’s data |
+| [Hardware](pages.md#hardware) | Computers, printers, router and NAS |
 | [About](pages.md#about) | Version, what’s new, features and credits |
 
 ### Other pages
@@ -192,7 +193,6 @@ Home card, and nothing personal hardcoded). Values that belong to one household 
 | Page | What it is |
 |---|---|
 | [Security](pages.md#security) | Alerts, doors, garage, locks, alarms and cameras, kept until seen |
-| [Hardware](pages.md#hardware) | Computers, printers, router and NAS |
 
 ### Screens and views
 

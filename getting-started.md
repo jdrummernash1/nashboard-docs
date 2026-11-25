@@ -46,7 +46,7 @@ go on their own. What you can do:
 - **Move a card** with Move in the same menu.
 - **Collapse a card** by tapping its top bar. Your choice is remembered on every screen you sign in to.
 - **Draw your house**: the **Your house** card (Settings → Household) sets the roof, walls, door, windows and trees of
-  the banner house, plus the mailbox, driveway, fence, shutters, garage door, lights and holiday decorations, and can suggest them from a photo.
+  the banner house, plus the mailbox, driveway, fence, shutters, garage door, lights and holiday decorations, and can suggest them from a photo. Other options: lawn tone, front walk, flower beds, hedge, trees (type and side), chimney, solar panels on the roof and a house number plaque.
 
 Every card also lives on at least one page of its own (Rain coming on Weather, Trash night on the Family Board), so hiding a Home copy
 never loses anything.
@@ -87,3 +87,7 @@ under System → AI privacy.
 - The **System** page shows updates, low batteries and anything unavailable.
 - **Saved data** (System) lists every saved setting with **Undo** for the last 20 versions.
 - The [FAQ](faq.md) answers the common questions, and every card's ⋯ menu has **How this works**.
+
+## Enjoying it?
+
+If Nashboard is useful to you, a coffee helps keep it going: [buy me a coffee](https://buymeacoffee.com/jdrummernash1).

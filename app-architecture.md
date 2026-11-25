@@ -66,7 +66,7 @@ Every card has a permanent home on the page it relates to (rain coming on Weathe
 - All saves go through the central data layer: latest-copy merge, versions, history with undo, nightly export.
 - `send()` refuses to save a key that did not load successfully on that screen, so a failed load can never overwrite good data.
 - **Versioned migrations:** when saved data changes shape, a migration carries every old field, keeps unknown fields and leaves the old copy under `<key>_v<N>` until the new one has saved.
-- **keepData:** a refresh that fails, comes back empty or half written never replaces data already shown.
+- **keepData:** a refresh that fails, comes back empty or half-written never replaces data already shown.
 - Deploys refuse to publish a list that would lose more than 2 items, and read published files back.
 - Backups happen before every deploy, hourly during work and by count; retention is the 5 newest plus one per week and month. `datacheck` blocks a build if anything person-entered is not safely stored.
 - Per-device only: theme, interface scale, location pin. Per-person preferences follow the user (`PREF_KEYS`).

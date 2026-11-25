@@ -25,6 +25,8 @@ A tour of the tools and the workflow behind the dashboard: how the code is built
 Home Assistant serves the dashboard as one page, but that page is generated and nobody edits it. The code is about 300 source pieces.
 
 - **Source pieces** live in `src/dashboard/` (about 300 JavaScript, CSS and HTML files): head, styles, body, then the script split by feature, then a tail. They are joined in file-name order. New feature code goes in its own numbered piece and registers its buttons with `Object.assign(ACT, {...})`.
+- **`demo-sync.js`** generates the in-app demo house from the screenshot sample house during the build. The build fails if the sample data changes so that the demo can no longer be made from it (`--check` tests this).
+- **`ollama-pool.js`** runs local AI jobs from a drop folder, starting 5 at a time and adding more (up to 10) while answers are quick and the graphics card has room. It drops one when answers slow down. Jobs run one model at a time, stay on this PC, and are logged.
 - **`build-dashboard.js`** joins the pieces into the generated `ha/www/dashboard.html` and fails the build if the joined script does not parse. It also stamps in the line and piece counts. `--check` fails if the built file does not match the pieces (a sign someone edited the output directly).
 - **`src-patch.js`** is a small helper for patch scripts: replace exact text wherever it lives across the pieces (it refuses ambiguous matches), bump the build number, save and rebuild.
 - **`pull-from-ha.ps1`** copies the hand-written files from Home Assistant into the repo so the local copy is never assumed current.
@@ -44,11 +46,16 @@ Every check is automatic and a failure blocks the deploy.
 - **genericcheck** fails when a personal name, place or device is hardcoded in the code instead of a setting.
 - **housecheck** checks the Home banner for every holiday look: nothing that falls or flies may pass in front of the house.
 - **namecheck** fails when two pieces declare the same top-level function, shared state slot or button key, because the later piece would silently win.
-- **mapcheck** renders every map at a spread of zooms (including fractional and Full window), and fails on missing tiles, markers that drift from their coordinates, or blank map past the last tile zoom.
+- **mapcheck** renders every map at a spread of zooms (including fractional and Full window), and fails on missing tiles, markers that drift from their coordinates, or a blank map past the last tile zoom.
 - **legendcheck** fails any chart, map or diagram that carries meaning through colour, line style or icon without a legend covering each style; deliberate decoration goes in an allowlist.
 - **perfcheck** measures render time, long tasks, memory, page size and idle CPU per page against a saved baseline. It runs every fifth deploy, and a metric more than 30 percent worse blocks.
 - **datacheck** protects saved data. It lists every place the app saves or reads data and fails on anything a person entered that lives only in the browser, any save that skips the load-first guard, and any key that is saved but never loaded. Round-trip and shrink checks are part of its design.
 - **yamlcheck** catches YAML mistakes before they reach Home Assistant, such as an apostrophe inside a single-quoted string, tabs and odd indentation.
+- **devicecheck** drives a phone or tablet size with real touch events against the demo house: page swipe, card press, rotation, a slow CPU, offline and reconnect banners and the companion app. It covers what a real-device check list can do without a real device.
+- **firstscreencheck** fails any page whose main card starts too far down or that has a tall, mostly empty card.
+- **wordscheck** reads the text of every page for wrong plurals ("1 items"), typos, doubled words, calm lines for things not set up, and a missing page intro.
+- **movecheck** lifts a card of every size on Home and Rooms the way Move does and checks the flying copy, the 44 px handle, dropping next to another column and cancelling cleanly.
+- **Time and queue limits:** every check stops itself after 5 minutes, so page lists are kept short. Checks wait in a machine-wide queue (`harness-queue.js`) that lets 4 run at once.
 - **tapcheck** (planned) will audit that every tap target is at least 48 px.
 - **stuck-check** finds leftover headless browser processes from test runs, live work items not updated for five minutes, and background jobs running far too long. `--fix` cleans up the browser leftovers. It runs at every check-in, before harness runs and before deploys.
 

@@ -52,9 +52,28 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 - **Workout** never takes a pet scale for your weight: health values are only picked from your own phone app.
 - **Demo mode** stays quiet unless you tap something, and the phone tab bar is solid.
 - **Banner and top bar:** the banner clock is bigger with the info chip stacked under it, and top-bar text tightens its spacing before it starts to scroll. The About page facts (card counts, checks, models) are written at build time, and the Design Studio status comes from one live model.
+- **Cameras (1.11):** sound tries WebRTC first and falls back to HLS; the camera-model wizard picks frames from past footage (any camera in the HA media browser) or from a snapshot collector; each camera chooses which kinds of detection reach phones.
+- **House picture (1.11):** more choices in Your house (lawn tone, front walk, flower beds, hedge, yard tree type and side, chimney, solar panels, house number plaque), and the photo reader now fills them in for you to review.
+- **Map (1.11):** markers that would overlap are spread apart, and an untrained garage camera model shows a neutral "Camera model not trained yet" pill.
+- **Demo and speed (1.11, 1.12):** the demo house is generated from the screenshot sample house, the Home page uses far less CPU when idle, and background work waits until you stop scrolling.
 - **First-screen check:** a quality check fails any page whose main card starts too far down or leaves the first screen mostly empty.
 
-## New in versions 1.6 to <!-- ver -->1.10<!-- /ver -->
+## New in versions 1.6 to <!-- ver -->1.15<!-- /ver -->
+
+- **Cards on each page (1.15):** take a card off a page, or show a card from another page on it, from the card's menu or one screen ([Things every page has](pages.md#things-every-page-has), [Settings](settings.md)).
+- **Raise cards you use (1.15, trial):** with Smart layout on, cards you use often move up a little and are marked with a small arrow ([Raise cards you use](pages.md#home-raise-cards-you-use-trial)).
+- **Black-owned businesses (1.15):** a Home suggestion card that turns upcoming home jobs, the shopping list and calendar events into generic search words and lists businesses from a directory an admin sets up ([Home](home.md#cards)).
+- **Sticky notes and the trash reminder (1.15):** notes edit in place with Undo, dated reminders can reach phones at 8 AM, and the trash Done button shows who took the bins out.
+- **House picture (1.15):** the photo reader also fills in walk, chimney, flower beds, hedge, yard tree, solar, driveway shape, porch, gutters, flag, skylight and garage style for you to review.
+- **Hardware (1.12, 1.14):** one card per PC running HASS.Agent, found automatically, each with an **Add another PC** how-to and a set-up card for a PC that is connected but has no sensors yet ([Hardware](pages.md#hardware)).
+- **Card options (1.13, 1.14):** a card's ⋯ menu opens right under its own button on every screen and lists the card's related settings; new cards get entries automatically ([Things every page has](pages.md#things-every-page-has)).
+- **Home (1.14):** [Sticky notes](pages.md#home-sticky-notes) (notes, reminders, countdowns), a **Done** button on the trash-cans reminder, cat medicine copies that update together, and a Packages card whose title and tracking number wrap.
+- **Display and TV (1.13, 1.14):** a live games window with team stats, the plane map beside the radar, the cast strip using the Home chips, a more forgiving bedroom-TV cast, and What's new that fits any screen ([Display](pages.md#display)).
+- **Pictures and documents (1.14):** one picker everywhere a picture goes into AI (camera first, **or choose a file**), and **Import a document** only on Calendar and the Family Board.
+- **Kids (1.14):** a configurable [baby monitor](pages.md#kids) card for any camera, with night view and a sound or motion alert.
+- **Admin (1.13, 1.14):** a **Visits** card for demo visits, a **Throttle the Model** card on About (see [How the AI builds it](ai-build-system.md)), and agent activity that keeps refreshing on throttled devices ([Design Studio](pages.md#design-studio)).
+- **Looks and checks (1.14):** room and card icons readable on and off in dark and light (the contrast check now tests icons), and card headers 48 px tall.
+- **Layout (1.14, 1.15):** the [Smart layout trial](pages.md#home-smart-layout-trial) on Home (Settings, This screen), the first step of the dynamic layout model; the packer fills free columns beside a wide card; Family scrolls smoothly on a phone.
 
 - **Pages:** a [Hardware](pages.md#hardware) page (the host, a desktop PC, printers, a 3D printer, the router and the NAS); an [Activity](pages.md#activity) timeline with a Security chip and shared unseen marks; **Start shopping** by aisle on [Shopping](pages.md#shopping); **Picture mode** on [Kids](pages.md#kids).
 - **Garage and Storage:** car **Colour & look**, toolbox brand badges, an insurance list with room and spot, and a **Lives here** card on each room page. See [Garage](pages.md#garage) and [Storage](pages.md#storage).
@@ -160,6 +179,7 @@ just for you, or (admins) turned off for everyone. The "Lives on" column is the 
 | **Kitchen timer** | A kitchen timer is running | Countdown with the timer's name; pause or cancel | Kitchen room |
 | **Out the door** | Weekday mornings 6:00 to 9:30, until everything is ticked or everyone has left | Tick off Backpack, Snacks, Water bottle, Lunch, Meds | Kitchen room |
 | **Doorbell** | Someone rings or a person is seen at the front door (2 minutes after the last one) | Front-door snapshot; Ignore | Family Board, every room |
+| **Sticky notes** | Always on Home, beside Today at a glance | Post a note, reminder or countdown; mark reminders Done | Home |
 | **Today at a glance** | Whenever there is something to say; always the first card under the banner | Read the day in two or three sentences; Refresh; an admin can allow cloud AI | Home |
 | **Fire alarm** | A smoke, CO, heat or gas sensor is on, or a camera hears an alarm | Call button, the escape steps, steps full screen | Family Board |
 | **Water leak** | A leak sensor is wet | See which sensor and room; one chime | Utilities |
@@ -270,7 +290,7 @@ the feeder, internet services and more. Every new feature adds a fact when it ha
   follow it.
 - **The mailbox** stands on the outside edge of the driveway (or where you choose in Your house) and its door swings open with envelopes when mail is expected today (USPS Informed Delivery emails).
 - **Art to the edges, chip strip in place:** the banner picture reaches every edge of its card (no grey band), and the strip of **two-line chips** (label on top, detail below, a long line scrolls inside its chip) sits between the horizon and the banner's bottom edge at every width. On phones the banner shows the whole house.
-- **Clock** card at the top right of the banner on wide screens (1100 px and up), opposite the weather card: time, weekday and date in the home's time zone. Phones and tablets show the time in the top bar instead.
+- **Clock** card at the top right of the banner on wide screens (1100 px and up), opposite the weather card: time, weekday and date in the device's time zone (the same as the top bar). Phones and tablets show the time in the top bar instead.
 - **Weather** sits in the banner on wide screens, and as a compact card on phones (current conditions, the next few
   hours, rain, wind, sunrise) that opens to the full forecast with a tap and opens by itself when rain is likely.
 - **Info chips** for lights on, the garage, indoor temperature and humidity, mail and packages, low batteries, open
@@ -377,7 +397,7 @@ opened it gets an **UPDATED** dot.
   long-term power law** chart (with a legend) that zooms (preset windows or drag across it) and remembers the zoom.
 - **Network & Storage**: devices on the Wi-Fi (busiest first, weak signal in red), new-device alerts with a **Follow up
   later** list, internet speed history, router and NAS health, guest Wi-Fi, and an **Internet services** card.
-- **Hardware**: the machines behind the house in one place: the Home Assistant host, a desktop PC with live gauges, printers, a 3D printer, the router and the NAS (each only when set up).
+- **Hardware**: the machines behind the house in one place: the Home Assistant host, a card for each desktop PC with live gauges and an Add another PC how-to, printers, a 3D printer, the router and the NAS (each only when set up).
 - **Family Board**: made for the kitchen with bigger text: the clock and weather, who's home, trash and recycling days,
   today's events and dinner, chores, the shopping list, **Medicine & fever**, **Birthdays**, the **Intercom**,
   **Holiday traditions**, **Carry-out orders**, **Kids' activity ideas**, **Family favorites**, **For sale**, the **Week
@@ -555,8 +575,8 @@ Made as a **trailing record of what was given**, with quick buttons.
 
 ## Whole-app conveniences
 
-- **Card ⋯ menu** on every card header: Full window, Collapse, Hide for today, Hide this card (and, for admins, turn it
-  off for everyone). It opens above everything and works on collapsed cards.
+- **Card ⋯ menu** on every card header: Full window, Collapse, Hide for today, Hide just for me (and, for admins, turn it
+  off for everyone), plus the card's related settings. It opens under its own button, above everything, and works on collapsed cards.
 - **Tap a card's top bar** to collapse or expand it, on every page. What you collapse is remembered for you on every screen; other people keep their own view.
 - **Hidden cards** follow your login and come back from Customize menu → Hidden cards or the System page.
 - **Full window** on every page (and full screen on the second tap); it zooms the page so the whole page fits.

@@ -7,7 +7,7 @@ title: All pages
 # All pages
 
 <!-- pagemap:start -->
-<div class="pm"><div class="pm-card pm-tabs"><h3>Main tabs <small>bottom bar on phones</small></h3><div class="pm-chips"><a class="pm-chip" href="#home">Home</a><a class="pm-chip" href="#rooms">Rooms</a><a class="pm-chip" href="#cameras">Cameras</a><a class="pm-chip" href="#calendar">Calendar</a></div></div><div class="pm-card pm-t0"><h3>Everyday</h3><div class="pm-chips"><a class="pm-chip" href="#family-board">Family Board</a><a class="pm-chip" href="#shopping">Shopping</a><a class="pm-chip" href="#packages">Packages</a><a class="pm-chip" href="#weather">Weather</a><a class="pm-chip" href="#activity">Activity</a></div></div><div class="pm-card pm-t1"><h3>House</h3><div class="pm-chips"><a class="pm-chip" href="#pantry--fridge">Pantry &amp; Fridge</a><a class="pm-chip" href="#recipes">Recipes</a><a class="pm-chip" href="#maintenance">Maintenance</a><a class="pm-chip" href="#storage">Storage</a><a class="pm-chip" href="#garage">Garage</a><a class="pm-chip" href="#automations">Automations</a><a class="pm-chip" href="#utilities">Utilities</a><a class="pm-chip" href="#pool">Pool</a></div></div><div class="pm-card pm-t0"><h3>Family</h3><div class="pm-chips"><a class="pm-chip" href="#kids">Kids</a><a class="pm-chip" href="#pets">Pets</a><a class="pm-chip" href="#guest">Guest</a><a class="pm-chip" href="#sitter-monitor">Sitter monitor</a><a class="pm-chip" href="#wellbeing">Wellbeing</a><a class="pm-chip" href="#workout">Workout</a><a class="pm-chip" href="#hobbies">Hobbies</a></div></div><div class="pm-card pm-t1"><h3>Out &amp; about</h3><div class="pm-chips"><a class="pm-chip" href="#commute">Commute</a><a class="pm-chip" href="#map">Map</a><a class="pm-chip" href="#air--allergy">Air &amp; Allergy</a><a class="pm-chip" href="#planes">Planes</a><a class="pm-chip" href="#space">Space</a></div></div><div class="pm-card pm-t0"><h3>Fun &amp; info</h3><div class="pm-chips"><a class="pm-chip" href="#now-playing">Now Playing</a><a class="pm-chip" href="#sports">Sports</a><a class="pm-chip" href="#finance">Finance</a><a class="pm-chip" href="#multi-view">Multi-view</a></div></div><div class="pm-card pm-t1"><h3>Labs</h3><div class="pm-chips"><a class="pm-chip" href="#labs">Browser</a><a class="pm-chip" href="#labs">3D Printer</a><a class="pm-chip" href="#labs-energy-and-bills">Energy</a></div></div><div class="pm-card pm-t0"><h3>System</h3><div class="pm-chips"><a class="pm-chip" href="#network--storage">Network</a><a class="pm-chip" href="#settings">Settings</a><a class="pm-chip" href="#system">System</a><a class="pm-chip" href="#about">About</a></div></div></div>
+<div class="pm"><div class="pm-card pm-tabs"><h3>Main tabs <small>bottom bar on phones</small></h3><div class="pm-chips"><a class="pm-chip" href="#home">Home</a><a class="pm-chip" href="#rooms">Rooms</a><a class="pm-chip" href="#cameras">Cameras</a><a class="pm-chip" href="#calendar">Calendar</a></div></div><div class="pm-card pm-t0"><h3>Everyday</h3><div class="pm-chips"><a class="pm-chip" href="#family-board">Family Board</a><a class="pm-chip" href="#shopping">Shopping</a><a class="pm-chip" href="#packages">Packages</a><a class="pm-chip" href="#weather">Weather</a><a class="pm-chip" href="#activity">Activity</a></div></div><div class="pm-card pm-t1"><h3>House</h3><div class="pm-chips"><a class="pm-chip" href="#pantry--fridge">Pantry &amp; Fridge</a><a class="pm-chip" href="#recipes">Recipes</a><a class="pm-chip" href="#maintenance">Maintenance</a><a class="pm-chip" href="#storage">Storage</a><a class="pm-chip" href="#garage">Garage</a><a class="pm-chip" href="#automations">Automations</a><a class="pm-chip" href="#utilities">Utilities</a><a class="pm-chip" href="#pool">Pool</a></div></div><div class="pm-card pm-t0"><h3>Family</h3><div class="pm-chips"><a class="pm-chip" href="#kids">Kids</a><a class="pm-chip" href="#pets">Pets</a><a class="pm-chip" href="#guest">Guest</a><a class="pm-chip" href="#sitter-monitor">Sitter monitor</a><a class="pm-chip" href="#wellbeing">Wellbeing</a><a class="pm-chip" href="#workout">Workout</a><a class="pm-chip" href="#hobbies">Hobbies</a></div></div><div class="pm-card pm-t1"><h3>Out &amp; about</h3><div class="pm-chips"><a class="pm-chip" href="#commute">Commute</a><a class="pm-chip" href="#map">Map</a><a class="pm-chip" href="#air--allergy">Air &amp; Allergy</a><a class="pm-chip" href="#planes">Planes</a><a class="pm-chip" href="#space">Space</a></div></div><div class="pm-card pm-t0"><h3>Fun &amp; info</h3><div class="pm-chips"><a class="pm-chip" href="#now-playing">Now Playing</a><a class="pm-chip" href="#sports">Sports</a><a class="pm-chip" href="#finance">Finance</a><a class="pm-chip" href="#multi-view">Multi-view</a></div></div><div class="pm-card pm-t1"><h3>Labs</h3><div class="pm-chips"><a class="pm-chip" href="#labs">Browser</a><a class="pm-chip" href="#labs">3D Printer</a><a class="pm-chip" href="#labs-energy-and-bills">Energy</a></div></div><div class="pm-card pm-t0"><h3>System</h3><div class="pm-chips"><a class="pm-chip" href="#network--storage">Network</a><a class="pm-chip" href="#settings">Settings</a><a class="pm-chip" href="#hardware">Hardware</a><a class="pm-chip" href="#about">About</a></div></div></div>
 <!-- pagemap:end -->
 
 
@@ -21,7 +21,7 @@ They're listed here in roughly the same order as the menu, so you can scroll thr
 
 [Home](#home) · [Rooms](#rooms) · [Cameras](#cameras) · [Calendar](#calendar) · [Activity](#activity) · [Now Playing](#now-playing) · [Shopping](#shopping) · [Packages](#packages) · [Recipes](#recipes) · [Pantry & Fridge](#pantry--fridge) · [Storage](#storage) · [Garage](#garage) · [Kids](#kids) · [Weather](#weather) · [Air & Allergy](#air--allergy) · [Sports](#sports) · [Commute](#commute) · [Planes](#planes) · [Map](#map) · [Space](#space) · [Multi-view](#multi-view) · [Display](#display) · [Kitchen tablet](#kitchen-tablet) · [Finance](#finance) · [Room dashboards](#room-dashboards) · [Design Studio](#design-studio) · [Network & Storage](#network--storage) · [Hardware](#hardware) · [Family Board](#family-board) · [Guest](#guest) · [Maintenance](#maintenance) · [Pets](#pets) · [Hobbies](#hobbies) · [Workout](#workout) · [Utilities](#utilities) · [Pool](#pool) · [Wellbeing](#wellbeing) · [Sitter monitor](#sitter-monitor) · [Automations](#automations) · [System](#system) · [About](#about) · [Labs](#labs)
 
-[Security](#security) · [Settings](#settings) · [Utilities](#utilities) · [Pool](#pool) · [Wellbeing](#wellbeing) · [Sitter monitor](#sitter-monitor)
+[Settings](#settings) · [Utilities](#utilities) · [Pool](#pool) · [Wellbeing](#wellbeing) · [Sitter monitor](#sitter-monitor)
 
 Also: [Things every page has](#things-every-page-has) (the card ⋯ menu, tap-to-collapse, Right now, theme colours,
 left- or right-handed phones).
@@ -38,9 +38,10 @@ left- or right-handed phones).
   UPS, no pool reading, no car that charges) is left out, and a quiet row says the real state ("Garage door: Closed")
   or what it watches for. Home only shows copies while they matter. When a page has two or more Right now cards they sit together in one softly highlighted container labelled Right now; a single card stays plain.
 - **Set-up and settings cards come after the page's own cards**, never above them, so a page opens on its content. Cards that are still waiting to be set up fold into one **More to set up · N** card at the very end of the page; tap it to show them.
-- **The card ⋯ menu** on every card's header: Full window, Collapse, Hide for today and Hide this card (with a confirm;
-  admins can also turn a card off for everyone). Hidden cards come back from Customize menu → Hidden cards or the System
+- **The card ⋯ menu** on every card's header opens right under its own button, on every screen: Full window, Collapse, Hide for today and Hide just for me (with a confirm;
+  admins can also turn a card off for everyone). It also lists the card's **related settings** above How this works (a Settings entry that runs the card's own set-up button, the exact settings of cards that have them such as Bedtime settings or the trash and recycling schedule, and "Shows on the ... page" for a Home card that belongs to another page). New cards get these entries automatically. Hidden cards come back from Customize menu → Hidden cards or the System
   page's Hidden cards section.
+- **Remove from this page and Add a card here** are also in the card ⋯ menu. Remove only hides the card on that page: nothing saved in it is touched, and it comes back from the toast's Undo or from **Cards on this page** (opened by Add a card here, with an On this page tab and an Add a card tab). **Hide just for me** hides a card only for you; Remove from this page applies to everyone at home. Add a card here shows a card from another page (for example Medicine & fever on Kids) with the same live data and buttons. Nothing can be removed from Settings, so you can always get back. Settings → Household has the same screen as **Cards on each page**.
 - **Move and How this works** are in the same menu: Move drags a card to a new spot (the order is shared by every
   screen), and How this works opens a short plain explanation of the card.
 - **Tap a card's top bar** to collapse or expand it. Buttons and links in the header still work as normal. What you
@@ -56,7 +57,7 @@ left- or right-handed phones).
 - **Left- or right-handed** (Interface scale → Hand, per person): on phones the navigation, room card buttons, page header
   buttons, add and mic buttons, Home card buttons and sheet buttons move to your thumb's side.
 - **Voice** on every quick-add list, and no character limits on text boxes.
-- **Swipe between pages** on phones: a clear sideways swipe on empty page or a card body goes to the next or previous
+- **Swipe between pages** on phones: a clear sideways swipe on an empty page or a card body goes to the next or previous
   page in menu order, with a page-name hint (maps, charts, chip rows and card swipes keep their own gestures). Turn it
   off in Alerts & notifications.
 - **Legends**: any map, chart or dial whose colours, lines or symbols mean something has a legend for each one.
@@ -65,15 +66,16 @@ left- or right-handed phones).
 
 ## More on every page
 
-- **Top bar:** buttons sit tight together; the button strip takes at most half the bar and scrolls past that, and top-bar text first tightens its spacing, and every piece of top-bar and banner text then scrolls on its own when it still does not fit, instead of being cut off or overlapping. The version line shows the time, the version and, for admins who maintain the app, the number of open backlog items (for example "10:14 AM · v<!-- ver -->1.10<!-- /ver --> · 11 open"); tap the count to open the Design Studio. A failed load keeps the number already shown.
+- **Top bar:** buttons sit tight together; the button strip takes at most half the bar and scrolls past that, and top-bar text first tightens its spacing, and every piece of top-bar and banner text then scrolls on its own when it still does not fit, instead of being cut off or overlapping. The version line shows the time, the version and, for admins who maintain the app, the number of open backlog items (for example "10:14 AM · v<!-- ver -->1.15<!-- /ver --> · 11 open"); tap the count to open the Design Studio. A failed load keeps the number already shown.
 - **Phone and tablet page bar:** the bottom bar fits as many page buttons as the width allows and slides sideways through every page, Frequent pages first, then the groups in menu order as tinted segments (no heading words), with **More** always pinned at the end. Buttons are at least 48 px.
 - **Card text fills the card:** card titles (and marked main values) grow in a few steps, up to one and a half times, to use the room the card already has. No card gets taller, and sizes stay close from card to card.
 - **Browser tab icon:** the dashboard shows its own small house icon in the browser tab.
 - **New marks:** a new card gets a small "New" tag and a soft glow for up to 3 days. It goes away once you have seen it (on screen for 2 seconds) or tapped it, and the seen list follows your account.
 - **Labs switch:** Settings has a "Show Labs pages" switch that hides the whole Labs section from the menu for you. Each Labs page also keeps its own switch in Menu pages.
 - **Smooth touch scrolling:** while a finger is scrolling, timers and data loads that would redraw part of the page wait, then run once afterwards. Taps and typing are never held.
+- **Quiet when idle:** the Home page does far less work when nothing changes. The banner loop runs only when it has something to draw, and pets, mail and decorations that are off screen pause.
 - **Card change notices:** off unless you turn them on in Settings. When on, an **urgent** card (a leak, someone at the door, time to leave) that appears or clears on its own puts a large notice on **wall screens and TVs**, readable from across the room. Phones, tablets and computers stay quiet unless you switch on "On this screen too" on that device. Changes you cause yourself and the first load stay silent, a burst of changes becomes one notice, it closes by itself, and quiet hours swap it for a small message.
-- **Demo mode:** open the dashboard address with `?demo=1` and it runs on made-up sample data: no sign-in, read-only, nothing real is read or written, and a DEMO strip shows on every page. Tapping something that would save explains why it is off; nothing pops up by itself.
+- **Demo mode:** open the dashboard address with `?demo=1` and it runs on the same made-up sample house the screenshots use (the demo is generated from that sample house when the app is built, so new sample data reaches it by itself): no sign-in, read-only, nothing real is read or written, and a DEMO strip shows on every page. Tapping something that would save explains why it is off; nothing pops up by itself.
 - **Refresh button:** a chip in the top bar, on every screen. A tap re-fetches the current page's data and redraws the page, unless you are typing in a text box (your text is never thrown away). A long press, or a tap while a new version is waiting, does a full safe reload, which also waits while you are typing, have unsaved text or have a sheet open. A short spin shows while it works, and a failed or empty load keeps the data already on screen.
 - **At a glance summaries:** Weather, Commute, Packages, Family Board, Pantry & Fridge and Security each show one optional sentence in an **At a glance** card beside their Right now card. It is built the same way as Home's Today at a glance: a local model first, a cloud model only after "Allow cloud AI" has been switched on there, otherwise a plain sentence made from the page's own facts. Each page refreshes its sentence at most every 15 minutes (a failed try waits 10), and the text is shared by every screen. The **Page summaries** card on the System page turns all six off and stops the AI calls.
 
@@ -88,6 +90,18 @@ An optional soft picture behind every page, switched on in Settings under Displa
 The page most screens sit on: an illustrated house banner with live status (the art reaches every edge of the banner, and a strip of two-line chips sits between the horizon and the banner's bottom edge; the clock is large, with the info chip stacked under it), and cards that appear when they matter
 (a plane overhead, rain coming, a game on, a package arriving) and leave when they don't. Every card and pop-up is
 described on the [Home page](home.md) guide and in the [Every feature](features.md#home-automatic-cards) table.
+
+### Home: Sticky notes
+
+A **Sticky notes** card sits beside Today at a glance. Anyone in the household can post a **note**, a **reminder** (date optional) or a **countdown** (date required); each shows who posted it and the days left or overdue. Mark a reminder **Done** or remove any note (Undo is offered). Notes are saved for the whole household in Home Assistant and never replaced by an empty list. A reminder that is due or a countdown in its last day also appears as a Right now card on Home. Tap a note to edit its text or date in place (Undo is offered). Dated reminders that are not done can also reach phones at 8 AM on the due day once the matching Home Assistant automation is switched on. The trash-cans reminder's **Done** button now shows **Done by** and a first name until the pickup passes.
+
+### Home: Smart layout (trial)
+
+The way cards are sized and sorted is moving to one model: **every card measures what it shows and picks its own size, one packer fills one canvas per page, and the order comes from priority first, then use, with your own moves always winning.** Nothing saved is read differently, and old saved order and sizes are kept. The first piece is a trial on Home only, off by default and per device: **Settings, This screen, Smart layout (Home, trial)**. With it on, only the banner is a pinned full row; the weather card and Now playing no longer split the page into separate areas; a card made wide drops to one column when its content fits there and grows a step when its text would overrun; and no lone card is stretched across a row. Nothing repacks under a finger, a scroll or while you type. Other pages follow in later versions; meanwhile the standard packer on every page now widens a card into a free column beside it instead of leaving a hole.
+
+### Home: Raise cards and pages you use (trial)
+
+With Smart layout on, the page remembers which cards you tap, expand or keep collapsed (counts only, no content, fading over about two weeks) and, on Home, Family and System, moves a card you use up to three places, or one you leave collapsed down to three. Your own card order, Right now cards and the banner always come first. The order is decided once per visit so nothing shuffles while you read; a raised card gets a small arrow after its title and a line in its ⋯ menu saying why. Turn it off in **Settings → This screen → Raise cards you use**; the counts are saved per person in Home Assistant.
 
 ### Home: Today at a glance and card order
 
@@ -117,9 +131,20 @@ A camera wall like a security console: layouts (auto, 1, 2×2, 3×3, 4×4, 1+5, 
 labels, snapshot refresh rate or live video. Tap a camera for a large live view. Snapshots are fetched with the
 dashboard's own sign-in, never stale camera links.
 
+### Cameras: control bar and sound
+
+One control bar sits in the page-arrows pill (or the toolbar in Auto layout), so nothing floats over the screen controls.
+
+- **Listen** plays the sound of the camera you picked, and the same button turns into **Stop**. Tap a camera tile to hear it. Only one camera plays at a time, and nothing streams until you tap.
+- **Talk** shows only on cameras that have a talk control, such as a doorbell.
+- **Open live view** opens the big live view of the picked camera.
+- Sound uses **WebRTC** first, which works with many cameras that the older method cannot play. If WebRTC is not available or fails, it falls back to **HLS**. A camera with no audio says so.
+
 ### Cameras: alerts and Frigate
 
 - **Camera alerts:** a card with status and recent detections, plus a settings sheet where each camera gets person detection, extra objects (car, animal, package), zones when the source reports them, quiet hours and who is notified. Detection comes from Frigate; other cameras still get quiet hours and a phone list.
+- **Vision alerts in one place:** every alert a camera can raise (person and object detections, the vision checks below, weather and feeding alerts) is in one **Vision alerts** screen, each with its own switch. Home shows one grouped **Vision alerts** card.
+- **Send to phones for:** in each camera's settings, pick which kinds (person, car, animal, package) are sent to phones. The rest still show on Home.
 - **Frigate at the door:** a Talk button and Open camera link on the Doorbell card; a "Person at the door" card for 2 minutes after a Frigate person sensor fires; a "The camera sees a package outside" card on Packages and Home.
 - **Video states:** pick any sensor that reports a state seen on video (for example a Frigate state classification such as door open or closed). Each shows its value, how long it has been so, and a snapshot, with an optional "alert when it is this for N minutes" Home card.
 - **Mail truck:** vehicle sensors and a front camera; each detection asks "Was that the mail truck?". Once enough answers are logged, a Home card says when the truck is usually due.
@@ -133,6 +158,17 @@ A camera snapshot is read by the AI set up in Home Assistant, and a **Vision ale
 - **It snowed:** a yard camera is asked for fresh snow after a cold night, with a Commute button on the card.
 - **Cats fed:** a camera at the feeding spot is asked at set times, and when a motion sensor you pick fires, whether a pet is eating or the bowl has food. The last time they were fed shows on the Pets page, and a card appears if nothing shows them fed by the time you set.
 
+### Cameras: camera models
+
+A **camera model** teaches Frigate to tell two or more looks of one spot apart, like a garage door open or closed. The **Camera models** card (admins) shows each model with its status: not set up, collecting images, training, ready, and the last result.
+
+- Pick a camera, draw the area, name the states, and capture labelled pictures. The sheet shows the config to copy and guides the Frigate steps.
+- **Footage training wizard:** pick frames from past recordings with a time scrubber and step buttons. A saved frame is cropped to your area and labelled with its state and lighting.
+- **Snapshot collector:** for a camera with no recording history. The wizard drafts an automation that saves a picture every few minutes for a day or two, then stops. The wizard then browses those pictures.
+- **Lighting checklist:** sun, shadows, glare, night and headlights must not flip a state, so each state needs pictures in each lighting. The checklist shows what is still missing.
+- **Hold time:** a state only changes after it agrees for this many seconds, so a headlight sweep or a passing shadow does not flip it.
+- **Wrong guess?** On a ready model, save the current moment with the right label for the next training round.
+
 ## Calendar
 
 ![Calendar page](images/calendar.jpg)
@@ -142,6 +178,7 @@ dimmed) across all your calendars, in the colours you pick (shared by everyone).
 on and off, and see the meal plan alongside. The wall calendar has big **Add event** and **Add to list** buttons with a
 microphone. Zoom to fit sizes rows correctly in Full window and keeps your scroll position.
 
+- **Import a document**: a document button on this page (and on the Family Board, the other page that uses it) opens a form for flyers, calendars and schedules. It opens the camera first with **or choose a file** beside it (or paste text), and the AI reads the events and items for you to review before anything is added. The button shows a page icon because it expects a document, and it does not show on pages that have no use for it.
 - **Tasks** card for Google Tasks: every list with due dates, overdue items in the warning colour, tick to complete and
   an add box per list. Tasks due today also show in Home's Up next card; overdue ones get a Home card.
 
@@ -149,7 +186,7 @@ microphone. Zoom to fit sizes rows correctly in Full window and keeps your scrol
 
 One scrolling timeline of what happened around the house **today and yesterday**, newest first and grouped by hour: the
 doorbell and people at the front door, the garage and doors, locks, people arriving and leaving, packages, alarms and
-smoke, and intercom messages. **Filter chips** (Everyone, Doors, Cameras, Packages and Security) narrow it to one kind. **Security** is the saved security log joined into the same timeline: its important events stay **unseen** until someone taps them, and that unseen mark is shared with the [Security](#security) page and the menu badge. It reads Home Assistant's logbook, refreshes when
+smoke, and intercom messages. **Filter chips** (Everyone, Doors, Cameras, Packages and Security) narrow it to one kind. **Security** is the saved security log joined into the same timeline: its important events stay **unseen** until someone taps them, and that unseen mark is shared with the menu badge. It reads Home Assistant's logbook, refreshes when
 you open it and every minute while it's open.
 
 ## Now Playing
@@ -265,6 +302,8 @@ Tool storage, built on the Storage page's places and items (so the Storage searc
 
 ## Kids
 
+![The Kids page with the baby monitor card, chores, pets, music and star chart](images/kids.jpg)
+
 One big-button page for a kid's tablet, made only from things that already exist. A child sees no settings, no
 editing and no set-up text: a card that is not set up yet is simply not there, and adding or importing sits behind the
 **Grown-ups** button at the bottom, which asks for the kid-lock PIN and closes again by itself after five minutes.
@@ -278,6 +317,11 @@ editing and no set-up text: a card that is not set up yet is simply not there, a
 - **Tell me a story**: a gentle bedtime story made from the day, read aloud if you like (needs an AI set up in Home
   Assistant).
 - **Kid lock**: with Kids as a screen's start page, a 4-digit grown-up PIN keeps the tablet on this page.
+- **Baby monitor**: turns any camera in Home Assistant into a baby monitor: a live picture, an optional **night view** (brighter, green-tinted), an optional sound or motion sensor that puts an alert line on the card, an optional room temperature, and a list of baby monitors that already work with Home Assistant. Choose the camera and sensors with **Set up** on the card (saved for the household). It stays hidden until a camera is chosen, and hidden from children until a grown-up opens Grown-ups. The sensor is an ordinary Home Assistant entity, so any phone alert automation can use it.
+
+### Kids: the Kids list
+
+One **Kids** list in **Settings → Household** holds each child with a room, a birthday and the cards that follow them (Medicine, Bedtime, Pickup, Sitter). Cards ask this list, so a child is set up once. Admins add or remove a child. Children already set up on those cards are added to the list for you, and choices saved on a card still win.
 
 ### Kids: new cards
 
@@ -307,6 +351,8 @@ the phone is. The **What to watch** card (Right now) always shows severe weather
 ## Sports
 
 ![Sports page](images/sports.jpg)
+
+![The live games window: up to four live games side by side with team stats](images/sports-live.jpg)
 
 Your teams' schedules and scores from ESPN (via the Team Tracker integration), with live game cards, TV network
 links and recaps.
@@ -365,6 +411,9 @@ Four tiles inside the Planes page grid, all from free sources without a key: **U
 
 People and tracked devices on a map with their recent path for the day, commute places and a You marker.
 
+- **Markers never hide each other:** when two markers would land on the same spot, they are nudged apart so each one can still be tapped, and they settle back as you zoom in.
+- **Garage pill:** if the garage camera's model has not been trained yet, the pill says **Camera model not trained yet** in a neutral colour (not a green Unavailable) and opens Cameras so you can train it.
+
 ## Space
 
 ![Space page](images/space.jpg)
@@ -393,6 +442,12 @@ Casting to a TV opens the same Display, and **each TV can have its own setup** (
 per screen, which screens, night dimming). Casting creates or refreshes a view for that TV in Home Assistant's TV
 dashboard, so the TV still knows which one it is after a reload. Home's cards show as a strip on the radar and camera screens; a pet peeks in
 from a corner now and then.
+
+- **Plane map beside the radar:** the TV view shows the live plane map next to the weather radar, each fitted to its half (stacked in tall rectangles on tall screens).
+- **Live games window:** while games are live, tapping the games card opens a large window with team stats for every live game, up to four side by side (score, period and clock, records, ranking, win chance, timeouts and shots where the sports sensors report them). It shows only while games are live and saves nothing.
+- **Casting to a bedroom TV is more forgiving:** any cast screen that is not a speaker shows in the Cast list, a sleeping TV is woken first (through its remote entity if it has one, otherwise the cast device itself) and given up to 25 seconds, the cast retries once, and a TV that stays offline gets a plain message instead of a silent failure.
+- **Cast strip:** the strip along the bottom of the cast screen uses the same scrolling chips and info as the Home banner.
+- **Fits any screen:** the full-screen What's new and the big TV-mode change log scale to fit the screen, and the TV view at phone width wraps titles at word breaks and keeps the corner pet clear of the chips.
 
 ### Display: picture frame
 
@@ -473,8 +528,10 @@ Opened from System or the More menu (not in the side menu). A status line at the
 - **Change log**: a heading per day and an expandable box per build.
 - **Shipped per day**: a chart of the last 14 days with a 7-day average.
 - **Hardware wishlist**: add a product link, × to remove, **Bought** moves it to Purchased; refreshes every minute.
-- **Live agents** and **Agents tally**: the main chat pinned (Working or Idle), a Helpers count, then Free and Paid tallies
-  with a bar for every job (status posts count as jobs) and a legend.
+- **Agents**: one card for every agent used lately. It shows how many are running, then small terminal-style tiles for the main chat, the team leads, helpers and free AI, with their latest lines. It also shows jobs done today with a bar for every job.
+- **Agent org chart**: who works for whom: the main chat, team leads, paid and free helpers, the quality checks and the last few builds.
+- **Agent activity keeps refreshing**: the Agents card and the live status refresh when the screen wakes, regains focus or comes back online, and a watchdog refetches when the data goes stale, so a throttled or low-memory device does not freeze on old lines.
+- **Visits** (admins only, never in the demo): demo-page visits today, over the last 7 and 30 days, a 14-day bar chart and a split by device type, with a placeholder for docs-site visits. A visit counts at most once every 10 minutes and only the day and device type are saved.
 - **Autopilot** (admins): opens the private control panel for the assistant that maintains the dashboard.
 
 See [Settings](settings.md#design-studio-backlog-and-ideas).
@@ -498,10 +555,17 @@ See [Settings](settings.md#design-studio-backlog-and-ideas).
 
 ## Hardware
 
+![The Hardware page: computers, printer ink, router and NAS cards](images/hardware.jpg)
+
 The machines behind the house in one place, in the System group. Every card here also stays on its own page, and a card only shows for hardware that is set up. Nothing is saved; it only reads Home Assistant.
 
-- **Home Assistant host** (a Raspberry Pi or similar): CPU, memory, temperature, storage, network and power status, the same card as System.
-- **Desktop PC**: live CPU, GPU, memory, temperatures and disk fullness as gauges, from a PC agent in Home Assistant (HASS.Agent or Glances). Until one is installed it shows set-up steps, and it says Not reporting while the PC is off.
+- **Home Assistant host** (a Raspberry Pi or similar): CPU, memory, temperature, storage, network and power status, the same card as System; its text wraps instead of running off the card.
+- **One card per PC**: every computer running a PC agent in Home Assistant (HASS.Agent on Windows, or Glances) is found by itself and gets its own card with live CPU, GPU, memory, temperature and disk gauges, plus when it last started. A PC that is off or asleep says **Not reporting** and comes back when it wakes. Each PC card sits on the page grid like any other card, so it can be moved.
+- **Add another PC** (a short how-to inside every PC card; open by default until a first PC exists):
+  1. On the PC, install HASS.Agent (free, Windows) and point its MQTT setting at the Mosquitto broker in Home Assistant, using the same MQTT user.
+  2. Under Sensors add CPU load, GPU load, GPU temperature and memory usage. For each disk add a PowerShell sensor that prints the percent used; for processor temperature add a WMI sensor (LibreHardwareMonitor must be running).
+  3. Turn on start with Windows. The PC appears here within a minute; nothing to set up in the dashboard. On a Mac or Linux PC use the free Glances integration instead.
+- **Connected, but no sensors yet**: a PC that HASS.Agent has registered but that sends nothing shows a **No sensors** card with the steps to finish (open Configuration, then Sensors, add the sensors above, choose Store and Activate).
 - **Printers**: toner, drum and page levels, the same card as Utilities.
 - **3D printer**: state, percent done, time left, layer, nozzle and bed temperature, only when a 3D printer is found.
 - **Router** and **NAS** (Synology): internet status, uptime, speed, load and devices for the router; volume status and fullness, drives, load and temperature for the NAS. Tap Network for the full details.
@@ -583,6 +647,10 @@ experiments and 3D printing, or add your own. A **Hobbies** Home card shows only
 soon (book club tonight, plants to water, game night, a show this week). The band hobby is **Gigs**: start, setup
 (2 hours before), show length, breakdown (1 hour after), a timeline, and import from an event link; Home shows a Gig
 card with the be-there-by time.
+
+### Hobbies: owners and spending
+
+Each hobby card has an **Owners and spending** row. Pick which household people the hobby belongs to, pick the spending account that pays for it, and log spending. A total shows for the month. People come from Home Assistant. Nothing is removed from older settings.
 
 ### Hobbies: gaming and smoker
 
@@ -675,21 +743,12 @@ to add, and each row opens the page its card is on.
 
 ## Security
 
-A page for the things that matter for safety, in two cards.
+Security is no longer its own page. It lives in [Activity](#activity), under the **Security** chip.
 
-- **Mode**: switch the alarm between Away, Home, Night and Off. **Alert choices** sets, for each mode, which kinds of
-  events raise an alert (people, packages, doors, garage, locks, alarm, smoke, water leaks, cameras), which phones are
-  told, and quiet hours. Smoke, CO and water leaks always get through quiet hours.
-- **Security log**: a saved log of people at cameras, packages, doors, the garage, locks, alarm changes, smoke, CO or
-  gas, water leaks and cameras going offline. It keeps up to 500 events over 30 days and is the same on every screen.
-  Entries stay **unseen** until you tap them or use Mark all seen; the menu badge counts the unseen important ones, and
-  filter chips narrow the list by kind or room. The same log appears under the **Security** chip on [Activity](#activity), with the same unseen marks.
-- **Camera states** and **Mail truck**: optional cards that watch what a camera reports (for example a gate left open
-  for a while) and learn roughly when the mail arrives.
-- Its Right now card shows unseen alerts, and an **At a glance** sentence sums the day up.
+- **Mode**: switch the alarm between Away, Home, Night and Off. **Alert choices** sets which kinds of events raise an alert in each mode, which phones are told, and quiet hours. Smoke, CO and water leaks always get through quiet hours.
+- **Security log**: a saved log of people at cameras, packages, doors, the garage, locks, alarm changes, smoke, CO or gas, water leaks and cameras going offline. It keeps up to 500 events over 30 days and is the same on every screen. Entries stay **unseen** until you tap them or use Mark all seen, and the menu badge counts the unseen important ones.
 
-Devices are found by what they are (doors, locks, smoke detectors, cameras), never by name, so the page works in any
-house. A house with none of them still gets the log, which fills as devices are added.
+Devices are found by what they are (doors, locks, smoke detectors, cameras), never by name, so it works in any house.
 
 ## Settings
 

@@ -6,8 +6,16 @@ title: Change log
 
 Everything shipped, newest first. Each build is a small batch of improvements. See [Every feature](features.md) for the full list.
 
-## Nashboard 1.x · Nov 24 2026
+## Nashboard 1.x · Nov 25 2026
 
+- Version 1.15 (BUILD .280): Smart layout trial on Family and System (one canvas), cards rise by use with a Raised for you mark, add or remove a card on any page (Home and Family Board too), Black-owned businesses card (local AI words), sticky notes edit in place and phone reminders, trash Done by, house picture links and live touches (mailbox glow, garage open, solar shimmer), Family scroll freeze fixed at the packer, contrast fixes (Display chip strip, card menus on phones, weather, nursery), kitchen display switch instant, room words fixed, docs for 1.12-1.15 with all pictures retaken, Claude Max month in the costs.
+
+## Versions 0.260 to 1.14
+
+- Version 1.14 (BUILD .279): Hardware page matches HASS.Agent sensors with a setup guide for PCs with none, Pi card text wraps, live games window, TV plane map beside the radar, sticky notes on Home, related settings in card menus, camera-first picture picker, baby monitor card, Import a document only on Calendar and Family, admin Visits card, Throttle the Model card, bedroom TV cast fixes, icons readable on and off, empty-state icons readable.
+- Version 1.13 (BUILD .278): card options open under their own 3-dot everywhere (optioncheck), What's new fits any screen, cast strip uses the Home chips, cat medicine copies update together, trash Done button, wishlist links survive the name filter, Packages text in full, "N Open in B/L", agent activity keeps refreshing on throttled devices, Family patches only changed sections, TV view at phone width, card headers 48 px, contrast and tap fixes on every page, System/Packages/Hobbies cards movable.
+- Version 1.12 (BUILD .277): Hardware page shows one card per PC running HASS.Agent (found automatically, Add another PC how-to), Home idle CPU cut by two thirds, smoother phone scrolling, banner clock matches the top bar, phone top bar keeps the clock in view, chip strip fades at its edges, demo sports card, Kids and hobby chips show their state, Kids card loads on Settings, fewer repeat AI summary calls, Buy me a coffee on the About page, all docs pictures retaken without maintainer chips, device check tuned.
+- Version 1.11 (BUILD .276, one release): camera sound over WebRTC first, camera-model training wizard (past footage, snapshot collector), per-kind phone alerts per camera, map garage label, more house picture options and the photo reader filling them, demo built from the screenshot data, scroll-safe page timers, map markers spread apart, faster device lookups, Family card on the column grid, savecheck and loadcheck warnings nearly cleared, How it works audit (18 fixes), HA camera alerts automation (off until switched on) and vision switches.
 - Version 1.10 (BUILD .275): camera control bar with tap-for-sound and Talk, every vision alert on one screen with camera detections grouped on Home, Camera models (setup, lighting checklist, hold time, Frigate steps), cards in wrappers move again, Security page folded into Activity, one Agents card plus an org chart, a Kids list in Settings, hobby owners and spending, wording check clean on every page, docs keep one version everywhere. Tools: overlapcheck skips closed sections, scrollcheck closes its browsers.
 - Rule: learn which models get stuck on which work and adjust teams over time (rules/teams.md "Learn and adjust", notes in tools/team-notes.md).
 - Version 1.9 (BUILD .274): bigger banner clock with the info chip stacked under it, top bar text tightens before it scrolls, About page facts generated at build time (109 Home cards, 306 cards, checks, models), Design Studio status from one live model, docs written from the app, first-screen check (Commute chart no longer mostly empty), a 44 px move handle and a new card-move check, check runs stop at 5 minutes.
@@ -376,3 +384,4 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 - **Uniform card titles** on Home: icon + title, full width.
 - **Full-window zoom:** Planes map, Map page, radar.
 - **System cleanup:** cameras, Waze, Music Assistant reconnected after outage; failed backup re-run; Google News rate limit fixed; broken FR24 airport sensors off; cameras self-heal.
+- Nov 25 2026: Jot import filed 25 ideas (all with idea ids; 2 pairs merged; marker idea d9513614 "IMPORT NOW" handled).

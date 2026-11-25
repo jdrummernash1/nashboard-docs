@@ -48,7 +48,7 @@ A step-by-step look at every page of Nashboard, in the order you would meet them
 <li><a href="#s-finance" title="Finance">25</a></li>
 <li><a href="#s-network" title="Network">26</a></li>
 <li><a href="#s-maint" title="Maintenance">27</a></li>
-<li><a href="#s-security" title="Security">28</a></li>
+<li><a href="#s-security" title="Security log">28</a></li>
 <li><a href="#s-guest" title="Guest">29</a></li>
 <li><a href="#s-hobbies" title="Hobbies">30</a></li>
 <li><a href="#s-wellbeing" title="Wellbeing">31</a></li>
@@ -75,8 +75,8 @@ A step-by-step look at every page of Nashboard, in the order you would meet them
 <section class="tour-step" id="s-menu">
 <div class="tour-count">Step 2 of 41</div>
 <h2>The grouped menu</h2>
-<img src="images/tour/tour-menu.jpg" alt="The side menu with its section headings, on the demo house" loading="lazy">
-<p>The menu is split into short sections so a long list of pages stays easy to scan: Everyday, House, Family, Out and about, Fun and info, Labs and System. Home and the tab-bar pages stay first and About stays last. Your hidden pages and your order choice still work inside each section.</p>
+<img src="images/tour/tour-menu.jpg" alt="The Home page with the side menu split into colour-tinted groups" loading="lazy">
+<p>The menu is split into short groups so a long list of pages stays easy to scan: Everyday, House, Family, Out and about, Fun and info, Labs and System. On a computer each group is a colour-tinted block with no heading; the phone More sheet shows the group names. Home and the tab-bar pages stay first and About stays last. Your hidden pages and your order choice still work inside each section.</p>
 <div class="tour-nav"><a href="#s-home">&larr; Home</a><a class="nx" href="#s-more">The phone More sheet &rarr;</a></div>
 </section>
 
@@ -84,7 +84,7 @@ A step-by-step look at every page of Nashboard, in the order you would meet them
 <div class="tour-count">Step 3 of 41</div>
 <h2>The phone More sheet</h2>
 <img src="images/tour/tour-more-phone.jpg" alt="The More sheet on a phone, grouped under the same headings" loading="lazy">
-<p>On a phone the tab bar holds the main pages and More opens the rest as a two-column grid with a search box and your last three pages on top, then the same headings, each page with a one-line description. Menu pages in Settings lists the same groups.</p>
+<p>On a phone the tab bar holds the main pages and More opens the rest as a two-column grid with a search box and your last three pages on top, then the same headings, each page with a one-line description. Menu pages in Settings list the same groups.</p>
 <div class="tour-nav"><a href="#s-menu">&larr; The grouped menu</a><a class="nx" href="#s-rooms">Rooms &rarr;</a></div>
 </section>
 
@@ -107,7 +107,7 @@ A step-by-step look at every page of Nashboard, in the order you would meet them
 <section class="tour-step" id="s-moresetup">
 <div class="tour-count">Step 6 of 41</div>
 <h2>More to set up</h2>
-<img src="images/tour/tour-moresetup.jpg" alt="The folded More to set up card at the end of a page" loading="lazy">
+<img src="images/tour/tour-moresetup.jpg" alt="Bottom of the Cameras page, with the folded More to set up card below two camera tiles" loading="lazy">
 <p>Cards that are still waiting to be set up no longer crowd the top of a page. They fold into one More to set up card at the very end, with a count. Tap it to show them; every page opens on its main thing first.</p>
 <div class="tour-nav"><a href="#s-cameras">&larr; Cameras</a><a class="nx" href="#s-calendar">Calendar &rarr;</a></div>
 </section>
@@ -131,8 +131,8 @@ A step-by-step look at every page of Nashboard, in the order you would meet them
 <section class="tour-step" id="s-kids">
 <div class="tour-count">Step 9 of 41</div>
 <h2>Kids</h2>
-<img src="images/tour/tour-kids.jpg" alt="The Kids page with demo data" loading="lazy">
-<p>A page just for the children: schedules, routines and the things each child needs for the day.</p>
+<img src="images/tour/tour-kids.jpg" alt="The Kids page: big-button chores, star chart, bedtime reminder, pets, coat advice and music controls" loading="lazy">
+<p>A page just for the children: schedules, routines and the things each child needs for the day. A grown-up can also set up a baby monitor card from any camera.</p>
 <div class="tour-nav"><a href="#s-family">&larr; Family Board</a><a class="nx" href="#s-pets">Pets &rarr;</a></div>
 </section>
 
@@ -155,7 +155,7 @@ A step-by-step look at every page of Nashboard, in the order you would meet them
 <section class="tour-step" id="s-storage">
 <div class="tour-count">Step 12 of 41</div>
 <h2>Storage</h2>
-<img src="images/tour/tour-storage.jpg" alt="The Storage page with demo data" loading="lazy">
+<img src="images/tour/tour-storage.jpg" alt="The Storage page: item search, places list, appliances and warranties, and inventory size cards" loading="lazy">
 <p>Boxes and shelves with labels and counts, so you can find things and spot what is running low.</p>
 <div class="tour-nav"><a href="#s-pantry">&larr; Pantry and Fridge</a><a class="nx" href="#s-garage">Garage &rarr;</a></div>
 </section>
@@ -251,7 +251,7 @@ A step-by-step look at every page of Nashboard, in the order you would meet them
 <section class="tour-step" id="s-music">
 <div class="tour-count">Step 24 of 41</div>
 <h2>Music</h2>
-<img src="images/tour/tour-music.jpg" alt="The Music page with demo data" loading="lazy">
+<img src="images/tour/tour-music.jpg" alt="The Now Playing page: a TV playing a nature documentary, with playback buttons and a volume slider" loading="lazy">
 <p>What is playing in each room, with browse and play controls.</p>
 <div class="tour-nav"><a href="#s-recipes">&larr; Recipes</a><a class="nx" href="#s-finance">Finance &rarr;</a></div>
 </section>
@@ -277,14 +277,14 @@ A step-by-step look at every page of Nashboard, in the order you would meet them
 <h2>Maintenance</h2>
 <img src="images/tour/tour-maint.jpg" alt="The Maintenance page with demo data" loading="lazy">
 <p>A schedule of home upkeep, from filters to smoke alarms, with reminders when something is due.</p>
-<div class="tour-nav"><a href="#s-network">&larr; Network</a><a class="nx" href="#s-security">Security &rarr;</a></div>
+<div class="tour-nav"><a href="#s-network">&larr; Network</a><a class="nx" href="#s-security">Security log &rarr;</a></div>
 </section>
 
 <section class="tour-step" id="s-security">
 <div class="tour-count">Step 28 of 41</div>
-<h2>Security</h2>
-<img src="images/tour/tour-security.jpg" alt="The Security page with demo data" loading="lazy">
-<p>Alerts for doors, locks, garage, alarms, smoke, leaks, packages and cameras, kept in a log until someone has seen them. Pick a mode (Away, Home, Night, Off) that decides which alerts matter, and keep the fire-safety escape plan close by.</p>
+<h2>Security log</h2>
+<img src="images/tour/tour-security.jpg" alt="The Activity page with the Security chip selected: alarm mode buttons and the saved security log with type and room filters" loading="lazy">
+<p>Security now lives on the Activity page: pick its Security chip. Alerts for doors, locks, garage, alarms, smoke, leaks, packages and cameras, kept in a log until someone has seen them. Pick a mode (Away, Home, Night, Off) that decides which alerts matter, and keep the fire-safety escape plan close by.</p>
 <div class="tour-nav"><a href="#s-maint">&larr; Maintenance</a><a class="nx" href="#s-guest">Guest &rarr;</a></div>
 </section>
 
@@ -293,7 +293,7 @@ A step-by-step look at every page of Nashboard, in the order you would meet them
 <h2>Guest</h2>
 <img src="images/tour/tour-guest.jpg" alt="The Guest page with demo data" loading="lazy">
 <p>Wi-Fi details, contacts and how-tos for visitors, ready to show or print.</p>
-<div class="tour-nav"><a href="#s-security">&larr; Security</a><a class="nx" href="#s-hobbies">Hobbies &rarr;</a></div>
+<div class="tour-nav"><a href="#s-security">&larr; Security log</a><a class="nx" href="#s-hobbies">Hobbies &rarr;</a></div>
 </section>
 
 <section class="tour-step" id="s-hobbies">
@@ -307,7 +307,7 @@ A step-by-step look at every page of Nashboard, in the order you would meet them
 <section class="tour-step" id="s-wellbeing">
 <div class="tour-count">Step 31 of 41</div>
 <h2>Wellbeing</h2>
-<img src="images/tour/tour-wellbeing.jpg" alt="The Wellbeing page with demo data" loading="lazy">
+<img src="images/tour/tour-wellbeing.jpg" alt="The Wellbeing page: mood check-in, breathing circle, daily affirmation, gratitude notes and wind-down reminder" loading="lazy">
 <p>A private page for mood check-ins, guided breathing, a daily affirmation, gratitude notes and a gentle wind-down reminder. Nothing is shared unless you choose to share it.</p>
 <div class="tour-nav"><a href="#s-hobbies">&larr; Hobbies</a><a class="nx" href="#s-workout">Workout &rarr;</a></div>
 </section>
@@ -315,7 +315,7 @@ A step-by-step look at every page of Nashboard, in the order you would meet them
 <section class="tour-step" id="s-workout">
 <div class="tour-count">Step 32 of 41</div>
 <h2>Workout</h2>
-<img src="images/tour/tour-workout.jpg" alt="The Workout page with demo data" loading="lazy">
+<img src="images/tour/tour-workout.jpg" alt="The Workout page: a large interval timer ready at 0:30 with start, skip and reset buttons" loading="lazy">
 <p>Workout plans and progress for the household.</p>
 <div class="tour-nav"><a href="#s-wellbeing">&larr; Wellbeing</a><a class="nx" href="#s-activity">Activity &rarr;</a></div>
 </section>
@@ -323,7 +323,7 @@ A step-by-step look at every page of Nashboard, in the order you would meet them
 <section class="tour-step" id="s-activity">
 <div class="tour-count">Step 33 of 41</div>
 <h2>Activity</h2>
-<img src="images/tour/tour-activity.jpg" alt="The Activity page with demo data" loading="lazy">
+<img src="images/tour/tour-activity.jpg" alt="The Activity page: a timeline of door, camera, package and arrival events with filter chips" loading="lazy">
 <p>A timeline of what happened around the house today.</p>
 <div class="tour-nav"><a href="#s-workout">&larr; Workout</a><a class="nx" href="#s-automations">Automations &rarr;</a></div>
 </section>
@@ -331,7 +331,7 @@ A step-by-step look at every page of Nashboard, in the order you would meet them
 <section class="tour-step" id="s-automations">
 <div class="tour-count">Step 34 of 41</div>
 <h2>Automations</h2>
-<img src="images/tour/tour-automations.jpg" alt="The Automations page with demo data" loading="lazy">
+<img src="images/tour/tour-automations.jpg" alt="The Automations page: the automation list and a Suggested for your home card with ideas to accept, dismiss or sketch" loading="lazy">
 <p>Everything the house does on its own, what triggers each one and how to turn it off.</p>
 <div class="tour-nav"><a href="#s-activity">&larr; Activity</a><a class="nx" href="#s-printer">3D Printer &rarr;</a></div>
 </section>
@@ -356,7 +356,7 @@ A step-by-step look at every page of Nashboard, in the order you would meet them
 <div class="tour-count">Step 37 of 41</div>
 <h2>Display and TV</h2>
 <img src="images/tour/tour-display.jpg" alt="The Display and TV page with demo data" loading="lazy">
-<p>Kiosk and TV settings: what rotates on the screen and how big it is.</p>
+<p>Kiosk and TV settings: what rotates on the screen and how big it is. The TV view shows the plane map beside the radar, and tapping the games card opens a live stats window.</p>
 <div class="tour-nav"><a href="#s-multi">&larr; Multi-view</a><a class="nx" href="#s-backlog">Design Studio &rarr;</a></div>
 </section>
 

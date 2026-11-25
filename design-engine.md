@@ -18,7 +18,7 @@ app treats its data, and which automatic checks enforce them.
 - **Cards pack, never leave gaps.** Every page's card container packs its cards into columns. Plain grids that leave holes are not
   allowed (the only exceptions are deliberate fixed layouts). Why: empty space at the bottom of a page looks broken.
 - **One single-card width per page.** Every single card on a page is exactly one column wide, including cards outside the grid.
-  Columns are never widened by their contents. Why: two slightly different widths on one page looks sloppy.
+  Columns are never widened by their contents. Why: two slightly different widths on one page look sloppy.
 - **Shared width tokens.** Page grids use the shared card width and gap tokens; pages of big cards use a wider token. Never a
   one-off pixel width.
 - **Container cards** (a card holding a grid of tiles, such as rooms or cameras) span as many columns as their neighbours, lay tiles
