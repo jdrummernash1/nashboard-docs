@@ -2,7 +2,7 @@
 - group: "Home Assistant integrations and cards"
   items:
     - {author: "home-assistant", repo: "core", use: "Home Assistant itself, the base of everything", url: "https://github.com/home-assistant/core"}
-    - {author: "superdingo101", repo: "daylight-calendar-card", use: "Idea for day badges and saved calendar views on Calendar", url: "https://github.com/superdingo101/daylight-calendar-card"}
+    - {author: "superdingo101", repo: "daylight-calendar-card", use: "Idea for day badges and saved calendar views on Calendar; the Agenda, Month and Week views of the Calendar redesign", url: "https://github.com/superdingo101/daylight-calendar-card"}
     - {author: "robin994", repo: "billy", use: "Idea for the bill payer and the monthly all-paid checklist on Finance", url: "https://github.com/robin994/billy"}
     - {author: "mKeRix", repo: "room-assistant", use: "Idea for room-level presence (who is in which room) on Family", url: "https://github.com/mKeRix/room-assistant"}
     - {author: "glenndehaan", repo: "unifi-voucher-site", use: "Idea for the Guest Wi-Fi voucher with an end date and a QR", url: "https://github.com/glenndehaan/unifi-voucher-site"}
@@ -39,7 +39,8 @@
     - {author: "vasqued2", repo: "ha-teamtracker", use: "Live sports scores on the Sports page", url: "https://github.com/vasqued2/ha-teamtracker"}
     - {author: "vasqued2", repo: "ha-teamtracker-card", use: "Team Tracker card, shown on the Sports page", url: "https://github.com/vasqued2/ha-teamtracker-card"}
     - {author: "jpettitt", repo: "weather-radar-card", use: "Weather radar loop on the Weather page", url: "https://github.com/jpettitt/weather-radar-card"}
-    - {author: "alexpfau", repo: "calendar-card-pro", use: "Weather icon and high/low on each calendar day; private calendars show busy blocks only on shared screens; inspired the per-person column view on Calendar; Inspired the month view on the Up next calendar card", url: "https://github.com/alexpfau/calendar-card-pro"}
+    - {author: "alexpfau", repo: "calendar-card-pro", use: "Weather icon and high/low on each calendar day; private calendars show busy blocks only on shared screens; inspired the per-person column view on Calendar; Inspired the month view on the Up next calendar card; the compact toolbar, Agenda view and phone month dots of the Calendar redesign", url: "https://github.com/alexpfau/calendar-card-pro"}
+    - {author: "FamousWolf", repo: "week-planner-card", use: "Idea for the Calendar Agenda: Today and Tomorrow labels, empty days skipped, weather on each day header", url: "https://github.com/FamousWolf/week-planner-card"}
     - {author: "eifinger", repo: "pywaze", use: "Waze library behind the Commute drive times", url: "https://github.com/eifinger/pywaze"}
     - {author: "idaho", repo: "hassio-trash-card", use: "Collection day card: next pickup per type (trash, recycling, compost) read from a calendar", url: "https://github.com/idaho/hassio-trash-card"}
     - {author: "ADNPolymerase", repo: "ha-appliance-card", use: "Appliance cycle row: running state, time left, finish time and run time today", url: "https://github.com/ADNPolymerase/ha-appliance-card"}
