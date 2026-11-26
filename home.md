@@ -92,7 +92,7 @@ doesn't flicker; if the situation clears sooner the card says so ("Closed now", 
 leaves. Several have a one-tap action button.
 
 <!-- homecards:start -->
-The app has 109 automatic Home cards. This table is written from the app's own list and its How it works texts, so it always matches the app.
+The app has 120 automatic Home cards. This table is written from the app's own list and its How it works texts, so it always matches the app.
 
 | Home card | Shows when | What you can do |
 |---|---|---|
@@ -151,7 +151,7 @@ The app has 109 automatic Home cards. This table is written from the app's own l
 | Pick up dinner? | On Home 4 to 8 PM when someone is heading home from a trip. | Tap a phone number to call, or Copy the order. |
 | Dishwasher | Home shows it while running or clean. A kitchen room page also shows it when dirty. | Start or cancel a timer, and tap Emptied when the dishes are put away. |
 | Pickup soon | In the 15 minutes before pickup, on days the schedule applies. | Read-only. |
-| Pack a lunch | On Home from 6 to 9:30 AM on days marked as pack a lunch. | Read only; change the days in the Kid monitor card. |
+| Pack a lunch | On Home from 6 to 9:30 AM on days marked as pack a lunch. | Read only; the days come from the lunch menu import. |
 | Earbuds battery | On Home when any earbud battery is at or below the limit you set. | Read only; put them on the charger. |
 | Internet provider outage | On Home when the sensor has said down for more than 2 minutes; clears when back up. | Open the provider outage page link if one is saved in the Internet card settings. |
 | Bills due | When a bill is due within the lead time (default 3 days) or is overdue. | Tap Mark paid; a repeating bill moves to its next date. |
@@ -187,6 +187,8 @@ The app has 109 automatic Home cards. This table is written from the app's own l
 | Smoker | On Home while the pit is hot, or once the probe reaches its goal until dismissed (dismissing hides it for 6 hours). | Tap Dismiss on the done message. |
 | Steam Deck battery | Only when the battery is under 20 percent and not charging. | Read-only. |
 | Sticky notes due | Only while a reminder is due or overdue, or a countdown is in its last day. | Tap Done on a reminder. |
+| Storm prep | Only while one of those warnings is active; a task disappears once it is done (window closed, phone charged) and the card ends with the warning. | Read it and go do the tasks. |
+| Water running at night | Only between 1 and 5 AM, when water use shows in each of the last four slices (one hour) and no dishwasher, washer or sprinkler is running. One phone alert goes out per night. | Check taps, toilets and the water heater. |
 | Cast dashboard | Appears while a TV is casting the dashboard, and only if the cast countdown is on. | Open YouTube, YouTube TV or the Watch app on that TV with a tap. |
 | TV volume leveler | Only on a room page, for a TV in that room with the leveler on. | Read-only. |
 | Running on battery | After 30 seconds on battery, and for two minutes after the power returns. | Tap Safe shutdown (and confirm) when a NAS shutdown button exists. |
@@ -205,6 +207,15 @@ The app has 109 automatic Home cards. This table is written from the app's own l
 | PC running hot or full | On Home while one of those is true; gone when it clears. | Read-only. |
 | 3D print | On Home for an hour after a finish, or three hours after a failure; gone after. | Read-only. |
 | Router or NAS offline | On Home while it is true; gone when it is back. | Read-only. |
+| Processor at 100% | On Home and the Hardware page while a processor is at or above the threshold; gone when it drops. The alarm chimes on screens and sends one phone alert per episode. | Snooze 30 minutes or Done for this episode. |
+| Your private reminders | Only on your own screen while one is due or overdue. Never on the Display or wall screens. | Tap Done on a reminder you added. |
+| Needs attention | For grown-ups only, while something needs attention; never on a wall screen or in guest mode. It also sits in Right now on the System page. | Tap Done to hide an item for a day, or Snooze for a week, on every screen. |
+| Chores this week | On Home and the Family Board on Sunday evening from 5 to 9 PM, when at least three chores were done by two or more people. | Tap Suggest a swap to see one open chore that could move to someone with a lighter week, then Swap it (tap twice) to rename it in the Chores list. |
+| Last one out | On Home only while everyone is away and something is left on; goes away when it is off or someone comes home. Turn it off in Everyone home settings. | Tap the button to turn lights off, lock up, close the garage or turn TVs off. |
+| Household mode | Only while the mode is not Home. | Tap Back to Home to bring every card back. |
+| Deadline coming up | The day before and the day of a deadline you have not hidden. | Open the Family Board to add it to the calendar or hide it. |
+| Scene suggestion | Near the usual hour, once a scene has been run at least four times around then. Never within 3 hours of running it. | Tap Run to start the scene, or Not now to hide it for the rest of the day (saved for you only). |
+| Space data is old | On the Space page only, once a refresh has been failing for 30 minutes or more. | Nothing to do; the page keeps showing the last good copy and tries again on its own. |
 
 <!-- homecards:end -->
 

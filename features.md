@@ -25,7 +25,24 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 [Medicine & fever](#medicine--fever) · [Pets](#pets) · [Cars](#cars) · [Family tools](#family-tools) ·
 [Phone, watch, TV and car](#phone-watch-tv-and-car) · [Automations](#automations-and-phone-alerts) ·
 [Whole app](#whole-app-conveniences) · [Design Studio](#design-studio) · [Integrations](#integrations-and-data-sources) ·
-[Planned](#planned-from-the-backlog)
+[Planned](#planned-from-the-backlog) · [Where AI decides](#where-the-app-uses-ai-to-decide-for-you)
+
+---
+
+## Where the app uses AI to decide for you
+
+Most of the app is plain rules. These are the places where an AI makes a call for you, and each one is marked **AI decides here** on its page:
+
+- **Summaries:** Today at a glance on Home, and the At a glance sentence on six pages ([Home](pages.md), [Weather and others](pages.md)), choose what to say. Without an AI a plain sentence from the same facts is used.
+- **Ask AI** on Home answers a question you type.
+- **Camera vision checks** decide whether a snapshot shows something that needs doing (long grass, snow, a windshield to scrape, cats fed). See [Cameras: vision alarms](pages.md#cameras-vision-alarms).
+- **Import a document** reads a flyer, calendar or schedule and proposes events and items. **Family inbox** decides what kind of thing each email is.
+- **Photos:** Tools from a photo (toolbox and drawers) and the House picture photo reader propose what they see; you review before anything is saved.
+- **Estimates and stories:** the Insurance list value estimate and bedtime stories.
+- **New in 1.25:** Slow internet explained (a rule line an at-home AI may reword), Deadlines from email (items the Family inbox's AI found) and the Ollama warm-up. Storm prep, Water running at night, Litter box pattern note, Repeat dinner, Needs attention and Household mode are plain rules, not AI.
+- **Suggestions:** Suggested for your home (Ask the AI) and the Businesses card picking which needs to show.
+
+Always true of these: a local AI is used unless an admin turns on cloud AI; whatever the AI proposes waits for your review or has Undo; nothing is applied to Home Assistant by itself; and a failed answer never replaces what is shown. **Card order, priorities and the Right now card are plain rules, not AI.**
 
 ---
 
@@ -58,9 +75,27 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 - **Demo and speed (1.11, 1.12):** the demo house is generated from the screenshot sample house, the Home page uses far less CPU when idle, and background work waits until you stop scrolling.
 - **First-screen check:** a quality check fails any page whose main card starts too far down or leaves the first screen mostly empty.
 
-## New in versions 1.21 to <!-- ver -->1.23<!-- /ver -->
+## New in 1.25
+
+Items marked *Suggested by Claude* came from the project's own suggestion review; the rest were Human. Each is described on its page.
+
+- **Needs attention (1.25):** *Suggested by Claude.* Offline cameras, unresponsive devices, low batteries and waiting updates in one card, with Done and Snooze that reach every screen ([Home](pages.md#home-needs-attention)).
+- **Household mode (1.25):** *Suggested by Claude.* Home, Away, Sleep or Guests sets which cards show and what counts as quiet time; safety cards always stay ([Home](pages.md#home-household-mode)).
+- **Everyone home and Last one out, Announce (1.25):** *Suggested by Claude.* Arrive and leave times, a reminder of what was left on, and speech to chosen speakers with quiet hours ([Family](pages.md#family-everyone-home-and-last-one-out)).
+- **Storm prep and Water running at night (1.25):** *Suggested by Claude.* A short task list during a storm warning, and a steady-flow alarm between 1 and 5 AM ([Weather](pages.md#weather), [Utilities](pages.md#utilities)).
+- **Private cards (1.25):** *Suggested by Claude.* My to-dos, Private reminders, My wish list, Gift dates and sizes and Gift deadlines, kept in your own account and never shown on shared screens ([Family](pages.md#family-private-cards-my-to-dos-private-reminders-my-wish-list-gift-dates-and-sizes)).
+- **Slow internet explained, Litter box pattern note, Deadlines from email, Repeat dinner (1.25):** *Suggested by Claude.* Four cards from the AI-card review ([Network](pages.md#network--storage), [Pets](pages.md#pets), [Family](pages.md#family-deadlines-from-email), [Recipes](pages.md#recipes)).
+- **Ask AI warm-up (1.25):** the local AI model is woken before you ask, so the first answer is quick ([Home](pages.md#home-ask-ai-warm-up)).
+- **Tombstone cleanup (1.25):** *Suggested by Claude.* The 90-day clean-up of deleted-item memory now runs only once every list has finished loading, and Saved data shows how many old deletions were cleaned up.
+- **Wall user calm page (1.25):** *Suggested by Claude.* A wall screen user sees one Right now card and three cards above the fold.
+- **Sticky paper follows the Look (1.25):** *Suggested by Claude.* Paper, Glass and Bold each restyle the banner notes without changing their size.
+
+---
+
+## New in versions 1.21 to <!-- ver -->1.25<!-- /ver -->
 
 - **Move and resize cards (1.21, 1.23):** drag a card with the mouse (or long-press on a phone) to move it, and use **Wider** and **Narrower** in the card's menu to change its width one step. Both are saved per person and survive a reload ([Things every page has](pages.md#things-every-page-has)).
+- **Let the app place this card (1.24):** a card you moved by hand gets **Let the app place this card** in its menu. One tap puts it back where the app would place it, and use order can raise it again. Moving that card later places it by hand again, and **Reset card order** clears the whole page.
 - **Loading wheels (1.21, 1.23):** anywhere something waits for information, including the title bar, a small wheel shows and the content appears once it arrives; after a timeout a **Retry** button appears.
 - **Fewer, bigger cards (1.21 to 1.23):** related Home cards are combined into one: House status, Plans and food, Weather, Deliveries, Family today, Pets and Car in 1.21 and 1.22, then Health, Home upkeep and Daily routine in 1.23. Each combined card keeps its own sections, menu and How it works entry.
 - **Deleted stays deleted (1.21):** about 25 lists remember what was removed so a deletion on one screen reaches every other screen; the memory is cleaned up after 90 days.
@@ -107,6 +142,7 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 - **Docs visit count (1.19):** these docs can count visits with a privacy-friendly counter, only once an owner turns it on; nothing is added until then.
 - **Ask AI (1.16):** the Home question card is now **Ask AI** and answers inside the card. It tries an AI in your home first, then Ollama, then a cloud AI (only when an admin allowed cloud AI), then Claude. A drop-down lists only what is available now and remembers your pick for you ([Home](home.md#cards)).
 - **My gift ideas (1.16):** a private Family card for gifts you plan to give. It is saved only in your own Home Assistant account, so another person signed in on the same home cannot see it, and it never appears on the TV, wall or kiosk screens. A home AI can suggest ideas, shown for you to keep or skip ([Family](pages.md#family-my-gift-ideas-private)).
+- **Private cards (1.25):** four more private Family cards, each saved only in your own Home Assistant account and never shown on the Display, a wall screen or to a guest. My to-dos is a private list for errands and surprises. Private reminders hold dated reminders, plus automatic ones: start shopping three weeks before a birthday and order a gift a week before its date in My gift ideas; due ones show on your own Home and as a private marker on your Calendar. My wish list keeps things you would like with a link and a price. Gift dates and sizes keeps sizes, favourite brands, allergies and what a person already has.
 - **Light buttons (1.16):** a light's button tints with its live colour, or a warm or cool white for a colour-temperature light.
 - **Space (1.16):** a backup source for the Station's orbit and launches, the last good data kept when a source fails, a retry every 5 minutes and calm notes saying how old the data is ([Space](pages.md#space)).
 - **Planes (1.16):** one **Closest** card; the map no longer repeats it.
@@ -205,7 +241,7 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 
 ## Earlier additions (versions 0.207–0.210)
 
-- **Document import:** snap or paste a flyer, schedule, menu, receipt, label or link. Home Assistant's AI reads it and the app shows a preview of what it will create (calendar events, pantry or shopping items, packages, medicines, warranties, Storage items, featured posts). Nothing is added until you confirm. A daily kids' schedule becomes a Kid monitor card, and menu days marked as not kid-friendly get a "Pack a lunch" reminder. Needs an AI integration in Home Assistant.
+- **Document import:** snap or paste a flyer, schedule, menu, receipt, label or link. Home Assistant's AI reads it and the app shows a preview of what it will create (calendar events, pantry or shopping items, packages, medicines, warranties, Storage items, featured posts). Nothing is added until you confirm. A daily class schedule becomes a Daily agenda card for that kid (now, next, pickup and the full day), and menu days with the month's marker get "Pack a lunch" and "Text the teacher" reminders. Photos are shrunk and turned the right way up before the AI reads them; a local vision model with thinking off reads one in about half a minute. Needs an AI integration in Home Assistant.
 - **Featured posts:** add a post (link, text, picture) to the Family Board; Home shows it until the date you pick, then it moves to an archive.
 - **Start page and kid lock:** each screen can open on its own page and go back to it when idle. A kid's tablet can be locked to the Kids page, with a PIN to leave (stored only as a salted hash).
 - **Family favorites:** posters, Play on the TV (opens the right streaming app), and a From your favorites row on Now Playing; titles blocked for kids never show on kid screens.

@@ -26,6 +26,7 @@
     <symbol id="i-log" viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"/></symbol>
     <symbol id="i-more" viewBox="0 0 24 24"><path d="M5 12h.01M12 12h.01M19 12h.01"/></symbol>
     <symbol id="i-theme" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v18a9 9 0 0 0 0-18z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-listen" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></symbol>
     <symbol id="i-coffee" viewBox="0 0 24 24"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 3v3M12 3v3"/></symbol>
   </svg>
   {% assign u = page.url %}
@@ -46,6 +47,7 @@
     <a class="nb-brand" href="{{ '/' | relative_url }}" aria-label="Nashboard docs home"><span class="nb-logo" aria-hidden="true">N</span><span class="nb-name">Nashboard</span><span class="nb-tag">Docs</span></a>
     <nav class="nb-nav" aria-label="Main">{{ navlinks }}</nav>
     <a class="nb-coffee" href="https://buymeacoffee.com/jdrummernash1" target="_blank" rel="noopener"><svg class="nb-ic" aria-hidden="true"><use href="#i-coffee"/></svg><span>Buy me a coffee</span></a>
+    <button class="nb-listenbtn" type="button" aria-expanded="false" aria-controls="nb-listen" title="Listen to the docs"><svg class="nb-ic" aria-hidden="true"><use href="#i-listen"/></svg><span>Listen</span></button>
     <button class="nb-theme" type="button" aria-label="Switch between dark and light theme" title="Dark / light"><svg class="nb-ic"><use href="#i-theme"/></svg></button>
   </header>
   <main id="content" class="main-content{% if u == '/' or u == '/index.html' %} nb-home{% endif %}">
@@ -95,6 +97,28 @@
   if(location.hash){try{var t=d.getElementById(decodeURIComponent(location.hash.slice(1)));if(t)t.scrollIntoView()}catch(e){}}
   })();
   </script>
+  {% comment %} Listen mode (audiobook): built-in browser speech, chapters from pagenav.yml, progress kept in this visitor's browser. {% endcomment %}
+  <script type="application/json" id="nb-chapters">[{% for p in site.data.pagenav %}{"group":{{ p.group | jsonify }},"url":{{ p.url | jsonify }},"title":{{ p.title | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}]</script>
+  <section class="nb-listen" id="nb-listen" data-base="{{ '/' | relative_url }}" role="region" aria-label="Listen to the docs" hidden>
+    <div class="nl-head"><b>Listen</b><button type="button" class="nl-close" aria-label="Close the listen panel"><svg class="nb-ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+    <p class="nl-none" hidden>Your browser has no built-in speech, so Listen is not available here. Try a recent Chrome, Edge, Safari or Firefox.</p>
+    <div class="nl-body">
+      <div class="nl-title" aria-live="polite"></div>
+      <p class="nl-now"></p>
+      <input class="nl-bar" type="range" min="0" max="0" value="0" step="1" aria-label="Position in this chapter">
+      <div class="nl-ctl">
+        <button type="button" class="nl-pp" aria-label="Previous chapter"><svg class="nb-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5v14M19 5l-9 7 9 7z"/></svg></button>
+        <button type="button" class="nl-bp" aria-label="Back one paragraph"><svg class="nb-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+        <button type="button" class="nl-play" aria-label="Play"><svg class="nb-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg></button>
+        <button type="button" class="nl-fp" aria-label="Forward one paragraph"><svg class="nb-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+        <button type="button" class="nl-np" aria-label="Next chapter"><svg class="nb-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 5v14M5 5l9 7-9 7z"/></svg></button>
+      </div>
+      <label class="nl-speed">Speed <select class="nl-rate"><option value="0.75">0.75x</option><option value="1">1x</option><option value="1.25">1.25x</option><option value="1.5">1.5x</option><option value="1.75">1.75x</option><option value="2">2x</option></select></label>
+      <p class="nl-note">Uses your device's own voice. Code and tables are skipped. Your place is remembered in this browser only.</p>
+      <nav class="nl-list" aria-label="Chapters"></nav>
+    </div>
+  </section>
+  <script src="{{ '/assets/listen.js' | relative_url }}"></script>
   {% if site.goatcounter_code and site.goatcounter_code != '' %}<script data-goatcounter="https://{{ site.goatcounter_code }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>{% endif %}
 </body>
 </html>

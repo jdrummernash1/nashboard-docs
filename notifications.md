@@ -8,7 +8,7 @@ title: Notifications
 
 Every notification Nashboard can send, in plain words. **Phone** means a push notification from Home Assistant to the phones that have the Home Assistant app; **Screen** means a pop-up, banner or chime on a Nashboard screen. Most can be switched off in **Settings → Alerts**, and the ones that go to phones only go to people who are set up to get them.
 
-This list is generated from the real automations and the Alerts sheet, and a check fails the build when a new notification is not described here, so it stays complete. Currently **43** notifications.
+This list is generated from the real automations and the Alerts sheet, and a check fails the build when a new notification is not described here, so it stays complete. Currently **44** notifications.
 
 ## Doors, cameras and packages
 
@@ -80,6 +80,7 @@ This list is generated from the real automations and the Alerts sheet, and a che
 
 | Notification | Where | When it appears |
 |---|---|---|
+| Computer stuck at 100% CPU | Screen | A chime on open screens and a card on Home and the Hardware page when a computer's processor stays at or near 100% for the set time (5 minutes by default), plus one phone alert per episode sent by one screen only; it clears by itself when the load drops. |
 | Chime on person detected | Screen | A two-note chime and a note when a front camera detects a person. |
 | Garage door open / close chime | Screen | A rising chime when the garage opens, a falling one when it closes. |
 | Planes overhead | Screen | A pop-up and tone when a plane passes low nearby. |

@@ -75,7 +75,7 @@ left- or right-handed phones).
 
 ## More on every page
 
-- **Top bar:** buttons sit tight together; the button strip takes at most half the bar and scrolls past that, and top-bar text first tightens its spacing, and every piece of top-bar and banner text then scrolls on its own when it still does not fit, instead of being cut off or overlapping. The version line shows the time, the version and, for admins who maintain the app, the number of open backlog items (for example "10:14 AM · v<!-- ver -->1.23<!-- /ver --> · 11 open"); tap the count to open the Design Studio. A failed load keeps the number already shown.
+- **Top bar:** buttons sit tight together; the button strip takes at most half the bar and scrolls past that, and top-bar text first tightens its spacing, and every piece of top-bar and banner text then scrolls on its own when it still does not fit, instead of being cut off or overlapping. The version line shows the time, the version and, for admins who maintain the app, the number of open backlog items (for example "10:14 AM · v<!-- ver -->1.25<!-- /ver --> · 11 open"); tap the count to open the Design Studio. A failed load keeps the number already shown.
 - **Phone and tablet page bar:** the bottom bar fits as many page buttons as the width allows and slides sideways through every page, Frequent pages first, then the groups in menu order as tinted segments (no heading words), with **More** always pinned at the end. Buttons are at least 48 px.
 - **Card text fills the card:** card titles (and marked main values) grow in a few steps, up to one and a half times, to use the room the card already has. No card gets taller, and sizes stay close from card to card.
 - **Browser tab icon:** the dashboard shows its own small house icon in the browser tab.
@@ -87,6 +87,7 @@ left- or right-handed phones).
 - **Demo mode:** open the dashboard address with `?demo=1` and it runs on the same made-up sample house the screenshots use (the demo is generated from that sample house when the app is built, so new sample data reaches it by itself): no sign-in, read-only, nothing real is read or written, and a DEMO strip shows on every page. Tapping something that would save explains why it is off; nothing pops up by itself.
 - **Refresh button:** a chip in the top bar, on every screen. A tap re-fetches the current page's data and redraws the page, unless you are typing in a text box (your text is never thrown away). A long press, or a tap while a new version is waiting, does a full safe reload, which also waits while you are typing, have unsaved text or have a sheet open. A short spin shows while it works, and a failed or empty load keeps the data already on screen.
 - **At a glance summaries:** Weather, Commute, Packages, Family Board, Pantry & Fridge and Security each show one optional sentence in an **At a glance** card beside their Right now card. It is built the same way as Home's Today at a glance: a local model first, a cloud model only after "Allow cloud AI" has been switched on there, otherwise a plain sentence made from the page's own facts. Each page refreshes its sentence at most every 15 minutes (a failed try waits 10), and the text is shared by every screen. The **Page summaries** card on the System page turns all six off and stops the AI calls.
+  **AI decides here:** it chooses what each sentence says. Without an AI, a plain sentence built from the page's own facts is used.
 
 ### Background picture
 
@@ -102,7 +103,7 @@ described on the [Home page](home.md) guide and in the [Every feature](features.
 
 ### Home: Sticky notes
 
-A small **Sticky notes** button with a count sits on the Home banner and opens the notes. Anyone in the household can post a **note**, a **reminder** (date optional) or a **countdown** (date required); each shows who posted it and the days left or overdue. Mark a reminder **Done** or remove any note (Undo is offered). While one or two notes are open they also show as small yellow **paper** notes pinned to the banner; tap one to open the notes. The banner never stretches tall: if its picture or notes would push it past its normal height, it repairs itself back to size. Notes are saved for the whole household in Home Assistant and never replaced by an empty list. A reminder that is due or a countdown in its last day also appears as a Right now card on Home. Tap a note to edit its text or date in place (Undo is offered). Dated reminders that are not done can also reach phones at 8 AM on the due day once the matching Home Assistant automation is switched on. The trash-cans reminder's **Done** button now shows **Done by** and a first name until the pickup passes.
+A small **Sticky notes** button with a count sits on the Home banner and opens the notes. Anyone in the household can post a **note**, a **reminder** (date optional) or a **countdown** (date required); each shows who posted it and the days left or overdue. Mark a reminder **Done** or remove any note (Undo is offered). While one or two notes are open they also show as small yellow **paper** notes pinned to the banner; tap one to open the notes. The paper follows the page's Look: lined cream paper in **Paper**, frosted translucent yellow in **Glass** and strong yellow with a thick edge in **Bold**, with the same size and dark, readable text in every Look so nothing moves when the Look changes. The banner never stretches tall: if its picture or notes would push it past its normal height, it repairs itself back to size. Notes are saved for the whole household in Home Assistant and never replaced by an empty list. A reminder that is due or a countdown in its last day also appears as a Right now card on Home. Tap a note to edit its text or date in place (Undo is offered). Dated reminders that are not done can also reach phones at 8 AM on the due day once the matching Home Assistant automation is switched on. The trash-cans reminder's **Done** button now shows **Done by** and a first name until the pickup passes.
 
 ### Home: Right now Done hides a row everywhere
 
@@ -116,7 +117,19 @@ On a marked login the screen hides what is personal or for grown-ups: cards for 
 
 This is a privacy convenience, not a lock: grown-up household data is still stored where any Home Assistant login could read it, so it is hidden on the wall rather than made secret. Each person's own data is kept in their own Home Assistant account and is returned only to them.
 
-**Calm self-check on wall screens:** on a wall screen (a screen set to the Wall role, a wall screen user login, a kiosk browser, or Wall display on), each page counts the cards that start on the first screen while they are still being placed out of sight. Past the calm limit (more than four Right now cards, or more than two cards per column, at least six) the extras are folded to their title bars before anything shows, and a one-line note says how many, with **Show all**. Folding is for that visit only and never changes anyone's saved collapse settings; tapping a folded card opens it.
+**Calm self-check on wall screens:** on a wall screen (a screen set to the Wall role, a wall screen user login, a kiosk browser, or Wall display on), each page counts the cards that start on the first screen while they are still being placed out of sight. Past the calm limit (more than four Right now cards, or more than two cards per column, at least six) the extras are folded to their title bars before anything shows, and a one-line note says how many, with **Show all**. Folding is for that visit only and never changes anyone's saved collapse settings; tapping a folded card opens it. **Wall user calm page (1.25):** a signed-in wall screen user gets a stricter limit, one Right now card and three cards above the fold; other wall screens keep the normal limit. Done on a Right now row still hides it on every screen.
+
+### Home: Needs attention
+
+*Suggested by Claude.* One calm card on Home, and the first row of the System page's Right now card, for the things that quietly need a person: a camera that went offline, another device that has not answered for 10 minutes or more, a low battery, or an update waiting. Several of one kind fold into one row ("5 devices not responding") naming the first few. **Done** hides an item for a day and **Snooze** for a week; it comes back by itself when the time is up and the problem is still there. The choice is saved for the whole house in Home Assistant and merges across screens, so Done on a phone clears the wall tablet. Grown-ups only: a wall screen user and guest mode never see it. **No AI here:** it reads what the System page already reads.
+
+### Home: Household mode
+
+*Suggested by Claude.* A picker on the Family page sets one mode for the whole house: **Home**, **Away**, **Sleep** or **Guests**. The mode decides which Home cards and Right now rows show: Away tucks away meals, chores and at-home reminders; Sleep shows only urgent cards plus the goodnight and bedtime checks, and counts as quiet time for sounds, notices, announcements and the screen dim; Guests tucks away private health, family, money and shopping cards. Safety and security cards (fire, leaks, severe weather, the doorbell, the garage door) are never hidden by a mode, and nothing is deleted: a hidden card returns when the mode does. While the mode is not Home, one row says so with a **Back to Home** button. It is saved for the house and read by every screen, and it is not the PIN-locked guest mode. An optional Home Assistant helper lets an automation or the Home Assistant app change the mode too. **No AI here:** modes are plain rules.
+
+### Home: Ask AI warm-up
+
+*Suggested by Claude.* When the Ollama card shows the PC is awake but no model is loaded, a phone or tablet sends one tiny local request so the model is ready and the first real answer is quick. The card shows **Warming up** and then **Ready**. It tries at most once every 10 minutes per screen, only while the page is visible, never on a wall or Display screen, and never reaches a cloud AI. Nothing is saved. **AI decides here:** nothing about your data; it only wakes the local AI.
 
 ### Home: Smart layout
 
@@ -129,7 +142,9 @@ While Smart layout is on (the default), the page remembers which cards you tap, 
 ### Home: Today at a glance and card order
 
 - **Today at a glance:** the first card under the banner, with two or three sentences about what already happened today, what is going on now and what is coming. It uses the AI set up in Home Assistant when there is one; otherwise a plain summary built from the same facts (weather, calendar, alerts, packages, commute). A prompt only goes to a local model unless "Allow cloud AI" is switched on. The text is shared by every screen and refreshed at most every 15 minutes.
+  **AI decides here:** it chooses what to say about the day. Without an AI, a plain summary is built from the same facts.
 - **Card order:** every automatic card has a priority. Urgent cards come first (a leak, a power cut, someone at the door, time to leave), then what needs doing today, then richer cards (more rows, buttons or a photo), then a "Lower priority" section where quiet single-row cards are stacked together in one small card. Nothing is hidden. A small chip appears on a title only when it adds something: the minutes left, or "overdue". On Rooms, customised room cards come first.
+  **No AI here:** card order is plain rules (urgent first, then due today, then richer cards), the same every time.
 
 ## Rooms
 
@@ -178,6 +193,8 @@ One control bar sits in the page-arrows pill (or the toolbar in Auto layout), so
 
 A camera snapshot is read by the AI set up in Home Assistant, and a **Vision alerts** card appears on Home only when the answer says something needs doing. Nothing is built in: each check is switched on, given a camera and a schedule (daily, weekly or hourly, with a time and, for outdoor checks, daylight hours only) from its settings sheet on the Cameras page. A check does nothing until it is on, has a camera and an AI is available. It uses a **local AI by default**; a cloud model is used for a check only if you turn on "Allow cloud AI" for that check. The snapshot sent for the AI is removed again afterwards, and a failed or empty check never replaces what is shown. Several screens may be open, but a check runs once, not once per screen.
 
+**AI decides here:** the AI looks at each snapshot and decides whether something needs doing (long grass, a windshield to scrape, snow, cats fed); the card only appears when it says yes.
+
 - **Grass is getting long:** a yard camera is asked weekly; a strip of the last few snapshots shows how it has changed, and **Mowed it** clears the card.
 - **Scrape the windshield:** on a cold morning (today's low or the current temperature under a limit you choose, inside a morning window), a driveway or car camera is asked whether the windshield is frosted or iced. The card says to leave a few extra minutes early. The temperature source, limit, window and extra minutes are all picked in the sheet; with no temperature source or forecast the check stays quiet and says what to add.
 - **It snowed:** a yard camera is asked for fresh snow after a cold night, with a Commute button on the card.
@@ -204,8 +221,10 @@ on and off, and see the meal plan alongside. The wall calendar has big **Add eve
 microphone. Zoom to fit sizes rows correctly in Full window and keeps your scroll position.
 
 - **Import a document**: a document button on this page (and on the Family Board, the other page that uses it) opens a form for flyers, calendars and schedules. It opens the camera first with **or choose a file** beside it (or paste text), and the AI reads the events and items for you to review before anything is added. The review step has **Location** and **Room** fields, can fill a **lunch menu calendar** (a marker you confirm flags a lunch to skip, with a **pack-a-lunch reminder** that morning), and Take a photo opens the phone camera. The button shows a page icon because it expects a document, and it does not show on pages that have no use for it.
+  **AI decides here:** it reads the document and chooses which events and items to propose. You review every one before anything is added.
 - **Tasks** card for Google Tasks: every list with due dates, overdue items in the warning colour, tick to complete and
   an add box per list. Tasks due today also show in Home's Up next card; overdue ones get a Home card.
+- **Gift deadlines (private):** *Suggested by Claude.* a gift you plan in My gift ideas with a date, and each Start shopping reminder, appears as a private marker on your own Calendar view only, never on a shared or wall screen.
 
 ## Activity
 
@@ -269,6 +288,8 @@ row of that step's ingredients with a little picture for each; long steps shrink
 the shopping list first asks **"Use what's in the pantry?"** and leaves the ticked items off the list. **Dinner tonight**
 (Right now and Home) says when to start cooking.
 
+**Repeat dinner, with a swap:** *Suggested by Claude.* on Thursdays, if the same dinner is planned three or more times across the last two weeks and the coming week, a card offers two other recipes, picked by how many of their ingredients the Pantry already has. **Use this** plans it (and removes the repeat when Mealie access is saved, otherwise it says to remove it in Mealie) and **Keep it** hides the card for that repeat. **No AI here:** plain rules.
+
 ## Pantry & Fridge
 
 What's on hand and when it expires, in a shared Home Assistant to-do list. Each item is **pantry, fridge or freezer**.
@@ -300,6 +321,7 @@ button also adds it to the shopping list. Home and the Kitchen room show a card 
 - **Warranty ending**: a card when an appliance's warranty ends within 30 days, with its serial, place and manual.
 - **Room and spot**: items and places can say which room they are kept in and where ("hall closet"). Each room page then has a **Lives here** card listing what is kept there; tap a row to open it here. The card only shows when the room has something.
 - **Insurance list (Valuables)**: a card for things worth insuring: name, room and spot, serial number, purchase date, price, receipt link, a photo and a value that says whether it is an AI estimate or your own, with a total. **Export insurance list** downloads a CSV and **Printable view** opens a page for your insurer; Estimate uses the AI set up in Home Assistant. Once a year a Home **Insurance list** card asks for a review (items with no serial number, values older than 12 months, or no review in a year), with Review and Remind me in a month.
+  **AI decides here:** the value is an AI estimate only when you press Estimate, and it is labelled as one; a value you type is never replaced.
 
 ## Garage
 
@@ -311,6 +333,7 @@ Tool storage, built on the Storage page's places and items (so the Storage searc
 - A **Tool storage** card on the Garage room page.
 - **Car cards** (registration, inspection, oil change, recalls) also show here.
 - **Tools from a photo**: take or pick a photo of a toolbox or drawer and the AI set up in Home Assistant lists the drawers and tools; you review the list before anything is saved.
+  **AI decides here:** it chooses the drawers and tools it sees. You review the list before anything is saved.
 
 ### Garage: new cards
 
@@ -322,6 +345,7 @@ Tool storage, built on the Storage page's places and items (so the Storage searc
 - **Toolbox brand badges:** each toolbox gets a nameplate on its card and a brand accent on its drawers: a small badge cropped from your own photo of the box (the photo import finds the brand plate), or the brand name in brand-style colours with a brushed-metal look for 18 common tool brands, or Other with your own text. No brand logo files are used.
 - **Smart plugs:** pick any switch as a plug; each gets an on/off button, plus power and energy today when a sensor exists. An unavailable plug says where to fix it.
 - **Toolbox photo import:** take or pick a photo of a toolbox or drawer; the AI lists drawers and tools for review (rename, untick, change counts). Only Save writes to the Storage inventory, with drawers as places and tools as items.
+  **AI decides here:** it chooses the drawers, tools and counts it sees in the photo. Nothing is saved until you review the list and press Save.
 - **Toolbox picture:** every toolbox card shows a drawn picture of the box, built from the saved inventory. Drawers sit top to bottom in name order, hutch sections (Hutch, Top tray, Lid and similar) are drawn on top as a shelf of compartments, and drawers that differ only by Left or Right sit side by side in one row. Tap a drawer to see its tools under the picture, and a search on the Garage page lights up the drawers that hold a match. It follows dark and light and saves nothing new.
 - **NFC tags:** every toolbox and drawer has an **Attach a tag** button. The sheet shows the tag id to write with the Home Assistant companion app and can listen for the next scan to pair the tag in one tap (or paste an id). Scanning a paired tag opens the Garage page at that drawer with its contents highlighted for a few seconds. Listening for scans needs a screen signed in as an admin; other screens use a notification automation sketched in the project's drafts.
 
@@ -340,6 +364,7 @@ editing and no set-up text: a card that is not set up yet is simply not there, a
 - **Shows & channels** from Family favorites (anything on the "blocked for kids" list never shows).
 - **Pets**, a **plane overhead** and the **Space Station** flyover, and big **music** buttons.
 - **Tell me a story**: a gentle bedtime story made from the day, read aloud if you like (needs an AI set up in Home
+  **AI decides here:** it writes the story from the day's facts; nothing is saved or changed in your home.
   Assistant).
 - **Kid lock**: with Kids as a screen's start page, a 4-digit grown-up PIN keeps the tablet on this page.
 - **Baby monitor**: turns any camera in Home Assistant into a baby monitor: a live picture, an optional **night view** (brighter, green-tinted), an optional sound or motion sensor that puts an alert line on the card, an optional room temperature, and a list of baby monitors that already work with Home Assistant. Choose the camera and sensors with **Set up** on the card (saved for the household). It stays hidden until a camera is chosen, and hidden from children until a grown-up opens Grown-ups. The sensor is an ordinary Home Assistant entity, so any phone alert automation can use it.
@@ -361,6 +386,8 @@ One **Kids** list in **Settings → Household** holds each child with a room, a 
 Current conditions, hourly and daily forecasts, rain chances, the National Weather Service forecast text, sun
 and moon times, and a live radar with warnings outlined (full-screen capable). Phones can show weather for where
 the phone is. The **What to watch** card (Right now) always shows severe weather, rain coming, freeze tonight and UV.
+
+**Storm prep list:** *Suggested by Claude.* while a National Weather Service warning for wind, thunderstorm, tornado, hurricane, hail, blizzard or ice is active at your location, a Right now card (on Weather and Home) lists up to six short tasks: close any open window, door or garage, bring in or tie down outdoor items, charge phones, and for wind or power-cut warnings find flashlights and fill water jugs. A task that is fixed goes away by itself and the whole card ends with the warning. **No AI here:** the tasks are plain rules and nothing is sent anywhere.
 
 ## Air & Allergy
 
@@ -580,6 +607,8 @@ See [Settings](settings.md#design-studio-backlog-and-ideas).
   (weak signals in red) and live traffic.
 - **New on Wi-Fi**: Known dismisses it; **Unknown** logs it to a shared **Follow up later** list here (Done clears it).
 - **Offline devices**: anything unavailable, grouped by integration. The guest Wi-Fi details show here too.
+- **Slow internet, explained:** *Suggested by Claude.* after three speed tests in a row well below the usual speed for that time of day, a card names the busiest devices on the router right now and gives one fix (pause the device using most of the connection, move a camera to the guest band, or restart the router and modem). It hides itself after a good test. Grown-ups only.
+  **AI decides here:** an AI at home, never a cloud AI, may reword the line; without one the plain rule line is shown as it is.
 
 ## Hardware
 
@@ -621,10 +650,28 @@ and the intercom.
 
 A card for gifts you plan to give someone: who it is for, the idea, a link, a price, the occasion, a date and a status (idea, bought, wrapped), with private notes per person (sizes, favourite brands) that feed the AI. It is **private to the person signed in**: saved only in your own Home Assistant account, never in the shared household data, so another account on the same home sees an empty list. It never appears on the Display or TV page, on a wall or kiosk screen, or where nobody is signed in. Ideas from an AI come only from an AI in your home, show before anything is saved, and are kept only when you tap Add; with no home AI the rest works the same.
 
+### Family: Everyone home and Last one out
+
+*Suggested by Claude.* A Family card with one row per household member showing the last time they arrived or left, and a one-line summary (**Everyone is home**, **2 of 3 home**, **Everyone is out**). It follows the same privacy as Where is everyone: a person's row shows only if that person switched location sharing on, and only the words home or away with a time, never a place. **When the last person leaves** and something is still on or unlocked (lights, a lock, the garage, a TV), a Home reminder lists it with one-tap fixes. Switches for what the house should do by itself when the last person leaves, or the first one gets home, are recorded here and carried out by optional Home Assistant automations that you review and switch on; the dashboard itself never runs them. The card is never drawn on a wall or guest screen.
+
+### Family: Announce
+
+*Suggested by Claude.* Type a message (or speak it where the browser can listen), pick speakers and TVs, and tap **Send**; Home Assistant speaks it on those devices. The card has its own quiet hours and can follow the household quiet hours, and during quiet time **Send** asks for a second tap. A short log shows who sent what and where. Grown-ups only: never drawn on a wall or guest screen, so a guest cannot speak through the house.
+
+### Family: Deadlines from email
+
+*Suggested by Claude.* Items the Family inbox found with a date and a deadline-like title (due, closes, sign up, permission slip, RSVP, last day) are listed soonest first. **Add to calendar** files just that item (with Undo) and **Hide** removes it on every screen. A Home reminder appears the day before and the day of each deadline that is not hidden. Nothing new is read from the mailbox. With no Family inbox the card is absent.
+  **AI decides here:** the Family inbox's AI chose the date and kind of each message; this card only lists what it already found, and without an AI the inbox's plain rules are used.
+
+### Family: private cards (My to-dos, Private reminders, My wish list, Gift dates and sizes)
+
+*Suggested by Claude.* Four cards for one signed-in person, kept in that person's own Home Assistant account and never in shared household data: **My to-dos** (errands and things not for the shared Chores list), **Private reminders** (an appointment, a gift to order by a date), **My wish list** (things you want, with a link and a price) and **Gift dates and sizes** (sizes, favourite brands, allergies and what someone already has, with a birthday). Two kinds of reminder are worked out for you rather than saved: **Start shopping** three weeks before each birthday you entered, and **Order by** a week before the date of a gift still marked as an idea in My gift ideas. They show in Private reminders, as a private Home reminder and as a private marker on that person's own Calendar view (see [Calendar](#calendar)). None of it is built on the Display or TV page, on a wall or kiosk screen, for a wall screen user or guest, or where nobody is signed in. Another account on the same home sees only its own lists. A removed row has Undo, and a failed load never replaces what is shown.
+
 ### Family Board: new cards
 
 - **Where is everyone:** one tile per person. Each person decides whether their place shows (off until they switch it on). Only Home, Work or Away, battery and last update show, never coordinates. **Ring my phone** uses a Find My Device sound button when there is one, otherwise the companion app notification command.
 - **Family inbox:** a dedicated email address read through Home Assistant's IMAP integration. The AI works out what each message is and files it as a calendar event, package, note or shopping item. Mail is untrusted: only allowed senders are filed by themselves, everything else waits for a tap, and every filed item has Undo. Without IMAP or AI the card says what to add.
+  **AI decides here:** it reads each message and chooses what kind of thing it is (event, package, note or shopping item). Only allowed senders are filed by themselves, and every filed item has Undo.
 - **Closings:** places to watch (daycare, school), feeds, sensors and a manual "Closed today" toggle; a Home card shows while something is closed or delayed.
 - **How we're doing:** an opt-in card fed by the private Wellbeing page (see [Wellbeing](#wellbeing)). It shows a mood dot per person who chose to share and rotates the shared gratitude notes as one quiet line. It stays empty until someone opts in.
 - **Page title:** the Family Board now shows its **Family Board** heading like every other page; before, the page started straight into its cards with no title. The same build also stops the chore and trash schedule from being saved before it has finished loading, which could have overwritten it.
@@ -666,6 +713,7 @@ faults and history.
   bottle. A Home copy shows when a dose is due; a phone reminder if it's two hours late.
 - The cat medicine card shows the medicine bottle from Pantry & Fridge with its expiration date.
 - **Pet notes** (shared with the Guest page) show and edit here.
+- **Litter box pattern note:** *Suggested by Claude.* when a litter box's daily cycle count has been at least half above or half below its usual for each of the last three days, a card says so in plain words and suggests a vet call if it lasts. It describes a trend and never names a cause or a condition, and it is absent when nothing is unusual. Grown-ups only. **No AI here:** the wording is fixed so it can never drift into a diagnosis.
 - **Pet care due**: one card (here and on Home) lists each pet task due now, the cat's medicine and the dog's feeder, with a **Done** button. It stays until done and says overdue after an hour.
 - The pets follow the interface scale (same size at the normal scale), measure the real gap before a jump and land just inside the next card, and turn around when there is no safe landing. They stay off the TV page.
 - This is the pets' favourite page: they play here often (chases, naps on cards), and only rarely elsewhere.
@@ -716,6 +764,8 @@ Three cards, all auto-detected with a picker and a setup message when nothing is
 - **UPS:** battery charge, runtime left, load and status, with a "Running on battery" card.
 - **Printer:** a status line, a bar for every toner, ink or drum with its percent (a mono laser has one black bar plus the drum) and the page count, with a "Printer ink low" card under a limit you choose. **Add a printer** (in the card's 3-dot menu and in the setup checklist) lists the printers Home Assistant has found (Brother, IPP, SNMP, HP, Epson, Canon and more; 3D printers have their own card), matches the sensors to roles for you, lets you correct any role and name the printer, and saves it for every screen. Add as many printers as you have: each gets its own block on the card, with Edit and Remove in the card's options, and Remove has an Undo that works on every screen. Until one is added, a printer found by itself is shown. When any printer's level falls under your limit, a "Printer ink low" line appears in Right now on Home naming the printer and the colour.
 
+- **Water running at night:** *Suggested by Claude.* the page finds a water meter or flow sensor by itself and checks Home Assistant's history after midnight. If water use shows in every 15-minute slice for a full hour between 1 and 5 AM, the card says water has been running steadily and one phone alert goes out (once per night, from one screen only). A running dishwasher, washer or sprinkler explains it and no alert is sent. **No AI here:** plain rules; the card is absent without a water sensor.
+
 - **Print buttons:** quick Print entries for things that are handy on paper. The Medicine & fever card's menu has **Print the log** (the last 7 days, for a doctor visit), the Shopping page has **Print the list** (a tick box beside every item still to buy), and the Right now card's menu has **Print this list** (a one-page summary of what needs a look today, made for the fridge). Each opens a plain black-and-white page in a new tab with a Print button, prints only what has already loaded, and says "Still loading" if you tap too soon.
 
 ## Pool
@@ -741,6 +791,8 @@ what ships with Nashboard is on [Automations](automations.md).
 ### Automations: suggestions
 
 A **Suggested for your home** card proposes new automations, app rules and badges, each with Accept, Dismiss and Later. Rule-based suggestions always work (from the devices and existing automations); **Ask the AI** uses the AI set up in Home Assistant only when pressed. Nothing is ever applied to Home Assistant: accepting an automation saves a sketch to read or copy.
+
+**AI decides here:** only when you press **Ask the AI**, which picks which suggestions to offer. You choose what to accept.
 
 ## System
 

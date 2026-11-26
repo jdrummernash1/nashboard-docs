@@ -6,12 +6,38 @@ title: Change log
 
 Everything shipped, newest first. Each build is a small batch of improvements. See [Every feature](features.md) for the full list.
 
+**Where each change came from:** **Human** = asked for by the family; **Claude** = suggested automatically by Claude; **Claude (found in review)** = a fix Claude found in its own checks and reviews. **Source unknown** = early builds with no record of who asked. Every entry carries its mark.
+
 ## Nashboard 1.x · Nov 25 2026
 
+- Nov 25 2026: Version 1.25 (BUILD .290), a docs-publish build: Needs attention card and Household modes [Claude]; Everyone home / last one out and Announce [Claude]; Storm prep list and Water running at night [Claude]; private cards: my to-dos, private reminders, wish list, gift dates and sizes, gift deadlines [Claude]; scene suggestions, light tint, raised cards feed Right now, sticky notes become chores, trash Done on the Family Board, Space data age on the TV [Claude]; slow internet explained, litter box pattern, deadlines from email, repeat dinner with a swap, Ollama warm-up [Claude]; door, lock and sensor history, locks by person with guest code, Sunday chores balance [Claude]; tombstone cleanup, wall user calm page, sticky paper follows the Look [Claude]; wall screen can save scene counts and the trash streak (needs the HA wall-save update) [Claude (found in review)]; docs: changelog cleaned (no duplicates, no internal paths), page links fixed [Claude (found in review)].
+- Nov 25 2026: Jot import filed 25 ideas (all with idea ids; 2 pairs merged; marker "IMPORT NOW" handled). [Human]
+- Nov 25 2026 (1.21 printer extras): printer controls on the Printer card, Print reports card, low supply to shopping list. [Human]
+- Nov 25 2026: Hardware cards share one layout (hwdCard): status dot, one row of numbers with bars, Details fold, calm not-reporting line (). [Human]
+- Nov 25 2026 (1.23 docs team): table fixes and tablecheck, plain-list contents, previous/next links on every docs page, Home Assistant OS and free-to-run section (ideas 59cc9444, a3fccdf4, 41ec7b0e). [Human]
+- Nov 25 2026: Version 1.23 (BUILD .288): card drag and Wider/Narrower resize saved per person; title-bar loading wheels; combined cards round 3 (Health, Home upkeep, Daily routine) [Human]; one phone alert per security event [Source unknown]; location share only by its owner [Human]; package dedupe [Source unknown], delivery-check fixes and USPS email fallback; shorter welcome tour and lighter defaults [Human]; banner chips [Claude (found in review)], sticky countdown, Take a photo opens the camera, Cast fix and castcheck; Right now side-by-side heights on pages [Human]; text-only AI to a local text model [Source unknown]; screens always reach the latest build; document import review flow (Location + Room, lunch menu calendar, marker confirm, pack-a-lunch reminders; reading the menu and agenda photos continues in 1.24); wall screens drop the finance cache; About and Backlog on Smart layout [Human]; a gone card closes its gap once [Source unknown]; docs tables, contents list, prev/next links and Home Assistant OS intro [Human].
+- Nov 25 2026: private cards: My to-dos, Private reminders, My wish list, Gift dates and sizes, Gift deadlines on the calendar (one HA user-data document nashboard_private_mine).
+- Nov 25 2026 (1.25 ahead build g): tombstone drop gated on loads finished plus dropped count in Saved data; wall user calm limits (1 Right now, 3 cards); sticky paper follows the Look (Paper, Glass, Bold).
+- Nov 25 2026 (1.25 ahead build): Recent activity per door, lock and sensor, Locks: who and how with Guest code via, Chores balance on Sunday (chorebal pop, local AI only, plain fallback) (branch ahead-125h).
+- Nov 25 2026: Version 1.24 (BUILD .289): document import reads photos reliably (shrink, rotate, marker check) with Location + Room fields and a per-kid Daily agenda card [Human]; 100% CPU alarm card for every computer [Human]; card drag/resize saved per person, Wider/Narrower [Human]; calm-layout fixes on Family, System, Hardware, Utilities, Design Studio [Claude (found in review)]; performance: observer merge, timer fix, off-screen animation pause [Human]; Claude suggestions card and per-build suggestion pass [Human]; Workout and Documents read each person's own copy [Claude (found in review)]; nine settings never fall back to defaults [Claude (found in review)]; Home Right now side-by-side heights [Human]; companion app phone cards on Hardware [Human]; Now playing speakers, queue, favorites and radio [Human]; wall picture-frame privacy mode [Human]; banner layers, Now playing Stop sends stop, kid medicine to shopping list [Human]; planned versions on the Backlog page, docs say where AI decides [Human]; camera sound and phone camera alerts ready for HA [Human]; GitHub credits on About and a docs Credits page [Human]; peak tasks stat on About and docs [Human]; gesture and print checks [Human]; changelog marks Human or Claude [Human]; docs Listen mode and forks page [Human]; Let the app place this card [Claude].
+- Nov 25 2026 (1.24 forks): docs page Forks and models, autopilot fork packaged in with push steps, AI review pass with 7 new suggestions, per-build review rule. Committed Nov 25. [Claude]
+- Nov 25 2026 (1.23 shopping view fix): "Show aisles" view choice saved per person in HA (synced prefs) instead of only in this browser; datacheck FAIL cleared. Committed Nov 25. [Claude (found in review)]
+- Version 1.22 (BUILD .287): the combined-card groups that missed 1.21 (Weather, Deliveries, Family today, Pets, Car) [Human], review fixes (printer controls need two taps and are hidden on wall screens, Send to printer only to notify/script actions, the loading wheel only on real placeholders, clearing the last package saves properly, card order version) [Claude (found in review)], the Scale button works on every page, the weather card starts collapsed off the banner [Human], car fixes (stable ids, adding waits for load) [Claude (found in review)], phone banner strip above the house art for the notes button and holiday chip, shopping list sorted by store department, hobbies project file monitor, sticky notes no longer duplicate, data package history, Black-owned and other businesses card with a kinds picker [Human], Arriving today packages card [Claude].
+- Version 1.21 (BUILD .286): printers (Add a printer for any printer type, printer controls, Print reports card, low toner to the shopping list) [Human], deleted items stay deleted across screens (about 25 lists, cleaned up after 90 days; packages and autoship now versioned) [Claude (found in review)], loading wheels everywhere with Retry after a timeout, drag cards with the mouse and set a card width, combined cards on Home (House status, Plans and food; the Weather, Deliveries, Family today, Pets and Car groups were left out of 1.21 by mistake and ship in 1.22) [Human], one layout for every Hardware card [Source unknown], Phones and laptops battery card, leftovers trash button with history, cards and pages ordered by use with a Raised for you mark [Human], wall screen calm self-check, scroll health line on System [Claude], print buttons on more pages [Human], one camera alerts card [Source unknown].
+- 1.22 (in progress, Jot items): the top-bar Scale button opens the Interface scale sheet on the page you are on, on phones too (); the weather card outside the Home banner always loads collapsed and keeps a person's own open choice () [Human].
+- Version 1.21 (BUILD .286): printers (Add a printer for any printer type, printer controls, Print reports card, low toner to the shopping list) [Human], deleted items stay deleted across screens (about 25 lists, cleaned up after 90 days; packages and autoship now versioned) [Claude (found in review)], loading wheels everywhere with Retry after a timeout, drag cards with the mouse and set a card width [Human], combined cards on Home (House status, Plans and food, Weather, Deliveries, Family today, Pets, Car) [Claude], one layout for every Hardware card [Source unknown], Phones and laptops battery card, leftovers trash button with history, cards and pages ordered by use with a Raised for you mark [Human], wall screen calm self-check, scroll health line on System [Claude], print buttons on more pages [Human], one camera alerts card [Source unknown].
+- Version 1.20 (BUILD .285), the polish release: calm layout (banner full width from the first frame, cards placed before they show, no cards moving on their own; re-layout at most every 5 minutes and never on screen), sticky notes as a banner button, banner never stretches tall [Human], smoother phone scrolling [Claude (found in review)], tighter cards, top-bar badge under tablet width, game-day balloons [Human]; a full code review (about 60 fixes: data that could be lost, crashes on bad saved data, unsafe links, privacy on wall and kid screens), dead-button sweep (no dead controls found) [Claude (found in review)], Move mode Cancel button, empty-Add hints [Source unknown], Display wake lock fix [Claude (found in review)]; docs and pictures updated [Human].
+- Version 1.19 (BUILD .284): cards no longer stack on top of each other on a phone, the page stays put while cards change size [Claude (found in review)], Smart layout on by default (per-screen off switch), wall screen user (private and grown-ups cards hidden on a marked login), Right now Done hides a row on every screen with Undo and syncs to the car, sticky notes as a yellow paper Home card, businesses card picks home needs with AI and offers a one-tap search, kinds of business to support, Ask AI lists claude.ai only when cloud AI is allowed [Human], GoatCounter ready for a site code [Source unknown], contrast fixes [Claude (found in review)], 2.0 prep (home network address out of the tools, finance link only in settings, licence draft) [Claude].
+- Version 1.18 (BUILD .283): readable colours on the card 3-dot icon and the menu SOON badge [Human], Finance tags [Source unknown], the Print monitor icon and the Wellbeing breathing text [Human]; Commute history card no longer stretches; checks cover every page and width [Source unknown].
+- Version 1.17 (BUILD .282): Smart layout trial on every page with a Right now box (one canvas, section chips, moves into another section stick, use order weighs placement) [Human], smoother phone scrolling (background work waits out a whole swipe series) [Claude (found in review)], signing back in on a tablet brings back your own settings and switches the look at once, house trees stay on the banner and the photo reader asks one or two trees [Source unknown], house decor sway off on phones [Human].
+- Version 1.16 (BUILD .281): Ask AI card (local AI first, model drop-down, answers in the card), My gift ideas card (private to your own account), light buttons show the live colour, Space page loads again (fallback sources, keeps last data, retries), one Closest card on Planes, plain HASS.Agent steps on Hardware, add a card on Home and the Family Board plus 6 more addable cards, pages rise by use too, house picture links and live touches, businesses card local AI words [Human], sign-in switch keeps each person's settings apart [Source unknown], Design Studio AI usage refreshes itself and lists every model, idle agents hide after 5 minutes, org chart shows the standard teams [Human], docs visit row [Source unknown], kitchen display switch instant [Human], wording fixes [Claude (found in review)], check tools fixed [Claude].
+- Version 1.15 (BUILD .280): Smart layout trial on Family and System (one canvas), cards rise by use with a Raised for you mark [Human], add or remove a card on any page (Home and Family Board too) [Claude], Black-owned businesses card (local AI words), sticky notes edit in place and phone reminders [Human], trash Done by [Claude (found in review)], house picture links and live touches (mailbox glow, garage open, solar shimmer), Family scroll freeze fixed at the packer [Human], contrast fixes (Display chip strip, card menus on phones, weather, nursery) [Claude (found in review)], kitchen display switch instant [Human], room words fixed [Claude], docs for 1.12-1.15 with all pictures retaken, Claude Max month in the costs [Claude (found in review)].
+- 1.24 (peakstat-124): Most tasks at once stat: (sampled by ai-usage panel, PEAK RECORD log line when broken), About page line and docs banner tile.
+- Nov 25 2026 (1.24 forks): docs page Forks and models, autopilot fork packaged in with push steps, AI review pass with 7 new suggestions, per-build review rule. Committed Nov 25.
 - Nov 25 2026 (1.23 shopping view fix): "Show aisles" view choice saved per person in HA (synced prefs) instead of only in this browser; datacheck FAIL cleared. Committed Nov 25.
 - Version 1.22 (BUILD .287): the combined-card groups that missed 1.21 (Weather, Deliveries, Family today, Pets, Car), review fixes (printer controls need two taps and are hidden on wall screens, Send to printer only to notify/script actions, the loading wheel only on real placeholders, clearing the last package saves properly, card order version), the Scale button works on every page, the weather card starts collapsed off the banner, car fixes (stable ids, adding waits for load), phone banner strip above the house art for the notes button and holiday chip, shopping list sorted by store department, hobbies project file monitor, sticky notes no longer duplicate, data package history, Black-owned and other businesses card with a kinds picker, Arriving today packages card.
 - Version 1.21 (BUILD .286): printers (Add a printer for any printer type, printer controls, Print reports card, low toner to the shopping list), deleted items stay deleted across screens (about 25 lists, cleaned up after 90 days; packages and autoship now versioned), loading wheels everywhere with Retry after a timeout, drag cards with the mouse and set a card width, combined cards on Home (House status, Plans and food; the Weather, Deliveries, Family today, Pets and Car groups were left out of 1.21 by mistake and ship in 1.22), one layout for every Hardware card, Phones and laptops battery card, leftovers trash button with history, cards and pages ordered by use with a Raised for you mark, wall screen calm self-check, scroll health line on System, print buttons on more pages, one camera alerts card.
-- 1.22 (in progress, Jot items): the top-bar Scale button opens the Interface scale sheet on the page you are on, on phones too; the weather card outside the Home banner always loads collapsed and keeps a person's own open choice.
+- 1.22 (in progress, Jot items): the top-bar Scale button opens the Interface scale sheet on the page you are on, on phones too (); the weather card outside the Home banner always loads collapsed and keeps a person's own open choice ().
 - Version 1.21 (BUILD .286): printers (Add a printer for any printer type, printer controls, Print reports card, low toner to the shopping list), deleted items stay deleted across screens (about 25 lists, cleaned up after 90 days; packages and autoship now versioned), loading wheels everywhere with Retry after a timeout, drag cards with the mouse and set a card width, combined cards on Home (House status, Plans and food, Weather, Deliveries, Family today, Pets, Car), one layout for every Hardware card, Phones and laptops battery card, leftovers trash button with history, cards and pages ordered by use with a Raised for you mark, wall screen calm self-check, scroll health line on System, print buttons on more pages, one camera alerts card.
 - Version 1.20 (BUILD .285), the polish release: calm layout (banner full width from the first frame, cards placed before they show, no cards moving on their own; re-layout at most every 5 minutes and never on screen), sticky notes as a banner button, banner never stretches tall, smoother phone scrolling, tighter cards, top-bar badge under tablet width, game-day balloons; a full code review (about 60 fixes: data that could be lost, crashes on bad saved data, unsafe links, privacy on wall and kid screens), dead-button sweep (no dead controls found), Move mode Cancel button, empty-Add hints, Display wake lock fix; docs and pictures updated.
 - Version 1.19 (BUILD .284): cards no longer stack on top of each other on a phone, the page stays put while cards change size, Smart layout on by default (per-screen off switch), wall screen user (private and grown-ups cards hidden on a marked login), Right now Done hides a row on every screen with Undo and syncs to the car, sticky notes as a yellow paper Home card, businesses card picks home needs with AI and offers a one-tap search, kinds of business to support, Ask AI lists claude.ai only when cloud AI is allowed, GoatCounter ready for a site code, contrast fixes, 2.0 prep (home network address out of the tools, finance link only in settings, licence draft).
@@ -22,380 +48,376 @@ Everything shipped, newest first. Each build is a small batch of improvements. S
 
 ## Versions 0.260 to 1.14
 
-- Version 1.14 (BUILD .279): Hardware page matches HASS.Agent sensors with a setup guide for PCs with none, Pi card text wraps, live games window, TV plane map beside the radar, sticky notes on Home, related settings in card menus, camera-first picture picker, baby monitor card, Import a document only on Calendar and Family, admin Visits card, Throttle the Model card, bedroom TV cast fixes, icons readable on and off, empty-state icons readable.
-- Version 1.13 (BUILD .278): card options open under their own 3-dot everywhere (optioncheck), What's new fits any screen, cast strip uses the Home chips, cat medicine copies update together, trash Done button, wishlist links survive the name filter, Packages text in full, "N Open in B/L", agent activity keeps refreshing on throttled devices, Family patches only changed sections, TV view at phone width, card headers 48 px, contrast and tap fixes on every page, System/Packages/Hobbies cards movable.
-- Version 1.12 (BUILD .277): Hardware page shows one card per PC running HASS.Agent (found automatically, Add another PC how-to), Home idle CPU cut by two thirds, smoother phone scrolling, banner clock matches the top bar, phone top bar keeps the clock in view, chip strip fades at its edges, demo sports card, Kids and hobby chips show their state, Kids card loads on Settings, fewer repeat AI summary calls, Buy me a coffee on the About page, all docs pictures retaken without maintainer chips, device check tuned.
-- Version 1.11 (BUILD .276, one release): camera sound over WebRTC first, camera-model training wizard (past footage, snapshot collector), per-kind phone alerts per camera, map garage label, more house picture options and the photo reader filling them, demo built from the screenshot data, scroll-safe page timers, map markers spread apart, faster device lookups, Family card on the column grid, savecheck and loadcheck warnings nearly cleared, How it works audit (18 fixes), HA camera alerts automation (off until switched on) and vision switches.
-- Version 1.10 (BUILD .275): camera control bar with tap-for-sound and Talk, every vision alert on one screen with camera detections grouped on Home, Camera models (setup, lighting checklist, hold time, Frigate steps), cards in wrappers move again, Security page folded into Activity, one Agents card plus an org chart, a Kids list in Settings, hobby owners and spending, wording check clean on every page, docs keep one version everywhere. Tools: overlapcheck skips closed sections, scrollcheck closes its browsers.
-- Rule: learn which models get stuck on which work and adjust teams over time (rules/teams.md "Learn and adjust", notes in tools/team-notes.md).
-- Version 1.9 (BUILD .274): bigger banner clock with the info chip stacked under it, top bar text tightens before it scrolls, About page facts generated at build time (109 Home cards, 306 cards, checks, models), Design Studio status from one live model, docs written from the app, first-screen check (Commute chart no longer mostly empty), a 44 px move handle and a new card-move check, check runs stop at 5 minutes.
-- Design Studio status from one live model (1.9): top bar, Agents card, Live agents and Claude usage agree on the count, team leads show as their own tiles, and stale data says "no update since X" instead of 0 or idle. (Team AK)
-- Version 1.8: honest Claude status, instant toggles everywhere, More sheet search and recent pages, one Settings home with five sections, a maintainer tools switch, Design Studio in one flow, Right now cards in one box, a banner clock, flight restrictions on the plane map and popup with a phone compass arrow, a demo-visit phone alert, a notifications list, an insurance list with room and spot, Lives here on room pages, house style from the photo import, cars drawn in their real colour, one How it works for every card, the TV camera-wall screen, and pets that land their jumps. (BUILD .273)
-- Honest Claude status in the top bar (counts every running helper, tap to list them), Live agents card hides agents idle 30+ min, backlog count refreshes every minute and on return, bug button focuses the Jot it down box, and a live toast plus phone push when someone opens the demo (at most one per 10 min, switch in Settings, Alerts). (version 1.8)
-- Planes: TFR zones on the map show their type and state on hover or tap; the plane popup and card say when a plane is inside or within 3 nm of an active restriction; on phones a live compass arrow points at the plane (fixed-bearing fallback, iPhone permission button). (version 1.8)
-- Phone banner chips a little smaller so the house shows more. (BUILD .271)
-- Phone and tablet page bar slides through every page (Frequent first, colour-tinted groups), card text grows to fill each card, two-line banner chips, the house editor gains mailbox, driveway, fence, shutters, garage door and lights choices, the phone banner shows the whole house. (BUILD .270)
-- Banner art reaches every edge (no grey band or hairline ring), colour-grouped side menu on desktop, Pantry and Recipes buttons no longer overlap, readable banner weather card on a day sky, an icon in the browser tab. (BUILD .269)
-- Home banner: the chip strip sits exactly on the banner's bottom edge and just under the horizon at every width, the mailbox stands still on the outside edge of the driveway. (BUILD .268)
-- Top bar rebuilt for narrow screens: tight buttons that scroll past half the bar, the backlog count in the version line, scrolling text that is never cut off; card header links clear of the ⋯ button with a mouse. (BUILD .267)
-- One version number everywhere: major before the decimal point, build after it (this is 1.1; builds before 1.0 are 0.xxx); docs lead with the version; About page pictures added to the Diagrams docs page. (BUILD .266)
-- Set-up cards fold into one "More to set up" card, the quiet-rows fold is remembered, the menu is grouped into sections, readable weather hour labels, Fire safety cards full width on the Family Board, readable NEW badge. (BUILD .265)
-- **Nashboard 1.0.** Version label in About, docs site published with the 1.0 page, GitHub release v1.0 with the coffee link (preview: downloads open later). (BUILD .264)
-- Ask Claude opens only a new tab (no error page), plane cards as a list under the map on phones, readable weather text on day and cloudy skies, Planes status text and icons in light mode. (BUILD .263)
-- Final 1.0 polish: Right now shows only live, real rows (quiet ones fold into one line, set-up cards move below), every Home card ranked, honest chips, card notices only for urgent cards on wall screens, Today at a glance under the banner, set-up pages stay out of the menu until set up, Getting started checklist, Kids page grown-ups lock, solid phone tab bar, easier-to-read text and bigger tap targets; docs site restyled like the app with Getting started, FAQ and a car app preview; backups now kept per account. (BUILD .262)
-- Privacy before 1.0: no seed or car-art files in the public folder, names filtered out of the published backlog, neutral picture file names, guest mode without commute, local-AI-only gate on every AI feature (AI privacy card), Who is on without pages, no hardcoded household values; developer tools (bug button, backlog count, Claude card) admin-only and out of the family view. (BUILD .261)
-- Release candidate 1.0: TV view with compact weather and radar, banner colours and leaves in front, same-size buttons everywhere (sizecheck), 44 px tap targets on every page (tapcheck), contrast check, camera sound, Garage on shared storage places, bug button always on screen, Family Board document import, Amazon status updates, crisp About diagrams, smooth Home scrolling, longest idle agent, dishwasher seconds. (BUILD .260)
+- Version 1.14 (BUILD .279): Hardware page matches HASS.Agent sensors with a setup guide for PCs with none, Pi card text wraps, live games window, TV plane map beside the radar, sticky notes on Home [Human], related settings in card menus [Claude], camera-first picture picker [Source unknown], baby monitor card, Import a document only on Calendar and Family, admin Visits card, Throttle the Model card, bedroom TV cast fixes, icons readable on and off [Human], empty-state icons readable [Claude (found in review)].
+- Version 1.13 (BUILD .278): card options open under their own 3-dot everywhere (optioncheck) [Human], What's new fits any screen [Source unknown], cast strip uses the Home chips, cat medicine copies update together [Human], trash Done button [Source unknown], wishlist links survive the name filter [Human], Packages text in full, "N Open in B/L" [Source unknown], agent activity keeps refreshing on throttled devices [Human], Family patches only changed sections, TV view at phone width [Claude (found in review)], card headers 48 px [Source unknown], contrast and tap fixes on every page [Claude (found in review)], System/Packages/Hobbies cards movable [Source unknown].
+- Version 1.12 (BUILD .277): Hardware page shows one card per PC running HASS.Agent (found automatically, Add another PC how-to) [Human], Home idle CPU cut by two thirds, smoother phone scrolling [Claude (found in review)], banner clock matches the top bar, phone top bar keeps the clock in view, chip strip fades at its edges [Human], demo sports card, Kids and hobby chips show their state, Kids card loads on Settings [Source unknown], fewer repeat AI summary calls [Claude (found in review)], Buy me a coffee on the About page [Source unknown], all docs pictures retaken without maintainer chips, device check tuned [Claude (found in review)].
+- Version 1.11 (BUILD .276, one release): camera sound over WebRTC first, camera-model training wizard (past footage, snapshot collector) [Human], per-kind phone alerts per camera [Claude], map garage label [Source unknown], more house picture options and the photo reader filling them, demo built from the screenshot data [Human], scroll-safe page timers [Claude (found in review)], map markers spread apart [Human], faster device lookups [Source unknown], Family card on the column grid [Human], savecheck and loadcheck warnings nearly cleared, How it works audit (18 fixes) [Claude (found in review)], HA camera alerts automation (off until switched on) and vision switches [Human].
+- Version 1.10 (BUILD .275): camera control bar with tap-for-sound and Talk [Human], every vision alert on one screen with camera detections grouped on Home [Claude], Camera models (setup, lighting checklist, hold time, Frigate steps), cards in wrappers move again [Human], Security page folded into Activity [Source unknown], one Agents card plus an org chart, a Kids list in Settings, hobby owners and spending [Human], wording check clean on every page [Claude (found in review)], docs keep one version everywhere. Tools: overlapcheck skips closed sections, scrollcheck closes its browsers [Human].
+- Rule: learn which models get stuck on which work and adjust teams over time (rules/teams.md "Learn and adjust", notes in). () [Claude (found in review)]
+- Version 1.9 (BUILD .274): bigger banner clock with the info chip stacked under it [Human], top bar text tightens before it scrolls [Source unknown], About page facts generated at build time (109 Home cards, 306 cards, checks, models) [Claude], Design Studio status from one live model [Human], docs written from the app [Source unknown], first-screen check (Commute chart no longer mostly empty) [Claude], a 44 px move handle and a new card-move check [Human], check runs stop at 5 minutes [Source unknown].
+- Design Studio status from one live model (1.9): top bar, Agents card, Live agents and Claude usage agree on the count, team leads show as their own tiles, and stale data says "no update since X" instead of 0 or idle. (Team AK) [Human]
+- Version 1.8: honest Claude status, instant toggles everywhere [Human], More sheet search and recent pages, one Settings home with five sections, a maintainer tools switch [Claude], Design Studio in one flow [Human], Right now cards in one box, a banner clock [Source unknown], flight restrictions on the plane map and popup with a phone compass arrow [Human], a demo-visit phone alert, a notifications list [Source unknown], an insurance list with room and spot, Lives here on room pages, house style from the photo import, cars drawn in their real colour [Human], one How it works for every card [Source unknown], the TV camera-wall screen, and pets that land their jumps. (BUILD .273) [Human]
+- Honest Claude status in the top bar (counts every running helper, tap to list them), Live agents card hides agents idle 30+ min, backlog count refreshes every minute and on return, bug button focuses the Jot it down box, and a live toast plus phone push when someone opens the demo (at most one per 10 min, switch in Settings, Alerts). (version 1.8) [Claude]
+- Planes: TFR zones on the map show their type and state on hover or tap; the plane popup and card say when a plane is inside or within 3 nm of an active restriction; on phones a live compass arrow points at the plane (fixed-bearing fallback, iPhone permission button). (version 1.8) [Human]
+- Phone banner chips a little smaller so the house shows more. (BUILD .271) [Human]
+- Phone and tablet page bar slides through every page (Frequent first, colour-tinted groups), card text grows to fill each card, two-line banner chips, the house editor gains mailbox, driveway, fence, shutters, garage door and lights choices, the phone banner shows the whole house. (BUILD .270) [Human]
+- Banner art reaches every edge (no grey band or hairline ring), colour-grouped side menu on desktop, Pantry and Recipes buttons no longer overlap, readable banner weather card on a day sky, an icon in the browser tab. (BUILD .269) [Human]
+- Home banner: the chip strip sits exactly on the banner's bottom edge and just under the horizon at every width, the mailbox stands still on the outside edge of the driveway. (BUILD .268) [Human]
+- Top bar rebuilt for narrow screens: tight buttons that scroll past half the bar, the backlog count in the version line, scrolling text that is never cut off; card header links clear of the ⋯ button with a mouse. (BUILD .267) [Human]
+- One version number everywhere: major before the decimal point, build after it (this is 1.1; builds before 1.0 are 0.xxx); docs lead with the version; About page pictures added to the Diagrams docs page. (BUILD .266) [Human]
+- Set-up cards fold into one "More to set up" card, the quiet-rows fold is remembered, the menu is grouped into sections, readable weather hour labels, Fire safety cards full width on the Family Board, readable NEW badge. (BUILD .265) [Source unknown]
+- **Nashboard 1.0.** Version label in About, docs site published with the 1.0 page, GitHub release v1.0 with the coffee link (preview: downloads open later). (BUILD .264) [Human]
+- Ask Claude opens only a new tab (no error page), plane cards as a list under the map on phones, readable weather text on day and cloudy skies, Planes status text and icons in light mode. (BUILD .263) [Human]
+- Final 1.0 polish: Right now shows only live [Claude (found in review)], real rows (quiet ones fold into one line, set-up cards move below) [Claude], every Home card ranked, honest chips, card notices only for urgent cards on wall screens [Human], Today at a glance under the banner [Claude], set-up pages stay out of the menu until set up [Claude (found in review)], Getting started checklist, Kids page grown-ups lock [Claude], solid phone tab bar, easier-to-read text and bigger tap targets [Human]; docs site restyled like the app with Getting started [Claude], FAQ and a car app preview [Claude (found in review)]; backups now kept per account. (BUILD .262) [Human]
+- Privacy before 1.0: no seed or car-art files in the public folder, names filtered out of the published backlog, neutral picture file names, guest mode without commute, local-AI-only gate on every AI feature (AI privacy card), Who is on without pages, no hardcoded household values; developer tools (bug button, backlog count, Claude card) admin-only and out of the family view. (BUILD .261) [Claude]
+- Release candidate 1.0: TV view with compact weather and radar [Human], banner colours and leaves in front, same-size buttons everywhere (sizecheck), 44 px tap targets on every page (tapcheck), contrast check, camera sound [Claude (found in review)], Garage on shared storage places [Human], bug button always on screen [Claude (found in review)], Family Board document import, Amazon status updates, crisp About diagrams, smooth Home scrolling, longest idle agent, dishwasher seconds. (BUILD .260) [Human]
 
 ## Before 1.0 · Versions 0.227 to 0.259
 
-- Hotfix: Refresh button the same size as the other top bar buttons. (BUILD .259)
-- Import now request handled.
-- Data store phase 2: all saved data through one safe-save helper (no empty-over-real, merge with the freshest copy, versioned, photo-free inventory backup); sports preferences load for the first time; bedtime library Listen mode; house shape from a photo; NFC tag map; device setup ticks saved in HA; System overlap fix; speed fixes for hidden tabs. Parallel quality checks. (BUILD .258)
-- Every page packs with no holes (flowcheck passes everywhere); Claude needs-you banner on every screen + phone push when Claude waits on an Allow prompt. (BUILD .257)
-- Bug button focuses the Jot box on mobile; doorbell person matching widened, debug guide written (idea b45d2b8e, check HA entities). (BUILD .256)
-- Markets refresh about once a minute; Jot box pastes pictures; touch scrolling smoothed; real car photos; YouTube counts as playing on TVs; wishlist Purchased fixed. (BUILD .256)
-- Home order model with Lower priority, prettier cards first, full-screen card notice, Today at a glance AI summary, New marks, kid's colour, oven / window / nursery sensors, Sitter page, Guest mode and guest traffic. (BUILD .256)
-- Laundry, pool, Energy and Bills Labs page, leak sensors, UPS, printer, garage door, smoker, smart plugs, earbuds and internet provider cards. (BUILD .256)
-- Frigate package, doorbell and closings cards, video states and mail truck, camera alert settings, cast timeout countdown, TV leveler, wall display (wake on approach, Nest Hub kitchen view). (BUILD .256)
-- AI suggestions card, Family inbox, toolbox photo import and picture, bedtime library, house photo colour fallback. (BUILD .256)
-- Native Android Auto app scaffold (android-auto/), not yet built or tested in a car. (BUILD .256)
-- Data store phase 2a helper (dsx) and key inventory; nothing converted yet. (BUILD .256)
-- Import now request handled; Jot box jumping already fixed in .255.
-- Jot box stays put (no jumping, touch scroll works while focused); pantry and other grids use the shared gap; System cards fill the row; About has one full-width Roll credits card, all cards open; room chips filter or jump. (BUILD .255)
-- Terminal tiles back (idle tiles stay), open backlog count in the top bar, new builds reach every screen within a minute, nav stays put on hover, trivia tidbits removed, pets keep playing while scrolling. (BUILD .254)
-- Docs published at build .253: factual architecture intro, autopilot panel, stuck watcher, live status; docs refresh every build ending in 0 from .260.
-- Equal vertical gaps (Home fix + new gapcheck vertical test); filed ideas leave the Jot card within a minute of filing. (BUILD .253)
-- Design Studio packs: Live agents in the Right now row, short Agents bars; gapcheck catches lone cards and stretched Right now cards. (BUILD .252)
-- Marquee always scrolls; photo note clears on submit; filed ideas leave the Jot card; Nashboard title colour restored; Add button first in Tab order; page icons beside titles. (BUILD .251)
-- One Right now container per page: Design Studio's two sections merged; new rightnowcheck quality check. (BUILD .250)
-- Dishwasher card: type time left, see the end time, Clean/Dirty flip sign. (BUILD .250)
-- Agents card counts only agents active in the last 5 minutes. (BUILD .236)
-- Blocked work items clear themselves once the agent moves on. (BUILD .236)
-- Home "Recently used" card for cards used in the last 4 hours. (BUILD .236)
-- Live-game ball on Sports, drawn car with drive-in from its VIN, two Easter eggs. (BUILD .236)
-- Small-tile rows (rooms, devices, cameras, Home Now playing) fill the width first. (BUILD .236)
-- Card spec for AI-generated cards (rules/card-spec.md). (BUILD .236)
-- Pantry & Fridge offers only food places (pantry, fridge, freezer). (BUILD .234)
-- Design Studio Live agents: terminal tiles per agent, grouped. (BUILD .234)
-- Home cards ordered by one priority score with reason chips; urgent cards stay expanded. (BUILD .234)
-- Gig night card on Home on a gig day. (BUILD .234)
-- Interface scale: cards, columns and text re-pack instead of zooming. (BUILD .234)
-- How this works in every card menu (31 cards written). (BUILD .234)
-- Full-window announcement of what is new, once per build per device. (BUILD .234)
-- TV display: more rows per card, smaller type, 3 columns. (BUILD .234)
-- Drag to reorder cards on any page (Move in the card menu), saved for everyone. (BUILD .234)
-- Page intro lines under every page title (Hide intros switch). (BUILD .234)
-- Public change log now also filters pet and child names. (BUILD .234)
-- Agents card: main chat pinned (Working/Idle), then Free and Paid tallies with job bars. (BUILD .233)
-- Docs site banner shows the build number. (BUILD .233)
-- Missing icons added (music, user, image). (BUILD .233)
-- Calendar zoom to fit sizes rows correctly in Full window. (BUILD .233)
-- Barcode scan button on shopping, pantry and storage add forms (camera, photo or typed; Open Food Facts lookup). (BUILD .233)
-- Car cards cross-posted to the Garage page. (BUILD .233)
-- Right now cards reviewed: Claude card only while working and says what; idle placeholders gone. (BUILD .233)
-- Leftovers tracker on Pantry & Fridge with a Home "Eat this first" card. (BUILD .233)
-- Collapsed card summaries: real keys checked, Weather, Air, UV, Commute, Cameras and Calendar added. (BUILD .233)
-- Wall calendar: big Add event / Add to list buttons with mic. (BUILD .233)
-- Now playing card on room dashboards while something in that room plays. (BUILD .233)
-- Kids' cards in any bedroom with a child set in Room settings. (BUILD .233)
-- Agents card: every agent in the count gets a bar (status posts count as jobs). (BUILD .232)
-- Top bar top-left corner back to its earlier look. (BUILD .232)
-- Jot it down: trash button clears the entry, with Undo. (BUILD .232)
-- Now playing gets a turntable icon. (BUILD .232)
-- Gig suggestions on Home say "Gig" and show the be-there-by (setup) time. (BUILD .232)
-- Collapsed cards show a one-line summary in the header (weather, Litter-Robot, packages, next event, trash night). (BUILD .232)
-- Cards keep their column when one collapses or expands (no jumping). (BUILD .232)
-- Pets never vanish or flicker on re-render or page change; exits fade. (BUILD .232)
-- Home chips moved from over the house into a scrolling marquee below it. (BUILD .232)
-- Display scale control in Full window; Calendar keeps its scroll position after zoom to fit. (BUILD .232)
-- Wishlist "bought" requests match Purchased rows by ASIN or name (app and read-ideas). (BUILD .232)
-- Now playing shows the channel and artwork for YouTube-style players (root cause still open). (BUILD .232)
-- Design Studio Agents card: one "Helpers ×N" row; job bars split free vs paid with a legend. (BUILD .231)
-- Right now strip fills the full width first; few cards stretch to fill the row. (BUILD .231)
-- Quiet hours also mute a TV/display whose cast entity is in that room's area. (BUILD .231)
-- Full window icon flips on every radar (Home copy too). (BUILD .231)
-- Tap targets: chips and switches get invisible 44 px touch areas. (BUILD .231)
-- Band card becomes Gigs: start, setup (2 h before), show length, breakdown (1 h after), timeline, import from event link. (BUILD .231)
-- Home Claude card split into Ask Claude (everyone) and Claude admin. (BUILD .231)
-- System page "Who's on" card (live screens and people, last minute). (BUILD .231)
-- Cards restack when one is hidden or dismissed (no gaps left). (BUILD .230)
-- Tap targets: top bar buttons, tile menus and card header buttons now 44 px (chips and switches next). (BUILD .230)
-- Home Rain radar gets the Full window button. (BUILD .230)
-- NFC sheet "Copy add-item link"; About card shows the pieces count. (BUILD .230)
-- Frigate camera entities left out of camera lists; a camera without a snapshot yet no longer shows Offline. (BUILD .229)
-- Lines of code and pieces computed at build time (About card and market value tidbit). (BUILD .229)
-- Agents card with status lights and job bars. (BUILD .229)
-- Top bar switches to two rows on any device when it does not fit. (BUILD .229)
-- Auto look follows the season (Glass, Paper, Classic, Bold). (BUILD .229)
-- Home card when the Deck battery is under 20% and not charging (smart plug part still open). (BUILD .229)
-- NFC tag link with ?add=1 opens the box with Add item focused. (BUILD .229)
-- Docs/why-nashboard.md. (BUILD .229)
-- Docs/themes.md. (BUILD .229)
-- Docs/diagrams.md (two Mermaid diagrams with legends). (BUILD .229)
-- Docs/developer-tools.md. (BUILD .229)
-- Docs/design-engine.md. (BUILD .229)
-- Duplicates, daily chores and trash entries hidden with a "+N routine items hidden" note. (BUILD .229)
-- Growing text box, newest first, photo thumbnails, Edit button, no limit. (BUILD .229)
-- "How this works" on every hobby card. (BUILD .229)
-- Next 3 typical milestones per car from its mileage; feeds Car due soon within 500 mi. (BUILD .229)
-- Pantry & Fridge gets its own fridge icon everywhere; Room page sofa. (BUILD .229)
-- A Rain radar card appears at the top of Home while rain is coming or falling. (BUILD .229)
-- Tap-target audit tool tools/docs-shots/tapcheck.js (BUILD .229).
-- Home Claude card gets an accent outline and moves to the top while Claude is working. (BUILD .228)
-- About page "Provided by Home Assistant" card with Core, OS and Supervisor versions; About button tooltip names it. (BUILD .228)
-- Tapping a Right now row scrolls to the matching card and outlines it. (BUILD .228)
-- Top bar reads "N agents · building" during deploys. (BUILD .228)
-- Design Studio Right now strip with credits left and 5-hour / weekly bars. (BUILD .228)
-- AI market watchdog + "New free AI options" card with Add to Jot it down (BUILD .227).
-- Rule: tap targets 48 px; autopilot panel switches enlarged. Stuck check tool (tools/stuck-check.js).
-- BUILD .237: Ask Claude card under the banner (admin card anchors only while working); holiday and weather effects pass behind the house (housecheck); holiday leaves/clovers/hearts placement fixed; docs screenshots hide the admin card.
-- Docs release .235 published: every page refreshed, text diagrams rebuilt as SVG, holiday looks grid, new screenshots (no admin card).
-- BUILD .238: top bar buttons scroll again instead of squeezing (invisible tap areas); 6 Jot ideas filed.
-- BUILD .239: How this works text on 93 more cards; Edit setup on Holiday traditions; Backlog card hides checked-in ideas; YouTube now playing fix; card jump re-check passes; What's new block on the docs home.
-- BUILD .240: tapping a line in Good morning and other summary cards opens the real card; car animations get body-type shapes; Space page screenshot shows real-looking sky and launch data.
-- BUILD .241: household cars drawn to look like the real models, saved with each car; new car imports get their own drawing once.
-- BUILD .242: third car drawn from its real shape; real paint colours; colour picker after a car import and Edit colour on each car.
-- BUILD .243: generic by default: room extras (nursery, kids art, bedtime, house windows), commute places and trips, local news area, minor-league team and team suggestions are now settings any household can fill in; nothing personal is left in the code; new genericcheck quality check.
-- BUILD .244: new Security page with a saved alert history; fire safety (alarm card, escape plan, detector reminders, fire drill); valuables list for insurance; place picker by kind and pantry items in storage search.
-- BUILD .245: Claude icon and build number on phones too; compact Jot it down that moves up to a full-width card while typing; Roll up the car windows alert when rain is coming where the car is.
-- BUILD .246: Security modes (Away, Home, Night, Off) with alert choices, phone alerts and quiet hours; change log days collapse; Next up card shows the next 10 backlog items.
-- BUILD .247: chips marquee docked inside the house banner; Agents card and Claude light show agents running now; touch drag and drop on lists and meals; Local traffic card on the Guest page; animations pause in hidden tabs.
-- BUILD .248: card buttons never sit under the 3-dot button (new overlap check); fastest plane always on the Planes map; Jot it down shows the next import time; camera order drag and drop; self-restarting stuck watcher.
-- BUILD .249: Markets card shades gains and losses and shows top watchlist movers; urgent phone alerts now arrive with the screen off (high priority, no expiry).
+- Hotfix: Refresh button the same size as the other top bar buttons. (BUILD .259) [Claude (found in review)]
+- Import now request handled (). [Human]
+- Data store phase 2: all saved data through one safe-save helper (no empty-over-real, merge with the freshest copy, versioned, photo-free inventory backup); sports preferences load for the first time; bedtime library Listen mode; house shape from a photo; NFC tag map; device setup ticks saved in HA; System overlap fix; speed fixes for hidden tabs. Parallel quality checks. (BUILD .258) [Human]
+- Every page packs with no holes (flowcheck passes everywhere); Claude needs-you banner on every screen + phone push when Claude waits on an Allow prompt. (BUILD .257) [Human]
+- Bug button focuses the Jot box on mobile (); doorbell person matching widened, debug guide written ( check HA entities). (BUILD .256) [Human]
+- Markets refresh about once a minute; Jot box pastes pictures; touch scrolling smoothed; real car photos; YouTube counts as playing on TVs; wishlist Purchased fixed. (BUILD .256) [Human]
+- Home order model with Lower priority, prettier cards first, full-screen card notice, Today at a glance AI summary, New marks, kid's colour, oven / window / nursery sensors, Sitter page, Guest mode and guest traffic. (BUILD .256) [Human]
+- Laundry, pool, Energy and Bills Labs page, leak sensors, UPS, printer, garage door, smoker, smart plugs, earbuds and internet provider cards. (BUILD .256) [Claude (found in review)]
+- Frigate package, doorbell and closings cards, video states and mail truck, camera alert settings, cast timeout countdown, TV leveler, wall display (wake on approach, Nest Hub kitchen view). (BUILD .256) [Claude]
+- AI suggestions card, Family inbox, toolbox photo import and picture, bedtime library, house photo colour fallback. (BUILD .256) [Human]
+- Native Android Auto app scaffold (android-auto/), not yet built or tested in a car. (BUILD .256) [Claude (found in review)]
+- Data store phase 2a helper (dsx) and key inventory; nothing converted yet. (BUILD .256) [Human]
+- Import now request handled (); Jot box jumping already fixed in .255 (). [Human]
+- Jot box stays put (no jumping, touch scroll works while focused); pantry and other grids use the shared gap; System cards fill the row; About has one full-width Roll credits card, all cards open; room chips filter or jump. (BUILD .255) [Claude (found in review)]
+- Terminal tiles back (idle tiles stay), open backlog count in the top bar, new builds reach every screen within a minute, nav stays put on hover, trivia tidbits removed, pets keep playing while scrolling. (BUILD .254) [Claude (found in review)]
+- Docs published at build .253: factual architecture intro, autopilot panel, stuck watcher, live status; docs refresh every build ending in 0 from .260. [Claude (found in review)]
+- Equal vertical gaps (Home fix + new gapcheck vertical test); filed ideas leave the Jot card within a minute of filing. (BUILD .253) [Human]
+- Design Studio packs: Live agents in the Right now row, short Agents bars; gapcheck catches lone cards and stretched Right now cards. (BUILD .252) [Human]
+- Marquee always scrolls; photo note clears on submit; filed ideas leave the Jot card; Nashboard title colour restored; Add button first in Tab order; page icons beside titles. (BUILD .251) [Human]
+- One Right now container per page: Design Studio's two sections merged; new rightnowcheck quality check. (BUILD .250) [Human]
+- Dishwasher card: type time left, see the end time, Clean/Dirty flip sign. (BUILD .250) [Human]
+- Agents card counts only agents active in the last 5 minutes. (BUILD .236) [Human]
+- Blocked work items clear themselves once the agent moves on. (BUILD .236) [Human]
+- Home "Recently used" card for cards used in the last 4 hours. (BUILD .236) [Human]
+- Live-game ball on Sports, drawn car with drive-in from its VIN, two Easter eggs. (BUILD .236) [Human]
+- Small-tile rows (rooms, devices, cameras, Home Now playing) fill the width first. (BUILD .236) [Human]
+- Card spec for AI-generated cards (rules/card-spec.md). (BUILD .236) [Human]
+- Pantry & Fridge offers only food places (pantry, fridge, freezer). (BUILD .234) [Human]
+- Design Studio Live agents: terminal tiles per agent, grouped. (BUILD .234) [Human]
+- Home cards ordered by one priority score with reason chips; urgent cards stay expanded. (BUILD .234) [Human]
+- Gig night card on Home on a gig day. (BUILD .234) [Human]
+- Interface scale: cards, columns and text re-pack instead of zooming. (BUILD .234) [Human]
+- How this works in every card menu (31 cards written). (BUILD .234) [Claude]
+- Full-window announcement of what is new, once per build per device. (BUILD .234) [Human]
+- TV display: more rows per card, smaller type, 3 columns. (BUILD .234) [Human]
+- Drag to reorder cards on any page (Move in the card menu), saved for everyone. (BUILD .234) [Human]
+- Page intro lines under every page title (Hide intros switch). (BUILD .234) [Claude]
+- Public change log now also filters pet and child names. (BUILD .234) [Human]
+- Agents card: main chat pinned (Working/Idle), then Free and Paid tallies with job bars. (BUILD .233) [Claude (found in review)]
+- Docs site banner shows the build number. (BUILD .233) [Human]
+- Missing icons added (music, user, image). (BUILD .233) [Human]
+- Calendar zoom to fit sizes rows correctly in Full window. (BUILD .233) [Human]
+- Barcode scan button on shopping, pantry and storage add forms (camera, photo or typed; Open Food Facts lookup). (BUILD .233) [Human]
+- Car cards cross-posted to the Garage page. (BUILD .233) [Human]
+- Right now cards reviewed: Claude card only while working and says what; idle placeholders gone. (BUILD .233) [Human]
+- Leftovers tracker on Pantry & Fridge with a Home "Eat this first" card. (BUILD .233) [Human]
+- Collapsed card summaries: real keys checked, Weather, Air, UV, Commute, Cameras and Calendar added. (BUILD .233) [Human]
+- Wall calendar: big Add event / Add to list buttons with mic. (BUILD .233) [Claude]
+- Now playing card on room dashboards while something in that room plays. (BUILD .233) [Human]
+- Kids' cards in any bedroom with a child set in Room settings. (BUILD .233) [Human]
+- Agents card: every agent in the count gets a bar (status posts count as jobs). (BUILD .232) [Human]
+- Top bar top-left corner back to its earlier look. (BUILD .232) [Human]
+- Jot it down: trash button clears the entry, with Undo. (BUILD .232) [Human]
+- Now playing gets a turntable icon. (BUILD .232) [Human]
+- Gig suggestions on Home say "Gig" and show the be-there-by (setup) time. (BUILD .232) [Claude]
+- Collapsed cards show a one-line summary in the header (weather, Litter-Robot, packages, next event, trash night). (BUILD .232) [Claude]
+- Cards keep their column when one collapses or expands (no jumping). (BUILD .232) [Human]
+- Pets never vanish or flicker on re-render or page change; exits fade. (BUILD .232) [Human]
+- Home chips moved from over the house into a scrolling marquee below it. (BUILD .232) [Human]
+- Display scale control in Full window; Calendar keeps its scroll position after zoom to fit. (BUILD .232) [Human]
+- Wishlist "bought" requests match Purchased rows by ASIN or name (app and read-ideas). (BUILD .232) [Human]
+- Now playing shows the channel and artwork for YouTube-style players (root cause still open). (BUILD .232) [Human]
+- Design Studio Agents card: one "Helpers ×N" row; job bars split free vs paid with a legend. (BUILD .231) [Human]
+- Right now strip fills the full width first; few cards stretch to fill the row. (BUILD .231) [Human]
+- Quiet hours also mute a TV/display whose cast entity is in that room's area. (BUILD .231) [Human]
+- Full window icon flips on every radar (Home copy too). (BUILD .231) [Human]
+- Tap targets: chips and switches get invisible 44 px touch areas. (BUILD .231) [Human]
+- Band card becomes Gigs: start, setup (2 h before), show length, breakdown (1 h after), timeline, import from event link. (BUILD .231) [Claude]
+- Home Claude card split into Ask Claude (everyone) and Claude admin. (BUILD .231) [Human]
+- System page "Who's on" card (live screens and people, last minute). (BUILD .231) [Human]
+- Cards restack when one is hidden or dismissed (no gaps left). (BUILD .230) [Human]
+- Tap targets: top bar buttons, tile menus and card header buttons now 44 px (chips and switches next). (BUILD .230) [Human]
+- Home Rain radar gets the Full window button. (BUILD .230) [Human]
+- NFC sheet "Copy add-item link"; About card shows the pieces count. (BUILD .230) [Human]
+- Frigate camera entities left out of camera lists; a camera without a snapshot yet no longer shows Offline. (BUILD .229) [Human]
+- Lines of code and pieces computed at build time (About card and market value tidbit). (BUILD .229) [Human]
+- Agents card with status lights and job bars. (BUILD .229) [Human]
+- Top bar switches to two rows on any device when it does not fit. (BUILD .229) [Human]
+- Auto look follows the season (Glass, Paper, Classic, Bold). (BUILD .229) [Claude]
+- Home card when the Deck battery is under 20% and not charging (smart plug part still open). (BUILD .229) [Claude]
+- NFC tag link with ?add=1 opens the box with Add item focused. (BUILD .229) [Claude]
+- Docs/why-nashboard.md. (BUILD .229) [Human]
+- Docs/themes.md. (BUILD .229) [Human]
+- Docs/diagrams.md (two Mermaid diagrams with legends). (BUILD .229) [Human]
+- Docs/developer-tools.md. (BUILD .229) [Human]
+- Docs/design-engine.md. (BUILD .229) [Human]
+- Duplicates, daily chores and trash entries hidden with a "+N routine items hidden" note. (BUILD .229) [Human]
+- Growing text box, newest first, photo thumbnails, Edit button, no limit. (BUILD .229) [Human]
+- "How this works" on every hobby card. (BUILD .229) [Human]
+- Next 3 typical milestones per car from its mileage; feeds Car due soon within 500 mi. (BUILD .229) [Human]
+- Pantry & Fridge gets its own fridge icon everywhere; Room page sofa. (BUILD .229) [Human]
+- A Rain radar card appears at the top of Home while rain is coming or falling. (BUILD .229) [Human]
+- Tap-target audit tool (BUILD .229). [Claude (found in review)]
+- Home Claude card gets an accent outline and moves to the top while Claude is working. (BUILD .228) [Human]
+- About page "Provided by Home Assistant" card with Core, OS and Supervisor versions; About button tooltip names it. (BUILD .228) [Human]
+- Tapping a Right now row scrolls to the matching card and outlines it. (BUILD .228) [Human]
+- Top bar reads "N agents · building" during deploys. (BUILD .228) [Human]
+- Design Studio Right now strip with credits left and 5-hour / weekly bars. (BUILD .228) [Claude (found in review)]
+- AI market watchdog + "New free AI options" card with Add to Jot it down (BUILD .227). [Human]
+- Rule: tap targets 48 px; autopilot panel switches enlarged. Stuck check tool (). [Claude (found in review)]
+- BUILD .237: Ask Claude card under the banner (admin card anchors only while working); holiday and weather effects pass behind the house (housecheck); holiday leaves/clovers/hearts placement fixed; docs screenshots hide the admin card. [Human]
+- Docs release .235 published: every page refreshed, text diagrams rebuilt as SVG, holiday looks grid, new screenshots (no admin card). [Human]
+- BUILD .238: top bar buttons scroll again instead of squeezing (invisible tap areas); 6 Jot ideas filed. [Human]
+- BUILD .239: How this works text on 93 more cards; Edit setup on Holiday traditions; Backlog card hides checked-in ideas; YouTube now playing fix; card jump re-check passes; What's new block on the docs home. [Human]
+- BUILD .240: tapping a line in Good morning and other summary cards opens the real card; car animations get body-type shapes; Space page screenshot shows real-looking sky and launch data. [Human]
+- BUILD .241: household cars drawn to look like the real models, saved with each car; new car imports get their own drawing once. [Human]
+- BUILD .242: third car drawn from its real shape; real paint colours; colour picker after a car import and Edit colour on each car. [Human]
+- BUILD .243: generic by default: room extras (nursery, kids art, bedtime, house windows), commute places and trips, local news area, minor-league team and team suggestions are now settings any household can fill in; nothing personal is left in the code; new genericcheck quality check. [Human]
+- BUILD .244: new Security page with a saved alert history; fire safety (alarm card, escape plan, detector reminders, fire drill); valuables list for insurance; place picker by kind and pantry items in storage search. [Human]
+- BUILD .245: Claude icon and build number on phones too; compact Jot it down that moves up to a full-width card while typing; Roll up the car windows alert when rain is coming where the car is. [Human]
+- BUILD .246: Security modes (Away, Home, Night, Off) with alert choices, phone alerts and quiet hours; change log days collapse; Next up card shows the next 10 backlog items. [Human]
+- BUILD .247: chips marquee docked inside the house banner; Agents card and Claude light show agents running now; touch drag and drop on lists and meals; Local traffic card on the Guest page; animations pause in hidden tabs. [Human]
+- BUILD .248: card buttons never sit under the 3-dot button (new overlap check); fastest plane always on the Planes map; Jot it down shows the next import time; camera order drag and drop; self-restarting stuck watcher. [Claude (found in review)]
+- BUILD .249: Markets card shades gains and losses and shows top watchlist movers; urgent phone alerts now arrive with the screen off (high priority, no expiry). [Human]
 
 ## Before 1.0 · Versions 0.205 to 0.222
 
-- Kids page pickup time (BUILD .221).
-- HA restarted twice: fixed the YAML that blocked restarts, all automations/timers/car items loaded, reload trigger and Claude usage sensors now read from disk; automatic YAML reload confirmed (20 s).
-- Claude status in the top bar, idle and waiting states (BUILD .220).
-- Flight board styles moved to their own slice, no visual change (BUILD .219).
-- Settings page, Your house editor, work-started alerts (BUILD .218).
-- Claude cost totals and Ask Claude on the Home Claude card (BUILD .217).
-- Collapsed cards remembered per person, collapse on pet and Pi cards, Updated dots on page icons (BUILD .216).
-- Kids bedtime story, gift masking in the email panel, styles split (BUILD .215).
-- Shared storage places, band members, Garage load fix; docs: how it's built and dark mode (BUILD .214).
-- Looks (Paper, Glass, Bold), pantry dates and missing ingredients, packages from email with hidden gifts, Storage NFC tags (BUILD .213).
-- Band name on Hobbies, theme button says what Auto follows (BUILD .212).
-- Design looks (Classic, Paper, Glass, Bold), NFC tags on storage boxes and garage drawers, packages added from email with gifts hidden, pantry sell-by/use-by and missing ingredients for dinner; Jot import: 4 ideas filed (ideas 3db30522, aa288a74, daa533c8, 2e6c437a) (BUILD .211).
-- Checked-out items on top of the Backlog card; name-clash fixes (Google Tasks, work status, Workout); namecheck tool (BUILD .210).
-- Pet drawings: second colour and calico (BUILD .209).
-- Crypto 24/7 on Finance, About credit line (BUILD .208).
-- Document import, featured posts, start page and kid lock, favorites posters and play on TV, intercom transcripts, pet photo matching, invite with HTML email, hobbies import and suggestions, finance shares, legends check, live work status, type scale, docs tour (BUILD .207).
-- Jot import: featured post card filed.
-- Kids page, pantry use-by suggestions, Garage tool storage, map zoom check, Storage here count fix (BUILD .206).
-- Swipe between pages on phones, Planes map zoom fixes (tile seams, blank past zoom 16), trail entries in the map legend (BUILD .205).
+- Kids page pickup time (BUILD .221). [Claude]
+- HA restarted twice: fixed the YAML that blocked restarts, all automations/timers/car items loaded, reload trigger and Claude usage sensors now read from disk; automatic YAML reload confirmed (20 s). [Source unknown]
+- Claude status in the top bar, idle and waiting states (BUILD .220). [Human]
+- Flight board styles moved to their own slice, no visual change (BUILD .219). [Claude (found in review)]
+- Settings page, Your house editor, work-started alerts (BUILD .218). [Claude]
+- Claude cost totals and Ask Claude on the Home Claude card (BUILD .217). [Human]
+- Collapsed cards remembered per person, collapse on pet and Pi cards, Updated dots on page icons (BUILD .216). [Human]
+- Kids bedtime story, gift masking in the email panel, styles split (BUILD .215). [Human]
+- Shared storage places, band members, Garage load fix; docs: how it's built and dark mode (BUILD .214). [Human]
+- Looks (Paper, Glass, Bold), pantry dates and missing ingredients, packages from email with hidden gifts, Storage NFC tags (BUILD .213). [Claude]
+- Band name on Hobbies, theme button says what Auto follows (BUILD .212). [Human]
+- Design looks (Classic, Paper, Glass, Bold), NFC tags on storage boxes and garage drawers, packages added from email with gifts hidden, pantry sell-by/use-by and missing ingredients for dinner; Jot import: 4 ideas filed (ideas 3db30522, aa288a74, daa533c8, 2e6c437a) (BUILD .211). [Human]
+- Checked-out items on top of the Backlog card; name-clash fixes (Google Tasks, work status, Workout); namecheck tool (BUILD .210). [Claude (found in review)]
+- Pet drawings: second colour and calico (BUILD .209). [Human]
+- Crypto 24/7 on Finance, About credit line (BUILD .208). [Human]
+- Document import, featured posts, start page and kid lock, favorites posters and play on TV, intercom transcripts, pet photo matching, invite with HTML email, hobbies import and suggestions, finance shares, legends check, live work status, type scale, docs tour (BUILD .207). [Human]
+- Jot import: featured post card filed (). [Human]
+- Kids page, pantry use-by suggestions, Garage tool storage, map zoom check, Storage here count fix (BUILD .206). [Human]
+- Swipe between pages on phones, Planes map zoom fixes (tile seams, blank past zoom 16), trail entries in the map legend (BUILD .205). [Human]
 
 ## Before 1.0 · Versions 0.110 to 0.204
 
-- Each TV gets its own TV-dashboard view (survives reloads), legend on the Map path (BUILD .204).
-- New build chime, wishlist links show at once with a Pending tag, legends on the Planes map and Bitcoin chart (BUILD .203).
-- Central data store phase 1 (merge, shrink guard, history + Undo, nightly export), System → Saved data card, ISS legend on Space and Home, banner bubble lag and Thanksgiving pennants fixed (BUILD .202).
-- Jot import: house decorations bug, ISS legend, legends rule, new-build chime, pending wishlist links, purchased-hardware ideas, Kids page, TV volume leveler filed (ideas f8db73da, 65b3caf4, 6136bbc8, fc97ca0c, 379e45b8, d75af3e8, 91845632); wishlist link saved.
-- Pets on the GUI instead of the house picture (BUILD .201).
-- Data retention: datacheck tool, person data synced per user, settings-sync migration, load-first guard; manual link opens the docs home (BUILD .200).
-- Jot import: kitchen counter Nest Hub filed.
-- Ignored-suggestions archive, medicine running low, leaving-the-house check, kitchen timers, out-the-door checklist (BUILD .199).
-- Bigger batches: 5-10 items per build.
-- Tap the banner to see why (BUILD .198).
-- Storage here on room pages, NEW-tag release switch, docs stats header and change log (BUILD .197).
-- Tasks on the TV view, cat medicine bottle expiry, pet walking bug closed (BUILD .196).
-- Show done fix, About last + i button + scrolling top bar, user manual link for everyone (BUILD .195).
-- Kitchen tablet mode and kitchen cards on the Kitchen room page; docs refreshed (BUILD .194).
-- Medicine sync safety fix, code review fixes, pet walk/run poses (BUILD .193).
-- Kitchen display preset, package-outside phone alert, pet play on the Pets page (BUILD .192).
-- Leave-by time in the morning briefing, dinner pickup prompt, automation templates, pet name on tap (BUILD .191).
-- More holiday looks and birthdays, medicine per child, car dates (BUILD .190).
-- Storage QR labels and low counts, every card on its page, cat medicine by NFC (BUILD .189).
-- Tap card headers to collapse, refresh resets cards, banner windows map, fit text, pet extras, morning briefing read aloud (BUILD .188).
-- About page, Automations page, Google Tasks (BUILD .187).
-- Every area listed on Rooms (BUILD .186).
-- Type scale, cast per TV, room settings and cards (BUILD .185).
-- Workout page, holiday decorations on the house, pets that play around the app (BUILD .184).
-- Activity page, package left outside, carry-out orders, kids' activity ideas (BUILD .183).
-- Storage page, Hobbies page, Home settings card (BUILD .182).
-- Handedness, device setup checklist, longer welcome tour, birthday reminder, pet tidbits (BUILD .181).
-- Gas price phone alerts (BUILD .180).
-- Doorbell card in every room, gas price alerts, medicine doses on buttons (BUILD .179).
-- Stock aircraft photos for any type; Home gaps closed (BUILD .178).
-- Change log by build, What's new card, room icon picker, theme colours (BUILD .177).
-- Wishlist and backlog can't go blank (BUILD .175).
-- Card menu fixes, light-mode readability, dark + light quality check (BUILD .174).
-- Box scores, wishlist Purchased, birthdays not on a calendar, Log temp (BUILD .172; first batch built with helper agents).
-- Code split into pieces with a build step (no change to the app).
-- Pantry place editor and types, Full window fits, card ⋯ menu, equal card widths + gap check (BUILD .171).
-- Shared settings save guard (BUILD .167).
-- Car notes and recall alerts, Family favorites and movie night (BUILD .166).
-- Import now button, intercom phone notifications, pantry container types (BUILD .165).
-- Pet names on feeder and litter, User manual card and tour link (BUILD .164).
-- Rain + garage, week-ahead traditions, Hidden cards section on System (BUILD .163).
-- Card off for everyone, low batteries card, week-ahead maintenance (BUILD .161).
-- Goodnight button and 11 PM check, week-ahead notification, For sale card (BUILD .160).
-- Single-card widths, container card layout, wishlist × (BUILD .159).
-- YouTube TV channel links for Sports (BUILD .158).
-- Claude card shows credits and auto mode (BUILD .157).
-- Medicine expiring card and expired-dose warning (BUILD .156).
-- Autopilot button in the Design Studio (BUILD .155).
-- Build number on phones (BUILD .154).
-- Backlog header count fixed (BUILD .153); one plane alert per pass.
-- Pantry & Fridge storage places (BUILD .152).
-- Nashboard Autopilot control panel (private Claude page).
-- New on Wi-Fi: Unknown button and Follow up later list (BUILD .151).
-- Phone alerts no longer call removed devices (plane overhead repair).
-- Sunday week-ahead card (BUILD .149).
-- NEW tag on recently added pages (BUILD .148).
-- Change log: one heading per day.
-- N badge drawn as a centered shape so the letter sits in the middle on every phone (BUILD .147).
-- Wishlist refreshes on its own (BUILD .146).
-- Every feature and Change log cards: compact rows, no blank gaps (BUILD .145).
-- UI standard: every page card grid on the shared card width (Air, Guest, Network, System, Rooms, Space, Sports, Packages, Pets) (BUILD .144).
-- Design Studio cards a third wide (BUILD .143).
-- Goodnight check card (BUILD .142).
-- Morning briefing card (BUILD .141).
-- Design Studio and Pantry on the standard columns (BUILD .140).
-- Backlog sections start collapsed; six accepted suggestions filed (BUILD .139).
-- Cook mode text shrinks to fit (BUILD .138).
-- Suggestions in Jot it down with Accept / Ignore (BUILD .137).
-- Cars by VIN (BUILD .136).
-- Guest Watching TV card (BUILD .135).
-- Hide any card, bring it back from Customize menu (BUILD .134).
-- Planes map buttons scroll on small screens; design rule: everything follows the standards, new things get one (BUILD .133).
-- Design Studio and Pantry cards pack properly (BUILD .132).
-- Swipe to remove jotted ideas (BUILD .131).
-- Fastest plane details fixed (BUILD .130).
-- Map page grey boxes on first load fixed (BUILD .129).
-- Guest page weather (BUILD .128).
-- Browser cleanup and reopen last page (BUILD .127).
-- Sports: one highlights and one condensed link per game (BUILD .126).
-- N badge: original letter styling back, still centred on the toolbar (BUILD .125).
-- No input character limits; photo icon; Change log card (BUILD .124).
-- No Jot it down character limit; commute trips off Home (BUILD .123).
-- N badge centred; Family OS subtitle; Jot it down stays put and keeps drafts; updates wait while typing (BUILD .122).
-- Every feature card: rows no longer overlap (BUILD .120).
-- Holiday traditions (BUILD .119).
-- Menu ordered by most used, optional (BUILD .118).
-- Every feature card in the Design Studio (BUILD .117).
-- Right now cards on 10 pages: each page shows its Home cards all the time with a calm status (BUILD .116).
-- Shipped-per-day chart in the Design Studio (BUILD .115).
-- Planes map INFO toggle; arrivals board tabs fixed on phones (BUILD .114).
-- Pantry & Fridge rename with pantry/fridge/freezer (BUILD .113).
-- Phone title bar: N logo centered (BUILD .112).
-- Weather page: What to watch card (severe, rain, freeze, UV) always shown, Home shows copies (BUILD .111).
-- Design rule: cards live on their page first; Home shows copies when they matter.
-- Dog timeout uses the dog's name from Pet characters (BUILD .110).
+- Each TV gets its own TV-dashboard view (survives reloads), legend on the Map path (BUILD .204). [Human]
+- New build chime, wishlist links show at once with a Pending tag, legends on the Planes map and Bitcoin chart (BUILD .203). [Human]
+- Central data store phase 1 (merge, shrink guard, history + Undo, nightly export), System → Saved data card, ISS legend on Space and Home, banner bubble lag and Thanksgiving pennants fixed (BUILD .202). [Human]
+- Jot import: house decorations bug, ISS legend, legends rule, new-build chime, pending wishlist links, purchased-hardware ideas, Kids page, TV volume leveler filed (ideas f8db73da, 65b3caf4, 6136bbc8, fc97ca0c, 379e45b8, d75af3e8, 91845632); wishlist link saved. [Human]
+- Pets on the GUI instead of the house picture (BUILD .201). [Human]
+- Data retention: datacheck tool, person data synced per user, settings-sync migration, load-first guard; manual link opens the docs home (BUILD .200). [Claude (found in review)]
+- Jot import: kitchen counter Nest Hub filed (). [Human]
+- Ignored-suggestions archive, medicine running low, leaving-the-house check, kitchen timers, out-the-door checklist (BUILD .199). [Human]
+- Bigger batches: 5-10 items per build (). [Human]
+- Tap the banner to see why (BUILD .198). [Human]
+- Storage here on room pages, NEW-tag release switch, docs stats header and change log (BUILD .197). [Human]
+- Tasks on the TV view, cat medicine bottle expiry, pet walking bug closed (BUILD .196). [Human]
+- Show done fix, About last + i button + scrolling top bar, user manual link for everyone (BUILD .195). [Human]
+- Kitchen tablet mode and kitchen cards on the Kitchen room page; docs refreshed (BUILD .194). [Human]
+- Medicine sync safety fix, code review fixes, pet walk/run poses (BUILD .193). [Claude (found in review)]
+- Kitchen display preset, package-outside phone alert, pet play on the Pets page (BUILD .192). [Claude (found in review)]
+- Leave-by time in the morning briefing, dinner pickup prompt, automation templates, pet name on tap (BUILD .191). [Human]
+- More holiday looks and birthdays, medicine per child, car dates (BUILD .190). [Human]
+- Storage QR labels and low counts, every card on its page, cat medicine by NFC (BUILD .189). [Human]
+- Tap card headers to collapse, refresh resets cards, banner windows map, fit text, pet extras, morning briefing read aloud (BUILD .188). [Human]
+- About page, Automations page, Google Tasks (BUILD .187). [Human]
+- Every area listed on Rooms (BUILD .186). [Human]
+- Type scale, cast per TV, room settings and cards (BUILD .185). [Human]
+- Workout page, holiday decorations on the house, pets that play around the app (BUILD .184). [Human]
+- Activity page, package left outside, carry-out orders, kids' activity ideas (BUILD .183). [Human]
+- Storage page, Hobbies page, Home settings card (BUILD .182). [Human]
+- Handedness, device setup checklist, longer welcome tour, birthday reminder, pet tidbits (BUILD .181). [Human]
+- Gas price phone alerts (BUILD .180). [Human]
+- Doorbell card in every room, gas price alerts, medicine doses on buttons (BUILD .179). [Human]
+- Stock aircraft photos for any type; Home gaps closed (BUILD .178). [Human]
+- Change log by build, What's new card, room icon picker, theme colours (BUILD .177). [Human]
+- Wishlist and backlog can't go blank (BUILD .175). [Human]
+- Card menu fixes, light-mode readability, dark + light quality check (BUILD .174). [Claude (found in review)]
+- Box scores, wishlist Purchased, birthdays not on a calendar, Log temp (BUILD .172; first batch built with helper agents). [Human]
+- Code split into pieces with a build step (no change to the app). [Source unknown]
+- Pantry place editor and types, Full window fits, card ⋯ menu, equal card widths + gap check (BUILD .171). [Human]
+- Shared settings save guard (BUILD .167). [Claude (found in review)]
+- Car notes and recall alerts, Family favorites and movie night (BUILD .166). [Human]
+- Import now button, intercom phone notifications, pantry container types (BUILD .165). [Human]
+- Pet names on feeder and litter, User manual card and tour link (BUILD .164). [Human]
+- Rain + garage, week-ahead traditions, Hidden cards section on System (BUILD .163). [Human]
+- Card off for everyone, low batteries card, week-ahead maintenance (BUILD .161). [Human]
+- Goodnight button and 11 PM check, week-ahead notification, For sale card (BUILD .160). [Human]
+- Single-card widths, container card layout, wishlist × (BUILD .159). [Human]
+- YouTube TV channel links for Sports (BUILD .158). [Human]
+- Claude card shows credits and auto mode (BUILD .157). [Human]
+- Medicine expiring card and expired-dose warning (BUILD .156). [Human]
+- Autopilot button in the Design Studio (BUILD .155). [Human]
+- Build number on phones (BUILD .154). [Human]
+- Backlog header count fixed (BUILD .153); one plane alert per pass. [Human]
+- Pantry & Fridge storage places (BUILD .152). [Human]
+- Nashboard Autopilot control panel (private Claude page). [Source unknown]
+- New on Wi-Fi: Unknown button and Follow up later list (BUILD .151). [Human]
+- Phone alerts no longer call removed devices (plane overhead repair). [Source unknown]
+- Sunday week-ahead card (BUILD .149). [Human]
+- NEW tag on recently added pages (BUILD .148). [Human]
+- Change log: one heading per day. [Human]
+- N badge drawn as a centered shape so the letter sits in the middle on every phone (BUILD .147). [Human]
+- Wishlist refreshes on its own (BUILD .146). [Human]
+- Every feature and Change log cards: compact rows, no blank gaps (BUILD .145). [Human]
+- UI standard: every page card grid on the shared card width (Air, Guest, Network, System, Rooms, Space, Sports, Packages, Pets) (BUILD .144). [Human]
+- Design Studio cards a third wide (BUILD .143). [Human]
+- Goodnight check card (BUILD .142). [Human]
+- Morning briefing card (BUILD .141). [Claude (found in review)]
+- Design Studio and Pantry on the standard columns (BUILD .140). [Human]
+- Backlog sections start collapsed; six accepted suggestions filed (BUILD .139). [Human]
+- Cook mode text shrinks to fit (BUILD .138). [Human]
+- Suggestions in Jot it down with Accept / Ignore (BUILD .137). [Human]
+- Cars by VIN (BUILD .136). [Human]
+- Guest Watching TV card (BUILD .135). [Human]
+- Hide any card, bring it back from Customize menu (BUILD .134). [Human]
+- Planes map buttons scroll on small screens; design rule: everything follows the standards, new things get one (BUILD .133). [Human]
+- Design Studio and Pantry cards pack properly (BUILD .132). [Human]
+- Swipe to remove jotted ideas (BUILD .131). [Human]
+- Fastest plane details fixed (BUILD .130). [Human]
+- Map page grey boxes on first load fixed (BUILD .129). [Human]
+- Guest page weather (BUILD .128). [Human]
+- Browser cleanup and reopen last page (BUILD .127). [Human]
+- Sports: one highlights and one condensed link per game (BUILD .126). [Human]
+- N badge: original letter styling back, still centred on the toolbar (BUILD .125). [Human]
+- No input character limits; photo icon; Change log card (BUILD .124). [Human]
+- No Jot it down character limit; commute trips off Home (BUILD .123). [Human]
+- N badge centred; Family OS subtitle; Jot it down stays put and keeps drafts; updates wait while typing (BUILD .122). [Claude (found in review)]
+- Every feature card: rows no longer overlap (BUILD .120). [Claude]
+- Holiday traditions (BUILD .119). [Human]
+- Menu ordered by most used, optional (BUILD .118). [Claude]
+- Every feature card in the Design Studio (BUILD .117). [Human]
+- Right now cards on 10 pages: each page shows its Home cards all the time with a calm status (BUILD .116). [Claude]
+- Shipped-per-day chart in the Design Studio (BUILD .115). [Human]
+- Planes map INFO toggle; arrivals board tabs fixed on phones (BUILD .114). [Human]
+- Pantry & Fridge rename with pantry/fridge/freezer (BUILD .113). [Human]
+- Phone title bar: N logo centered () (BUILD .112). [Human]
+- Weather page: What to watch card (severe, rain, freeze, UV) always shown, Home shows copies (BUILD .111). [Human]
+- Design rule: cards live on their page first; Home shows copies when they matter. [Human]
+- Dog timeout uses the dog's name from Pet characters (BUILD .110). [Human]
 
 ## Before 1.0 · Versions 0.18 to 0.109
 
-- Shopping page shows only shopping lists (BUILD .109).
-- Docs version 2.0: Living with Nashboard guide, Home pop-up table and pages refreshed, Pantry page added.
-- Cat curls up in the front window late at night (BUILD .107).
-- Symptom buttons on the medicine card (BUILD .106).
-- Fever chart and doctor summary (BUILD .105).
-- Dog reacts to the doorbell (BUILD .104).
-- Market value tidbit (BUILD .103).
-- Docs: full feature list (docs/features.md), linked from the docs home and README (not published yet).
-- Pantry check on recipes; medicine rules, FDA label facts and duplicate checks (BUILD .102).
-- Pet characters on the Home banner (BUILD .100).
-- Welcome tour (BUILD .97).
-- Holiday themes and animations (BUILD .96).
-- Birthday reminders (BUILD .95).
-- Medicine rules (once a day, alternating fever medicines), recent record, OK-again phone alert (BUILD .94).
-- Medicine & fever card with quick tiles, fever log and history (BUILD .93).
-- Compact phone weather, bug button to Jot it down, real-browser Full window (BUILD .92).
-- Pantry page (BUILD .90).
-- Self-service YAML reload for Claude sessions.
-- Free reset and 90% notes merged into the existing Claude card; duplicate card removed (BUILD .89).
-- Home intercom (BUILD .88).
-- One font family throughout (BUILD .87).
-- Bug button on phones (BUILD .86).
-- Home cards on the TV/Display rotation; build number in the top bar (BUILD .85).
-- Cast menu and Cast settings (BUILD .84).
-- Little browser page in Labs (BUILD .83).
-- Nursery sleep log (BUILD .82).
-- Zip code location fallback (BUILD .81).
-- Photos on jotted ideas (BUILD .80).
-- Phone title bar: two lines and a brand badge (BUILD .79).
-- Cook mode: per-step ingredient list with pictures (BUILD .78).
-- BTC power law zoom; free usage reset alert on the Claude usage card (BUILD .77).
-- Claude usage Home card and phone alert (BUILD .76).
-- Recipes: amounts in the steps and cook mode (BUILD .75).
-- Phone alerts: Space Station passes and 7700 emergencies within 200 nm, from Home Assistant (BUILD .74).
-- Home card: on the way home; tidbit chip rotates on tap with new facts (BUILD .73).
-- Kid medicine tracker on the Family Board and Home (BUILD .71).
-- Nursery: Hatch presets (BUILD .70).
-- Internet services outage monitor on Network and Home (BUILD .69).
-- Home card: house health for admins (BUILD .68).
-- Home card: new devices on Wi-Fi (BUILD .67).
-- Home card: nursery asleep, with quiet chimes (BUILD .66).
-- Home card: leave soon for an event, with Navigate (BUILD .65).
-- Home card: severe weather warnings (BUILD .64).
-- Home card: chores due today (BUILD .63).
-- Cast confirmation chime on the TV (BUILD .62).
-- Dinner tonight: start-cooking time (BUILD .61).
-- Home cards: rocket launch and UV high (BUILD .60).
-- Home Markets card around the open and close and after big moves (BUILD .59).
-- Dog timeout timer and feeder reminders, with phone notifications (BUILD .58).
-- Car screens via the Home Assistant app (Android Auto and CarPlay); CAR-DESIGN.md; no more XXX league labels (BUILD .57).
-- Backlog page renamed Design Studio (BUILD .56).
-- Location standard (device, then commute plan, then home) on every map and radar; commute trips tied to people (BUILD .54).
-- Radar works on the cast TV: NWS radar loop fallback (BUILD .53).
-- Backlog page: Hardware wishlist with add-by-link and remove (BUILD .50).
-- Commute: Navigate button on every trip card, on phones and Home (BUILD .49).
-- Quick-add forms and card text boxes fit any card width (Add shows just + in narrow cards) (BUILD .48).
-- Home Assistant restarted; all teams back through the Teams picker.
-- Quick wins: commute cards only around the trip; refresh after reconnect; shared loading and empty look (BUILD .45).
-- Sports: all teams removable (moved out of configuration.yaml); team dropdown by league (BUILD .44).
-- Full window button on every page; mic on every quick-add list (BUILD .34).
-- Page width baseline raised to five standard cards (BUILD .33).
-- Page width rule: content capped at about four standard cards and centred on wide screens; single cards stack (BUILD .32).
-- Card model done (batch 6: Weather lower section packs) (BUILD .27).
-- Card model batch 5: Guest pet notes, Wi-Fi and contacts shown on Pets, Network and Family Board (BUILD .26).
-- Room dashboards show related cards from other pages (maintenance, batteries, pets, dinner, packages); room grids pack (BUILD .25).
-- Card model batch 3: Air & Allergy, Pets and System pack; Breaking news Show more (BUILD .24).
-- Card model batches 1–2: sizes and builder, Show more, fill-the-line text; Home Rooms and calendar, pop-ups, Network and Guest (BUILD .23).
-- Calendar redesign (4-week month); camera Full window controls stay visible (BUILD .21).
-- Full window keeps the rounded corner (BUILD .20).
-- Bugs: Map page sizing; Packages cards pack tightly (BUILD .19).
-- Bigger Weather radar, radar on Guest, fastest plane in the world (BUILD .18; needs a RESTful reload).
-- Quick wins: Shopping shows only shopping lists; delivered packages clear after 2 days; Commute page no longer needs an unused route; Map fits commute places.
-- Backlog page: jotted ideas show instantly under "Inbox" at the top of the backlog list, until a session files them.
-- Backlog page: instant ideas, narrower cards; System page: no full-width small cards; toolbar bug button to the Backlog.
-- Docs screenshots and artwork (demo house, hero banners, framed snips) embedded in docs/ and the README; kit in tools/docs-shots/.
-- Top bar: the brand name hides on narrow phones so the clock is not clipped.
-- Home layout: cards no longer get stuck in three squeezed columns on a phone after the screen was briefly wider (rotation, window resize, first load).
-- Docs: every page in menu order with a screenshot and a jump list; demo data for Commute, Map, Packages, Recipes, Pets and Finance.
-- Backlog page in the app with an ideas inbox Claude reads each session (tools/read-ideas.ps1).
-- Backlog consolidated into one topic list; docs/ site for pages and features (kept public-safe).
-- Home: Air quality card (Moderate or worse), shared with the Air page.
-- Earlier Nov 20: highest plane worldwide, card debounce, stable card placement, Air & Allergy, Guest, Family Board,
+- Shopping page shows only shopping lists (BUILD .109). [Human]
+- Docs version 2.0: Living with Nashboard guide, Home pop-up table and pages refreshed, Pantry page added. [Human]
+- Cat curls up in the front window late at night (BUILD .107). [Human]
+- Symptom buttons on the medicine card (BUILD .106). [Human]
+- Fever chart and doctor summary (BUILD .105). [Human]
+- Dog reacts to the doorbell (BUILD .104). [Human]
+- Market value tidbit (BUILD .103). [Human]
+- Docs: full feature list (docs/features.md), linked from the docs home and README (not published yet). [Human]
+- Pantry check on recipes; medicine rules, FDA label facts and duplicate checks (BUILD .102). [Claude (found in review)]
+- Pet characters on the Home banner (BUILD .100). [Human]
+- Welcome tour (BUILD .97). [Claude]
+- Holiday themes and animations (BUILD .96). [Human]
+- Birthday reminders (BUILD .95). [Human]
+- Medicine rules (once a day, alternating fever medicines), recent record, OK-again phone alert (BUILD .94). [Human]
+- Medicine & fever card with quick tiles, fever log and history (BUILD .93). [Human]
+- Compact phone weather, bug button to Jot it down, real-browser Full window (BUILD .92). [Human]
+- Pantry page (BUILD .90). [Human]
+- Self-service YAML reload for Claude sessions. [Source unknown]
+- Free reset and 90% notes merged into the existing Claude card; duplicate card removed (BUILD .89). [Human]
+- Home intercom (BUILD .88). [Human]
+- One font family throughout (BUILD .87). [Human]
+- Bug button on phones (BUILD .86). [Human]
+- Home cards on the TV/Display rotation; build number in the top bar (BUILD .85). [Human]
+- Cast menu and Cast settings (BUILD .84). [Human]
+- Little browser page in Labs (BUILD .83). [Human]
+- Nursery sleep log (BUILD .82). [Human]
+- Zip code location fallback (BUILD .81). [Human]
+- Photos on jotted ideas (BUILD .80). [Human]
+- Phone title bar: two lines and a brand badge (BUILD .79). [Human]
+- Cook mode: per-step ingredient list with pictures (BUILD .78). [Human]
+- BTC power law zoom; free usage reset alert on the Claude usage card (BUILD .77). [Human]
+- Claude usage Home card and phone alert (BUILD .76). [Human]
+- Recipes: amounts in the steps and cook mode (BUILD .75). [Human]
+- Phone alerts: Space Station passes and 7700 emergencies within 200 nm, from Home Assistant (BUILD .74). [Human]
+- Home card: on the way home; tidbit chip rotates on tap with new facts (BUILD .73). [Human]
+- Kid medicine tracker on the Family Board and Home (BUILD .71). [Human]
+- Nursery: Hatch presets (BUILD .70). [Human]
+- Internet services outage monitor on Network and Home (BUILD .69). [Human]
+- Home card: house health for admins (BUILD .68). [Human]
+- Home card: new devices on Wi-Fi (BUILD .67). [Human]
+- Home card: nursery asleep, with quiet chimes (BUILD .66). [Human]
+- Home card: leave soon for an event, with Navigate (BUILD .65). [Human]
+- Home card: severe weather warnings (BUILD .64). [Human]
+- Home card: chores due today (BUILD .63). [Claude]
+- Cast confirmation chime on the TV (BUILD .62). [Human]
+- Dinner tonight: start-cooking time (BUILD .61). [Human]
+- Home cards: rocket launch and UV high (BUILD .60). [Human]
+- Home Markets card around the open and close and after big moves (BUILD .59). [Human]
+- Dog timeout timer and feeder reminders, with phone notifications (BUILD .58). [Human]
+- Car screens via the Home Assistant app (Android Auto and CarPlay); CAR-DESIGN.md; no more XXX league labels (BUILD .57). [Human]
+- Backlog page renamed Design Studio (BUILD .56). [Human]
+- Location standard (device, then commute plan, then home) on every map and radar; commute trips tied to people (BUILD .54). [Human]
+- Radar works on the cast TV: NWS radar loop fallback (BUILD .53). [Human]
+- Backlog page: Hardware wishlist with add-by-link and remove (BUILD .50). [Human]
+- Commute: Navigate button on every trip card, on phones and Home (BUILD .49). [Human]
+- Quick-add forms and card text boxes fit any card width (Add shows just + in narrow cards) (BUILD .48). [Claude]
+- Home Assistant restarted; all teams back through the Teams picker. [Source unknown]
+- Quick wins: commute cards only around the trip; refresh after reconnect; shared loading and empty look (BUILD .45). [Human]
+- Sports: all teams removable (moved out of configuration.yaml); team dropdown by league (BUILD .44). [Human]
+- Full window button on every page; mic on every quick-add list (BUILD .34). [Claude]
+- Page width baseline raised to five standard cards (BUILD .33). [Claude]
+- Page width rule: content capped at about four standard cards and centred on wide screens; single cards stack (BUILD .32). [Human]
+- Card model done (batch 6: Weather lower section packs) (BUILD .27). [Human]
+- Card model batch 5: Guest pet notes, Wi-Fi and contacts shown on Pets, Network and Family Board (BUILD .26). [Human]
+- Room dashboards show related cards from other pages (maintenance, batteries, pets, dinner, packages); room grids pack (BUILD .25). [Human]
+- Card model batch 3: Air & Allergy, Pets and System pack; Breaking news Show more (BUILD .24). [Human]
+- Card model batches 1–2: sizes and builder, Show more, fill-the-line text; Home Rooms and calendar, pop-ups, Network and Guest (BUILD .23). [Human]
+- Calendar redesign (4-week month); camera Full window controls stay visible (BUILD .21). [Human]
+- Full window keeps the rounded corner (BUILD .20). [Human]
+- Bugs: Map page sizing; Packages cards pack tightly (BUILD .19). [Human]
+- Bigger Weather radar, radar on Guest, fastest plane in the world (BUILD .18; needs a RESTful reload). [Human]
+- Quick wins: Shopping shows only shopping lists; delivered packages clear after 2 days; Commute page no longer needs an unused route; Map fits commute places. [Source unknown]
+- Backlog page: jotted ideas show instantly under "Inbox" at the top of the backlog list, until a session files them. [Human]
+- Backlog page: instant ideas, narrower cards; System page: no full-width small cards; toolbar bug button to the Backlog. [Human]
+- Docs screenshots and artwork (demo house, hero banners, framed snips) embedded in docs/ and the README; kit in [Source unknown]
+- Top bar: the brand name hides on narrow phones so the clock is not clipped. [Human]
+- Home layout: cards no longer get stuck in three squeezed columns on a phone after the screen was briefly wider (rotation, window resize, first load). [Claude (found in review)]
+- Docs: every page in menu order with a screenshot and a jump list; demo data for Commute, Map, Packages, Recipes, Pets and Finance. [Human]
+- Backlog page in the app with an ideas inbox Claude reads each session (). [Human]
+- Backlog consolidated into one topic list; docs/ site for pages and features (kept public-safe). [Human]
+- Home: Air quality card (Moderate or worse), shared with the Air page. [Source unknown]
+- Earlier Nov 20: highest plane worldwide, card debounce, stable card placement, Air & Allergy, Guest, Family Board, Network & Storage, Speedtest.net, router SNMP and SRM device list. [Human]
 
-## Version 1.23
+## Earlier builds
 
-- Home "Overhead" card: photo shows only once loaded (falls back to Planespotters if the first photo fails),
-- Planes page: glass cards on the map's left edge for the picked plane (all details, small photo), the closest
-- Home cards keep their place once the page has loaded: expanding a card makes it longer in place instead of
-- Commute cards say why there's no time (route missing / Waze not responding / no route yet) instead of
-- Live games come back on Home even if swiped away earlier; live dot and score flash.
-- GasBuddy and Claude cards collapse to their top half; tap the header to expand (saved per user).
-- Frigate: Mosquitto + Frigate apps, Garage stream live, Frigate integration copied in (Front Yard tabled).
-- Tidbits chip on the Home banner (rotates topic per load, Home only).
-- Compact weather overlay on the Home banner; separate weather card hidden on wide screens.
-- Mailbox redrawn from the real pillar photo.
-- Casting fix: inline (srcdoc) rendering in the cast app to get around X-Frame-Options.
-- Display mode shows "Partly cloudy" instead of "Partlycloudy".
-- House image no longer flattens: redrawn as soon as the banner resizes, and never squashed while waiting.
-- Weather overlay only on banners ≥ 920px wide; narrower banners show the regular weather card.
-- Space Station card on Home whenever the ISS is above the horizon (from 10 min before it rises until it sets):
-- "Nashboard" title in the top bar beside the greeting.
-- Menu pages picker (System → Menu pages, or More → Customize menu): choose which pages show in the
-- Alert and notification switches (planes, Space Station, 7700, connection lost, person chime, garage
-- **One Display everywhere:** TV dashboard loads Display mode itself; casting and Open show the same thing. Toggle **Rotate** / **One screen**; one setting for all displays.
-- **Automatic cards on Display:** Up next, Commute, Games, Overhead aircraft (live distance), Space Station, Packages, Now playing, Breaking news.
-- **Pop-up cards on Home + Display (shared list):** Garage open, Litter-Robot, Rain coming, Freeze tonight, Dinner tonight (Mealie), Autoship soon, Lights still on. Preview with `?popdemo=1`.
-- **Uniform card titles** on Home: icon + title, full width.
-- **Full-window zoom:** Planes map, Map page, radar.
-- **System cleanup:** cameras, Waze, Music Assistant reconnected after outage; failed backup re-run; Google News rate limit fixed; broken FR24 airport sensors off; cameras self-heal.
-- Nov 25 2026: Jot import filed 25 ideas (all with idea ids; 2 pairs merged; marker idea d9513614 "IMPORT NOW" handled).
-- Nov 25 2026 (1.21 printer extras): printer controls on the Printer card, Print reports card, low supply to shopping list (branch worktree-agent-ac4b6898c982a75e0).
-- Nov 25 2026: Hardware cards share one layout (hwdCard): status dot, one row of numbers with bars, Details fold, calm not-reporting line.
-- Nov 25 2026 (1.23 docs team): table fixes and tablecheck, plain-list contents, previous/next links on every docs page, Home Assistant OS and free-to-run section (ideas 59cc9444, a3fccdf4, 41ec7b0e).
-- Nov 25 2026: Version 1.23 (BUILD .288): card drag and Wider/Narrower resize saved per person; title-bar loading wheels; combined cards round 3 (Health, Home upkeep, Daily routine); one phone alert per security event; location share only by its owner; package dedupe, delivery-check fixes and USPS email fallback; shorter welcome tour and lighter defaults; banner chips, sticky countdown, Take a photo opens the camera, Cast fix and castcheck; Right now side-by-side heights on pages; text-only AI to a local text model; screens always reach the latest build; document import review flow (Location + Room, lunch menu calendar, marker confirm, pack-a-lunch reminders; reading the menu and agenda photos continues in 1.24); wall screens drop the finance cache; About and Backlog on Smart layout; a gone card closes its gap once; docs tables, contents list, prev/next links and Home Assistant OS intro.
+- Home "Overhead" card: photo shows only once loaded (falls back to Planespotters if the first photo fails), header padding fixed, distance no longer cut off, model not repeated. [Human]
+- Planes page: glass cards on the map's left edge for the picked plane (all details, small photo), the closest plane and military planes in range; the big detail panel under the map is gone. Picking a plane centres it beside the cards. [Source unknown]
+- Home cards keep their place once the page has loaded: expanding a card makes it longer in place instead of re-planning the grid (full re-plan only in the first 3 s, or when cards appear/disappear). [Source unknown]
+- Commute cards say why there's no time (route missing / Waze not responding / no route yet) instead of "Waiting for Waze…". [Source unknown]
+- Live games come back on Home even if swiped away earlier; live dot and score flash. [Source unknown]
+- GasBuddy and Claude cards collapse to their top half; tap the header to expand (saved per user). [Source unknown]
+- Frigate: Mosquitto + Frigate apps, Garage stream live, Frigate integration copied in (Front Yard tabled). [Source unknown]
+- Tidbits chip on the Home banner (rotates topic per load, Home only). [Source unknown]
+- Compact weather overlay on the Home banner; separate weather card hidden on wide screens. [Human]
+- Mailbox redrawn from the real pillar photo. [Source unknown]
+- Casting fix: inline (srcdoc) rendering in the cast app to get around X-Frame-Options. [Source unknown]
+- Display mode shows "Partly cloudy" instead of "Partlycloudy". [Source unknown]
+- House image no longer flattens: redrawn as soon as the banner resizes, and never squashed while waiting. [Source unknown]
+- Weather overlay only on banners ≥ 920px wide; narrower banners show the regular weather card. [Human]
+- Space Station card on Home whenever the ISS is above the horizon (from 10 min before it rises until it sets): live sky dial with the pass track, where to look, visible or not, time left. Replaces the small alert while shown. [Source unknown]
+- "Nashboard" title in the top bar beside the greeting. [Human]
+- Menu pages picker (System → Menu pages, or More → Customize menu): choose which pages show in the sidebar; Home is locked on. Saved per Home Assistant user. [Source unknown]
+- Alert and notification switches (planes, Space Station, 7700, connection lost, person chime, garage chime) now saved per user too, so they follow you to every device. [Source unknown]
+- **One Display everywhere:** TV dashboard loads Display mode itself; casting and Open show the same thing. Toggle **Rotate** / **One screen**; one setting for all displays. [Human]
+- **Automatic cards on Display:** Up next, Commute, Games, Overhead aircraft (live distance), Space Station, Packages, Now playing, Breaking news. [Source unknown]
+- **Pop-up cards on Home + Display (shared list):** Garage open, Litter-Robot, Rain coming, Freeze tonight, Dinner tonight (Mealie), Autoship soon, Lights still on. Preview with `?popdemo=1`. [Human]
+- **Uniform card titles** on Home: icon + title, full width. [Source unknown]
+- **Full-window zoom:** Planes map, Map page, radar. [Human]
+- **System cleanup:** cameras, Waze, Music Assistant reconnected after outage; failed backup re-run; Google News rate limit fixed; broken FR24 airport sensors off; cameras self-heal. [Source unknown]
+- Nov 26 2026 (1.24, fixes-124b): Backlog page shows each item's planned version chip (1.N, or Later); Design Studio status cards update in place with a calm first draw; docs say where AI decides (overview in features plus notes on each page) (ideas 6768c402, 29614d78, b6222fc6). [Human]

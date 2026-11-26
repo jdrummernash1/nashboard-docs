@@ -1,29 +1,31 @@
 # Reading order for the previous / next links at the top and bottom of every docs page (same order as the front page list).
-- {url: "/", title: "Nashboard"}
-- {url: "/why-nashboard.html", title: "Why Nashboard"}
-- {url: "/tour.html", title: "Guided tour"}
-- {url: "/living-with-nashboard.html", title: "Living with Nashboard"}
-- {url: "/home.html", title: "Home page"}
-- {url: "/pages.html", title: "All pages"}
-- {url: "/features.html", title: "Every feature"}
-- {url: "/themes.html", title: "Themes"}
-- {url: "/release-1.0.html", title: "Nashboard 1.0"}
-- {url: "/faq.html", title: "FAQ"}
-- {url: "/setup.html", title: "Set it up"}
-- {url: "/getting-started.html", title: "Getting started"}
-- {url: "/settings.html", title: "Settings"}
-- {url: "/device-setup.html", title: "Device setup"}
-- {url: "/integrations.html", title: "Data sources"}
-- {url: "/automations.html", title: "Automations"}
-- {url: "/notifications.html", title: "Notifications"}
-- {url: "/how-it-connects.html", title: "How it all connects"}
-- {url: "/how-its-built.html", title: "How it's built"}
-- {url: "/ai-build-system.html", title: "How the AI builds it"}
-- {url: "/diagrams.html", title: "Diagrams"}
-- {url: "/app-architecture.html", title: "App architecture"}
-- {url: "/developer-workflow.html", title: "Developer workflow"}
-- {url: "/developer-tools.html", title: "Developer tools"}
-- {url: "/design-engine.html", title: "Design engine"}
-- {url: "/design-kit.html", title: "Design kit"}
-- {url: "/car-app.html", title: "Future: car app"}
-- {url: "/changelog.html", title: "Change log"}
+- {group: "Start", url: "/", title: "Nashboard"}
+- {group: "Start", url: "/why-nashboard.html", title: "Why Nashboard"}
+- {group: "Start", url: "/tour.html", title: "Guided tour"}
+- {group: "Start", url: "/living-with-nashboard.html", title: "Living with Nashboard"}
+- {group: "Use it", url: "/home.html", title: "Home page"}
+- {group: "Use it", url: "/pages.html", title: "All pages"}
+- {group: "Use it", url: "/features.html", title: "Every feature"}
+- {group: "Use it", url: "/themes.html", title: "Themes"}
+- {group: "Use it", url: "/release-1.0.html", title: "Nashboard 1.0"}
+- {group: "Use it", url: "/faq.html", title: "FAQ"}
+- {group: "Set it up", url: "/setup.html", title: "Set it up"}
+- {group: "Set it up", url: "/getting-started.html", title: "Getting started"}
+- {group: "Set it up", url: "/settings.html", title: "Settings"}
+- {group: "Set it up", url: "/device-setup.html", title: "Device setup"}
+- {group: "Set it up", url: "/integrations.html", title: "Data sources"}
+- {group: "Set it up", url: "/automations.html", title: "Automations"}
+- {group: "Set it up", url: "/notifications.html", title: "Notifications"}
+- {group: "Behind the scenes", url: "/how-it-connects.html", title: "How it all connects"}
+- {group: "Behind the scenes", url: "/how-its-built.html", title: "How it's built"}
+- {group: "Behind the scenes", url: "/ai-build-system.html", title: "How the AI builds it"}
+- {group: "Behind the scenes", url: "/diagrams.html", title: "Diagrams"}
+- {group: "Behind the scenes", url: "/app-architecture.html", title: "App architecture"}
+- {group: "Behind the scenes", url: "/developer-workflow.html", title: "Developer workflow"}
+- {group: "Behind the scenes", url: "/developer-tools.html", title: "Developer tools"}
+- {group: "Behind the scenes", url: "/design-engine.html", title: "Design engine"}
+- {group: "Behind the scenes", url: "/design-kit.html", title: "Design kit"}
+- {group: "Behind the scenes", url: "/forks-and-models.html", title: "Forks and models"}
+- {group: "Behind the scenes", url: "/car-app.html", title: "Future: car app"}
+- {group: "Changes", url: "/changelog.html", title: "Change log"}
+- {group: "Changes", url: "/credits.html", title: "Credits"}
