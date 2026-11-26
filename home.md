@@ -39,6 +39,7 @@ connection status. Its buttons sit tight, and text that does not fit scrolls ins
 | **Weather** | Always, unless the banner overlay is showing it; phones also get a card for the phone's own location |
 | **Calendar / Up next** | Upcoming events, sized to fit names |
 | **Rooms** | The six most-used rooms first (Show more for the rest) with quick controls; tap a room name for its room dashboard |
+| **Floor plan** (top of Rooms) | Draw rooms as rectangles on a grid (or add your areas in one tap, or upload a plan image), then place lights, doors and windows. Rooms with a light on glow, open doors and windows show red, tap a light to switch it, tap a room to open it. Several floors, a legend, saved in Home Assistant |
 | **Cameras** | Camera snapshots |
 | **Overhead** | A plane within 5 nm: photo, airline, route, altitude, speed and live distance. Stays at least 3 minutes and follows the plane as it leaves |
 | **Space Station** | From 10 minutes before the ISS rises until it sets: a live sky dial with the pass track and where to look |
@@ -92,7 +93,7 @@ doesn't flicker; if the situation clears sooner the card says so ("Closed now", 
 leaves. Several have a one-tap action button.
 
 <!-- homecards:start -->
-The app has 120 automatic Home cards. This table is written from the app's own list and its How it works texts, so it always matches the app.
+The app has 138 automatic Home cards. This table is written from the app's own list and its How it works texts, so it always matches the app.
 
 | Home card | Shows when | What you can do |
 |---|---|---|
@@ -136,7 +137,7 @@ The app has 120 automatic Home cards. This table is written from the app's own l
 | Cat’s medicine | No longer shown on its own: the cat's medicine row now appears inside the Pet care due card. | Tap Log now to record that the dose was given. |
 | Overdue tasks | Only when a task is past its due date. | Read-only; finish tasks on the Calendar page. |
 | Running low | On Home when an item's count reaches its low level. | Read only; update the count on the Storage page. |
-| Warranty ending | On Home when a stored item has a warranty ending in the next 30 days. | Tap the Manual link if one is saved. |
+| Warranty ending | On Home when a stored item has a warranty ending in the next 30 days. | Shows serial, receipt and manual links. |
 | Car due soon | When a date is within 30 days or overdue, or an oil change is within 500 miles. | Read-only. |
 | Hobbies | On Home when something for a picked hobby is due today, tomorrow or within a week. | Read only; open the Hobbies page for details. |
 | Something to do today | Saturday and Sunday mornings, 8 to 10 AM. | Read-only; the Family Board card has We did it. |
@@ -160,6 +161,8 @@ The app has 120 automatic Home cards. This table is written from the app's own l
 | Plug in the car | Appears from 6 PM when the battery is below your chosen level and the car is not plugged in. | Read only. |
 | Added from email | When something was added in the last 24 hours or an email is waiting. | Follow the link to the Family Board to undo an item or approve a waiting email. |
 | Featured | Until the post's show-until date. | Tap the link to open the post. |
+| Last night’s fever and medicine | On Family and Home from 6 to 11 AM, only when something was logged overnight. | Tap Copy for the doctor to copy the summary, or Done to hide it. |
+| Fridge or freezer check | On Home while it matters, and on Pantry & Fridge. | Tap Done once you have checked it. |
 | Gaming | On Home while someone is playing. | Read only. |
 | Achievement | Appears for 3 hours after an unlock. | Read only. |
 | Garage door left open | Appears when a door picked in settings, or a limit shorter than 10 minutes, has been open too long; the plain Garage open card covers the default 10 minutes. | Tap Close and confirm to close the door. |
@@ -174,12 +177,20 @@ The app has 120 automatic Home cards. This table is written from the app's own l
 | Everyone left | Appears for 45 minutes after the last person leaves, only if something is left on or open. | Turn all lights off, or lock and close the garage with a tap-twice confirm. |
 | Eat this first | Appears when a leftover is due within a day or already past its date. | Read only on Home; manage leftovers on the Pantry page. |
 | Reading tonight | About 6 to 9 PM, when a book is picked for today. | Tap We read it to log it. |
+| This week in music | On Home on Sunday evening only. | Read only. |
+| Mail came | On Home from when mail arrives until someone taps I got it. | Tap I got it once the mail is in. |
 | Out the door | On Home weekday mornings 6 to 9:30 AM, while someone is home and items remain unticked. | Tap the link to open the Kitchen checklist and tick items off. |
+| Plants are thirsty | On Home and Hobbies, only for people with the Gardening hobby, until it rains or Done is tapped. | Tap Done for the day. |
 | Quiet hours | On wall screens and TVs only while quiet hours are active. | Read only; change it in Settings. |
+| Rain soon | On Home only while rain is expected within the hour. | Read only. |
 | Real-device checks | On Home once a week while any check is unticked; stops when all are ticked. | Open the checks, or remind me next week. |
+| Recall for something you own | On Home when a recall from the last 120 days may match. | Tap the link to read the notice, or Dismiss to hide that recall. |
 | Recently used | Appears when a card on another page was used in the last 4 hours. | Tap a row to go back to that card. |
+| Reward requests | On Home until a grown-up approves or declines. | Tap Approve twice to take the stars off, or Decline to close the request. |
 | Calendar clash | On the Calendar page and Family Board when a clash is found; on Home only for a clash today. Gone after Fixed or Not a clash. | Tap Fixed when you sorted it, or Not a clash to stop flagging that pair. |
+| Heads-up on the week | On Home on Sunday from 5 to 9 PM, only when something needs attention. | Read only. |
 | Overnight | Built once on the first screen wake after 6 AM; shows on Home and the Activity page (Security chip) until 10 AM. | Tap Got it to hide it for the day. |
+| Tonight’s plan | On Home from 4 to 6 PM, when there is something to say. | Read only. |
 | Trip prep | From 3 days before a trip until you leave, and again on the last day of the trip until the day after. | Tap Open the plan to tick things off on the Family Board. |
 | Something unusual | Only when today drifts from the usual for that weekday and a weekday has at least 3 learned days; hidden once answered. | Tap Expected to teach it that this is normal on that weekday, or Dismiss to hide it for today. |
 | Weekend plans | Friday after 5 PM until Sunday night. | Tap Add to put a plan on the family calendar. |
@@ -200,7 +211,7 @@ The app has 120 automatic Home cards. This table is written from the app's own l
 | Claude is working | For admins with the alert switch on, while any item is active. | Read-only. |
 | Workout summary | On Home for 2 hours after a workout or interval timer finishes. | Read only. |
 | Shopping run | On the weekly shopping day, or when the list reaches the set size. | Tap Start shopping to open the list grouped by store section. |
-| Package on the porch | While the package sensor is on, or a logged outside package is gone from view. | Open the camera from the button. |
+| Package on the porch | While the package sensor is on, or a logged outside package is gone from view. It hides when the front door opens after the package landed. | Open the camera from the button. |
 | Closings and delays today | Only when a feed lists a matching closing or delay today. | Tap Details to open the source page. |
 | Camera sees something | On Home when a watched state equals its alert value for the minutes you set. | Tap Open camera to see the camera. |
 | Mail truck | On Home when a vehicle sensor turns on, or near the usual mail time once learned and not yet seen. | Tap Yes, mail truck or Not it, or Open camera. |
@@ -208,14 +219,22 @@ The app has 120 automatic Home cards. This table is written from the app's own l
 | 3D print | On Home for an hour after a finish, or three hours after a failure; gone after. | Read-only. |
 | Router or NAS offline | On Home while it is true; gone when it is back. | Read-only. |
 | Processor at 100% | On Home and the Hardware page while a processor is at or above the threshold; gone when it drops. The alarm chimes on screens and sends one phone alert per episode. | Snooze 30 minutes or Done for this episode. |
+| News that touches the house | Checked once an hour; a headline hides 6 hours after it was published. Not shown when nothing affects the house. | Tap Read to open the story. |
+| Tomorrow's trips and the charge | From 6 PM when the car is not plugged in and the range is short for tomorrow's trips; it hides once the car is plugged in. Without a range sensor the Garage page says how to add one. | Read only. |
+| Sitter brief | On Home for grown-ups, from 2 hours before a calendar event with sitter or babysitter in its title or notes until it ends. Never on the wall screen, Display, kid screens or a guest login. | Print brief (a plain page you can print) and Share (your phone's share sheet, or the text is copied). |
+| While you were out | On Home when the first person gets home after the house was empty for 2 hours or more. It hides after 30 minutes or when you tap Done, for everyone. | Tap Done to hide it. |
 | Your private reminders | Only on your own screen while one is due or overdue. Never on the Display or wall screens. | Tap Done on a reminder you added. |
+| The day in a sentence | Only on TV and wall screens, from dusk until 10 PM, made once a day and then left alone. | Nothing to tap; it is there to read from across the room. |
 | Needs attention | For grown-ups only, while something needs attention; never on a wall screen or in guest mode. It also sits in Right now on the System page. | Tap Done to hide an item for a day, or Snooze for a week, on every screen. |
 | Chores this week | On Home and the Family Board on Sunday evening from 5 to 9 PM, when at least three chores were done by two or more people. | Tap Suggest a swap to see one open chore that could move to someone with a lighter week, then Swap it (tap twice) to rename it in the Chores list. |
 | Last one out | On Home only while everyone is away and something is left on; goes away when it is off or someone comes home. Turn it off in Everyone home settings. | Tap the button to turn lights off, lock up, close the garage or turn TVs off. |
 | Household mode | Only while the mode is not Home. | Tap Back to Home to bring every card back. |
 | Deadline coming up | The day before and the day of a deadline you have not hidden. | Open the Family Board to add it to the calendar or hide it. |
+| Shopping nudge | On Home while a leave-by line is showing or on the shopping day, and on the Shopping page. | Add an item, Ignore it for good, or Group by aisle. |
+| No dinner planned, use these first | From 3 to 6 PM on a day with no dinner planned, only while something expires within 3 days. | Tap Plan it to put the recipe on tonight's dinner in the Mealie meal plan. |
 | Scene suggestion | Near the usual hour, once a scene has been run at least four times around then. Never within 3 hours of running it. | Tap Run to start the scene, or Not now to hide it for the rest of the day (saved for you only). |
 | Space data is old | On the Space page only, once a refresh has been failing for 30 minutes or more. | Nothing to do; the page keeps showing the last good copy and tries again on its own. |
+| Someone bought you a coffee | For grown-ups only, for 3 days after a new supporter; never on a wall screen or in guest mode, and not at all until the Home Assistant side is set up. | Nothing to do; it goes away by itself. |
 
 <!-- homecards:end -->
 

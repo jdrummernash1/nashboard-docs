@@ -128,7 +128,7 @@ The family relies on this data, so these rules are the top priority.
   Backups are also made hourly while working, and after every batch of shipped items. Retention keeps the newest few, plus the newest
   of each week and each month. Deploys also back up saved frontend data, which never leaves the home server. Secrets and the database
   are never copied.
-- **Source of truth.** The dashboard is built from about 340 small source pieces that a build script joins into one generated page. The built file is never edited by hand,
+- **Source of truth.** The dashboard is built from about 460 small source pieces that a build script joins into one generated page. The built file is never edited by hand,
   and files are always pulled from Home Assistant first so a stale local copy is never assumed current.
 - **YAML safety.** Configuration files are syntax-checked before copying, and Home Assistant reloads them automatically afterwards.
 

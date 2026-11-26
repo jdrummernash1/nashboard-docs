@@ -170,6 +170,12 @@ for the email part.
 **Limits:** USPS tracking through 17TRACK may need its own activation. Whether a package is "outside" is worked out from
 delivery status, who's home and the time of day; when a Frigate package sensor is set up, it also confirms with a camera.
 
+### Mail pictures and "mail came, not collected"
+
+If the Mail and Packages integration (USPS Informed Delivery) is installed, Packages shows a swipe strip of today's mail
+pictures. When a mail-truck or mailbox sensor says the mail has arrived, Right now shows "Mail came, not collected" until
+someone taps "I got it" or the mailbox sensor opens. With none of these sensors the card and the line stay hidden.
+
 ---
 
 ## Weather: Open-Meteo, the National Weather Service and a weather integration
@@ -386,7 +392,9 @@ Each of these is optional. A card that uses one says what to add when it is miss
 | **AI Task or a conversation agent** in Home Assistant (a local model such as Ollama first) | Today at a glance, page summaries, document and photo import, vision checks, the bedtime story, automation suggestions | Optional; only a local model is used unless an admin allows cloud AI |
 | **Open Charge Map** | Nearby chargers on the EV charging card | Nothing (public data) |
 | **Art Institute of Chicago open data** | Public-domain art for the background picture and the picture frame | Nothing (no key) |
-| **Open Library** | Looking up a book by title, ISBN or barcode for the bedtime library | Nothing (no key) |
+| **Open Library** | Looking up a book by title, ISBN or barcode for the bedtime library and the Bookshelf, and cover art | Nothing (no key) |
+| **Google Books** | Book details and cover art for the Bookshelf when Open Library has no match | Nothing (no key) |
+| **E-book services (Libby / OverDrive, Hoopla, Kindle, Apple Books, Google Play Books, Kobo, Audible, Goodreads, The StoryGraph)** | Reading history on the Bookshelf, from each service's own export file or a pasted list | Nothing; no sign-in, no password |
 | **Wikimedia Commons** | A stock photo of each car's model when you have not added your own | Nothing; credited on About |
 | **US air traffic status and airspace feeds** | Air traffic tiles, restricted airspace and flight restrictions on Planes | Nothing (public data, US only) |
 | **Game accounts** (Steam, Xbox, PlayStation Network integrations) | The Gaming card, achievements, gamer of the week | The matching Home Assistant integration |

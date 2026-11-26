@@ -19,7 +19,7 @@ project. If you only want to look around first, see [Try the demo](#try-the-demo
 |---|---|
 | **Home Assistant**, any install type, reachable from your screens | Nashboard is a page that runs inside it. It has no server of its own. |
 | **An admin sign-in** | To add the two files and the dashboard. Family members do not need to be admins. |
-| **The two app files**: `dashboard.html` and `dash-embed.js` | These two files are the whole app: the code is written as more than 300 source pieces but ships as these two. Optional extras (shared pictures, one-time starting values) are separate data files and never needed to run. They will come with a Nashboard release once downloads open (not yet). |
+| **The two app files**: `dashboard.html` and `dash-embed.js` | These two files are the whole app: the code is written as more than 450 source pieces but ships as these two. Optional extras (shared pictures, one-time starting values) are separate data files and never needed to run. They will come with a Nashboard release once downloads open (not yet). |
 | **A way to put files in Home Assistant's `config/www` folder** | The File editor, Studio Code Server or Samba add-on all work. |
 
 Nothing else is required. Every page beyond Home, Rooms and Weather appears once Home Assistant has what it needs
@@ -127,7 +127,7 @@ kiosk browser on a wall tablet, and install the Home Assistant app on phones.
 
 ## How the files fit together
 
-- **`dashboard.html`**: the whole dashboard as one generated page. In the project it is written as more than 300 small
+- **`dashboard.html`**: the whole dashboard as one generated page. In the project it is written as more than 450 small
   source pieces (one per feature or page) that a build script joins and checks; nobody edits the generated page.
 - **`dash-embed.js`**: a small dashboard card that shows the page full size inside Home Assistant and hands it the
   signed-in user's access token. Opened from the Google Cast app, where Home Assistant forbids framing, the card loads

@@ -21,7 +21,7 @@ One expensive, careful model (the **main chat**, Opus) plans, integrates and che
 - **Sonnet / Haiku at low effort** for contained builds, lookups, filing and mechanical edits; effort goes up only after a low attempt fails.
 - **Fable** gets one short helper per build for the highest-judgement task (standing approval), until any usage meter reaches 50%; more than that only after asking the owner.
 - **Opus** is used for reviews, audits and docs writing.
-- Many agents at once (see the Nov 24 method below for the numbers), as long as they are coordinated. Each owns its own files (its own new `src/dashboard/47x-*.js` piece plus named pieces it may edit). Helpers never commit, deploy, edit `BACKLOG.md` or bump the build number; the main chat does.
+- Many agents at once (see "How models, helper counts and effort are chosen" below for the numbers), as long as they are coordinated. Each owns its own files (its own new `src/dashboard/47x-*.js` piece plus named pieces it may edit). Helpers never commit, deploy, edit `BACKLOG.md` or bump the build number; the main chat does.
 - Any helper idle more than 5 minutes is stopped and restarted (or its work picked up); leftover headless browser processes are cleared.
 
 ### Side sessions
@@ -67,14 +67,14 @@ The app can run many helpers at once, so the model for each job is throttled: th
 
 The numbered method below has the details. The same summary is in the app under About, Behind the scenes.
 
-### How models, helper counts and effort are chosen (Nov 24 method)
+### How models, helper counts and effort are chosen
 
-1. Each build starts with about 15 backlog items, easiest first, grouped into teams by the files they touch so no two teams edit the same file (claims live in `tools/team-claims.json`).
+1. Each build starts with a batch of backlog items (about 30), tagged with the version they are planned for, easiest first, grouped into teams by the files they touch so no two teams edit the same file (claims live in `tools/team-claims.json`).
 2. Before a team starts, the controller `node tools/delegate-pid.js pick --kind <kind>` names its model **and** effort for that kind of work (layout, check sweep, YAML, docs, research, code fix, code review, data migration, visual check), from a ladder: local Ollama, free cloud helpers, Haiku, Sonnet, Opus, Fable, each at low, medium or high effort.
 3. The controller has hard limits: code never goes to local or free cloud models, personal data never leaves the PC, and data migrations never drop below Sonnet at high effort; new kinds start at Sonnet medium.
 4. After every report the coordinator checks the work (diffs, checks, screenshots) and logs the result (`delegate-pid.js log`): ok, fixed with a number of fixes, or redo, plus a 0-1 quality score.
 5. The controller works like a PID loop on a target quality of 0.85: the proportional part reacts to the latest results, the integral part to the long-run pass rate (clamped so old history cannot take over), and the derivative part to the trend; a kind that slips moves up one rung at once, and one that keeps passing tries a cheaper rung after three clean passes in a row.
-6. Team count: at least about 30 Claude agents run while auto mode is on, each team lead may add up to two workers, with a hard cap of 50 that drops by 10 for every 10% of usage past half the plan window, and a clean stop at 95% so nothing spills into paid usage.
+6. Team count: while auto mode is on at least 15 subagents are always running (whatever the usage meters say; the usage governor only trims above that, and models drop to cheaper helpers near the limits). One session tops out at 20 subagents at once, so the target of about 50 comes from parallel build sessions plus the free helpers. A cap that falls as plan usage climbs sets the upper limit, and at 95% of the 5-hour window every team reaches a stopping point so nothing spills into paid usage.
 7. A CPU governor keeps the build PC near 75% on a 5-minute average, lowering the number of parallel browser checks, the local-model pool and the suggested agent count above 85% and raising them below 65%, at most one step every two minutes, so short spikes do not matter.
 8. Local models run outside that cap in a pool of 5 that grows to 10 while answers stay quick, one model at a time so nothing swaps in the graphics card, and only for yes/no and wording jobs, because local rewrites and code reviews proved unreliable.
 9. Free cloud helpers get a batch every build (proofreading, alt text, release-note drafts), kept under 95% of each free allowance, and a stronger model applies only the good results.

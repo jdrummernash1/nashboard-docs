@@ -22,9 +22,9 @@ A tour of the tools and the workflow behind the dashboard: how the code is built
 
 ## 1. The build pipeline
 
-Home Assistant serves the dashboard as one page, but that page is generated and nobody edits it. The code is about 340 source pieces.
+Home Assistant serves the dashboard as one page, but that page is generated and nobody edits it. The code is about 460 source pieces.
 
-- **Source pieces** live in `src/dashboard/` (about 340 JavaScript, CSS and HTML files): head, styles, body, then the script split by feature, then a tail. They are joined in file-name order. New feature code goes in its own numbered piece and registers its buttons with `Object.assign(ACT, {...})`.
+- **Source pieces** live in `src/dashboard/` (about 460 JavaScript, CSS and HTML files): head, styles, body, then the script split by feature, then a tail. They are joined in file-name order. New feature code goes in its own numbered piece and registers its buttons with `Object.assign(ACT, {...})`.
 - **`demo-sync.js`** generates the in-app demo house from the screenshot sample house during the build. The build fails if the sample data changes so that the demo can no longer be made from it (`--check` tests this).
 - **`ollama-pool.js`** runs local AI jobs from a drop folder, starting 5 at a time and adding more (up to 10, or fewer when the PC is busy) while answers are quick and the graphics card has room. It drops one when answers slow down. Jobs run one model at a time, stay on this PC, and are logged.
 - **`build-dashboard.js`** joins the pieces into the generated `ha/www/dashboard.html` and fails the build if the joined script does not parse. It also stamps in the line and piece counts. `--check` fails if the built file does not match the pieces (a sign someone edited the output directly).

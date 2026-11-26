@@ -8,7 +8,7 @@ Describes the finished shape of the dashboard and its surroundings.
 
 ## 1. Overview
 
-An HTML5 dashboard ("Nashboard") written as about 340 source pieces and generated into one page, served by Home Assistant (HA) running on a Raspberry Pi 5. Home Assistant talks to devices and services, the dashboard presents everything, phones and cars reach it through the HA companion apps, and an optional AI PC helps build it.
+An HTML5 dashboard ("Nashboard") written as about 460 source pieces and generated into one page, served by Home Assistant (HA) running on a small computer at home (a Raspberry Pi 5 is enough). Home Assistant talks to devices and services, the dashboard presents everything, phones and cars reach it through the HA companion apps, and an optional AI PC helps build it.
 
 <img src="images/diagrams/app-architecture-overview.svg" alt="Diagram of the overall shape: devices and services feed Home Assistant on a Raspberry Pi 5, the dashboard serves browsers and companion apps, and an AI PC deploys over the LAN" style="max-width:100%;height:auto">
 
@@ -38,7 +38,7 @@ flowchart LR
 
 ## 2. Source and build
 
-- The source lives in `src/dashboard/` as about 340 numbered pieces (about 290 JavaScript, about 50 CSS and a few HTML), joined in file-name order: head, styles (base, layout, cards, per-page), body, then script by feature (start, pages, home, masonry packing, one piece per page such as weather, map, rooms, finance, pets), then the newest feature pieces, a closing piece and the tail. The count grows with the app and is shown on the About page.
+- The source lives in `src/dashboard/` as about 460 numbered pieces (about 400 JavaScript, about 60 CSS and a few HTML), joined in file-name order: head, styles (base, layout, cards, per-page), body, then script by feature (start, pages, home, masonry packing, one piece per page such as weather, map, rooms, finance, pets), then the newest feature pieces, a closing piece and the tail. The count grows with the app and is shown on the About page.
 - `tools/build-dashboard.js` joins them into one generated page, `ha/www/dashboard.html`, and refuses to write it if the joined script does not parse (this catches two pieces declaring the same name). The built file is never edited by hand; `--check` proves pieces and output match. Build-time stats (lines of code, piece count) are stamped into the page.
 - `tools/deploy-dashboard.ps1` builds first, so what is copied to Home Assistant always matches the pieces.
 - Household values (teams, trips, rooms) are kept out of the code. They are entered in the app and saved in Home Assistant; a household's starting values can be loaded once from a private file that is never served from the open web folder.

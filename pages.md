@@ -66,6 +66,7 @@ left- or right-handed phones).
 - **Left- or right-handed** (Interface scale → Hand, per person): on phones the navigation, room card buttons, page header
   buttons, add and mic buttons, Home card buttons and sheet buttons move to your thumb's side.
 - **Voice** on every quick-add list, and no character limits on text boxes.
+- **Export history (CSV)** in every card's ⋯ menu: pick a sensor and a range (24 hours, 7 days, 30 days, 12 months or two dates) and download a spreadsheet file. It is not offered on wall screens or in guest mode.
 - **Swipe between pages** on phones: a clear sideways swipe on an empty page or a card body goes to the next or previous
   page in menu order, with a page-name hint (maps, charts, chip rows and card swipes keep their own gestures). Turn it
   off in Alerts & notifications.
@@ -75,7 +76,7 @@ left- or right-handed phones).
 
 ## More on every page
 
-- **Top bar:** buttons sit tight together; the button strip takes at most half the bar and scrolls past that, and top-bar text first tightens its spacing, and every piece of top-bar and banner text then scrolls on its own when it still does not fit, instead of being cut off or overlapping. The version line shows the time, the version and, for admins who maintain the app, the number of open backlog items (for example "10:14 AM · v<!-- ver -->1.25<!-- /ver --> · 11 open"); tap the count to open the Design Studio. A failed load keeps the number already shown.
+- **Top bar:** buttons sit tight together; the button strip takes at most half the bar and scrolls past that, and top-bar text first tightens its spacing, and every piece of top-bar and banner text then scrolls on its own when it still does not fit, instead of being cut off or overlapping. The version line shows the time, the version and, for admins who maintain the app, the number of open backlog items (for example "10:14 AM · v<!-- ver -->1.30<!-- /ver --> · 11 open"); tap the count to open the Design Studio. A failed load keeps the number already shown.
 - **Phone and tablet page bar:** the bottom bar fits as many page buttons as the width allows and slides sideways through every page, Frequent pages first, then the groups in menu order as tinted segments (no heading words), with **More** always pinned at the end. Buttons are at least 48 px.
 - **Card text fills the card:** card titles (and marked main values) grow in a few steps, up to one and a half times, to use the room the card already has. No card gets taller, and sizes stay close from card to card.
 - **Browser tab icon:** the dashboard shows its own small house icon in the browser tab.
@@ -85,6 +86,7 @@ left- or right-handed phones).
 - **Quiet when idle:** the Home page does far less work when nothing changes. The banner loop runs only when it has something to draw, and pets, mail and decorations that are off screen pause.
 - **Card change notices:** off unless you turn them on in Settings. When on, an **urgent** card (a leak, someone at the door, time to leave) that appears or clears on its own puts a large notice on **wall screens and TVs**, readable from across the room. Phones, tablets and computers stay quiet unless you switch on "On this screen too" on that device. Changes you cause yourself and the first load stay silent, a burst of changes becomes one notice, it closes by itself, and quiet hours swap it for a small message.
 - **Demo mode:** open the dashboard address with `?demo=1` and it runs on the same made-up sample house the screenshots use (the demo is generated from that sample house when the app is built, so new sample data reaches it by itself): no sign-in, read-only, nothing real is read or written, and a DEMO strip shows on every page. Tapping something that would save explains why it is off; nothing pops up by itself.
+- **Undo button:** next to Refresh in the top bar, a 48 px button that takes back the last layout change you made on this screen: a card hidden by swiping, a card turned off, a card made narrower or wider, a card moved or the order reset, a card folded, or Done on a Right now row. Each tap undoes one more, newest first (up to 20), through the same save the change used, and a small toast says what was undone. A change only goes back on the page where you made it, so someone else's edits on another page are never touched. With nothing to undo the button stays in place, dimmed. The list starts empty again when the page is reloaded.
 - **Refresh button:** a chip in the top bar, on every screen. A tap re-fetches the current page's data and redraws the page, unless you are typing in a text box (your text is never thrown away). A long press, or a tap while a new version is waiting, does a full safe reload, which also waits while you are typing, have unsaved text or have a sheet open. A short spin shows while it works, and a failed or empty load keeps the data already on screen.
 - **At a glance summaries:** Weather, Commute, Packages, Family Board, Pantry & Fridge and Security each show one optional sentence in an **At a glance** card beside their Right now card. It is built the same way as Home's Today at a glance: a local model first, a cloud model only after "Allow cloud AI" has been switched on there, otherwise a plain sentence made from the page's own facts. Each page refreshes its sentence at most every 15 minutes (a failed try waits 10), and the text is shared by every screen. The **Page summaries** card on the System page turns all six off and stops the AI calls.
   **AI decides here:** it chooses what each sentence says. Without an AI, a plain sentence built from the page's own facts is used.
@@ -157,6 +159,16 @@ a button for it. **Right now** shows low batteries (with each device's room), li
 house** check: when everyone has left (for 45 minutes after), a card lists lights left on, unlocked locks, an open
 garage and open doors or windows, with **All off** (locks and the garage take two taps).
 
+### Rooms: floor plan and vacuum map
+
+- **Floor plan (1.28):** *Suggested by Claude.* A panel at the top of the Rooms page. Draw rooms as rectangles on a grid
+  (or lay your areas out in one tap), name each one, and place lights, doors, windows and garage doors on it. Lit rooms
+  glow, open doors and windows show red, and tapping a light switches it. The plan is saved in Home Assistant for
+  everyone; with no plan yet the panel only offers to start one. Ideas from neonplan3d and easy-floorplan ([credits](credits.md)).
+- **Vacuum map (1.29):** *Suggested by Claude.* When Home Assistant has a vacuum: your own floor picture with rooms you
+  draw on it and a moving dot for the vacuum. Tap one or more rooms and **Clean** to send them (by the vacuum's segment
+  number, or by a script of your own), plus Start, Pause and Dock. The picture and rooms are saved for everyone at home.
+
 ### Rooms: Laundry
 
 On a laundry or utility room page, a **Laundry** card follows any appliance on a power-monitoring plug: power above a threshold means running, low power for a few minutes means done. A Home card appears when a load finishes and goes away when the door opens (optional door sensor) or someone taps Done; a washer left finished for a while gets a "wet clothes forgotten" reminder. Appliances are picked in the card. The dishwasher keeps its own card.
@@ -170,6 +182,12 @@ On a laundry or utility room page, a **Laundry** card follows any appliance on a
 A camera wall like a security console: layouts (auto, 1, 2×2, 3×3, 4×4, 1+5, 1+7), grouping, ordering, hiding,
 labels, snapshot refresh rate or live video. Tap a camera for a large live view. Snapshots are fetched with the
 dashboard's own sign-in, never stale camera links.
+
+### Cameras: pan, tilt and zoom
+
+*Suggested by Claude (1.29).* When a camera can pan and tilt, its large live view shows a round joystick (hold toward a
+direction to move, let go to stop) and zoom buttons, and you can tap a spot on the picture to aim there. Cameras that
+cannot move show nothing extra, and wall screens never get the controls. Idea from ultimate-hikvision-nvr-card ([credits](credits.md)).
 
 ### Cameras: control bar and sound
 
@@ -220,8 +238,12 @@ dimmed) across all your calendars, in the colours you pick (shared by everyone).
 on and off, and see the meal plan alongside. The wall calendar has big **Add event** and **Add to list** buttons with a
 microphone. Zoom to fit sizes rows correctly in Full window and keeps your scroll position.
 
-- **Import a document**: a document button on this page (and on the Family Board, the other page that uses it) opens a form for flyers, calendars and schedules. It opens the camera first with **or choose a file** beside it (or paste text), and the AI reads the events and items for you to review before anything is added. The review step has **Location** and **Room** fields, can fill a **lunch menu calendar** (a marker you confirm flags a lunch to skip, with a **pack-a-lunch reminder** that morning), and Take a photo opens the phone camera. The button shows a page icon because it expects a document, and it does not show on pages that have no use for it.
+- **Weather on each day**: month cells and the week and day headers show the forecast icon and the high and low for days inside the forecast range (the same forecast the Weather page uses; nothing extra is fetched). Days beyond the forecast, or a house with no weather source, show nothing. Touch or hover the icon for the words.
+- **Private calendars:** in the Show on calendar list, mark a calendar Private. On shared screens (the TV, wall and kiosk screens, and screens in guest mode) its events show as Busy with the time only, no title, place or notes. Your own login still sees everything. The setting is saved in Home Assistant, so every screen agrees; until it has loaded, a shared screen shows every calendar as Busy.
+- **Import a document**: a document button on this page (and on the Family Board, the other page that uses it) opens a form for flyers, calendars and schedules. It opens the camera first with **or choose a file** beside it (or paste text), and the AI reads the events and items for you to review before anything is added. The review step has **Location** and **Room** fields, can fill a **lunch menu calendar** (a marker you confirm flags a lunch to skip, with a **pack-a-lunch reminder** that morning), and Take a photo opens the phone camera. The button shows a page icon because it expects a document, and it does not show on pages that have no use for it. A **Tell the AI about this document** box takes your own notes (for example "only add the school days"), which the AI follows for that document. Every import can be undone: an **Undo** right after **Add**, and an **Import history** (only you see yours) with **Undo** for each past import, which removes only what that import added and leaves anything changed since. On an admin screen a missing **Lunch menu** calendar or **Reminders** list can be made for you in Home Assistant; Undo takes it away again while it is empty.
   **AI decides here:** it reads the document and chooses which events and items to propose. You review every one before anything is added.
+- **People view (1.28):** a **People** button next to Month, Week and Day shows one column per person, each with that person’s calendars for the day or the week in the calendar colours, with a colour legend. It suits a wall tablet. A grown-up (an admin account) uses **Set up people** to choose which calendars belong to whom; the choice is saved in Home Assistant and shared by every screen. Calendars nobody owns go in a **Shared** column. The button only appears when Home Assistant has people. Inspired by calendar-card-pro and HA-Family-Hub.
+- **Month view on Up next (1.29):** *Suggested by Claude.* the Up next calendar card has a **List | Month** switch. Month shows a grid with a dot for each calendar on every busy day; tap a day to see its events below. Arrows move between months and **Today** jumps back. It works on a phone.
 - **Tasks** card for Google Tasks: every list with due dates, overdue items in the warning colour, tick to complete and
   an add box per list. Tasks due today also show in Home's Up next card; overdue ones get a Home card.
 - **Gift deadlines (private):** *Suggested by Claude.* a gift you plan in My gift ideas with a date, and each Start shopping reminder, appears as a private marker on your own Calendar view only, never on a shared or wall screen.
@@ -246,6 +268,10 @@ A **YouTube playlists** card. Save playlists by name by pasting a YouTube or You
 
 While a TV is showing the dashboard by casting, the **Cast dashboard** pop-up also gets **YouTube** and **YouTube TV** buttons for that TV. They try the TV's own YouTube source first, then its remote or the cast app, then the link, and say if the app couldn't be opened.
 
+### Now Playing: listening recap
+
+A **Listening recap** card shows the minutes of music played in the past 7 days (and how much of it was today), the top artist, and a streak of days in a row with music. It is built from Home Assistant's history of the Music Assistant speakers, counts the whole household (speakers playing together count once) and saves nothing. It hides itself when there are no Music Assistant speakers or no history yet. On Sunday evening a copy shows on Home, then goes quiet. Idea from the crow-media-player project.
+
 ## Shopping
 
 ![Shopping page](images/shopping.jpg)
@@ -269,6 +295,11 @@ date.
 
 **Package left outside**: when a delivery sits outside with nobody home, or is still out after dark, a card shows here
 and on Home, and every phone gets one notification.
+
+**Mail pictures and "Mail came, not collected" (1.28):** *Suggested by Claude.* With the Mail and Packages integration, a
+mailbox sensor or a mail-truck sensor, a card shows today's mail pictures and whether the mail has been collected. It
+stays "not collected" until someone taps **I got it** or the mailbox opens after the mail came. With none of those
+sources the card stays hidden. Ideas from Mail and Packages and the Mailbox Card ([credits](credits.md)).
 
 ### Packages: Frigate
 
@@ -299,6 +330,7 @@ expiration date and amount. **Use soon** lists anything expiring within 3 days; 
 button also adds it to the shopping list. Home and the Kitchen room show a card for food to use soon.
 
 - **Leftovers tracker**: log leftovers with the date; Home shows an **Eat this first** card, oldest first.
+- **Fridge and freezer watch**: if a fridge or freezer door stays open, opens more than on a usual night, or the temperature climbs 3 degrees in an hour, a card says so with the likely cause and the last steady reading, and Home shows a copy while it matters. It finds door and temperature sensors with fridge or freezer in the name, or a grown-up can pick them; with no such sensors it stays hidden.
 - **Storage places** you add and remove (shared for everyone; a Medicine place is included). Tap a place to set its
   container type (add and remove your own types) and what it sits inside; **Where** shows the nesting. On hand is
   grouped by place.
@@ -360,6 +392,7 @@ editing and no set-up text: a card that is not set up yet is simply not there, a
 - **Hello**: the time and a countdown to bedtime.
 - **Coat check**: what to wear, from the weather.
 - **Star chart**: each Family Board chore done earns a star.
+- **Reward store**: a grown-up adds rewards with a star cost (the Grown-up button, which asks for the grown-up PIN when one is set). A child taps a reward to ask for it; the stars only come off when a grown-up approves (a Right now row on Home, or the Grown-up panel). Declining just closes the request. Saved in Home Assistant. Idea from ChoreOps and HA-Family-Hub.
 - **Out the door**: the shared morning checklist.
 - **Shows & channels** from Family favorites (anything on the "blocked for kids" list never shows).
 - **Pets**, a **plane overhead** and the **Space Station** flyover, and big **music** buttons.
@@ -368,6 +401,12 @@ editing and no set-up text: a card that is not set up yet is simply not there, a
   Assistant).
 - **Kid lock**: with Kids as a screen's start page, a 4-digit grown-up PIN keeps the tablet on this page.
 - **Baby monitor**: turns any camera in Home Assistant into a baby monitor: a live picture, an optional **night view** (brighter, green-tinted), an optional sound or motion sensor that puts an alert line on the card, an optional room temperature, and a list of baby monitors that already work with Home Assistant. Choose the camera and sensors with **Set up** on the card (saved for the household). It stays hidden until a camera is chosen, and hidden from children until a grown-up opens Grown-ups. The sensor is an ordinary Home Assistant entity, so any phone alert automation can use it.
+- **Screen time**: one card per child with time used today against a daily limit, a bar and plain words ("45 min left", "Over the limit by 10 min"), and for grown-ups +15 / -15 minute buttons and a Lock button. It works with whatever Home Assistant has, such as the Google Family Link integration or a console or TV switch. Grown-ups pick each child's entities once (saved in Home Assistant); children see only the bar. Until suitable entities exist, only grown-ups see a short set-up card. Credit: juju35 Family Link and Console Card.
+
+### Kids: streaks and badges
+
+The **My star chart** card shows how many days in a row stars were earned (today not being done yet does not break the streak) and a row of badges: first star, 3, 7, 14 and 30 day streaks, a perfect week, 5 stars in a day, and 50, 100 and 250 stars. Unearned badges show locked. Everything is worked out from the saved star history, and a small saved history keeps old days so streaks and totals are never lost. Existing stars are never reset. Idea from the ChoreOps project.
+- **Sleep-friendly night** (Family Board): when the baby monitor's sound sensor was heard on two nights in a row, a card suggests ONE gentler change, either a dimmer night light preset or a cooler thermostat target, with **Apply** and **Not now** (saved for the household). Apply changes only the setting it names. A local AI may help choose between the two (never a cloud AI); without one a plain rule picks the night light first. It stays hidden without a monitor sound sensor, and only grown-ups see it.
 
 ### Kids: the Kids list
 
@@ -376,6 +415,7 @@ One **Kids** list in **Settings → Household** holds each child with a room, a 
 ### Kids: new cards
 
 - **Bedtime library:** an "Our books" shelf. Add a book by scanning its barcode, photographing the cover or typing a title or ISBN (looked up in Open Library, no key). "Read tonight" picks the least recently read book, one a day; "We read it" logs the day.
+- **Bookshelf:** one family library under the bedtime shelf. It shows the read-aloud bedtime books together with paper books, e-books and audiobooks. Add a book by title, author, ISBN or barcode; details and cover art come from Open Library, or Google Books when Open Library has no match. Each person has their own shelf, private by default, and can share a book to the family shelf. **Connect e-books** brings in reading history from Libby / OverDrive, Hoopla, Kindle, Apple Books, Google Play Books, Kobo, Audible, Goodreads and The StoryGraph through each service's own export file or a pasted list of titles; nothing signs in and no password is asked for or kept. With the optional Home Assistant voice sentence ("we're reading <title>" said to a smart speaker), a book read aloud in a child's room is matched or looked up and added to the shelf with its cover.
 - **Picture mode:** for children who cannot read yet. Behind the Grown-ups PIN a **Picture mode** switch turns the page into big icons and star chore buttons with no words, and a speaker button on each card reads it aloud with the device's own voice. Cards that need reading (story, kid monitor, bookshelf) are hidden. It is remembered per person on that device.
 - **Favourite colour:** in Room settings, a child can have a favourite colour that themes that child's room page, the medicine chip and the Kids page when only one child has a colour. No colour means no change.
 
@@ -386,6 +426,10 @@ One **Kids** list in **Settings → Household** holds each child with a room, a 
 Current conditions, hourly and daily forecasts, rain chances, the National Weather Service forecast text, sun
 and moon times, and a live radar with warnings outlined (full-screen capable). Phones can show weather for where
 the phone is. The **What to watch** card (Right now) always shows severe weather, rain coming, freeze tonight and UV.
+
+**Rain in the next 60 minutes (1.28):** *Suggested by Claude.* a thin 60-cell ribbon shows dry, light, moderate or heavy rain minute by minute for the next hour, with a line like "Dry for 42 min, then light rain" and a colour legend. Home shows a small copy only while rain is expected within the hour. It uses free 15-minute rain data from Open-Meteo; if that is not reachable the card says so. Idea from juju35's Rain Card ([credits](credits.md)).
+
+**Radar layers:** *Suggested by Claude.* chips on every radar (Weather, Home rain radar, Full window) switch on Lightning (live strikes, last 15 minutes), Warnings (National Weather Service warning areas, coloured by type) and Wildfires (active incidents). Each layer has a legend with a count, and each person's choice is remembered with their account. If you pan or zoom the radar the layers hide until you tap Re-align. Free sources only, no keys. Idea from jpettitt/weather-radar-card.
 
 **Storm prep list:** *Suggested by Claude.* while a National Weather Service warning for wind, thunderstorm, tornado, hurricane, hail, blizzard or ice is active at your location, a Right now card (on Weather and Home) lists up to six short tasks: close any open window, door or garage, bring in or tie down outdoor items, charge phones, and for wind or power-cut warnings find flashlights and fill water jugs. A task that is fixed goes away by itself and the whole card ends with the warning. **No AI here:** the tasks are plain rules and nothing is sent anywhere.
 
@@ -538,6 +582,13 @@ A watchlist from a published spreadsheet: prices, day and week moves, charts, an
 law" chart that zooms and remembers the zoom. The **Markets** card (Right now and Home) shows around the open and close
 and after a big move.
 
+**Finance plan (1.29):** *Suggested by Claude.* Three private cards, saved only in your own Home Assistant account and
+never shown on a wall screen or the Display. **Left before next paycheck** shows the next payday, the bills due before it
+and what is left of the money you chose to count. **Budgets** are a set amount or a percent of your income, with what you
+spent this month. **Debt payoff** shows the month you would be debt free and the interest at the minimums or with an extra
+amount. It is arithmetic on numbers you type, not advice; until you add a paycheck each card shows one calm line.
+Inspired by ledger-home-finance ([credits](credits.md)).
+
 ## Room dashboards
 
 ![The Nursery room dashboard](images/nursery.jpg)
@@ -562,7 +613,8 @@ lights, media, climate, doors, switches and scenes, cameras and sensors. Rooms c
 - **Room icon**: a searchable grid of icons in the room's options, shared for everyone.
 
 While something in a room is playing, a **Now playing** card (turntable icon; channel and artwork for video players)
-shows on that room's page. A bedroom with a child set in Room settings also gets that child's cards (a child's room).
+shows on that room's page. A **Sleep timer** card sits beside it, and also on the Music (Now playing) page: pick 15, 30, 45 or 60 minutes, or the end of the track. The volume fades out over the last minute, then the speaker pauses and its volume returns to what it was. The end time is saved in Home Assistant, so a page reload or another screen keeps it running; Cancel stops it. Idea from crow-media-player.
+A bedroom with a child set in Room settings also gets that child's cards (a child's room).
 Every room page also shows the cards that relate to it: the **Doorbell**, its maintenance jobs, low batteries, pet
 device problems, tonight's dinner and expiring food (Kitchen), packages (front of the house), cars (Garage), and
 **Storage here**: the containers from the Storage page whose place name contains the room's name.
@@ -646,6 +698,11 @@ the same kind.
 fever and medicine, medicine expiring, birthdays, holiday traditions, the week ahead, kids' ideas, movie night, for sale
 and the intercom.
 
+**Fever and medicine night summary (1.28):** *Suggested by Claude.* When a temperature or a dose was logged overnight
+(8 PM to 7 AM), one Right now line from 6 to 11 AM sums up the night for each child from the Medicine & fever log, with
+**Copy for the doctor** and **Done**. It states the logged values only and never gives advice; an AI at home may reword
+it only if every number and time stays the same.
+
 ### Family: My gift ideas (private)
 
 A card for gifts you plan to give someone: who it is for, the idea, a link, a price, the occasion, a date and a status (idea, bought, wrapped), with private notes per person (sizes, favourite brands) that feed the AI. It is **private to the person signed in**: saved only in your own Home Assistant account, never in the shared household data, so another account on the same home sees an empty list. It never appears on the Display or TV page, on a wall or kiosk screen, or where nobody is signed in. Ideas from an AI come only from an AI in your home, show before anything is saved, and are kept only when you tap Add; with no home AI the rest works the same.
@@ -667,6 +724,10 @@ A card for gifts you plan to give someone: who it is for, the idea, a link, a pr
 
 *Suggested by Claude.* Four cards for one signed-in person, kept in that person's own Home Assistant account and never in shared household data: **My to-dos** (errands and things not for the shared Chores list), **Private reminders** (an appointment, a gift to order by a date), **My wish list** (things you want, with a link and a price) and **Gift dates and sizes** (sizes, favourite brands, allergies and what someone already has, with a birthday). Two kinds of reminder are worked out for you rather than saved: **Start shopping** three weeks before each birthday you entered, and **Order by** a week before the date of a gift still marked as an idea in My gift ideas. They show in Private reminders, as a private Home reminder and as a private marker on that person's own Calendar view (see [Calendar](#calendar)). None of it is built on the Display or TV page, on a wall or kiosk screen, for a wall screen user or guest, or where nobody is signed in. Another account on the same home sees only its own lists. A removed row has Undo, and a failed load never replaces what is shown.
 
+### Family: Chore turns and first-come chores
+
+Each chore on the Family Board has a small chip. Tap it to make the chore **take turns** between chosen people (the row then shows whose turn it is, the turn moves on when the chore is ticked off, and the chore returns to the list) or **first come** (whoever ticks it gets the credit). Credits are counted per person and shown in the same sheet. Chores that are not set up behave exactly as before.
+
 ### Family Board: new cards
 
 - **Where is everyone:** one tile per person. Each person decides whether their place shows (off until they switch it on). Only Home, Work or Away, battery and last update show, never coordinates. **Ring my phone** uses a Find My Device sound button when there is one, otherwise the companion app notification command.
@@ -686,6 +747,10 @@ QR code** (drawn on the device; the password is never sent anywhere) and copy bu
 the same information. Also: **weather now and the next 6 hours**, the live radar, and a **Watching TV** card with the
 TV remote steps and YouTube TV buttons for each TV (no passwords on the page).
 
+### Guest: jukebox
+
+*Suggested by Claude (idea from DJS91/HAMusicAssistantJukebox).* A **Guest jukebox** card on the Guest page lets guests request songs. It shows a QR code that opens the Guest page on a phone (guests need a login to this Home Assistant), a search box, and a **Request** button on each song. Requests are added to the queue of one Music Assistant speaker; if nothing is playing, the song starts and an optional party playlist follows it. A grown-up switches the jukebox on or off and picks the speaker, the wait between one guest's requests (none, 2, 5, 10 or 15 minutes) and the playlist. Settings are saved in Home Assistant; the wait is kept on each guest's own device, so it is a courtesy rather than a lock. The card is hidden for guests while it is off, and for everyone when Music Assistant has no speakers. **No AI here.**
+
 ### Guest: guest mode
 
 An admin can turn on **guest mode** from a phone: every house screen switches to a simple guest view (the Guest page first, a short menu, no System, settings or editing). A grown-up PIN lifts it on one screen for 5 minutes of use, and an optional end date turns it off by itself. The screen you switch it from, and any screen set to opt out, keeps working normally. A small card on this page also turns on the Sitter monitor and opens it.
@@ -698,6 +763,8 @@ Recurring house jobs (filters, smoke detector tests, gutters, oil changes, and m
 Assistant to-do list. Each job shows how often it repeats, when it was last done and a countdown bar. **Done**
 reschedules it from today. A starter list of 15 common jobs, a low-battery panel, a menu badge when something is
 overdue, and a "Maintenance due" pop-up on Home. Car due dates show here too.
+
+**QR and NFC labels:** every job has a QR button that shows a scannable label, a link to copy, a printable page of labels (or Print labels for all jobs) and, on Android Chrome, Write NFC tag. Scanning the label or tapping the tag opens that job with a Mark done button, so you can complete it standing at the appliance.
 
 ## Pets
 
@@ -727,6 +794,8 @@ experiments and 3D printing, or add your own. A **Hobbies** Home card shows only
 soon (book club tonight, plants to water, game night, a show this week). The band hobby is **Gigs**: start, setup
 (2 hours before), show length, breakdown (1 hour after), a timeline, and import from an event link; Home shows a Gig
 card with the be-there-by time.
+
+**Plants are thirsty:** after 3 hot (85° or more), dry days in a row with no rain measured today, a Right now line (Hobbies page and Home) names the plants that need water first, from your saved plant list and the weather at your location. It clears when rain is measured or when you tap Done (saved for that day).
 
 ### Hobbies: owners and spending
 
@@ -851,6 +920,7 @@ Your own settings in one place, in the menu and from a button on the System page
 - **Menu pages**: choose and order the pages in your menu, switch Labs pages on or off, bring hidden cards back, and
   set up the pages that are waiting under More to set up.
 - **Location use**: what used this device's location, or set a zip code instead.
+- **Lite mode** (This screen): for old tablets, phones and Kindles. It turns off animations, blur, shadows and the holiday and weather effects, refreshes less often, and keeps every card working. It is saved on that screen only, and a screen that looks slow is offered it once.
 - **The house and the app**: a link to System (updates, backups, hidden cards, saved data, device setup).
 
 Everything is described on [Settings and personalisation](settings.md).
@@ -874,8 +944,15 @@ voice; tools behind a ⋯ menu; reopens your last page on each device; in Full w
 
 An **Energy** page in Labs. It finds power, energy and cost sensors by type, shows what is using power now and usage today and this month (from long-term statistics, read only) with the biggest users, and estimates cost from a price per kWh you type in. **Bills** are entered by hand (name, amount, due date, repeat); Paid moves a repeating bill to its next date. Home shows bills due soon or overdue and an "unusually high day" note. Without energy monitoring the page explains what to add.
 
+**This year versus last year:** a card with paired monthly bars (last year grey, this year coloured) and a sentence on how much more or less power you used over the same months. It reads long-term statistics and stays hidden until last year's readings exist. The Weather page has the same card for outdoor temperature and rain.
+
 **Solar, generator and grid cards:** three more cards on the Energy page. Nothing is hardcoded to a house; each finds its sensors by name (or from the sensors in Home Assistant's Energy settings, read only) and has a **Set up / Change** button with pickers. With nothing found, a card says what to add.
+
+**Live power flow:** an animated diagram at the top of the Energy page. Grid and Home always show; Solar, Battery and EV appear only when Home Assistant has a power sensor for them (read from the Energy settings, or found by name). Each circle shows live watts, dots move along the line in the direction power is flowing, and a dim line means nothing is flowing. With no grid or solar power sensor the card is hidden. Motion stops if your device asks for reduced motion. Idea from power-flow-card-plus.
 
 - **Solar:** power now and energy today, from solar, PV or inverter sensors. Today's figure comes from long-term statistics unless the sensor already reports a daily total.
 - **Generator:** status, fuel level and when it was last exercised.
+- **Energy outlook (1.26):** the cheapest or cleanest hours for the next 24 hours, with the best start for the dishwasher, laundry and car, when a price or grid-cleanliness forecast sensor exists (otherwise it says what to add). Beside it, one plain sentence on why power use went up or down over the last 7 days. Grown-ups only.
+- **Run it now or wait (1.29):** *Suggested by Claude.* a short card that says, for hot water and car charging, whether to run now or wait for the cheapest or cleanest window of the next day (or run now while solar is making power). It only appears when a price, grid or solar sensor exists, and is for grown-ups only.
+- **Running cost today:** each device with an energy sensor (the devices in Home Assistant's Energy settings, or plain energy sensors) with kWh used today and what it cost, biggest cost first, top 5 with Show more. The price is the Energy page's price, or the one in Home Assistant's Energy settings, or a flat price you type once (saved in Home Assistant). The card hides when no device energy sensors exist.
 - **Grid:** a status sensor for mains power. When it reports an outage, Home shows a **Power outage** card.
