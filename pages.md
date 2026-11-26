@@ -7,7 +7,16 @@ title: All pages
 # All pages
 
 <!-- pagemap:start -->
-<div class="pm"><div class="pm-card pm-tabs"><h3>Main tabs <small>bottom bar on phones</small></h3><div class="pm-chips"><a class="pm-chip" href="#home">Home</a><a class="pm-chip" href="#rooms">Rooms</a><a class="pm-chip" href="#cameras">Cameras</a><a class="pm-chip" href="#calendar">Calendar</a></div></div><div class="pm-card pm-t0"><h3>Everyday</h3><div class="pm-chips"><a class="pm-chip" href="#family-board">Family Board</a><a class="pm-chip" href="#shopping">Shopping</a><a class="pm-chip" href="#packages">Packages</a><a class="pm-chip" href="#weather">Weather</a><a class="pm-chip" href="#activity">Activity</a></div></div><div class="pm-card pm-t1"><h3>House</h3><div class="pm-chips"><a class="pm-chip" href="#pantry--fridge">Pantry &amp; Fridge</a><a class="pm-chip" href="#recipes">Recipes</a><a class="pm-chip" href="#maintenance">Maintenance</a><a class="pm-chip" href="#storage">Storage</a><a class="pm-chip" href="#garage">Garage</a><a class="pm-chip" href="#automations">Automations</a><a class="pm-chip" href="#utilities">Utilities</a><a class="pm-chip" href="#pool">Pool</a></div></div><div class="pm-card pm-t0"><h3>Family</h3><div class="pm-chips"><a class="pm-chip" href="#kids">Kids</a><a class="pm-chip" href="#pets">Pets</a><a class="pm-chip" href="#guest">Guest</a><a class="pm-chip" href="#sitter-monitor">Sitter monitor</a><a class="pm-chip" href="#wellbeing">Wellbeing</a><a class="pm-chip" href="#workout">Workout</a><a class="pm-chip" href="#hobbies">Hobbies</a></div></div><div class="pm-card pm-t1"><h3>Out &amp; about</h3><div class="pm-chips"><a class="pm-chip" href="#commute">Commute</a><a class="pm-chip" href="#map">Map</a><a class="pm-chip" href="#air--allergy">Air &amp; Allergy</a><a class="pm-chip" href="#planes">Planes</a><a class="pm-chip" href="#space">Space</a></div></div><div class="pm-card pm-t0"><h3>Fun &amp; info</h3><div class="pm-chips"><a class="pm-chip" href="#now-playing">Now Playing</a><a class="pm-chip" href="#sports">Sports</a><a class="pm-chip" href="#finance">Finance</a><a class="pm-chip" href="#multi-view">Multi-view</a></div></div><div class="pm-card pm-t1"><h3>Labs</h3><div class="pm-chips"><a class="pm-chip" href="#labs">Browser</a><a class="pm-chip" href="#labs">3D Printer</a><a class="pm-chip" href="#labs-energy-and-bills">Energy</a></div></div><div class="pm-card pm-t0"><h3>System</h3><div class="pm-chips"><a class="pm-chip" href="#network--storage">Network</a><a class="pm-chip" href="#settings">Settings</a><a class="pm-chip" href="#hardware">Hardware</a><a class="pm-chip" href="#about">About</a></div></div></div>
+
+- **Main tabs** (bottom bar on phones): [Home](#home) · [Rooms](#rooms) · [Cameras](#cameras) · [Calendar](#calendar)
+- **Everyday:** [Family Board](#family-board) · [Shopping](#shopping) · [Packages](#packages) · [Weather](#weather) · [Activity](#activity)
+- **House:** [Pantry & Fridge](#pantry--fridge) · [Recipes](#recipes) · [Maintenance](#maintenance) · [Storage](#storage) · [Garage](#garage) · [Automations](#automations) · [Utilities](#utilities) · [Pool](#pool)
+- **Family:** [Kids](#kids) · [Pets](#pets) · [Guest](#guest) · [Sitter monitor](#sitter-monitor) · [Wellbeing](#wellbeing) · [Workout](#workout) · [Hobbies](#hobbies)
+- **Out & about:** [Commute](#commute) · [Map](#map) · [Air & Allergy](#air--allergy) · [Planes](#planes) · [Space](#space)
+- **Fun & info:** [Now Playing](#now-playing) · [Sports](#sports) · [Finance](#finance) · [Multi-view](#multi-view)
+- **Labs:** [Browser](#labs) · [3D Printer](#labs) · [Energy](#labs-energy-and-bills)
+- **System:** [Network](#network--storage) · [Settings](#settings) · [Hardware](#hardware) · [About](#about)
+
 <!-- pagemap:end -->
 
 
@@ -66,7 +75,7 @@ left- or right-handed phones).
 
 ## More on every page
 
-- **Top bar:** buttons sit tight together; the button strip takes at most half the bar and scrolls past that, and top-bar text first tightens its spacing, and every piece of top-bar and banner text then scrolls on its own when it still does not fit, instead of being cut off or overlapping. The version line shows the time, the version and, for admins who maintain the app, the number of open backlog items (for example "10:14 AM · v<!-- ver -->1.20<!-- /ver --> · 11 open"); tap the count to open the Design Studio. A failed load keeps the number already shown.
+- **Top bar:** buttons sit tight together; the button strip takes at most half the bar and scrolls past that, and top-bar text first tightens its spacing, and every piece of top-bar and banner text then scrolls on its own when it still does not fit, instead of being cut off or overlapping. The version line shows the time, the version and, for admins who maintain the app, the number of open backlog items (for example "10:14 AM · v<!-- ver -->1.23<!-- /ver --> · 11 open"); tap the count to open the Design Studio. A failed load keeps the number already shown.
 - **Phone and tablet page bar:** the bottom bar fits as many page buttons as the width allows and slides sideways through every page, Frequent pages first, then the groups in menu order as tinted segments (no heading words), with **More** always pinned at the end. Buttons are at least 48 px.
 - **Card text fills the card:** card titles (and marked main values) grow in a few steps, up to one and a half times, to use the room the card already has. No card gets taller, and sizes stay close from card to card.
 - **Browser tab icon:** the dashboard shows its own small house icon in the browser tab.
@@ -107,6 +116,8 @@ On a marked login the screen hides what is personal or for grown-ups: cards for 
 
 This is a privacy convenience, not a lock: grown-up household data is still stored where any Home Assistant login could read it, so it is hidden on the wall rather than made secret. Each person's own data is kept in their own Home Assistant account and is returned only to them.
 
+**Calm self-check on wall screens:** on a wall screen (a screen set to the Wall role, a wall screen user login, a kiosk browser, or Wall display on), each page counts the cards that start on the first screen while they are still being placed out of sight. Past the calm limit (more than four Right now cards, or more than two cards per column, at least six) the extras are folded to their title bars before anything shows, and a one-line note says how many, with **Show all**. Folding is for that visit only and never changes anyone's saved collapse settings; tapping a folded card opens it.
+
 ### Home: Smart layout
 
 Cards are sized and sorted by one model: **every card measures what it shows and picks its own size, one packer fills one canvas per page, and the order comes from priority first, then use, with your own moves always winning.** Nothing saved is read differently, and old saved order and sizes are kept. It is on by default and per device: **Settings, This screen, Smart layout** turns it off for that screen (it stays off there until you turn it back on). With it on, Home and every page with a Right now box (Family, System, Commute, Finance, Space, Network, Packages, Recipes, Pantry, Pets, Rooms, Activity) become one canvas: section names turn into small labels and a row of section chips, Right now cards come first, your card order is kept, and a card you move into another section stays there. With it on, only the banner is a pinned full row; the weather card and Now playing no longer split the page into separate areas; a card made wide drops to one column when its content fits there and grows a step when its text would overrun; and no lone card is stretched across a row. Nothing repacks under a finger, a scroll or while you type. Other pages use the standard packer, which widens a card into a free column beside it instead of leaving a hole.
@@ -136,6 +147,8 @@ garage and open doors or windows, with **All off** (locks and the garage take tw
 On a laundry or utility room page, a **Laundry** card follows any appliance on a power-monitoring plug: power above a threshold means running, low power for a few minutes means done. A Home card appears when a load finishes and goes away when the door opens (optional door sensor) or someone taps Done; a washer left finished for a while gets a "wet clothes forgotten" reminder. Appliances are picked in the card. The dishwasher keeps its own card.
 
 ## Cameras
+
+- **Camera alerts:** the one place for everything your cameras can tell you, below the camera wall. At the top, one row per kind shows how each is doing: people and cars seen, AI picture checks, video states such as a door open or closed, the mail truck, the frost and feeding checks, and camera models. Tap a row or a chip to see only that kind. The settings for each kind are in the card's menu: which cameras watch for what, quiet hours and which phones are told. On Home, recent detections make a single line, such as "Person at the back door, 2 min ago", even when there were several; other pages show only the results. Phone alerts start once the camera alerts automation is set up in Home Assistant.
 
 ![Cameras page](images/cameras.jpg)
 
@@ -190,7 +203,7 @@ dimmed) across all your calendars, in the colours you pick (shared by everyone).
 on and off, and see the meal plan alongside. The wall calendar has big **Add event** and **Add to list** buttons with a
 microphone. Zoom to fit sizes rows correctly in Full window and keeps your scroll position.
 
-- **Import a document**: a document button on this page (and on the Family Board, the other page that uses it) opens a form for flyers, calendars and schedules. It opens the camera first with **or choose a file** beside it (or paste text), and the AI reads the events and items for you to review before anything is added. The button shows a page icon because it expects a document, and it does not show on pages that have no use for it.
+- **Import a document**: a document button on this page (and on the Family Board, the other page that uses it) opens a form for flyers, calendars and schedules. It opens the camera first with **or choose a file** beside it (or paste text), and the AI reads the events and items for you to review before anything is added. The review step has **Location** and **Room** fields, can fill a **lunch menu calendar** (a marker you confirm flags a lunch to skip, with a **pack-a-lunch reminder** that morning), and Take a photo opens the phone camera. The button shows a page icon because it expects a document, and it does not show on pages that have no use for it.
 - **Tasks** card for Google Tasks: every list with due dates, overdue items in the warning colour, tick to complete and
   an add box per list. Tasks due today also show in Home's Up next card; overdue ones get a Home card.
 
@@ -232,7 +245,7 @@ A store card for any Kroger-family banner, picked in the card (the choice is sav
 
 Add a tracking number from any carrier. Shipments are also found in email (USPS, store order emails) and through
 17TRACK; email finds wait for you to **Import** or **Ignore** them. Each package shows its stage and latest event, and
-delivered ones leave two days later. A separate section handles recurring **autoship** orders with their next ship
+delivered ones leave two days later. Duplicate rows for one tracking number are merged, and a USPS email fallback finds USPS shipments when 17TRACK cannot. A separate section handles recurring **autoship** orders with their next ship
 date.
 
 **Package left outside**: when a delivery sits outside with nobody home, or is still out after dark, a card shows here
@@ -581,7 +594,7 @@ The machines behind the house in one place, in the System group. Every card here
   2. Under Sensors add CPU load, GPU load, GPU temperature and memory usage. For each disk add a PowerShell sensor that prints the percent used; for processor temperature add a WMI sensor (LibreHardwareMonitor must be running).
   3. Turn on start with Windows. The PC appears here within a minute; nothing to set up in the dashboard. On a Mac or Linux PC use the free Glances integration instead.
 - **Connected, but no sensors yet**: a PC that HASS.Agent has registered but that sends nothing shows a **No sensors** card with the steps to finish (open Configuration, then Sensors, add the sensors above, choose Store and Activate).
-- **Printers**: toner, drum and page levels, the same card as Utilities.
+- **Printers**: toner, ink, drum and page levels for every printer you added on Utilities, the same card and the same Add a printer sheet.
 - **3D printer**: state, percent done, time left, layer, nozzle and bed temperature, only when a 3D printer is found.
 - **Router** and **NAS** (Synology): internet status, uptime, speed, load and devices for the router; volume status and fullness, drives, load and temperature for the NAS. Tap Network for the full details.
 - Home shows a card while the PC is running hot (above 85 degrees), a disk is over 90 percent full or memory is nearly used up.
@@ -701,7 +714,9 @@ Three cards, all auto-detected with a picker and a setup message when nothing is
 
 - **Leak sensors:** every moisture sensor, with a red "Water leak" Home card and one chime when a new leak appears.
 - **UPS:** battery charge, runtime left, load and status, with a "Running on battery" card.
-- **Printer:** ink, toner and drum levels, with a "Printer ink low" card under a limit you choose.
+- **Printer:** a status line, a bar for every toner, ink or drum with its percent (a mono laser has one black bar plus the drum) and the page count, with a "Printer ink low" card under a limit you choose. **Add a printer** (in the card's 3-dot menu and in the setup checklist) lists the printers Home Assistant has found (Brother, IPP, SNMP, HP, Epson, Canon and more; 3D printers have their own card), matches the sensors to roles for you, lets you correct any role and name the printer, and saves it for every screen. Add as many printers as you have: each gets its own block on the card, with Edit and Remove in the card's options, and Remove has an Undo that works on every screen. Until one is added, a printer found by itself is shown. When any printer's level falls under your limit, a "Printer ink low" line appears in Right now on Home naming the printer and the colour.
+
+- **Print buttons:** quick Print entries for things that are handy on paper. The Medicine & fever card's menu has **Print the log** (the last 7 days, for a doctor visit), the Shopping page has **Print the list** (a tick box beside every item still to buy), and the Right now card's menu has **Print this list** (a one-page summary of what needs a look today, made for the fridge). Each opens a plain black-and-white page in a new tab with a Print button, prints only what has already loaded, and says "Still loading" if you tap too soon.
 
 ## Pool
 
@@ -735,6 +750,7 @@ Home Assistant health at a glance: updates, backups, recent errors, devices that
 and settings such as Menu pages, alerts and appearance.
 
 - **Who's on**: the live screens and people seen in the last minute.
+- **Scroll health** (in the Design Studio card): one calm line saying whether scrolling has been smooth on this screen, or which pages paused while scrolling (long pauses counted per page, on this device only, fading over about two weeks), so a slow card is spotted before a release. Browsers that cannot time this show no line.
 - **Earbuds battery**: left, right and case battery levels (up to three sensors, usually from the phone's companion app) plus an optional Bluetooth connected sensor, with a low-battery card on Home and System at a level you choose (default 20%). Every sensor is picked in the card's settings or auto-detected by name and device class, so any earbuds work.
 - **Home settings**: the household basics in one place (house name and Wi-Fi from Guest, pickup days from the Family
   Board, this device's zip, Home Assistant's location, time zone, units and people), each linking to where it's edited.

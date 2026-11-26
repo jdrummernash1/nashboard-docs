@@ -18,7 +18,7 @@ A working Home Assistant and an admin sign-in. Nashboard is two files inside Hom
 or account of its own. See [Set it up](setup.md).
 
 **Can I download it now?**
-Not yet. Nashboard is out as a preview (now at version <!-- ver -->1.20<!-- /ver -->): these pages show what it does and what installing takes. Downloads will be announced on [What is new](changelog.md).
+Not yet. Nashboard is out as a preview (now at version <!-- ver -->1.23<!-- /ver -->): these pages show what it does and what installing takes. Downloads will be announced on [What is new](changelog.md).
 
 **Does it cost anything?**
 There is no charge and no subscription. If it is useful to you, you can
@@ -33,6 +33,9 @@ reads or changes your real house. A DEMO strip shows on every page. An admin can
 **Where is my data kept?**
 In Home Assistant's own storage: per person for your own choices, shared for household things such as lists and
 schedules. It is part of Home Assistant backups. The System page lists every saved setting with Undo.
+
+**If I delete something on one screen, can it come back from another?**
+No. A delete is remembered, so it stays deleted on every screen, even one that was offline and later saves an older copy of the list. Undo brings the item back everywhere. Nashboard keeps the memory of a deletion for 90 days and then forgets it quietly, so it never grows without end. This covers shared lists such as shopping, packages and autoship.
 
 **Does anything go to the cloud?**
 The app itself talks to your Home Assistant. Public data (weather, planes overhead, launches, stock quotes) is read

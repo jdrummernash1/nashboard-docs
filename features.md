@@ -58,7 +58,36 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 - **Demo and speed (1.11, 1.12):** the demo house is generated from the screenshot sample house, the Home page uses far less CPU when idle, and background work waits until you stop scrolling.
 - **First-screen check:** a quality check fails any page whose main card starts too far down or leaves the first screen mostly empty.
 
-## New in versions 1.6 to <!-- ver -->1.20<!-- /ver -->
+## New in versions 1.21 to <!-- ver -->1.23<!-- /ver -->
+
+- **Move and resize cards (1.21, 1.23):** drag a card with the mouse (or long-press on a phone) to move it, and use **Wider** and **Narrower** in the card's menu to change its width one step. Both are saved per person and survive a reload ([Things every page has](pages.md#things-every-page-has)).
+- **Loading wheels (1.21, 1.23):** anywhere something waits for information, including the title bar, a small wheel shows and the content appears once it arrives; after a timeout a **Retry** button appears.
+- **Fewer, bigger cards (1.21 to 1.23):** related Home cards are combined into one: House status, Plans and food, Weather, Deliveries, Family today, Pets and Car in 1.21 and 1.22, then Health, Home upkeep and Daily routine in 1.23. Each combined card keeps its own sections, menu and How it works entry.
+- **Deleted stays deleted (1.21):** about 25 lists remember what was removed so a deletion on one screen reaches every other screen; the memory is cleaned up after 90 days.
+- **Printers (1.21, 1.22):** add any kind of printer, control it from its card (controls need two taps and are hidden on wall screens), a Print reports card, and low toner can go onto the shopping list.
+- **Hardware (1.21):** one layout for every Hardware card, and a Phones and laptops battery card.
+- **One camera alerts card (1.21):** every camera alert kind in one card with a live status.
+- **Use order (1.21):** cards and pages are ordered by use, with a **Raised for you** mark; Right now, the banner and hand-placed cards never move.
+- **Wall screens (1.21):** a calm self-check, plus a scroll health line on System.
+- **Scale button (1.22):** the top-bar Scale button opens the Interface scale sheet on the page you are on, on phones too.
+- **Shopping (1.22, 1.23):** the list is sorted by store department, and the **Show aisles** view choice is saved per person.
+- **Businesses (1.22):** the card has a kinds picker (Black-owned by default, or other kinds).
+- **Arriving today (1.22):** a packages card for what is due today.
+- **Packages (1.23):** duplicate rows with the same tracking number are merged without losing data and new duplicates are stopped, delivery checks refresh correctly, and a **USPS email fallback** finds USPS shipments when 17TRACK cannot.
+- **One phone alert per security event (1.23):** a shared marker means only one phone notification goes out for the same event, however many screens are open.
+- **Location sharing (1.23):** **Share my place** can only be changed by the person it belongs to, and the card is hidden on guest and wall screens.
+- **Welcome tour and defaults (1.23):** a much shorter tour and fewer pages and cards on by default.
+- **Banner chips (1.23):** a little more margin from the banner edge and slightly smaller chip text; the strip still scrolls.
+- **Sticky note countdowns (1.23):** a countdown note reads "N days until" automatically.
+- **Camera and Cast (1.23):** **Take a photo** in Import a document opens the camera on phones, and the Cast button works on TVs again.
+- **Right now heights (1.23):** two Right now cards side by side on a page keep their own heights.
+- **Local text AI (1.23):** AI requests with no picture go to a local text model, leaving the vision model free.
+- **Always the latest build (1.23):** open screens reload into a new build by themselves, never while you are typing or touching.
+- **Import a document (1.23):** a review step before anything is saved, with **Location** and **Room** fields, a lunch menu calendar, a marker you confirm, and pack-a-lunch reminders ([Calendar](pages.md#calendar)).
+- **About and Backlog (1.23):** both sit on the Smart layout like other pages.
+- **Docs (1.23):** a contents list, previous and next links on every page, and an intro to Home Assistant OS.
+
+## New in versions 1.6 to 1.20
 
 - **Smart layout on by default (1.17, 1.19):** Home and every page with a Right now box (Family, System, Commute, Finance, Space, Network, Packages, Recipes, Pantry, Pets, Rooms, Activity) are one canvas with small section labels and a row of section chips. A card you move into another section stays there, and use order weighs where cards sit. **Settings, This screen, Smart layout** turns it off for that screen only ([Smart layout](pages.md#home-smart-layout)).
 - **Right now Done everywhere (1.19):** Done, Seen, Got it or Dismiss on a Right now row hides it on every screen at once, says who tapped, offers Undo and expires after 6 hours ([Right now Done](pages.md#home-right-now-done-hides-a-row-everywhere)).
@@ -153,7 +182,7 @@ Jump to: [Home cards](#home-automatic-cards) · [Banner](#the-home-banner) · [P
 
 - **Looks:** Classic, Paper, Glass and Bold designs; Auto follows the season and the theme button says what Auto follows.
 - **Storage NFC tags:** stick a tag on a storage box or garage drawer to open it. A tag link ending in add opens the box with Add item ready. Shared storage places, and Pantry & Fridge has its own fridge icon.
-- **Packages from email:** packages are added from email, with gifts hidden so surprises stay secret.
+- **Packages from email:** once a mailbox is connected, a shipping email from a carrier or shop adds the package, moves it along (shipped, out for delivery, delivered) and clears it a day after delivery. Gifts stay hidden so surprises stay secret. A package that is out for delivery or due today also shows as an automatic **Arriving today** card on Home, and a phone alert goes out only for that moment. Until email is connected, Packages shows one calm line explaining how to turn it on; packages already added are never touched.
 - **Pantry:** sell-by and use-by dates, and missing ingredients for dinner.
 - **Kids page:** pickup time, and a bedtime story.
 - **Collapsed cards are remembered per person**; pet and Pi cards collapse the same way; page icons show an Updated dot.

@@ -51,7 +51,7 @@ Every check is automatic and a failure blocks the deploy.
 - **perfcheck** measures render time, long tasks, memory, page size and idle CPU per page against a saved baseline. It runs every fifth deploy, and a metric more than 30 percent worse blocks.
 - **datacheck** protects saved data. It lists every place the app saves or reads data and fails on anything a person entered that lives only in the browser, any save that skips the load-first guard, and any key that is saved but never loaded. Round-trip and shrink checks are part of its design.
 - **yamlcheck** catches YAML mistakes before they reach Home Assistant, such as an apostrophe inside a single-quoted string, tabs and odd indentation.
-- **devicecheck** drives a phone or tablet size with real touch events against the demo house: page swipe, card press, rotation, a slow CPU, offline and reconnect banners and the companion app. It covers what a real-device check list can do without a real device.
+- **devicecheck** drives a phone or tablet size with real touch events against the demo house: page swipe, card press, rotation, a slow CPU, offline and reconnect banners and the companion app. It covers what a real-device checklist can do without a real device.
 - **firstscreencheck** fails any page whose main card starts too far down or that has a tall, mostly empty card.
 - **wordscheck** reads the text of every page for wrong plurals ("1 items"), typos, doubled words, calm lines for things not set up, and a missing page intro.
 - **movecheck** lifts a card of every size on Home and Rooms the way Move does and checks the flying copy, the 44 px handle, dropping next to another column and cancelling cleanly.
@@ -140,7 +140,7 @@ The aim is the most finished work per unit of usage, without risking data.
 
 - **Jump check** (`jumpcheck.js`). On the Design Studio page it collapses and re-expands three cards one at a time. After each toggle the toggled card's top must stay within 4 px of where it was on screen, and every other card must keep its column and still be there. It prints OK or each problem, and runs with the other checks before a deploy.
 - **Performance check catches mutation loops.** An idle-CPU and long-task baseline now flags a script that keeps changing the page in a loop (one such loop in the scrolling chips was found and fixed this way).
-- **Check list for a batch:** gap check, overlap check, Right now check, name-clash check, generic check, performance check, legend check and jump check, run by the main chat after the helpers finish and before integrating.
+- **Checklist for a batch:** gap check, overlap check, Right now check, name-clash check, generic check, performance check, legend check and jump check, run by the main chat after the helpers finish and before integrating.
 - **Docs version banner.** The public docs show the version they describe (for example 1.20), so a reader can see how current they are.
 - **Design Studio agent views.** The Agents tally counts free and paid agents on one line; Live agents shows a terminal-style view of what each agent is working on, fed by the work-status tool.
 - **Build progress lines.** The main chat posts a short plain line as each stage of a batch finishes, and asks for every approval it will need up front at hand-over rather than mid-run.

@@ -109,6 +109,7 @@ Every feature that can use these adds its setup steps to the device setup checkl
 - Reachable for maintenance, not buried behind other gear.
 
 ### Requirements
+
 | Level | Spec |
 |---|---|
 | Minimum | Pi 5 4 GB, quality SD card, wired Ethernet, official power supply |

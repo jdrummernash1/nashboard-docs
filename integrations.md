@@ -392,7 +392,7 @@ Each of these is optional. A card that uses one says what to add when it is miss
 | **Game accounts** (Steam, Xbox, PlayStation Network integrations) | The Gaming card, achievements, gamer of the week | The matching Home Assistant integration |
 | **Fully Kiosk Browser** integration, or the phone app's screen command | Wake on approach for wall tablets | A presence or motion sensor in the room |
 | **Power-monitoring plugs** | Laundry done, smart plugs, energy now | A plug that reports watts |
-| **A UPS** (NUT or APC UPS Daemon), **printer** (IPP, Brother, SNMP) and **leak sensors** | The Utilities page | The matching integration |
+| **A UPS** (NUT or APC UPS Daemon), **printer** (IPP, Brother, SNMP) and **leak sensors** | The Utilities page; for printers, tap Add a printer to pick each one | The matching integration |
 | **Pool sensors**, **a pellet smoker**, **solar, generator and grid sensors** | Pool, the Smoker card, Energy sources | The matching integration, or log by hand (pool) |
 | **Health Connect sensors** from the Home Assistant phone app | The Workout health card | Turn the sensors on in the app |
 | **Google Find Hub / Find My Device**, or the phone app | Ring my phone on the Family Board | Either one |

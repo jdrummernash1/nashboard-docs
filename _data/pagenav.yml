@@ -1,0 +1,29 @@
+# Reading order for the previous / next links at the top and bottom of every docs page (same order as the front page list).
+- {url: "/", title: "Nashboard"}
+- {url: "/why-nashboard.html", title: "Why Nashboard"}
+- {url: "/tour.html", title: "Guided tour"}
+- {url: "/living-with-nashboard.html", title: "Living with Nashboard"}
+- {url: "/home.html", title: "Home page"}
+- {url: "/pages.html", title: "All pages"}
+- {url: "/features.html", title: "Every feature"}
+- {url: "/themes.html", title: "Themes"}
+- {url: "/release-1.0.html", title: "Nashboard 1.0"}
+- {url: "/faq.html", title: "FAQ"}
+- {url: "/setup.html", title: "Set it up"}
+- {url: "/getting-started.html", title: "Getting started"}
+- {url: "/settings.html", title: "Settings"}
+- {url: "/device-setup.html", title: "Device setup"}
+- {url: "/integrations.html", title: "Data sources"}
+- {url: "/automations.html", title: "Automations"}
+- {url: "/notifications.html", title: "Notifications"}
+- {url: "/how-it-connects.html", title: "How it all connects"}
+- {url: "/how-its-built.html", title: "How it's built"}
+- {url: "/ai-build-system.html", title: "How the AI builds it"}
+- {url: "/diagrams.html", title: "Diagrams"}
+- {url: "/app-architecture.html", title: "App architecture"}
+- {url: "/developer-workflow.html", title: "Developer workflow"}
+- {url: "/developer-tools.html", title: "Developer tools"}
+- {url: "/design-engine.html", title: "Design engine"}
+- {url: "/design-kit.html", title: "Design kit"}
+- {url: "/car-app.html", title: "Future: car app"}
+- {url: "/changelog.html", title: "Change log"}

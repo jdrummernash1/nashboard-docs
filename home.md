@@ -42,7 +42,7 @@ connection status. Its buttons sit tight, and text that does not fit scrolls ins
 | **Cameras** | Camera snapshots |
 | **Overhead** | A plane within 5 nm: photo, airline, route, altitude, speed and live distance. Stays at least 3 minutes and follows the plane as it leaves |
 | **Space Station** | From 10 minutes before the ISS rises until it sets: a live sky dial with the pass track and where to look |
-| **Black-owned businesses** | A suggestion card that works with or without a directory. Reads (on this screen only) home jobs due within two weeks, the shopping list and upcoming events, and turns them into at most three generic search words such as "gutter cleaning" or "bakery". Only those words and the general area typed in its settings are sent, never names, addresses or list items. A directory on your own network is always allowed; any other is used only while cloud use is allowed in AI privacy. The home's local AI can also pick the needs, including seasonal ones such as gutters before winter. With no directory it shows them as "Your home may need: ..." with a Search button that opens a web search for Black-owned businesses of that kind in a new tab when tapped; the dashboard sends nothing itself and never makes up business names. The card's title is Black-owned businesses by default; **Kinds of business to support** in Business settings lets you pick Black-owned, Women-owned, Veteran-owned, LGBTQ+-owned, Latino-owned, Asian-owned, Indigenous-owned, Family-owned or Local and independent (with more than one, or a different one, the title becomes Businesses to support). Menu: Business settings (admins paste a directory web address with {q} where the words go), Mute for 30 days, Hide this card. |
+| **Black-owned businesses** | A suggestion card that works with or without a directory. Reads (on this screen only) home jobs due within two weeks, the shopping list and upcoming events, and turns them into at most three generic search words such as "gutter cleaning" or "bakery". Only those words and the general area typed in its settings are sent, never names, addresses or list items. A directory on your own network is always allowed; any other is used only while cloud use is allowed in AI privacy. The home's local AI can also pick the needs, including seasonal ones such as gutters before winter. With no directory it shows them as "Your home may need: ..." with a Search button that opens a web search (for example "Black-owned gutter cleaning near your area", one per kind picked) in a new tab when tapped, only while cloud use is allowed; a directory can be picked in Business settings for real listings; the dashboard sends nothing itself and never makes up business names. The card's title is Black-owned businesses by default; **Kinds of business to support** in Business settings lets you pick Black-owned, Women-owned, Veteran-owned, LGBTQ+-owned, Latino-owned, Asian-owned, Indigenous-owned, Family-owned or Local and independent (with more than one, or a different one, the title becomes Businesses to support). Menu: Business settings (admins paste a directory web address with {q} where the words go), Mute for 30 days, Hide this card. |
 | **Games** | Your teams' games from a day before to a few hours after; live games show a pulsing dot and scores flash when they change |
 | **Up next tasks** | Google Tasks due today are added to the Up next card |
 | **Gas prices** | Cheapest nearby premium and diesel; collapsible |
@@ -92,7 +92,7 @@ doesn't flicker; if the situation clears sooner the card says so ("Closed now", 
 leaves. Several have a one-tap action button.
 
 <!-- homecards:start -->
-The app has 108 automatic Home cards. This table is written from the app's own list and its How it works texts, so it always matches the app.
+The app has 109 automatic Home cards. This table is written from the app's own list and its How it works texts, so it always matches the app.
 
 | Home card | Shows when | What you can do |
 |---|---|---|
@@ -132,6 +132,7 @@ The app has 108 automatic Home cards. This table is written from the app's own l
 | Maintenance due | On Home when a job is due; goes away when done. | Tap Done to mark it finished. |
 | Trash night | From 3 PM the day before pickup until 9 AM on the pickup day. | Tap Done once the bins are out; it shows who did it ('Done by' and a first name) until the pickup passes, then hides. |
 | Lights still on | From 11 PM to 5 AM when two or more lights are on. | Tap All off to turn them off. |
+| Arriving today | On Home only on the day a package is arriving; it leaves when the package is delivered. A phone alert goes out at the same moment. | Open Packages to see its stages and scan history. |
 | Cat’s medicine | No longer shown on its own: the cat's medicine row now appears inside the Pet care due card. | Tap Log now to record that the dose was given. |
 | Overdue tasks | Only when a task is past its due date. | Read-only; finish tasks on the Calendar page. |
 | Running low | On Home when an item's count reaches its low level. | Read only; update the count on the Storage page. |
@@ -204,6 +205,7 @@ The app has 108 automatic Home cards. This table is written from the app's own l
 | PC running hot or full | On Home while one of those is true; gone when it clears. | Read-only. |
 | 3D print | On Home for an hour after a finish, or three hours after a failure; gone after. | Read-only. |
 | Router or NAS offline | On Home while it is true; gone when it is back. | Read-only. |
+
 <!-- homecards:end -->
 
 Every one of these also lives on its own page's **Right now** card (see [Every feature](features.md#home-automatic-cards) for which page owns which). Add `?popdemo=1` to the dashboard address to preview every pop-up card with sample text.
