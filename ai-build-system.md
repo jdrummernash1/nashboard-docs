@@ -28,7 +28,7 @@ One expensive, careful model (the **main chat**, Opus) plans, integrates and che
 Separate Claude Code sessions for tasks of their own (documents, research, an app path, a profile). They share the folder, so each touches only its own files, commits nothing unless told to, and reports back to the session that started it. Notes too big for a message go in a shared notes folder outside the repo.
 
 ### Local Ollama on the PC (free)
-A gaming-class PC (RTX 2080, 8 GB VRAM, 32 GB RAM) runs Ollama. Current models:
+A gaming-class PC with a graphics card runs Ollama. Current models:
 
 | Model | Used for |
 |---|---|

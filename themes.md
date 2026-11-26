@@ -1,3 +1,7 @@
+---
+title: Themes
+---
+
 # Themes and looks
 
 Nashboard can be changed in three independent ways. Mix them freely. The Look and the accent colour follow you to every

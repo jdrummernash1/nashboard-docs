@@ -90,7 +90,8 @@ Claude doesn't only build what it is asked for. As it works it proposes new feat
 automatic Home cards that build on what is already there, checked against the backlog so they never repeat an existing
 item. A couple of new suggestions arrive with every batch.
 
-Suggestions appear in **Jot it down**, marked as Claude's and dated, with two buttons:
+Suggestions appear in **Jot it down**, marked as Claude's and dated, with two buttons (a separate **Claude suggestions**
+card lists the same suggestions newest first, with **Accept** and **Not now**):
 
 - **Accept** turns it into a normal idea, which is filed into the backlog like any other.
 - **Ignore** moves it to a collapsed **Ignored suggestions** list, where **Bring back** restores it.
@@ -99,7 +100,7 @@ Suggestions appear in **Jot it down**, marked as Claude's and dated, with two bu
 
 ## Building in batches, easiest first
 
-Work runs in batches: typically 5 to 10 backlog items per build, and more when they are small and safe. One syntax
+Work runs in batches: from 5 to about 30 backlog items per build, more when they are small and safe. One syntax
 check, one quality pass and one deploy cover the whole batch. Within the open backlog, the easiest items always go
 first, so the list keeps shrinking and quick wins don't sit behind big projects.
 

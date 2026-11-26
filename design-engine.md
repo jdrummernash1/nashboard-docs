@@ -1,3 +1,7 @@
+---
+title: Design engine
+---
+
 # The design engine and the rules behind it
 
 Nashboard is built from a small set of design rules that every page, card and sheet follows. When something new has no rule yet,

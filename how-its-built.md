@@ -413,4 +413,4 @@ map check; a list that could have been wiped led to the data rules.
 The result is an app that one person and an AI can keep extending, page after page, without it drifting apart.
 
 See also: [How it all connects](how-it-connects.md) for how data flows from devices to screens, and
-[How it works and installing](setup.md) for the files and tools.
+[Set it up](setup.md) for the files and installing.

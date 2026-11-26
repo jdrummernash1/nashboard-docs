@@ -388,7 +388,7 @@ A step-by-step look at every page of Nashboard, in the order you would meet them
 <div class="tour-count">Step 41 of 41</div>
 <h2>About</h2>
 <img src="images/tour/tour-about.jpg" alt="The About page with demo data" loading="lazy">
-<p>What Nashboard is, the version, and a short tour of what is new.</p>
+<p>What Nashboard is and its version first, then the rolling credits, what is new, and a button to run the welcome tour again.</p>
 <div class="tour-nav"><a href="#s-settings">&larr; Settings</a><a class="nx" href="#top">Back to the top</a></div>
 </section>
 

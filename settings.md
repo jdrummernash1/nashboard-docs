@@ -14,9 +14,9 @@ The scale button in the top bar opens **This screen**.
 
 | Section | What is in it |
 |---|---|
-| **You** | Who you are signed in as, with a link to your Home Assistant profile (name, language, password). **Menu pages**: which pages are in your menu and in what order, saved to your account. |
+| **You** | Who you are signed in as, with a link to your Home Assistant profile (name, language, password). **Menu pages**: which pages are in your menu and in what order, saved to your account. **Where my new things go**: where your new events, tasks and private reminders are saved, with a **Waiting to reach Google** list for changes not sent yet and **Recent changes** with Undo. |
 | **This screen** | Only this device. **Look and size**: theme (dark, light, or follow the device), the **Interface scale** sheet (size, the Look, accent colour, background picture, left- or right-handed layout, holiday decorations). **Location use**: what used this device's location, or a zip code instead. **Screen options**: start page, kid lock, kitchen tablet, picture frame and wake on approach. **Smart layout**: on by default; a switch for this device only turns it off; see [Smart layout](pages.md#home-smart-layout). Casting to a TV stays in the Cast button. **Wall screen user** (admins): mark a non-administrator login as a wall screen; see [Wall screen user](pages.md#home-wall-screen-user). |
-| **Household** | **Your house** (the banner house), the **Kids** list, and shortcuts to Home settings, the Family Board and the Guest page. |
+| **Household** | **Your house** (the banner house), the **Kids** list, **Calendars and lists** (admins: who sees each calendar and to-do list), and shortcuts to Home settings, the Family Board and the Guest page. |
 | **Alerts** | **Household quiet hours**, the Alerts and notifications sheet (chimes, plane and Space Station alerts, phone alerts) with switches for Swipe between pages, Page intros, the New build sound, the Connection lost alert and the location pin, **Card change notices**, and (admins) Demo page alerts. |
 | **House and app** | A link to the System page (updates, backups, saved data, device setup) and the **Maintainer tools** switch. |
 
@@ -74,7 +74,7 @@ Other settings that live elsewhere:
 
 ## Saved per Home Assistant user (follows you to every device)
 
-- **Menu pages**: choose which pages appear in your side menu (System → Menu pages, or More → Customize menu). The menu is grouped under Everyday, House, Family, Out & about, Fun & info, Labs and System, and your choices work inside each group. A **Frequent** group of your most-used pages comes first on the side menu and the phone and tablet page bar.
+- **Menu pages**: choose which pages appear in your side menu (Settings → You → Menu pages, or More → Customize menu). The menu is grouped under Everyday, House, Family, Out & about, Fun & info, Labs and System, and your choices work inside each group. A **Frequent** group of your most-used pages comes first on the side menu and the phone and tablet page bar.
   Home always stays. Hidden pages still open from links, Multi-view and Display.
 - **Alerts and sounds**: overhead plane alerts, Space Station alerts, emergency (7700) alerts, connection-lost
   alerts, the doorbell/person chime and the garage chime. With **phone alerts** on, Home Assistant also notifies phones

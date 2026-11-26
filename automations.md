@@ -92,7 +92,7 @@ screens agree.
 ## Family and medicine
 
 ### Overnight fever and medicine summary
-- **What it does:** if a temperature or a medicine dose was logged between 8 PM and 7 AM, one line on the Family page (and Home) from 6 to 11 AM sums the night up, for example "Fever 100.8 at 2 AM, Tylenol given at 2:10 AM, 99.1 at 5 AM, back to normal".
+- **What it does:** if a temperature or a medicine dose was logged between 8 PM and 7 AM, one line on the Family Board (and Home) from 6 to 11 AM sums the night up, for example "Fever 100.8 at 2 AM, Tylenol given at 2:10 AM, 99.1 at 5 AM, back to normal".
 - **Copy for the doctor** copies the same facts as plain text; **Done** hides it for the day.
 - **Logged values only:** it never gives advice. The wording is built by a plain rule, and local AI (never the cloud) may reword it only when every number and time is kept.
 

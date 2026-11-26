@@ -24,6 +24,8 @@ Home is the page most screens sit on. It has a banner at the top and a grid of c
 - **Status chips** in a scrolling strip of two-line chips (label on top, detail below) **below the house** (not over it), sitting between the horizon and the banner's bottom edge: lights on, garage, indoor temperature and
   humidity, mail and packages, low batteries, open doors and windows, updates available, pet problems. Tap a chip to
   act on it or open its details. Chips and switches have large invisible touch areas.
+- **Sticky notes button** at the top right of the banner, under the tidbit chip, with a count of open notes; see
+  [Sticky notes](pages.md#home-sticky-notes).
 - **Tap the banner** for a bubble that explains what drives it: the sky (holiday, weather effect, sunrise and sunset) and
   the house (lights on, packages delivered today, holiday decorations), with links.
 - **Tidbit chip**: one fun fact per page load, rotating through topics (lines of code in the dashboard, planes
@@ -93,7 +95,7 @@ doesn't flicker; if the situation clears sooner the card says so ("Closed now", 
 leaves. Several have a one-tap action button.
 
 <!-- homecards:start -->
-The app has 138 automatic Home cards. This table is written from the app's own list and its How it works texts, so it always matches the app.
+The app has 141 automatic Home cards. This table is written from the app's own list and its How it works texts, so it always matches the app.
 
 | Home card | Shows when | What you can do |
 |---|---|---|
@@ -234,7 +236,10 @@ The app has 138 automatic Home cards. This table is written from the app's own l
 | No dinner planned, use these first | From 3 to 6 PM on a day with no dinner planned, only while something expires within 3 days. | Tap Plan it to put the recipe on tonight's dinner in the Mealie meal plan. |
 | Scene suggestion | Near the usual hour, once a scene has been run at least four times around then. Never within 3 hours of running it. | Tap Run to start the scene, or Not now to hide it for the rest of the day (saved for you only). |
 | Space data is old | On the Space page only, once a refresh has been failing for 30 minutes or more. | Nothing to do; the page keeps showing the last good copy and tries again on its own. |
+| Speaker timers and alarms | Only while a speaker timer is running or an alarm is due in the next day; not at all when no speaker integration provides them. | Read it; set, change and cancel timers by voice on the speaker. |
 | Someone bought you a coffee | For grown-ups only, for 3 days after a new supporter; never on a wall screen or in guest mode, and not at all until the Home Assistant side is set up. | Nothing to do; it goes away by itself. |
+| Note on the wall | Only on wall screens and the Display page, only for the screens the note was meant for, until its time is up. | Read it; the person who posted it can remove it early on the Family Board. |
+| My bills due | From 5 days past the due day to 3 days before it, until you tick it paid. | Tap Paid to tick it for this month; the Finance page shows the whole checklist. |
 
 <!-- homecards:end -->
 

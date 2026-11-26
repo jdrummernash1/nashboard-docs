@@ -173,7 +173,7 @@ The same thing happens after dark even if someone is home, because a package on 
 - **Chores → the Kids page**: a chore ticked on the Family Board earns a star on the Kids page's star chart.
 - **Storage → Garage**: toolboxes and drawers are just Storage places, so a tool added on the Garage page is found by
   the Storage search, and the Garage room page shows a Tool storage card.
-- **Doorbell → everywhere**: a ring shows a snapshot on Home, the Family Board and every room page on the Activity timeline with the time.
+- **Doorbell → everywhere**: a ring shows a snapshot on Home, the Family Board and every room page, and is logged on the Activity timeline with the time.
 
 ---
 

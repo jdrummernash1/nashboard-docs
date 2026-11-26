@@ -2,6 +2,17 @@
 - group: "Home Assistant integrations and cards"
   items:
     - {author: "home-assistant", repo: "core", use: "Home Assistant itself, the base of everything", url: "https://github.com/home-assistant/core"}
+    - {author: "superdingo101", repo: "daylight-calendar-card", use: "Idea for day badges and saved calendar views on Calendar", url: "https://github.com/superdingo101/daylight-calendar-card"}
+    - {author: "robin994", repo: "billy", use: "Idea for the bill payer and the monthly all-paid checklist on Finance", url: "https://github.com/robin994/billy"}
+    - {author: "mKeRix", repo: "room-assistant", use: "Idea for room-level presence (who is in which room) on Family", url: "https://github.com/mKeRix/room-assistant"}
+    - {author: "glenndehaan", repo: "unifi-voucher-site", use: "Idea for the Guest Wi-Fi voucher with an end date and a QR", url: "https://github.com/glenndehaan/unifi-voucher-site"}
+    - {author: "Olen", repo: "homeassistant-plant", use: "Idea for per-plant care limits on Hobbies (moisture, temperature, light) with a problem badge", url: "https://github.com/Olen/homeassistant-plant"}
+    - {author: "Olen", repo: "lovelace-flower-card", use: "Idea for the plant problem icons and care note on Hobbies", url: "https://github.com/Olen/lovelace-flower-card"}
+    - {author: "jjjonesjr33", repo: "petlibro", use: "Idea for the Meals today card on Pets (meals given, food level)", url: "https://github.com/jjjonesjr33/petlibro"}
+    - {author: "RobertD502", repo: "home-assistant-petkit", use: "Idea for the missed-meal line on the Meals today card on Pets", url: "https://github.com/RobertD502/home-assistant-petkit"}
+    - {author: "jmdevita", repo: "parcel-ha", use: "Idea for taking Parcel app sensors as a Packages source", url: "https://github.com/jmdevita/parcel-ha"}
+    - {author: "ha-parcel-integrations", repo: "ha-parcel-aggregator", use: "Idea for merging parcel aggregator sensors into Packages without duplicates", url: "https://github.com/ha-parcel-integrations/ha-parcel-aggregator"}
+    - {author: "ITSpecialist111", repo: "ai_automation_suggester", use: "Idea for the Automation ideas card on System (suggestions for review only)", url: "https://github.com/ITSpecialist111/ai_automation_suggester"}
     - {author: "ccpk1", repo: "ChoreOps", use: "Chore turns and a first-come pool idea; streaks and badges on the Kids star chart; reward store with grown-up approval, chore ideas", url: "https://github.com/ccpk1/ChoreOps"}
     - {author: "JVarhol", repo: "HA-Family-Hub", use: "Chore turns and a first-come pool idea; weather icon and high/low on each calendar day; inspired the per-person column view on Calendar; reward store and family board ideas", url: "https://github.com/JVarhol/HA-Family-Hub"}
     - {author: "jamesmcginnis", repo: "crow-media-player", use: "Idea for the weekly listening recap on Now Playing; idea for the Now playing sleep timer", url: "https://github.com/jamesmcginnis/crow-media-player"}
@@ -11,7 +22,14 @@
     - {author: "juju35", repo: "mailbox-card", use: "The idea of showing whether the mail was collected", url: "https://github.com/juju35/mailbox-card"}
     - {author: "juju35", repo: "Family Link and Console Card", use: "Screen-time card idea: limit, plus and minus, lock", url: "https://github.com/juju35"}
     - {author: "juju35", repo: "Rain Card", use: "Rain in the next 60 minutes ribbon idea on the Weather page", url: "https://github.com/juju35"}
-    - {author: "AlexandrErohin", repo: "home-assistant-flightradar24", use: "Nearby flights on the Planes page", url: "https://github.com/AlexandrErohin/home-assistant-flightradar24"}
+    - {author: "hook-365", repo: "adsb-aircraft-tracker", use: "Idea for the plane watch list with wildcards, quiet hours and a per-type snooze; inspired the quiet window and 1 hour snooze on alerts", url: "https://github.com/hook-365/adsb-aircraft-tracker"}
+    - {author: "kedube", repo: "ha-iss-tracker", use: "Idea for the next visible Space Station pass with an accuracy label", url: "https://github.com/kedube/ha-iss-tracker"}
+    - {author: "djtimca", repo: "hasatellitetracker", use: "Idea for the where-to-look chart of a satellite pass", url: "https://github.com/djtimca/hasatellitetracker"}
+    - {author: "pkissling", repo: "clock-weather-card", use: "Idea for the daily temperature range bars with a marker for now", url: "https://github.com/pkissling/clock-weather-card"}
+    - {author: "korova-sq", repo: "sun-weather-card", use: "Idea for the sunrise-to-sunset arc with the sun position", url: "https://github.com/korova-sq/sun-weather-card"}
+    - {author: "senyo888", repo: "humidity-intelligence", use: "Idea for the indoor comfort and mould-risk score on Air", url: "https://github.com/senyo888/humidity-intelligence"}
+    - {author: "Limych", repo: "ha-iaquk", use: "Idea for the indoor air-quality score from humidity, dew point and CO2", url: "https://github.com/Limych/ha-iaquk"}
+    - {author: "AlexandrErohin", repo: "home-assistant-flightradar24", use: "Nearby flights on the Planes page; idea for the plane watch list by aircraft type", url: "https://github.com/AlexandrErohin/home-assistant-flightradar24"}
     - {author: "DJS91", repo: "HAMusicAssistantJukebox", use: "Guest jukebox idea: request songs from a QR page", url: "https://github.com/DJS91/HAMusicAssistantJukebox"}
     - {author: "firstof9", repo: "ha-gasbuddy", use: "Gas prices", url: "https://github.com/firstof9/ha-gasbuddy"}
     - {author: "BSkando", repo: "GoogleFindMy-HA", use: "Google Find My Device trackers on the Map", url: "https://github.com/BSkando/GoogleFindMy-HA"}
@@ -23,6 +41,12 @@
     - {author: "jpettitt", repo: "weather-radar-card", use: "Weather radar loop on the Weather page", url: "https://github.com/jpettitt/weather-radar-card"}
     - {author: "alexpfau", repo: "calendar-card-pro", use: "Weather icon and high/low on each calendar day; private calendars show busy blocks only on shared screens; inspired the per-person column view on Calendar; Inspired the month view on the Up next calendar card", url: "https://github.com/alexpfau/calendar-card-pro"}
     - {author: "eifinger", repo: "pywaze", use: "Waze library behind the Commute drive times", url: "https://github.com/eifinger/pywaze"}
+    - {author: "idaho", repo: "hassio-trash-card", use: "Collection day card: next pickup per type (trash, recycling, compost) read from a calendar", url: "https://github.com/idaho/hassio-trash-card"}
+    - {author: "ADNPolymerase", repo: "ha-appliance-card", use: "Appliance cycle row: running state, time left, finish time and run time today", url: "https://github.com/ADNPolymerase/ha-appliance-card"}
+    - {author: "blaineventurine", repo: "simple_inventory", use: "Pantry minimums, low-stock add to the shopping list and how fast each food is used", url: "https://github.com/blaineventurine/simple_inventory"}
+    - {author: "mealie-atelier", repo: "mealie-atelier-cards", use: "Cook mode: timers per step and swipe between steps", url: "https://github.com/mealie-atelier/mealie-atelier-cards"}
+    - {author: "sandydargoport", repo: "prism", use: "Cook mode idea: one big step at a time on the kitchen screen", url: "https://github.com/sandydargoport/prism"}
+    - {author: "vednolacni", repo: "kiosk-satellite-cook-mode", use: "Cook mode idea: screen kept awake while cooking", url: "https://github.com/vednolacni/kiosk-satellite-cook-mode"}
     - {author: "deejay4959", repo: "ma-easy-player-card", use: "Inspired the features we rebuilt in Now playing", url: "https://github.com/deejay4959/ma-easy-player-card"}
     - {author: "dermotduffy", repo: "advanced-camera-card", use: "Inspired the camera event filters and timeline", url: "https://github.com/dermotduffy/advanced-camera-card"}
     - {author: "deekay2153", repo: "ultimate-hikvision-nvr-card", use: "Inspired the big-picture camera wall and the 24-hour people and vehicle timeline; Inspired the PTZ joystick with tap-to-aim in the camera live view", url: "https://github.com/deekay2153/ultimate-hikvision-nvr-card"}
@@ -31,6 +55,12 @@
     - {author: "moeckjeremy", repo: "ledger-home-finance", use: "Inspired the paycheck forecast, budgets and debt payoff on Finance", url: "https://github.com/moeckjeremy/ledger-home-finance"}
     - {author: "murre87", repo: "energywizard", use: "Inspired the Run it now or wait energy card", url: "https://github.com/murre87/energywizard"}
     - {author: "gdelagardelle", repo: "t90-map-card", use: "Inspired the vacuum map with live position, room cleaning and your own floor image", url: "https://github.com/gdelagardelle/t90-map-card"}
+    - {author: "djdevil", repo: "AlertTicker-Card", use: "Inspired Snooze and the quiet window on Right now", url: "https://github.com/djdevil/AlertTicker-Card"}
+    - {author: "leikoilja", repo: "ha-google-home", use: "Idea for speaker timers and alarms on Home", url: "https://github.com/leikoilja/ha-google-home"}
+    - {author: "jeremiaa", repo: "magic-frame", use: "Inspired the quick note to the wall screen", url: "https://github.com/jeremiaa/magic-frame"}
+    - {author: "huntsyea", repo: "kitchen-frame", use: "Inspired the quick note to the wall screen", url: "https://github.com/huntsyea/kitchen-frame"}
+    - {author: "jxlarrea", repo: "kiosk-satellite", use: "Inspired the wall screen remote controls", url: "https://github.com/jxlarrea/kiosk-satellite"}
+    - {author: "leukipp", repo: "touchkio", use: "Inspired the wall screen remote controls", url: "https://github.com/leukipp/touchkio"}
 - group: "Home services and add-ons"
   items:
     - {author: "blakeblackshear", repo: "frigate", use: "Camera person and car detection", url: "https://github.com/blakeblackshear/frigate"}
@@ -65,3 +95,7 @@
   items:
     - {author: "ollama", repo: "ollama", use: "Free local AI helpers", url: "https://github.com/ollama/ollama"}
     - {author: "QwenLM", repo: "Qwen3", use: "The Qwen models our local helpers run", url: "https://github.com/QwenLM/Qwen3"}
+- group: "Developer tools"
+  items:
+    - {author: "anthropics", repo: "skills", use: "The web-app testing and front-end design skills our build crew works from", url: "https://github.com/anthropics/skills"}
+    - {author: "anthropics", repo: "knowledge-work-plugins", use: "The accessibility review, design critique and UX copy skills our build crew works from", url: "https://github.com/anthropics/knowledge-work-plugins"}

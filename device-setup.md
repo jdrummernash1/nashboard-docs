@@ -49,7 +49,7 @@ What each kind of device needs for Nashboard to work fully. The same checklist i
 - Turn on the companion sensors you want: Activity, Battery, Next alarm, Wi-Fi connection, Bluetooth, and Health Connect
   on Android.
 - Allow every notification channel. On Android: Apps → Home Assistant → Notifications, then allow **Medicine,
-  Intercom, Gas prices, Home, Family, Commute, Pets, Garage, Planes** and **Claude**. On iPhone one switch covers them all.
+  Intercom, Gas prices, Home, Family, Commute, Pets, Packages, Garage, Planes** and **Claude**. On iPhone one switch covers them all.
 - Allow the **Home** channel so the leaving-home alert arrives (lights on, a lock unlocked or the garage open, two minutes after the last person leaves).
 - Optional: let time-sensitive alerts through Do Not Disturb or a Focus so medicine, garage and commute alerts arrive at night.
 - In Nashboard, Settings → Alerts: switch on phone alerts for planes, Space Station passes and emergencies.
