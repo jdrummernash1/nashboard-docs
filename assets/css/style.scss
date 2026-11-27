@@ -252,3 +252,27 @@ html body .main-content a.nb-pn-p:hover,html body .main-content a.nb-pn-n:hover{
 .nb-listen .nl-num{min-width:1.6em;color:var(--mut);font-variant-numeric:tabular-nums}
 @media (max-width:760px){.nb-listen{right:8px;left:8px;width:auto;bottom:calc(70px + env(safe-area-inset-bottom));max-height:70vh}.nb-listenbtn span{display:none}}
 @media (prefers-reduced-motion:reduce){.nb-listen,.nb-listenbtn{transition:none;animation:none}}
+
+/* Where each change came from (Jarrett, Nov 26: "easy to identify the source of the change"): one Source column of labelled, colour-coded
+   badges instead of three narrow check-mark columns whose headers wrapped one letter per line on phones. Used by the Change log and What's new. */
+:root{--src-h-tx:#a9cdff;--src-h-bg:rgba(90,155,255,.17);--src-c-tx:#ffc06a;--src-c-bg:rgba(255,181,71,.16);--src-g-tx:#86dca0;--src-g-bg:rgba(70,190,110,.16);--src-f-tx:#d2b6ff;--src-f-bg:rgba(170,120,255,.17)}
+@media (prefers-color-scheme:light){:root:not([data-theme=dark]){--src-h-tx:#1b4f9c;--src-h-bg:rgba(40,110,220,.11);--src-c-tx:#8a4600;--src-c-bg:rgba(230,140,20,.14);--src-g-tx:#1a6a33;--src-g-bg:rgba(40,150,80,.12);--src-f-tx:#5a2ba0;--src-f-bg:rgba(120,70,220,.11)}}
+:root[data-theme=light]{--src-h-tx:#1b4f9c;--src-h-bg:rgba(40,110,220,.11);--src-c-tx:#8a4600;--src-c-bg:rgba(230,140,20,.14);--src-g-tx:#1a6a33;--src-g-bg:rgba(40,150,80,.12);--src-f-tx:#5a2ba0;--src-f-bg:rgba(120,70,220,.11)}
+html body .src{display:inline-block;margin:2px 4px 2px 0;padding:2px 9px;border-radius:999px;font-size:.8rem;font-weight:600;line-height:1.5;white-space:nowrap;text-decoration:none}
+html body .src-h{color:var(--src-h-tx);background:var(--src-h-bg)}
+html body .src-c{color:var(--src-c-tx);background:var(--src-c-bg)}
+html body .src-f{color:var(--src-f-tx);background:var(--src-f-bg)}
+html body a.src-g,html body a.src-g:hover{color:var(--src-g-tx);background:var(--src-g-bg)}
+html body .src-key{margin:.4rem 0 1rem;line-height:2}
+html body .main-content table.srct{width:100%;display:table;table-layout:fixed}
+html body .main-content table.srct th:last-child,html body .main-content table.srct td:last-child{width:13.5rem}
+html body .main-content table.srct th{text-align:left}
+html body .srct .wn-b{display:inline-block;min-width:2.6em;font-weight:700}
+@media (max-width:600px){
+  html body .main-content table.srct thead{display:none}
+  html body .main-content table.srct,html body .main-content table.srct tbody,html body .main-content table.srct tr,html body .main-content table.srct td{display:block;width:auto}
+  html body .main-content table.srct td{border:0;padding:8px 12px 0}
+  html body .main-content table.srct td:last-child{padding:4px 12px 9px;min-width:0;border-bottom:1px solid var(--line)}
+  html body .main-content table.srct tr:nth-child(even){background:var(--card)}
+  html body .main-content table.srct tr:nth-child(even) td{background:transparent}
+}

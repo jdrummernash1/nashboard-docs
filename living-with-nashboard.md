@@ -78,18 +78,22 @@ closed?".
 
 ## What's new lately
 
-- **Pages open on what matters:** each page's Right now shows only what is live. Everything quiet folds into one line you can open.
-- **Today at a glance:** the first card on Home sums up the day in a couple of sentences.
-- **Urgent first:** a leak, a power cut or someone at the door is always at the top of Home.
-- **Kids page for kids:** grown-up controls sit behind the Grown-ups button and the PIN, and a Picture mode gives pre-readers big icons and a button that reads each card aloud.
-- **Home organisation:** note which room and spot things are kept in, keep an insurance list with serial numbers and values, and each room page shows what lives there.
-- **TVs show the cameras:** a new TV starts on one still screen built around the live camera wall.
-- **More to set up:** pages for things you may not have (a pool, a commute, pets) wait in Menu pages until you tap Set up.
-- **Leftovers:** log them on Pantry & Fridge and Home tells you what to eat first.
-- **Gigs:** the old Band card plans setup and breakdown times around the show.
-- **Scan it:** point the camera at a barcode when adding to shopping, pantry or storage.
-- **Wall calendar:** big buttons (and a microphone) to add an event or a list item.
-- **Bigger or smaller:** the Interface scale control re-packs everything to fit.
+Same columns as the [change log](changelog.md). A feature with no record of who asked shows no mark.
+
+| Feature | Human | Claude | Other GitHub |
+| --- | :---: | :---: | --- |
+| **Pages open on what matters:** each page's Right now shows only what is live. Everything quiet folds into one line you can open. |  |  |  |
+| **Today at a glance:** the first card on Home sums up the day in a couple of sentences. |  |  |  |
+| **Urgent first:** a leak, a power cut or someone at the door is always at the top of Home. |  |  |  |
+| **Kids page for kids:** grown-up controls sit behind the Grown-ups button and the PIN, and a Picture mode gives pre-readers big icons and a button that reads each card aloud. |  |  |  |
+| **Home organisation:** note which room and spot things are kept in, keep an insurance list with serial numbers and values, and each room page shows what lives there. |  |  |  |
+| **TVs show the cameras:** a new TV starts on one still screen built around the live camera wall. |  |  |  |
+| **More to set up:** pages for things you may not have (a pool, a commute, pets) wait in Menu pages until you tap Set up. |  |  |  |
+| **Leftovers:** log them on Pantry & Fridge and Home tells you what to eat first. | ✓ | ✓ |  |
+| **Gigs:** the old Band card plans setup and breakdown times around the show. |  | ✓ |  |
+| **Scan it:** point the camera at a barcode when adding to shopping, pantry or storage. |  |  |  |
+| **Wall calendar:** big buttons (and a microphone) to add an event or a list item. |  | ✓ |  |
+| **Bigger or smaller:** the Interface scale control re-packs everything to fit. |  |  |  |
 
 ## Good to know
 

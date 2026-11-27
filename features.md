@@ -49,288 +49,319 @@ Always true of these: a local AI is used unless an admin turns on cloud AI; what
 
 ## New for 1.0
 
-- **Pages open on their content.** Right now shows only what is live; quiet rows fold into one line; set-up and
-  settings cards sit after the page's own cards. A room page shows only its own rows.
-- **Right now tells the truth.** No more "Power is on" with no UPS: a feature that is not set up has no row, and quiet
-  rows read the real state.
-- **Home order you can trust.** Every automatic card has a priority, so a leak or someone at the door is never filed
-  under Lower priority. **Today at a glance** is the first card under the banner. Chips on titles only say something
-  new (minutes left, overdue).
-- **Full-screen card notices are off by default**, and when on they are for urgent cards on wall screens and TVs.
-- **A real starting list.** The Setup checklist begins with Getting started (rooms, weather, calendar, shopping list,
-  cameras, speakers, phones, commute); optional extras are folded away and not counted.
-- **A grouped menu:** the side menu, the phone More sheet and Menu pages share headings (Everyday, House, Family, Out & about, Fun & info, Labs, System), and cards waiting for set-up fold into one More to set up card at the end of each page. On a desktop the groups are colour-tinted containers instead of heading words, with a Frequent group of your most-used pages first.
-- **Phone and tablet page bar:** slides through every page (Frequent first, tinted groups, More pinned), buttons at least 48 px.
-- **Card text fills the card:** titles and main values grow to use the space each card already has, without making any card taller.
-- **Pages that wait until set up** (Commute, Pets, Pool, Utilities, Energy) are listed under More to set up in Menu
-  pages with a Set up button, instead of hiding with no way in.
-- **Kids page for kids:** no set-up text or edit buttons in front of a child; a Grown-ups button behind the PIN.
-- **Privacy:** local AI only unless an admin allows cloud AI, guests do not see the family's commute, and the app's
-  maintainer tools are out of the family's view.
-- **Workout** never takes a pet scale for your weight: health values are only picked from your own phone app.
-- **Demo mode** stays quiet unless you tap something, and the phone tab bar is solid.
-- **Banner and top bar:** the banner clock is bigger with the info chip stacked under it, and top-bar text tightens its spacing before it starts to scroll. The About page facts (card counts, checks, models) are written at build time, and the Design Studio status comes from one live model.
-- **Cameras (1.11):** sound tries WebRTC first and falls back to HLS; the camera-model wizard picks frames from past footage (any camera in the HA media browser) or from a snapshot collector; each camera chooses which kinds of detection reach phones.
-- **House picture (1.11):** more choices in Your house (lawn tone, front walk, flower beds, hedge, yard tree type and side, chimney, solar panels, house number plaque), and the photo reader now fills them in for you to review.
-- **Map (1.11):** markers that would overlap are spread apart, and an untrained garage camera model shows a neutral "Camera model not trained yet" pill.
-- **Demo and speed (1.11, 1.12):** the demo house is generated from the screenshot sample house, the Home page uses far less CPU when idle, and background work waits until you stop scrolling.
-- **First-screen check:** a quality check fails any page whose main card starts too far down or leaves the first screen mostly empty.
+| Feature | Human | Claude | Other GitHub |
+| --- | :---: | :---: | --- |
+| **Pages open on their content.** Right now shows only what is live; quiet rows fold into one line; set-up and settings cards sit after the page's own cards. A room page shows only its own rows. |  |  |  |
+| **Right now tells the truth.** No more "Power is on" with no UPS: a feature that is not set up has no row, and quiet rows read the real state. |  |  |  |
+| **Home order you can trust.** Every automatic card has a priority, so a leak or someone at the door is never filed under Lower priority. **Today at a glance** is the first card under the banner. Chips on titles only say something new (minutes left, overdue). |  |  |  |
+| **Full-screen card notices are off by default**, and when on they are for urgent cards on wall screens and TVs. |  |  |  |
+| **A real starting list.** The Setup checklist begins with Getting started (rooms, weather, calendar, shopping list, cameras, speakers, phones, commute); optional extras are folded away and not counted. |  |  |  |
+| **A grouped menu:** the side menu, the phone More sheet and Menu pages share headings (Everyday, House, Family, Out & about, Fun & info, Labs, System), and cards waiting for set-up fold into one More to set up card at the end of each page. On a desktop the groups are colour-tinted containers instead of heading words, with a Frequent group of your most-used pages first. |  |  |  |
+| **Phone and tablet page bar:** slides through every page (Frequent first, tinted groups, More pinned), buttons at least 48 px. |  |  |  |
+| **Card text fills the card:** titles and main values grow to use the space each card already has, without making any card taller. |  |  |  |
+| **Pages that wait until set up** (Commute, Pets, Pool, Utilities, Energy) are listed under More to set up in Menu pages with a Set up button, instead of hiding with no way in. |  |  |  |
+| **Kids page for kids:** no set-up text or edit buttons in front of a child; a Grown-ups button behind the PIN. |  |  |  |
+| **Privacy:** local AI only unless an admin allows cloud AI, guests do not see the family's commute, and the app's maintainer tools are out of the family's view. | ✓ | ✓ |  |
+| **Workout** never takes a pet scale for your weight: health values are only picked from your own phone app. | ✓ | ✓ |  |
+| **Demo mode** stays quiet unless you tap something, and the phone tab bar is solid. | ✓ |  |  |
+| **Banner and top bar:** the banner clock is bigger with the info chip stacked under it, and top-bar text tightens its spacing before it starts to scroll. The About page facts (card counts, checks, models) are written at build time, and the Design Studio status comes from one live model. |  |  |  |
+| **Cameras (1.11):** sound tries WebRTC first and falls back to HLS; the camera-model wizard picks frames from past footage (any camera in the HA media browser) or from a snapshot collector; each camera chooses which kinds of detection reach phones. | ✓ |  |  |
+| **House picture (1.11):** more choices in Your house (lawn tone, front walk, flower beds, hedge, yard tree type and side, chimney, solar panels, house number plaque), and the photo reader now fills them in for you to review. | ✓ | ✓ |  |
+| **Map (1.11):** markers that would overlap are spread apart, and an untrained garage camera model shows a neutral "Camera model not trained yet" pill. | ✓ | ✓ |  |
+| **Demo and speed (1.11, 1.12):** the demo house is generated from the screenshot sample house, the Home page uses far less CPU when idle, and background work waits until you stop scrolling. |  |  |  |
+| **First-screen check:** a quality check fails any page whose main card starts too far down or leaves the first screen mostly empty. | ✓ | ✓ |  |
 
 ## New in 1.27 to 1.34
 
-Newest first. Items marked *Suggested by Claude* came from the project's own suggestion review; the rest were asked for by the family (Human). Each is described on its page, and ideas taken from other open-source projects are listed in the [credits](credits.md).
+Newest first. Same columns as the [change log](changelog.md): the **Human** column (✓) = asked for by the family; the **Claude** column (✓) = suggested by Claude, from its own suggestion review. Each is described on its page, and ideas taken from other open-source projects are listed in the [credits](credits.md).
 
 **1.34**
 
-- **All lights bar (1.34):** at the top of each floor and each room on Rooms, and on each room's own page: All on, All off and a brightness slider when a light can dim, each with Undo ([Rooms](pages.md#rooms-all-lights-bar)).
-- **Sticky note button (1.34):** back at the top right of the Home banner, under the info chip ([Sticky notes](pages.md#home-sticky-notes)).
-- **Medicine card (1.34):** the Medicine & fever card is more compact, and the copy for the doctor holds the dose log history only: doses, symptoms and temperatures.
-- **About (1.34):** the page opens with the Nashboard card, then Roll credits, then the rest. The card shows how many design ideas people asked for, how many came from Claude and how many credited projects, plus a line on the moonshot way of working ([About](pages.md#about)).
-- **Fold a group (1.34):** *Suggested by Claude.* Each section chip under a page header has a fold button that tucks that group's cards away; saved per person ([Smart layout](pages.md#home-smart-layout)).
-- **Waiting to reach Google and Undo (1.34):** adding or ticking a task is saved at once and, when Google or Home Assistant cannot be reached, waits in a list and is sent by itself later. Settings > You shows what is waiting and a Recent changes list with Undo. The Tasks card uses it first ([Settings](pages.md#settings)).
-- **Calm pages (1.34):** *Suggested by Claude.* The Pets page no longer flickers or jumps, the Planes air services card stays below Right now, the camera alerts card shows the last phone alert, and Wellbeing sharing asks before anything shows on a wall screen ([Wellbeing](pages.md#wellbeing)).
+| Feature | Human | Claude | Other GitHub |
+| --- | :---: | :---: | --- |
+| **All lights bar (1.34):** at the top of each floor and each room on Rooms, and on each room's own page: All on, All off and a brightness slider when a light can dim, each with Undo ([Rooms](pages.md#rooms-all-lights-bar)). | ✓ |  |  |
+| **Sticky note button (1.34):** back at the top right of the Home banner, under the info chip ([Sticky notes](pages.md#home-sticky-notes)). | ✓ |  |  |
+| **Medicine card (1.34):** the Medicine & fever card is more compact, and the copy for the doctor holds the dose log history only: doses, symptoms and temperatures. | ✓ |  |  |
+| **About (1.34):** the page opens with the Nashboard card, then Roll credits, then the rest. The card shows how many design ideas people asked for, how many came from Claude and how many credited projects, plus a line on the moonshot way of working ([About](pages.md#about)). | ✓ |  |  |
+| **Fold a group (1.34):** Each section chip under a page header has a fold button that tucks that group's cards away; saved per person ([Smart layout](pages.md#home-smart-layout)). |  | ✓ |  |
+| **Waiting to reach Google and Undo (1.34):** adding or ticking a task is saved at once and, when Google or Home Assistant cannot be reached, waits in a list and is sent by itself later. Settings > You shows what is waiting and a Recent changes list with Undo. The Tasks card uses it first ([Settings](pages.md#settings)). | ✓ |  |  |
+| **Calm pages (1.34):** The Pets page no longer flickers or jumps, the Planes air services card stays below Right now, the camera alerts card shows the last phone alert, and Wellbeing sharing asks before anything shows on a wall screen ([Wellbeing](pages.md#wellbeing)). |  | ✓ |  |
 
 **1.33**
 
-- **One Import button (1.33):** Found in your email on Packages has a single Import button.
-- **Battery picks (1.33):** the watch and phone battery cards pick only a real 0 to 100 % sensor.
-- **Agents table (1.33):** the Design Studio Agents card is a table with Active now and Done today bars ([Design Studio](pages.md#design-studio)).
-- **Compact hardware cards and tidy lists (1.33):** Hardware cards are shorter, the Jot it down list clears filed ideas by itself (from an admin screen only, never deleting), and medicine logs are kept for 14 days.
+| Feature | Human | Claude | Other GitHub |
+| --- | :---: | :---: | --- |
+| **One Import button (1.33):** Found in your email on Packages has a single Import button. | ✓ |  |  |
+| **Battery picks (1.33):** the watch and phone battery cards pick only a real 0 to 100 % sensor. | ✓ |  |  |
+| **Agents table (1.33):** the Design Studio Agents card is a table with Active now and Done today bars ([Design Studio](pages.md#design-studio)). | ✓ |  |  |
+| **Compact hardware cards and tidy lists (1.33):** Hardware cards are shorter, the Jot it down list clears filed ideas by itself (from an admin screen only, never deleting), and medicine logs are kept for 14 days. | ✓ |  |  |
 
 **1.32**
 
-- **Same-size toolbar buttons (1.32):** the top bar Undo button matches every other bar button.
-- **Typing is never a save (1.32):** typing in Jot it down or any text box cannot raise the "this would remove saved entries" warning, and nothing is written while you type.
-- **One bill, one row (1.32):** *Suggested by Claude.* A household bill and a private bill with the same name show once on Home, and Mark paid ticks both.
+| Feature | Human | Claude | Other GitHub |
+| --- | :---: | :---: | --- |
+| **Same-size toolbar buttons (1.32):** the top bar Undo button matches every other bar button. | ✓ |  |  |
+| **Typing is never a save (1.32):** typing in Jot it down or any text box cannot raise the "this would remove saved entries" warning, and nothing is written while you type. | ✓ |  |  |
+| **One bill, one row (1.32):** A household bill and a private bill with the same name show once on Home, and Mark paid ticks both. |  | ✓ |  |
 
 **1.31**
 
-- **Right now snooze and quiet window (1.31):** *Suggested by Claude.* Every Right now row that is not a live safety alert gets a Snooze button: 1 hour, until 8 PM or until tomorrow 7 AM, hidden on every screen and back by itself when the time is up. A quiet window hides one kind of alert every day between two times you pick. Ideas from AlertTicker-Card and adsb-aircraft-tracker ([Home](pages.md#home)).
-- **Speaker timers and alarms on Home (1.31):** *Suggested by Claude.* Timers and alarms set on smart speakers show as a Home row with a live countdown when the Google Home or Alexa integration provides them; nothing is shown otherwise. Idea from ha-google-home ([Home](pages.md#home)).
-- **Note for the wall (1.31):** *Suggested by Claude.* Type a short note on the Family Board, pick how long it stays and which wall screens show it, and it appears as a Home notice on those screens and on the Display page until its time is up. Ideas from magic-frame and kitchen-frame ([Family Board](pages.md#family-board)).
-- **Wall screen remote controls (1.31):** *Suggested by Claude.* One card lists each Fully Kiosk wall tablet with screen on or off, brightness, Reload, battery and last seen; wake on approach and sleep after a set time were already per screen. Ideas from kiosk-satellite and touchkio ([Kitchen](pages.md)).
-- **Day badges and saved calendar views (1.31):** *Suggested by Claude.* Holiday, birthday and no-school badges on the month, and named sets of calendars to switch between ([Calendar](pages.md#calendar-day-badges-and-saved-views)).
-- **Bills checklist (1.31):** *Suggested by Claude.* A private monthly tick and a payer for each bill, with a 3 of 8 paid line ([Finance](pages.md#finance-bills-checklist)).
-- **Who is in which room (1.31):** *Suggested by Claude.* Room names from a room sensor, opt-in per person, grown-ups only ([Family](pages.md#family-who-is-in-which-room)).
-- **Guest Wi-Fi vouchers (1.31):** *Suggested by Claude.* A named voucher with an end date, a join QR and a print view ([Guest](pages.md#guest-wi-fi-vouchers)).
-- **Kitchen (1.31):** a one-tap timer on any Cook mode step that names a time, swipe between steps, time left and finish time on a running washer or dryer, and Compost plus your own pickup type (read from the calendar if you set no day).
-- **Care and parcels (1.31):** *Suggested by Claude, inspired by homeassistant-plant, petlibro, parcel-ha and ai_automation_suggester.* Plants on the Gardening card get optional care limits (a sensor plus low and high values for moisture, temperature and light) with a problem badge when a reading is out of range; Pets gets a Meals today card with a calm missed-meal line; sensors from the Parcel app or a parcel aggregator can feed Packages without duplicates; and System lists up to three automation ideas for admins to review (nothing is created for you).
-- **Pantry running low (1.31):** *Suggested by Claude.* Set a minimum per food, see how fast it is used ("about 2 a week"), and add low foods to the shopping list (automatic add is a setting, off by default, with Undo). ([Pantry & Fridge](pages.md#pantry--fridge)).
+| Feature | Human | Claude | Other GitHub |
+| --- | :---: | :---: | --- |
+| **Right now snooze and quiet window (1.31):** Every Right now row that is not a live safety alert gets a Snooze button: 1 hour, until 8 PM or until tomorrow 7 AM, hidden on every screen and back by itself when the time is up. A quiet window hides one kind of alert every day between two times you pick. Ideas from AlertTicker-Card and adsb-aircraft-tracker ([Home](pages.md#home)). |  | ✓ | [hook-365/adsb-aircraft-tracker](https://github.com/hook-365/adsb-aircraft-tracker), [djdevil/AlertTicker-Card](https://github.com/djdevil/AlertTicker-Card) |
+| **Speaker timers and alarms on Home (1.31):** Timers and alarms set on smart speakers show as a Home row with a live countdown when the Google Home or Alexa integration provides them; nothing is shown otherwise. Idea from ha-google-home ([Home](pages.md#home)). |  | ✓ | [hacs/integration](https://github.com/hacs/integration), [leikoilja/ha-google-home](https://github.com/leikoilja/ha-google-home) |
+| **Note for the wall (1.31):** Type a short note on the Family Board, pick how long it stays and which wall screens show it, and it appears as a Home notice on those screens and on the Display page until its time is up. Ideas from magic-frame and kitchen-frame ([Family Board](pages.md#family-board)). |  | ✓ | [jeremiaa/magic-frame](https://github.com/jeremiaa/magic-frame), [huntsyea/kitchen-frame](https://github.com/huntsyea/kitchen-frame) |
+| **Wall screen remote controls (1.31):** One card lists each Fully Kiosk wall tablet with screen on or off, brightness, Reload, battery and last seen; wake on approach and sleep after a set time were already per screen. Ideas from kiosk-satellite and touchkio ([Kitchen](pages.md)). |  | ✓ | [jxlarrea/kiosk-satellite](https://github.com/jxlarrea/kiosk-satellite), [leukipp/touchkio](https://github.com/leukipp/touchkio) |
+| **Day badges and saved calendar views (1.31):** Holiday, birthday and no-school badges on the month, and named sets of calendars to switch between ([Calendar](pages.md#calendar-day-badges-and-saved-views)). |  | ✓ |  |
+| **Bills checklist (1.31):** A private monthly tick and a payer for each bill, with a 3 of 8 paid line ([Finance](pages.md#finance-bills-checklist)). |  | ✓ |  |
+| **Who is in which room (1.31):** Room names from a room sensor, opt-in per person, grown-ups only ([Family](pages.md#family-who-is-in-which-room)). |  | ✓ |  |
+| **Guest Wi-Fi vouchers (1.31):** A named voucher with an end date, a join QR and a print view ([Guest](pages.md#guest-wi-fi-vouchers)). |  | ✓ |  |
+| **Kitchen (1.31):** a one-tap timer on any Cook mode step that names a time, swipe between steps, time left and finish time on a running washer or dryer, and Compost plus your own pickup type (read from the calendar if you set no day). | ✓ |  |  |
+| **Care and parcels (1.31):** Plants on the Gardening card get optional care limits (a sensor plus low and high values for moisture, temperature and light) with a problem badge when a reading is out of range; Pets gets a Meals today card with a calm missed-meal line; sensors from the Parcel app or a parcel aggregator can feed Packages without duplicates; and System lists up to three automation ideas for admins to review (nothing is created for you). |  | ✓ | [Olen/homeassistant-plant](https://github.com/Olen/homeassistant-plant), [jjjonesjr33/petlibro](https://github.com/jjjonesjr33/petlibro), [jmdevita/parcel-ha](https://github.com/jmdevita/parcel-ha), [ITSpecialist111/ai_automation_suggester](https://github.com/ITSpecialist111/ai_automation_suggester) |
+| **Pantry running low (1.31):** Set a minimum per food, see how fast it is used ("about 2 a week"), and add low foods to the shopping list (automatic add is a setting, off by default, with Undo). ([Pantry & Fridge](pages.md#pantry--fridge)). |  | ✓ |  |
 
 **1.30**
 
-- **Calendar and list settings (1.30):** the first part of two-way sync with Google Calendar and Google Tasks. Admins choose who sees each calendar and to-do list (everyone, grown-ups, or only its owner) in Settings > Household, and each person chooses where their new events and tasks go in Settings > You. A shared Family calendar is picked up on its own once it exists in Home Assistant. Wall and shared screens show no calendars until these settings have loaded.
-- **Make the list for you (1.30):** when Chores or Shopping has no to-do list yet, an admin screen offers to make one with two taps, through Home Assistant's own local to-do list. Undo removes it while it is still empty; wall, guest and kid screens never make anything.
-- **Lists that could not load (1.30):** list-based cards say "Could not load the list" with a Retry button instead of looking empty. *Suggested by Claude.*
-- **Everyone home (1.30):** the summary counts only the people who share their place. *Suggested by Claude.*
-- **Privacy and polish (1.30):** a full review of the code closed several places where a wall or shared screen could see grown-up details (AI summaries, the busy-time suggestion, the camera timeline, the family inbox), fixed double taps, lost emails, a medicine dose that could be logged twice and the reward Approve button, and made card layout about twice as fast on phones. *Suggested by Claude.*
+| Feature | Human | Claude | Other GitHub |
+| --- | :---: | :---: | --- |
+| **Calendar and list settings (1.30):** the first part of two-way sync with Google Calendar and Google Tasks. Admins choose who sees each calendar and to-do list (everyone, grown-ups, or only its owner) in Settings > Household, and each person chooses where their new events and tasks go in Settings > You. A shared Family calendar is picked up on its own once it exists in Home Assistant. Wall and shared screens show no calendars until these settings have loaded. | ✓ |  |  |
+| **Make the list for you (1.30):** when Chores or Shopping has no to-do list yet, an admin screen offers to make one with two taps, through Home Assistant's own local to-do list. Undo removes it while it is still empty; wall, guest and kid screens never make anything. | ✓ |  |  |
+| **Lists that could not load (1.30):** list-based cards say "Could not load the list" with a Retry button instead of looking empty. |  | ✓ |  |
+| **Everyone home (1.30):** the summary counts only the people who share their place. |  | ✓ |  |
+| **Privacy and polish (1.30):** a full review of the code closed several places where a wall or shared screen could see grown-up details (AI summaries, the busy-time suggestion, the camera timeline, the family inbox), fixed double taps, lost emails, a medicine dose that could be logged twice and the reward Approve button, and made card layout about twice as fast on phones. |  | ✓ |  |
 
 **1.29**
 
-- **Camera wall Main layout and Last 24 hours (1.29):** *Suggested by Claude.* The Cameras page gets a **Main** layout with one big live picture and the other cameras beside it (below it on a phone); tap a small one to swap it in. A **Last 24 hours** card draws people (green) and vehicles (amber) on a 24-hour line; tap it to pick a moment and open that camera, with the latest visitor pictures under it. Needs Frigate detection sensors; hidden without them. Idea from ultimate-hikvision-nvr-card ([Cameras](pages.md#cameras)).
-- **PTZ joystick with tap-to-aim (1.29):** *Suggested by Claude.* When a camera can pan and tilt, its live view shows a round joystick (hold toward a direction to move, let go to stop), zoom buttons, and you can tap a spot on the picture to aim there. Cameras that cannot move show nothing extra, and wall screens never get the controls. Idea from ultimate-hikvision-nvr-card ([Cameras](pages.md#cameras-pan-tilt-and-zoom)).
-- **Vacuum map (1.29):** *Suggested by Claude.* On the Rooms page, when Home Assistant has a vacuum: your own floor picture with rooms you draw on it and a moving dot for the vacuum. Tap one or more rooms and Clean to send them (by the vacuum's segment number, or by a script of your own), plus Start, Pause and Dock. The picture and rooms are saved for everyone at home. Idea from t90-map-card ([Rooms](pages.md#rooms-floor-plan-and-vacuum-map)).
-- **Lite mode (1.29):** *Suggested by Claude.* A switch under Settings, This screen, for old tablets, phones and Kindles: it turns off animations, blur, shadows and the holiday and weather effects, refreshes less often, and keeps every card working. It is saved on that screen only, and a screen that looks slow is offered it once. Inspired by HA-SlimDash ([Settings](pages.md#settings)).
-- **This year versus last year (1.29):** *Suggested by Claude.* The Energy page and the Weather page show each complete month of this year next to the same month last year (power use, outdoor temperature and rain), with one plain sentence. It uses Home Assistant's long-term statistics and does not appear until last year's readings exist ([Energy](pages.md#labs-energy-and-bills), [Weather](pages.md#weather)).
-- **Export history as CSV (1.29):** *Suggested by Claude.* Every card's menu has **Export history (CSV)**: pick a sensor, pick a range (24 hours, 7 days, 30 days, 12 months or two dates) and download a spreadsheet file. It is not offered on wall screens or in guest mode ([Things every page has](pages.md#things-every-page-has)).
-- **Finance plan (1.29):** *Suggested by Claude, inspired by ledger-home-finance.* Three private Finance cards, saved only in your own Home Assistant account and never shown on a wall screen or the Display. **Left before next paycheck** shows the next payday, the bills due before it and what is left of the money you chose to count. **Budgets** are a set amount or a percent of your income, with what you spent this month. **Debt payoff** shows the month you would be debt free and the interest at the minimums or with an extra amount. All of it is arithmetic on numbers you type, not advice; until you add a paycheck each card shows one calm line ([Finance](pages.md#finance)).
-- **Run it now or wait (1.29):** *Suggested by Claude.* A short Energy card that says, for hot water and car charging, whether to run now or wait for the cheapest or cleanest window of the next day (or run now when solar is making power). It only appears when a price, grid or solar sensor exists, and is for grown-ups only ([Energy](pages.md#labs-energy-and-bills)).
-- **Month view on the Up next calendar card (1.29):** *Suggested by Claude.* Switch the card between a list and a month grid with a dot on every busy day; tap a day to see its events. It works on a phone ([Calendar](pages.md#calendar)).
+| Feature | Human | Claude | Other GitHub |
+| --- | :---: | :---: | --- |
+| **Camera wall Main layout and Last 24 hours (1.29):** The Cameras page gets a **Main** layout with one big live picture and the other cameras beside it (below it on a phone); tap a small one to swap it in. A **Last 24 hours** card draws people (green) and vehicles (amber) on a 24-hour line; tap it to pick a moment and open that camera, with the latest visitor pictures under it. Needs Frigate detection sensors; hidden without them. Idea from ultimate-hikvision-nvr-card ([Cameras](pages.md#cameras)). |  | ✓ | [deekay2153/ultimate-hikvision-nvr-card](https://github.com/deekay2153/ultimate-hikvision-nvr-card), [blakeblackshear/frigate](https://github.com/blakeblackshear/frigate) |
+| **PTZ joystick with tap-to-aim (1.29):** When a camera can pan and tilt, its live view shows a round joystick (hold toward a direction to move, let go to stop), zoom buttons, and you can tap a spot on the picture to aim there. Cameras that cannot move show nothing extra, and wall screens never get the controls. Idea from ultimate-hikvision-nvr-card ([Cameras](pages.md#cameras-pan-tilt-and-zoom)). |  | ✓ | [deekay2153/ultimate-hikvision-nvr-card](https://github.com/deekay2153/ultimate-hikvision-nvr-card) |
+| **Vacuum map (1.29):** On the Rooms page, when Home Assistant has a vacuum: your own floor picture with rooms you draw on it and a moving dot for the vacuum. Tap one or more rooms and Clean to send them (by the vacuum's segment number, or by a script of your own), plus Start, Pause and Dock. The picture and rooms are saved for everyone at home. Idea from t90-map-card ([Rooms](pages.md#rooms-floor-plan-and-vacuum-map)). |  | ✓ | [gdelagardelle/t90-map-card](https://github.com/gdelagardelle/t90-map-card) |
+| **Lite mode (1.29):** A switch under Settings, This screen, for old tablets, phones and Kindles: it turns off animations, blur, shadows and the holiday and weather effects, refreshes less often, and keeps every card working. It is saved on that screen only, and a screen that looks slow is offered it once. Inspired by HA-SlimDash ([Settings](pages.md#settings)). |  | ✓ | [myB0B/HA-SlimDash](https://github.com/myB0B/HA-SlimDash) |
+| **This year versus last year (1.29):** The Energy page and the Weather page show each complete month of this year next to the same month last year (power use, outdoor temperature and rain), with one plain sentence. It uses Home Assistant's long-term statistics and does not appear until last year's readings exist ([Energy](pages.md#labs-energy-and-bills), [Weather](pages.md#weather)). |  | ✓ |  |
+| **Export history as CSV (1.29):** Every card's menu has **Export history (CSV)**: pick a sensor, pick a range (24 hours, 7 days, 30 days, 12 months or two dates) and download a spreadsheet file. It is not offered on wall screens or in guest mode ([Things every page has](pages.md#things-every-page-has)). |  | ✓ |  |
+| **Finance plan (1.29):** Three private Finance cards, saved only in your own Home Assistant account and never shown on a wall screen or the Display. **Left before next paycheck** shows the next payday, the bills due before it and what is left of the money you chose to count. **Budgets** are a set amount or a percent of your income, with what you spent this month. **Debt payoff** shows the month you would be debt free and the interest at the minimums or with an extra amount. All of it is arithmetic on numbers you type, not advice; until you add a paycheck each card shows one calm line ([Finance](pages.md#finance)). |  | ✓ | [moeckjeremy/ledger-home-finance](https://github.com/moeckjeremy/ledger-home-finance) |
+| **Run it now or wait (1.29):** A short Energy card that says, for hot water and car charging, whether to run now or wait for the cheapest or cleanest window of the next day (or run now when solar is making power). It only appears when a price, grid or solar sensor exists, and is for grown-ups only ([Energy](pages.md#labs-energy-and-bills)). |  | ✓ |  |
+| **Month view on the Up next calendar card (1.29):** Switch the card between a list and a month grid with a dot on every busy day; tap a day to see its events. It works on a phone ([Calendar](pages.md#calendar)). |  | ✓ |  |
 
 **1.28**
 
-- **Rain in the next 60 minutes (1.28):** *Suggested by Claude.* A thin 60-cell ribbon on Weather shows dry, light, moderate or heavy rain minute by minute for the next hour, with a line like "Dry for 42 min, then light rain" and a colour legend. Home shows a small copy only while rain is expected within the hour. Uses free 15-minute rain data from Open-Meteo for your location; if it is not reachable the card says so. Idea from juju35's Rain Card ([Weather](pages.md#weather)).
-- **Event directions (1.28):** *Suggested by Claude.* An event's place is a link on the Calendar agenda and the event sheet. Tap it to open directions in Google Maps, Apple Maps (iPhone and iPad only) or Waze. Tick **Always use my choice** and later taps open that app straight away; a **Change** button on the notice brings the choice back. Only the address goes into the link, and your pick is saved to your own Home Assistant account ([Calendar](pages.md#calendar)).
-- **Bookshelf (1.28):** one family library on the Kids page with covers, per-person shelves and e-book provider links ([Kids](pages.md#kids)).
-- **Swipe left to turn a card off (1.28):** on Home, swiping a card left turns it off for good and swiping right hides it for today, both with Undo.
-- **Kids rewards and chores (1.28):** *Suggested by Claude.* A reward store with grown-up approval, streaks and badges, chore turns and first-come chores, and a screen-time card ([Kids](pages.md#kids-streaks-and-badges), [Family](pages.md#family-chore-turns-and-first-come-chores)).
-- **Around the house (1.28):** *Suggested by Claude.* A floor plan with live lights and doors ([Rooms](pages.md#rooms-floor-plan-and-vacuum-map)), weather on calendar days, per-person calendar columns and private calendars shown as busy blocks ([Calendar](pages.md#calendar)), a sleep timer and a listening recap ([Now Playing](pages.md#now-playing-listening-recap)), a guest jukebox ([Guest](pages.md#guest-jukebox)), radar layers ([Weather](pages.md#weather)), live power flow and running cost per appliance ([Energy](pages.md#labs-energy-and-bills)), mail pictures ([Packages](pages.md#packages)), fridge door drift ([Pantry & Fridge](pages.md#pantry--fridge)), a fever night summary ([Family Board](pages.md#family-board)), plus a battery fleet, QR and NFC maintenance labels, warranty endings, recall checks, car service from mileage, plant thirst and a sleep-friendly night mode suggestion.
+| Feature | Human | Claude | Other GitHub |
+| --- | :---: | :---: | --- |
+| **Rain in the next 60 minutes (1.28):** A thin 60-cell ribbon on Weather shows dry, light, moderate or heavy rain minute by minute for the next hour, with a line like "Dry for 42 min, then light rain" and a colour legend. Home shows a small copy only while rain is expected within the hour. Uses free 15-minute rain data from Open-Meteo for your location; if it is not reachable the card says so. Idea from juju35's Rain Card ([Weather](pages.md#weather)). |  | ✓ | [juju35/Rain Card](https://github.com/juju35/Rain Card) |
+| **Event directions (1.28):** An event's place is a link on the Calendar agenda and the event sheet. Tap it to open directions in Google Maps, Apple Maps (iPhone and iPad only) or Waze. Tick **Always use my choice** and later taps open that app straight away; a **Change** button on the notice brings the choice back. Only the address goes into the link, and your pick is saved to your own Home Assistant account ([Calendar](pages.md#calendar)). |  | ✓ |  |
+| **Bookshelf (1.28):** one family library on the Kids page with covers, per-person shelves and e-book provider links ([Kids](pages.md#kids)). | ✓ |  |  |
+| **Swipe left to turn a card off (1.28):** on Home, swiping a card left turns it off for good and swiping right hides it for today, both with Undo. | ✓ |  |  |
+| **Kids rewards and chores (1.28):** A reward store with grown-up approval, streaks and badges, chore turns and first-come chores, and a screen-time card ([Kids](pages.md#kids-streaks-and-badges), [Family](pages.md#family-chore-turns-and-first-come-chores)). |  | ✓ |  |
+| **Around the house (1.28):** A floor plan with live lights and doors ([Rooms](pages.md#rooms-floor-plan-and-vacuum-map)), weather on calendar days, per-person calendar columns and private calendars shown as busy blocks ([Calendar](pages.md#calendar)), a sleep timer and a listening recap ([Now Playing](pages.md#now-playing-listening-recap)), a guest jukebox ([Guest](pages.md#guest-jukebox)), radar layers ([Weather](pages.md#weather)), live power flow and running cost per appliance ([Energy](pages.md#labs-energy-and-bills)), mail pictures ([Packages](pages.md#packages)), fridge door drift ([Pantry & Fridge](pages.md#pantry--fridge)), a fever night summary ([Family Board](pages.md#family-board)), plus a battery fleet, QR and NFC maintenance labels, warranty endings, recall checks, car service from mileage, plant thirst and a sleep-friendly night mode suggestion. |  | ✓ |  |
 
 **1.27**
 
-- **Undo button (1.27):** a 48 px button in the top bar that undoes the last layout change on this screen: hiding a card by swiping, turning a card off, resizing, moving or folding a card, and Done on a Right now row. Each tap goes one step further back, through the same save the change used ([Pages](pages.md#more-on-every-page)).
-- **Import a document: Undo and history (1.27):** an **Undo** right after **Add**, an **Import history** with **Undo** per import (anything changed since stays), a **Tell the AI about this document** box for your own notes, better first choices for the lunch menu calendar and reminders list, and a missing **Lunch menu** calendar or **Reminders** list made for you on admin screens ([Calendar](pages.md#calendar)).
-- **Coffee supporters card (1.27):** a calm Home card for grown-ups that names the latest people who bought the maintainer a coffee, for three days. It reads one small Home Assistant helper that a ready automation fills from the Buy Me a Coffee webhook, stores only the display name, amount and time, and does not appear until that is set up ([Home](pages.md#home)).
-- **Smoother pages (1.27, 1.29):** cards slide smoothly when they move, the System page on phones redraws in place without flicker or lost typing, and from 1.29 every page redraws its cards in place.
+| Feature | Human | Claude | Other GitHub |
+| --- | :---: | :---: | --- |
+| **Undo button (1.27):** a 48 px button in the top bar that undoes the last layout change on this screen: hiding a card by swiping, turning a card off, resizing, moving or folding a card, and Done on a Right now row. Each tap goes one step further back, through the same save the change used ([Pages](pages.md#more-on-every-page)). | ✓ |  |  |
+| **Import a document: Undo and history (1.27):** an **Undo** right after **Add**, an **Import history** with **Undo** per import (anything changed since stays), a **Tell the AI about this document** box for your own notes, better first choices for the lunch menu calendar and reminders list, and a missing **Lunch menu** calendar or **Reminders** list made for you on admin screens ([Calendar](pages.md#calendar)). | ✓ |  |  |
+| **Coffee supporters card (1.27):** a calm Home card for grown-ups that names the latest people who bought the maintainer a coffee, for three days. It reads one small Home Assistant helper that a ready automation fills from the Buy Me a Coffee webhook, stores only the display name, amount and time, and does not appear until that is set up ([Home](pages.md#home)). | ✓ |  |  |
+| **Smoother pages (1.27, 1.29):** cards slide smoothly when they move, the System page on phones redraws in place without flicker or lost typing, and from 1.29 every page redraws its cards in place. | ✓ |  |  |
 
 ## New in 1.25
 
-Items marked *Suggested by Claude* came from the project's own suggestion review; the rest were Human. Each is described on its page.
+Same columns as the [change log](changelog.md): Human = asked for by the family, Claude = suggested by Claude. Each is described on its page.
 
-- **Needs attention (1.25):** *Suggested by Claude.* Offline cameras, unresponsive devices, low batteries and waiting updates in one card, with Done and Snooze that reach every screen ([Home](pages.md#home-needs-attention)).
-- **Household mode (1.25):** *Suggested by Claude.* Home, Away, Sleep or Guests sets which cards show and what counts as quiet time; safety cards always stay ([Home](pages.md#home-household-mode)).
-- **Everyone home and Last one out, Announce (1.25):** *Suggested by Claude.* Arrive and leave times, a reminder of what was left on, and speech to chosen speakers with quiet hours ([Family](pages.md#family-everyone-home-and-last-one-out)).
-- **Storm prep and Water running at night (1.25):** *Suggested by Claude.* A short task list during a storm warning, and a steady-flow alarm between 1 and 5 AM ([Weather](pages.md#weather), [Utilities](pages.md#utilities)).
-- **Private cards (1.25):** *Suggested by Claude.* Four more private Family cards, each saved only in your own Home Assistant account and never shown on the Display, a wall screen or to a guest. My to-dos is a private list for errands and surprises. Private reminders hold dated reminders, plus automatic ones: start shopping three weeks before a birthday and order a gift a week before its date in My gift ideas; due ones show on your own Home and as a private marker on your Calendar. My wish list keeps things you would like with a link and a price. Gift dates and sizes keeps sizes, favourite brands, allergies and what a person already has. Gift deadlines also appear on your own calendar ([Family](pages.md#family-private-cards-my-to-dos-private-reminders-my-wish-list-gift-dates-and-sizes)).
-- **Slow internet explained, Litter box pattern note, Deadlines from email, Repeat dinner (1.25):** *Suggested by Claude.* Four cards from the AI-card review ([Network](pages.md#network--storage), [Pets](pages.md#pets), [Family](pages.md#family-deadlines-from-email), [Recipes](pages.md#recipes)).
-- **Ask AI warm-up (1.25):** the local AI model is woken before you ask, so the first answer is quick ([Home](pages.md#home-ask-ai-warm-up)).
-- **Tombstone cleanup (1.25):** *Suggested by Claude.* The 90-day clean-up of deleted-item memory now runs only once every list has finished loading, and Saved data shows how many old deletions were cleaned up.
-- **Wall user calm page (1.25):** *Suggested by Claude.* A wall screen user sees one Right now card and three cards above the fold.
-- **Sticky paper follows the Look (1.25):** *Suggested by Claude.* Paper, Glass and Bold each restyle the banner notes without changing their size.
+| Feature | Human | Claude | Other GitHub |
+| --- | :---: | :---: | --- |
+| **Needs attention (1.25):** Offline cameras, unresponsive devices, low batteries and waiting updates in one card, with Done and Snooze that reach every screen ([Home](pages.md#home-needs-attention)). |  | ✓ |  |
+| **Household mode (1.25):** Home, Away, Sleep or Guests sets which cards show and what counts as quiet time; safety cards always stay ([Home](pages.md#home-household-mode)). |  | ✓ |  |
+| **Everyone home and Last one out, Announce (1.25):** Arrive and leave times, a reminder of what was left on, and speech to chosen speakers with quiet hours ([Family](pages.md#family-everyone-home-and-last-one-out)). |  | ✓ |  |
+| **Storm prep and Water running at night (1.25):** A short task list during a storm warning, and a steady-flow alarm between 1 and 5 AM ([Weather](pages.md#weather), [Utilities](pages.md#utilities)). |  | ✓ |  |
+| **Private cards (1.25):** Four more private Family cards, each saved only in your own Home Assistant account and never shown on the Display, a wall screen or to a guest. My to-dos is a private list for errands and surprises. Private reminders hold dated reminders, plus automatic ones: start shopping three weeks before a birthday and order a gift a week before its date in My gift ideas; due ones show on your own Home and as a private marker on your Calendar. My wish list keeps things you would like with a link and a price. Gift dates and sizes keeps sizes, favourite brands, allergies and what a person already has. Gift deadlines also appear on your own calendar ([Family](pages.md#family-private-cards-my-to-dos-private-reminders-my-wish-list-gift-dates-and-sizes)). |  | ✓ |  |
+| **Slow internet explained, Litter box pattern note, Deadlines from email, Repeat dinner (1.25):** Four cards from the AI-card review ([Network](pages.md#network--storage), [Pets](pages.md#pets), [Family](pages.md#family-deadlines-from-email), [Recipes](pages.md#recipes)). |  | ✓ |  |
+| **Ask AI warm-up (1.25):** the local AI model is woken before you ask, so the first answer is quick ([Home](pages.md#home-ask-ai-warm-up)). | ✓ |  |  |
+| **Tombstone cleanup (1.25):** The 90-day clean-up of deleted-item memory now runs only once every list has finished loading, and Saved data shows how many old deletions were cleaned up. |  | ✓ |  |
+| **Wall user calm page (1.25):** A wall screen user sees one Right now card and three cards above the fold. |  | ✓ |  |
+| **Sticky paper follows the Look (1.25):** Paper, Glass and Bold each restyle the banner notes without changing their size. |  | ✓ |  |
 
 ---
 
 ## New in versions 1.21 to 1.26
 
-- **Energy outlook and power bill (1.26):** Energy shows the cheapest or cleanest hours for the next 24 hours with best times for the dishwasher, laundry and car (when a price or grid-intensity forecast exists), and one plain sentence on why power use went up or down over the last 7 days. Both are for grown-ups only.
-- **Ask AI knows the house (1.26):** Ask AI can answer from the house picture settings, the house jobs list and live states, only when a local AI answers; it says which it used.
-- **Move and resize cards (1.21, 1.23):** drag a card with the mouse (or long-press on a phone) to move it, and use **Wider** and **Narrower** in the card's menu to change its width one step. Both are saved per person and survive a reload ([Things every page has](pages.md#things-every-page-has)).
-- **Let the app place this card (1.24):** a card you moved by hand gets **Let the app place this card** in its menu. One tap puts it back where the app would place it, and use order can raise it again. Moving that card later places it by hand again, and **Reset card order** clears the whole page.
-- **Loading wheels (1.21, 1.23):** anywhere something waits for information, including the title bar, a small wheel shows and the content appears once it arrives; after a timeout a **Retry** button appears.
-- **Fewer, bigger cards (1.21 to 1.23):** related Home cards are combined into one: House status, Plans and food, Weather, Deliveries, Family today, Pets and Car in 1.21 and 1.22, then Health, Home upkeep and Daily routine in 1.23. Each combined card keeps its own sections, menu and How it works entry.
-- **Deleted stays deleted (1.21):** about 25 lists remember what was removed so a deletion on one screen reaches every other screen; the memory is cleaned up after 90 days.
-- **Printers (1.21, 1.22):** add any kind of printer, control it from its card (controls need two taps and are hidden on wall screens), a Print reports card, and low toner can go onto the shopping list.
-- **Hardware (1.21):** one layout for every Hardware card, and a Phones and laptops battery card.
-- **One camera alerts card (1.21):** every camera alert kind in one card with a live status.
-- **Use order (1.21):** cards and pages are ordered by use, with a **Raised for you** mark; Right now, the banner and hand-placed cards never move.
-- **Wall screens (1.21):** a calm self-check, plus a scroll health line on System.
-- **Scale button (1.22):** the top-bar Scale button opens the Interface scale sheet on the page you are on, on phones too.
-- **Shopping (1.22, 1.23):** the list is sorted by store department, and the **Show aisles** view choice is saved per person.
-- **Businesses (1.22):** the card has a kinds picker (Black-owned by default, or other kinds).
-- **Arriving today (1.22):** a packages card for what is due today.
-- **Packages (1.23):** duplicate rows with the same tracking number are merged without losing data and new duplicates are stopped, delivery checks refresh correctly, and a **USPS email fallback** finds USPS shipments when 17TRACK cannot.
-- **One phone alert per security event (1.23):** a shared marker means only one phone notification goes out for the same event, however many screens are open.
-- **Location sharing (1.23):** **Share my place** can only be changed by the person it belongs to, and the card is hidden on guest and wall screens.
-- **Welcome tour and defaults (1.23):** a much shorter tour and fewer pages and cards on by default.
-- **Banner chips (1.23):** a little more margin from the banner edge and slightly smaller chip text; the strip still scrolls.
-- **Sticky note countdowns (1.23):** a countdown note reads "N days until" automatically.
-- **Camera and Cast (1.23):** **Take a photo** in Import a document opens the camera on phones, and the Cast button works on TVs again.
-- **Right now heights (1.23):** two Right now cards side by side on a page keep their own heights.
-- **Local text AI (1.23):** AI requests with no picture go to a local text model, leaving the vision model free.
-- **Always the latest build (1.23):** open screens reload into a new build by themselves, never while you are typing or touching.
-- **Import a document (1.23):** a review step before anything is saved, with **Location** and **Room** fields, a lunch menu calendar, a marker you confirm, and pack-a-lunch reminders ([Calendar](pages.md#calendar)).
-- **About and Backlog (1.23):** both sit on the Smart layout like other pages.
-- **Docs (1.23):** a contents list, previous and next links on every page, and an intro to Home Assistant OS.
+Same columns as the [change log](changelog.md). A feature with no record of who asked shows no mark.
+
+| Feature | Human | Claude | Other GitHub |
+| --- | :---: | :---: | --- |
+| **Energy outlook and power bill (1.26):** Energy shows the cheapest or cleanest hours for the next 24 hours with best times for the dishwasher, laundry and car (when a price or grid-intensity forecast exists), and one plain sentence on why power use went up or down over the last 7 days. Both are for grown-ups only. |  |  |  |
+| **Ask AI knows the house (1.26):** Ask AI can answer from the house picture settings, the house jobs list and live states, only when a local AI answers; it says which it used. |  | ✓ |  |
+| **Move and resize cards (1.21, 1.23):** drag a card with the mouse (or long-press on a phone) to move it, and use **Wider** and **Narrower** in the card's menu to change its width one step. Both are saved per person and survive a reload ([Things every page has](pages.md#things-every-page-has)). |  |  |  |
+| **Let the app place this card (1.24):** a card you moved by hand gets **Let the app place this card** in its menu. One tap puts it back where the app would place it, and use order can raise it again. Moving that card later places it by hand again, and **Reset card order** clears the whole page. |  |  |  |
+| **Loading wheels (1.21, 1.23):** anywhere something waits for information, including the title bar, a small wheel shows and the content appears once it arrives; after a timeout a **Retry** button appears. | ✓ | ✓ |  |
+| **Fewer, bigger cards (1.21 to 1.23):** related Home cards are combined into one: House status, Plans and food, Weather, Deliveries, Family today, Pets and Car in 1.21 and 1.22, then Health, Home upkeep and Daily routine in 1.23. Each combined card keeps its own sections, menu and How it works entry. |  |  |  |
+| **Deleted stays deleted (1.21):** about 25 lists remember what was removed so a deletion on one screen reaches every other screen; the memory is cleaned up after 90 days. |  |  |  |
+| **Printers (1.21, 1.22):** add any kind of printer, control it from its card (controls need two taps and are hidden on wall screens), a Print reports card, and low toner can go onto the shopping list. | ✓ | ✓ |  |
+| **Hardware (1.21):** one layout for every Hardware card, and a Phones and laptops battery card. | ✓ | ✓ |  |
+| **One camera alerts card (1.21):** every camera alert kind in one card with a live status. | ✓ | ✓ |  |
+| **Use order (1.21):** cards and pages are ordered by use, with a **Raised for you** mark; Right now, the banner and hand-placed cards never move. | ✓ | ✓ |  |
+| **Wall screens (1.21):** a calm self-check, plus a scroll health line on System. | ✓ | ✓ |  |
+| **Scale button (1.22):** the top-bar Scale button opens the Interface scale sheet on the page you are on, on phones too. | ✓ | ✓ |  |
+| **Shopping (1.22, 1.23):** the list is sorted by store department, and the **Show aisles** view choice is saved per person. | ✓ | ✓ |  |
+| **Businesses (1.22):** the card has a kinds picker (Black-owned by default, or other kinds). | ✓ | ✓ |  |
+| **Arriving today (1.22):** a packages card for what is due today. | ✓ | ✓ |  |
+| **Packages (1.23):** duplicate rows with the same tracking number are merged without losing data and new duplicates are stopped, delivery checks refresh correctly, and a **USPS email fallback** finds USPS shipments when 17TRACK cannot. | ✓ | ✓ |  |
+| **One phone alert per security event (1.23):** a shared marker means only one phone notification goes out for the same event, however many screens are open. | ✓ | ✓ |  |
+| **Location sharing (1.23):** **Share my place** can only be changed by the person it belongs to, and the card is hidden on guest and wall screens. | ✓ |  |  |
+| **Welcome tour and defaults (1.23):** a much shorter tour and fewer pages and cards on by default. |  |  |  |
+| **Banner chips (1.23):** a little more margin from the banner edge and slightly smaller chip text; the strip still scrolls. | ✓ | ✓ |  |
+| **Sticky note countdowns (1.23):** a countdown note reads "N days until" automatically. |  |  |  |
+| **Camera and Cast (1.23):** **Take a photo** in Import a document opens the camera on phones, and the Cast button works on TVs again. | ✓ | ✓ |  |
+| **Right now heights (1.23):** two Right now cards side by side on a page keep their own heights. |  |  |  |
+| **Local text AI (1.23):** AI requests with no picture go to a local text model, leaving the vision model free. |  |  |  |
+| **Always the latest build (1.23):** open screens reload into a new build by themselves, never while you are typing or touching. |  |  |  |
+| **Import a document (1.23):** a review step before anything is saved, with **Location** and **Room** fields, a lunch menu calendar, a marker you confirm, and pack-a-lunch reminders ([Calendar](pages.md#calendar)). |  |  |  |
+| **About and Backlog (1.23):** both sit on the Smart layout like other pages. |  |  |  |
+| **Docs (1.23):** a contents list, previous and next links on every page, and an intro to Home Assistant OS. | ✓ | ✓ |  |
 
 ## New in versions 1.6 to 1.20
 
-- **Smart layout on by default (1.17, 1.19):** Home and every page with a Right now box (Family, System, Commute, Finance, Space, Network, Packages, Recipes, Pantry, Pets, Rooms, Activity) are one canvas with small section labels and a row of section chips. A card you move into another section stays there, and use order weighs where cards sit. **Settings, This screen, Smart layout** turns it off for that screen only ([Smart layout](pages.md#home-smart-layout)).
-- **Right now Done everywhere (1.19):** Done, Seen, Got it or Dismiss on a Right now row hides it on every screen at once, says who tapped, offers Undo and expires after 6 hours ([Right now Done](pages.md#home-right-now-done-hides-a-row-everywhere)).
-- **Wall screen user (1.19):** an administrator marks a non-administrator login as a wall screen; on it, grown-ups' and personal cards are hidden and only a few shared lists can be changed ([Wall screen user](pages.md#home-wall-screen-user)).
-- **Sticky notes on the banner (1.20):** a small notes button with a count sits on the Home banner, and one or two open notes show as small yellow paper notes pinned to it ([Sticky notes](pages.md#home-sticky-notes)).
-- **Banner safety net (1.20):** the Home banner never stretches tall; if something pushes it past its normal height it repairs itself.
-- **Cancel move (1.20):** while Move mode is on, a Cancel move button sits beside Done and leaves the order unchanged.
-- **Empty Add hints (1.20):** an empty Add list (garage, wellbeing, hobbies) says what to type instead of staying blank.
-- **Game-day balloons (1.20):** on a game day, balloons in the team colours float by the mailbox ([Themes](themes.md)).
-- **Display keeps the screen awake (1.20):** the Display uses one screen wake lock, reused and released when you leave it.
-- **Privacy on wall screens (1.20):** cards only grown-ups use stay out of the shared Recently used list, so a wall screen never shows them.
-- **Businesses card (1.18, 1.19):** the home's AI can pick the needs (seasonal ones too), with a one-tap web search when no directory is set, and **Kinds of business to support** lets you choose Black-owned (the default) or other kinds ([Home](home.md#cards)).
-- **Ask AI and cloud (1.19):** the claude.ai choice appears only when an admin allowed cloud AI.
-- **Colours and scrolling (1.17, 1.18):** the card 3-dot icon, menu SOON badge, Finance tags, Print monitor icon, Wellbeing breathing text, banner pill and sun icon meet the readable-colour standard in dark and light; phone scrolling waits out a whole swipe before background work runs; house decor sway is off on phones.
-- **House picture (1.16 to 1.19):** the banner's windows, porch light and lamp can be linked to rooms and lights, the mailbox glows while mail waits, the garage door shows open and the solar panels shimmer while producing, each only when Home Assistant has the matching device and each with its own switch in Your house. Up to two trees per side, and the photo reader asks for one or two.
-- **Signing in on another device (1.17):** a person's set-aside settings come back when they sign in again, and the look switches at once.
-- **Docs visit count (1.19):** these docs can count visits with a privacy-friendly counter, only once an owner turns it on; nothing is added until then.
-- **Ask AI (1.16):** the Home question card is now **Ask AI** and answers inside the card. It tries an AI in your home first, then Ollama, then a cloud AI (only when an admin allowed cloud AI), then Claude. A drop-down lists only what is available now and remembers your pick for you ([Home](home.md#cards)).
-- **My gift ideas (1.16):** a private Family card for gifts you plan to give. It is saved only in your own Home Assistant account, so another person signed in on the same home cannot see it, and it never appears on the TV, wall or kiosk screens. A home AI can suggest ideas, shown for you to keep or skip ([Family](pages.md#family-my-gift-ideas-private)).
-- **Light buttons (1.16):** a light's button tints with its live colour, or a warm or cool white for a colour-temperature light.
-- **Space (1.16):** a backup source for the Station's orbit and launches, the last good data kept when a source fails, a retry every 5 minutes and calm notes saying how old the data is ([Space](pages.md#space)).
-- **Planes (1.16):** one **Closest** card; the map no longer repeats it.
-- **Hardware (1.16):** a PC that is connected but not sending readings shows numbered steps to finish in HASS.Agent ([Hardware](pages.md#hardware)).
-- **Design Studio (1.16, admins):** the AI usage card refreshes itself and lists every model, agents hide after 5 idle minutes, and the org chart shows the 12 standard team leads.
-- **Sign-in switch (1.16):** when someone else signs in on a device, the first person's saved copy there is set aside, never sent up or deleted.
-- **Cards on each page (1.15):** take a card off a page, or show a card from another page on it, from the card's menu or one screen ([Things every page has](pages.md#things-every-page-has), [Settings](settings.md)).
-- **Raise cards and pages you use (1.15, 1.16):** with Smart layout on (the default), cards you use often move up a little and are marked with a small arrow, and in the menu a page you open often moves up inside its group ([Raise cards and pages you use](pages.md#home-raise-cards-and-pages-you-use)).
-- **Black-owned businesses (1.15):** a Home suggestion card that turns upcoming home jobs, the shopping list and calendar events into generic search words and lists businesses from a directory an admin sets up ([Home](home.md#cards)).
-- **Sticky notes and the trash reminder (1.15):** notes edit in place with Undo, dated reminders can reach phones at 8 AM, and the trash Done button shows who took the bins out.
-- **House picture (1.15):** the photo reader also fills in walk, chimney, flower beds, hedge, yard tree, solar, driveway shape, porch, gutters, flag, skylight and garage style for you to review.
-- **Hardware (1.12, 1.14):** one card per PC running HASS.Agent, found automatically, each with an **Add another PC** how-to and a set-up card for a PC that is connected but has no sensors yet ([Hardware](pages.md#hardware)).
-- **Card options (1.13, 1.14):** a card's ⋯ menu opens right under its own button on every screen and lists the card's related settings; new cards get entries automatically ([Things every page has](pages.md#things-every-page-has)).
-- **Home (1.14):** [Sticky notes](pages.md#home-sticky-notes) (notes, reminders, countdowns), a **Done** button on the trash-cans reminder, cat medicine copies that update together, and a Packages card whose title and tracking number wrap.
-- **Display and TV (1.13, 1.14):** a live games window with team stats, the plane map beside the radar, the cast strip using the Home chips, a more forgiving bedroom-TV cast, and What's new that fits any screen ([Display](pages.md#display)).
-- **Pictures and documents (1.14):** one picker everywhere a picture goes into AI (camera first, **or choose a file**), and **Import a document** only on Calendar and the Family Board.
-- **Kids (1.14):** a configurable [baby monitor](pages.md#kids) card for any camera, with night view and a sound or motion alert.
-- **Admin (1.13, 1.14):** a **Visits** card for demo visits, a **Throttle the Model** card on About (see [How the AI builds it](ai-build-system.md)), and agent activity that keeps refreshing on throttled devices ([Design Studio](pages.md#design-studio)).
-- **Looks and checks (1.14):** room and card icons readable on and off in dark and light (the contrast check now tests icons), and card headers 48 px tall.
-- **Layout (1.14, 1.15):** [Smart layout](pages.md#home-smart-layout), now on by default (Settings, This screen turns it off per screen), the first step of the dynamic layout model; the packer fills free columns beside a wide card; Family scrolls smoothly on a phone.
+Same columns as the [change log](changelog.md). A feature with no record of who asked shows no mark.
 
-- **Pages:** a [Hardware](pages.md#hardware) page (the host, a desktop PC, printers, a 3D printer, the router and the NAS); an [Activity](pages.md#activity) timeline with a Security chip and shared unseen marks; **Start shopping** by aisle on [Shopping](pages.md#shopping); **Picture mode** on [Kids](pages.md#kids).
-- **Garage and Storage:** car **Colour & look**, toolbox brand badges, an insurance list with room and spot, and a **Lives here** card on each room page. See [Garage](pages.md#garage) and [Storage](pages.md#storage).
-- **Home cards:** Power cut, Garage open too long, Pet care due and a yearly Insurance list review (rows in the table below).
-- **Whole app:** household quiet hours (Settings, Alerts), one highlighted **Right now** container when a page has several cards, a clock on the Home banner, and a More sheet that is a two-column grid with search.
-- **Planes and Pets:** flight restriction zones on the map and in the plane popup, a phone compass arrow, and pets that follow the interface scale.
-- **TV:** a new TV starts on one still screen built around the live camera wall ([Display](pages.md#display)).
+| Feature | Human | Claude | Other GitHub |
+| --- | :---: | :---: | --- |
+| **Smart layout on by default (1.17, 1.19):** Home and every page with a Right now box (Family, System, Commute, Finance, Space, Network, Packages, Recipes, Pantry, Pets, Rooms, Activity) are one canvas with small section labels and a row of section chips. A card you move into another section stays there, and use order weighs where cards sit. **Settings, This screen, Smart layout** turns it off for that screen only ([Smart layout](pages.md#home-smart-layout)). |  |  |  |
+| **Right now Done everywhere (1.19):** Done, Seen, Got it or Dismiss on a Right now row hides it on every screen at once, says who tapped, offers Undo and expires after 6 hours ([Right now Done](pages.md#home-right-now-done-hides-a-row-everywhere)). | ✓ | ✓ |  |
+| **Wall screen user (1.19):** an administrator marks a non-administrator login as a wall screen; on it, grown-ups' and personal cards are hidden and only a few shared lists can be changed ([Wall screen user](pages.md#home-wall-screen-user)). | ✓ | ✓ |  |
+| **Sticky notes on the banner (1.20):** a small notes button with a count sits on the Home banner, and one or two open notes show as small yellow paper notes pinned to it ([Sticky notes](pages.md#home-sticky-notes)). |  |  |  |
+| **Banner safety net (1.20):** the Home banner never stretches tall; if something pushes it past its normal height it repairs itself. |  |  |  |
+| **Cancel move (1.20):** while Move mode is on, a Cancel move button sits beside Done and leaves the order unchanged. |  |  |  |
+| **Empty Add hints (1.20):** an empty Add list (garage, wellbeing, hobbies) says what to type instead of staying blank. | ✓ | ✓ |  |
+| **Game-day balloons (1.20):** on a game day, balloons in the team colours float by the mailbox ([Themes](themes.md)). | ✓ | ✓ |  |
+| **Display keeps the screen awake (1.20):** the Display uses one screen wake lock, reused and released when you leave it. |  |  |  |
+| **Privacy on wall screens (1.20):** cards only grown-ups use stay out of the shared Recently used list, so a wall screen never shows them. |  |  |  |
+| **Businesses card (1.18, 1.19):** the home's AI can pick the needs (seasonal ones too), with a one-tap web search when no directory is set, and **Kinds of business to support** lets you choose Black-owned (the default) or other kinds ([Home](home.md#cards)). | ✓ | ✓ |  |
+| **Ask AI and cloud (1.19):** the claude.ai choice appears only when an admin allowed cloud AI. |  |  |  |
+| **Colours and scrolling (1.17, 1.18):** the card 3-dot icon, menu SOON badge, Finance tags, Print monitor icon, Wellbeing breathing text, banner pill and sun icon meet the readable-colour standard in dark and light; phone scrolling waits out a whole swipe before background work runs; house decor sway is off on phones. |  |  |  |
+| **House picture (1.16 to 1.19):** the banner's windows, porch light and lamp can be linked to rooms and lights, the mailbox glows while mail waits, the garage door shows open and the solar panels shimmer while producing, each only when Home Assistant has the matching device and each with its own switch in Your house. Up to two trees per side, and the photo reader asks for one or two. | ✓ | ✓ |  |
+| **Signing in on another device (1.17):** a person's set-aside settings come back when they sign in again, and the look switches at once. |  |  |  |
+| **Docs visit count (1.19):** these docs can count visits with a privacy-friendly counter, only once an owner turns it on; nothing is added until then. |  |  |  |
+| **Ask AI (1.16):** the Home question card is now **Ask AI** and answers inside the card. It tries an AI in your home first, then Ollama, then a cloud AI (only when an admin allowed cloud AI), then Claude. A drop-down lists only what is available now and remembers your pick for you ([Home](home.md#cards)). | ✓ | ✓ | [ollama/ollama](https://github.com/ollama/ollama) |
+| **My gift ideas (1.16):** a private Family card for gifts you plan to give. It is saved only in your own Home Assistant account, so another person signed in on the same home cannot see it, and it never appears on the TV, wall or kiosk screens. A home AI can suggest ideas, shown for you to keep or skip ([Family](pages.md#family-my-gift-ideas-private)). | ✓ | ✓ |  |
+| **Light buttons (1.16):** a light's button tints with its live colour, or a warm or cool white for a colour-temperature light. | ✓ | ✓ |  |
+| **Space (1.16):** a backup source for the Station's orbit and launches, the last good data kept when a source fails, a retry every 5 minutes and calm notes saying how old the data is ([Space](pages.md#space)). | ✓ | ✓ |  |
+| **Planes (1.16):** one **Closest** card; the map no longer repeats it. | ✓ | ✓ |  |
+| **Hardware (1.16):** a PC that is connected but not sending readings shows numbered steps to finish in HASS.Agent ([Hardware](pages.md#hardware)). | ✓ | ✓ | [LAB02-Research/HASS.Agent](https://github.com/LAB02-Research/HASS.Agent) |
+| **Design Studio (1.16, admins):** the AI usage card refreshes itself and lists every model, agents hide after 5 idle minutes, and the org chart shows the 12 standard team leads. | ✓ | ✓ |  |
+| **Sign-in switch (1.16):** when someone else signs in on a device, the first person's saved copy there is set aside, never sent up or deleted. |  |  |  |
+| **Cards on each page (1.15):** take a card off a page, or show a card from another page on it, from the card's menu or one screen ([Things every page has](pages.md#things-every-page-has), [Settings](settings.md)). | ✓ | ✓ |  |
+| **Raise cards and pages you use (1.15, 1.16):** with Smart layout on (the default), cards you use often move up a little and are marked with a small arrow, and in the menu a page you open often moves up inside its group ([Raise cards and pages you use](pages.md#home-raise-cards-and-pages-you-use)). |  |  |  |
+| **Black-owned businesses (1.15):** a Home suggestion card that turns upcoming home jobs, the shopping list and calendar events into generic search words and lists businesses from a directory an admin sets up ([Home](home.md#cards)). | ✓ | ✓ |  |
+| **Sticky notes and the trash reminder (1.15):** notes edit in place with Undo, dated reminders can reach phones at 8 AM, and the trash Done button shows who took the bins out. |  |  |  |
+| **House picture (1.15):** the photo reader also fills in walk, chimney, flower beds, hedge, yard tree, solar, driveway shape, porch, gutters, flag, skylight and garage style for you to review. | ✓ | ✓ |  |
+| **Hardware (1.12, 1.14):** one card per PC running HASS.Agent, found automatically, each with an **Add another PC** how-to and a set-up card for a PC that is connected but has no sensors yet ([Hardware](pages.md#hardware)). | ✓ | ✓ | [LAB02-Research/HASS.Agent](https://github.com/LAB02-Research/HASS.Agent) |
+| **Card options (1.13, 1.14):** a card's ⋯ menu opens right under its own button on every screen and lists the card's related settings; new cards get entries automatically ([Things every page has](pages.md#things-every-page-has)). | ✓ | ✓ |  |
+| **Home (1.14):** [Sticky notes](pages.md#home-sticky-notes) (notes, reminders, countdowns), a **Done** button on the trash-cans reminder, cat medicine copies that update together, and a Packages card whose title and tracking number wrap. | ✓ | ✓ |  |
+| **Display and TV (1.13, 1.14):** a live games window with team stats, the plane map beside the radar, the cast strip using the Home chips, a more forgiving bedroom-TV cast, and What's new that fits any screen ([Display](pages.md#display)). |  |  |  |
+| **Pictures and documents (1.14):** one picker everywhere a picture goes into AI (camera first, **or choose a file**), and **Import a document** only on Calendar and the Family Board. |  |  |  |
+| **Kids (1.14):** a configurable [baby monitor](pages.md#kids) card for any camera, with night view and a sound or motion alert. | ✓ | ✓ |  |
+| **Admin (1.13, 1.14):** a **Visits** card for demo visits, a **Throttle the Model** card on About (see [How the AI builds it](ai-build-system.md)), and agent activity that keeps refreshing on throttled devices ([Design Studio](pages.md#design-studio)). | ✓ | ✓ |  |
+| **Looks and checks (1.14):** room and card icons readable on and off in dark and light (the contrast check now tests icons), and card headers 48 px tall. |  |  |  |
+| **Layout (1.14, 1.15):** [Smart layout](pages.md#home-smart-layout), now on by default (Settings, This screen turns it off per screen), the first step of the dynamic layout model; the packer fills free columns beside a wide card; Family scrolls smoothly on a phone. | ✓ | ✓ |  |
+
+| Feature | Human | Claude | Other GitHub |
+| --- | :---: | :---: | --- |
+| **Pages:** a [Hardware](pages.md#hardware) page (the host, a desktop PC, printers, a 3D printer, the router and the NAS); an [Activity](pages.md#activity) timeline with a Security chip and shared unseen marks; **Start shopping** by aisle on [Shopping](pages.md#shopping); **Picture mode** on [Kids](pages.md#kids). | ✓ | ✓ |  |
+| **Garage and Storage:** car **Colour & look**, toolbox brand badges, an insurance list with room and spot, and a **Lives here** card on each room page. See [Garage](pages.md#garage) and [Storage](pages.md#storage). |  |  |  |
+| **Home cards:** Power cut, Garage open too long, Pet care due and a yearly Insurance list review (rows in the table below). | ✓ | ✓ |  |
+| **Whole app:** household quiet hours (Settings, Alerts), one highlighted **Right now** container when a page has several cards, a clock on the Home banner, and a More sheet that is a two-column grid with search. |  |  |  |
+| **Planes and Pets:** flight restriction zones on the map and in the plane popup, a phone compass arrow, and pets that follow the interface scale. |  |  |  |
+| **TV:** a new TV starts on one still screen built around the live camera wall ([Display](pages.md#display)). | ✓ | ✓ |  |
 
 ## Additions just before 1.0 (versions 0.256 to 0.261)
 
-- **New pages:** Utilities (leaks, UPS, printer), Pool, Wellbeing, Sitter monitor, and Energy and bills in Labs. See [All pages](pages.md).
-- **Home and whole app:** Today at a glance (short summary card), a card order that puts urgent and richer cards first, an open backlog chip in the top bar, New marks on new cards, a Labs on/off switch, smooth touch scrolling, full-screen Card change notices, and a read-only Demo mode (`?demo=1`).
-- **Family:** Where is everyone (opt-in place sharing, Ring my phone), Family inbox (email filed into cards), daycare and school closings, Guest mode with a grown-up PIN, a favourite colour per child, a Bedtime library, and a Bookshelf (read-aloud, paper and e-books in one library, private shelves per person, e-book imports).
-- **House and security:** Camera alerts, Frigate package, doorbell, video-state and mail-truck cards, Garage door, Smart plugs, a Laundry card and TV helpers (cast countdown and volume leveler).
-- **Garage and cars:** real car pictures, car value estimate, EV charging with nearby chargers, and Toolbox photo import.
-- **Hobbies, music and display:** Gaming (Steam, Xbox, PlayStation), Smoker, a Workout health card with treadmill sessions, YouTube Music playlists with a YouTube TV launcher, and a Picture frame mode for displays.
-- **Planes:** air traffic status, restricted airspace, flight restrictions and listen-and-world tiles.
-- **Now Playing and look:** a YouTube playlists card with YouTube and YouTube TV launch buttons (also on the cast pop-up), and an optional dimmed Background picture behind the pages (public-domain art or the Picture frame source). See [All pages](pages.md#now-playing-youtube-playlists-and-launch-buttons).
-- **Setup:** a Setup checklist card on the System page that detects which integrations and devices are still missing. See [All pages](pages.md#system-setup-checklist).
-- **Automations:** AI suggestions for new automations and rules, never applied automatically.
-- **Vision alarms:** camera snapshots read by a local AI by default (cloud only if allowed per check): grass getting long, scrape the windshield, it snowed and cats fed. See [All pages](pages.md#cameras-vision-alarms).
-- **Top bar and summaries:** a Refresh button in the top bar, and a one-sentence At a glance summary card on Weather, Commute, Packages, Family Board, Pantry & Fridge and Security.
-- **Planes:** a glass photo card for the overhead plane, an AIR map layer for special-use airspace and active flight restrictions, and an Air restrictions near home card on Home.
-- **Energy:** solar, generator and grid cards (with a Power outage card on Home).
-- **Wellbeing:** opt-in family sharing of a mood dot and chosen gratitude notes, shown in How we're doing on the Family Board.
-- **Workout:** 14-day sleep and weight trends, a card for 2 hours after a workout, and Cast Workout page.
-- **Garage:** a drawn toolbox picture and NFC tags that open a drawer.
-- **Family Board:** the page heading is back, and the schedule can no longer be saved before it loads.
-- **Shopping and packages:** a Kroger-family store card and a Shop import card.
-- **Devices:** an Earbuds battery card (System) and an Internet provider card (Network).
-- **Wall and TV displays:** wake on approach, a Nest Hub kitchen view, and large-type TV cards.
+| Feature | Human | Claude | Other GitHub |
+| --- | :---: | :---: | --- |
+| **New pages:** Utilities (leaks, UPS, printer), Pool, Wellbeing, Sitter monitor, and Energy and bills in Labs. See [All pages](pages.md). |  |  |  |
+| **Home and whole app:** Today at a glance (short summary card), a card order that puts urgent and richer cards first, an open backlog chip in the top bar, New marks on new cards, a Labs on/off switch, smooth touch scrolling, full-screen Card change notices, and a read-only Demo mode (`?demo=1`). |  |  |  |
+| **Family:** Where is everyone (opt-in place sharing, Ring my phone), Family inbox (email filed into cards), daycare and school closings, Guest mode with a grown-up PIN, a favourite colour per child, a Bedtime library, and a Bookshelf (read-aloud, paper and e-books in one library, private shelves per person, e-book imports). |  |  |  |
+| **House and security:** Camera alerts, Frigate package, doorbell, video-state and mail-truck cards, Garage door, Smart plugs, a Laundry card and TV helpers (cast countdown and volume leveler). |  |  | [blakeblackshear/frigate](https://github.com/blakeblackshear/frigate) |
+| **Garage and cars:** real car pictures, car value estimate, EV charging with nearby chargers, and Toolbox photo import. |  |  |  |
+| **Hobbies, music and display:** Gaming (Steam, Xbox, PlayStation), Smoker, a Workout health card with treadmill sessions, YouTube Music playlists with a YouTube TV launcher, and a Picture frame mode for displays. |  |  |  |
+| **Planes:** air traffic status, restricted airspace, flight restrictions and listen-and-world tiles. |  |  |  |
+| **Now Playing and look:** a YouTube playlists card with YouTube and YouTube TV launch buttons (also on the cast pop-up), and an optional dimmed Background picture behind the pages (public-domain art or the Picture frame source). See [All pages](pages.md#now-playing-youtube-playlists-and-launch-buttons). |  |  |  |
+| **Setup:** a Setup checklist card on the System page that detects which integrations and devices are still missing. See [All pages](pages.md#system-setup-checklist). |  |  | [hacs/integration](https://github.com/hacs/integration) |
+| **Automations:** AI suggestions for new automations and rules, never applied automatically. |  |  |  |
+| **Vision alarms:** camera snapshots read by a local AI by default (cloud only if allowed per check): grass getting long, scrape the windshield, it snowed and cats fed. See [All pages](pages.md#cameras-vision-alarms). |  |  |  |
+| **Top bar and summaries:** a Refresh button in the top bar, and a one-sentence At a glance summary card on Weather, Commute, Packages, Family Board, Pantry & Fridge and Security. |  |  |  |
+| **Planes:** a glass photo card for the overhead plane, an AIR map layer for special-use airspace and active flight restrictions, and an Air restrictions near home card on Home. |  |  |  |
+| **Energy:** solar, generator and grid cards (with a Power outage card on Home). |  |  |  |
+| **Wellbeing:** opt-in family sharing of a mood dot and chosen gratitude notes, shown in How we're doing on the Family Board. |  |  |  |
+| **Workout:** 14-day sleep and weight trends, a card for 2 hours after a workout, and Cast Workout page. |  |  |  |
+| **Garage:** a drawn toolbox picture and NFC tags that open a drawer. |  |  |  |
+| **Family Board:** the page heading is back, and the schedule can no longer be saved before it loads. |  |  |  |
+| **Shopping and packages:** a Kroger-family store card and a Shop import card. |  |  |  |
+| **Devices:** an Earbuds battery card (System) and an Internet provider card (Network). |  |  |  |
+| **Wall and TV displays:** wake on approach, a Nest Hub kitchen view, and large-type TV cards. |  |  |  |
 
 ---
 
 ## Earlier additions (versions 0.230–0.234)
 
-- **Interface scale:** one control for size. Cards, columns and text re-pack to the size you pick instead of zooming the page. A small scale control also floats in Full window.
-- **Cards and layout:** cards restack when one is hidden or dismissed (no gaps), keep their column when one collapses or expands, and collapsed cards show a one-line summary in the header (weather, air, UV, commute, cameras, calendar, packages, next event and more). A Reset order entry in the card menu puts cards back in the default order. Right now fills the full width first.
-- **Page intros and How this works:** a friendly line under every page title says what the page is for (a switch in Settings hides it), and every card menu has a How this works sheet.
-- **Smarter Home order:** urgent and recently changed cards float to the top with a small reason chip.
-- **Leftovers tracker:** on Pantry & Fridge, with an Eat this first card on Home.
-- **Barcode scanning:** a scan button on the shopping, pantry and storage add forms (camera, photo or typed code, looked up in Open Food Facts).
-- **Gigs card:** replaces the Band card with start, setup (2 hours before), show length, breakdown, a timeline, and import from an event link. Home gig suggestions show the be-there-by time.
-- **Wall calendar:** big Add event and Add to list buttons with a microphone.
-- **Rooms:** a Now playing card (with a turntable icon, and channel and artwork for video players) while something plays in that room, and kids' cards in any bedroom with a child set in Room settings. Quiet hours also mute a TV or display in that room.
-- **Garage:** car cards are also shown on the Garage page.
-- **Claude and agents:** Ask AI (everyone) is split from Claude admin; the Agents card shows free and paid tallies with a bar per job; Right now shows the Claude card only while it is working. System page gets a Who's on card (live screens and people).
-- **Touch and polish:** chips, switches, top bar buttons, tile menus and card header buttons have 44 px tap areas; pets never vanish on a redraw; Home chips scroll in a marquee below the house; Full window icon on every radar.
-- **Medicine:** the medicine log and its matching to-do stay in sync both ways.
-- **About and tools:** a scrolling Credits card, the pieces count, NFC "Copy add-item link", and a jot-it-down trash button with Undo.
+| Feature | Human | Claude | Other GitHub |
+| --- | :---: | :---: | --- |
+| **Interface scale:** one control for size. Cards, columns and text re-pack to the size you pick instead of zooming the page. A small scale control also floats in Full window. |  |  |  |
+| **Cards and layout:** cards restack when one is hidden or dismissed (no gaps), keep their column when one collapses or expands, and collapsed cards show a one-line summary in the header (weather, air, UV, commute, cameras, calendar, packages, next event and more). A Reset order entry in the card menu puts cards back in the default order. Right now fills the full width first. |  |  |  |
+| **Page intros and How this works:** a friendly line under every page title says what the page is for (a switch in Settings hides it), and every card menu has a How this works sheet. |  |  |  |
+| **Smarter Home order:** urgent and recently changed cards float to the top with a small reason chip. |  |  |  |
+| **Leftovers tracker:** on Pantry & Fridge, with an Eat this first card on Home. |  |  |  |
+| **Barcode scanning:** a scan button on the shopping, pantry and storage add forms (camera, photo or typed code, looked up in Open Food Facts). |  |  |  |
+| **Gigs card:** replaces the Band card with start, setup (2 hours before), show length, breakdown, a timeline, and import from an event link. Home gig suggestions show the be-there-by time. |  |  |  |
+| **Wall calendar:** big Add event and Add to list buttons with a microphone. |  |  |  |
+| **Rooms:** a Now playing card (with a turntable icon, and channel and artwork for video players) while something plays in that room, and kids' cards in any bedroom with a child set in Room settings. Quiet hours also mute a TV or display in that room. |  |  |  |
+| **Garage:** car cards are also shown on the Garage page. |  |  |  |
+| **Claude and agents:** Ask AI (everyone) is split from Claude admin; the Agents card shows free and paid tallies with a bar per job; Right now shows the Claude card only while it is working. System page gets a Who's on card (live screens and people). |  |  |  |
+| **Touch and polish:** chips, switches, top bar buttons, tile menus and card header buttons have 44 px tap areas; pets never vanish on a redraw; Home chips scroll in a marquee below the house; Full window icon on every radar. |  |  |  |
+| **Medicine:** the medicine log and its matching to-do stay in sync both ways. |  |  |  |
+| **About and tools:** a scrolling Credits card, the pieces count, NFC "Copy add-item link", and a jot-it-down trash button with Undo. |  |  |  |
 
 ## Earlier additions (versions 0.211–0.229)
 
-- **Looks:** Classic, Paper, Glass and Bold designs; Auto follows the season and the theme button says what Auto follows.
-- **Storage NFC tags:** stick a tag on a storage box or garage drawer to open it. A tag link ending in add opens the box with Add item ready. Shared storage places, and Pantry & Fridge has its own fridge icon.
-- **Packages from email:** once a mailbox is connected, a shipping email from a carrier or shop adds the package, moves it along (shipped, out for delivery, delivered) and clears it a day after delivery. Gifts stay hidden so surprises stay secret. A package that is out for delivery or due today also shows as an automatic **Arriving today** card on Home, and a phone alert goes out only for that moment. Until email is connected, Packages shows one calm line explaining how to turn it on; packages already added are never touched.
-- **Pantry:** sell-by and use-by dates, and missing ingredients for dinner.
-- **Kids page:** pickup time, and a bedtime story.
-- **Collapsed cards are remembered per person**; pet and Pi cards collapse the same way; page icons show an Updated dot.
-- **Claude and agents:** the Home Claude card shows cost totals and an Ask Claude box, gets an accent outline and moves to the top while Claude is working. An Agents card shows status lights and job bars, and the top bar reads "N agents, building" during deploys. Claude status (idle, waiting) shows in the top bar.
-- **Right now links:** tapping a row scrolls to the matching card and outlines it.
-- **About:** a "Provided by Home Assistant" card with the Core, OS and Supervisor versions; lines of code and pieces are counted at build time.
-- **Settings page and Your house editor**, with alerts when work starts.
-- **Top bar:** tight buttons that scroll past half the bar, the open-backlog count in the version line, and text that scrolls instead of being cut off (replaces the earlier two-row top bar). A small house icon shows in the browser tab.
-- **Pantry and Recipes buttons:** every chip delete button and meal-plan handle or remove button has its own 44 px touch area, so none overlap.
-- **Quiet hours per room:** a room's chimes and tones stay muted on that room's screen (a kid's room defaults to 8 PM to 8 AM).
-- **Week ahead:** duplicates, daily chores and trash entries are hidden with a "+N routine items hidden" note.
-- **Notes box:** grows as you type, newest first, with photo thumbnails, an Edit button and no limit.
-- **Hobbies:** "How this works" on every hobby card.
-- **Cars:** the next three typical service milestones per car from its mileage, feeding Car due soon within 500 miles.
-- **Cameras:** Frigate camera entities are left out of camera lists, and a camera without a snapshot yet no longer shows Offline.
-- **Crypto and Finance:** crypto updates around the clock.
-- **Design Studio:** a Right now strip with credits left and 5-hour and weekly bars, an AI market watchdog with a "New free AI options" card (Add to Jot it down), and checked-out items on top of the Backlog card.
-- **Tools and checks:** tap targets are at least 48 px (tap-target audit tool), a stuck check restarts anything idle, and AI helper tools split work between a local model and free cloud models.
-- **New docs pages:** why Nashboard, themes, diagrams, developer tools and the design engine.
+| Feature | Human | Claude | Other GitHub |
+| --- | :---: | :---: | --- |
+| **Looks:** Classic, Paper, Glass and Bold designs; Auto follows the season and the theme button says what Auto follows. |  |  |  |
+| **Storage NFC tags:** stick a tag on a storage box or garage drawer to open it. A tag link ending in add opens the box with Add item ready. Shared storage places, and Pantry & Fridge has its own fridge icon. |  |  |  |
+| **Packages from email:** once a mailbox is connected, a shipping email from a carrier or shop adds the package, moves it along (shipped, out for delivery, delivered) and clears it a day after delivery. Gifts stay hidden so surprises stay secret. A package that is out for delivery or due today also shows as an automatic **Arriving today** card on Home, and a phone alert goes out only for that moment. Until email is connected, Packages shows one calm line explaining how to turn it on; packages already added are never touched. |  |  |  |
+| **Pantry:** sell-by and use-by dates, and missing ingredients for dinner. |  |  |  |
+| **Kids page:** pickup time, and a bedtime story. |  |  |  |
+| **Collapsed cards are remembered per person**; pet and Pi cards collapse the same way; page icons show an Updated dot. |  |  |  |
+| **Claude and agents:** the Home Claude card shows cost totals and an Ask Claude box, gets an accent outline and moves to the top while Claude is working. An Agents card shows status lights and job bars, and the top bar reads "N agents, building" during deploys. Claude status (idle, waiting) shows in the top bar. |  |  |  |
+| **Right now links:** tapping a row scrolls to the matching card and outlines it. |  |  |  |
+| **About:** a "Provided by Home Assistant" card with the Core, OS and Supervisor versions; lines of code and pieces are counted at build time. |  |  |  |
+| **Settings page and Your house editor**, with alerts when work starts. |  |  |  |
+| **Top bar:** tight buttons that scroll past half the bar, the open-backlog count in the version line, and text that scrolls instead of being cut off (replaces the earlier two-row top bar). A small house icon shows in the browser tab. |  |  |  |
+| **Pantry and Recipes buttons:** every chip delete button and meal-plan handle or remove button has its own 44 px touch area, so none overlap. |  |  |  |
+| **Quiet hours per room:** a room's chimes and tones stay muted on that room's screen (a kid's room defaults to 8 PM to 8 AM). |  |  |  |
+| **Week ahead:** duplicates, daily chores and trash entries are hidden with a "+N routine items hidden" note. |  |  |  |
+| **Notes box:** grows as you type, newest first, with photo thumbnails, an Edit button and no limit. |  |  |  |
+| **Hobbies:** "How this works" on every hobby card. |  |  |  |
+| **Cars:** the next three typical service milestones per car from its mileage, feeding Car due soon within 500 miles. |  |  |  |
+| **Cameras:** Frigate camera entities are left out of camera lists, and a camera without a snapshot yet no longer shows Offline. |  |  | [blakeblackshear/frigate](https://github.com/blakeblackshear/frigate) |
+| **Crypto and Finance:** crypto updates around the clock. |  |  |  |
+| **Design Studio:** a Right now strip with credits left and 5-hour and weekly bars, an AI market watchdog with a "New free AI options" card (Add to Jot it down), and checked-out items on top of the Backlog card. |  |  |  |
+| **Tools and checks:** tap targets are at least 48 px (tap-target audit tool), a stuck check restarts anything idle, and AI helper tools split work between a local model and free cloud models. |  |  |  |
+| **New docs pages:** why Nashboard, themes, diagrams, developer tools and the design engine. |  |  |  |
 
 ## Earlier additions (versions 0.207–0.210)
 
-- **Document import:** snap or paste a flyer, schedule, menu, receipt, label or link. Home Assistant's AI reads it and the app shows a preview of what it will create (calendar events, pantry or shopping items, packages, medicines, warranties, Storage items, featured posts). Nothing is added until you confirm. A daily class schedule becomes a Daily agenda card for that kid (now, next, pickup and the full day), and menu days with the month's marker get "Pack a lunch" and "Text the teacher" reminders. Photos are shrunk and turned the right way up before the AI reads them; a local vision model with thinking off reads one in about half a minute. Needs an AI integration in Home Assistant.
-- **Featured posts:** add a post (link, text, picture) to the Family Board; Home shows it until the date you pick, then it moves to an archive.
-- **Start page and kid lock:** each screen can open on its own page and go back to it when idle. A kid's tablet can be locked to the Kids page, with a PIN to leave (stored only as a salted hash).
-- **Family favorites:** posters, Play on the TV (opens the right streaming app), and a From your favorites row on Now Playing; titles blocked for kids never show on kid screens.
-- **Intercom transcripts:** messages are written out (Home Assistant speech-to-text, or the browser) on the cards and in phone notifications.
-- **Pet photos:** match a photo to set a pet's coat colour and pattern, now including a second colour and calico; keep a small picture on the card.
-- **Invite someone:** admins can create an account and person after a preview, then copy a designed welcome email (or a plain one) to send themselves.
-- **Hobbies:** import a band set list (pasted text or a playlist link) and get quiet Home suggestions from your hobbies (dry spell for the garden, a good running window, practice coming up).
-- **Finance:** optional Shares and Cost basis columns give real position values, today's change in dollars and gain/loss; crypto keeps updating around the clock.
-- **Design Studio:** a live "Checked out now" strip on the Backlog card shows what is being worked on, with finished items below.
-- **Quality checks:** map zoom, legend, name-clash, data and performance checks run with the builds.
+| Feature | Human | Claude | Other GitHub |
+| --- | :---: | :---: | --- |
+| **Document import:** snap or paste a flyer, schedule, menu, receipt, label or link. Home Assistant's AI reads it and the app shows a preview of what it will create (calendar events, pantry or shopping items, packages, medicines, warranties, Storage items, featured posts). Nothing is added until you confirm. A daily class schedule becomes a Daily agenda card for that kid (now, next, pickup and the full day), and menu days with the month's marker get "Pack a lunch" and "Text the teacher" reminders. Photos are shrunk and turned the right way up before the AI reads them; a local vision model with thinking off reads one in about half a minute. Needs an AI integration in Home Assistant. |  |  | [hacs/integration](https://github.com/hacs/integration) |
+| **Featured posts:** add a post (link, text, picture) to the Family Board; Home shows it until the date you pick, then it moves to an archive. |  |  |  |
+| **Start page and kid lock:** each screen can open on its own page and go back to it when idle. A kid's tablet can be locked to the Kids page, with a PIN to leave (stored only as a salted hash). |  |  |  |
+| **Family favorites:** posters, Play on the TV (opens the right streaming app), and a From your favorites row on Now Playing; titles blocked for kids never show on kid screens. |  |  |  |
+| **Intercom transcripts:** messages are written out (Home Assistant speech-to-text, or the browser) on the cards and in phone notifications. |  |  |  |
+| **Pet photos:** match a photo to set a pet's coat colour and pattern, now including a second colour and calico; keep a small picture on the card. |  |  |  |
+| **Invite someone:** admins can create an account and person after a preview, then copy a designed welcome email (or a plain one) to send themselves. |  |  |  |
+| **Hobbies:** import a band set list (pasted text or a playlist link) and get quiet Home suggestions from your hobbies (dry spell for the garden, a good running window, practice coming up). |  |  |  |
+| **Finance:** optional Shares and Cost basis columns give real position values, today's change in dollars and gain/loss; crypto keeps updating around the clock. |  |  |  |
+| **Design Studio:** a live "Checked out now" strip on the Backlog card shows what is being worked on, with finished items below. |  |  |  |
+| **Quality checks:** map zoom, legend, name-clash, data and performance checks run with the builds. |  |  |  |
 
 ## Home: automatic cards
 
